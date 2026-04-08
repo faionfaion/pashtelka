@@ -1,4 +1,8 @@
 var plugins = [{
+      name: 'gatsby-plugin-sitemap',
+      plugin: require('/home/nero/workspace/projects/pashtelka-faion-net/gatsby/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
+      options: {"plugins":[],"output":"/","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},
+    },{
       name: 'partytown',
       plugin: require('/home/nero/workspace/projects/pashtelka-faion-net/gatsby/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},

@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-04-08_225047",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "vechirnil-daidzhest-8-kvitnia-2026-deficit-pozhezhy-irs-metro-porto",
+  "author": "Oksana Lytvyn",
+  "duration_s": 550.2,
+  "image_generated": false,
+  "msg_id": 18,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.7,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 225.6,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 84.2,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 191.7,
+      "error": null
+    },
+    {
+      "name": "6_generate_tg",
+      "status": "ok",
+      "duration_s": 23.0,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "ok",
+      "duration_s": 24.5,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    },
+    {
+      "name": "9_publish_tg",
+      "status": "ok",
+      "duration_s": 0.3,
+      "error": null
+    }
+  ]
+}

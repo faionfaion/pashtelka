@@ -847,3 +847,21 @@ pipeline.stages.s9_publish_tg.PublishError: Site verification failed — refusin
 2026-04-08 22:50:22 [pipeline] INFO: Stage 6_generate_tg complete
 2026-04-08 22:50:22 [pipeline] INFO: === Stage 7_deploy ===
 2026-04-08 22:50:22 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/vechirnil-daidzhest-8-kvitnia-2026-deficit-pozhezhy-irs-metro-porto.md
+2026-04-08 22:50:22 [pipeline.stages.s7_deploy] INFO: Building Gatsby site...
+2026-04-08 22:50:34 [pipeline.stages.s7_deploy] INFO: Deploying to Cloudflare Pages...
+2026-04-08 22:50:46 [pipeline.stages.s7_deploy] INFO: Site deployed to Cloudflare Pages
+2026-04-08 22:50:46 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 22:50:46 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 22:50:46 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pashtelka.faion.net/vechirnil-daidzhest-8-kvitnia-2026-deficit-pozhezhy-irs-metro-porto/
+2026-04-08 22:50:46 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 22:50:46 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 22:50:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 22:50:46 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4564
+2026-04-08 22:50:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 22:50:47 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-08 22:50:47 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=18 (silent=True)
+2026-04-08 22:50:47 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-08 22:50:47 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_225047.json
+2026-04-08 22:50:47 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 22:50:47 [pipeline] INFO: Slug: vechirnil-daidzhest-8-kvitnia-2026-deficit-pozhezhy-irs-metro-porto | Type: digest | Tags: ['дайджест', 'бюджет', 'пожежі', 'відновлення житла', 'метро Порту', 'IRS', 'податки', 'паливо']
+2026-04-08 22:50:47 [pipeline] INFO: TG msg_id=18
