@@ -51,7 +51,7 @@ source_names:
   - "RTP Notícias"
   - "Público"
   - "RTP Notícias"
-image: ""
+image: "/images/vechirnil-daidzhest-8-kvitnia-2026-deficit-pozhezhy-irs-metro-porto.png"
 tg_post: |
   <b>Дефіцит заради людей, пожежне літо і 34 000 заявок</b> — вечірній підсумок 8 квітня.
   

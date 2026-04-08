@@ -93,6 +93,7 @@ export const query = graphql`
         tags
         source_urls
         source_names
+        image
       }
     }
   }
@@ -102,6 +103,9 @@ export default ArticleTemplate;
 
 export const Head = ({ data }) => {
   const fm = data.markdownRemark.frontmatter;
+  const ogImage = fm.image
+    ? `https://pashtelka.faion.net${fm.image}`
+    : null;
   return (
     <>
       <title>{fm.title} — Пастелка</title>
@@ -110,6 +114,11 @@ export const Head = ({ data }) => {
       <meta property="og:description" content={fm.description || ""} />
       <meta property="og:type" content="article" />
       <meta property="og:url" content={`https://pashtelka.faion.net/${fm.slug}/`} />
+      {ogImage && <meta property="og:image" content={ogImage} />}
+      {ogImage && <meta property="og:image:width" content="1536" />}
+      {ogImage && <meta property="og:image:height" content="1024" />}
+      {ogImage && <meta name="twitter:card" content="summary_large_image" />}
+      {ogImage && <meta name="twitter:image" content={ogImage} />}
       <meta property="og:site_name" content="Пастелка" />
       <meta property="article:author" content={fm.author} />
       <meta property="article:published_time" content={fm.date} />

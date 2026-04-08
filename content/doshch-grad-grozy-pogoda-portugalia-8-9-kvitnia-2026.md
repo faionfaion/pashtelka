@@ -26,7 +26,7 @@ source_names:
   - "IPMA API (Porto)"
   - "Tempo.pt"
   - "Público"
-image: ""
+image: "/images/doshch-grad-grozy-pogoda-portugalia-8-9-kvitnia-2026.png"
 tg_post: |
   🌧️ Сьогодні Португалія під зливами з градом — а <b>завтра вже +25°C у Порту</b>! Стрибок на 11 градусів за одну добу 🤯
   

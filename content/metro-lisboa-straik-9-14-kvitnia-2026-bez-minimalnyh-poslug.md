@@ -21,7 +21,7 @@ source_names:
   - "Renascença"
   - "Observador"
   - "RTP"
-image: ""
+image: "/images/metro-lisboa-straik-9-14-kvitnia-2026-bez-minimalnyh-poslug.png"
 tg_post: |
   ⚠️ <b>Завтра метро Лісабона не працює!</b>
   

@@ -24,7 +24,7 @@ source_names:
   - "RTP"
   - "CNN Portugal"
   - "Portal do Governo"
-image: ""
+image: "/images/rasi-2025-deportaciya-immihranty-perevirky-portugalia-kviten-2026.png"
 tg_post: |
   🔍 У 50 разів більше повідомлень про виїзд — що відбувається?
   

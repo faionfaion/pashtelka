@@ -39,7 +39,7 @@ source_names:
   - "ECO"
   - "Público"
   - "DECO PROteste"
-image: ""
+image: "/images/koshyk-produktiv-rekord-258-ievro-debat-parlament-palyvo-kviten-2026.png"
 tg_post: |
   🛒 €258 за базовий кошик продуктів — це новий абсолютний рекорд Португалії!
   

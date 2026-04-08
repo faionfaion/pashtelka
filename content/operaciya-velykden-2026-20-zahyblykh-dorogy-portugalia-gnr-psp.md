@@ -23,7 +23,7 @@ source_names:
   - "Público"
   - "Sapo"
   - "Mais Semanário"
-image: ""
+image: "/images/operaciya-velykden-2026-20-zahyblykh-dorogy-portugalia-gnr-psp.png"
 tg_post: |
   🚨 <b>20 загиблих за 4 дні</b> — Великдень на дорогах Португалії став найкривавішим за останні роки.
   

@@ -23,7 +23,7 @@ source_names:
   - "ECO"
   - "Observador"
   - "RTP"
-image: ""
+image: "/images/palyne-portugalia-peremyrya-ssha-iran-znyzhka-kviten-2026.png"
 tg_post: |
   🚗 Водії, є привід трохи видихнути!
   

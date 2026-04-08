@@ -22,7 +22,7 @@ source_names:
   - "DN Brasil"
   - "AIMA (офіційний сайт)"
   - "Jobbatical"
-image: ""
+image: "/images/aima-sistema-zbiy-dedlayn-15-kvitnia-2026-prострочені-dokumenty.png"
 tg_post: |
   ⚠️ Система AIMA «лягла» — а до дедлайну <b>15 квітня</b> залишився тиждень!
   

@@ -21,7 +21,7 @@ source_names:
   - "Público"
   - "ECO / Sapo"
   - "ECO / Sapo"
-image: ""
+image: "/images/zhytlo-portugalia-180-vidsotkiv-euribor-stribok-kviten-2026.png"
 tg_post: |
   Квартира в Лісабоні — це вже не мрія, а квест 😅
   
