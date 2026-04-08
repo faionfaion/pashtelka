@@ -1,0 +1,1 @@
+(self.webpackChunkpashtelka_faion_net=self.webpackChunkpashtelka_faion_net||[]).push([[454],{6454:function(){}}]);

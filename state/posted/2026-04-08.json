@@ -1,0 +1,56 @@
+{
+  "8": {
+    "slug": "doshch-grad-grozy-pogoda-portugalia-8-9-kvitnia-2026",
+    "msg_id": 3,
+    "type": "weather",
+    "title": "Дощ, град і грози сьогодні — а завтра вже +25°C"
+  },
+  "9": {
+    "slug": "poteplinnia-pyl-sahara-viter-prognoz-9-11-kvitnia-2026",
+    "msg_id": null,
+    "type": "weather",
+    "title": "Потепління, пил із Сахари та пориви вітру до 90 км/г"
+  },
+  "10": {
+    "slug": "metro-lisboa-straik-9-14-kvitnia-2026-bez-minimalnyh-poslug",
+    "msg_id": 4,
+    "type": "news",
+    "title": "Метро Лісабона"
+  },
+  "11": {
+    "slug": "palyne-portugalia-peremyrya-ssha-iran-znyzhka-kviten-2026",
+    "msg_id": 5,
+    "type": "news"
+  },
+  "12": {
+    "slug": "koshyk-produktiv-rekord-258-ievro",
+    "msg_id": 6,
+    "type": "material"
+  },
+  "13": {
+    "slug": "aima-sistema-zbiy",
+    "msg_id": 7,
+    "type": "news"
+  },
+  "14": {
+    "slug": "zhytlo-portugalia-euribor",
+    "msg_id": 8,
+    "type": "news"
+  },
+  "15": {
+    "slug": "reforma-trudovogo-kodeksu",
+    "msg_id": 9,
+    "type": "news"
+  },
+  "16": {
+    "slug": "pending",
+    "msg_id": null,
+    "type": "material"
+  },
+  "17": {
+    "slug": "pozhezhy-lito-2026-cipo-shtab-ochystka-dilanok-kviten",
+    "msg_id": 11,
+    "type": "news",
+    "title": "Літо 2026 буде «дуже складним»: уряд створив новий штаб для боротьби з пожежами"
+  }
+}

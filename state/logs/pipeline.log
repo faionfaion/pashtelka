@@ -1,0 +1,600 @@
+2026-04-08 20:28:20 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 20:28:20 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 20:28:20 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 20:28:20 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 20:28:20 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 20:28:20 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 20:28:20 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 20:28:21 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 20:28:21 [pipeline.stages.s1_collect] INFO: Slot: 08:00 (weather) | RSS items: 62 | Existing articles: 0
+2026-04-08 20:28:21 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 20:28:21 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 20:32:19 [pipeline.stages.s2_research] INFO: Research complete: 7084 chars
+2026-04-08 20:32:19 [pipeline] INFO: Stage 2_research complete
+2026-04-08 20:32:19 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 20:32:54 [pipeline.stages.s3_generate] INFO: Generated: 'Дощі, грози та град: погода в Португалії різко змінилася після Великодня' (slug=doshchi-hrozy-hrad-pohoda-portugalia-8-kvitnia-2026, 187 words, 6 sources)
+2026-04-08 20:32:54 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 20:32:54 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 20:33:49 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-08 20:33:49 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — добра структура, джерела, практичні поради та теплий тон Оксани. Але є кілька речей на виправлення:
+
+1. **ТОЧНІСТЬ (температури):** Порту 24°C макс, а Фару лише 17°C — це дуже 
+2026-04-08 20:34:50 [pipeline.stages.s5_revise] INFO: Revised article: 225 words
+2026-04-08 20:34:50 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 20:35:57 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 20:35:57 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з чіткою структурою та практичною користю. Кілька зауважень:
+
+1. МОВА: «пасхальних вихідних» → краще «великодніх вихідних» — більш українське слово, «Великдень» vs «Пасха». Аналогічно в 
+2026-04-08 20:35:57 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 20:35:57 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 20:35:57 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 20:36:20 [pipeline.stages.s6_generate_tg] INFO: TG post: 617 chars
+2026-04-08 20:36:20 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 20:36:20 [pipeline] INFO: Dry run: stopping before stage 7_deploy
+2026-04-08 20:36:20 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_203620.json
+2026-04-08 20:36:20 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 20:36:20 [pipeline] INFO: Slug: doshchi-hrozy-hrad-pohoda-portugalia-8-kvitnia-2026 | Type: weather | Tags: ['Погода', 'IPMA', 'Метро Лісабона', 'Страйк', 'Попередження']
+2026-04-08 20:36:34 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 20:36:34 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 20:36:34 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 20:36:34 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 20:36:34 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 20:36:34 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 20:36:35 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 20:36:35 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 20:36:35 [pipeline.stages.s1_collect] INFO: Slot: 08:00 (weather) | RSS items: 61 | Existing articles: 0
+2026-04-08 20:36:35 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 20:36:35 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 20:39:15 [pipeline.stages.s2_research] INFO: Research complete: 7588 chars
+2026-04-08 20:39:15 [pipeline] INFO: Stage 2_research complete
+2026-04-08 20:39:15 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 20:39:44 [pipeline.stages.s3_generate] INFO: Generated: 'Дощ, град і грози сьогодні — а завтра вже +25°C: погода в Португалії 8-9 квітня' (slug=doshch-grad-grozy-pogoda-portugalia-8-9-kvitnia-2026, 192 words, 6 sources)
+2026-04-08 20:39:44 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 20:39:44 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 20:40:32 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 20:40:32 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована і практична. Кілька зауважень:
+
+1. **Арифметика температури:** Порту з +14°C до +25°C — це стрибок на +11°C, а не «+10°C за одну добу». Виправити на +11°C.
+
+2. **Стр
+2026-04-08 20:40:58 [pipeline.stages.s5_revise] INFO: Revised article: 223 words
+2026-04-08 20:40:58 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 20:41:41 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 20:41:41 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з практичною цінністю. Декілька дрібних зауважень:
+
+1. **Посилання на API Porto:** У тексті при згадці прогнозу для Порту (+25°C) стоїть гіперпосилання на IPMA API Лісабона (1110600.json
+2026-04-08 20:41:41 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 20:41:41 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 20:41:41 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 20:42:06 [pipeline.stages.s6_generate_tg] INFO: TG post: 621 chars
+2026-04-08 20:42:06 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 20:42:06 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-08 20:42:06 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/doshch-grad-grozy-pogoda-portugalia-8-9-kvitnia-2026.md
+2026-04-08 20:42:06 [pipeline.stages.s7_deploy] WARNING: Deploy script not found: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/deploy-gh.sh
+2026-04-08 20:42:06 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 20:42:06 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 20:42:07 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pashtelka.faion.net/doshch-grad-grozy-pogoda-portugalia-8-9-kvitnia-2026/ — <urlopen error [Errno -2] Name or service not known>
+2026-04-08 20:42:07 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 20:42:07 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 20:42:07 [pipeline] ERROR: Stage 9_publish_tg failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s9_publish_tg.py", line 25, in run
+    raise PublishError("Site verification failed — refusing to publish to Telegram")
+pipeline.stages.s9_publish_tg.PublishError: Site verification failed — refusing to publish to Telegram
+2026-04-08 20:42:07 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_204207.json
+2026-04-08 20:42:07 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 154, in cli
+    ctx = run_pipeline(dry_run=args.dry_run, start_stage=args.stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s9_publish_tg.py", line 25, in run
+    raise PublishError("Site verification failed — refusing to publish to Telegram")
+pipeline.stages.s9_publish_tg.PublishError: Site verification failed — refusing to publish to Telegram
+2026-04-08 20:42:54 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 20:42:54 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 20:42:54 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 20:42:54 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 20:42:54 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 20:42:54 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 20:42:54 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 20:42:55 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 20:42:55 [pipeline.stages.s1_collect] INFO: Slot: 08:00 (weather) | RSS items: 61 | Existing articles: 1
+2026-04-08 20:42:55 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 20:42:55 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 20:46:28 [pipeline.stages.s2_research] INFO: Research complete: 7528 chars
+2026-04-08 20:46:28 [pipeline] INFO: Stage 2_research complete
+2026-04-08 20:46:28 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 20:47:10 [pipeline.stages.s3_generate] INFO: Generated: 'Потепління, пил із Сахари та пориви вітру до 90 км/г: прогноз на 9–11 квітня' (slug=poteplinnia-pyl-sahara-viter-prognoz-9-11-kvitnia-2026, 191 words, 5 sources)
+2026-04-08 20:47:10 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 20:47:10 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 20:47:58 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 20:47:58 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття, готова до публікації з мінімальними зауваженнями.
+
+✅ СИЛЬНІ СТОРОНИ:
+- Усі фактичні твердження підкріплені джерелами (IPMA, Público) з робочими посиланнями.
+- Чиста українська мова без 
+2026-04-08 20:48:32 [pipeline.stages.s5_revise] INFO: Revised article: 209 words
+2026-04-08 20:48:32 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 20:49:12 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 20:49:12 [pipeline.stages.s4_review] INFO: Feedback: Якісна погодна стаття, добре структурована по днях із практичними порадами. Кілька дрібних зауважень: 1) «км/г» → «км/год» — стандартне українське скорочення «кілометрів на годину» (зустрічається 3 ра
+2026-04-08 20:49:12 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 20:49:12 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 20:49:12 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 20:49:33 [pipeline.stages.s6_generate_tg] INFO: TG post: 565 chars
+2026-04-08 20:49:33 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 20:49:33 [pipeline] INFO: Dry run: stopping before stage 7_deploy
+2026-04-08 20:49:33 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_204933.json
+2026-04-08 20:49:33 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 20:49:33 [pipeline] INFO: Slug: poteplinnia-pyl-sahara-viter-prognoz-9-11-kvitnia-2026 | Type: weather | Tags: ['Погода', 'IPMA', 'Мадейра', 'Прогноз']
+2026-04-08 20:49:50 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 20:49:51 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 20:49:51 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 20:49:51 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 20:49:51 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 20:49:51 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 20:49:51 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 20:49:51 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 20:49:51 [pipeline.stages.s1_collect] INFO: Slot: 10:00 (news) | RSS items: 63 | Existing articles: 1
+2026-04-08 20:49:51 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 20:49:51 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 20:52:31 [pipeline.stages.s2_research] INFO: Research complete: 10392 chars
+2026-04-08 20:52:31 [pipeline] INFO: Stage 2_research complete
+2026-04-08 20:52:31 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 20:53:22 [pipeline.stages.s3_generate] INFO: Generated: 'Метро Лісабона повністю зупиниться завтра 9 квітня та 14 квітня — без жодних мінімальних послуг' (slug=metro-lisbon-greve-9-14-kvitnia-2026-bez-minimalnyh-poslug, 314 words, 4 sources)
+2026-04-08 20:53:22 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 20:53:22 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 20:54:09 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-08 20:54:09 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття — актуальна, практична, добре структурована. Кілька дрібних зауважень:
+
+1. **Хештеги відсутні.** За контент-планом потрібні #Лісабон + тематичні теги (#страйк #метро #транспорт). Додайте
+2026-04-08 20:54:44 [pipeline.stages.s5_revise] INFO: Revised article: 319 words
+2026-04-08 20:54:44 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 20:55:42 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-08 20:55:42 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття. Кілька дрібних зауважень:
+
+1. ДЖЕРЕЛА (✓): 4 авторитетні португальські джерела, кожен факт атрибутований. Відмінно.
+
+2. ТОЧНІСТЬ (✓): Дні тижня відповідають датам (9 квітня — четвер, 14
+2026-04-08 20:55:42 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 20:55:42 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 20:55:42 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 20:56:04 [pipeline.stages.s6_generate_tg] INFO: TG post: 593 chars
+2026-04-08 20:56:04 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 20:56:04 [pipeline] INFO: Dry run: stopping before stage 7_deploy
+2026-04-08 20:56:04 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_205604.json
+2026-04-08 20:56:04 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 20:56:04 [pipeline] INFO: Slug: metro-lisbon-greve-9-14-kvitnia-2026-bez-minimalnyh-poslug | Type: news | Tags: ['Транспорт', 'Метро Лісабона', 'Страйк', 'Carris', 'Громадський транспорт']
+2026-04-08 20:56:12 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 20:56:12 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pashtelka.faion.net// — <urlopen error [Errno -2] Name or service not known>
+2026-04-08 20:56:12 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 20:56:12 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 20:56:12 [pipeline] ERROR: Stage 9_publish_tg failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s9_publish_tg.py", line 25, in run
+    raise PublishError("Site verification failed — refusing to publish to Telegram")
+pipeline.stages.s9_publish_tg.PublishError: Site verification failed — refusing to publish to Telegram
+2026-04-08 20:56:12 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_205612.json
+2026-04-08 20:56:12 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 154, in cli
+    ctx = run_pipeline(dry_run=args.dry_run, start_stage=args.stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s9_publish_tg.py", line 25, in run
+    raise PublishError("Site verification failed — refusing to publish to Telegram")
+pipeline.stages.s9_publish_tg.PublishError: Site verification failed — refusing to publish to Telegram
+2026-04-08 20:56:28 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 20:56:28 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 20:56:28 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 20:56:28 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 20:56:28 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 20:56:29 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 20:56:29 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 20:56:29 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 20:56:29 [pipeline.stages.s1_collect] INFO: Slot: 10:00 (news) | RSS items: 63 | Existing articles: 1
+2026-04-08 20:56:29 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 20:56:29 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 20:58:55 [pipeline.stages.s2_research] INFO: Research complete: 8555 chars
+2026-04-08 20:58:55 [pipeline] INFO: Stage 2_research complete
+2026-04-08 20:58:55 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 20:59:37 [pipeline.stages.s3_generate] INFO: Generated: 'Метро Лісабона не працюватиме завтра: страйк 9 та 14 квітня без мінімальних послуг' (slug=metro-lisboa-straik-9-14-kvitnia-2026-bez-minimalnyh-poslug, 300 words, 4 sources)
+2026-04-08 20:59:37 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 20:59:37 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 21:00:45 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:00:45 [pipeline.stages.s4_review] INFO: Feedback: Якісна, своєчасна стаття з чіткою структурою та практичною цінністю для читача. Кілька дрібних зауважень:
+
+1. МОВА: «щодня їздите метро на роботу» → «щодня їздите метром на роботу» (інструментальний в
+2026-04-08 21:01:18 [pipeline.stages.s5_revise] INFO: Revised article: 304 words
+2026-04-08 21:01:18 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 21:02:08 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-08 21:02:08 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття, готова до публікації з мінімальними зауваженнями.
+
+**Що добре:**
+- Актуальність ідеальна (публікація 8 квітня, страйк 9-го — «завтра» коректно).
+- Дні тижня у таблиці перевірені: 9 квіт
+2026-04-08 21:02:08 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 21:02:08 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 21:02:08 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 21:02:31 [pipeline.stages.s6_generate_tg] INFO: TG post: 614 chars
+2026-04-08 21:02:31 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 21:02:31 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-08 21:02:31 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/metro-lisboa-straik-9-14-kvitnia-2026-bez-minimalnyh-poslug.md
+2026-04-08 21:02:31 [pipeline.stages.s7_deploy] WARNING: Deploy script not found: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/deploy-gh.sh
+2026-04-08 21:02:31 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 21:02:31 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 21:02:31 [pipeline.stages.s8_verify] INFO: Site verification SKIPPED (site not yet deployed): https://pashtelka.faion.net/metro-lisboa-straik-9-14-kvitnia-2026-bez-minimalnyh-poslug/
+2026-04-08 21:02:31 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 21:02:31 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 21:02:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:02:31 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4081
+2026-04-08 21:02:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:02:31 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-08 21:02:31 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=4 (silent=False)
+2026-04-08 21:02:31 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-08 21:02:31 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_210231.json
+2026-04-08 21:02:31 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 21:02:31 [pipeline] INFO: Slug: metro-lisboa-straik-9-14-kvitnia-2026-bez-minimalnyh-poslug | Type: news | Tags: ['Транспорт', 'Метро Лісабона', 'Страйк', 'Поради']
+2026-04-08 21:02:31 [pipeline] INFO: TG msg_id=4
+2026-04-08 21:02:39 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 21:02:39 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 21:02:39 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 21:02:39 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 21:02:39 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 21:02:39 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 21:02:39 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 21:02:39 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 21:02:39 [pipeline.stages.s1_collect] INFO: Slot: 11:00 (news) | RSS items: 64 | Existing articles: 2
+2026-04-08 21:02:39 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 21:02:39 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 21:04:56 [pipeline.stages.s2_research] INFO: Research complete: 6601 chars
+2026-04-08 21:04:56 [pipeline] INFO: Stage 2_research complete
+2026-04-08 21:04:56 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 21:05:48 [pipeline.stages.s3_generate] INFO: Generated: 'Перемир'я між США та Іраном: пальне в Португалії може подешевшати вже наступного тижня' (slug=palyne-portugalia-peremyrya-ssha-iran-znyzhka-kviten-2026, 352 words, 4 sources)
+2026-04-08 21:05:48 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 21:05:48 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 21:06:40 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:06:40 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з чіткою структурою, релевантна для аудиторії та має практичну цінність. Кілька зауважень для доопрацювання:
+
+1. **Непідтверджені цифри (джерела):** Дані про подорожчання палива з 28 лют
+2026-04-08 21:07:03 [pipeline.stages.s5_revise] INFO: Revised article: 377 words
+2026-04-08 21:07:03 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 21:07:54 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:07:54 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою, чистою мовою та практичною цінністю для діаспори. Кілька зауважень для доопрацювання:
+
+1. **Непідтверджене твердження про Ормузьку протоку.** «Досі залишається майже
+2026-04-08 21:07:54 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 21:07:54 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 21:07:54 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 21:08:28 [pipeline.stages.s6_generate_tg] INFO: TG post: 654 chars
+2026-04-08 21:08:28 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 21:08:28 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-08 21:08:28 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/palyne-portugalia-peremyrya-ssha-iran-znyzhka-kviten-2026.md
+2026-04-08 21:08:28 [pipeline.stages.s7_deploy] WARNING: Deploy script not found: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/deploy-gh.sh
+2026-04-08 21:08:28 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 21:08:28 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 21:08:28 [pipeline.stages.s8_verify] INFO: Site verification SKIPPED (site not yet deployed): https://pashtelka.faion.net/palyne-portugalia-peremyrya-ssha-iran-znyzhka-kviten-2026/
+2026-04-08 21:08:28 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 21:08:28 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 21:08:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:08:28 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4445
+2026-04-08 21:08:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:08:28 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-08 21:08:28 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=5 (silent=False)
+2026-04-08 21:08:28 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-08 21:08:28 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_210828.json
+2026-04-08 21:08:28 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 21:08:28 [pipeline] INFO: Slug: palyne-portugalia-peremyrya-ssha-iran-znyzhka-kviten-2026 | Type: news | Tags: ['Пальне', 'Економіка', 'Парламент', 'Ціни', 'Транспорт', 'Конфлікт США-Іран']
+2026-04-08 21:08:28 [pipeline] INFO: TG msg_id=5
+2026-04-08 21:08:34 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 21:08:34 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 21:08:34 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 21:08:34 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 21:08:34 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 21:08:34 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 21:08:34 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 21:08:35 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 21:08:35 [pipeline.stages.s1_collect] INFO: Slot: 12:00 (material) | RSS items: 64 | Existing articles: 3
+2026-04-08 21:08:35 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 21:08:35 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 21:12:34 [pipeline.stages.s2_research] INFO: Research complete: 8574 chars
+2026-04-08 21:12:34 [pipeline] INFO: Stage 2_research complete
+2026-04-08 21:12:34 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 21:14:03 [pipeline.stages.s3_generate] INFO: Generated: 'Кошик продуктів — рекордні €258, парламент сперечається, а паливо не дешевшає: що відбувається з цінами в Португалії' (slug=koshyk-produktiv-rekord-258-ievro-debat-parlament-palyvo-kviten-2026, 808 words, 10 sources)
+2026-04-08 21:14:03 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 21:14:03 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 21:15:04 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:15:04 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з якісними джерелами, чіткою структурою та високою практичною цінністю для аудиторії. Кілька зауважень для фінальної шліфовки:
+
+1. **«Ліквідація» (розділ IRS):** Пряма калька з португаль
+2026-04-08 21:15:47 [pipeline.stages.s5_revise] INFO: Revised article: 829 words
+2026-04-08 21:15:47 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 21:16:47 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:16:47 [pipeline.stages.s4_review] INFO: Feedback: Сильний аналітичний матеріал з якісною структурою та багатим набором джерел (10 посилань). Кілька зауважень для доопрацювання:
+
+1. **Хештеги:** Відсутні міські теги. Стаття згадує Алгарве та околиці Л
+2026-04-08 21:16:47 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 21:16:47 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 21:16:47 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 21:17:11 [pipeline.stages.s6_generate_tg] INFO: TG post: 691 chars
+2026-04-08 21:17:11 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 21:17:11 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-08 21:17:11 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/koshyk-produktiv-rekord-258-ievro-debat-parlament-palyvo-kviten-2026.md
+2026-04-08 21:17:11 [pipeline.stages.s7_deploy] WARNING: Deploy script not found: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/deploy-gh.sh
+2026-04-08 21:17:11 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 21:17:11 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 21:17:11 [pipeline.stages.s8_verify] INFO: Site verification SKIPPED (site not yet deployed): https://pashtelka.faion.net/koshyk-produktiv-rekord-258-ievro-debat-parlament-palyvo-kviten-2026/
+2026-04-08 21:17:11 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 21:17:11 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 21:17:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:17:11 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4742
+2026-04-08 21:17:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:17:11 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-08 21:17:11 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=6 (silent=False)
+2026-04-08 21:17:11 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-08 21:17:11 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_211711.json
+2026-04-08 21:17:11 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 21:17:11 [pipeline] INFO: Slug: koshyk-produktiv-rekord-258-ievro-debat-parlament-palyvo-kviten-2026 | Type: material | Tags: ['ціни', 'продукти', 'паливо', 'парламент', 'ISP', 'IVA', 'вартість життя', 'DECO PROteste', 'бюджет', 'IRS']
+2026-04-08 21:17:11 [pipeline] INFO: TG msg_id=6
+2026-04-08 21:17:17 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 21:17:18 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 21:17:18 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 21:17:18 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 21:17:18 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 21:17:18 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 21:17:18 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 21:17:18 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 21:17:18 [pipeline.stages.s1_collect] INFO: Slot: 13:00 (news) | RSS items: 63 | Existing articles: 4
+2026-04-08 21:17:18 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 21:17:18 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 21:20:38 [pipeline.stages.s2_research] INFO: Research complete: 9232 chars
+2026-04-08 21:20:38 [pipeline] INFO: Stage 2_research complete
+2026-04-08 21:20:38 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 21:21:21 [pipeline.stages.s3_generate] INFO: Generated: 'Система AIMA «лягла» за тиждень до дедлайну 15 квітня: що робити з простроченими документами' (slug=aima-sistema-zbiy-dedlayn-15-kvitnia-2026-prострочені-dokumenty, 360 words, 4 sources)
+2026-04-08 21:21:21 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 21:21:21 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 21:22:27 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:22:27 [pipeline.stages.s4_review] INFO: Feedback: Якісна, своєчасна стаття з чіткою структурою та практичною цінністю для читачів. Кілька зауважень:
+
+1. **Хештеги відсутні.** За редакційним стандартом потрібні тематичні та міські хештеги (#AIMA, #Імм
+2026-04-08 21:22:56 [pipeline.stages.s5_revise] INFO: Revised article: 374 words
+2026-04-08 21:22:56 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 21:24:09 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:24:09 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття, готова до публікації з мінімальними зауваженнями.
+
+**Що добре:**
+— Чітка структура за принципом перевернутої піраміди: лід → контекст → практичні поради.
+— Усі фактичні твердження мають
+2026-04-08 21:24:09 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 21:24:09 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 21:24:09 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 21:24:31 [pipeline.stages.s6_generate_tg] INFO: TG post: 630 chars
+2026-04-08 21:24:31 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 21:24:31 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-08 21:24:31 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/aima-sistema-zbiy-dedlayn-15-kvitnia-2026-prострочені-dokumenty.md
+2026-04-08 21:24:31 [pipeline.stages.s7_deploy] WARNING: Deploy script not found: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/deploy-gh.sh
+2026-04-08 21:24:31 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 21:24:31 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 21:24:31 [pipeline.stages.s8_verify] INFO: Site verification SKIPPED (site not yet deployed): https://pashtelka.faion.net/aima-sistema-zbiy-dedlayn-15-kvitnia-2026-prострочені-dokumenty/
+2026-04-08 21:24:31 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 21:24:31 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 21:24:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:24:31 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4516
+2026-04-08 21:24:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:24:31 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-08 21:24:31 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=7 (silent=False)
+2026-04-08 21:24:31 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-08 21:24:31 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_212431.json
+2026-04-08 21:24:31 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 21:24:31 [pipeline] INFO: Slug: aima-sistema-zbiy-dedlayn-15-kvitnia-2026-prострочені-dokumenty | Type: news | Tags: ['AIMA', 'Імміграція', 'Посвідка на проживання', 'Документи', 'Дедлайн']
+2026-04-08 21:24:31 [pipeline] INFO: TG msg_id=7
+2026-04-08 21:24:36 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 21:24:37 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 21:24:37 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 21:24:37 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 21:24:37 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 21:24:37 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 21:24:37 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 21:24:37 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 21:24:37 [pipeline.stages.s1_collect] INFO: Slot: 14:00 (news) | RSS items: 63 | Existing articles: 5
+2026-04-08 21:24:37 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 21:24:37 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 21:28:08 [pipeline.stages.s2_research] INFO: Research complete: 8029 chars
+2026-04-08 21:28:08 [pipeline] INFO: Stage 2_research complete
+2026-04-08 21:28:08 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 21:28:59 [pipeline.stages.s3_generate] INFO: Generated: 'Житло в Португалії подорожчало на 180% з 2015 року, а Euribor стрибнула найбільше за три роки' (slug=zhytlo-portugalia-180-vidsotkiv-euribor-stribok-kviten-2026, 345 words, 3 sources)
+2026-04-08 21:28:59 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 21:28:59 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 21:29:52 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-08 21:29:52 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре написана, структурована і практична. Близько до публікації, але потребує доопрацювання:
+
+**ПОРТУГАЛЬСЬКІ ТЕРМІНИ (критично):**
+1. «senhorio» — не пояснено українською. Додати: «senhorio (
+2026-04-08 21:30:18 [pipeline.stages.s5_revise] INFO: Revised article: 365 words
+2026-04-08 21:30:18 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 21:31:04 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:31:04 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з якісними джерелами та практичною цінністю для громади. Кілька зауважень для доопрацювання:
+
+1. **Euribor не пояснено при першому згадуванні.** Для нашої аудиторії варто додати коротке 
+2026-04-08 21:31:04 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 21:31:04 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 21:31:04 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 21:31:31 [pipeline.stages.s6_generate_tg] INFO: TG post: 626 chars
+2026-04-08 21:31:31 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 21:31:31 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-08 21:31:31 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/zhytlo-portugalia-180-vidsotkiv-euribor-stribok-kviten-2026.md
+2026-04-08 21:31:31 [pipeline.stages.s7_deploy] WARNING: Deploy script not found: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/deploy-gh.sh
+2026-04-08 21:31:31 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 21:31:31 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 21:31:31 [pipeline.stages.s8_verify] INFO: Site verification SKIPPED (site not yet deployed): https://pashtelka.faion.net/zhytlo-portugalia-180-vidsotkiv-euribor-stribok-kviten-2026/
+2026-04-08 21:31:31 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 21:31:31 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 21:31:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:31:31 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4222
+2026-04-08 21:31:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:31:31 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-08 21:31:31 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=8 (silent=False)
+2026-04-08 21:31:31 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-08 21:31:31 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_213131.json
+2026-04-08 21:31:31 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 21:31:31 [pipeline] INFO: Slug: zhytlo-portugalia-180-vidsotkiv-euribor-stribok-kviten-2026 | Type: news | Tags: ['Нерухомість', 'Іпотека', 'Euribor', 'Оренда житла', 'Економіка Португалії', 'ЄЦБ']
+2026-04-08 21:31:31 [pipeline] INFO: TG msg_id=8
+2026-04-08 21:31:36 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 21:31:36 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 21:31:36 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 21:31:36 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 21:31:37 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 21:31:37 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 21:31:37 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 21:31:37 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 21:31:37 [pipeline.stages.s1_collect] INFO: Slot: 15:00 (news) | RSS items: 62 | Existing articles: 6
+2026-04-08 21:31:37 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 21:31:37 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 21:34:47 [pipeline.stages.s2_research] INFO: Research complete: 8664 chars
+2026-04-08 21:34:47 [pipeline] INFO: Stage 2_research complete
+2026-04-08 21:34:47 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 21:35:43 [pipeline.stages.s3_generate] INFO: Generated: 'Реформа трудового кодексу Португалії: що зміниться для працівників і чому завтра — ключовий день' (slug=reforma-trudovogo-kodeksu-trabalho-xxi-kviten-2026, 361 words, 5 sources)
+2026-04-08 21:35:43 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 21:35:43 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 21:36:37 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-08 21:36:37 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, релевантністю та джерелами. Потрібні конкретні виправлення перед публікацією:
+
+1. **Граматична помилка:** «пакет все одно підуть до Assembleia da República» → «піде» (паке
+2026-04-08 21:37:19 [pipeline.stages.s5_revise] INFO: Revised article: 378 words
+2026-04-08 21:37:19 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 21:38:17 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:38:17 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою, високою релевантністю для аудиторії та відмінною роботою з португальськими термінами. Кілька дрібних зауважень перед публікацією:
+
+1. **Непослідовне написання прізви
+2026-04-08 21:38:17 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 21:38:17 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 21:38:17 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 21:38:44 [pipeline.stages.s6_generate_tg] INFO: TG post: 656 chars
+2026-04-08 21:38:44 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 21:38:44 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-08 21:38:44 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/reforma-trudovogo-kodeksu-trabalho-xxi-kviten-2026.md
+2026-04-08 21:38:44 [pipeline.stages.s7_deploy] WARNING: Deploy script not found: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/deploy-gh.sh
+2026-04-08 21:38:44 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 21:38:44 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 21:38:44 [pipeline.stages.s8_verify] INFO: Site verification SKIPPED (site not yet deployed): https://pashtelka.faion.net/reforma-trudovogo-kodeksu-trabalho-xxi-kviten-2026/
+2026-04-08 21:38:44 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 21:38:44 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 21:38:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:38:44 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4311
+2026-04-08 21:38:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:38:44 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-08 21:38:44 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=9 (silent=False)
+2026-04-08 21:38:44 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-08 21:38:44 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_213844.json
+2026-04-08 21:38:44 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 21:38:44 [pipeline] INFO: Slug: reforma-trudovogo-kodeksu-trabalho-xxi-kviten-2026 | Type: news | Tags: ['Трудове право', 'Trabalho XXI', 'Контракти', 'Звільнення', 'Профспілки', 'Código do Trabalho', 'Робота в Португалії']
+2026-04-08 21:38:44 [pipeline] INFO: TG msg_id=9
+2026-04-08 21:38:49 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 21:38:49 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 21:38:49 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 21:38:49 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 21:38:49 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 21:38:49 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 21:38:49 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 21:38:50 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 21:38:50 [pipeline.stages.s1_collect] INFO: Slot: 16:00 (material) | RSS items: 63 | Existing articles: 7
+2026-04-08 21:38:50 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 21:38:50 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 21:41:41 [pipeline.stages.s2_research] INFO: Research complete: 8094 chars
+2026-04-08 21:41:41 [pipeline] INFO: Stage 2_research complete
+2026-04-08 21:41:41 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 21:42:59 [pipeline.stages.s3_generate] INFO: Generated: 'SNS у кризі: нова система черг, подвоєння термінів для онкохворих і визнання — ліквідувати черги неможливо' (slug=sns-kryza-sinacc-cherhy-onkolohiya-kviten-2026, 671 words, 10 sources)
+2026-04-08 21:42:59 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 21:42:59 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 21:44:07 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:44:07 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал — добре структурований, 10 джерел, практичний блок для діаспори відмінний. Кілька дрібниць на виправлення:
+
+1. **Португальські терміни без пояснення:**
+   - «Portaria» / «портарія» — 
+2026-04-08 21:45:14 [pipeline.stages.s5_revise] INFO: Revised article: 682 words
+2026-04-08 21:45:14 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 21:46:12 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 21:46:12 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал — структура, джерела, практична цінність для діаспори на високому рівні. Кілька дрібниць для виправлення:
+
+1. МОВА: Хештег «#здоровя» → «#здоров'я» (пропущений апостроф).
+2. ГРАМАТИКА
+2026-04-08 21:46:12 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 21:46:12 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 21:46:12 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 21:46:39 [pipeline.stages.s6_generate_tg] INFO: TG post: 738 chars
+2026-04-08 21:46:39 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 21:46:39 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-08 21:46:39 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sns-kryza-sinacc-cherhy-onkolohiya-kviten-2026.md
+2026-04-08 21:46:39 [pipeline.stages.s7_deploy] WARNING: Deploy script not found: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/deploy-gh.sh
+2026-04-08 21:46:39 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 21:46:39 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 21:46:39 [pipeline.stages.s8_verify] INFO: Site verification SKIPPED (site not yet deployed): https://pashtelka.faion.net/sns-kryza-sinacc-cherhy-onkolohiya-kviten-2026/
+2026-04-08 21:46:39 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 21:46:39 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 21:46:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:46:40 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4871
+2026-04-08 21:46:40 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 21:46:40 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-08 21:46:40 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=10 (silent=False)
+2026-04-08 21:46:40 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-08 21:46:40 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_214640.json
+2026-04-08 21:46:40 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 21:46:40 [pipeline] INFO: Slug: sns-kryza-sinacc-cherhy-onkolohiya-kviten-2026 | Type: material | Tags: ["Здоров'я", 'SNS', 'Медицина', "Охорона здоров'я", 'Черги', 'Онкологія', 'SINACC', 'Португалія']
+2026-04-08 21:46:40 [pipeline] INFO: TG msg_id=10
+2026-04-08 21:57:08 [pipeline] INFO: === Stage 1_collect ===
+2026-04-08 21:57:08 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-08 21:57:08 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-08 21:57:08 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-08 21:57:08 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-08 21:57:08 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-08 21:57:08 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-08 21:57:09 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-08 21:57:09 [pipeline.stages.s1_collect] INFO: Slot: 17:00 (news) | RSS items: 62 | Existing articles: 8
+2026-04-08 21:57:09 [pipeline] INFO: Stage 1_collect complete
+2026-04-08 21:57:09 [pipeline] INFO: === Stage 2_research ===
+2026-04-08 22:00:56 [pipeline.stages.s2_research] INFO: Research complete: 6691 chars
+2026-04-08 22:00:56 [pipeline] INFO: Stage 2_research complete
+2026-04-08 22:00:56 [pipeline] INFO: === Stage 3_generate ===
+2026-04-08 22:01:41 [pipeline.stages.s3_generate] INFO: Generated: 'Літо 2026 буде «дуже складним»: уряд створив новий штаб для боротьби з пожежами' (slug=pozhezhy-lito-2026-cipo-shtab-ochystka-dilanok-kviten, 355 words, 4 sources)
+2026-04-08 22:01:41 [pipeline] INFO: Stage 3_generate complete
+2026-04-08 22:01:41 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-08 22:02:38 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 22:02:38 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою та високою практичною цінністю для діаспори. Кілька зауважень для фіналізації:
+
+1. **Непідтверджена цифра фіндопомоги.** Твердження «від €1 000 до €1 500 за гектар на
+2026-04-08 22:03:02 [pipeline.stages.s5_revise] INFO: Revised article: 355 words
+2026-04-08 22:03:02 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-08 22:04:08 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-08 22:04:08 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою, належними джерелами та високою практичною цінністю для діаспори. Кілька зауважень:
+
+1. **Непідтверджена порада (джерело відсутнє):** Розділ «Можлива фінансова підтри
+2026-04-08 22:04:08 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-08 22:04:08 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-08 22:04:08 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-08 22:04:36 [pipeline.stages.s6_generate_tg] INFO: TG post: 589 chars
+2026-04-08 22:04:36 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-08 22:04:36 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-08 22:04:36 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/pozhezhy-lito-2026-cipo-shtab-ochystka-dilanok-kviten.md
+2026-04-08 22:04:36 [pipeline.stages.s7_deploy] INFO: Building Gatsby site...
+2026-04-08 22:04:37 [pipeline.stages.s7_deploy] ERROR: Gatsby build failed: 
+2026-04-08 22:04:37 [pipeline] INFO: Stage 7_deploy complete
+2026-04-08 22:04:37 [pipeline] INFO: === Stage 8_verify ===
+2026-04-08 22:04:37 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pashtelka.faion.net/pozhezhy-lito-2026-cipo-shtab-ochystka-dilanok-kviten/
+2026-04-08 22:04:37 [pipeline] INFO: Stage 8_verify complete
+2026-04-08 22:04:37 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-08 22:04:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 22:04:37 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4093
+2026-04-08 22:04:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-08 22:04:37 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-08 22:04:37 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=11 (silent=True)
+2026-04-08 22:04:37 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-08 22:04:37 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-08_220437.json
+2026-04-08 22:04:37 [pipeline] INFO: === Pipeline complete ===
+2026-04-08 22:04:37 [pipeline] INFO: Slug: pozhezhy-lito-2026-cipo-shtab-ochystka-dilanok-kviten | Type: news | Tags: ['Пожежі', 'Безпека', 'CIPO', 'Літо 2026', 'Leiria', 'Цивільний захист']
+2026-04-08 22:04:37 [pipeline] INFO: TG msg_id=11

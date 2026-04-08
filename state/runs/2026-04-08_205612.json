@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-04-08_205612",
+  "status": "failed",
+  "dry_run": false,
+  "slug": "",
+  "author": "Oksana Lytvyn",
+  "duration_s": 0.1,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": "9_publish_tg",
+  "error": "Site verification failed — refusing to publish to Telegram",
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "skipped",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "skipped",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "skipped",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "skipped",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "6_generate_tg",
+      "status": "skipped",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "skipped",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    },
+    {
+      "name": "9_publish_tg",
+      "status": "failed",
+      "duration_s": 0.0,
+      "error": "Site verification failed — refusing to publish to Telegram"
+    }
+  ]
+}

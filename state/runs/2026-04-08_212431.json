@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-04-08_212431",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "aima-sistema-zbiy-dedlayn-15-kvitnia-2026-prострочені-dokumenty",
+  "author": "Oksana Lytvyn",
+  "duration_s": 433.4,
+  "image_generated": false,
+  "msg_id": 7,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.8,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 199.9,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 42.7,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 168.0,
+      "error": null
+    },
+    {
+      "name": "6_generate_tg",
+      "status": "ok",
+      "duration_s": 21.7,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "9_publish_tg",
+      "status": "ok",
+      "duration_s": 0.3,
+      "error": null
+    }
+  ]
+}
