@@ -23,7 +23,7 @@ source_names:
   - "Observador"
   - "Público"
   - "Correio da Manhã"
-image: "/images/pozhezhy-lito-2026-cipo-shtab-ochystka-dilanok-kviten.png"
+image: "/images/pozhezhy-lito-2026-cipo-shtab-ochystka-dilanok-kviten.jpg"
 tg_post: |
   🔥 Літо 2026 буде «дуже складним» — і це не я кажу, а міністр внутрішніх справ Luís Neves.
   

@@ -21,7 +21,7 @@ source_names:
   - "Euronews"
   - "Pplware"
   - "Publico"
-image: "/images/saharskyi-pyl-portugalia-dgs-poperedzhennia-pm10-kviten-2026.png"
+image: "/images/saharskyi-pyl-portugalia-dgs-poperedzhennia-pm10-kviten-2026.jpg"
 tg_post: |
   ⚠️ <b>Сахарський пил накрив Португалію — і залишиться до 9 квітня!</b>
   

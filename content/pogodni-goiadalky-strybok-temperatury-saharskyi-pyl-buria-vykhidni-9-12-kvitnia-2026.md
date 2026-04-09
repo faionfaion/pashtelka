@@ -25,7 +25,7 @@ source_names:
   - "IPMA Avisos"
   - "nCultura"
   - "Tempo.pt"
-image: "/images/pogodni-goiadalky-strybok-temperatury-saharskyi-pyl-buria-vykhidni-9-12-kvitnia-2026.png"
+image: "/images/pogodni-goiadalky-strybok-temperatury-saharskyi-pyl-buria-vykhidni-9-12-kvitnia-2026.jpg"
 tg_post: |
   🌡️ +13°C за добу — Португалію розгойдало не на жарт!
   

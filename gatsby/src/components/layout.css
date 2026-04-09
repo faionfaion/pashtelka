@@ -276,15 +276,16 @@ body {
 
 /* === Full article === */
 .article-full {
-  padding: 0 0 40px;
+  padding: 20px 0 40px;
 }
 
 .article-full .hero {
   width: 100%;
-  max-height: 400px;
+  max-height: 420px;
   object-fit: cover;
-  border-radius: 0 0 var(--radius) var(--radius);
+  border-radius: var(--radius);
   margin-bottom: 24px;
+  display: block;
 }
 
 .article-full header {

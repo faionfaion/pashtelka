@@ -22,7 +22,7 @@ source_names:
   - "AIMA"
   - "Público"
   - "Turismo de Portugal"
-image: "/images/programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026.png"
+image: "/images/programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026.jpg"
 tg_post: |
   🎓 Безкоштовне навчання + оплачуване стажування в туризмі — і це не казка, а реальна програма від Turismo de Portugal!
   

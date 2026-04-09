@@ -24,7 +24,7 @@ source_names:
   - "ECO"
   - "Executive Digest"
   - "CNN Portugal"
-image: "/images/zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026.png"
+image: "/images/zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026.jpg"
 tg_post: |
   <b>Подвоїли!</b> Парламент Португалії ухвалив новий Закон про громадянство — тепер українцям потрібно <b>10 років</b> легального проживання замість 5 для натуралізації.
   

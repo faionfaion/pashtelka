@@ -26,7 +26,7 @@ source_names:
   - "Idealista"
   - "Dinheiro Vivo"
   - "ECO/Sapo"
-image: "/images/orenda-portugalia-spadaye-tretiy-misyats-berezen-2026-mista-tsiny.png"
+image: "/images/orenda-portugalia-spadaye-tretiy-misyats-berezen-2026-mista-tsiny.jpg"
 tg_post: |
   Оренда в Португалії падає третій місяць поспіль 📉
   

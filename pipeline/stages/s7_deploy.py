@@ -41,7 +41,7 @@ def run(ctx: PipelineContext) -> None:
         "author": AUTHOR_NAME,
         "source_urls": ctx.source_urls,
         "source_names": ctx.source_names,
-        "image": f"/images/{ctx.slug}.png" if ctx.image_path else "",
+        "image": f"/images/{ctx.slug}.jpg" if ctx.image_path else "",
         "tg_post": ctx.tg_post,
     }
 
@@ -76,7 +76,7 @@ def run(ctx: PipelineContext) -> None:
     # 3. Copy image if generated (skip if already in place)
     if ctx.image_path and ctx.image_path.exists():
         IMAGES_DIR.mkdir(parents=True, exist_ok=True)
-        dest = IMAGES_DIR / f"{ctx.slug}.png"
+        dest = IMAGES_DIR / f"{ctx.slug}.jpg"
         if ctx.image_path.resolve() != dest.resolve():
             import shutil
             shutil.copy2(ctx.image_path, dest)

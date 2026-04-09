@@ -26,7 +26,7 @@ source_names:
   - "ECO Sapo"
   - "Observador"
   - "SAPO"
-image: "/images/reforma-trudovogo-kodeksu-trabalho-xxi-kviten-2026.png"
+image: "/images/reforma-trudovogo-kodeksu-trabalho-xxi-kviten-2026.jpg"
 tg_post: |
   🔴 Завтра вирішується доля трудового кодексу Португалії — і це стосується кожного, хто тут працює.
   

@@ -23,7 +23,7 @@ source_names:
   - "Público"
   - "RTP"
   - "Observador"
-image: "/images/parlament-isp-palyne-znyzhka-stavky-30-chervnia-2026.png"
+image: "/images/parlament-isp-palyne-znyzhka-stavky-30-chervnia-2026.jpg"
 tg_post: |
   ⛽ Заправлятися стане дешевше — парламент проголосував одноголосно!
   

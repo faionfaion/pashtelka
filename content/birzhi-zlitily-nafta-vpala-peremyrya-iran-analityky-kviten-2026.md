@@ -33,7 +33,7 @@ source_names:
   - "CM Jornal"
   - "RTP"
   - "ECO"
-image: "/images/birzhi-zlitily-nafta-vpala-peremyrya-iran-analityky-kviten-2026.png"
+image: "/images/birzhi-zlitily-nafta-vpala-peremyrya-iran-analityky-kviten-2026.jpg"
 tg_post: |
   📈 Біржі злетіли, нафта обвалилась — але не поспішайте радіти!
   

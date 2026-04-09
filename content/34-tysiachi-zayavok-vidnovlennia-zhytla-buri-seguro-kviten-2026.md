@@ -28,7 +28,7 @@ source_names:
   - "Público"
   - "Rádio Renascença"
   - "Câmara Municipal da Sertã"
-image: "/images/34-tysiachi-zayavok-vidnovlennia-zhytla-buri-seguro-kviten-2026.png"
+image: "/images/34-tysiachi-zayavok-vidnovlennia-zhytla-buri-seguro-kviten-2026.jpg"
 tg_post: |
   🏚 34 тисячі заявок — Португалія рахує збитки після зимових бурь
   

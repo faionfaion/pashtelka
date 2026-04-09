@@ -37,7 +37,7 @@ source_names:
   - "Jornal de Notícias"
   - "Público"
   - "HealthNews"
-image: "/images/sns-kryza-sinacc-cherhy-onkolohiya-kviten-2026.png"
+image: "/images/sns-kryza-sinacc-cherhy-onkolohiya-kviten-2026.jpg"
 tg_post: |
   🏥 Директор SNS визнав відверто: <b>ліквідувати черги неможливо</b>. Бракує лікарів — і це не зміниться швидко.
   

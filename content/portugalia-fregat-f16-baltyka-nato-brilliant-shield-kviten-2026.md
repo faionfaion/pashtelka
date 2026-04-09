@@ -25,7 +25,7 @@ source_names:
   - "Observador"
   - "Euronews"
   - "RTP"
-image: "/images/portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026.png"
+image: "/images/portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026.jpg"
 tg_post: |
   🇵🇹⚓ Португалія не жартує — фрегат і F-16 вирушили до Балтики стримувати Росію!
   

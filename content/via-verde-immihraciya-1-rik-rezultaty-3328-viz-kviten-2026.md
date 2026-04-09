@@ -21,7 +21,7 @@ source_names:
   - "ECO/Sapo"
   - "Jornal de Notícias"
   - "Observador"
-image: "/images/via-verde-immihraciya-1-rik-rezultaty-3328-viz-kviten-2026.png"
+image: "/images/via-verde-immihraciya-1-rik-rezultaty-3328-viz-kviten-2026.jpg"
 tg_post: |
   🟢 «Via Verde» працює рік — і ось що вийшло
   

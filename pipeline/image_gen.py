@@ -73,9 +73,25 @@ def generate_image(prompt: str, slug: str) -> Path | None:
             return None
 
         IMAGES_DIR.mkdir(parents=True, exist_ok=True)
-        out_path = IMAGES_DIR / f"{slug}.png"
-        out_path.write_bytes(img_bytes)
-        logger.info("Image saved: %s (%d KB)", out_path, len(img_bytes) // 1024)
+
+        # Convert to JPEG for smaller file size (TG needs < 5MB for previews)
+        out_path = IMAGES_DIR / f"{slug}.jpg"
+        try:
+            from PIL import Image
+            import io
+            img = Image.open(io.BytesIO(img_bytes))
+            img = img.convert("RGB")
+            # Resize if too large (max 1200px wide for web)
+            if img.width > 1200:
+                ratio = 1200 / img.width
+                img = img.resize((1200, int(img.height * ratio)), Image.LANCZOS)
+            img.save(out_path, "JPEG", quality=85, optimize=True)
+        except ImportError:
+            # Fallback: save as PNG if Pillow not installed
+            out_path = IMAGES_DIR / f"{slug}.png"
+            out_path.write_bytes(img_bytes)
+
+        logger.info("Image saved: %s (%d KB)", out_path, out_path.stat().st_size // 1024)
         return out_path
 
     except requests.exceptions.HTTPError as e:

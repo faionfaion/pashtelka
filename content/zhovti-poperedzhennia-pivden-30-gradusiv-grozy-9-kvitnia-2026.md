@@ -23,7 +23,7 @@ source_names:
   - "IPMA — Previsão Descritiva"
   - "Tempo.pt"
   - "Executive Digest"
-image: "/images/zhovti-poperedzhennia-pivden-30-gradusiv-grozy-9-kvitnia-2026.png"
+image: "/images/zhovti-poperedzhennia-pivden-30-gradusiv-grozy-9-kvitnia-2026.jpg"
 tg_post: |
   🌡️ До <b>30°C</b> у Центрі Португалії — але парасольку не ховайте!
   

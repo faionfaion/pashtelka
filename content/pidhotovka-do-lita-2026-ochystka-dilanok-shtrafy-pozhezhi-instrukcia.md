@@ -36,7 +36,7 @@ source_names:
   - "Santander"
   - "Florestas.pt"
   - "SAPO"
-image: "/images/pidhotovka-do-lita-2026-ochystka-dilanok-shtrafy-pozhezhi-instrukcia.png"
+image: "/images/pidhotovka-do-lita-2026-ochystka-dilanok-shtrafy-pozhezhi-instrukcia.jpg"
 tg_post: |
   🔥 Маєте нерухомість у Португалії? Тоді це для вас — і це терміново.
   
