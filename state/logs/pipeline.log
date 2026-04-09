@@ -1953,3 +1953,33 @@ pipeline.stages.s9_publish_tg.PublishError: Site verification failed — refusin
 2026-04-09 14:22:13 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 401 410
 2026-04-09 14:22:13 [pipeline.image_gen] ERROR: OpenAI API error: 401 — 
 2026-04-09 14:22:13 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/metro-lisboa-24-hour-strike-april-9.md
+2026-04-09 14:22:15 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-09 14:22:18 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: From https://github.com/faionfaion/pashtelka
+   867f9c5d..3bb48843  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+	gatsby/.cache/.parcel-cache/202d7740c54c7a75
+	gatsby/.cache/.parcel-cache/c015031f7be49d4c.txt
+	gatsby/.cache/caches-lmdb/d
+2026-04-09 14:22:18 [pipeline] INFO: Stage 7_deploy complete
+2026-04-09 14:22:18 [pipeline] INFO: === Stage 8_verify ===
+2026-04-09 14:22:18 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pashtelka.faion.net/metro-lisboa-24-hour-strike-april-9/ — HTTP Error 404: Not Found
+2026-04-09 14:22:18 [pipeline] INFO: Stage 8_verify complete
+2026-04-09 14:22:18 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-09 14:22:18 [pipeline] ERROR: Stage 9_publish_tg failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s9_publish_tg.py", line 25, in run
+    raise PublishError("Site verification failed — refusing to publish to Telegram")
+pipeline.stages.s9_publish_tg.PublishError: Site verification failed — refusing to publish to Telegram
+2026-04-09 14:22:18 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_142218.json
+2026-04-09 14:22:18 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 154, in cli
+    ctx = run_pipeline(dry_run=args.dry_run, start_stage=args.stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s9_publish_tg.py", line 25, in run
+    raise PublishError("Site verification failed — refusing to publish to Telegram")
+pipeline.stages.s9_publish_tg.PublishError: Site verification failed — refusing to publish to Telegram

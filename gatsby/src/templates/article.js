@@ -32,8 +32,6 @@ const ArticleTemplate = ({ data, pageContext }) => {
           </div>
           <h1>{fm.title}</h1>
           <div className="article-meta">
-            <span className="author">{fm.author}</span>
-            <span className="separator">|</span>
             <span className="reading-time">
               {Math.ceil(article.wordCount.words / 200)} хв читання
             </span>
@@ -141,7 +139,7 @@ export const Head = ({ data }) => {
       <link rel="canonical" href={`https://pashtelka.faion.net/${fm.slug}/`} />
       <meta property="og:site_name" content="Паштелька" />
       <meta property="al:android:app_name" content="Medium" />
-      <meta property="article:author" content={fm.author} />
+      <meta property="article:author" content="Паштелька News" />
       <meta property="article:published_time" content={`${fm.date}T00:00:00Z`} />
       {fm.tags && fm.tags.map((tag) => (
         <meta key={tag} property="article:tag" content={tag} />

@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 OPENAI_API_KEY = os.environ.get(
     "OPENAI_API_KEY",
-    "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",
+    "",
 )
 
 STYLE_PREFIX = (

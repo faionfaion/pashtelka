@@ -66,15 +66,19 @@ def send_photo(
     image_path: str,
     caption: str,
     bot_token: str = "",
+    silent: bool = False,
 ) -> int | None:
     """Send a photo with caption."""
     api = f"https://api.telegram.org/bot{bot_token}"
 
     try:
+        data = {"chat_id": chat_id, "caption": caption, "parse_mode": "HTML"}
+        if silent:
+            data["disable_notification"] = "true"
         with open(image_path, "rb") as f:
             resp = requests.post(
                 f"{api}/sendPhoto",
-                data={"chat_id": chat_id, "caption": caption, "parse_mode": "HTML"},
+                data=data,
                 files={"photo": f},
                 timeout=30,
             )
