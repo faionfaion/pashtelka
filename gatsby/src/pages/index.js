@@ -5,7 +5,6 @@ import Layout from "../components/layout";
 const IndexPage = ({ data }) => {
   const articles = data.allMarkdownRemark.nodes;
 
-  // Group by date
   const grouped = {};
   articles.forEach((article) => {
     const date = article.frontmatter.date;
@@ -25,9 +24,12 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <div className="hero">
+      <div className="hero-section">
+        <span className="badge">Новини Португалії українською</span>
         <h1>Пастелка</h1>
-        <p className="subtitle">Новини Португалії українською</p>
+        <p className="subtitle">
+          Щоденні новини, аналітика та корисна інформація для українців у Португалії
+        </p>
       </div>
 
       {Object.entries(grouped).map(([date, posts]) => (
@@ -37,24 +39,25 @@ const IndexPage = ({ data }) => {
             {posts.map((article) => (
               <article key={article.frontmatter.slug} className="article-card">
                 <Link to={`/${article.frontmatter.slug}/`}>
-                  <span className={`type-badge type-${article.frontmatter.type}`}>
-                    {article.frontmatter.type}
-                  </span>
-                  <h3>{article.frontmatter.title}</h3>
-                  <p className="description">{article.frontmatter.description}</p>
-                  <div className="meta">
-                    <span className="author">{article.frontmatter.author}</span>
-                    <span className="reading-time">
-                      {Math.ceil(article.wordCount.words / 200)} хв читання
-                    </span>
-                  </div>
-                  {article.frontmatter.tags && (
-                    <div className="tags">
-                      {article.frontmatter.tags.slice(0, 4).map((tag) => (
-                        <span key={tag} className="tag">#{tag}</span>
-                      ))}
-                    </div>
+                  {article.frontmatter.image && (
+                    <img
+                      className="card-image"
+                      src={article.frontmatter.image}
+                      alt=""
+                      loading="lazy"
+                    />
                   )}
+                  <div className="card-content">
+                    <span className={`type-badge type-${article.frontmatter.type}`}>
+                      {article.frontmatter.type}
+                    </span>
+                    <h3>{article.frontmatter.title}</h3>
+                    <p className="description">{article.frontmatter.description}</p>
+                    <div className="meta">
+                      <span>{article.frontmatter.author}</span>
+                      <span>{Math.ceil(article.wordCount.words / 200)} хв</span>
+                    </div>
+                  </div>
                 </Link>
               </article>
             ))}
@@ -80,6 +83,7 @@ export const query = graphql`
           author
           description
           tags
+          image
         }
         wordCount {
           words
@@ -94,10 +98,12 @@ export default IndexPage;
 export const Head = () => (
   <>
     <title>Пастелка — Новини Португалії українською</title>
-    <meta name="description" content="Українськомовне медіа для українців у Португалії" />
+    <meta name="description" content="Щоденні новини Португалії для українців. Лісабон, Порту, Фару, Алгарве." />
     <meta property="og:title" content="Пастелка — Новини Португалії українською" />
+    <meta property="og:description" content="Щоденні новини Португалії для українців. Аналітика, дайджести, корисна інформація." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pashtelka.faion.net" />
+    <meta property="og:site_name" content="Пастелка" />
     <html lang="uk" />
   </>
 );

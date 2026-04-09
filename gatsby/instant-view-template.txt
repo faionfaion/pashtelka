@@ -1,0 +1,39 @@
+# Telegram Instant View Template for pashtelka.faion.net
+#
+# How to use:
+# 1. Go to https://instantview.telegram.org/my/
+# 2. Login with your Telegram account
+# 3. Enter any article URL, e.g.: https://pashtelka.faion.net/metro-lisboa-straik-9-14-kvitnia-2026-bez-minimalnyh-poslug/
+# 4. Paste the template rules below into the left panel
+# 5. Click "View in Instant View" to preview
+# 6. Save the template - note the rhash from the URL
+# 7. Use links like: https://t.me/iv?url=ARTICLE_URL&rhash=HASH
+
+~version: "2.1"
+
+# Match article pages: /{slug}/
+?path: /[a-z0-9-]+/
+
+# --- Required properties ---
+title: //article//h1
+body: //article//div[has-class("article-body")]
+
+# --- Optional properties ---
+subtitle: //article//div[has-class("article-meta")]
+cover: //article//img[has-class("hero")]
+author: "Оксана Литвин"
+author_url: "https://pashtelka.faion.net"
+published_date: //article//time/@datetime
+description: //meta[@property="og:description"]/@content
+channel: @pashtelka_news
+
+# --- Cleanup: remove non-content elements ---
+@remove: //header[has-class("site-header")]
+@remove: //footer[has-class("site-footer")]
+@remove: //div[has-class("article-tags")]
+@remove: //div[has-class("article-cta")]
+@remove: //nav[has-class("article-nav")]
+@remove: //footer[has-class("sources")]
+@remove: //div[@id="gatsby-announcer"]
+@remove: //script
+@remove: //noscript

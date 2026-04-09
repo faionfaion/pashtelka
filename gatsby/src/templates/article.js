@@ -9,12 +9,19 @@ const ArticleTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <article className="article-full">
+      <article className="article-full" data-iv="true">
+        {fm.image && (
+          <img
+            className="hero"
+            src={fm.image}
+            alt={fm.title}
+            loading="eager"
+          />
+        )}
+
         <header>
-          <span className={`type-badge type-${fm.type}`}>{fm.type}</span>
-          <h1>{fm.title}</h1>
-          <div className="article-meta">
-            <span className="author">{fm.author}</span>
+          <div className="article-top">
+            <span className={`type-badge type-${fm.type}`}>{fm.type}</span>
             <time dateTime={fm.date}>
               {new Date(fm.date + "T12:00:00").toLocaleDateString("uk-UA", {
                 year: "numeric",
@@ -22,25 +29,31 @@ const ArticleTemplate = ({ data, pageContext }) => {
                 day: "numeric",
               })}
             </time>
+          </div>
+          <h1>{fm.title}</h1>
+          <div className="article-meta">
+            <span className="author">{fm.author}</span>
+            <span className="separator">|</span>
             <span className="reading-time">
               {Math.ceil(article.wordCount.words / 200)} хв читання
             </span>
           </div>
-          {fm.tags && (
-            <div className="tags">
-              {fm.tags.map((tag) => (
-                <Link key={tag} to={`/tag/${encodeURIComponent(tag)}/`} className="tag">
-                  #{tag}
-                </Link>
-              ))}
-            </div>
-          )}
         </header>
 
         <div
           className="article-body"
           dangerouslySetInnerHTML={{ __html: article.html }}
         />
+
+        {fm.tags && (
+          <div className="article-tags">
+            {fm.tags.map((tag) => (
+              <Link key={tag} to={`/tag/${encodeURIComponent(tag)}/`} className="tag">
+                #{tag}
+              </Link>
+            ))}
+          </div>
+        )}
 
         {fm.source_urls && fm.source_urls.length > 0 && (
           <footer className="sources">
@@ -51,13 +64,19 @@ const ArticleTemplate = ({ data, pageContext }) => {
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     {fm.source_names && fm.source_names[i]
                       ? fm.source_names[i]
-                      : url}
+                      : new URL(url).hostname}
                   </a>
                 </li>
               ))}
             </ul>
           </footer>
         )}
+
+        <div className="article-cta">
+          <a href="https://t.me/pashtelka_news" target="_blank" rel="noopener noreferrer">
+            Підписатися на Пастелку в Telegram →
+          </a>
+        </div>
 
         <nav className="article-nav">
           {prev && (
