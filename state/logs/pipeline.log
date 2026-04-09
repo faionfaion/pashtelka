@@ -1206,3 +1206,61 @@ shutil.SameFileError: PosixPath('/home/nero/workspace/projects/pashtelka-faion-n
 2026-04-09 07:18:04 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/pidhotovka-do-lita-2026-ochystka-dilanok-shtrafy-pozhezhi-instrukcia.png (3407 KB)
 2026-04-09 07:18:04 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/pidhotovka-do-lita-2026-ochystka-dilanok-shtrafy-pozhezhi-instrukcia.md
 2026-04-09 07:18:04 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/pidhotovka-do-lita-2026-ochystka-dilanok-shtrafy-pozhezhi-instrukcia.png
+2026-04-09 07:18:04 [pipeline.stages.s7_deploy] INFO: Building Gatsby site...
+2026-04-09 07:18:17 [pipeline.stages.s7_deploy] INFO: Deploying to Cloudflare Pages...
+2026-04-09 07:18:31 [pipeline.stages.s7_deploy] INFO: Site deployed to Cloudflare Pages
+2026-04-09 07:18:31 [pipeline] INFO: Stage 7_deploy complete
+2026-04-09 07:18:31 [pipeline] INFO: === Stage 8_verify ===
+2026-04-09 07:18:31 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pashtelka.faion.net/pidhotovka-do-lita-2026-ochystka-dilanok-shtrafy-pozhezhi-instrukcia/
+2026-04-09 07:18:31 [pipeline] INFO: Stage 8_verify complete
+2026-04-09 07:18:31 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-09 07:18:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 07:18:31 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 5069
+2026-04-09 07:18:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 07:18:31 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-09 07:18:31 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=23 (silent=True)
+2026-04-09 07:18:31 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-09 07:18:31 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_071831.json
+2026-04-09 07:18:31 [pipeline] INFO: === Pipeline complete ===
+2026-04-09 07:18:31 [pipeline] INFO: Slug: pidhotovka-do-lita-2026-ochystka-dilanok-shtrafy-pozhezhi-instrukcia | Type: material | Tags: ['Пожежна безпека', 'Очищення ділянок', 'Штрафи', 'CIPO', 'Нерухомість', 'Практичний гайд', 'Закон']
+2026-04-09 07:18:31 [pipeline] INFO: TG msg_id=23
+2026-04-09 07:18:31 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 07:18:32 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 07:18:32 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 07:18:32 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 07:18:32 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 07:18:32 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 07:18:32 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 07:18:32 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 07:18:32 [pipeline.stages.s1_collect] INFO: Slot: 13:00 (news) | RSS items: 62 | Existing articles: 20
+2026-04-09 07:18:32 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 07:18:32 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 07:21:21 [pipeline.stages.s2_research] INFO: Research complete: 7701 chars
+2026-04-09 07:21:21 [pipeline] INFO: Stage 2_research complete
+2026-04-09 07:21:21 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 07:22:09 [pipeline.stages.s3_generate] INFO: Generated: 'Португалія відправила фрегат і винищувачі F-16 до Балтики для моніторингу Росії' (slug=portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026, 296 words, 4 sources)
+2026-04-09 07:22:09 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 07:22:09 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 07:22:53 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-09 07:22:53 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, чудово прив'язана до контексту діаспори, джерела релевантні. Потрібні виправлення перед публікацією:
+
+1. ТОЧНІСТЬ: «95 пілотів Повітряних сил Португалії» — не всі 95 осіб є
+2026-04-09 07:23:17 [pipeline.stages.s5_revise] INFO: Revised article: 328 words
+2026-04-09 07:23:17 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 07:24:13 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-09 07:24:13 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття, схвалюю з незначними зауваженнями:
+
+1. МЕТАДАНІ: Заголовок і тип дублюються на початку — прибрати повторне 'Title/Type'.
+
+2. ЖАНРОВА ЧИСТОТА: Стаття позначена як 'news', але секції 'Нав
+2026-04-09 07:24:13 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 07:24:13 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 07:24:13 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-09 07:24:39 [pipeline.stages.s6_generate_tg] INFO: TG post: 661 chars
+2026-04-09 07:24:39 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-09 07:24:39 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-09 07:24:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-09 07:25:33 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-09 07:25:34 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026.png (3855 KB)
+2026-04-09 07:25:34 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026.md
+2026-04-09 07:25:34 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026.png
