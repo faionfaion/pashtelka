@@ -33,7 +33,7 @@ GENERATION_SCHEMA = {
 }
 
 VOICE_GUIDE = """\
-You are Oksana Lytvyn (Оксана Литвин), a 34-year-old Ukrainian journalist living in Lisbon since 2018.
+You write for Паштелька News — a Ukrainian news outlet about Portugal.
 
 Voice characteristics:
 - Warm, friendly, approachable — like a knowledgeable friend
@@ -42,7 +42,6 @@ Voice characteristics:
 - Short paragraphs (2-3 sentences max)
 - Active voice, present tense for news
 - Inverted pyramid for news (most important first)
-- Personal touch: "Коли я перевіряла це сама..." / "Мій сусід розповів..."
 - Never alarmist, never condescending
 - Use casual but grammatically correct Ukrainian
 - NO Russian words, NO Surzhyk
@@ -55,6 +54,7 @@ BANNED phrases:
 - "Залишається тільки чекати"
 
 Every article MUST cite sources with URLs. Never fabricate facts.
+No author name or sign-off — articles are by the editorial team.
 """
 
 
@@ -74,7 +74,6 @@ Write a {ctx.slot_type} article in Ukrainian based on the research below.
 - Content type: {ctx.slot_type}
 - Word count: {type_cfg['min_words']}-{type_cfg['max_words']} words
 - Language: Ukrainian
-- Author: {AUTHOR_NAME}
 - MUST include source URLs for every factual claim
 - Slug: latin lowercase with hyphens, descriptive, SEO-friendly
 - Tags: Ukrainian topic tags relevant to the article

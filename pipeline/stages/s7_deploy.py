@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 from pipeline.config import (
-    AUTHOR_NAME, AUTHOR_NAME_EN, CONTENT_DIR, GATSBY_DIR, IMAGES_DIR,
+    AUTHOR_NAME, CONTENT_DIR, GATSBY_DIR, IMAGES_DIR,
     SITE_BASE_URL, STATE_DIR,
 )
 from pipeline.context import PipelineContext
@@ -104,7 +104,8 @@ def run(ctx: PipelineContext) -> None:
             "ssh", "-i", str(Path.home() / ".ssh" / "id_ed25519"),
             "-p", "22022", "-o", "StrictHostKeyChecking=no",
             "faion@46.225.58.119",
-            "cd ~/pashtelka && git pull && cd gatsby && npx gatsby build && "
+            "cd ~/pashtelka && git checkout -- . && git clean -fd && git pull && "
+            "cd gatsby && npx gatsby build && "
             "sudo rsync -a --delete public/ /var/www/pashtelka.faion.net/",
         ]
         result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=300)

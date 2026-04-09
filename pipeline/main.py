@@ -1,6 +1,9 @@
-"""Pipeline runner: orchestrates stages for article publishing.
+"""Pipeline runner: orchestrates article generation, TG publishing, and digests.
 
-Fully synchronous — no async/await anywhere in the pipeline.
+Three modes:
+  generate  — collect news, research, write article, deploy to site (no TG)
+  publish   — pick best unpublished article, generate caption, send to TG
+  digest    — compile day's articles into evening digest, send to TG
 """
 
 from __future__ import annotations
@@ -9,7 +12,7 @@ import argparse
 import logging
 import sys
 
-from pipeline.config import MAX_REVIEW_CYCLES, MAX_TG_REVIEW_CYCLES
+from pipeline.config import MAX_REVIEW_CYCLES
 from pipeline.context import PipelineContext
 from pipeline.run_report import RunReport, time_stage
 from pipeline.stages import (
@@ -18,10 +21,10 @@ from pipeline.stages import (
     s3_generate,
     s4_review,
     s5_revise,
-    s6_generate_tg,
     s7_deploy,
     s8_verify,
-    s9_publish_tg,
+    s10_pick_and_publish,
+    s11_digest,
 )
 from pipeline.stages.s1_collect import AllPostedError
 
@@ -41,38 +44,31 @@ def _review_loop(ctx: PipelineContext) -> None:
         logger.warning("Max review cycles (%d) reached, proceeding", MAX_REVIEW_CYCLES)
 
 
-STAGES = [
+# Generate mode: create article on site, no TG
+GENERATE_STAGES = [
     ("1_collect",       s1_collect.run),
     ("2_research",      s2_research.run),
     ("3_generate",      s3_generate.run),
     ("4+5_review_loop", _review_loop),
-    ("6_generate_tg",   s6_generate_tg.run),
     ("7_deploy",        s7_deploy.run),
     ("8_verify",        s8_verify.run),
-    ("9_publish_tg",    s9_publish_tg.run),
 ]
 
-DRY_RUN_STOP = 6  # stop before deploy
 
-
-def run_pipeline(
-    dry_run: bool = False,
-    start_stage: int = 1,
-) -> PipelineContext:
-    """Run the full pipeline synchronously."""
+def run_generate(dry_run: bool = False, start_stage: int = 1) -> PipelineContext:
+    """Generate mode: collect, research, write, deploy to site. No TG."""
     ctx = PipelineContext()
     report = RunReport(dry_run=dry_run, resume_from_stage=start_stage)
     report.begin()
 
     try:
-        for i, (name, stage_fn) in enumerate(STAGES, 1):
+        for i, (name, stage_fn) in enumerate(GENERATE_STAGES, 1):
             if i < start_stage:
                 entry = report.add_stage(name)
                 entry.status = "skipped"
                 continue
-            if dry_run and i >= DRY_RUN_STOP:
-                logger.info("Dry run: stopping before stage %s", name)
-                for skip_name, _ in STAGES[DRY_RUN_STOP - 1:]:
+            if dry_run and i >= 5:  # stop before deploy
+                for skip_name, _ in GENERATE_STAGES[4:]:
                     entry = report.add_stage(skip_name)
                     entry.status = "skipped"
                 break
@@ -82,7 +78,7 @@ def run_pipeline(
                 with time_stage(report, name) as entry:
                     stage_fn(ctx)
             except AllPostedError:
-                logger.info("All slots posted for today. Done.")
+                logger.info("All generation slots posted for today. Done.")
                 entry.status = "skipped"
                 entry.error = None
                 _fill_report(report, ctx, "ok")
@@ -101,18 +97,36 @@ def run_pipeline(
         raise
 
     _fill_report(report, ctx, "ok")
-
-    logger.info("=== Pipeline complete ===")
-    logger.info("Slug: %s | Type: %s | Tags: %s", ctx.slug, ctx.slot_type, ctx.tags)
-    if ctx.msg_id:
-        logger.info("TG msg_id=%d", ctx.msg_id)
-
+    logger.info("=== Generate complete: %s ===", ctx.slug)
     return ctx
+
+
+def run_publish() -> dict | None:
+    """Publish mode: pick best article, generate caption, send to TG."""
+    logger.info("=== TG Publish mode ===")
+    result = s10_pick_and_publish.run()
+    if result:
+        logger.info("Published to TG: %s (msg %d)", result["slug"], result["msg_id"])
+    else:
+        logger.info("Nothing to publish to TG")
+    return result
+
+
+def run_digest() -> dict | None:
+    """Digest mode: compile day's articles, send to TG."""
+    logger.info("=== Digest mode ===")
+    result = s11_digest.run()
+    if result:
+        logger.info("Digest published (msg %d, %d articles)",
+                     result["msg_id"], result["article_count"])
+    else:
+        logger.info("Digest skipped (not enough articles)")
+    return result
 
 
 def _fill_report(report: RunReport, ctx: PipelineContext, status: str) -> None:
     report.slug = ctx.slug
-    report.author = "Oksana Lytvyn"
+    report.author = "Pastelka News"
     report.image_generated = ctx.image_path is not None
     report.msg_id = ctx.msg_id
     report.finish(status)
@@ -126,9 +140,12 @@ def _fill_report(report: RunReport, ctx: PipelineContext, status: str) -> None:
 def cli() -> None:
     """CLI entry point."""
     parser = argparse.ArgumentParser(description="Pashtelka publishing pipeline")
+    parser.add_argument("mode", nargs="?", default="generate",
+                        choices=["generate", "publish", "digest"],
+                        help="Pipeline mode (default: generate)")
     parser.add_argument("--dry-run", action="store_true",
-                        help="Run stages 1-5 only (no deploy/publish)")
-    parser.add_argument("--stage", type=int, default=1, help="Start from stage N")
+                        help="Run without deploy/publish")
+    parser.add_argument("--stage", type=int, default=1, help="Start from stage N (generate mode)")
     parser.add_argument("--verbose", "-v", action="store_true")
     args = parser.parse_args()
 
@@ -151,8 +168,15 @@ def cli() -> None:
     logging.getLogger().addHandler(fh)
 
     try:
-        ctx = run_pipeline(dry_run=args.dry_run, start_stage=args.stage)
-        sys.exit(0 if ctx.msg_id or args.dry_run else 1)
+        if args.mode == "generate":
+            ctx = run_generate(dry_run=args.dry_run, start_stage=args.stage)
+            sys.exit(0)
+        elif args.mode == "publish":
+            result = run_publish()
+            sys.exit(0 if result else 1)
+        elif args.mode == "digest":
+            result = run_digest()
+            sys.exit(0 if result else 1)
     except KeyboardInterrupt:
         sys.exit(130)
     except Exception:

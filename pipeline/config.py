@@ -54,15 +54,20 @@ SOUND_ON_END = 22
 # Max TG caption length (safe for multi-byte UTF-8)
 MAX_TG_CAPTION = 900
 
-# Publishing schedule (Lisbon time hours)
-SLOTS = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+# Content generation schedule (Lisbon time hours) — articles published to site only
+GENERATE_HOURS = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
 
-# Slot types: which slots get which content type
+# TG publish schedule — pick best unpublished article and post to TG
+TG_PUBLISH_HOURS = [9, 12, 15, 18]
+
+# Digest hour — compile day's best articles into one TG post
+DIGEST_HOUR = 20
+
+# Legacy compat
+SLOTS = GENERATE_HOURS
 SLOT_TYPES = {
-    8: "weather",       # Morning greeting + weather
     12: "material",     # Compiled article 1
     16: "material",     # Compiled article 2
-    21: "digest",       # Evening digest
     # All other slots: "news"
 }
 
@@ -77,10 +82,9 @@ CONTENT_TYPES = {
     "guide": {"min_words": 800, "max_words": 2000},
 }
 
-# Author persona
-AUTHOR_NAME = "Оксана Литвин"
-AUTHOR_NAME_EN = "Oksana Lytvyn"
-AUTHOR_BIO = "Українська журналістка в Лісабоні з 2018 року"
+# Author
+AUTHOR_NAME = "Паштелька News"
+AUTHOR_NAME_EN = "Pastelka News"
 
 # City hashtags
 CITY_TAGS = {

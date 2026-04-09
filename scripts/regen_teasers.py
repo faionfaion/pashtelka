@@ -34,13 +34,13 @@ SCHEMA = {
                 },
                 "required": ["pt", "uk"],
             },
-            "description": "3-5 Portuguese vocabulary words with Ukrainian translation",
+            "description": "3-5 Portuguese vocabulary words with precise Ukrainian dictionary translations (literal, not paraphrases)",
         },
     },
     "required": ["hook", "body", "vocab"],
 }
 
-SYSTEM = "You write Telegram captions for a Ukrainian news channel about Portugal. Concise, useful, bold accents on key words. No hashtags. No sign-offs."
+SYSTEM = "You write Telegram captions for a Ukrainian news channel about Portugal. Concise, useful, bold accents on key words. No hashtags. No sign-offs. Vocabulary translations must be LITERAL dictionary equivalents, not paraphrases or explanations."
 
 content_dir = ROOT / "content"
 teasers_dir = ROOT / "state" / "teasers"
@@ -85,7 +85,11 @@ Title: {title}
 <rules>
 HOOK: one punchy sentence, Ukrainian. Will be displayed in bold.
 BODY: 2-3 sentences with key facts. Use <b>bold</b> for accent words (numbers, names, dates, important terms). Keep it useful and practical. No hashtags. No sign-offs.
-VOCAB: 3-5 Portuguese terms from the article topic. Pick words people encounter in daily life in Portugal. Portuguese word first, Ukrainian translation second.
+VOCAB: 3-5 Portuguese terms from the article topic. Pick words people encounter in daily life in Portugal.
+- Portuguese word first, Ukrainian LITERAL dictionary translation second.
+- Translate precisely: "lista de espera" = "список очікування" (NOT "черга"). "Combustível" = "паливо" (NOT "бензин").
+- No explanations in parentheses. Just the word and its direct translation.
+- If a term is a proper name or abbreviation (AIMA, SNS), give the full Portuguese name + Ukrainian equivalent.
 </rules>
 """
 

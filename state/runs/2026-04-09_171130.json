@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-04-09_171130",
+  "status": "ok",
+  "dry_run": true,
+  "slug": "eu-gas-reserves-low-portugal-prices-rise",
+  "author": "Pastelka News",
+  "duration_s": 379.6,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.8,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 214.6,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 45.5,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 118.8,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "skipped",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "skipped",
+      "duration_s": 0.0,
+      "error": null
+    }
+  ]
+}
