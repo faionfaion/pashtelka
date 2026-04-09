@@ -17,6 +17,9 @@ app = Flask(__name__, static_folder="static")
 ROOT = Path(__file__).resolve().parent.parent
 PROMPTS_DIR = ROOT / "pipeline" / "prompts" / "templates"
 SCHEMAS_DIR = ROOT / "pipeline" / "schemas"
+CONTENT_DIR = ROOT / "content"
+IMAGES_DIR = ROOT / "gatsby" / "static" / "images"
+TEASERS_DIR = ROOT / "state" / "teasers"
 EDITOR_NOTES = ROOT / "state" / "editor_notes.md"
 GIT_BRANCH = "master"
 
@@ -118,6 +121,143 @@ def api_save():
     return jsonify({"ok": True, **git})
 
 
+# ---- Articles API ----
+
+@app.route("/api/articles")
+@_auth_required
+def api_articles():
+    """List all articles with metadata."""
+    articles = []
+    if CONTENT_DIR.exists():
+        for md in sorted(CONTENT_DIR.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True):
+            text = md.read_text(encoding="utf-8")
+            meta = _parse_frontmatter(text)
+            slug = md.stem
+            has_image = any((IMAGES_DIR / f"{slug}{ext}").exists() for ext in (".jpg", ".jpeg", ".png"))
+            has_teaser = (TEASERS_DIR / f"{slug}.json").exists()
+            articles.append({
+                "slug": slug,
+                "title": meta.get("title", ""),
+                "date": meta.get("date", ""),
+                "type": meta.get("type", ""),
+                "tags": meta.get("tags", []),
+                "path": str(md),
+                "has_image": has_image,
+                "has_teaser": has_teaser,
+                "size": md.stat().st_size,
+            })
+    return jsonify(articles)
+
+
+@app.route("/api/article/image/<slug>")
+@_auth_required
+def api_article_image(slug):
+    """Serve article image."""
+    for ext in (".jpg", ".jpeg", ".png"):
+        p = IMAGES_DIR / f"{slug}{ext}"
+        if p.exists():
+            mime = "image/jpeg" if ext in (".jpg", ".jpeg") else "image/png"
+            return Response(p.read_bytes(), mimetype=mime)
+    return "No image", 404
+
+
+@app.route("/api/article/teaser/<slug>")
+@_auth_required
+def api_article_teaser(slug):
+    """Get pre-generated TG teaser for article."""
+    p = TEASERS_DIR / f"{slug}.json"
+    if not p.exists():
+        return jsonify({"tg_post": ""})
+    data = json.loads(p.read_text(encoding="utf-8"))
+    return jsonify(data)
+
+
+@app.route("/api/article/new", methods=["POST"])
+@_auth_required
+def api_article_new():
+    """Create a new article."""
+    data = request.json
+    slug = data.get("slug", "").strip()
+    title = data.get("title", "").strip()
+    body = data.get("body", "").strip()
+    art_type = data.get("type", "news")
+
+    if not slug or not title:
+        return jsonify({"ok": False, "error": "slug and title required"})
+
+    from datetime import datetime, timezone
+    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    md_content = f'---\ntitle: "{title}"\nslug: "{slug}"\ndate: "{date_str}"\ntype: "{art_type}"\nlang: "ua"\ntags:\ndescription: ""\nauthor: "Паштелька News"\nsource_urls:\nsource_names:\nimage: ""\n---\n\n{body}\n'
+
+    CONTENT_DIR.mkdir(parents=True, exist_ok=True)
+    md_path = CONTENT_DIR / f"{slug}.md"
+    if md_path.exists():
+        return jsonify({"ok": False, "error": "article with this slug already exists"})
+
+    md_path.write_text(md_content, encoding="utf-8")
+    git = _git_commit(str(md_path), f"admin: new article {slug}")
+    return jsonify({"ok": True, "path": str(md_path), **git})
+
+
+@app.route("/api/redeploy", methods=["POST"])
+@_auth_required
+def api_redeploy():
+    """Git push + SSH deploy to faion-net server."""
+    root = str(ROOT)
+    try:
+        # Add, commit any pending changes
+        subprocess.run(["git", "add", "-A"], cwd=root, capture_output=True, timeout=10)
+        subprocess.run(["git", "commit", "-m", "admin: pre-deploy commit"],
+                       cwd=root, capture_output=True, timeout=10)
+        subprocess.run(["git", "push", "origin", GIT_BRANCH],
+                       cwd=root, capture_output=True, timeout=30)
+
+        # Build & deploy
+        result = subprocess.run(
+            ["bash", "-c",
+             "cd gatsby && npx gatsby build 2>&1 && "
+             "sudo rsync -a --delete public/ /var/www/pashtelka.faion.net/"],
+            cwd=root, capture_output=True, text=True, timeout=300,
+        )
+        if result.returncode == 0:
+            return jsonify({"ok": True, "message": "Deploy successful"})
+        return jsonify({"ok": False, "error": result.stderr[-500:] if result.stderr else "build failed"})
+    except Exception as e:
+        return jsonify({"ok": False, "error": str(e)})
+
+
+def _parse_frontmatter(text: str) -> dict:
+    """Parse YAML-like frontmatter from markdown."""
+    meta = {}
+    lines = text.split("\n")
+    if not lines or lines[0].strip() != "---":
+        return meta
+    in_fm = True
+    current_list_key = None
+    for line in lines[1:]:
+        if line.strip() == "---":
+            break
+        if line.startswith("  - "):
+            if current_list_key:
+                val = line.strip()[2:].strip().strip('"')
+                meta.setdefault(current_list_key, []).append(val)
+            continue
+        current_list_key = None
+        if ":" in line:
+            key, _, val = line.partition(":")
+            key = key.strip()
+            val = val.strip().strip('"')
+            if not val:
+                current_list_key = key
+                meta[key] = []
+            elif val == "|":
+                continue  # multiline, skip
+            else:
+                meta[key] = val
+    return meta
+
+
 # ---- HTML ----
 
 @app.route("/")
@@ -204,7 +344,39 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .overview .tip{background:rgba(234,179,8,.08);border-left:3px solid var(--yellow);padding:12px 16px;border-radius:0 6px 6px 0;margin:16px 0;font-size:13px;color:var(--muted)}
 .overview .tip strong{color:var(--yellow)}
 
-@media(max-width:900px){.sidebar{width:260px}.stage-desc{display:none}.overview{padding:20px}}
+/* Articles view */
+.articles-view{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.articles-toolbar{background:var(--card);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:12px}
+.articles-toolbar input{background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:6px;color:var(--text);padding:6px 12px;font-size:13px;width:250px}
+.articles-toolbar input::placeholder{color:var(--muted)}
+.articles-list{flex:1;overflow-y:auto;padding:0}
+.art-row{display:flex;align-items:center;gap:12px;padding:10px 20px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .1s}
+.art-row:hover{background:rgba(255,255,255,.03)}
+.art-row.active{background:rgba(217,119,6,.08)}
+.art-thumb{width:60px;height:40px;border-radius:4px;object-fit:cover;background:var(--border);flex-shrink:0}
+.art-thumb-empty{width:60px;height:40px;border-radius:4px;background:rgba(255,255,255,.04);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--muted)}
+.art-info{flex:1;min-width:0}
+.art-title{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.art-meta{font-size:11px;color:var(--muted);display:flex;gap:8px;margin-top:2px}
+.art-badges{display:flex;gap:4px}
+.art-badge{font-size:9px;padding:1px 5px;border-radius:3px;font-weight:600;text-transform:uppercase}
+.art-badge.img{background:rgba(34,197,94,.15);color:var(--green)}
+.art-badge.tg{background:rgba(59,130,246,.15);color:var(--blue)}
+.art-badge.noimg{background:rgba(239,68,68,.15);color:var(--red)}
+.art-detail{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.art-detail-header{background:var(--card);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.art-detail-header .art-detail-title{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.art-split{display:flex;flex:1;overflow:hidden}
+.art-editor-pane{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.art-preview-pane{width:320px;border-left:1px solid var(--border);overflow-y:auto;padding:16px;background:rgba(0,0,0,.15)}
+.art-preview-pane img{width:100%;border-radius:6px;margin-bottom:12px}
+.art-preview-pane .tg-preview{background:rgba(255,255,255,.05);border-radius:8px;padding:12px;font-size:12px;line-height:1.6;color:var(--text);white-space:pre-wrap;word-break:break-word}
+.art-preview-pane h4{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.btn-redeploy{background:var(--blue);margin-left:auto}
+.btn-new{background:var(--accent)}
+.btn-sm{font-size:12px;padding:5px 12px}
+
+@media(max-width:900px){.sidebar{width:260px}.stage-desc{display:none}.overview{padding:20px}.art-preview-pane{display:none}}
 </style>
 </head>
 <body>
@@ -212,7 +384,8 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   <h1>Pashtelka Admin</h1>
   <span class="site">pastelka.news</span>
   <button class="nav-btn active" id="btn-overview" onclick="showOverview()">Overview</button>
-  <button class="nav-btn" id="btn-editor" onclick="showEditor()">Editor</button>
+  <button class="nav-btn" id="btn-editor" onclick="showEditor()">Prompts</button>
+  <button class="nav-btn" id="btn-articles" onclick="showArticles()">Articles</button>
 </div>
 <div class="container">
   <div class="sidebar" id="sidebar">
@@ -438,10 +611,16 @@ const OVERVIEW_HTML = `
 </div>
 `;
 
+function _setNav(active) {
+  ['btn-overview','btn-editor','btn-articles'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('active', id === active);
+  });
+}
+
 function showOverview() {
   currentView = 'overview';
-  document.getElementById('btn-overview').classList.add('active');
-  document.getElementById('btn-editor').classList.remove('active');
+  _setNav('btn-overview');
   document.getElementById('editor-area').innerHTML = OVERVIEW_HTML;
   if (editor) { editor.dispose(); editor = null; }
   currentFile = null;
@@ -450,10 +629,133 @@ function showOverview() {
 
 function showEditor() {
   currentView = 'editor';
-  document.getElementById('btn-editor').classList.add('active');
-  document.getElementById('btn-overview').classList.remove('active');
+  _setNav('btn-editor');
   if (!currentFile) {
     document.getElementById('editor-area').innerHTML = `<div class="empty">Оберіть prompt або schema в бічній панелі<div class="hint">Ctrl+S — зберегти &bull; Зміни автоматично комітяться в git</div></div>`;
+  }
+}
+
+let articlesCache = [];
+async function showArticles() {
+  currentView = 'articles';
+  _setNav('btn-articles');
+  if (editor) { editor.dispose(); editor = null; }
+  currentFile = null;
+
+  document.getElementById('editor-area').innerHTML = `<div class="empty">Loading articles...</div>`;
+  const r = await fetch('api/articles');
+  articlesCache = await r.json();
+  _renderArticlesList();
+}
+
+function _renderArticlesList(filter = '') {
+  const filtered = filter
+    ? articlesCache.filter(a => a.title.toLowerCase().includes(filter) || a.slug.includes(filter) || (a.tags||[]).some(t => t.toLowerCase().includes(filter)))
+    : articlesCache;
+
+  const rows = filtered.map(a => `
+    <div class="art-row" onclick="openArticle('${a.slug}','${esc(a.path)}')">
+      ${a.has_image ? '<img class="art-thumb" src="api/article/image/' + a.slug + '" loading="lazy">' : '<div class="art-thumb-empty">no img</div>'}
+      <div class="art-info">
+        <div class="art-title">${esc(a.title)}</div>
+        <div class="art-meta">
+          <span>${a.date}</span>
+          <span>${a.type}</span>
+          <span>${a.size > 1024 ? Math.round(a.size/1024)+'K' : a.size+'B'}</span>
+        </div>
+      </div>
+      <div class="art-badges">
+        ${a.has_image ? '<span class="art-badge img">IMG</span>' : '<span class="art-badge noimg">NO IMG</span>'}
+        ${a.has_teaser ? '<span class="art-badge tg">TG</span>' : ''}
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('editor-area').innerHTML = `
+    <div class="articles-view">
+      <div class="articles-toolbar">
+        <input type="text" placeholder="Search articles..." oninput="_renderArticlesList(this.value.toLowerCase())" value="${filter}">
+        <button class="btn btn-new btn-sm" onclick="newArticleDialog()">+ New Article</button>
+        <button class="btn btn-redeploy btn-sm" onclick="redeploy()">Redeploy Site</button>
+        <span class="status" id="deploy-status"></span>
+      </div>
+      <div class="articles-list">${rows || '<div class="empty" style="padding:40px">No articles found</div>'}</div>
+    </div>`;
+}
+
+async function openArticle(slug, path) {
+  currentView = 'article-detail';
+  _setNav('btn-articles');
+  currentFile = path;
+
+  const [fileResp, teaserResp] = await Promise.all([
+    fetch('api/file?path=' + encodeURIComponent(path)),
+    fetch('api/article/teaser/' + slug),
+  ]);
+  const content = await fileResp.text();
+  const teaser = await teaserResp.json();
+
+  const hasImage = articlesCache.find(a => a.slug === slug)?.has_image;
+
+  document.getElementById('editor-area').innerHTML = `
+    <div class="art-detail">
+      <div class="art-detail-header">
+        <button class="btn btn-sm" style="background:var(--muted)" onclick="showArticles()">&larr; Back</button>
+        <span class="art-detail-title">${slug}</span>
+        <button class="btn btn-save btn-sm" onclick="saveFile()">Save & Commit</button>
+        <span class="status" id="status"></span>
+      </div>
+      <div class="art-split">
+        <div class="art-editor-pane">
+          <div id="monaco-container" style="flex:1"></div>
+        </div>
+        <div class="art-preview-pane">
+          ${hasImage ? '<h4>Image</h4><img src="api/article/image/' + slug + '">' : '<h4>No image</h4>'}
+          ${teaser.tg_post ? '<h4>TG Post</h4><div class="tg-preview">' + esc(teaser.tg_post) + '</div>' : ''}
+        </div>
+      </div>
+    </div>`;
+
+  if (editor) { editor.dispose(); editor = null; }
+  editor = monaco.editor.create(document.getElementById('monaco-container'), {
+    value: content,
+    language: 'markdown',
+    theme: 'vs-dark',
+    fontSize: 13,
+    lineNumbers: 'on',
+    minimap: { enabled: false },
+    wordWrap: 'on',
+    scrollBeyondLastLine: false,
+    automaticLayout: true,
+    tabSize: 2,
+  });
+  editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS, () => saveFile());
+}
+
+function newArticleDialog() {
+  const slug = prompt('Slug (URL identifier, e.g. nova-stattia-2026):');
+  if (!slug) return;
+  const title = prompt('Title (Ukrainian):');
+  if (!title) return;
+  fetch('api/article/new', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({slug, title, type: 'news', body: ''}),
+  }).then(r => r.json()).then(d => {
+    if (d.ok) { showArticles(); }
+    else { alert(d.error || 'Error'); }
+  });
+}
+
+async function redeploy() {
+  const st = document.getElementById('deploy-status');
+  if (st) { st.textContent = 'Deploying...'; st.className = 'status'; }
+  const r = await fetch('api/redeploy', { method: 'POST' });
+  const d = await r.json();
+  if (st) {
+    st.textContent = d.ok ? 'Deploy OK!' : (d.error || 'Failed').substring(0, 80);
+    st.className = d.ok ? 'status ok' : 'status err';
+    setTimeout(() => { st.textContent = ''; }, 8000);
   }
 }
 
