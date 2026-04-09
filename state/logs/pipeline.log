@@ -1913,3 +1913,43 @@ Traceback (most recent call last):
   File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s9_publish_tg.py", line 25, in run
     raise PublishError("Site verification failed — refusing to publish to Telegram")
 pipeline.stages.s9_publish_tg.PublishError: Site verification failed — refusing to publish to Telegram
+2026-04-09 14:10:52 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 14:10:53 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 14:10:53 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 14:10:53 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 14:10:53 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 14:10:53 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 14:10:53 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 14:10:53 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 14:10:53 [pipeline.stages.s1_collect] INFO: Slot: 17:00 (news) | RSS items: 63 | Existing articles: 25
+2026-04-09 14:10:53 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 14:10:53 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 14:15:53 [pipeline.sdk] WARNING: SDK retry 1/2 after TimeoutExpired — backoff 6.0s
+2026-04-09 14:18:59 [pipeline.stages.s2_research] INFO: Research complete: 9106 chars
+2026-04-09 14:18:59 [pipeline] INFO: Stage 2_research complete
+2026-04-09 14:18:59 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 14:19:42 [pipeline.stages.s3_generate] INFO: Generated: 'Метро Лісабона не працює: 24-годинний страйк паралізував підземку' (slug=metro-lisboa-24-hour-strike-april-9, 332 words, 4 sources)
+2026-04-09 14:19:42 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 14:19:42 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 14:20:39 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-09 14:20:39 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття, готова до публікації з мінімальними зауваженнями.
+
+✅ Джерела: 4 авторитетних португальських ЗМІ (Observador, Público, RTP, TSF), кожен факт підкріплений посиланням.
+✅ Точність: дати та 
+2026-04-09 14:21:02 [pipeline.stages.s5_revise] INFO: Revised article: 374 words
+2026-04-09 14:21:02 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 14:21:55 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-09 14:21:55 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття — актуальна, добре структурована, з чіткими джерелами та практичною цінністю для читача.
+
+Дрібні зауваження:
+1. «BRT» — абревіатура не розшифрована. Не всі читачі знають, що це Bus Rapid
+2026-04-09 14:21:55 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 14:21:55 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 14:21:55 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-09 14:22:13 [pipeline.stages.s6_generate_tg] INFO: TG post: 590 chars, vocab: 5 words
+2026-04-09 14:22:13 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-09 14:22:13 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-09 14:22:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-09 14:22:13 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 401 410
+2026-04-09 14:22:13 [pipeline.image_gen] ERROR: OpenAI API error: 401 — 
+2026-04-09 14:22:13 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/metro-lisboa-24-hour-strike-april-9.md
