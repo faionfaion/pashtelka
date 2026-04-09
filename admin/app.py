@@ -181,7 +181,7 @@ async function openFile(el){
   currentFile=path;
   document.querySelectorAll('.file-item').forEach(f=>f.classList.remove('active'));
   el.classList.add('active');
-  const r=await fetch(`/api/file?path=${encodeURIComponent(path)}`);
+  const r=await fetch(`api/file?path=${encodeURIComponent(path)}`);
   const content=await r.text();
   document.getElementById('editor-area').innerHTML=`
     <div class="editor-header">
