@@ -26,7 +26,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <div className="hero-section">
         <span className="badge">Новини Португалії українською</span>
-        <h1>Паштелька</h1>
         <p className="subtitle">
           Щоденні новини, аналітика та корисна інформація для українців у Португалії
         </p>
@@ -54,7 +53,6 @@ const IndexPage = ({ data }) => {
                     <h3>{article.frontmatter.title}</h3>
                     <p className="description">{article.frontmatter.description}</p>
                     <div className="meta">
-                      <span>{article.frontmatter.author}</span>
                       <span>{Math.ceil(article.wordCount.words / 200)} хв</span>
                     </div>
                   </div>
@@ -72,7 +70,7 @@ export const query = graphql`
   {
     allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
-      limit: 50
+      limit: 60
     ) {
       nodes {
         frontmatter {
@@ -80,7 +78,6 @@ export const query = graphql`
           title
           date
           type
-          author
           description
           tags
           image
@@ -97,13 +94,13 @@ export default IndexPage;
 
 export const Head = () => (
   <>
-    <title>Паштелька — Новини Португалії українською</title>
-    <meta name="description" content="Щоденні новини Португалії для українців. Лісабон, Порту, Фару, Алгарве." />
-    <meta property="og:title" content="Паштелька — Новини Португалії українською" />
-    <meta property="og:description" content="Щоденні новини Португалії для українців. Аналітика, дайджести, корисна інформація." />
+    <title>Паштелька News — Новини Португалії українською</title>
+    <meta name="description" content="Щоденні новини Португалії для україн��ів. Лісабон, Порту, Фару, Алгарве." />
+    <meta property="og:title" content="Паштелька News — Новини Португалії українською" />
+    <meta property="og:description" content="Щоденні новини Португалії для українців. Аналітика, дайдж��сти, корисна інформація." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pastelka.news" />
-    <meta property="og:site_name" content="Паштелька" />
+    <meta property="og:site_name" content="Паштелька News" />
     <html lang="uk" />
   </>
 );

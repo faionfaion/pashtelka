@@ -1,4 +1,6 @@
-/* Pashtelka v2 — Portuguese-inspired warm design */
+/* Pashtelka v3 — Montserrat, clean header, proper image layout */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
 
 :root {
   --color-bg: #fefcfa;
@@ -12,14 +14,12 @@
   --color-border: #e5e7eb;
   --color-card-bg: #ffffff;
   --color-tag-bg: #f3f4f6;
-  --color-header-bg: #1a1a2e;
-  --color-header-text: #ffffff;
-  --color-footer-bg: #f9fafb;
-  --color-portugal-green: #006400;
-  --color-portugal-red: #c41e3a;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-heading: "Georgia", "Playfair Display", serif;
-  --max-width: 740px;
+  --color-header-bg: #ffffff;
+  --color-footer-bg: #1a1a2e;
+  --color-footer-text: rgba(255,255,255,0.7);
+  --font-body: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --max-width: 780px;
   --radius: 12px;
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
   --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
@@ -33,7 +33,7 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.75;
-  font-size: 17px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -43,19 +43,16 @@ body {
   padding: 0 20px;
 }
 
-/* === Header — dark elegant bar === */
+/* === Header — clean, simple, not sticky === */
 .site-header {
   background: var(--color-header-bg);
-  padding: 14px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(10px);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .site-header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -67,90 +64,51 @@ body {
 }
 
 .logo-icon {
-  font-size: 26px;
+  border-radius: 6px;
 }
 
 .logo-text {
   font-family: var(--font-heading);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  color: var(--color-header-text);
-  letter-spacing: -0.5px;
-}
-
-.site-nav {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.site-nav a {
-  color: rgba(255,255,255,0.8);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.site-nav a:hover {
-  color: var(--color-accent-light);
-}
-
-.site-nav .tg-btn {
-  background: var(--color-accent);
-  color: white;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: background 0.2s;
-}
-
-.site-nav .tg-btn:hover {
-  background: var(--color-accent-light);
   color: var(--color-text);
+  letter-spacing: -0.3px;
 }
 
 /* === Hero === */
 .hero-section {
-  padding: 48px 0 32px;
+  padding: 40px 0 28px;
   text-align: center;
-}
-
-.hero-section h1 {
-  font-family: var(--font-heading);
-  font-size: 42px;
-  font-weight: 700;
-  color: var(--color-text);
-  letter-spacing: -1px;
-  margin-bottom: 8px;
 }
 
 .hero-section .subtitle {
   color: var(--color-text-secondary);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .hero-section .badge {
   display: inline-block;
   background: var(--color-accent-bg);
   color: var(--color-accent);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  padding: 4px 12px;
+  padding: 4px 14px;
   border-radius: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   border: 1px solid rgba(217,119,6,0.2);
 }
 
 /* === Date groups === */
 .date-group {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .date-header {
   font-family: var(--font-heading);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--color-text-secondary);
   text-transform: uppercase;
@@ -161,11 +119,11 @@ body {
   display: inline-block;
 }
 
-/* === Article cards === */
+/* === Article cards (index) === */
 .articles-grid {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .article-card {
@@ -188,12 +146,13 @@ body {
   color: inherit;
   display: flex;
   gap: 16px;
-  padding: 16px;
+  padding: 14px;
+  align-items: flex-start;
 }
 
 .article-card .card-image {
-  width: 120px;
-  height: 80px;
+  width: 140px;
+  height: 95px;
   border-radius: 8px;
   object-fit: cover;
   flex-shrink: 0;
@@ -206,7 +165,8 @@ body {
 
 .article-card h3 {
   font-family: var(--font-heading);
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 1.4;
   margin: 4px 0 6px;
   color: var(--color-text);
@@ -214,7 +174,7 @@ body {
 
 .article-card .description {
   color: var(--color-text-secondary);
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   margin-bottom: 8px;
   display: -webkit-box;
@@ -255,7 +215,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .tag {
@@ -276,16 +236,7 @@ body {
 
 /* === Full article === */
 .article-full {
-  padding: 20px 0 40px;
-}
-
-.article-full .hero {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: var(--radius);
-  margin-bottom: 24px;
-  display: block;
+  padding: 24px 0 40px;
 }
 
 .article-full header {
@@ -306,7 +257,8 @@ body {
 
 .article-full h1 {
   font-family: var(--font-heading);
-  font-size: 32px;
+  font-size: 30px;
+  font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.5px;
   margin-bottom: 12px;
@@ -320,36 +272,65 @@ body {
   align-items: center;
 }
 
-.article-meta .separator {
-  opacity: 0.3;
+/* === Article hero image — float right on desktop === */
+.article-full .hero-wrap {
+  float: right;
+  width: 340px;
+  margin: 0 0 20px 28px;
 }
 
-.article-meta .author {
-  font-weight: 600;
-  color: var(--color-text);
+.article-full .hero-wrap img {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.article-full .hero-wrap .image-caption {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  text-align: center;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* Fallback for old <img class="hero"> without wrapper */
+.article-full img.hero {
+  float: right;
+  width: 340px;
+  margin: 0 0 20px 28px;
+  border-radius: var(--radius);
+  display: block;
 }
 
 /* === Article body === */
 .article-body {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.85;
 }
 
+.article-body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .article-body p {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .article-body h2 {
   font-family: var(--font-heading);
-  font-size: 24px;
-  margin: 36px 0 14px;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 32px 0 12px;
   letter-spacing: -0.3px;
+  clear: both;
 }
 
 .article-body h3 {
-  font-size: 19px;
-  margin: 24px 0 10px;
+  font-size: 18px;
   font-weight: 600;
+  margin: 24px 0 10px;
 }
 
 .article-body a {
@@ -368,10 +349,11 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow-sm);
+  clear: both;
 }
 
 .article-body th,
@@ -382,10 +364,10 @@ body {
 }
 
 .article-body th {
-  background: var(--color-header-bg);
+  background: var(--color-text);
   color: white;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -402,6 +384,7 @@ body {
   border-radius: 0 8px 8px 0;
   color: var(--color-text);
   font-style: italic;
+  clear: both;
 }
 
 .article-body strong {
@@ -424,10 +407,11 @@ body {
   background: #f9fafb;
   border-radius: var(--radius);
   border: 1px solid var(--color-border);
+  clear: both;
 }
 
 .sources h3 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -444,7 +428,7 @@ body {
 }
 
 .sources li::before {
-  content: "→";
+  content: "\2192";
   position: absolute;
   left: 0;
   color: var(--color-accent);
@@ -460,31 +444,6 @@ body {
   text-decoration: underline;
 }
 
-/* === CTA === */
-.article-cta {
-  margin-top: 32px;
-  text-align: center;
-}
-
-.article-cta a {
-  display: inline-block;
-  background: var(--color-accent);
-  color: white;
-  padding: 12px 28px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 15px;
-  text-decoration: none;
-  transition: all 0.2s;
-  box-shadow: var(--shadow-md);
-}
-
-.article-cta a:hover {
-  background: #b45309;
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-lg);
-}
-
 /* === Navigation === */
 .article-nav {
   display: flex;
@@ -494,6 +453,7 @@ body {
   border-top: 1px solid var(--color-border);
   font-size: 14px;
   gap: 16px;
+  clear: both;
 }
 
 .article-nav a {
@@ -507,39 +467,95 @@ body {
   color: var(--color-link-hover);
 }
 
-/* === Footer === */
+/* === Footer — dark, with TG === */
 .site-footer {
   background: var(--color-footer-bg);
-  border-top: 1px solid var(--color-border);
-  padding: 32px 0;
+  padding: 40px 0;
   margin-top: 48px;
   text-align: center;
   font-size: 14px;
-  color: var(--color-text-secondary);
+  color: var(--color-footer-text);
 }
 
 .site-footer a {
-  color: var(--color-link);
+  color: var(--color-accent-light);
   text-decoration: none;
   font-weight: 500;
 }
 
-.site-footer .footer-brand {
+.site-footer a:hover {
+  color: var(--color-accent);
+}
+
+.footer-brand {
   font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 700;
-  color: var(--color-text);
-  margin-bottom: 4px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.footer-desc {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.footer-tg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  padding: 10px 24px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.2s;
+  margin-bottom: 16px;
+}
+
+.footer-tg:hover {
+  background: rgba(255,255,255,0.18);
+  color: #ffffff;
+}
+
+.footer-links {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.5);
+}
+
+.footer-copyright {
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
 }
 
 /* === Responsive === */
 @media (max-width: 640px) {
-  body { font-size: 16px; }
-  .hero-section h1 { font-size: 32px; }
-  .article-full h1 { font-size: 26px; }
-  .article-full .hero { max-height: 250px; }
+  body { font-size: 15px; }
+  .article-full h1 { font-size: 24px; }
+
+  /* Image goes full width above text on mobile */
+  .article-full .hero-wrap {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .article-full img.hero {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
   .article-meta { flex-wrap: wrap; }
   .article-card a { flex-direction: column; }
   .article-card .card-image { width: 100%; height: 160px; }
-  .site-nav .tg-btn { padding: 5px 10px; font-size: 13px; }
+
+  .logo-text { font-size: 18px; }
 }

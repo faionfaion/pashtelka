@@ -10,15 +10,6 @@ const ArticleTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <article className="article-full" data-iv="true">
-        {fm.image && (
-          <img
-            className="hero"
-            src={fm.image}
-            alt={fm.title}
-            loading="eager"
-          />
-        )}
-
         <header>
           <div className="article-top">
             <span className={`type-badge type-${fm.type}`}>{fm.type}</span>
@@ -38,10 +29,14 @@ const ArticleTemplate = ({ data, pageContext }) => {
           </div>
         </header>
 
-        <div
-          className="article-body"
-          dangerouslySetInnerHTML={{ __html: article.html }}
-        />
+        <div className="article-body">
+          {fm.image && (
+            <div className="hero-wrap">
+              <img src={fm.image} alt={fm.title} loading="eager" />
+            </div>
+          )}
+          <div dangerouslySetInnerHTML={{ __html: article.html }} />
+        </div>
 
         {fm.tags && (
           <div className="article-tags">
@@ -62,7 +57,7 @@ const ArticleTemplate = ({ data, pageContext }) => {
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     {fm.source_names && fm.source_names[i]
                       ? fm.source_names[i]
-                      : new URL(url).hostname}
+                      : (() => { try { return new URL(url).hostname; } catch { return url; } })()}
                   </a>
                 </li>
               ))}
@@ -70,21 +65,15 @@ const ArticleTemplate = ({ data, pageContext }) => {
           </footer>
         )}
 
-        <div className="article-cta">
-          <a href="https://t.me/pashtelka_news" target="_blank" rel="noopener noreferrer">
-            Підписатися на Пастелку в Telegram →
-          </a>
-        </div>
-
         <nav className="article-nav">
           {prev && (
             <Link to={`/${prev.slug}/`} className="nav-prev">
-              ← {prev.title}
+              &larr; {prev.title}
             </Link>
           )}
           {next && (
             <Link to={`/${next.slug}/`} className="nav-next">
-              {next.title} →
+              {next.title} &rarr;
             </Link>
           )}
         </nav>
@@ -125,20 +114,19 @@ export const Head = ({ data }) => {
     : null;
   return (
     <>
-      <title>{fm.title} — Паштелька</title>
+      <title>{fm.title} — Паштелька News</title>
       <meta name="description" content={fm.description || ""} />
       <meta property="og:title" content={fm.title} />
       <meta property="og:description" content={fm.description || ""} />
       <meta property="og:type" content="article" />
       <meta property="og:url" content={`https://pastelka.news/${fm.slug}/`} />
       {ogImage && <meta property="og:image" content={ogImage} />}
-      {ogImage && <meta property="og:image:width" content="1536" />}
-      {ogImage && <meta property="og:image:height" content="1024" />}
+      {ogImage && <meta property="og:image:width" content="1200" />}
+      {ogImage && <meta property="og:image:height" content="800" />}
       {ogImage && <meta name="twitter:card" content="summary_large_image" />}
       {ogImage && <meta name="twitter:image" content={ogImage} />}
       <link rel="canonical" href={`https://pastelka.news/${fm.slug}/`} />
-      <meta property="og:site_name" content="Паштелька" />
-      <meta property="al:android:app_name" content="Medium" />
+      <meta property="og:site_name" content="Паштелька News" />
       <meta property="article:author" content="Паштелька News" />
       <meta property="article:published_time" content={`${fm.date}T00:00:00Z`} />
       {fm.tags && fm.tags.map((tag) => (
