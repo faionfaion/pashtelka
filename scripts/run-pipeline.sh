@@ -39,6 +39,9 @@ export PATH="/usr/local/bin:/usr/bin:$PATH"
 export HOME="${HOME:-/home/nero}"
 [ -f "$HOME/workspace/.env" ] && source "$HOME/workspace/.env"
 
+# Pull latest changes (admin edits, prompt updates)
+git pull --ff-only origin master >> "$LOG_DIR/cron.log" 2>&1 || true
+
 echo "$(date '+%Y-%m-%d %H:%M:%S') Pipeline $MODE started" >> "$LOG_DIR/cron.log"
 
 python3 -m pipeline "$MODE" -v >> "$LOG_DIR/cron.log" 2>&1
