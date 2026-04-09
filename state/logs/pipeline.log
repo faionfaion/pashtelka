@@ -980,3 +980,21 @@ shutil.SameFileError: PosixPath('/home/nero/workspace/projects/pashtelka-faion-n
 2026-04-09 06:38:26 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/zhovti-poperedzhennia-pivden-30-gradusiv-grozy-9-kvitnia-2026.png (3059 KB)
 2026-04-09 06:38:26 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/zhovti-poperedzhennia-pivden-30-gradusiv-grozy-9-kvitnia-2026.md
 2026-04-09 06:38:26 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/zhovti-poperedzhennia-pivden-30-gradusiv-grozy-9-kvitnia-2026.png
+2026-04-09 06:38:27 [pipeline.stages.s7_deploy] INFO: Building Gatsby site...
+2026-04-09 06:38:39 [pipeline.stages.s7_deploy] INFO: Deploying to Cloudflare Pages...
+2026-04-09 06:38:52 [pipeline.stages.s7_deploy] INFO: Site deployed to Cloudflare Pages
+2026-04-09 06:38:52 [pipeline] INFO: Stage 7_deploy complete
+2026-04-09 06:38:52 [pipeline] INFO: === Stage 8_verify ===
+2026-04-09 06:38:52 [pipeline.stages.s8_verify] INFO: Site verified: https://pashtelka.faion.net/zhovti-poperedzhennia-pivden-30-gradusiv-grozy-9-kvitnia-2026/ (200 OK, title found)
+2026-04-09 06:38:52 [pipeline] INFO: Stage 8_verify complete
+2026-04-09 06:38:52 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-09 06:38:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 06:38:52 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4086
+2026-04-09 06:38:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 06:38:53 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-09 06:38:53 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=19 (silent=True)
+2026-04-09 06:38:53 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-09 06:38:53 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_063853.json
+2026-04-09 06:38:53 [pipeline] INFO: === Pipeline complete ===
+2026-04-09 06:38:53 [pipeline] INFO: Slug: zhovti-poperedzhennia-pivden-30-gradusiv-grozy-9-kvitnia-2026 | Type: weather | Tags: ['Погода', 'IPMA', 'Попередження', 'Грози', 'Алгарве', 'Алентежу']
+2026-04-09 06:38:53 [pipeline] INFO: TG msg_id=19
