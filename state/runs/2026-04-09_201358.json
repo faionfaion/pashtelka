@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-04-09_201358",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "funeral-subsidy-children-disability-increase-1611",
+  "author": "Pastelka News",
+  "duration_s": 365.9,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "0_editorial_plan",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.8,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 158.0,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 51.0,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 121.8,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "ok",
+      "duration_s": 34.3,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

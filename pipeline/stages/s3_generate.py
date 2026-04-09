@@ -17,7 +17,7 @@ GENERATION_SCHEMA = {
     "properties": {
         "title": {"type": "string", "description": "Article title in Ukrainian"},
         "slug": {"type": "string", "description": "URL slug (latin, lowercase, hyphens)"},
-        "article": {"type": "string", "description": "Full article text in Ukrainian (markdown)"},
+        "article": {"type": "string", "description": "Article BODY in Ukrainian markdown. NO title, NO metadata, NO 'Title:' prefix — just paragraphs starting with the hook sentence."},
         "description": {"type": "string", "description": "Meta description in Ukrainian (150-160 chars)"},
         "tags": {"type": "array", "items": {"type": "string"}, "description": "Topic tags in Ukrainian"},
         "hashtags": {"type": "string", "description": "Hashtags for TG post (city + topic)"},
@@ -117,6 +117,10 @@ Avoid these slugs (already used): {', '.join(ctx.posted_slugs[-20:])}
 
 You are writing for pashtelka.faion.net — a news outlet for Ukrainians in Portugal.
 Target audience: Ukrainian residents in Portugal (Lisbon, Porto, Faro, Algarve).
+
+CRITICAL: The "article" field must contain ONLY the markdown body text.
+Do NOT include "Title:", "Type:", "Tags:" or any metadata — those go in separate JSON fields.
+Start the article directly with the first paragraph (the hook).
 """
 
     result = structured_query(
