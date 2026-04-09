@@ -1320,3 +1320,171 @@ shutil.SameFileError: PosixPath('/home/nero/workspace/projects/pashtelka-faion-n
 2026-04-09 07:35:11 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026.png (3005 KB)
 2026-04-09 07:35:11 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026.md
 2026-04-09 07:35:11 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026.png
+2026-04-09 07:35:12 [pipeline.stages.s7_deploy] INFO: Building Gatsby site...
+2026-04-09 07:35:25 [pipeline.stages.s7_deploy] INFO: Deploying to Cloudflare Pages...
+2026-04-09 07:35:40 [pipeline.stages.s7_deploy] INFO: Site deployed to Cloudflare Pages
+2026-04-09 07:35:40 [pipeline] INFO: Stage 7_deploy complete
+2026-04-09 07:35:40 [pipeline] INFO: === Stage 8_verify ===
+2026-04-09 07:35:40 [pipeline.stages.s8_verify] INFO: Site verified: https://pashtelka.faion.net/zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026/ (200 OK, title found)
+2026-04-09 07:35:40 [pipeline] INFO: Stage 8_verify complete
+2026-04-09 07:35:40 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-09 07:35:40 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 07:35:40 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4362
+2026-04-09 07:35:40 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 07:35:40 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-09 07:35:40 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=25 (silent=True)
+2026-04-09 07:35:40 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-09 07:35:40 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_073540.json
+2026-04-09 07:35:40 [pipeline] INFO: === Pipeline complete ===
+2026-04-09 07:35:40 [pipeline] INFO: Slug: zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026 | Type: news | Tags: ['Громадянство', 'Натуралізація', 'Імміграція', 'Закон', 'Парламент', 'Португалія', 'Українці в Португалії']
+2026-04-09 07:35:40 [pipeline] INFO: TG msg_id=25
+2026-04-09 08:00:01 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 08:00:01 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 08:00:01 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 08:00:01 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 08:00:01 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 08:00:01 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 08:00:02 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 08:00:02 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 08:00:02 [pipeline.stages.s1_collect] INFO: Slot: 15:00 (news) | RSS items: 64 | Existing articles: 22
+2026-04-09 08:00:02 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 08:00:02 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 08:00:02 [pipeline] ERROR: Stage 2_research failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 63, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 08:00:02 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_080002.json
+2026-04-09 08:00:02 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 154, in cli
+    ctx = run_pipeline(dry_run=args.dry_run, start_stage=args.stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 63, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 09:00:01 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 09:00:01 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 09:00:01 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 09:00:01 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 09:00:01 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 09:00:02 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 09:00:02 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 09:00:02 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 09:00:02 [pipeline.stages.s1_collect] INFO: Slot: 15:00 (news) | RSS items: 62 | Existing articles: 22
+2026-04-09 09:00:02 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 09:00:02 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 09:00:02 [pipeline] ERROR: Stage 2_research failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 63, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 09:00:02 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_090002.json
+2026-04-09 09:00:02 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 154, in cli
+    ctx = run_pipeline(dry_run=args.dry_run, start_stage=args.stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 63, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 09:22:36 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 09:22:36 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 09:22:36 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 09:22:36 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 09:22:36 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 09:22:36 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 09:22:36 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 09:22:36 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 09:22:36 [pipeline.stages.s1_collect] INFO: Slot: 15:00 (news) | RSS items: 63 | Existing articles: 22
+2026-04-09 09:22:36 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 09:22:36 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 09:27:02 [pipeline.stages.s2_research] INFO: Research complete: 6300 chars
+2026-04-09 09:27:02 [pipeline] INFO: Stage 2_research complete
+2026-04-09 09:27:02 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 09:27:40 [pipeline.stages.s3_generate] INFO: Generated: 'Programa Integrar para o Turismo: безкоштовне навчання та стажування в туризмі для іммігрантів — дедлайн 2 травня' (slug=programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026, 335 words, 3 sources)
+2026-04-09 09:27:40 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 09:27:40 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 09:28:27 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-09 09:28:27 [pipeline.stages.s4_review] INFO: Feedback: Якісна, добре структурована стаття з чіткими джерелами та високою практичною цінністю. Кілька дрібних зауважень для фіналізації:
+
+1. ХЕШТЕГИ: Відсутні. Додати: #туризм #робота #стажування #AIMA #Тимча
+2026-04-09 09:29:05 [pipeline.stages.s5_revise] INFO: Revised article: 360 words
+2026-04-09 09:29:05 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 09:29:35 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-09 09:29:35 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття. Структура чітка, джерела підтверджені (AIMA, Público, Turismo de Portugal), тон Оксани витриманий — особисті вставки («Коли я перевіряла», «раджу не відкладати») додають теплоти. Португ
+2026-04-09 09:29:35 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 09:29:35 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 09:29:35 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-09 09:29:56 [pipeline.stages.s6_generate_tg] INFO: TG post: 689 chars
+2026-04-09 09:29:56 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-09 09:29:56 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-09 09:29:56 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-09 09:31:05 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-09 09:31:06 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026.png (3170 KB)
+2026-04-09 09:31:06 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026.md
+2026-04-09 09:31:06 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026.png

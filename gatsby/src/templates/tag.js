@@ -47,7 +47,7 @@ export default TagTemplate;
 
 export const Head = ({ pageContext }) => (
   <>
-    <title>#{pageContext.tag} — Пастелка</title>
+    <title>#{pageContext.tag} — Паштелька</title>
     <html lang="uk" />
   </>
 );

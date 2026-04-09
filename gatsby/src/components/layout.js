@@ -8,7 +8,7 @@ const Layout = ({ children }) => (
       <div className="container">
         <Link to="/" className="site-logo">
           <span className="logo-icon">🇵🇹</span>
-          <span className="logo-text">Пастелка</span>
+          <span className="logo-text">Паштелька</span>
         </Link>
         <nav className="site-nav">
           <Link to="/">Головна</Link>
@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
     <main className="container">{children}</main>
     <footer className="site-footer">
       <div className="container">
-        <p className="footer-brand">Пастелка</p>
+        <p className="footer-brand">Паштелька</p>
         <p>Новини Португалії для українців. Автор: Оксана Литвин.</p>
         <p style={{ marginTop: 8 }}>
           <a href="https://t.me/pashtelka_news">@pashtelka_news</a>

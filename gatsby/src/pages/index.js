@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <div className="hero-section">
         <span className="badge">Новини Португалії українською</span>
-        <h1>Пастелка</h1>
+        <h1>Паштелька</h1>
         <p className="subtitle">
           Щоденні новини, аналітика та корисна інформація для українців у Португалії
         </p>
@@ -97,13 +97,13 @@ export default IndexPage;
 
 export const Head = () => (
   <>
-    <title>Пастелка — Новини Португалії українською</title>
+    <title>Паштелька — Новини Португалії українською</title>
     <meta name="description" content="Щоденні новини Португалії для українців. Лісабон, Порту, Фару, Алгарве." />
-    <meta property="og:title" content="Пастелка — Новини Португалії українською" />
+    <meta property="og:title" content="Паштелька — Новини Португалії українською" />
     <meta property="og:description" content="Щоденні новини Португалії для українців. Аналітика, дайджести, корисна інформація." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pashtelka.faion.net" />
-    <meta property="og:site_name" content="Пастелка" />
+    <meta property="og:site_name" content="Паштелька" />
     <html lang="uk" />
   </>
 );

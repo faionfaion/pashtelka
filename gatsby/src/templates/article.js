@@ -127,7 +127,7 @@ export const Head = ({ data }) => {
     : null;
   return (
     <>
-      <title>{fm.title} — Пастелка</title>
+      <title>{fm.title} — Паштелька</title>
       <meta name="description" content={fm.description || ""} />
       <meta property="og:title" content={fm.title} />
       <meta property="og:description" content={fm.description || ""} />
@@ -138,9 +138,10 @@ export const Head = ({ data }) => {
       {ogImage && <meta property="og:image:height" content="1024" />}
       {ogImage && <meta name="twitter:card" content="summary_large_image" />}
       {ogImage && <meta name="twitter:image" content={ogImage} />}
-      <meta property="og:site_name" content="Пастелка" />
+      <meta property="og:site_name" content="Паштелька" />
+      <meta property="al:android:app_name" content="Medium" />
       <meta property="article:author" content={fm.author} />
-      <meta property="article:published_time" content={fm.date} />
+      <meta property="article:published_time" content={`${fm.date}T00:00:00Z`} />
       {fm.tags && fm.tags.map((tag) => (
         <meta key={tag} property="article:tag" content={tag} />
       ))}
