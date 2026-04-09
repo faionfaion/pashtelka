@@ -16,6 +16,7 @@ from pipeline.config import MAX_REVIEW_CYCLES
 from pipeline.context import PipelineContext
 from pipeline.run_report import RunReport, time_stage
 from pipeline.stages import (
+    s0_editorial_plan,
     s1_collect,
     s2_research,
     s3_generate,
@@ -56,10 +57,24 @@ GENERATE_STAGES = [
 
 
 def run_generate(dry_run: bool = False, start_stage: int = 1) -> PipelineContext:
-    """Generate mode: collect, research, write, deploy to site. No TG."""
+    """Generate mode: editorial plan -> collect -> research -> write -> deploy."""
     ctx = PipelineContext()
     report = RunReport(dry_run=dry_run, resume_from_stage=start_stage)
     report.begin()
+
+    # Step 0: Get or create editorial plan, assign next topic
+    try:
+        with time_stage(report, "0_editorial_plan"):
+            plan = s0_editorial_plan.run()
+            topic = s0_editorial_plan.get_next_topic(plan, set(ctx.posted_slugs))
+            if topic:
+                ctx.editorial_plan = topic
+                ctx.slot_type = topic.get("type", "news")
+                logger.info("Editorial topic: %s (%s)", topic["topic"], topic["type"])
+            else:
+                logger.info("All editorial topics covered for today")
+    except Exception:
+        logger.warning("Editorial plan failed, falling back to RSS-driven selection", exc_info=True)
 
     try:
         for i, (name, stage_fn) in enumerate(GENERATE_STAGES, 1):
@@ -141,7 +156,7 @@ def cli() -> None:
     """CLI entry point."""
     parser = argparse.ArgumentParser(description="Pashtelka publishing pipeline")
     parser.add_argument("mode", nargs="?", default="generate",
-                        choices=["generate", "publish", "digest"],
+                        choices=["generate", "publish", "digest", "plan"],
                         help="Pipeline mode (default: generate)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Run without deploy/publish")
@@ -168,7 +183,12 @@ def cli() -> None:
     logging.getLogger().addHandler(fh)
 
     try:
-        if args.mode == "generate":
+        if args.mode == "plan":
+            plan = s0_editorial_plan.run()
+            for i, a in enumerate(plan.get("articles", []), 1):
+                logger.info("  %d. [%s] P%d: %s", i, a["type"], a["priority"], a["topic"])
+            sys.exit(0)
+        elif args.mode == "generate":
             ctx = run_generate(dry_run=args.dry_run, start_stage=args.stage)
             sys.exit(0)
         elif args.mode == "publish":

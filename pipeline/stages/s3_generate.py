@@ -3,11 +3,9 @@
 from __future__ import annotations
 
 import logging
-from pathlib import Path
 
 from pipeline.config import (
-    AUTHOR_NAME, CONTENT_TYPES, MODEL_GENERATE, PROMPTS_DIR,
-    SITE_BASE_URL,
+    CONTENT_DIR, CONTENT_TYPES, MODEL_GENERATE, SITE_BASE_URL,
 )
 from pipeline.context import PipelineContext
 from pipeline.sdk import structured_query
@@ -61,10 +59,25 @@ No author name or sign-off — articles are by the editorial team.
 def run(ctx: PipelineContext) -> None:
     type_cfg = CONTENT_TYPES.get(ctx.slot_type, CONTENT_TYPES["news"])
 
+    # Editorial plan context
+    editorial_section = ""
+    if ctx.editorial_plan:
+        ep = ctx.editorial_plan
+        editorial_section = f"""
+<editorial_assignment>
+Topic: {ep.get('topic', '')}
+Angle: {ep.get('angle', '')}
+Type: {ep.get('type', ctx.slot_type)}
+</editorial_assignment>
+"""
+
     prompt = f"""\
 <task>
 Write a {ctx.slot_type} article in Ukrainian based on the research below.
+{f"Follow the editorial assignment closely." if editorial_section else ""}
 </task>
+
+{editorial_section}
 
 <research>
 {ctx.research_text}
@@ -83,7 +96,16 @@ Write a {ctx.slot_type} article in Ukrainian based on the research below.
   - Include relevant Portuguese visual elements (tiles, sardines, tram, etc.)
   - NO text in the image
   - NO real people or politicians
+- If this topic CONTINUES or UPDATES a story we already covered, reference the previous article:
+  - Mention it in the text: "Як ми писали раніше (посилання)" or "Нагадаємо, що..."
+  - Use the URL format: {SITE_BASE_URL}/{{previous-slug}}/
+  - This builds narrative continuity for readers
 </requirements>
+
+<existing_articles>
+Our published articles (use for cross-references if topic overlaps):
+{_format_existing_articles(ctx.posted_slugs[-30:])}
+</existing_articles>
 
 <existing_slugs>
 Avoid these slugs (already used): {', '.join(ctx.posted_slugs[-20:])}
@@ -121,3 +143,21 @@ Target audience: Ukrainian residents in Portugal (Lisbon, Porto, Faro, Algarve).
         len(ctx.article_text.split()),
         len(ctx.source_urls),
     )
+
+
+def _format_existing_articles(slugs: list[str]) -> str:
+    """Format existing articles with titles for cross-reference context."""
+    lines = []
+    for slug in slugs:
+        md = CONTENT_DIR / f"{slug}.md"
+        if not md.exists():
+            continue
+        text = md.read_text(encoding="utf-8")
+        title = ""
+        for line in text.split("\n"):
+            if line.startswith("title:"):
+                title = line.split('"')[1] if '"' in line else line.split(": ", 1)[1]
+                break
+        if title:
+            lines.append(f"- {slug}: {title} ({SITE_BASE_URL}/{slug}/)")
+    return "\n".join(lines) if lines else "(no existing articles)"

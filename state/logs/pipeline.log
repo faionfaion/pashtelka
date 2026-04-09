@@ -2217,3 +2217,293 @@ FileNotFoundError: [Errno 2] No such file or directory: 'claude'
 2026-04-09 17:18:18 [pipeline] INFO: === Stage 7_deploy ===
 2026-04-09 17:18:18 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 2026-04-09 17:18:18 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/gnr-phone-driving-fines-4100-first-quarter.md
+2026-04-09 17:18:20 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-09 17:18:53 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-04-09 17:18:53 [pipeline] INFO: Stage 7_deploy complete
+2026-04-09 17:18:53 [pipeline] INFO: === Stage 8_verify ===
+2026-04-09 17:18:53 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/gnr-phone-driving-fines-4100-first-quarter/ (200 OK, title found)
+2026-04-09 17:18:53 [pipeline] INFO: Stage 8_verify complete
+2026-04-09 17:18:53 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_171853.json
+2026-04-09 17:18:53 [pipeline] INFO: === Generate complete: gnr-phone-driving-fines-4100-first-quarter ===
+2026-04-09 17:20:39 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 17:20:39 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 17:20:39 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 17:20:39 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 17:20:39 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 17:20:39 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 17:20:40 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 17:22:50 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 10 articles for 2026-04-09
+2026-04-09 17:22:50 [pipeline] INFO:   1. [news] P1: Реформа праці під загрозою зриву: PS відмовився голосувати, Chega висунула 5 умов
+2026-04-09 17:22:50 [pipeline] INFO:   2. [news] P1: Уряд розширив застосування генериків: як це вплине на ціни ліків
+2026-04-09 17:22:50 [pipeline] INFO:   3. [material] P1: Ваші права під час страйку в Португалії: транспорт, робота, школа
+2026-04-09 17:22:50 [pipeline] INFO:   4. [news] P2: Субсидія на поховання дітей та людей з інвалідністю зросла до €1 611
+2026-04-09 17:22:50 [pipeline] INFO:   5. [news] P2: Газові резерви ЄС — на мінімумі за три роки: чого чекати з рахунками за енергію
+2026-04-09 17:22:50 [pipeline] INFO:   6. [news] P2: Страйк прокурорів: PGR відхилила зміни правил конкурсу — чого чекати від судової системи
+2026-04-09 17:22:50 [pipeline] INFO:   7. [utility] P2: Вихідні у Португалії 10-13 квітня: фестивалі, ринки, безкоштовні події
+2026-04-09 17:22:50 [pipeline] INFO:   8. [guide] P2: Як перейти на генерики і зекономити до 50% на ліках: покрокова інструкція
+2026-04-09 17:22:50 [pipeline] INFO:   9. [news] P3: Університети Португалії масово впроваджують ШІ — але готовність відстає
+2026-04-09 17:22:50 [pipeline] INFO:   10. [news] P3: Конституцію Португалії вперше переклали мірандською мовою: що це говорить про права мовних меншин
+2026-04-09 17:22:57 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-04-09 (10 articles)
+2026-04-09 17:22:57 [pipeline] INFO: Editorial topic: Реформа праці під загрозою зриву: PS відмовився голосувати, Chega висунула 5 умов (news)
+2026-04-09 17:22:57 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 17:22:57 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 17:22:57 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 17:22:57 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 17:22:57 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 17:22:57 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 17:22:58 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 17:22:58 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 17:22:58 [pipeline.stages.s1_collect] INFO: Slot: 07:00 (news) | RSS items: 62 | Existing articles: 27
+2026-04-09 17:22:58 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 17:22:58 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 17:26:08 [pipeline.stages.s2_research] INFO: Research complete: 8736 chars
+2026-04-09 17:26:08 [pipeline] INFO: Stage 2_research complete
+2026-04-09 17:26:08 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 17:26:53 [pipeline.stages.s3_generate] INFO: Generated: 'Реформа праці під загрозою зриву: PS відмовив, Chega торгується, UGT одноголосно сказала «ні»' (slug=labor-reform-crisis-ps-refuses-chega-conditions, 373 words, 8 sources)
+2026-04-09 17:26:53 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 17:26:53 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 17:27:52 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-09 17:27:52 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, джерелами та балансом, але потребує доопрацювання перед публікацією.
+
+**Що добре:**
+- Бездоганне покриття джерелами (8 джерел, усі проставлені)
+- Відмінний лід — три ключо
+2026-04-09 17:28:41 [pipeline.stages.s5_revise] INFO: Revised article: 446 words
+2026-04-09 17:28:41 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 17:29:32 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-09 17:29:32 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою та високою релевантністю для діаспори. Кілька зауважень:
+
+1. ДЖЕРЕЛА: Твердження «яку взагалі не допустили до переговорів» (про CGTP) подано як факт без прямого посил
+2026-04-09 17:29:32 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 17:29:32 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 17:29:32 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_172932.json
+2026-04-09 17:29:32 [pipeline] INFO: === Generate complete: labor-reform-crisis-ps-refuses-chega-conditions ===
+2026-04-09 17:30:26 [pipeline] INFO: === TG Publish mode ===
+2026-04-09 17:30:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 17:30:42 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 3891
+2026-04-09 17:30:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 17:30:42 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-09 17:30:42 [pipeline.stages.s10_pick_and_publish] INFO: TG published: yellow-warnings-south-30c-storms -> msg 121
+2026-04-09 17:30:42 [pipeline] INFO: Published to TG: yellow-warnings-south-30c-storms (msg 121)
+2026-04-09 17:30:46 [pipeline] INFO: === Digest mode ===
+2026-04-09 17:31:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 17:31:09 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 5690
+2026-04-09 17:31:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 17:31:09 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-09 17:31:09 [pipeline.stages.s11_digest] INFO: Digest published: msg 122 (13 articles)
+2026-04-09 17:31:09 [pipeline] INFO: Digest published (msg 122, 13 articles)
+2026-04-09 17:36:13 [pipeline] INFO: === Digest mode ===
+2026-04-09 17:36:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 17:36:30 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 5957
+2026-04-09 17:36:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 17:36:30 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-09 17:36:30 [pipeline.stages.s11_digest] INFO: Digest published: msg 123 (13 articles)
+2026-04-09 17:36:30 [pipeline] INFO: Digest published (msg 123, 13 articles)
+2026-04-09 18:00:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-04-09 (10 articles)
+2026-04-09 18:00:01 [pipeline] INFO: Editorial topic: Уряд розширив застосування генериків: як це вплине на ціни ліків (news)
+2026-04-09 18:00:01 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 18:00:01 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 18:00:01 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 18:00:01 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 18:00:02 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 18:00:02 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 18:00:02 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 18:00:02 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 18:00:02 [pipeline.stages.s1_collect] INFO: Slot: 07:00 (news) | RSS items: 60 | Existing articles: 27
+2026-04-09 18:00:02 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 18:00:02 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 18:00:02 [pipeline] ERROR: Stage 2_research failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 94, in run_generate
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 77, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 18:00:02 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_180002.json
+2026-04-09 18:00:02 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 192, in cli
+    ctx = run_generate(dry_run=args.dry_run, start_stage=args.stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 94, in run_generate
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 77, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 18:05:01 [pipeline] INFO: === TG Publish mode ===
+2026-04-09 18:05:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 195, in cli
+    result = run_publish()
+             ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 122, in run_publish
+    result = s10_pick_and_publish.run()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s10_pick_and_publish.py", line 81, in run
+    caption = _generate_caption(title, article_text, article_url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s10_pick_and_publish.py", line 195, in _generate_caption
+    result = structured_query(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 141, in structured_query
+    text = _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 19:00:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-04-09 (10 articles)
+2026-04-09 19:00:01 [pipeline] INFO: Editorial topic: Ваші права під час страйку в Португалії: транспорт, робота, школа (material)
+2026-04-09 19:00:01 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 19:00:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 19:00:02 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 19:00:02 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 19:00:02 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 19:00:02 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 19:00:02 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 19:00:02 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 19:00:02 [pipeline.stages.s1_collect] INFO: Slot: 07:00 (news) | RSS items: 63 | Existing articles: 27
+2026-04-09 19:00:02 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 19:00:02 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 19:00:02 [pipeline] ERROR: Stage 2_research failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 94, in run_generate
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 77, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 19:00:02 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_190002.json
+2026-04-09 19:00:02 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 192, in cli
+    ctx = run_generate(dry_run=args.dry_run, start_stage=args.stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 94, in run_generate
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 77, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 20:05:01 [pipeline] INFO: === Digest mode ===
+2026-04-09 20:05:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 198, in cli
+    result = run_digest()
+             ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 133, in run_digest
+    result = s11_digest.run()
+             ^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s11_digest.py", line 65, in run
+    caption = _generate_digest(articles, today_str)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s11_digest.py", line 160, in _generate_digest
+    result = structured_query(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 141, in structured_query
+    text = _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 20:07:52 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-04-09 (10 articles)
+2026-04-09 20:07:52 [pipeline] INFO: Editorial topic: Субсидія на поховання дітей та людей з інвалідністю зросла до €1 611 (news)
+2026-04-09 20:07:52 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 20:07:52 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 20:07:52 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 20:07:52 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 20:07:52 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 20:07:52 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 20:07:53 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 20:07:53 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 20:07:53 [pipeline.stages.s1_collect] INFO: Slot: 07:00 (news) | RSS items: 60 | Existing articles: 27
+2026-04-09 20:07:53 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 20:07:53 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 20:10:31 [pipeline.stages.s2_research] INFO: Research complete: 8596 chars
+2026-04-09 20:10:31 [pipeline] INFO: Stage 2_research complete
+2026-04-09 20:10:31 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 20:11:22 [pipeline.stages.s3_generate] INFO: Generated: 'Субсидія на поховання дітей та людей з інвалідністю зросла у 6 разів — до €1 611' (slug=funeral-subsidy-children-disability-increase-1611, 371 words, 8 sources)
+2026-04-09 20:11:22 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 20:11:22 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 20:12:11 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-09 20:12:11 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття — структурована, добре засорсена, практично корисна для діаспори. Кілька зауважень:
+
+1. **Теги/хештеги відсутні.** Потрібно додати: #Португалія #субсидія #SegurançaSocial #похорон #соціа
+2026-04-09 20:12:36 [pipeline.stages.s5_revise] INFO: Revised article: 458 words
+2026-04-09 20:12:36 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 20:13:24 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-09 20:13:24 [pipeline.stages.s4_review] INFO: Feedback: Дуже якісний матеріал. Структура бездоганна: перевернута піраміда, практичний блок із документами та способами подачі, всі португальські терміни пояснені українською при першому згадуванні. Джерела рі
+2026-04-09 20:13:24 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 20:13:24 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 20:13:24 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-09 20:13:24 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+2026-04-09 20:13:24 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/funeral-subsidy-children-disability-increase-1611.md

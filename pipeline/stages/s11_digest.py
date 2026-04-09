@@ -182,7 +182,7 @@ Order by importance/interest, most impactful first.
         "",
         intro,
         "",
-        "\n".join(item_lines),
+        "\n\n".join(item_lines),
         "",
         outro,
         "",

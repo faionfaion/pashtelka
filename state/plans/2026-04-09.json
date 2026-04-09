@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "Реформа праці під загрозою зриву: PS відмовився голосувати, Chega висунула 5 умов",
+      "type": "news",
+      "angle": "8 квітня ми писали ЩО зміниться для працівників. Сьогодні — чи взагалі реформа відбудеться: PS офіційно відмовив у підтримці, Chega торгується. Що буде, якщо закон провалиться, і які наслідки для ринку праці",
+      "sources_hint": "RTP latest (PS avisa Governo), Publico (Chega disposto a ajudar com condições), CM (CIP lamenta encenação). Search: 'reforma laboral Trabalho XXI votação parlamento abril 2026'",
+      "priority": 1
+    },
+    {
+      "topic": "Уряд розширив застосування генериків: як це вплине на ціни ліків",
+      "type": "news",
+      "angle": "Рада міністрів затвердила диплом про ширше використання генериків. Що конкретно зміниться у рецептах, які ліки стануть дешевшими, скільки можна зекономити на місяць. Фокус на практичному впливі для іммігрантів без додаткових страховок",
+      "sources_hint": "CM (Governo aprova diploma alargar medicamentos genéricos), INFARMED portal, RTP. Search: 'medicamentos genéricos diploma governo poupança 2026'",
+      "priority": 1
+    },
+    {
+      "topic": "Ваші права під час страйку в Португалії: транспорт, робота, школа",
+      "type": "material",
+      "angle": "На тлі страйку метро (9 і 14 квітня) та страйку прокурорів — скомпільований гід: чи зобов'язаний роботодавець забезпечити альтернативний транспорт, чи можна запізнитися на роботу, що з дитсадками/школами, як працюють serviços mínimos. Практична інструкція на базі Código do Trabalho",
+      "sources_hint": "Código do Trabalho (art. 530-545 on strikes), ACT portal (workers rights during strikes), DECO Proteste guides. Search: 'direitos trabalhadores durante greve Portugal serviços mínimos'",
+      "priority": 1
+    },
+    {
+      "topic": "Субсидія на поховання дітей та людей з інвалідністю зросла до €1 611",
+      "type": "news",
+      "angle": "Уряд збільшив subsídio de funeral для неповнолітніх та осіб з інвалідністю. Хто має право, як подати заявку через Segurança Social, які документи потрібні. Корисно для сімей з дітьми та людей з обмеженими можливостями",
+      "sources_hint": "RTP (Governo aprovou aumento subsídio funeral menores 1611 euros), Diário da República, Segurança Social portal. Search: 'subsídio funeral menores incapacidade 1611 euros 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Газові резерви ЄС — на мінімумі за три роки: чого чекати з рахунками за енергію",
+      "type": "news",
+      "angle": "Запаси газу в ЄС найнижчі з 2023 року. Що це означає для тарифів на газ і електрику в Португалії восени-взимку 2026. Порівняння з минулою енергетичною кризою, поради як підготуватися",
+      "sources_hint": "RTP (reservas gás UE nível mais baixo três anos), Reuters, ERSE portal (energy tariffs Portugal). Search: 'reservas gás europa mínimo três anos impacto Portugal tarifas'",
+      "priority": 2
+    },
+    {
+      "topic": "Страйк прокурорів: PGR відхилила зміни правил конкурсу — чого чекати від судової системи",
+      "type": "news",
+      "angle": "PGR проголосувала проти зміни правил конкурсу прокурорів, що провокує новий страйк. Як це впливає на швидкість розгляду справ, зокрема імміграційних та трудових. Пояснення для тих, хто чекає рішення суду",
+      "sources_hint": "Publico (PGR votou contra alterar regras concurso procuradores nova greve), RTP, Sindicato dos Magistrados do Ministério Público. Search: 'greve procuradores PGR concurso 2026 impacto tribunais'",
+      "priority": 2
+    },
+    {
+      "topic": "Вихідні у Португалії 10-13 квітня: фестивалі, ринки, безкоштовні події",
+      "type": "utility",
+      "angle": "Четвер — час планувати вихідні. Підбірка подій у Лісабоні, Порту, Фару та Алгарве: ярмарки, концерти, вуличні ринки, безкоштовні музеї. Окремий блок для сімей з дітьми",
+      "sources_hint": "TimeOut Lisboa, TimeOut Porto, Agenda Cultural Lisboa, CM Faro eventos, Visit Algarve. Search: 'eventos fim de semana Lisboa Porto Faro 10 11 12 13 abril 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Як перейти на генерики і зекономити до 50% на ліках: покрокова інструкція",
+      "type": "guide",
+      "angle": "Практичний гід: що таке генерики, як попросити лікаря виписати генерик, як перевірити аналог на сайті INFARMED, скільки реально можна зекономити. Таблиця-порівняння цін на топ-10 ліків. Окремо — що робити, якщо аптека відмовляє",
+      "sources_hint": "INFARMED (Infomed database for generic equivalents), SNS24 portal, DECO Proteste (comparação medicamentos genéricos), Order of Pharmacists. Search: 'como pedir medicamento genérico farmácia Portugal comparticipação SNS'",
+      "priority": 2
+    },
+    {
+      "topic": "Університети Португалії масово впроваджують ШІ — але готовність відстає",
+      "type": "news",
+      "angle": "Звіт показує: більшість португальських вишів уже використовують ШІ, але інституційна спроможність відстає. Що це означає для українських студентів: нові курси, вимоги, можливості. Фокус на universidades в Лісабоні та Порту",
+      "sources_hint": "RTP (maioria universidades adotou IA capacidade institucional atrasada), DGES portal, university websites (ULisboa, UPorto, UAlgarve). Search: 'universidades Portugal inteligência artificial relatório 2026 ensino superior'",
+      "priority": 3
+    },
+    {
+      "topic": "Конституцію Португалії вперше переклали мірандською мовою: що це говорить про права мовних меншин",
+      "type": "news",
+      "angle": "Історичний переклад Конституції мірандською — другою офіційною мовою Португалії. Паралелі з українською: як Португалія захищає мовні меншини, який статус мають інші мови (зокрема мови іммігрантських громад). Цікава культурна історія",
+      "sources_hint": "RTP Culture (Constituição traduzida língua mirandesa), Wikipedia (Mirandese language), DRE (Lei 7/99 on Mirandese rights). Search: 'constituição portuguesa tradução mirandês língua minoritária direitos linguísticos'",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-09",
+  "created_at": "2026-04-09T17:20:39.443137+00:00"
+}

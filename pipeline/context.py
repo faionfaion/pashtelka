@@ -21,7 +21,7 @@ class PipelineContext:
     selected_topic: str = ""
     research_text: str = ""
 
-    # Editorial
+    # Editorial plan (assigned topic from s0_editorial_plan)
     editorial_plan: dict = field(default_factory=dict)
 
     # Article
