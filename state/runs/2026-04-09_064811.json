@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-04-09_064811",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "34-tysiachi-zayavok-vidnovlennia-zhytla-buri-seguro-kviten-2026",
+  "author": "Oksana Lytvyn",
+  "duration_s": 526.4,
+  "image_generated": true,
+  "msg_id": 20,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.8,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 204.9,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 46.5,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 161.8,
+      "error": null
+    },
+    {
+      "name": "6_generate_tg",
+      "status": "ok",
+      "duration_s": 22.2,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "ok",
+      "duration_s": 89.8,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    },
+    {
+      "name": "9_publish_tg",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    }
+  ]
+}
