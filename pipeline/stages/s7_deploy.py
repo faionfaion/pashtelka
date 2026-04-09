@@ -8,6 +8,7 @@ import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
+
 from pipeline.config import (
     AUTHOR_NAME, AUTHOR_NAME_EN, CONTENT_DIR, GATSBY_DIR, IMAGES_DIR,
     SITE_BASE_URL, STATE_DIR,
@@ -90,35 +91,27 @@ def run(ctx: PipelineContext) -> None:
     except Exception:
         logger.warning("Git commit failed, continuing", exc_info=True)
 
-    # 5. Deploy site to Cloudflare Pages via wrangler
+    # 5. Deploy to faion-net server via SSH
     try:
-        import os
-        env = os.environ.copy()
-        env["CLOUDFLARE_API_TOKEN"] = "cfut_GnhGHOEdw8QtfoSypAkgwmRQ5f2LtH6WZjcLfUaC74f10919"
-        env["CLOUDFLARE_ACCOUNT_ID"] = "d2894a6bccc5fa09c135663909c52afa"
+        # Push to GitHub first
+        root = CONTENT_DIR.parent
+        subprocess.run(["git", "push", "origin", "master"],
+                       cwd=str(root), capture_output=True, timeout=60)
 
-        # Build Gatsby
-        logger.info("Building Gatsby site...")
-        result = subprocess.run(
-            ["npx", "gatsby", "build"],
-            capture_output=True, text=True, timeout=300,
-            cwd=str(GATSBY_DIR),
-        )
-        if result.returncode != 0:
-            logger.error("Gatsby build failed: %s", result.stderr[:300])
+        # SSH deploy: pull + build + rsync on server
+        logger.info("Deploying to faion-net server...")
+        ssh_cmd = [
+            "ssh", "-i", str(Path.home() / ".ssh" / "id_ed25519"),
+            "-p", "22022", "-o", "StrictHostKeyChecking=no",
+            "faion@46.225.58.119",
+            "cd ~/pashtelka && git pull && cd gatsby && npx gatsby build && "
+            "sudo rsync -a --delete public/ /var/www/pashtelka.faion.net/",
+        ]
+        result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=300)
+        if result.returncode == 0:
+            logger.info("Site deployed to faion-net")
         else:
-            # Deploy to Cloudflare Pages
-            logger.info("Deploying to Cloudflare Pages...")
-            result = subprocess.run(
-                ["npx", "wrangler", "pages", "deploy", "public/",
-                 "--project-name=pashtelka", "--branch=main", "--commit-dirty=true"],
-                capture_output=True, text=True, timeout=120,
-                cwd=str(GATSBY_DIR), env=env,
-            )
-            if result.returncode == 0:
-                logger.info("Site deployed to Cloudflare Pages")
-            else:
-                logger.error("Wrangler deploy failed: %s", result.stderr[:300])
+            logger.error("Server deploy failed: %s", result.stderr[:300])
     except Exception:
         logger.error("Deploy failed", exc_info=True)
 

@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-04-09_141006",
+  "status": "failed",
+  "dry_run": false,
+  "slug": "volta-deposit-system-bottles-cans-launch",
+  "author": "Oksana Lytvyn",
+  "duration_s": 480.3,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": "9_publish_tg",
+  "error": "Site verification failed — refusing to publish to Telegram",
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.7,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 261.7,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 46.7,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 112.7,
+      "error": null
+    },
+    {
+      "name": "6_generate_tg",
+      "status": "ok",
+      "duration_s": 26.5,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "ok",
+      "duration_s": 32.0,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    },
+    {
+      "name": "9_publish_tg",
+      "status": "failed",
+      "duration_s": 0.0,
+      "error": "Site verification failed — refusing to publish to Telegram"
+    }
+  ]
+}
