@@ -121,7 +121,7 @@ export default ArticleTemplate;
 export const Head = ({ data }) => {
   const fm = data.markdownRemark.frontmatter;
   const ogImage = fm.image
-    ? `https://pashtelka.news${fm.image}`
+    ? `https://pastelka.news${fm.image}`
     : null;
   return (
     <>
@@ -130,13 +130,13 @@ export const Head = ({ data }) => {
       <meta property="og:title" content={fm.title} />
       <meta property="og:description" content={fm.description || ""} />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content={`https://pashtelka.news/${fm.slug}/`} />
+      <meta property="og:url" content={`https://pastelka.news/${fm.slug}/`} />
       {ogImage && <meta property="og:image" content={ogImage} />}
       {ogImage && <meta property="og:image:width" content="1536" />}
       {ogImage && <meta property="og:image:height" content="1024" />}
       {ogImage && <meta name="twitter:card" content="summary_large_image" />}
       {ogImage && <meta name="twitter:image" content={ogImage} />}
-      <link rel="canonical" href={`https://pashtelka.news/${fm.slug}/`} />
+      <link rel="canonical" href={`https://pastelka.news/${fm.slug}/`} />
       <meta property="og:site_name" content="Паштелька" />
       <meta property="al:android:app_name" content="Medium" />
       <meta property="article:author" content="Паштелька News" />

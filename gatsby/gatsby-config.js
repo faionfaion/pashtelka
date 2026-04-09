@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Паштелька — Новини Португалії українською",
     description: "Українськомовне медіа для українців у Португалії. Новини, аналітика, корисна інформація.",
-    siteUrl: "https://pashtelka.news",
+    siteUrl: "https://pastelka.news",
     author: "Оксана Литвин",
   },
   plugins: [

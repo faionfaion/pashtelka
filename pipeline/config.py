@@ -18,7 +18,7 @@ SEND_POST = SCRIPTS_DIR / "send_post.py"
 DEPLOY_SH = GATSBY_DIR / "deploy-gh.sh"
 
 # Site
-SITE_BASE_URL = "https://pashtelka.news"
+SITE_BASE_URL = "https://pastelka.news"
 
 # Single language — no translation pipeline needed
 LANG = "ua"

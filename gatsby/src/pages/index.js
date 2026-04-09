@@ -102,7 +102,7 @@ export const Head = () => (
     <meta property="og:title" content="Паштелька — Новини Португалії українською" />
     <meta property="og:description" content="Щоденні новини Португалії для українців. Аналітика, дайджести, корисна інформація." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pashtelka.news" />
+    <meta property="og:url" content="https://pastelka.news" />
     <meta property="og:site_name" content="Паштелька" />
     <html lang="uk" />
   </>
