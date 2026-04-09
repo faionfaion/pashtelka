@@ -17,6 +17,7 @@ app = Flask(__name__, static_folder="static")
 ROOT = Path(__file__).resolve().parent.parent
 PROMPTS_DIR = ROOT / "pipeline" / "prompts" / "templates"
 SCHEMAS_DIR = ROOT / "pipeline" / "schemas"
+EDITOR_NOTES = ROOT / "state" / "editor_notes.md"
 GIT_BRANCH = "master"
 
 # Basic auth
@@ -73,9 +74,13 @@ def _git_commit(filepath: str, message: str) -> dict:
 @app.route("/api/files")
 @_auth_required
 def api_files():
+    editor_notes_info = None
+    if EDITOR_NOTES.exists():
+        editor_notes_info = {"name": "editor_notes.md", "path": str(EDITOR_NOTES), "size": EDITOR_NOTES.stat().st_size}
     return jsonify({
         "prompts": _list_files(PROMPTS_DIR, ["*.xml.j2", "_partials/*.xml"]),
         "schemas": _list_files(SCHEMAS_DIR, ["*.json"]),
+        "editor_notes": editor_notes_info,
     })
 
 
@@ -390,6 +395,16 @@ const OVERVIEW_HTML = `
     <li><strong>Підпис</strong> — посилання на канал @pashtelka_news</li>
   </ul>
 
+  <h3>Побажання головного редактора</h3>
+  <p>В бічній панелі є файл <code>editor_notes.md</code> — нотатки головного редактора. Все що там написано <strong>пріоритизується</strong> при наступній генерації редакційного плану (Stage 0). Після використання в плані файл автоматично очищується.</p>
+  <p>Що можна писати:</p>
+  <ul>
+    <li>Конкретні теми для висвітлення</li>
+    <li>Посилання на португальські новини</li>
+    <li>Спеціальні інструкції: "більше про Порту", "уникати тему X"</li>
+    <li>Терміни або дедлайни: "терміново: зміна розкладу метро з понеділка"</li>
+  </ul>
+
   <h3>Файлова структура</h3>
   <table>
     <tr><th>Шлях</th><th>Для чого</th></tr>
@@ -474,6 +489,19 @@ async function loadFiles() {
     }
   });
 
+  // Editor notes
+  if (d.editor_notes) {
+    allFiles['editor_notes.md'] = d.editor_notes;
+    h += '<div class="section-label">Editor-in-Chief</div>';
+    h += `<div class="stage">
+      <span class="stage-title" style="font-size:13px">Побажання головного редактора</span>
+      <div class="stage-desc">Теми, посилання, інструкції для наступного редакційного плану. Все що тут написано буде пріоритизовано при генерації плану.</div>
+      <div class="stage-files" style="margin-top:6px">
+        <button class="file-btn prompt" style="border-left:3px solid var(--yellow)" data-path="${d.editor_notes.path}" data-name="editor_notes.md" data-ctx="Вміст файлу включається в промпт Stage 0 (Editorial Plan) як пріоритетні вказівки" data-out="Вільний текст: теми, URL, побажання. Пайплайн використовує при наступній генерації плану." onclick="openFile(this)">editor_notes.md</button>
+      </div>
+    </div>`;
+  }
+
   sb.innerHTML = h;
   // Show overview by default
   showOverview();
@@ -496,7 +524,8 @@ async function openFile(el) {
   el.classList.add('active');
   const r = await fetch(`api/file?path=${encodeURIComponent(path)}`);
   const content = await r.text();
-  const typeLabel = isSchema ? '<span class="filetype schema">JSON Schema</span>' : '<span class="filetype prompt">Jinja2 Prompt</span>';
+  const isMd = name.endsWith('.md');
+  const typeLabel = isSchema ? '<span class="filetype schema">JSON Schema</span>' : isMd ? '<span class="filetype prompt" style="background:rgba(234,179,8,.15);color:var(--yellow)">Editor Notes</span>' : '<span class="filetype prompt">Jinja2 Prompt</span>';
   let ctxBar = '';
   if (ctx || out) {
     ctxBar = `<div class="context-bar">`;
@@ -511,7 +540,7 @@ async function openFile(el) {
     </div>
     ${ctxBar}
     <div id="monaco-container"></div>`;
-  const lang = isSchema ? 'json' : 'xml';
+  const lang = isSchema ? 'json' : isMd ? 'markdown' : 'xml';
   if (editor) { editor.dispose(); editor = null; }
   editor = monaco.editor.create(document.getElementById('monaco-container'), {
     value: content,
@@ -532,6 +561,18 @@ async function saveFile() {
   if (!editor) return;
   const content = editor.getValue();
   const st = document.getElementById('status');
+
+  // Frontend JSON validation
+  if (currentFile && currentFile.endsWith('.json')) {
+    try {
+      JSON.parse(content);
+    } catch (e) {
+      st.textContent = 'JSON invalid: ' + e.message;
+      st.className = 'status err';
+      return;
+    }
+  }
+
   st.textContent = 'Saving...'; st.className = 'status';
   const r = await fetch('api/save', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({path:currentFile, content}) });
   const d = await r.json();

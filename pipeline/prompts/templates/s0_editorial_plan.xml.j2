@@ -21,6 +21,14 @@ Target audience: Ukrainian diaspora in Portugal (Lisbon, Porto, Faro, Algarve).
 {{ rss_headlines }}
 </current_rss_headlines>
 
+{% if editor_notes %}
+<editor_in_chief_notes>
+PRIORITY: The editor-in-chief has left the following notes. These topics, links, and instructions MUST be prioritized above all other topics. Include them in the plan first, then fill remaining slots with other content.
+
+{{ editor_notes }}
+</editor_in_chief_notes>
+{% endif %}
+
 <editorial_guidelines>
 PLAN 10-12 articles for today. Mix of types:
 - 6-8 news: breaking/current Portuguese news relevant to Ukrainians

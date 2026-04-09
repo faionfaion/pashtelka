@@ -39,6 +39,7 @@ def run() -> dict:
     recent_summaries = _load_recent_articles(days=30)
     rss_headlines = _format_rss()
     today_articles = _load_today_articles(today_str)
+    editor_notes = _load_editor_notes()
 
     system, prompt = build_editorial_prompt(
         today_str=today_str,
@@ -46,6 +47,7 @@ def run() -> dict:
         recent_summaries=recent_summaries,
         today_articles=today_articles,
         rss_headlines=rss_headlines,
+        editor_notes=editor_notes,
     )
 
     plan = structured_query(
@@ -61,6 +63,10 @@ def run() -> dict:
     plan["date"] = today_str
     plan["created_at"] = now.isoformat()
     plan_file.write_text(json.dumps(plan, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # Clear editor notes after use
+    if editor_notes:
+        _clear_editor_notes()
 
     logger.info("Editorial plan created: %d articles for %s", len(plan.get("articles", [])), today_str)
     return plan
@@ -152,6 +158,35 @@ def _load_today_articles(today_str: str) -> str:
                     break
 
     return "\n".join(today_articles)
+
+
+def _load_editor_notes() -> str:
+    """Load editor-in-chief notes/wishes from state/editor_notes.md."""
+    notes_file = STATE_DIR / "editor_notes.md"
+    if not notes_file.exists():
+        return ""
+    text = notes_file.read_text(encoding="utf-8").strip()
+    # Strip the template header (everything before and including "---")
+    if "---" in text:
+        text = text.split("---", 1)[1].strip()
+    return text if text else ""
+
+
+def _clear_editor_notes() -> None:
+    """Clear editor notes after they've been used in the plan."""
+    notes_file = STATE_DIR / "editor_notes.md"
+    template = (
+        "# Editor Notes\n\n"
+        "Write your editorial wishes here. These will be prioritized in the next editorial plan.\n\n"
+        "You can add:\n"
+        "- Specific topics or themes to cover\n"
+        "- Links to Portuguese news that should be covered\n"
+        "- Special instructions for today's content\n"
+        "- Topics to avoid or postpone\n\n"
+        "---\n\n"
+    )
+    notes_file.write_text(template, encoding="utf-8")
+    logger.info("Editor notes cleared after use")
 
 
 def _format_rss() -> str:

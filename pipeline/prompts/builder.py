@@ -50,6 +50,7 @@ def build_editorial_prompt(
     recent_summaries: str,
     today_articles: str,
     rss_headlines: str,
+    editor_notes: str = "",
 ) -> tuple[str, str]:
     """Build s0 editorial plan prompt."""
     return render(
@@ -59,6 +60,7 @@ def build_editorial_prompt(
         recent_summaries=recent_summaries,
         today_articles=today_articles,
         rss_headlines=rss_headlines,
+        editor_notes=editor_notes,
     )
 
 
