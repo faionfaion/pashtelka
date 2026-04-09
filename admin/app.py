@@ -129,16 +129,18 @@ HTML = r"""<!DOCTYPE html>
 <title>Pashtelka Admin</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/editor/editor.main.css">
 <style>
-:root{--bg:#0f172a;--card:#1e293b;--text:#e2e8f0;--muted:#94a3b8;--accent:#d97706;--border:#334155;--green:#22c55e;--red:#ef4444;--blue:#3b82f6}
+:root{--bg:#0f172a;--card:#1e293b;--text:#e2e8f0;--muted:#94a3b8;--accent:#d97706;--border:#334155;--green:#22c55e;--red:#ef4444;--blue:#3b82f6;--yellow:#eab308}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px}
 .header{background:var(--card);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;gap:16px}
 .header h1{font-size:20px;color:var(--accent)}
 .header .site{color:var(--muted);font-size:13px}
+.header .nav-btn{background:rgba(255,255,255,.08);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;font-size:12px;padding:6px 14px;margin-left:auto;transition:all .15s}
+.header .nav-btn:hover,.header .nav-btn.active{border-color:var(--accent);color:var(--accent);background:rgba(217,119,6,.1)}
 .container{display:flex;height:calc(100vh - 56px)}
 
 /* Sidebar */
-.sidebar{background:var(--card);border-right:1px solid var(--border);width:340px;overflow-y:auto;padding:0;flex-shrink:0}
+.sidebar{background:var(--card);border-right:1px solid var(--border);width:360px;overflow-y:auto;padding:0;flex-shrink:0}
 .stage{border-bottom:1px solid var(--border);padding:12px 16px}
 .stage:hover{background:rgba(255,255,255,.02)}
 .stage-num{display:inline-block;background:var(--accent);color:#000;font-size:11px;font-weight:700;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;margin-right:8px}
@@ -166,7 +168,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .status.ok{color:var(--green)}
 .status.err{color:var(--red)}
 #monaco-container{flex:1;overflow:hidden}
-.context-bar{background:rgba(0,0,0,.3);border-bottom:1px solid var(--border);padding:8px 16px;font-size:12px;display:flex;gap:20px}
+.context-bar{background:rgba(0,0,0,.3);border-bottom:1px solid var(--border);padding:8px 16px;font-size:12px;display:flex;gap:20px;flex-wrap:wrap}
 .context-bar .label{color:var(--muted);font-weight:600;text-transform:uppercase;font-size:10px;letter-spacing:.5px;margin-right:4px}
 .context-bar .val{color:var(--text)}
 .empty{color:#475569;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;font-size:15px;gap:8px;text-align:center;padding:40px}
@@ -176,115 +178,274 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .legend .dot{width:10px;height:3px;border-radius:2px}
 .legend .dot.p{background:var(--blue)}
 .legend .dot.s{background:var(--green)}
-@media(max-width:900px){.sidebar{width:260px}.stage-desc{display:none}}
+
+/* Overview */
+.overview{flex:1;overflow-y:auto;padding:32px 48px;max-width:900px}
+.overview h2{color:var(--accent);font-size:22px;margin:0 0 16px}
+.overview h3{color:var(--text);font-size:16px;margin:28px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.overview p,.overview li{color:var(--muted);font-size:14px;line-height:1.7}
+.overview p{margin:0 0 12px}
+.overview ul{margin:0 0 12px;padding-left:20px}
+.overview li{margin:3px 0}
+.overview strong{color:var(--text)}
+.overview code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+.overview .flow-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px;margin:16px 0;font-family:monospace;font-size:13px;line-height:2;color:var(--text)}
+.overview .flow-box .arrow{color:var(--accent);margin:0 4px}
+.overview .flow-box .mode-label{display:inline-block;background:rgba(217,119,6,.15);color:var(--accent);padding:2px 8px;border-radius:4px;font-weight:600;margin-bottom:8px}
+.overview table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:13px}
+.overview th{text-align:left;color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;border-bottom:2px solid var(--border)}
+.overview td{padding:8px 12px;border-bottom:1px solid var(--border);color:var(--muted)}
+.overview td:first-child{color:var(--text);font-weight:500}
+.overview .tip{background:rgba(234,179,8,.08);border-left:3px solid var(--yellow);padding:12px 16px;border-radius:0 6px 6px 0;margin:16px 0;font-size:13px;color:var(--muted)}
+.overview .tip strong{color:var(--yellow)}
+
+@media(max-width:900px){.sidebar{width:260px}.stage-desc{display:none}.overview{padding:20px}}
 </style>
 </head>
 <body>
 <div class="header">
   <h1>Pashtelka Admin</h1>
-  <span class="site">pastelka.news &mdash; pipeline prompt & schema editor</span>
+  <span class="site">pastelka.news</span>
+  <button class="nav-btn active" id="btn-overview" onclick="showOverview()">Overview</button>
+  <button class="nav-btn" id="btn-editor" onclick="showEditor()">Editor</button>
 </div>
 <div class="container">
   <div class="sidebar" id="sidebar">
     <div class="legend">
-      <span><span class="dot p"></span> Prompt (Jinja2)</span>
+      <span><span class="dot p"></span> Prompt (Jinja2 XML)</span>
       <span><span class="dot s"></span> Schema (JSON)</span>
     </div>
   </div>
-  <div class="editor-area" id="editor-area">
-    <div class="empty">
-      Select a prompt or schema to edit
-      <div class="hint">Ctrl+S to save &bull; Changes auto-commit to git</div>
-    </div>
-  </div>
+  <div class="editor-area" id="editor-area"></div>
 </div>
 <script>
 const STAGES = [
   {
     num: '0', title: 'Editorial Plan',
-    desc: 'Daily editorial meeting: analyzes last 30 days of articles, RSS headlines, creates 10-12 diverse topics for the day.',
+    desc: 'Щоденна редакторська нарада. AI аналізує останні 30 днів статей (по саммарі), свіжі заголовки з RSS (RTP, Publico, CM Jornal) і складає план на день: 10-12 різноманітних тем для ЦА (українці в Португалії). Запускається раз на день при першому generate або вручну через plan.',
     prompt: 's0_editorial_plan.xml.j2',
     schema: 'editorial_plan.json',
-    context: 'today_str, day_of_week, recent_summaries (30 days), today_articles, rss_headlines',
-    output: 'JSON: articles[] with topic, type, angle, sources_hint, priority',
+    context: 'today_str, day_of_week, recent_summaries (саммарі статей за 30 днів з state/summaries.json), today_articles (вже написані сьогодні), rss_headlines (свіжі заголовки з 6 португальських RSS)',
+    output: 'JSON: articles[] — масив тем, кожна з topic, type (news/material/guide/utility), angle (кут подачі), sources_hint (де шукати), priority (1-3)',
   },
   {
     num: '2', title: 'Research',
-    desc: 'Searches Portuguese news sources for the assigned topic. Uses WebSearch + WebFetch tools. Finds 3-5 sources.',
+    desc: 'Дослідження теми з редакційного плану. AI шукає актуальну інформацію через WebSearch та WebFetch по португальських джерелах. Збирає факти, цитати, URL джерел. Мінімум 3 джерела для матеріалів. Результат — текстовий бриф для написання статті.',
     prompt: 's2_research.xml.j2',
     schema: null,
-    context: 'ctx.news_items (RSS), ctx.editorial_plan (assigned topic), ctx.slot_type, ctx.posted_slugs',
-    output: 'Free text: research brief with source URLs, facts, relevance',
+    context: 'ctx.news_items (заголовки з RSS), ctx.editorial_plan (призначена тема з плану), ctx.slot_type (тип: news/material/guide), ctx.posted_slugs (slug вже опублікованих, щоб не дублювати)',
+    output: 'Вільний текст: дослідницький бриф з фактами, URL джерел, оцінкою релевантності. Без JSON-схеми — це вхід для Stage 3.',
   },
   {
     num: '3', title: 'Generate Article',
-    desc: 'Writes the article in Ukrainian based on research. Includes sources, slug, tags, image prompt, summary.',
+    desc: 'Написання статті українською на основі дослідження. AI пише в стилі Pashtelka (тепло, з гумором, без суржику). Включає: заголовок, slug для URL, markdown-тіло, опис, теги, URL джерел, промпт для генерації зображення, саммарі (1-2 абзаци для деdup). Якщо тема продовжує попередню — посилається на свої минулі статті.',
     prompt: 's3_generate.xml.j2',
     schema: 'generation.json',
-    context: 'ctx.research_text, ctx.slot_type, ctx.editorial_plan, ctx.posted_slugs, existing articles for cross-refs',
-    output: 'JSON: title, slug, article (markdown body), description, tags, source_urls, image_prompt, summary',
+    context: 'ctx.research_text (бриф з Stage 2), ctx.slot_type, ctx.editorial_plan (тема), type_cfg (ліміти слів: news 300-600, material 600-1500, guide 800-2000), site_base_url, existing_articles_text (останні 30 slug для крос-посилань)',
+    output: 'JSON: title, slug, article (markdown body БЕЗ заголовку), description (SEO), tags[], source_urls[], source_names[], image_prompt, summary (1-2 абзаци)',
   },
   {
     num: '4', title: 'Review',
-    desc: 'Editorial review: checks facts, sources, tone, grammar. Scores 1-10, approves or requests revision.',
+    desc: 'Редакторська перевірка: AI оцінює статтю за фактами, джерелами, тоном, граматикою, відповідністю ЦА. Ставить бал 1-10 і вирішує: approved=true (публікація) або false (на доопрацювання). Якщо не схвалено — перелік конкретних правок.',
     prompt: 's4_review.xml.j2',
     schema: 'review.json',
-    context: 'ctx.title, ctx.article_text, ctx.source_urls, ctx.slot_type',
-    output: 'JSON: score (1-10), approved (bool), feedback (text), fixes_needed[]',
+    context: 'ctx.title, ctx.article_text (повний текст), ctx.source_urls[], ctx.source_names[], ctx.slot_type, author_name, sources_zip (пари назва+URL)',
+    output: 'JSON: score (1-10), approved (bool), feedback (текст), fixes_needed[] (конкретні правки). Бал < 7 = не публікувати.',
   },
   {
     num: '5', title: 'Revise',
-    desc: 'Revises article based on review feedback. Fixes issues, improves quality. Runs 1-3 cycles.',
+    desc: 'Доопрацювання статті за зауваженнями рецензії. AI виправляє конкретні проблеми з Stage 4. Цикл review→revise повторюється до 3 разів (MAX_REVIEW_CYCLES) або поки score >= 7.',
     prompt: 's5_revise.xml.j2',
     schema: 'revision.json',
-    context: 'ctx.article_text, ctx.review_feedback, ctx.title, ctx.source_urls',
-    output: 'JSON: article (revised markdown), title (optional), description (optional)',
+    context: 'ctx.article_text (поточний текст), ctx.review_feedback (зауваження з Stage 4), ctx.title, ctx.source_urls[], author_name',
+    output: 'JSON: article (виправлений markdown), title (опціонально — якщо потрібна зміна), description (опціонально)',
   },
   {
     num: '6', title: 'TG Caption',
-    desc: 'Generates Telegram photo caption: bold hook, body with accents, PT-UA vocabulary with spoilers.',
+    desc: 'Генерація підпису для Telegram-поста зі статтею. Формат: жирний хук (1 яскраве речення) → тіло з <b>акцентами</b> на ключових словах → посилання на статтю → словничок PT-UA з <tg-spoiler> (португальське слово → буквальний словниковий переклад українською). Використовується при generate-режимі.',
     prompt: 's6_tg_post.xml.j2',
     schema: 'tg_post.json',
-    context: 'ctx.title, ctx.article_text[:2000], ctx.slot_type',
-    output: 'JSON: hook (bold headline), body (HTML with <b> accents), vocab[] (pt + uk pairs)',
+    context: 'ctx.title (заголовок статті), ctx.article_text[:2000] (перші 2000 символів тіла), ctx.slot_type',
+    output: 'JSON: hook (жирний заголовок), body (HTML з <b> акцентами, без хештегів), vocab[] (3-5 пар: pt — слово португальською, uk — БУКВАЛЬНИЙ словниковий переклад)',
   },
   {
     num: '10', title: 'TG Publish (pick best)',
-    desc: 'Picks best unpublished article at 9/12/15/18, generates caption, sends photo+caption to @pashtelka_news.',
+    desc: 'Окремий режим publish: о 9:00, 12:00, 15:00, 18:00 обирає найкращу неопубліковану в TG статтю, генерує для неї підпис і відправляє фото+підпис в @pashtelka_news. Трекає опубліковане в state/tg_published/{date}.json. Якщо всі сьогоднішні вже відправлені — бере з попередніх днів.',
     prompt: 's10_pick_publish.xml.j2',
     schema: 'tg_post.json',
-    context: 'title, article_text[:2000] (from content/*.md file)',
-    output: 'JSON: hook, body, vocab[] (same schema as stage 6)',
+    context: 'title (заголовок обраної статті), article_text[:2000] (тіло статті з content/*.md). Обирає з файлів, де date = сьогодні і slug ще не в tg_published.',
+    output: 'JSON: hook, body, vocab[] — та ж схема tg_post.json що і Stage 6',
   },
   {
     num: '11', title: 'Evening Digest',
-    desc: 'Compiles 5-10 best articles of the day into evening digest post at 20:00.',
+    desc: 'Вечірній дайджест о 20:00: збирає всі статті за день (мінімум 3), AI пише вступ і підсумок, формує список з емодзі та посиланнями. Публікує фото+дайджест в @pashtelka_news з реакцією 🔥.',
     prompt: 's11_digest.xml.j2',
     schema: 'digest.json',
-    context: 'articles_text (slug + title + preview for each), today_str',
-    output: 'JSON: intro, items[] (emoji + headline + slug), outro',
+    context: 'articles_text (для кожної статті: slug, title, preview перших 150 символів), today_str (дата)',
+    output: 'JSON: intro (вступний текст), items[] (emoji + title заголовок + slug для URL), outro (підсумок дня)',
   },
 ];
 
 const PARTIALS = [
-  { name: '_partials/voice_guide.xml', desc: 'Author voice & tone rules' },
-  { name: '_partials/source_citation.xml', desc: 'Source citation requirements' },
+  { name: '_partials/voice_guide.xml', desc: 'Голос автора: тон, стиль, заборонені фрази. Включається в промпти через {% include %}. Визначає: теплий тон, легкий гумор, змішування PT термінів з UA поясненнями, заборону суржику та кліше.' },
+  { name: '_partials/source_citation.xml', desc: 'Правила цитування джерел: кожен факт повинен мати URL, мінімум 3 джерела для матеріалів, заборона фабрикації. Включається в промпти генерації та рецензії.' },
 ];
 
 let currentFile = null;
 let allFiles = {};
+let currentView = 'overview';
+
+const OVERVIEW_HTML = `
+<div class="overview">
+  <h2>Pashtelka News Pipeline</h2>
+  <p>Автоматизована редакція для <strong>pastelka.news</strong> та Telegram-каналу <strong>@pashtelka_news</strong>. ЦА: українська діаспора в Португалії (Лісабон, Порту, Фару, Алгарве).</p>
+
+  <h3>Як працює пайплайн</h3>
+  <p>Пайплайн має <strong>3 режими</strong>, кожен запускається по cron окремо:</p>
+
+  <div class="flow-box">
+    <div><span class="mode-label">generate</span> щогодини 7:00-19:00 UTC</div>
+    Editorial Plan <span class="arrow">&rarr;</span> Research <span class="arrow">&rarr;</span> Generate <span class="arrow">&rarr;</span> Review <span class="arrow">&rlarr;</span> Revise <span class="arrow">&rarr;</span> TG Caption <span class="arrow">&rarr;</span> Image <span class="arrow">&rarr;</span> Deploy <span class="arrow">&rarr;</span> Verify
+    <br><br>
+    <div><span class="mode-label">publish</span> о 9:00, 12:00, 15:00, 18:00</div>
+    Pick Best Unpublished <span class="arrow">&rarr;</span> Generate Caption <span class="arrow">&rarr;</span> Send to TG
+    <br><br>
+    <div><span class="mode-label">digest</span> о 20:00</div>
+    Collect Today's Articles <span class="arrow">&rarr;</span> Generate Digest <span class="arrow">&rarr;</span> Send to TG
+  </div>
+
+  <h3>Режим generate (основний)</h3>
+  <p>Запускається кожну годину. Створює одну статтю за раз:</p>
+  <ul>
+    <li><strong>Stage 0 — Editorial Plan:</strong> AI-редактор аналізує саммарі статей за 30 днів (state/summaries.json), поточні RSS-заголовки з 6 португальських ЗМІ (RTP, Publico, CM Jornal), і формує план на день з 10-12 тем. Теми розподіляються по типах: news (новина), material (компіляція з джерел), guide (гайд), utility (корисне). Кожна наступна генерація бере наступну тему з плану.</li>
+    <li><strong>Stage 2 — Research:</strong> AI шукає інформацію по призначеній темі через веб-пошук і парсинг сторінок. Збирає факти, цитати, URL джерел. Результат — текстовий бриф.</li>
+    <li><strong>Stage 3 — Generate:</strong> На основі брифу AI пише статтю українською. Дотримується лімітів слів по типу (news: 300-600, material: 600-1500, guide: 800-2000). Якщо тема продовжує попередню — посилається на свої минулі статті. Генерує slug, теги, промпт для зображення, і саммарі для дедуплікації.</li>
+    <li><strong>Stage 4 — Review:</strong> Автоматична рецензія: оцінка 1-10 за фактами, джерелами, тоном, граматикою. Бал &lt; 7 = не публікувати, стаття йде на доопрацювання.</li>
+    <li><strong>Stage 5 — Revise:</strong> Виправлення за зауваженнями. Цикл review&rarr;revise повторюється до 3 разів.</li>
+    <li><strong>Stage 6 — TG Caption:</strong> Генерація підпису для TG: жирний хук + тіло з акцентами + словничок PT-UA.</li>
+    <li><strong>Image:</strong> Генерація ілюстрації через OpenAI gpt-image-1 у стилі коміксу.</li>
+    <li><strong>Deploy:</strong> Стаття зберігається в content/*.md, саммарі в state/summaries.json. Git push &rarr; SSH на сервер &rarr; Gatsby build &rarr; rsync на nginx.</li>
+  </ul>
+
+  <h3>Режим publish</h3>
+  <p>Запускається 4 рази на день. Обирає найкращу статтю, яка ще не була відправлена в TG, генерує для неї підпис з словничком, і відправляє фото+підпис в <strong>@pashtelka_news</strong>. Трекає відправлене в state/tg_published/{date}.json.</p>
+
+  <h3>Режим digest</h3>
+  <p>Вечірній дайджест о 20:00. Збирає всі сьогоднішні статті (мінімум 3), AI пише вступ і висновок, формує список з емодзі та посиланнями на сайт. Публікує в TG з реакцією.</p>
+
+  <h3>Файли промптів та схем</h3>
+  <p>Кожен stage використовує пару файлів:</p>
+  <table>
+    <tr><th>Файл</th><th>Тип</th><th>Для чого</th></tr>
+    <tr><td>*.xml.j2</td><td>Prompt</td><td>Jinja2-шаблон з XML-розміткою. Містить &lt;system&gt; (роль AI) і ===SPLIT=== маркер, після якого йде user prompt з контекстом. Змінні в {{ подвійних дужках }} підставляються автоматично.</td></tr>
+    <tr><td>*.json</td><td>Schema</td><td>JSON Schema для структурованого виводу AI. Визначає формат відповіді: які поля, типи, обов'язкові. AI повертає JSON рівно в цьому форматі.</td></tr>
+    <tr><td>_partials/*.xml</td><td>Partial</td><td>Спільні фрагменти, що включаються в промпти через {% include %}. Наприклад, голос автора або правила цитування.</td></tr>
+  </table>
+
+  <div class="tip">
+    <strong>Як редагувати:</strong> Натисніть на prompt або schema у бічній панелі (вкладка Editor). Відредагуйте в Monaco Editor. Ctrl+S або кнопка "Save & Commit" зберігає файл і комітить в git. Зміни підтягнуться при наступному запуску пайплайну (cron робить git pull перед стартом).
+  </div>
+
+  <h3>Контекстні змінні</h3>
+  <p>В промптах доступні змінні через <code>{{ }}</code>. Основні:</p>
+  <table>
+    <tr><th>Змінна</th><th>Тип</th><th>Опис</th></tr>
+    <tr><td>ctx</td><td>PipelineContext</td><td>Головний об'єкт з усіма даними поточної статті: title, article_text, slug, tags, source_urls, research_text, editorial_plan, slot_type тощо</td></tr>
+    <tr><td>today_str</td><td>str</td><td>Дата у форматі "2026-04-09"</td></tr>
+    <tr><td>day_of_week</td><td>str</td><td>День тижня англійською: "Monday", "Tuesday"...</td></tr>
+    <tr><td>recent_summaries</td><td>str</td><td>Саммарі статей за 30 днів (текст)</td></tr>
+    <tr><td>rss_headlines</td><td>str</td><td>Свіжі заголовки з RSS: RTP, Publico, CM Jornal</td></tr>
+    <tr><td>type_cfg</td><td>dict</td><td>Конфігурація типу: min_words, max_words</td></tr>
+    <tr><td>site_base_url</td><td>str</td><td>https://pastelka.news</td></tr>
+    <tr><td>existing_articles_text</td><td>str</td><td>Останні 30 slug для крос-посилань</td></tr>
+    <tr><td>author_name</td><td>str</td><td>"Паштелька News"</td></tr>
+  </table>
+
+  <h3>Типи контенту</h3>
+  <table>
+    <tr><th>Тип</th><th>Слоти</th><th>Слів</th><th>Опис</th></tr>
+    <tr><td>news</td><td>Більшість годин</td><td>300-600</td><td>Новина: одна подія, перевернута піраміда, 2-3 джерела</td></tr>
+    <tr><td>material</td><td>12:00, 16:00</td><td>600-1500</td><td>Аналітичний матеріал: тема з різних кутів, 3-5 джерел</td></tr>
+    <tr><td>guide</td><td>За планом</td><td>800-2000</td><td>Практичний гайд для діаспори: покрокові інструкції</td></tr>
+    <tr><td>utility</td><td>За планом</td><td>150-400</td><td>Корисна інфо: відключення води, зміни розкладу, курси</td></tr>
+    <tr><td>immigration</td><td>За планом</td><td>400-800</td><td>Імміграційні питання: SEF, документи, NIF, NISS</td></tr>
+    <tr><td>digest</td><td>20:00</td><td>500-1000</td><td>Вечірній дайджест за день</td></tr>
+  </table>
+
+  <h3>Джерела новин</h3>
+  <ul>
+    <li><strong>RSS:</strong> RTP (загальні, країна, економіка, світ, культура), Publico, CM Jornal</li>
+    <li><strong>API:</strong> IPMA (погода, попередження), Metro Lisboa (транспорт)</li>
+    <li><strong>Web:</strong> Пошук по темі з WebSearch при генерації</li>
+  </ul>
+
+  <h3>Telegram-формат</h3>
+  <p>Кожен пост в TG складається з:</p>
+  <ul>
+    <li><strong>Фото</strong> — комікс-ілюстрація (gpt-image-1)</li>
+    <li><strong>Hook</strong> — жирний заголовок (1 яскраве речення)</li>
+    <li><strong>Body</strong> — 2-3 речення з &lt;b&gt;акцентами&lt;/b&gt; на ключових словах</li>
+    <li><strong>Link</strong> — посилання на статтю на сайті</li>
+    <li><strong>Словничок</strong> — 3-5 португальських слів з теми з буквальним перекладом в &lt;tg-spoiler&gt;</li>
+    <li><strong>Підпис</strong> — посилання на канал @pashtelka_news</li>
+  </ul>
+
+  <h3>Файлова структура</h3>
+  <table>
+    <tr><th>Шлях</th><th>Для чого</th></tr>
+    <tr><td>content/*.md</td><td>Статті (Markdown з frontmatter)</td></tr>
+    <tr><td>gatsby/</td><td>Сайт (Gatsby 5 + React)</td></tr>
+    <tr><td>gatsby/static/images/</td><td>Зображення до статей (JPEG)</td></tr>
+    <tr><td>state/plans/</td><td>Редакційні плани ({date}.json)</td></tr>
+    <tr><td>state/summaries.json</td><td>Саммарі всіх статей (для дедуплікації)</td></tr>
+    <tr><td>state/tg_published/</td><td>Трекінг TG-публікацій ({date}.json)</td></tr>
+    <tr><td>state/logs/cron.log</td><td>Лог роботи пайплайну</td></tr>
+    <tr><td>pipeline/prompts/templates/</td><td>Jinja2 промпти (редагуються тут)</td></tr>
+    <tr><td>pipeline/schemas/</td><td>JSON-схеми виводу (редагуються тут)</td></tr>
+  </table>
+
+  <h3>Cron-розклад</h3>
+  <table>
+    <tr><th>Cron</th><th>Режим</th><th>Що робить</th></tr>
+    <tr><td>0 7-19 * * *</td><td>generate</td><td>Генерація 1 статті на сайт щогодини</td></tr>
+    <tr><td>5 9,12,15,18 * * *</td><td>publish</td><td>Публікація найкращої в TG</td></tr>
+    <tr><td>5 20 * * *</td><td>digest</td><td>Вечірній дайджест в TG</td></tr>
+  </table>
+
+  <div class="tip">
+    <strong>Як оновлюються зміни:</strong> Cron-скрипт робить <code>git pull</code> перед кожним запуском. Тому зміни в промптах/схемах через цю адмінку застосовуються автоматично при наступному запуску відповідного режиму.
+  </div>
+</div>
+`;
+
+function showOverview() {
+  currentView = 'overview';
+  document.getElementById('btn-overview').classList.add('active');
+  document.getElementById('btn-editor').classList.remove('active');
+  document.getElementById('editor-area').innerHTML = OVERVIEW_HTML;
+  if (editor) { editor.dispose(); editor = null; }
+  currentFile = null;
+  document.querySelectorAll('.file-btn').forEach(f => f.classList.remove('active'));
+}
+
+function showEditor() {
+  currentView = 'editor';
+  document.getElementById('btn-editor').classList.add('active');
+  document.getElementById('btn-overview').classList.remove('active');
+  if (!currentFile) {
+    document.getElementById('editor-area').innerHTML = `<div class="empty">Оберіть prompt або schema в бічній панелі<div class="hint">Ctrl+S — зберегти &bull; Зміни автоматично комітяться в git</div></div>`;
+  }
+}
 
 async function loadFiles() {
   const r = await fetch('api/files');
   const d = await r.json();
-  // Index files by name
   d.prompts.forEach(f => { allFiles[f.name] = f; });
   d.schemas.forEach(f => { allFiles[f.name] = f; });
 
   const sb = document.getElementById('sidebar');
   let h = sb.innerHTML; // keep legend
 
-  // Pipeline stages
   h += '<div class="section-label">Pipeline Stages</div>';
   STAGES.forEach(s => {
     h += `<div class="stage">
@@ -301,7 +462,6 @@ async function loadFiles() {
     h += `</div></div>`;
   });
 
-  // Partials
   h += '<div class="section-label">Shared Partials</div>';
   PARTIALS.forEach(p => {
     if (allFiles[p.name]) {
@@ -315,10 +475,17 @@ async function loadFiles() {
   });
 
   sb.innerHTML = h;
+  // Show overview by default
+  showOverview();
 }
 
 let editor = null;
 async function openFile(el) {
+  // Switch to editor view
+  currentView = 'editor';
+  document.getElementById('btn-editor').classList.add('active');
+  document.getElementById('btn-overview').classList.remove('active');
+
   const path = el.dataset.path;
   const name = el.dataset.name;
   const ctx = el.dataset.ctx || '';
@@ -333,8 +500,8 @@ async function openFile(el) {
   let ctxBar = '';
   if (ctx || out) {
     ctxBar = `<div class="context-bar">`;
-    if (ctx) ctxBar += `<div><span class="label">Context:</span><span class="val">${ctx}</span></div>`;
-    if (out) ctxBar += `<div><span class="label">Output:</span><span class="val">${out}</span></div>`;
+    if (ctx) ctxBar += `<div><span class="label">Контекст:</span><span class="val">${ctx}</span></div>`;
+    if (out) ctxBar += `<div><span class="label">Вивід:</span><span class="val">${out}</span></div>`;
     ctxBar += `</div>`;
   }
   document.getElementById('editor-area').innerHTML = `
