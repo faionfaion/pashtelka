@@ -169,7 +169,7 @@ textarea{background:#0c1222;border:none;color:#e2e8f0;flex:1;font-family:'JetBra
 <script>
 let currentFile=null;
 async function loadFiles(){
-  const r=await fetch('/api/files');const d=await r.json();const sb=document.getElementById('sidebar');
+  const r=await fetch('api/files');const d=await r.json();const sb=document.getElementById('sidebar');
   let h='<h3>Prompts</h3>';
   d.prompts.forEach(f=>{h+=`<div class="file-item" data-path="${f.path}" onclick="openFile(this)">${f.name}</div>`});
   h+='<h3>Schemas</h3>';
@@ -198,7 +198,7 @@ async function openFile(el){
 async function saveFile(){
   const content=document.getElementById('editor').value;const st=document.getElementById('status');
   st.textContent='Saving...';st.className='status';
-  const r=await fetch('/api/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({path:currentFile,content})});
+  const r=await fetch('api/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({path:currentFile,content})});
   const d=await r.json();
   if(d.ok){st.textContent=d.committed?'Saved & committed':'Saved (no changes)';st.className='status ok'}
   else{st.textContent=d.error||'Error';st.className='status err'}
