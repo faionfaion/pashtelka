@@ -83,7 +83,7 @@ VOCAB: 3-5 Portuguese terms from the article topic. Pick words people encounter 
         "",
         body,
         "",
-        f'<a href="{article_url}">Читати далі →</a>',
+        f'<a href="{article_url}">Дізнатись більше →</a>',
         "",
         f"📖 Словничок:",
         vocab_block,
