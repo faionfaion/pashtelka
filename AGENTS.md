@@ -19,18 +19,18 @@ News portal for Ukrainian diaspora in Portugal. Site: pastelka.news, TG: @pashte
 
 | Mode | Cron | What |
 |------|------|------|
-| `generate` | `0 7-19 * * *` | Editorial plan → research → write → review → deploy to site |
-| `publish` | `5 9,12,15,18 * * *` | Pick best article → TG caption → send photo+caption |
+| `generate` | `0 7 * * *` | Morning batch: editorial plan → all 10-12 articles → 1 deploy |
+| `publish` | `5 9,12,15,18 * * *` | Mechanical: pick pre-generated article → send to TG (no LLM) |
 | `digest` | `5 20 * * *` | Compile day's articles → evening digest to TG |
-| `plan` | Auto / manual | Create daily editorial plan (10-12 topics) |
+| `plan` | Manual | Show/create daily editorial plan |
 
 ## Key Commands
 
 ```bash
-python3 -m pipeline generate -v   # Generate one article
-python3 -m pipeline publish -v    # Publish best to TG
-python3 -m pipeline digest -v     # Evening digest
-python3 -m pipeline plan -v       # Show editorial plan
+python3 -m pipeline generate -v       # Batch generate all articles for the day
+python3 -m pipeline publish -v        # Mechanical TG publish (no LLM)
+python3 -m pipeline digest -v         # Evening digest
+python3 -m pipeline plan -v           # Show editorial plan
 python3 -m pipeline generate --dry-run  # Test without deploy
 ```
 
