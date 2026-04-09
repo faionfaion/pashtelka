@@ -18,12 +18,14 @@ OPENAI_API_KEY = os.environ.get(
     "",
 )
 
-STYLE_PREFIX = (
-    "Colorful comic book illustration style, clean bold lines, warm pastel color palette "
-    "inspired by Portuguese azulejo tiles. No text, no speech bubbles, no watermarks. "
-    "Include subtle Portuguese visual elements (yellow tram, sardines, pastel de nata, "
-    "azulejo patterns, Tagus river). "
-)
+_STYLE_FILE = Path(__file__).resolve().parent / "prompts" / "templates" / "_partials" / "image_style.txt"
+
+
+def _load_style_prefix() -> str:
+    """Load image style prefix from editable file."""
+    if _STYLE_FILE.exists():
+        return _STYLE_FILE.read_text(encoding="utf-8").strip() + " "
+    return ""
 
 
 def generate_image(prompt: str, slug: str) -> Path | None:
@@ -40,7 +42,7 @@ def generate_image(prompt: str, slug: str) -> Path | None:
         logger.warning("No OPENAI_API_KEY — skipping image generation")
         return None
 
-    full_prompt = f"{STYLE_PREFIX}{prompt}"
+    full_prompt = f"{_load_style_prefix()}{prompt}"
 
     try:
         resp = requests.post(

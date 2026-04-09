@@ -1,8 +1,8 @@
 """Pipeline runner: orchestrates article generation, TG publishing, and digests.
 
 Three modes:
-  generate  — collect news, research, write article, deploy to site (no TG)
-  publish   — pick best unpublished article, generate caption, send to TG
+  generate  — morning batch: editorial plan → research all → write all → deploy once
+  publish   — pick next pre-generated article, send to TG (no LLM, mechanical)
   digest    — compile day's articles into evening digest, send to TG
 """
 
@@ -22,12 +22,12 @@ from pipeline.stages import (
     s3_generate,
     s4_review,
     s5_revise,
+    s6_generate_tg,
     s7_deploy,
     s8_verify,
     s10_pick_and_publish,
     s11_digest,
 )
-from pipeline.stages.s1_collect import AllPostedError
 
 logger = logging.getLogger("pipeline")
 
@@ -45,79 +45,112 @@ def _review_loop(ctx: PipelineContext) -> None:
         logger.warning("Max review cycles (%d) reached, proceeding", MAX_REVIEW_CYCLES)
 
 
-# Generate mode: create article on site, no TG
-GENERATE_STAGES = [
-    ("1_collect",       s1_collect.run),
-    ("2_research",      s2_research.run),
-    ("3_generate",      s3_generate.run),
-    ("4+5_review_loop", _review_loop),
-    ("7_deploy",        s7_deploy.run),
-    ("8_verify",        s8_verify.run),
-]
-
-
-def run_generate(dry_run: bool = False, start_stage: int = 1) -> PipelineContext:
-    """Generate mode: editorial plan -> collect -> research -> write -> deploy."""
+def _generate_one_article(
+    topic: dict,
+    rss_items: list[dict],
+    posted_slugs: list[str],
+    report: RunReport,
+    dry_run: bool = False,
+) -> PipelineContext | None:
+    """Generate a single article for one editorial topic. Returns ctx or None on failure."""
     ctx = PipelineContext()
-    report = RunReport(dry_run=dry_run, resume_from_stage=start_stage)
+    ctx.editorial_plan = topic
+    ctx.slot_type = topic.get("type", "news")
+    ctx.news_items = rss_items
+    ctx.posted_slugs = posted_slugs
+
+    topic_label = topic.get("topic", "unknown")[:60]
+
+    try:
+        logger.info("--- Article: [%s] %s ---", ctx.slot_type, topic_label)
+
+        with time_stage(report, f"research:{topic_label[:30]}"):
+            s2_research.run(ctx)
+
+        with time_stage(report, f"generate:{topic_label[:30]}"):
+            s3_generate.run(ctx)
+
+        with time_stage(report, f"review:{topic_label[:30]}"):
+            _review_loop(ctx)
+
+        with time_stage(report, f"tg_caption:{topic_label[:30]}"):
+            s6_generate_tg.run(ctx)
+
+        if not dry_run:
+            with time_stage(report, f"save:{topic_label[:30]}"):
+                s7_deploy.save_article(ctx)
+
+        logger.info("Article ready: %s (%s)", ctx.slug, ctx.title[:50])
+        return ctx
+
+    except Exception:
+        logger.exception("Failed to generate article: %s", topic_label)
+        return None
+
+
+def run_generate(dry_run: bool = False) -> list[PipelineContext]:
+    """Generate mode: batch all articles for the day.
+
+    1. Create editorial plan (10-12 topics)
+    2. Collect RSS context
+    3. For each topic: research → generate → review → save
+    4. Deploy site once at the end
+    """
+    report = RunReport(dry_run=dry_run)
     report.begin()
 
-    # Step 0: Get or create editorial plan, assign next topic
+    # Step 0: Editorial plan
+    with time_stage(report, "editorial_plan"):
+        plan = s0_editorial_plan.run()
+        topics = plan.get("articles", [])
+        logger.info("Editorial plan: %d topics", len(topics))
+
+    # Step 1: Collect context (RSS + existing slugs)
+    rss_items, posted_slugs = s1_collect.collect_context()
+
+    # Step 2: Generate each article
+    completed: list[PipelineContext] = []
+    for i, topic in enumerate(topics, 1):
+        logger.info("=== Article %d/%d ===", i, len(topics))
+        ctx = _generate_one_article(
+            topic=topic,
+            rss_items=rss_items,
+            posted_slugs=posted_slugs,
+            report=report,
+            dry_run=dry_run,
+        )
+        if ctx:
+            completed.append(ctx)
+            # Add slug to posted so next article can cross-reference
+            posted_slugs.append(ctx.slug)
+
+    logger.info("Generated %d/%d articles", len(completed), len(topics))
+
+    # Step 3: Deploy site once (all articles at once)
+    if completed and not dry_run:
+        with time_stage(report, "deploy_site"):
+            s7_deploy.deploy_site()
+
+        # Verify a sample
+        with time_stage(report, "verify"):
+            s8_verify.run(completed[-1])
+
+    # Report
+    report.slug = ", ".join(c.slug for c in completed[:5])
+    report.author = "Pastelka News"
+    report.image_generated = any(c.image_path for c in completed)
+    report.finish("ok" if completed else "empty")
     try:
-        with time_stage(report, "0_editorial_plan"):
-            plan = s0_editorial_plan.run()
-            topic = s0_editorial_plan.get_next_topic(plan, set(ctx.posted_slugs))
-            if topic:
-                ctx.editorial_plan = topic
-                ctx.slot_type = topic.get("type", "news")
-                logger.info("Editorial topic: %s (%s)", topic["topic"], topic["type"])
-            else:
-                logger.info("All editorial topics covered for today")
+        path = report.save()
+        logger.info("Run report saved: %s", path)
     except Exception:
-        logger.warning("Editorial plan failed, falling back to RSS-driven selection", exc_info=True)
+        logger.exception("Failed to save run report")
 
-    try:
-        for i, (name, stage_fn) in enumerate(GENERATE_STAGES, 1):
-            if i < start_stage:
-                entry = report.add_stage(name)
-                entry.status = "skipped"
-                continue
-            if dry_run and i >= 5:  # stop before deploy
-                for skip_name, _ in GENERATE_STAGES[4:]:
-                    entry = report.add_stage(skip_name)
-                    entry.status = "skipped"
-                break
-
-            logger.info("=== Stage %s ===", name)
-            try:
-                with time_stage(report, name) as entry:
-                    stage_fn(ctx)
-            except AllPostedError:
-                logger.info("All generation slots posted for today. Done.")
-                entry.status = "skipped"
-                entry.error = None
-                _fill_report(report, ctx, "ok")
-                return ctx
-            except Exception:
-                logger.exception("Stage %s failed", name)
-                report.failed_stage = name
-                report.error = entry.error
-                _fill_report(report, ctx, "failed")
-                raise
-
-            logger.info("Stage %s complete", name)
-    except KeyboardInterrupt:
-        logger.info("Pipeline interrupted")
-        _fill_report(report, ctx, "interrupted")
-        raise
-
-    _fill_report(report, ctx, "ok")
-    logger.info("=== Generate complete: %s ===", ctx.slug)
-    return ctx
+    return completed
 
 
 def run_publish() -> dict | None:
-    """Publish mode: pick best article, generate caption, send to TG."""
+    """Publish mode: pick best article, send pre-generated caption to TG."""
     logger.info("=== TG Publish mode ===")
     result = s10_pick_and_publish.run()
     if result:
@@ -139,19 +172,6 @@ def run_digest() -> dict | None:
     return result
 
 
-def _fill_report(report: RunReport, ctx: PipelineContext, status: str) -> None:
-    report.slug = ctx.slug
-    report.author = "Pastelka News"
-    report.image_generated = ctx.image_path is not None
-    report.msg_id = ctx.msg_id
-    report.finish(status)
-    try:
-        path = report.save()
-        logger.info("Run report saved: %s", path)
-    except Exception:
-        logger.exception("Failed to save run report")
-
-
 def cli() -> None:
     """CLI entry point."""
     parser = argparse.ArgumentParser(description="Pashtelka publishing pipeline")
@@ -160,7 +180,6 @@ def cli() -> None:
                         help="Pipeline mode (default: generate)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Run without deploy/publish")
-    parser.add_argument("--stage", type=int, default=1, help="Start from stage N (generate mode)")
     parser.add_argument("--verbose", "-v", action="store_true")
     args = parser.parse_args()
 
@@ -189,7 +208,8 @@ def cli() -> None:
                 logger.info("  %d. [%s] P%d: %s", i, a["type"], a["priority"], a["topic"])
             sys.exit(0)
         elif args.mode == "generate":
-            ctx = run_generate(dry_run=args.dry_run, start_stage=args.stage)
+            completed = run_generate(dry_run=args.dry_run)
+            logger.info("Batch complete: %d articles", len(completed))
             sys.exit(0)
         elif args.mode == "publish":
             result = run_publish()

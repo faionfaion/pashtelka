@@ -1,60 +1,34 @@
-"""Stage 1: Collect context — determine slot, check posted articles, gather RSS."""
+"""Stage 1: Collect context — gather RSS headlines and existing article slugs.
+
+Called once before the batch generation loop.
+No slot logic — all articles are generated in one batch.
+"""
 
 from __future__ import annotations
 
-import json
 import logging
-from datetime import datetime, timezone
-from pathlib import Path
 
-from pipeline.config import (
-    CONTENT_DIR, RSS_FEEDS, SLOTS, SLOT_TYPES, STATE_DIR,
-)
-from pipeline.context import PipelineContext
+from pipeline.config import CONTENT_DIR
 from pipeline.feeds import fetch_rss_headlines
 
 logger = logging.getLogger(__name__)
 
 
 class AllPostedError(Exception):
-    """All slots for today are already posted."""
+    """Kept for backward compatibility."""
 
 
-def run(ctx: PipelineContext) -> None:
-    now = datetime.now(timezone.utc)
-    current_hour = now.hour
+def collect_context() -> tuple[list[dict], list[str]]:
+    """Collect RSS items and existing article slugs.
 
-    # Load posted state for today
-    today_str = now.strftime("%Y-%m-%d")
-    state_file = STATE_DIR / "posted" / f"{today_str}.json"
-    posted: dict = {}
-    if state_file.exists():
-        posted = json.loads(state_file.read_text(encoding="utf-8"))
+    Returns:
+        (rss_items, posted_slugs)
+    """
+    rss_items = fetch_rss_headlines()
 
-    # Find next unposted slot
-    available = [h for h in SLOTS if str(h) not in posted and h <= current_hour + 1]
-    if not available:
-        # Check if any future slots exist
-        future = [h for h in SLOTS if str(h) not in posted]
-        if not future:
-            raise AllPostedError("All slots posted for today")
-        # Pick first available future slot
-        ctx.slot_hour = future[0]
-    else:
-        ctx.slot_hour = available[0]
-
-    ctx.slot_type = SLOT_TYPES.get(ctx.slot_hour, "news")
-
-    # Load existing slugs to prevent duplicates
+    posted_slugs: list[str] = []
     if CONTENT_DIR.exists():
-        ctx.posted_slugs = [
-            p.stem for p in CONTENT_DIR.glob("*.md")
-        ]
+        posted_slugs = [p.stem for p in CONTENT_DIR.glob("*.md")]
 
-    # Fetch RSS headlines for research stage
-    ctx.news_items = fetch_rss_headlines()
-
-    logger.info(
-        "Slot: %02d:00 (%s) | RSS items: %d | Existing articles: %d",
-        ctx.slot_hour, ctx.slot_type, len(ctx.news_items), len(ctx.posted_slugs),
-    )
+    logger.info("Context: %d RSS items, %d existing articles", len(rss_items), len(posted_slugs))
+    return rss_items, posted_slugs

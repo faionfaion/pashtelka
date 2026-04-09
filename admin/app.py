@@ -78,7 +78,7 @@ def api_files():
     if EDITOR_NOTES.exists():
         editor_notes_info = {"name": "editor_notes.md", "path": str(EDITOR_NOTES), "size": EDITOR_NOTES.stat().st_size}
     return jsonify({
-        "prompts": _list_files(PROMPTS_DIR, ["*.xml.j2", "_partials/*.xml"]),
+        "prompts": _list_files(PROMPTS_DIR, ["*.xml.j2", "_partials/*.xml", "_partials/*.txt"]),
         "schemas": _list_files(SCHEMAS_DIR, ["*.json"]),
         "editor_notes": editor_notes_info,
     })
@@ -274,12 +274,12 @@ const STAGES = [
     output: 'JSON: hook (жирний заголовок), body (HTML з <b> акцентами, без хештегів), vocab[] (3-5 пар: pt — слово португальською, uk — БУКВАЛЬНИЙ словниковий переклад)',
   },
   {
-    num: '10', title: 'TG Publish (pick best)',
-    desc: 'Окремий режим publish: о 9:00, 12:00, 15:00, 18:00 обирає найкращу неопубліковану в TG статтю, генерує для неї підпис і відправляє фото+підпис в @pashtelka_news. Трекає опубліковане в state/tg_published/{date}.json. Якщо всі сьогоднішні вже відправлені — бере з попередніх днів.',
+    num: '10', title: 'TG Publish (mechanical)',
+    desc: 'Режим publish: о 9:00, 12:00, 15:00, 18:00. Механічна публікація БЕЗ LLM-викликів. Обирає наступну неопубліковану статтю, завантажує готовий TG-підпис з state/teasers/{slug}.json (згенерований раніше Stage 6), відправляє фото+підпис в @pashtelka_news.',
     prompt: 's10_pick_publish.xml.j2',
     schema: 'tg_post.json',
-    context: 'title (заголовок обраної статті), article_text[:2000] (тіло статті з content/*.md). Обирає з файлів, де date = сьогодні і slug ще не в tg_published.',
-    output: 'JSON: hook, body, vocab[] — та ж схема tg_post.json що і Stage 6',
+    context: 'Не використовує промпт/схему напряму — бере готовий підпис з state/teasers/. Prompt і schema тут для fallback (якщо teaser не знайдено).',
+    output: 'Публікація в TG: фото + готовий підпис. Трекає в state/tg_published/{date}.json.',
   },
   {
     num: '11', title: 'Evening Digest',
@@ -294,6 +294,7 @@ const STAGES = [
 const PARTIALS = [
   { name: '_partials/voice_guide.xml', desc: 'Голос автора: тон, стиль, заборонені фрази. Включається в промпти через {% include %}. Визначає: теплий тон, легкий гумор, змішування PT термінів з UA поясненнями, заборону суржику та кліше.' },
   { name: '_partials/source_citation.xml', desc: 'Правила цитування джерел: кожен факт повинен мати URL, мінімум 3 джерела для матеріалів, заборона фабрикації. Включається в промпти генерації та рецензії.' },
+  { name: '_partials/image_style.txt', desc: 'Стиль зображень: префікс до image_prompt при генерації ілюстрацій через OpenAI gpt-image-1. Визначає стиль коміксу, палітру кольорів, португальські елементи. Кожна стаття генерує image_prompt (Stage 3), до якого додається цей префікс.' },
 ];
 
 let currentFile = null;
@@ -309,31 +310,35 @@ const OVERVIEW_HTML = `
   <p>Пайплайн має <strong>3 режими</strong>, кожен запускається по cron окремо:</p>
 
   <div class="flow-box">
-    <div><span class="mode-label">generate</span> щогодини 7:00-19:00 UTC</div>
-    Editorial Plan <span class="arrow">&rarr;</span> Research <span class="arrow">&rarr;</span> Generate <span class="arrow">&rarr;</span> Review <span class="arrow">&rlarr;</span> Revise <span class="arrow">&rarr;</span> TG Caption <span class="arrow">&rarr;</span> Image <span class="arrow">&rarr;</span> Deploy <span class="arrow">&rarr;</span> Verify
+    <div><span class="mode-label">generate</span> о 7:00 — один ранковий запуск</div>
+    Editorial Plan <span class="arrow">&rarr;</span> [для кожної з 10-12 тем: Research <span class="arrow">&rarr;</span> Generate <span class="arrow">&rarr;</span> Review <span class="arrow">&harr;</span> Revise <span class="arrow">&rarr;</span> TG Caption <span class="arrow">&rarr;</span> Image <span class="arrow">&rarr;</span> Save] <span class="arrow">&rarr;</span> Deploy site (1 раз)
     <br><br>
-    <div><span class="mode-label">publish</span> о 9:00, 12:00, 15:00, 18:00</div>
-    Pick Best Unpublished <span class="arrow">&rarr;</span> Generate Caption <span class="arrow">&rarr;</span> Send to TG
+    <div><span class="mode-label">publish</span> о 9:00, 12:00, 15:00, 18:00 — механічна публікація</div>
+    Pick Next Unpublished <span class="arrow">&rarr;</span> Load Pre-generated Caption <span class="arrow">&rarr;</span> Send Photo+Caption to TG
     <br><br>
     <div><span class="mode-label">digest</span> о 20:00</div>
     Collect Today's Articles <span class="arrow">&rarr;</span> Generate Digest <span class="arrow">&rarr;</span> Send to TG
   </div>
 
-  <h3>Режим generate (основний)</h3>
-  <p>Запускається кожну годину. Створює одну статтю за раз:</p>
+  <h3>Режим generate (ранковий batch)</h3>
+  <p>Запускається <strong>один раз о 7:00</strong>. Генерує <strong>всі 10-12 статей</strong> за день за один запуск:</p>
   <ul>
-    <li><strong>Stage 0 — Editorial Plan:</strong> AI-редактор аналізує саммарі статей за 30 днів (state/summaries.json), поточні RSS-заголовки з 6 португальських ЗМІ (RTP, Publico, CM Jornal), і формує план на день з 10-12 тем. Теми розподіляються по типах: news (новина), material (компіляція з джерел), guide (гайд), utility (корисне). Кожна наступна генерація бере наступну тему з плану.</li>
-    <li><strong>Stage 2 — Research:</strong> AI шукає інформацію по призначеній темі через веб-пошук і парсинг сторінок. Збирає факти, цитати, URL джерел. Результат — текстовий бриф.</li>
-    <li><strong>Stage 3 — Generate:</strong> На основі брифу AI пише статтю українською. Дотримується лімітів слів по типу (news: 300-600, material: 600-1500, guide: 800-2000). Якщо тема продовжує попередню — посилається на свої минулі статті. Генерує slug, теги, промпт для зображення, і саммарі для дедуплікації.</li>
-    <li><strong>Stage 4 — Review:</strong> Автоматична рецензія: оцінка 1-10 за фактами, джерелами, тоном, граматикою. Бал &lt; 7 = не публікувати, стаття йде на доопрацювання.</li>
-    <li><strong>Stage 5 — Revise:</strong> Виправлення за зауваженнями. Цикл review&rarr;revise повторюється до 3 разів.</li>
-    <li><strong>Stage 6 — TG Caption:</strong> Генерація підпису для TG: жирний хук + тіло з акцентами + словничок PT-UA.</li>
-    <li><strong>Image:</strong> Генерація ілюстрації через OpenAI gpt-image-1 у стилі коміксу.</li>
-    <li><strong>Deploy:</strong> Стаття зберігається в content/*.md, саммарі в state/summaries.json. Git push &rarr; SSH на сервер &rarr; Gatsby build &rarr; rsync на nginx.</li>
+    <li><strong>Stage 0 — Editorial Plan:</strong> AI-редактор аналізує саммарі статей за 30 днів (state/summaries.json), побажання головного редактора (state/editor_notes.md), поточні RSS-заголовки з 6 португальських ЗМІ (RTP, Publico, CM Jornal), і формує план на день з 10-12 тем. Теми розподіляються по типах: news, material, guide, utility. Побажання редактора пріоритизуються. Після використання нотатки очищуються.</li>
+    <li><strong>Stage 1 — Collect:</strong> Збір контексту: RSS-заголовки + список існуючих статей (для крос-посилань).</li>
+    <li><strong>Цикл по кожній темі плану (10-12 ітерацій):</strong>
+      <ul>
+        <li><strong>Stage 2 — Research:</strong> AI шукає інформацію по темі через веб-пошук. Збирає факти, цитати, URL джерел.</li>
+        <li><strong>Stage 3 — Generate:</strong> AI пише статтю українською. Ліміти слів по типу (news 300-600, material 600-1500, guide 800-2000). Крос-посилання на минулі статті.</li>
+        <li><strong>Stage 4+5 — Review/Revise:</strong> Рецензія (оцінка 1-10) + виправлення. До 3 циклів. Бал &lt; 7 = ще раз.</li>
+        <li><strong>Stage 6 — TG Caption:</strong> Генерація підпису: хук + тіло + словничок PT-UA. Зберігається в state/teasers/ для publish-режиму.</li>
+        <li><strong>Image + Save:</strong> Комікс-ілюстрація (gpt-image-1). Стаття зберігається в content/, саммарі в state/summaries.json, git commit.</li>
+      </ul>
+    </li>
+    <li><strong>Deploy (один раз):</strong> Git push &rarr; SSH на сервер &rarr; Gatsby build &rarr; rsync. Всі статті публікуються на сайт одним деплоєм.</li>
   </ul>
 
-  <h3>Режим publish</h3>
-  <p>Запускається 4 рази на день. Обирає найкращу статтю, яка ще не була відправлена в TG, генерує для неї підпис з словничком, і відправляє фото+підпис в <strong>@pashtelka_news</strong>. Трекає відправлене в state/tg_published/{date}.json.</p>
+  <h3>Режим publish (механічний)</h3>
+  <p>Запускається 4 рази на день. <strong>Без LLM-викликів</strong> — чисто механічна публікація. Обирає наступну неопубліковану статтю, завантажує готовий TG-підпис з state/teasers/, і відправляє фото+підпис в <strong>@pashtelka_news</strong>. Трекає відправлене в state/tg_published/{date}.json.</p>
 
   <h3>Режим digest</h3>
   <p>Вечірній дайджест о 20:00. Збирає всі сьогоднішні статті (мінімум 3), AI пише вступ і висновок, формує список з емодзі та посиланнями на сайт. Публікує в TG з реакцією.</p>
@@ -422,8 +427,8 @@ const OVERVIEW_HTML = `
   <h3>Cron-розклад</h3>
   <table>
     <tr><th>Cron</th><th>Режим</th><th>Що робить</th></tr>
-    <tr><td>0 7-19 * * *</td><td>generate</td><td>Генерація 1 статті на сайт щогодини</td></tr>
-    <tr><td>5 9,12,15,18 * * *</td><td>publish</td><td>Публікація найкращої в TG</td></tr>
+    <tr><td>0 7 * * *</td><td>generate</td><td>Ранковий batch: план + всі 10-12 статей + 1 деплой</td></tr>
+    <tr><td>5 9,12,15,18 * * *</td><td>publish</td><td>Механічна публікація в TG (без LLM)</td></tr>
     <tr><td>5 20 * * *</td><td>digest</td><td>Вечірній дайджест в TG</td></tr>
   </table>
 
@@ -461,6 +466,19 @@ async function loadFiles() {
   const sb = document.getElementById('sidebar');
   let h = sb.innerHTML; // keep legend
 
+  // Editor notes — first!
+  if (d.editor_notes) {
+    allFiles['editor_notes.md'] = d.editor_notes;
+    h += '<div class="section-label" style="background:rgba(234,179,8,.12);color:var(--yellow)">Editor-in-Chief</div>';
+    h += `<div class="stage" style="background:rgba(234,179,8,.04)">
+      <span class="stage-title">Побажання головного редактора</span>
+      <div class="stage-desc">Теми, посилання, інструкції для наступного редакційного плану. Все що тут написано буде пріоритизовано. Після використання — автоочищення.</div>
+      <div class="stage-files" style="margin-top:6px">
+        <button class="file-btn prompt" style="border-left:3px solid var(--yellow)" data-path="${d.editor_notes.path}" data-name="editor_notes.md" data-ctx="Вміст включається в промпт Stage 0 (Editorial Plan) як пріоритетні вказівки" data-out="Вільний текст: теми, URL, побажання" onclick="openFile(this)">editor_notes.md</button>
+      </div>
+    </div>`;
+  }
+
   h += '<div class="section-label">Pipeline Stages</div>';
   STAGES.forEach(s => {
     h += `<div class="stage">
@@ -488,19 +506,6 @@ async function loadFiles() {
       </div>`;
     }
   });
-
-  // Editor notes
-  if (d.editor_notes) {
-    allFiles['editor_notes.md'] = d.editor_notes;
-    h += '<div class="section-label">Editor-in-Chief</div>';
-    h += `<div class="stage">
-      <span class="stage-title" style="font-size:13px">Побажання головного редактора</span>
-      <div class="stage-desc">Теми, посилання, інструкції для наступного редакційного плану. Все що тут написано буде пріоритизовано при генерації плану.</div>
-      <div class="stage-files" style="margin-top:6px">
-        <button class="file-btn prompt" style="border-left:3px solid var(--yellow)" data-path="${d.editor_notes.path}" data-name="editor_notes.md" data-ctx="Вміст файлу включається в промпт Stage 0 (Editorial Plan) як пріоритетні вказівки" data-out="Вільний текст: теми, URL, побажання. Пайплайн використовує при наступній генерації плану." onclick="openFile(this)">editor_notes.md</button>
-      </div>
-    </div>`;
-  }
 
   sb.innerHTML = h;
   // Show overview by default

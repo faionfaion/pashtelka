@@ -1,4 +1,9 @@
-"""Stage 7: Deploy — save article to content/, build and deploy Gatsby site."""
+"""Stage 7: Deploy — save article locally and deploy site to server.
+
+Split into two functions:
+  save_article(ctx)  — save markdown + image + summary + git commit (per article)
+  deploy_site()      — git push + SSH build + rsync (once after all articles)
+"""
 
 from __future__ import annotations
 
@@ -7,7 +12,6 @@ import logging
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
-
 
 from pipeline.config import (
     AUTHOR_NAME, CONTENT_DIR, GATSBY_DIR, IMAGES_DIR,
@@ -18,7 +22,8 @@ from pipeline.context import PipelineContext
 logger = logging.getLogger(__name__)
 
 
-def run(ctx: PipelineContext) -> None:
+def save_article(ctx: PipelineContext) -> None:
+    """Save article to content/, generate image, commit to git."""
     now = datetime.now(timezone.utc)
     date_str = now.strftime("%Y-%m-%d")
 
@@ -69,12 +74,12 @@ def run(ctx: PipelineContext) -> None:
     teasers_dir.mkdir(parents=True, exist_ok=True)
     teaser_path = teasers_dir / f"{ctx.slug}.json"
     teaser_path.write_text(
-        json.dumps({"slug": ctx.slug, "tg_post": ctx.tg_post, "url": ctx.article_url},
+        json.dumps({"slug": ctx.slug, "tg_post": ctx.tg_post, "url": f"{SITE_BASE_URL}/{ctx.slug}/"},
                     ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 
-    # 2b. Save summary to state/summaries.json
+    # 3. Save summary to state/summaries.json
     summaries_file = STATE_DIR / "summaries.json"
     summaries: dict = {}
     if summaries_file.exists():
@@ -88,7 +93,7 @@ def run(ctx: PipelineContext) -> None:
     }
     summaries_file.write_text(json.dumps(summaries, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # 3. Copy image if generated (skip if already in place)
+    # 4. Copy image if generated
     if ctx.image_path and ctx.image_path.exists():
         IMAGES_DIR.mkdir(parents=True, exist_ok=True)
         dest = IMAGES_DIR / f"{ctx.slug}.jpg"
@@ -96,22 +101,27 @@ def run(ctx: PipelineContext) -> None:
             import shutil
             shutil.copy2(ctx.image_path, dest)
             logger.info("Image copied to: %s", dest)
-        else:
-            logger.info("Image already in place: %s", dest)
 
-    # 4. Git add + commit + push
+    # 5. Git commit this article
     try:
         _git_commit(ctx)
     except Exception:
-        logger.warning("Git commit failed, continuing", exc_info=True)
+        logger.warning("Git commit failed for %s, continuing", ctx.slug, exc_info=True)
 
-    # 5. Deploy to faion-net server via SSH
+
+def deploy_site() -> None:
+    """Push all commits and deploy site to faion-net server. Called once after batch."""
+    root = str(CONTENT_DIR.parent)
+
     try:
-        # Push to GitHub first
-        root = CONTENT_DIR.parent
+        # Push to GitHub
         subprocess.run(["git", "push", "origin", "master"],
-                       cwd=str(root), capture_output=True, timeout=60)
+                       cwd=root, capture_output=True, timeout=60)
+        logger.info("Git pushed to origin/master")
+    except Exception:
+        logger.error("Git push failed", exc_info=True)
 
+    try:
         # SSH deploy: pull + build + rsync on server
         logger.info("Deploying to faion-net server...")
         ssh_cmd = [
@@ -122,7 +132,7 @@ def run(ctx: PipelineContext) -> None:
             "cd gatsby && npx gatsby build && "
             "sudo rsync -a --delete public/ /var/www/pashtelka.faion.net/",
         ]
-        result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=300)
+        result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
         if result.returncode == 0:
             logger.info("Site deployed to faion-net")
         else:
@@ -131,18 +141,21 @@ def run(ctx: PipelineContext) -> None:
         logger.error("Deploy failed", exc_info=True)
 
 
+# Keep backward-compat alias
+def run(ctx: PipelineContext) -> None:
+    """Legacy: save + deploy for single article."""
+    save_article(ctx)
+    deploy_site()
+
+
 def _git_commit(ctx: PipelineContext) -> None:
-    """Git add, commit, push the new article."""
-    root = CONTENT_DIR.parent
+    """Git add and commit the new article."""
+    root = str(CONTENT_DIR.parent)
     subprocess.run(
         ["git", "add", "-A"],
-        cwd=str(root), capture_output=True, timeout=30,
+        cwd=root, capture_output=True, timeout=30,
     )
     subprocess.run(
         ["git", "commit", "-m", f"content: {ctx.slug}"],
-        cwd=str(root), capture_output=True, timeout=30,
-    )
-    subprocess.run(
-        ["git", "push"],
-        cwd=str(root), capture_output=True, timeout=60,
+        cwd=root, capture_output=True, timeout=30,
     )

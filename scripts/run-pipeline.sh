@@ -2,13 +2,13 @@
 # Pashtelka pipeline runner — called by cron.
 #
 # Cron schedule (Lisbon time = UTC in winter, UTC+1 in summer):
-#   0 7-19 * * *  bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh generate
-#   0 9,12,15,18 * * *  bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh publish
-#   0 20 * * *    bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh digest
+#   0 7 * * *          bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh generate
+#   5 9,12,15,18 * * * bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh publish
+#   5 20 * * *         bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh digest
 #
 # Modes:
-#   generate — create article on site (no TG)
-#   publish  — pick best article, send to TG
+#   generate — morning batch: editorial plan + all articles + deploy site
+#   publish  — mechanical: pick pre-generated article, send to TG
 #   digest   — evening digest to TG
 
 set -euo pipefail

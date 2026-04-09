@@ -54,22 +54,14 @@ SOUND_ON_END = 22
 # Max TG caption length (safe for multi-byte UTF-8)
 MAX_TG_CAPTION = 900
 
-# Content generation schedule (Lisbon time hours) — articles published to site only
-GENERATE_HOURS = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+# Batch generation: runs once in the morning, generates all articles for the day
+GENERATE_HOUR = 7  # Lisbon time, single morning run
 
-# TG publish schedule — pick best unpublished article and post to TG
+# TG publish schedule — mechanical publish of pre-generated articles
 TG_PUBLISH_HOURS = [9, 12, 15, 18]
 
 # Digest hour — compile day's best articles into one TG post
 DIGEST_HOUR = 20
-
-# Legacy compat
-SLOTS = GENERATE_HOURS
-SLOT_TYPES = {
-    12: "material",     # Compiled article 1
-    16: "material",     # Compiled article 2
-    # All other slots: "news"
-}
 
 # Content type configs
 CONTENT_TYPES = {
