@@ -462,3 +462,61 @@ Traceback (most recent call last):
   File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
     raise child_exception_type(errno_num, err_msg, err_filename)
 FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 16:00:01 Pipeline run started
+16:00:01 [pipeline] INFO: === Stage 1_collect ===
+16:00:01 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+16:00:01 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+16:00:01 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+16:00:01 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+16:00:01 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+16:00:01 [pipeline.feeds] INFO: Feed publico: 10 items
+16:00:02 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+16:00:02 [pipeline.stages.s1_collect] INFO: Slot: 17:00 (news) | RSS items: 62 | Existing articles: 26
+16:00:02 [pipeline] INFO: Stage 1_collect complete
+16:00:02 [pipeline] INFO: === Stage 2_research ===
+16:00:02 [pipeline] ERROR: Stage 2_research failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 63, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+16:00:02 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_160002.json
+16:00:02 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 154, in cli
+    ctx = run_pipeline(dry_run=args.dry_run, start_stage=args.stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 63, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
