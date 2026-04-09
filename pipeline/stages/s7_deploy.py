@@ -73,13 +73,16 @@ def run(ctx: PipelineContext) -> None:
         encoding="utf-8",
     )
 
-    # 3. Copy image if generated
+    # 3. Copy image if generated (skip if already in place)
     if ctx.image_path and ctx.image_path.exists():
         IMAGES_DIR.mkdir(parents=True, exist_ok=True)
         dest = IMAGES_DIR / f"{ctx.slug}.png"
-        import shutil
-        shutil.copy2(ctx.image_path, dest)
-        logger.info("Image copied to: %s", dest)
+        if ctx.image_path.resolve() != dest.resolve():
+            import shutil
+            shutil.copy2(ctx.image_path, dest)
+            logger.info("Image copied to: %s", dest)
+        else:
+            logger.info("Image already in place: %s", dest)
 
     # 4. Git add + commit + push
     try:

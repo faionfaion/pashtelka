@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-04-09_063129",
+  "status": "failed",
+  "dry_run": false,
+  "slug": "pogodni-goiadalky-strybok-temperatury-saharskyi-pyl-buria-vykhidni-9-12-kvitnia-2026",
+  "author": "Oksana Lytvyn",
+  "duration_s": 458.9,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": "7_deploy",
+  "error": "PosixPath('/home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/pogodni-goiadalky-strybok-temperatury-saharskyi-pyl-buria-vykhidni-9-12-kvitnia-2026.png') and PosixPath('/home/nero/w",
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.8,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 198.2,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 42.0,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 140.1,
+      "error": null
+    },
+    {
+      "name": "6_generate_tg",
+      "status": "ok",
+      "duration_s": 22.1,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "failed",
+      "duration_s": 55.6,
+      "error": "PosixPath('/home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/pogodni-goiadalky-strybok-temperatury-saharskyi-pyl-buria-vykhidni-9-12-kvitnia-2026.png') and PosixPath('/home/nero/w"
+    }
+  ]
+}
