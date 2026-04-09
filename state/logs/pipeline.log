@@ -998,3 +998,41 @@ shutil.SameFileError: PosixPath('/home/nero/workspace/projects/pashtelka-faion-n
 2026-04-09 06:38:53 [pipeline] INFO: === Pipeline complete ===
 2026-04-09 06:38:53 [pipeline] INFO: Slug: zhovti-poperedzhennia-pivden-30-gradusiv-grozy-9-kvitnia-2026 | Type: weather | Tags: ['Погода', 'IPMA', 'Попередження', 'Грози', 'Алгарве', 'Алентежу']
 2026-04-09 06:38:53 [pipeline] INFO: TG msg_id=19
+2026-04-09 06:39:25 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 06:39:25 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 06:39:25 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 06:39:25 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 06:39:25 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 06:39:25 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 06:39:26 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 06:39:26 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 06:39:26 [pipeline.stages.s1_collect] INFO: Slot: 09:00 (news) | RSS items: 59 | Existing articles: 16
+2026-04-09 06:39:26 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 06:39:26 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 06:42:51 [pipeline.stages.s2_research] INFO: Research complete: 8191 chars
+2026-04-09 06:42:51 [pipeline] INFO: Stage 2_research complete
+2026-04-09 06:42:51 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 06:43:37 [pipeline.stages.s3_generate] INFO: Generated: '34 тисячі заявок на відновлення житла після бурь — президент Сеґуру вимагає прискорити виплати' (slug=34-tysiachi-zayavok-vidnovlennia-zhytla-buri-seguro-kviten-2026, 303 words, 6 sources)
+2026-04-09 06:43:37 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 06:43:37 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 06:44:31 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-09 06:44:31 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, релевантна для аудиторії та має достатню джерельну базу. Декілька зауважень для фінального полірування:
+
+1. **ЗАГОЛОВОК ПЕРЕБІЛЬШУЄ**: Заголовок каже «президент Сеґуру вима
+2026-04-09 06:45:18 [pipeline.stages.s5_revise] INFO: Revised article: 303 words
+2026-04-09 06:45:18 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 06:46:19 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-09 06:46:19 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована та актуальна для цільової аудиторії. Кілька зауважень перед публікацією:
+
+1. **Непідтверджена ключова заява**: «Допомога стосується всіх мешканців постійного житла, 
+2026-04-09 06:46:19 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 06:46:19 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 06:46:19 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-09 06:46:41 [pipeline.stages.s6_generate_tg] INFO: TG post: 723 chars
+2026-04-09 06:46:41 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-09 06:46:41 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-09 06:46:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-09 06:47:42 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-09 06:47:42 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/34-tysiachi-zayavok-vidnovlennia-zhytla-buri-seguro-kviten-2026.png (3611 KB)
+2026-04-09 06:47:42 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/34-tysiachi-zayavok-vidnovlennia-zhytla-buri-seguro-kviten-2026.md
+2026-04-09 06:47:42 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/34-tysiachi-zayavok-vidnovlennia-zhytla-buri-seguro-kviten-2026.png
