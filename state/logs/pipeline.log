@@ -1264,3 +1264,59 @@ shutil.SameFileError: PosixPath('/home/nero/workspace/projects/pashtelka-faion-n
 2026-04-09 07:25:34 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026.png (3855 KB)
 2026-04-09 07:25:34 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026.md
 2026-04-09 07:25:34 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026.png
+2026-04-09 07:25:35 [pipeline.stages.s7_deploy] INFO: Building Gatsby site...
+2026-04-09 07:25:47 [pipeline.stages.s7_deploy] INFO: Deploying to Cloudflare Pages...
+2026-04-09 07:26:03 [pipeline.stages.s7_deploy] INFO: Site deployed to Cloudflare Pages
+2026-04-09 07:26:03 [pipeline] INFO: Stage 7_deploy complete
+2026-04-09 07:26:03 [pipeline] INFO: === Stage 8_verify ===
+2026-04-09 07:26:03 [pipeline.stages.s8_verify] INFO: Site verified: https://pashtelka.faion.net/portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026/ (200 OK, title found)
+2026-04-09 07:26:03 [pipeline] INFO: Stage 8_verify complete
+2026-04-09 07:26:03 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-09 07:26:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 07:26:03 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4314
+2026-04-09 07:26:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 07:26:03 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-09 07:26:03 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=24 (silent=True)
+2026-04-09 07:26:03 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-09 07:26:03 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_072603.json
+2026-04-09 07:26:03 [pipeline] INFO: === Pipeline complete ===
+2026-04-09 07:26:03 [pipeline] INFO: Slug: portugalia-fregat-f16-baltyka-nato-brilliant-shield-kviten-2026 | Type: news | Tags: ['NATO', 'Португалія', 'Балтика', 'Росія', 'оборона', 'F-16', 'Збройні сили', 'безпека']
+2026-04-09 07:26:03 [pipeline] INFO: TG msg_id=24
+2026-04-09 07:26:04 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 07:26:04 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 07:26:04 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 07:26:04 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 07:26:04 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 07:26:04 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 07:26:04 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 07:26:04 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 07:26:04 [pipeline.stages.s1_collect] INFO: Slot: 14:00 (news) | RSS items: 62 | Existing articles: 21
+2026-04-09 07:26:04 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 07:26:04 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 07:29:16 [pipeline.stages.s2_research] INFO: Research complete: 6775 chars
+2026-04-09 07:29:16 [pipeline] INFO: Stage 2_research complete
+2026-04-09 07:29:16 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 07:30:03 [pipeline.stages.s3_generate] INFO: Generated: 'Парламент подвоїв термін натуралізації: українцям тепер потрібно 10 років для громадянства Португалії' (slug=zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026, 341 words, 4 sources)
+2026-04-09 07:30:03 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 07:30:03 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 07:31:23 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-09 07:31:23 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, релевантна та має якісні джерела. Потрібні конкретні виправлення перед публікацією:
+
+1. **МОВА (орфографія):** «іммігрантських» та «іммігрантів» — за українським правописом
+2026-04-09 07:32:32 [pipeline.stages.s5_revise] INFO: Revised article: 363 words
+2026-04-09 07:32:32 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 07:33:34 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-09 07:33:34 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття, затверджую з кількома зауваженнями на майбутнє:
+
+1. ДЖЕРЕЛА (✅): Усі фактичні твердження підкріплені джерелами, посилання вбудовані в текст коректно. Цитата Садохи правильно атрибутован
+2026-04-09 07:33:34 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 07:33:34 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 07:33:34 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-09 07:33:58 [pipeline.stages.s6_generate_tg] INFO: TG post: 604 chars
+2026-04-09 07:33:58 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-09 07:33:58 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-09 07:33:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-09 07:35:10 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-09 07:35:11 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026.png (3005 KB)
+2026-04-09 07:35:11 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026.md
+2026-04-09 07:35:11 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/zakon-pro-hromadyanstvo-portugalia-10-rokiv-naturalizacia-kviten-2026.png
