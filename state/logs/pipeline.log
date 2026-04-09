@@ -1790,3 +1790,100 @@ Traceback (most recent call last):
   File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
     raise child_exception_type(errno_num, err_msg, err_filename)
 FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 14:00:01 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 14:00:01 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 14:00:01 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 14:00:01 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 14:00:01 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 14:00:01 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 14:00:01 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 14:00:01 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 14:00:01 [pipeline.stages.s1_collect] INFO: Slot: 17:00 (news) | RSS items: 62 | Existing articles: 24
+2026-04-09 14:00:01 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 14:00:01 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 14:00:01 [pipeline] ERROR: Stage 2_research failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 63, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 14:00:02 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_140002.json
+2026-04-09 14:00:02 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 154, in cli
+    ctx = run_pipeline(dry_run=args.dry_run, start_stage=args.stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/main.py", line 83, in run_pipeline
+    stage_fn(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 63, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 161, in agent_query
+    return _call_claude(
+           ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 82, in _call_claude
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'
+2026-04-09 14:02:05 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 14:02:05 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 14:02:05 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 14:02:06 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 14:02:06 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 14:02:06 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 14:02:06 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 14:02:06 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 14:02:06 [pipeline.stages.s1_collect] INFO: Slot: 17:00 (news) | RSS items: 63 | Existing articles: 24
+2026-04-09 14:02:06 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 14:02:06 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 14:06:28 [pipeline.stages.s2_research] INFO: Research complete: 7911 chars
+2026-04-09 14:06:28 [pipeline] INFO: Stage 2_research complete
+2026-04-09 14:06:28 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 14:07:14 [pipeline.stages.s3_generate] INFO: Generated: 'Завтра стартує система Volta: за кожну пляшку — 10 центів депозиту' (slug=volta-deposit-system-bottles-cans-launch, 361 words, 4 sources)
+2026-04-09 14:07:14 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 14:07:14 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 14:08:03 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-09 14:08:03 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття. Кілька дрібних зауважень:
+
+1. **Хештеги відсутні.** За контент-планом потрібні хештеги (#Португалія, тематичні). Додати перед публікацією.
+2. **«читабельний»** — стилістично прийнятно д
+2026-04-09 14:08:21 [pipeline.stages.s5_revise] INFO: Revised article: 370 words
+2026-04-09 14:08:21 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 14:09:07 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-09 14:09:07 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття. Кілька дрібних зауважень:
+
+1. ДЖЕРЕЛА (10/10): Усі фактичні твердження підкріплені посиланнями на Público, ECO, RTP, AE Braga. Інлайн-цитування коректне.
+
+2. ТОЧНІСТЬ (9/10): Дата старт
+2026-04-09 14:09:07 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 14:09:07 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 14:09:07 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-09 14:09:34 [pipeline.stages.s6_generate_tg] INFO: TG post: 668 chars, vocab: 5 words
+2026-04-09 14:09:34 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-09 14:09:34 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-09 14:09:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-09 14:09:34 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 401 410
+2026-04-09 14:09:34 [pipeline.image_gen] ERROR: OpenAI API error: 401 — 
+2026-04-09 14:09:34 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/volta-deposit-system-bottles-cans-launch.md

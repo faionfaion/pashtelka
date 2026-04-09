@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-09_140002",
+  "status": "failed",
+  "dry_run": false,
+  "slug": "",
+  "author": "Oksana Lytvyn",
+  "duration_s": 0.8,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": "2_research",
+  "error": "[Errno 2] No such file or directory: 'claude'",
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.8,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "failed",
+      "duration_s": 0.0,
+      "error": "[Errno 2] No such file or directory: 'claude'"
+    }
+  ]
+}
