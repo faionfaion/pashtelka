@@ -1506,3 +1506,41 @@ FileNotFoundError: [Errno 2] No such file or directory: 'claude'
 2026-04-09 09:31:34 [pipeline] INFO: === Pipeline complete ===
 2026-04-09 09:31:34 [pipeline] INFO: Slug: programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026 | Type: news | Tags: ['Працевлаштування', 'Імміграція', 'Туризм', 'AIMA', 'Тимчасовий захист', 'Навчання', 'IEFP']
 2026-04-09 09:31:34 [pipeline] INFO: TG msg_id=26
+2026-04-09 09:49:55 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 09:49:55 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 09:49:55 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 09:49:55 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 09:49:55 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 09:49:55 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 09:49:55 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 09:49:55 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 09:49:55 [pipeline.stages.s1_collect] INFO: Slot: 16:00 (material) | RSS items: 65 | Existing articles: 23
+2026-04-09 09:49:55 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 09:49:55 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 09:54:49 [pipeline.stages.s2_research] INFO: Research complete: 9130 chars
+2026-04-09 09:54:49 [pipeline] INFO: Stage 2_research complete
+2026-04-09 09:54:49 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 09:56:08 [pipeline.stages.s3_generate] INFO: Generated: 'Оренда в Португалії дешевшає третій місяць поспіль: де шукати житло у 2026 році' (slug=orenda-portugalia-spadaye-tretiy-misyats-berezen-2026-mista-tsiny, 764 words, 4 sources)
+2026-04-09 09:56:08 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 09:56:08 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 09:56:57 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-09 09:56:57 [pipeline.stages.s4_review] INFO: Feedback: Сильний аналітичний матеріал з чіткою структурою, практичною цінністю та коректними посиланнями. Кілька зауважень для виправлення перед публікацією:
+
+1. **СУРЖИК (критично):** У розділі «Бюджетні варі
+2026-04-09 09:57:31 [pipeline.stages.s5_revise] INFO: Revised article: 784 words
+2026-04-09 09:57:31 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 09:58:15 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-09 09:58:15 [pipeline.stages.s4_review] INFO: Feedback: Сильний аналітичний матеріал із чіткою структурою, перевіреними даними та практичною цінністю для аудиторії. Дрібні зауваження:
+
+1. **T1/T2 не пояснені при першому вживанні.** Не всі читачі знають пор
+2026-04-09 09:58:15 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 09:58:15 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 09:58:15 [pipeline] INFO: === Stage 6_generate_tg ===
+2026-04-09 09:58:40 [pipeline.stages.s6_generate_tg] INFO: TG post: 558 chars
+2026-04-09 09:58:40 [pipeline] INFO: Stage 6_generate_tg complete
+2026-04-09 09:58:40 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-09 09:58:40 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-09 09:59:49 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-09 09:59:50 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/orenda-portugalia-spadaye-tretiy-misyats-berezen-2026-mista-tsiny.png (3128 KB)
+2026-04-09 09:59:50 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/orenda-portugalia-spadaye-tretiy-misyats-berezen-2026-mista-tsiny.md
+2026-04-09 09:59:50 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/orenda-portugalia-spadaye-tretiy-misyats-berezen-2026-mista-tsiny.png
