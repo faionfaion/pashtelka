@@ -138,8 +138,12 @@ export const Head = ({ data }) => {
       {ogImage && <meta property="og:image:height" content="1024" />}
       {ogImage && <meta name="twitter:card" content="summary_large_image" />}
       {ogImage && <meta name="twitter:image" content={ogImage} />}
+      <link rel="canonical" href={`https://pashtelka.faion.net/${fm.slug}/`} />
       <meta property="og:site_name" content="Паштелька" />
       <meta property="al:android:app_name" content="Medium" />
+      <meta property="al:android:package" content="com.medium.reader" />
+      <meta property="al:ios:app_name" content="Medium" />
+      <meta property="al:web:url" content={`https://pashtelka.faion.net/${fm.slug}/`} />
       <meta property="article:author" content={fm.author} />
       <meta property="article:published_time" content={`${fm.date}T00:00:00Z`} />
       {fm.tags && fm.tags.map((tag) => (

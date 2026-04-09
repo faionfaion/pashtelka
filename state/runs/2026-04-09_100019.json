@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-04-09_100019",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "orenda-portugalia-spadaye-tretiy-misyats-berezen-2026-mista-tsiny",
+  "author": "Oksana Lytvyn",
+  "duration_s": 624.7,
+  "image_generated": true,
+  "msg_id": 27,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.7,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 293.7,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 79.4,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 127.0,
+      "error": null
+    },
+    {
+      "name": "6_generate_tg",
+      "status": "ok",
+      "duration_s": 24.3,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "ok",
+      "duration_s": 99.2,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    },
+    {
+      "name": "9_publish_tg",
+      "status": "ok",
+      "duration_s": 0.3,
+      "error": null
+    }
+  ]
+}
