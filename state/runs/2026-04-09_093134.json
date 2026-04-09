@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-04-09_093134",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026",
+  "author": "Oksana Lytvyn",
+  "duration_s": 538.9,
+  "image_generated": true,
+  "msg_id": 26,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.8,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 265.2,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 38.6,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 114.6,
+      "error": null
+    },
+    {
+      "name": "6_generate_tg",
+      "status": "ok",
+      "duration_s": 21.2,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "ok",
+      "duration_s": 98.1,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    },
+    {
+      "name": "9_publish_tg",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    }
+  ]
+}

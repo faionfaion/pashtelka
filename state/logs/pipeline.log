@@ -1488,3 +1488,21 @@ FileNotFoundError: [Errno 2] No such file or directory: 'claude'
 2026-04-09 09:31:06 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026.png (3170 KB)
 2026-04-09 09:31:06 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026.md
 2026-04-09 09:31:06 [pipeline.stages.s7_deploy] INFO: Image already in place: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026.png
+2026-04-09 09:31:07 [pipeline.stages.s7_deploy] INFO: Building Gatsby site...
+2026-04-09 09:31:21 [pipeline.stages.s7_deploy] INFO: Deploying to Cloudflare Pages...
+2026-04-09 09:31:34 [pipeline.stages.s7_deploy] INFO: Site deployed to Cloudflare Pages
+2026-04-09 09:31:34 [pipeline] INFO: Stage 7_deploy complete
+2026-04-09 09:31:34 [pipeline] INFO: === Stage 8_verify ===
+2026-04-09 09:31:34 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pashtelka.faion.net/programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026/
+2026-04-09 09:31:34 [pipeline] INFO: Stage 8_verify complete
+2026-04-09 09:31:34 [pipeline] INFO: === Stage 9_publish_tg ===
+2026-04-09 09:31:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 09:31:34 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendMessage HTTP/1.1" 200 4649
+2026-04-09 09:31:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-09 09:31:34 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-09 09:31:34 [pipeline.stages.s9_publish_tg] INFO: Published to @pashtelka_news: msg_id=26 (silent=False)
+2026-04-09 09:31:34 [pipeline] INFO: Stage 9_publish_tg complete
+2026-04-09 09:31:34 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_093134.json
+2026-04-09 09:31:34 [pipeline] INFO: === Pipeline complete ===
+2026-04-09 09:31:34 [pipeline] INFO: Slug: programa-integrar-turismo-navchanna-stazhuvanna-immihranty-dedlayn-2-travnia-2026 | Type: news | Tags: ['Працевлаштування', 'Імміграція', 'Туризм', 'AIMA', 'Тимчасовий захист', 'Навчання', 'IEFP']
+2026-04-09 09:31:34 [pipeline] INFO: TG msg_id=26
