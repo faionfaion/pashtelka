@@ -22,7 +22,7 @@ source_names:
   - "Público"
   - "RTP"
   - "TSF"
-image: ""
+image: "/images/metro-lisboa-24-hour-strike-april-9.jpg"
 tg_post: |
   🚇 Метро Лісабона сьогодні не працює — і не запрацює до ранку п'ятниці.
   

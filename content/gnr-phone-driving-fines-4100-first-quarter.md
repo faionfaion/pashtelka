@@ -20,7 +20,7 @@ source_names:
   - "Observador"
   - "TSF"
   - "Diário de Notícias"
-image: ""
+image: "/images/gnr-phone-driving-fines-4100-first-quarter.jpg"
 tg_post: ""
 ---
 

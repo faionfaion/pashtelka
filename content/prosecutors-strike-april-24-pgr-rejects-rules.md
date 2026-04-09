@@ -29,7 +29,7 @@ source_names:
   - "Oficial de Justiça"
   - "RTP"
   - "Observador"
-image: ""
+image: "/images/prosecutors-strike-april-24-pgr-rejects-rules.jpg"
 tg_post: ""
 ---
 

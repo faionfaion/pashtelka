@@ -31,7 +31,7 @@ source_names:
   - "Segurança Social"
   - "Portal Gov.pt"
   - "Parlamento (Petição)"
-image: ""
+image: "/images/funeral-subsidy-children-disability-increase-1611.jpg"
 tg_post: ""
 ---
 

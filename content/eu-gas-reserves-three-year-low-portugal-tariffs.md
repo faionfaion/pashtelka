@@ -37,7 +37,7 @@ source_names:
   - "REN"
   - "Renascença"
   - "ERSE"
-image: ""
+image: "/images/eu-gas-reserves-three-year-low-portugal-tariffs.jpg"
 tg_post: ""
 ---
 

@@ -23,7 +23,7 @@ source_names:
   - "Público"
   - "ECO"
   - "AE Braga"
-image: ""
+image: "/images/volta-deposit-system-bottles-cans-launch.jpg"
 tg_post: |
   🫙 Завтра в Португалії стартує система <b>Volta</b> — за кожну пластикову пляшку чи бляшанку платитимете на 10 центів більше.
   
