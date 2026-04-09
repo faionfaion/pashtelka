@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "article": {"type": "string", "description": "Revised article text in Ukrainian"},
+    "title": {"type": "string", "description": "Revised title (if needed)"},
+    "description": {"type": "string", "description": "Revised meta description"}
+  },
+  "required": ["article"]
+}

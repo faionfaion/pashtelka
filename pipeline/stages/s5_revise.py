@@ -6,51 +6,20 @@ import logging
 
 from pipeline.config import AUTHOR_NAME, MODEL_GENERATE
 from pipeline.context import PipelineContext
+from pipeline.prompts.builder import build_revise_prompt
+from pipeline.schemas import load_schema
 from pipeline.sdk import structured_query
 
 logger = logging.getLogger(__name__)
 
-REVISION_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "article": {"type": "string", "description": "Revised article text in Ukrainian"},
-        "title": {"type": "string", "description": "Revised title (if needed)"},
-        "description": {"type": "string", "description": "Revised meta description"},
-    },
-    "required": ["article"],
-}
-
 
 def run(ctx: PipelineContext) -> None:
-    prompt = f"""\
-<task>
-Revise this article based on editorial feedback.
-</task>
-
-<current_article>
-Title: {ctx.title}
-Type: {ctx.slot_type}
-
-{ctx.article_text}
-</current_article>
-
-<feedback>
-{ctx.review_feedback}
-</feedback>
-
-<instructions>
-- Apply ALL feedback points
-- Maintain Oksana Lytvyn's voice (warm, friendly, light humor)
-- Keep all source citations
-- Do NOT add new information not in the original research
-- Return the complete revised article
-</instructions>
-"""
+    system, prompt = build_revise_prompt(ctx, AUTHOR_NAME)
 
     result = structured_query(
         prompt=prompt,
-        system_prompt=f"You are {AUTHOR_NAME}, revising your article based on editor feedback.",
-        schema=REVISION_SCHEMA,
+        system_prompt=system,
+        schema=load_schema("revision"),
         model=MODEL_GENERATE,
     )
 

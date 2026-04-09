@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "approved": {"type": "boolean"},
+    "feedback": {"type": "string", "description": "Specific feedback for revision"},
+    "score": {"type": "integer", "description": "Quality score 1-10"}
+  },
+  "required": ["approved", "feedback", "score"]
+}

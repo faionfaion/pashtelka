@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "hook": {
+      "type": "string",
+      "description": "Bold hook/headline \u2014 1 sentence, grab attention (Ukrainian)"
+    },
+    "body": {
+      "type": "string",
+      "description": "2-3 sentences: key facts, practical info. Accent words in <b>bold</b>. Ukrainian, HTML only."
+    },
+    "vocab": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pt": {"type": "string", "description": "Portuguese term as used in PT sources"},
+          "uk": {"type": "string", "description": "Accurate Ukrainian dictionary translation (literal, not paraphrase)"}
+        },
+        "required": ["pt", "uk"]
+      },
+      "description": "3-5 Portuguese vocabulary words with precise Ukrainian translations"
+    }
+  },
+  "required": ["hook", "body", "vocab"]
+}

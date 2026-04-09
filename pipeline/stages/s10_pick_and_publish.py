@@ -17,37 +17,12 @@ from pipeline.config import (
     SOUND_ON_END, SOUND_ON_START, STATE_DIR,
     TG_BOT_TOKEN, TG_CHANNEL_ID,
 )
+from pipeline.prompts.builder import build_pick_publish_prompt
+from pipeline.schemas import load_schema
 from pipeline.sdk import structured_query
 from pipeline.telegram import add_reaction, send_photo
 
 logger = logging.getLogger(__name__)
-
-TG_POST_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "hook": {
-            "type": "string",
-            "description": "Bold hook/headline — 1 sentence, grab attention (Ukrainian)",
-        },
-        "body": {
-            "type": "string",
-            "description": "2-3 sentences: key facts, practical info. Accent words in <b>bold</b>. Ukrainian, HTML only.",
-        },
-        "vocab": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "pt": {"type": "string", "description": "Portuguese term as used in PT sources"},
-                    "uk": {"type": "string", "description": "Accurate Ukrainian dictionary translation (literal, not paraphrase)"},
-                },
-                "required": ["pt", "uk"],
-            },
-            "description": "3-5 Portuguese vocabulary words with precise Ukrainian translations",
-        },
-    },
-    "required": ["hook", "body", "vocab"],
-}
 
 
 def run() -> dict | None:
@@ -170,32 +145,12 @@ def _find_image(slug: str) -> str | None:
 
 
 def _generate_caption(title: str, article_text: str, article_url: str) -> str:
-    prompt = f"""\
-<task>
-Write a Telegram photo caption for this article. Also extract Portuguese vocabulary.
-</task>
-
-<article>
-Title: {title}
-
-{article_text[:2000]}
-</article>
-
-<rules>
-HOOK: one punchy sentence, Ukrainian. Will be displayed in bold.
-BODY: 2-3 sentences with key facts. Use <b>bold</b> for accent words (numbers, names, dates, important terms). Keep it useful and practical. No hashtags. No sign-offs.
-VOCAB: 3-5 Portuguese terms from the article topic. Pick words people encounter in daily life in Portugal.
-- Portuguese word first, Ukrainian LITERAL dictionary translation second.
-- Translate precisely: "lista de espera" = "список очікування" (NOT "черга"). "Combustível" = "паливо" (NOT "бензин").
-- No explanations in parentheses. Just the word and its direct translation.
-- If a term is a proper name or abbreviation (AIMA, SNS), give the full Portuguese name + Ukrainian equivalent.
-</rules>
-"""
+    system, prompt = build_pick_publish_prompt(title, article_text)
 
     result = structured_query(
         prompt=prompt,
-        system_prompt="You write Telegram captions for a Ukrainian news channel about Portugal. Concise, useful, bold accents on key words. Vocabulary translations must be LITERAL dictionary equivalents, not paraphrases or explanations.",
-        schema=TG_POST_SCHEMA,
+        system_prompt=system,
+        schema=load_schema("tg_post"),
         model=MODEL_TG,
     )
 

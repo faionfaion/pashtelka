@@ -2599,3 +2599,32 @@ FileNotFoundError: [Errno 2] No such file or directory: 'claude'
 2026-04-09 20:42:13 [pipeline] INFO: Stage 8_verify complete
 2026-04-09 20:42:13 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_204213.json
 2026-04-09 20:42:13 [pipeline] INFO: === Generate complete: prosecutors-strike-april-24-pgr-rejects-rules ===
+2026-04-09 21:51:18 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-04-09 (10 articles)
+2026-04-09 21:51:18 [pipeline] INFO: Editorial topic: Вихідні у Португалії 10-13 квітня: фестивалі, ринки, безкоштовні події (utility)
+2026-04-09 21:51:18 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 21:51:18 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 21:51:18 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 21:51:18 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 21:51:18 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 21:51:18 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 21:51:18 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 21:51:19 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 21:51:19 [pipeline.stages.s1_collect] INFO: Slot: 07:00 (news) | RSS items: 63 | Existing articles: 30
+2026-04-09 21:51:19 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 21:51:19 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 21:56:00 [pipeline.stages.s2_research] INFO: Research complete: 18870 chars
+2026-04-09 21:56:00 [pipeline] INFO: Stage 2_research complete
+2026-04-09 21:56:00 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 21:57:20 [pipeline.stages.s3_generate] INFO: Generated: 'Вихідні у Португалії 10-13 квітня: фестивалі, ринки, безкоштовні музеї та розваги для дітей' (slug=weekend-events-portugal-april-10-13, 504 words, 16 sources)
+2026-04-09 21:57:20 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 21:57:20 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 21:58:52 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-09 21:58:52 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, структурована й корисна для аудиторії, але є кілька проблем, які потрібно виправити перед публікацією:
+
+**1. ДЖЕРЕЛА — критична помилка:** Метадані `` мають повністю переплутані лейбли 
+2026-04-09 22:00:46 [pipeline.stages.s5_revise] INFO: Revised article: 558 words
+2026-04-09 22:00:46 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 22:02:08 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-09 22:02:08 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом якісна, добре структурована і дуже корисна для аудиторії. Однак є кілька проблем, які потрібно виправити перед публікацією:
+
+1. ДЖЕРЕЛА — КРИТИЧНО: Список джерел (sources) повністю пере

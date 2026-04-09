@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {"type": "string", "description": "Article title in Ukrainian"},
+    "slug": {"type": "string", "description": "URL slug (latin, lowercase, hyphens)"},
+    "article": {"type": "string", "description": "Article BODY in Ukrainian markdown. NO title, NO metadata, NO 'Title:' prefix \u2014 just paragraphs starting with the hook sentence."},
+    "description": {"type": "string", "description": "Meta description in Ukrainian (150-160 chars)"},
+    "tags": {"type": "array", "items": {"type": "string"}, "description": "Topic tags in Ukrainian"},
+    "hashtags": {"type": "string", "description": "Hashtags for TG post (city + topic)"},
+    "source_urls": {"type": "array", "items": {"type": "string"}, "description": "Source URLs"},
+    "source_names": {"type": "array", "items": {"type": "string"}, "description": "Source names"},
+    "city_tags": {"type": "array", "items": {"type": "string"}, "description": "Relevant city names"},
+    "image_prompt": {"type": "string", "description": "Comic-style illustration prompt in English"},
+    "summary": {
+      "type": "string",
+      "description": "Factual summary (1-2 paragraphs): main topic, key facts, who is affected, what changed, why it matters for Ukrainians in Portugal. Be specific \u2014 this is used for editorial planning to avoid topic repetition."
+    }
+  },
+  "required": ["title", "slug", "article", "description", "tags", "hashtags",
+                "source_urls", "source_names", "image_prompt", "summary"]
+}

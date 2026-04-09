@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "intro": {
+      "type": "string",
+      "description": "1-2 sentence warm intro to the evening digest (Ukrainian, HTML). Use <b>bold</b> for accents."
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "emoji": {"type": "string", "description": "One relevant emoji for the topic"},
+          "title": {"type": "string", "description": "Short headline (5-10 words, Ukrainian)"},
+          "slug": {"type": "string", "description": "Article slug for link"}
+        },
+        "required": ["emoji", "title", "slug"]
+      },
+      "description": "5-10 best articles of the day, ordered by importance"
+    },
+    "outro": {
+      "type": "string",
+      "description": "1 sentence closing (Ukrainian). Warm, friendly tone."
+    }
+  },
+  "required": ["intro", "items", "outro"]
+}

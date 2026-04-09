@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "articles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topic": {"type": "string", "description": "Article topic/headline idea (Ukrainian)"},
+          "type": {"type": "string", "enum": ["news", "material", "utility", "immigration", "guide"],
+                   "description": "Content type"},
+          "angle": {"type": "string", "description": "Specific angle/focus for this article (Ukrainian)"},
+          "sources_hint": {"type": "string", "description": "Where to research: specific portals, RSS, search queries (English)"},
+          "priority": {"type": "integer", "description": "1=must publish, 2=important, 3=nice to have"}
+        },
+        "required": ["topic", "type", "angle", "sources_hint", "priority"]
+      },
+      "description": "10-12 article ideas for today, ordered by priority"
+    }
+  },
+  "required": ["articles"]
+}

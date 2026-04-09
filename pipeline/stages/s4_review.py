@@ -6,65 +6,20 @@ import logging
 
 from pipeline.config import AUTHOR_NAME, MODEL_REVIEW
 from pipeline.context import PipelineContext
+from pipeline.prompts.builder import build_review_prompt
+from pipeline.schemas import load_schema
 from pipeline.sdk import structured_query
 
 logger = logging.getLogger(__name__)
 
-REVIEW_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "approved": {"type": "boolean"},
-        "feedback": {"type": "string", "description": "Specific feedback for revision"},
-        "score": {"type": "integer", "description": "Quality score 1-10"},
-    },
-    "required": ["approved", "feedback", "score"],
-}
-
 
 def run(ctx: PipelineContext) -> None:
-    prompt = f"""\
-<task>
-Review this article for Pashtelka (Ukrainian news about Portugal).
-</task>
-
-<article>
-Title: {ctx.title}
-Type: {ctx.slot_type}
-Author: {AUTHOR_NAME}
-
-{ctx.article_text}
-</article>
-
-<sources>
-{chr(10).join(f'- {name}: {url}' for name, url in zip(ctx.source_names, ctx.source_urls))}
-</sources>
-
-<checklist>
-1. SOURCES: Every factual claim has a cited source? Source URLs are real?
-2. ACCURACY: No fabricated facts or misleading claims?
-3. VOICE: Matches Oksana's warm, friendly tone? No banned phrases?
-4. LANGUAGE: Clean Ukrainian, no Russian words, no Surzhyk?
-5. STRUCTURE: Short paragraphs? Inverted pyramid for news?
-6. RELEVANCE: Relevant to Ukrainians in Portugal? Practical takeaway?
-7. LENGTH: Within word count limits for {ctx.slot_type}?
-8. TAGS/HASHTAGS: Appropriate city and topic tags?
-9. LEGAL: No defamation, no unverified claims about specific people?
-10. PORTUGUESE TERMS: Explained in Ukrainian on first use?
-</checklist>
-
-<scoring>
-- 8-10: Approved (minor issues only)
-- 5-7: Needs revision (specific improvements needed)
-- 1-4: Major rewrite needed
-</scoring>
-
-If score >= 8, set approved=true. Otherwise, provide specific actionable feedback.
-"""
+    system, prompt = build_review_prompt(ctx, AUTHOR_NAME)
 
     result = structured_query(
         prompt=prompt,
-        system_prompt="You are a senior editor reviewing articles for a Ukrainian news outlet in Portugal. Be strict but fair.",
-        schema=REVIEW_SCHEMA,
+        system_prompt=system,
+        schema=load_schema("review"),
         model=MODEL_REVIEW,
     )
 

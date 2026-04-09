@@ -16,38 +16,12 @@ from pipeline.config import (
     SOUND_ON_END, SOUND_ON_START, STATE_DIR,
     TG_BOT_TOKEN, TG_CHANNEL_ID,
 )
+from pipeline.prompts.builder import build_digest_prompt
+from pipeline.schemas import load_schema
 from pipeline.sdk import structured_query
 from pipeline.telegram import add_reaction, send_photo
 
 logger = logging.getLogger(__name__)
-
-DIGEST_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "intro": {
-            "type": "string",
-            "description": "1-2 sentence warm intro to the evening digest (Ukrainian, HTML). Use <b>bold</b> for accents.",
-        },
-        "items": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "emoji": {"type": "string", "description": "One relevant emoji for the topic"},
-                    "title": {"type": "string", "description": "Short headline (5-10 words, Ukrainian)"},
-                    "slug": {"type": "string", "description": "Article slug for link"},
-                },
-                "required": ["emoji", "title", "slug"],
-            },
-            "description": "5-10 best articles of the day, ordered by importance",
-        },
-        "outro": {
-            "type": "string",
-            "description": "1 sentence closing (Ukrainian). Warm, friendly tone.",
-        },
-    },
-    "required": ["intro", "items", "outro"],
-}
 
 
 def run() -> dict | None:
@@ -140,27 +114,12 @@ def _generate_digest(articles: list[tuple[str, str, str]], today_str: str) -> st
         for slug, title, body in articles
     )
 
-    prompt = f"""\
-<task>
-Create an evening news digest for {today_str}. Pick the 5-10 most important/interesting articles.
-</task>
-
-<articles>
-{articles_text}
-</articles>
-
-<rules>
-INTRO: 1-2 sentences, warm evening greeting. Use <b>bold</b> for accents. Ukrainian.
-ITEMS: Pick 5-10 best articles. For each: one emoji + short catchy headline (not the original title — rewrite shorter). Use the exact slug from the list.
-OUTRO: 1 sentence, friendly closing. Ukrainian.
-Order by importance/interest, most impactful first.
-</rules>
-"""
+    system, prompt = build_digest_prompt(articles_text, today_str)
 
     result = structured_query(
         prompt=prompt,
-        system_prompt="You write evening digest posts for a Ukrainian news channel about Portugal. Warm, friendly tone. Concise headlines.",
-        schema=DIGEST_SCHEMA,
+        system_prompt=system,
+        schema=load_schema("digest"),
         model=MODEL_TG,
     )
 

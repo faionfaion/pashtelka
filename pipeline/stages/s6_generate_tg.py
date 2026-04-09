@@ -6,68 +6,22 @@ import logging
 
 from pipeline.config import MAX_TG_CAPTION, MODEL_TG, SITE_BASE_URL
 from pipeline.context import PipelineContext
+from pipeline.prompts.builder import build_tg_post_prompt
+from pipeline.schemas import load_schema
 from pipeline.sdk import structured_query
 
 logger = logging.getLogger(__name__)
-
-TG_POST_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "hook": {
-            "type": "string",
-            "description": "Bold hook/headline — 1 sentence, grab attention (Ukrainian)",
-        },
-        "body": {
-            "type": "string",
-            "description": "2-3 sentences: key facts, practical info. Accent words in <b>bold</b>. Ukrainian, HTML only.",
-        },
-        "vocab": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "pt": {"type": "string", "description": "Portuguese term as used in PT sources"},
-                    "uk": {"type": "string", "description": "Accurate Ukrainian dictionary translation (literal, not paraphrase)"},
-                },
-                "required": ["pt", "uk"],
-            },
-            "description": "3-5 Portuguese vocabulary words with precise Ukrainian translations",
-        },
-    },
-    "required": ["hook", "body", "vocab"],
-}
 
 
 def run(ctx: PipelineContext) -> None:
     article_url = f"{SITE_BASE_URL}/{ctx.slug}/"
 
-    prompt = f"""\
-<task>
-Write a Telegram photo caption for this article. Also extract Portuguese vocabulary.
-</task>
-
-<article>
-Title: {ctx.title}
-Type: {ctx.slot_type}
-
-{ctx.article_text[:2000]}
-</article>
-
-<rules>
-HOOK: one punchy sentence, Ukrainian. Will be displayed in bold.
-BODY: 2-3 sentences with key facts. Use <b>bold</b> for accent words (numbers, names, dates, important terms). Keep it useful and practical. No hashtags. No sign-offs.
-VOCAB: 3-5 Portuguese terms from the article topic. Pick words people encounter in daily life in Portugal.
-- Portuguese word first, Ukrainian LITERAL dictionary translation second.
-- Translate precisely: "lista de espera" = "список очікування" (NOT "черга"). "Combustível" = "паливо" (NOT "бензин").
-- No explanations in parentheses. Just the word and its direct translation.
-- If a term is a proper name or abbreviation (AIMA, SNS), give the full Portuguese name + Ukrainian equivalent.
-</rules>
-"""
+    system, prompt = build_tg_post_prompt(ctx)
 
     result = structured_query(
         prompt=prompt,
-        system_prompt="You write Telegram captions for a Ukrainian news channel about Portugal. Concise, useful, bold accents on key words. Vocabulary translations must be LITERAL dictionary equivalents, not paraphrases or explanations.",
-        schema=TG_POST_SCHEMA,
+        system_prompt=system,
+        schema=load_schema("tg_post"),
         model=MODEL_TG,
     )
 
