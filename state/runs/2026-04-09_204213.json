@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-04-09_204213",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "prosecutors-strike-april-24-pgr-rejects-rules",
+  "author": "Pastelka News",
+  "duration_s": 468.0,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "0_editorial_plan",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "1_collect",
+      "status": "ok",
+      "duration_s": 0.8,
+      "error": null
+    },
+    {
+      "name": "2_research",
+      "status": "ok",
+      "duration_s": 193.0,
+      "error": null
+    },
+    {
+      "name": "3_generate",
+      "status": "ok",
+      "duration_s": 61.5,
+      "error": null
+    },
+    {
+      "name": "4+5_review_loop",
+      "status": "ok",
+      "duration_s": 175.1,
+      "error": null
+    },
+    {
+      "name": "7_deploy",
+      "status": "ok",
+      "duration_s": 37.6,
+      "error": null
+    },
+    {
+      "name": "8_verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

@@ -25,9 +25,13 @@ GENERATION_SCHEMA = {
         "source_names": {"type": "array", "items": {"type": "string"}, "description": "Source names"},
         "city_tags": {"type": "array", "items": {"type": "string"}, "description": "Relevant city names"},
         "image_prompt": {"type": "string", "description": "Comic-style illustration prompt in English"},
+        "summary": {
+            "type": "string",
+            "description": "Factual summary (1-2 paragraphs): main topic, key facts, who is affected, what changed, why it matters for Ukrainians in Portugal. Be specific — this is used for editorial planning to avoid topic repetition.",
+        },
     },
     "required": ["title", "slug", "article", "description", "tags", "hashtags",
-                  "source_urls", "source_names", "image_prompt"],
+                  "source_urls", "source_names", "image_prompt", "summary"],
 }
 
 VOICE_GUIDE = """\
@@ -140,6 +144,7 @@ Start the article directly with the first paragraph (the hook).
     ctx.source_names = result.get("source_names", [])
     ctx.city_tags = result.get("city_tags", [])
     ctx.image_prompt = result.get("image_prompt", "")
+    ctx.summary = result.get("summary", "")
 
     logger.info(
         "Generated: '%s' (slug=%s, %d words, %d sources)",

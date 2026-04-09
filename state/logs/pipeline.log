@@ -2591,3 +2591,11 @@ FileNotFoundError: [Errno 2] No such file or directory: 'claude'
 2026-04-09 20:41:35 [pipeline] INFO: === Stage 7_deploy ===
 2026-04-09 20:41:35 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 2026-04-09 20:41:35 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/prosecutors-strike-april-24-pgr-rejects-rules.md
+2026-04-09 20:41:37 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-09 20:42:13 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-04-09 20:42:13 [pipeline] INFO: Stage 7_deploy complete
+2026-04-09 20:42:13 [pipeline] INFO: === Stage 8_verify ===
+2026-04-09 20:42:13 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/prosecutors-strike-april-24-pgr-rejects-rules/ (200 OK, title found)
+2026-04-09 20:42:13 [pipeline] INFO: Stage 8_verify complete
+2026-04-09 20:42:13 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_204213.json
+2026-04-09 20:42:13 [pipeline] INFO: === Generate complete: prosecutors-strike-april-24-pgr-rejects-rules ===

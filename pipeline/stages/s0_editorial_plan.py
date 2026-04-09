@@ -143,19 +143,27 @@ def get_next_topic(plan: dict, written_slugs: set[str]) -> dict | None:
 
 
 def _load_recent_articles(days: int = 30) -> str:
-    """Load summaries of articles from the last N days."""
+    """Load summaries of articles from the last N days, using stored summaries."""
     if not CONTENT_DIR.exists():
         return "(no articles yet)"
 
+    # Load stored summaries
+    summaries_file = STATE_DIR / "summaries.json"
+    stored: dict = {}
+    if summaries_file.exists():
+        try:
+            stored = json.loads(summaries_file.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            stored = {}
+
     cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
-    summaries = []
+    lines = []
 
     for md in sorted(CONTENT_DIR.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True):
         text = md.read_text(encoding="utf-8")
         title = ""
         date = ""
         article_type = ""
-        tags = []
 
         for line in text.split("\n"):
             if line.startswith("title:"):
@@ -164,19 +172,25 @@ def _load_recent_articles(days: int = 30) -> str:
                 date = line.split('"')[1] if '"' in line else line.split(": ", 1)[1]
             elif line.startswith("type:"):
                 article_type = line.split('"')[1] if '"' in line else line.split(": ", 1)[1]
-            elif line.startswith('  - "') and tags is not None:
-                tags.append(line.strip().strip('- "'))
 
         if date and date < cutoff:
             continue
 
         slug = md.stem
-        summaries.append(f"[{date}] ({article_type}) {title} — slug: {slug}")
+        summary = stored.get(slug, {}).get("summary", "")
+        if not summary:
+            # Fallback: extract first 200 chars of body
+            body_lines = text.split("---", 2)
+            if len(body_lines) > 2:
+                body = body_lines[2].strip().replace("\n", " ")[:200]
+                summary = body + "..."
 
-        if len(summaries) >= 100:
+        lines.append(f"[{date}] ({article_type}) {title}\n  Summary: {summary}\n  Slug: {slug}")
+
+        if len(lines) >= 80:
             break
 
-    return "\n".join(summaries) if summaries else "(no recent articles)"
+    return "\n".join(lines) if lines else "(no recent articles)"
 
 
 def _load_today_articles(today_str: str) -> str:

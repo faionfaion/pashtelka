@@ -74,6 +74,20 @@ def run(ctx: PipelineContext) -> None:
         encoding="utf-8",
     )
 
+    # 2b. Save summary to state/summaries.json
+    summaries_file = STATE_DIR / "summaries.json"
+    summaries: dict = {}
+    if summaries_file.exists():
+        summaries = json.loads(summaries_file.read_text(encoding="utf-8"))
+    summaries[ctx.slug] = {
+        "date": date_str,
+        "title": ctx.title,
+        "type": ctx.slot_type,
+        "tags": ctx.tags,
+        "summary": ctx.summary or ctx.description,
+    }
+    summaries_file.write_text(json.dumps(summaries, ensure_ascii=False, indent=2), encoding="utf-8")
+
     # 3. Copy image if generated (skip if already in place)
     if ctx.image_path and ctx.image_path.exists():
         IMAGES_DIR.mkdir(parents=True, exist_ok=True)

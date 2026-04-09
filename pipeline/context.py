@@ -35,6 +35,9 @@ class PipelineContext:
     source_names: list[str] = field(default_factory=list)
     city_tags: list[str] = field(default_factory=list)
 
+    # Summary (for editorial dedup)
+    summary: str = ""
+
     # Review
     review_approved: bool = False
     review_feedback: str = ""
