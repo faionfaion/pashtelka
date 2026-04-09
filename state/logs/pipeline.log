@@ -2549,3 +2549,45 @@ FileNotFoundError: [Errno 2] No such file or directory: 'claude'
 2026-04-09 20:28:15 [pipeline] INFO: === Stage 7_deploy ===
 2026-04-09 20:28:15 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 2026-04-09 20:28:15 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/eu-gas-reserves-three-year-low-portugal-tariffs.md
+2026-04-09 20:28:17 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-09 20:28:51 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-04-09 20:28:51 [pipeline] INFO: Stage 7_deploy complete
+2026-04-09 20:28:51 [pipeline] INFO: === Stage 8_verify ===
+2026-04-09 20:28:51 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/eu-gas-reserves-three-year-low-portugal-tariffs/ (200 OK, title found)
+2026-04-09 20:28:51 [pipeline] INFO: Stage 8_verify complete
+2026-04-09 20:28:51 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-09_202851.json
+2026-04-09 20:28:51 [pipeline] INFO: === Generate complete: eu-gas-reserves-three-year-low-portugal-tariffs ===
+2026-04-09 20:34:25 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-04-09 (10 articles)
+2026-04-09 20:34:25 [pipeline] INFO: Editorial topic: Страйк прокурорів: PGR відхилила зміни правил конкурсу — чого чекати від судової системи (news)
+2026-04-09 20:34:25 [pipeline] INFO: === Stage 1_collect ===
+2026-04-09 20:34:25 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-09 20:34:25 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-09 20:34:25 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-09 20:34:25 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-09 20:34:25 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-09 20:34:25 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-09 20:34:25 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-09 20:34:25 [pipeline.stages.s1_collect] INFO: Slot: 07:00 (news) | RSS items: 59 | Existing articles: 29
+2026-04-09 20:34:25 [pipeline] INFO: Stage 1_collect complete
+2026-04-09 20:34:25 [pipeline] INFO: === Stage 2_research ===
+2026-04-09 20:37:38 [pipeline.stages.s2_research] INFO: Research complete: 7786 chars
+2026-04-09 20:37:38 [pipeline] INFO: Stage 2_research complete
+2026-04-09 20:37:38 [pipeline] INFO: === Stage 3_generate ===
+2026-04-09 20:38:40 [pipeline.stages.s3_generate] INFO: Generated: 'Страйк прокурорів 24 квітня: PGR відмовилась змінювати правила — суди можуть знову зупинитись' (slug=prosecutors-strike-april-24-pgr-rejects-rules, 451 words, 7 sources)
+2026-04-09 20:38:40 [pipeline] INFO: Stage 3_generate complete
+2026-04-09 20:38:40 [pipeline] INFO: === Stage 4+5_review_loop ===
+2026-04-09 20:39:45 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-09 20:39:45 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — добре структурована, мультиджерельна, з чіткою практичною цінністю для діаспори. Але є кілька речей, які потрібно виправити перед публікацією:
+
+1. **ТЕРМІНОЛОГІЯ (критично):** 
+2026-04-09 20:40:36 [pipeline.stages.s5_revise] INFO: Revised article: 463 words
+2026-04-09 20:40:36 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-09 20:41:35 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-09 20:41:35 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з якісною структурою та надійними джерелами. Кілька дрібних зауважень:
+
+1. ТЕРМІНОЛОГІЯ: «комарці» — незвичний українізований варіант. Краще: «в окрузі (comarca — судовий округ) Віла-Фра
+2026-04-09 20:41:35 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-09 20:41:35 [pipeline] INFO: Stage 4+5_review_loop complete
+2026-04-09 20:41:35 [pipeline] INFO: === Stage 7_deploy ===
+2026-04-09 20:41:35 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+2026-04-09 20:41:35 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/prosecutors-strike-april-24-pgr-rejects-rules.md
