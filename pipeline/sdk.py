@@ -14,9 +14,10 @@ import time
 from pathlib import Path
 
 from claude_agent_sdk import ClaudeAgentOptions, query as sdk_query
-from claude_agent_sdk.types import AssistantMessage, ToolUseBlock, TextBlock
+from claude_agent_sdk.types import AssistantMessage, TextBlock
 
 from pipeline.config import RETRY_BASE_DELAY, RETRY_MAX_ATTEMPTS, RETRY_MAX_DELAY
+from pipeline.json_repair import safe_parse_json
 
 logger = logging.getLogger(__name__)
 
@@ -41,30 +42,26 @@ def _is_retryable(error: Exception) -> bool:
 async def _async_structured(
     prompt: str,
     system_prompt: str,
-    schema: dict,
     model: str = "opus",
-) -> dict:
-    """SDK call with native structured output. Returns parsed dict."""
+) -> str:
+    """SDK call for structured output. Returns raw text for JSON parsing."""
     options = ClaudeAgentOptions(
         model=model,
         system_prompt=system_prompt,
         permission_mode="bypassPermissions",
         allowed_tools=[],
         max_turns=1,
-        output_format={"type": "json_schema", "schema": schema},
         cwd=_PROJECT_ROOT,
     )
 
-    result = None
+    parts: list[str] = []
     async for msg in sdk_query(prompt=prompt, options=options):
         if isinstance(msg, AssistantMessage):
             for block in msg.content:
-                if isinstance(block, ToolUseBlock) and block.name == "StructuredOutput":
-                    result = block.input
+                if isinstance(block, TextBlock):
+                    parts.append(block.text)
 
-    if result is None:
-        raise RuntimeError("No StructuredOutput block in response")
-    return result
+    return "\n".join(parts).strip()
 
 
 def structured_query(
@@ -74,22 +71,30 @@ def structured_query(
     model: str = "opus",
     timeout: int = 900,
 ) -> dict:
-    """LLM call with native structured output. Returns validated dict."""
+    """LLM call expecting structured JSON output. Returns validated dict."""
+    schema_json = json.dumps(schema, indent=2)
+    full_prompt = (
+        f"{prompt}\n\n"
+        f"Output ONLY valid JSON matching this schema. No markdown fences. No explanation.\n"
+        f"Schema:\n{schema_json}"
+    )
+    full_system = f"{system_prompt}\n\nYou MUST output ONLY valid JSON. No markdown fences."
+
     last_error: Exception | None = None
 
     for attempt in range(RETRY_MAX_ATTEMPTS):
         try:
-            return asyncio.run(
+            text = asyncio.run(
                 asyncio.wait_for(
                     _async_structured(
-                        prompt=prompt,
-                        system_prompt=system_prompt,
-                        schema=schema,
+                        prompt=full_prompt,
+                        system_prompt=full_system,
                         model=model,
                     ),
                     timeout=timeout,
                 )
             )
+            return safe_parse_json(text, context="structured_query")
         except asyncio.TimeoutError:
             last_error = TimeoutError(f"structured_query timed out after {timeout}s")
         except Exception as e:
