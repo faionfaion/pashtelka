@@ -4464,3 +4464,36 @@ Error output: Check stderr output for details
 2026-04-10 08:59:11 [pipeline.stages.s6_generate_tg] INFO: TG caption: 968 chars, vocab: 5 words
 2026-04-10 08:59:11 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 2026-04-10 08:59:11 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/portuguese-universities-ai-adoption-no-rules.md
+2026-04-10 08:59:11 [pipeline] INFO: Article ready: portuguese-universities-ai-adoption-no-rules (Більшість університетів Португалії вже використову)
+2026-04-10 08:59:11 [pipeline] INFO: === Article 11/11 ===
+2026-04-10 08:59:11 [pipeline] INFO: --- Article: [guide] Вихідні в Португалії: куди піти 11-13 квітня — події в Лісаб ---
+2026-04-10 08:59:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:59:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 09:02:59 [pipeline.stages.s2_research] INFO: Research complete: 12881 chars
+2026-04-10 09:02:59 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 09:02:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 09:05:07 [pipeline.stages.s3_generate] INFO: Generated: 'Вихідні в Португалії 11-13 квітня: куди піти в Лісабоні, Порту та Алгарве' (slug=weekend-events-lisbon-porto-algarve-april-11-13, 1133 words, 17 sources)
+2026-04-10 09:05:07 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 09:05:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 09:06:56 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-10 09:06:56 [pipeline.stages.s4_review] INFO: Feedback: Стаття дуже сильна за структурою, практичністю та тоном, але потребує доопрацювання для контексту іммігрантів (пункт 11 чеклісту).
+
+**Що потрібно виправити:**
+
+1. **Контекст для новоприбулих — критичн
+2026-04-10 09:06:56 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 09:06:56 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 09:08:26 [pipeline.stages.s5_revise] INFO: Revised article: 1182 words
+2026-04-10 09:08:26 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-10 09:08:26 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 09:08:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 09:09:31 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-10 09:09:31 [pipeline.stages.s4_review] INFO: Feedback: Якісний гід вихідного дня — добре структурований, практичний і корисний для діаспори. Дрібні зауваження для фінального полірування:
+
+1. МОВА: «зайнятись» → «зайнятися», «затриматись» → «затриматися» (
+2026-04-10 09:09:31 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-10 09:09:31 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 09:09:31 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 09:09:41 [pipeline.stages.s6_generate_tg] INFO: TG caption: 851 chars, vocab: 5 words
+2026-04-10 09:09:41 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+2026-04-10 09:09:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/weekend-events-lisbon-porto-algarve-april-11-13.md
