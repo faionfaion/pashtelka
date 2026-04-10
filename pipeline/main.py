@@ -9,6 +9,7 @@ Three modes:
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import sys
 
@@ -43,6 +44,27 @@ def _review_loop(ctx: PipelineContext) -> None:
         logger.info("=== Review cycle %d/%d complete ===", cycle + 1, MAX_REVIEW_CYCLES)
     else:
         logger.warning("Max review cycles (%d) reached, proceeding", MAX_REVIEW_CYCLES)
+
+
+def _load_written_topics(plan: dict) -> set[str]:
+    """Load set of already-written topic labels for today's plan."""
+    from pipeline.config import STATE_DIR
+    written_file = STATE_DIR / "plans" / f"{plan.get('date', 'unknown')}_written.json"
+    if written_file.exists():
+        return set(json.loads(written_file.read_text(encoding="utf-8")))
+    return set()
+
+
+def _mark_topic_written(plan: dict, topic_label: str) -> None:
+    """Mark a topic as written in the tracking file."""
+    from pipeline.config import STATE_DIR
+    written_file = STATE_DIR / "plans" / f"{plan.get('date', 'unknown')}_written.json"
+    written: list[str] = []
+    if written_file.exists():
+        written = json.loads(written_file.read_text(encoding="utf-8"))
+    written.append(topic_label)
+    written_file.parent.mkdir(parents=True, exist_ok=True)
+    written_file.write_text(json.dumps(written, ensure_ascii=False), encoding="utf-8")
 
 
 def _generate_one_article(
@@ -108,9 +130,16 @@ def run_generate(dry_run: bool = False) -> list[PipelineContext]:
     # Step 1: Collect context (RSS + existing slugs)
     rss_items, posted_slugs = s1_collect.collect_context()
 
-    # Step 2: Generate each article
+    # Step 2: Generate each article (skip already-written topics)
     completed: list[PipelineContext] = []
+    written_topics = _load_written_topics(plan)
+
     for i, topic in enumerate(topics, 1):
+        topic_label = topic.get("topic", "")
+        if topic_label in written_topics:
+            logger.info("=== Article %d/%d === SKIP (already written): %s", i, len(topics), topic_label[:50])
+            continue
+
         logger.info("=== Article %d/%d ===", i, len(topics))
         ctx = _generate_one_article(
             topic=topic,
@@ -121,8 +150,8 @@ def run_generate(dry_run: bool = False) -> list[PipelineContext]:
         )
         if ctx:
             completed.append(ctx)
-            # Add slug to posted so next article can cross-reference
             posted_slugs.append(ctx.slug)
+            _mark_topic_written(plan, topic_label)
 
     logger.info("Generated %d/%d articles", len(completed), len(topics))
 
