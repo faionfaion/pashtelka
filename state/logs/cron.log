@@ -1374,3 +1374,33 @@ Already up to date.
 08:45:38 [pipeline.stages.s6_generate_tg] INFO: TG caption: 832 chars, vocab: 5 words
 08:45:38 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 08:45:38 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/volta-first-day-where-to-find-machines-problems.md
+08:45:38 [pipeline] INFO: Article ready: volta-first-day-where-to-find-machines-problems (Система Volta запрацювала: де шукати автомати, які)
+08:45:38 [pipeline] INFO: === Article 9/11 ===
+08:45:38 [pipeline] INFO: --- Article: [utility] Метро Лісабона: другий страйк у вівторок 14 квітня — нагадув ---
+08:45:38 [asyncio] DEBUG: Using selector: EpollSelector
+08:45:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:48:51 [pipeline.stages.s2_research] INFO: Research complete: 9852 chars
+08:48:51 [asyncio] DEBUG: Using selector: EpollSelector
+08:48:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:49:50 [pipeline.stages.s3_generate] INFO: Generated: 'Метро Лісабона: другий страйк у вівторок 14 квітня — як дістатися на роботу' (slug=metro-lisboa-strike-april-14-alternatives, 319 words, 11 sources)
+08:49:50 [asyncio] DEBUG: Using selector: EpollSelector
+08:49:50 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:50:41 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+08:50:41 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, джерелами та практичністю, але потребує доопрацювання для новоприбулих читачів.
+
+**Контекст для іммігрантів (критично):**
+1. **Navegante** — не пояснено при першому згадув
+08:50:41 [asyncio] DEBUG: Using selector: EpollSelector
+08:50:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:51:28 [pipeline.stages.s5_revise] INFO: Revised article: 433 words
+08:51:28 [pipeline] INFO: === Review cycle 1/3 complete ===
+08:51:28 [asyncio] DEBUG: Using selector: EpollSelector
+08:51:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:52:26 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+08:52:26 [pipeline.stages.s4_review] INFO: Feedback: Сильна утилітарна стаття. Добре структурована, усі португальські терміни пояснені в дужках, джерела перевіряються, математика 31+ годин коректна (23:00 пн → 06:30 ср = 31,5 год). Чиста українська без 
+08:52:26 [pipeline] INFO: Article approved after 1 revision(s)
+08:52:26 [asyncio] DEBUG: Using selector: EpollSelector
+08:52:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:52:36 [pipeline.stages.s6_generate_tg] INFO: TG caption: 781 chars, vocab: 5 words
+08:52:36 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+08:52:36 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/metro-lisboa-strike-april-14-alternatives.md
