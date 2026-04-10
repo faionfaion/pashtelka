@@ -20,6 +20,8 @@ SCHEMAS_DIR = ROOT / "pipeline" / "schemas"
 CONTENT_DIR = ROOT / "content"
 IMAGES_DIR = ROOT / "gatsby" / "static" / "images"
 TEASERS_DIR = ROOT / "state" / "teasers"
+RUNS_DIR = ROOT / "state" / "runs"
+LOGS_DIR = ROOT / "state" / "logs"
 EDITOR_NOTES = ROOT / "state" / "editor_notes.md"
 GIT_BRANCH = "master"
 
