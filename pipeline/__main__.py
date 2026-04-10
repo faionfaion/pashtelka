@@ -1,4 +1,4 @@
 """Entry point: python3 -m pipeline"""
-from pipeline.main import cli
+from pipeline.cli import cli
 
 cli()

@@ -7,6 +7,8 @@ from typing import Any
 
 from jinja2 import Environment, FileSystemLoader
 
+from pipeline.context import PipelineContext
+
 _TEMPLATES_DIR = Path(__file__).resolve().parent / "templates"
 
 _env = Environment(
@@ -64,7 +66,7 @@ def build_editorial_prompt(
     )
 
 
-def build_research_prompt(ctx: Any, headlines_text: str, focus_text: str) -> tuple[str, str]:
+def build_research_prompt(ctx: PipelineContext, headlines_text: str, focus_text: str) -> tuple[str, str]:
     """Build s2 research prompt."""
     return render(
         "s2_research.xml.j2",
@@ -75,8 +77,8 @@ def build_research_prompt(ctx: Any, headlines_text: str, focus_text: str) -> tup
 
 
 def build_generate_prompt(
-    ctx: Any,
-    type_cfg: Any,
+    ctx: PipelineContext,
+    type_cfg: dict,
     site_base_url: str,
     existing_articles_text: str,
 ) -> tuple[str, str]:
@@ -90,7 +92,7 @@ def build_generate_prompt(
     )
 
 
-def build_review_prompt(ctx: Any, author_name: str) -> tuple[str, str]:
+def build_review_prompt(ctx: PipelineContext, author_name: str) -> tuple[str, str]:
     """Build s4 review prompt."""
     sources_zip = list(zip(ctx.source_names, ctx.source_urls))
     return render(
@@ -101,7 +103,7 @@ def build_review_prompt(ctx: Any, author_name: str) -> tuple[str, str]:
     )
 
 
-def build_revise_prompt(ctx: Any, author_name: str) -> tuple[str, str]:
+def build_revise_prompt(ctx: PipelineContext, author_name: str) -> tuple[str, str]:
     """Build s5 revision prompt."""
     return render(
         "s5_revise.xml.j2",
@@ -110,7 +112,7 @@ def build_revise_prompt(ctx: Any, author_name: str) -> tuple[str, str]:
     )
 
 
-def build_tg_post_prompt(ctx: Any) -> tuple[str, str]:
+def build_tg_post_prompt(ctx: PipelineContext) -> tuple[str, str]:
     """Build s6 TG caption prompt."""
     return render(
         "s6_tg_post.xml.j2",
