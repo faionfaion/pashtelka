@@ -4372,3 +4372,34 @@ Error output: Check stderr output for details
 2026-04-10 08:38:01 [pipeline.stages.s6_generate_tg] INFO: TG caption: 809 chars, vocab: 5 words
 2026-04-10 08:38:01 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 2026-04-10 08:38:01 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/euro-strengthens-remittances-ukraine-transfer-comparison.md
+2026-04-10 08:38:01 [pipeline] INFO: Article ready: euro-strengthens-remittances-ukraine-transfer-comparison (Євро зміцнюється на тлі перемир'я США-Іран: скільк)
+2026-04-10 08:38:01 [pipeline] INFO: === Article 8/11 ===
+2026-04-10 08:38:01 [pipeline] INFO: --- Article: [news] Система Volta: перший день роботи — де шукати автомати і пер ---
+2026-04-10 08:38:01 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:38:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:42:00 [pipeline.stages.s2_research] INFO: Research complete: 10578 chars
+2026-04-10 08:42:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:42:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:43:18 [pipeline.stages.s3_generate] INFO: Generated: 'Система Volta запрацювала: де шукати автомати, які мережі підключились і перші проблеми' (slug=volta-first-day-where-to-find-machines-problems, 576 words, 8 sources)
+2026-04-10 08:43:18 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:43:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:44:14 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-10 08:44:14 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття — структура, джерела, практичність на високому рівні. Кілька дрібних зауважень:
+
+1. **MBWay не пояснений.** Для українця, який приїхав місяць тому, це незнайомий термін. Додати в дужках:
+2026-04-10 08:44:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:44:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:44:41 [pipeline.stages.s5_revise] INFO: Revised article: 597 words
+2026-04-10 08:44:41 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-10 08:44:41 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:44:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:45:28 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-10 08:45:28 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: добре структурована, практична, джерела на місці, контекст для іммігрантів відмінний (блок порівняння з Pfand/Pant, пояснення DECO Proteste, MBWay, balcão). Два виправлення:
+
+1. **Мовна
+2026-04-10 08:45:28 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-10 08:45:28 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:45:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:45:38 [pipeline.stages.s6_generate_tg] INFO: TG caption: 832 chars, vocab: 5 words
+2026-04-10 08:45:38 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+2026-04-10 08:45:38 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/volta-first-day-where-to-find-machines-problems.md
