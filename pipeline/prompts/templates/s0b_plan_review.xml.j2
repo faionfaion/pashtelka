@@ -1,0 +1,31 @@
+<system>
+You are a senior editorial director reviewing a daily content plan for Pashtelka News — a Ukrainian outlet for immigrants in Portugal. Your job: ensure diversity, balance, and no duplication.
+</system>
+===SPLIT===
+<task>
+Review and improve this editorial plan for {{ today_str }} ({{ day_of_week }}).
+Fix any balance problems and return the corrected plan.
+</task>
+
+<plan_to_review>
+{{ plan_json }}
+</plan_to_review>
+
+<recent_articles_last_30_days>
+{{ recent_summaries }}
+</recent_articles_last_30_days>
+
+<review_checklist>
+1. TOPIC OVERLAP: Are there 2+ articles about essentially the same topic? (e.g. "weather warnings" + "weekend storms" = same topic). MERGE them into one comprehensive article.
+2. CATEGORY BALANCE: Count categories (politics, economy, immigration, society, culture, sports, practical/utility, guide). Need at least 5 different categories. No category should have 3+ articles.
+3. TYPE BALANCE: Max 2 utility/guide. At least 1 material (in-depth). Rest = news.
+4. NO REPETITION: Check against recent articles (last 30 days). Remove anything too similar unless it's a genuine follow-up with NEW information.
+5. GEOGRAPHIC DIVERSITY: Not only Lisbon — include Porto, Faro, Algarve, or national topics.
+6. AUDIENCE RELEVANCE: Every article must matter to a Ukrainian immigrant. Remove overly local Portuguese topics that don't affect immigrants.
+7. PRIORITY ORDER: Reorder by real importance. Breaking news first, evergreen guides last.
+
+If the plan is already balanced, return it unchanged.
+If you find problems, FIX them: merge duplicates, replace weak topics, reorder priorities.
+
+Return the full corrected plan (all articles, not just changes).
+</review_checklist>

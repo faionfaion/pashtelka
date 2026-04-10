@@ -16,7 +16,7 @@ from pipeline.config import (
     CONTENT_DIR, MODEL_GENERATE, STATE_DIR,
 )
 from pipeline.feeds import fetch_rss_headlines
-from pipeline.prompts.builder import build_editorial_prompt
+from pipeline.prompts.builder import build_editorial_prompt, build_plan_review_prompt
 from pipeline.schemas import load_schema
 from pipeline.sdk import structured_query
 
@@ -56,6 +56,9 @@ def run() -> dict:
         schema=load_schema("editorial_plan"),
         model=MODEL_GENERATE,
     )
+
+    # Review & rebalance plan
+    plan = _review_plan(plan, today_str, now.strftime('%A'), recent_summaries)
 
     # Save plan
     plan_dir = STATE_DIR / "plans"
@@ -158,6 +161,40 @@ def _load_today_articles(today_str: str) -> str:
                     break
 
     return "\n".join(today_articles)
+
+
+def _review_plan(plan: dict, today_str: str, day_of_week: str, recent_summaries: str) -> dict:
+    """Review editorial plan for balance and diversity. Returns corrected plan."""
+    articles = plan.get("articles", [])
+    if len(articles) < 3:
+        return plan
+
+    plan_json = json.dumps(articles, ensure_ascii=False, indent=2)
+
+    system, prompt = build_plan_review_prompt(
+        plan_json=plan_json,
+        today_str=today_str,
+        day_of_week=day_of_week,
+        recent_summaries=recent_summaries,
+    )
+
+    try:
+        reviewed = structured_query(
+            prompt=prompt,
+            system_prompt=system,
+            schema=load_schema("editorial_plan"),
+            model=MODEL_GENERATE,
+        )
+        new_articles = reviewed.get("articles", [])
+        if len(new_articles) >= 3:
+            logger.info("Plan reviewed: %d -> %d articles", len(articles), len(new_articles))
+            plan["articles"] = new_articles
+        else:
+            logger.warning("Plan review returned too few articles (%d), keeping original", len(new_articles))
+    except Exception:
+        logger.warning("Plan review failed, keeping original plan", exc_info=True)
+
+    return plan
 
 
 def _load_editor_notes() -> str:

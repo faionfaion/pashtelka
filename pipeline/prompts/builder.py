@@ -66,6 +66,22 @@ def build_editorial_prompt(
     )
 
 
+def build_plan_review_prompt(
+    plan_json: str,
+    today_str: str,
+    day_of_week: str,
+    recent_summaries: str,
+) -> tuple[str, str]:
+    """Build s0b plan review prompt."""
+    return render(
+        "s0b_plan_review.xml.j2",
+        plan_json=plan_json,
+        today_str=today_str,
+        day_of_week=day_of_week,
+        recent_summaries=recent_summaries,
+    )
+
+
 def build_research_prompt(ctx: PipelineContext, headlines_text: str, focus_text: str) -> tuple[str, str]:
     """Build s2 research prompt."""
     return render(
