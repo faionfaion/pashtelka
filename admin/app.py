@@ -229,6 +229,44 @@ def api_redeploy():
         return jsonify({"ok": False, "error": str(e)})
 
 
+@app.route("/api/runs")
+@_auth_required
+def api_runs():
+    """List all pipeline runs, newest first."""
+    runs = []
+    if RUNS_DIR.exists():
+        for f in sorted(RUNS_DIR.glob("*.json"), reverse=True):
+            try:
+                data = json.loads(f.read_text(encoding="utf-8"))
+                data["_file"] = f.name
+                runs.append(data)
+            except (json.JSONDecodeError, OSError):
+                continue
+    return jsonify(runs[:100])
+
+
+@app.route("/api/runs/<filename>")
+@_auth_required
+def api_run_detail(filename):
+    """Get single run detail."""
+    p = RUNS_DIR / filename
+    if not p.exists() or not p.suffix == ".json":
+        return "Not found", 404
+    return p.read_text(encoding="utf-8"), 200, {"Content-Type": "application/json"}
+
+
+@app.route("/api/logs")
+@_auth_required
+def api_logs():
+    """Get last N lines of pipeline log."""
+    n = int(request.args.get("n", "200"))
+    log_file = LOGS_DIR / "pipeline.log"
+    if not log_file.exists():
+        return jsonify({"lines": []})
+    lines = log_file.read_text(encoding="utf-8").strip().split("\n")
+    return jsonify({"lines": lines[-n:]})
+
+
 def _parse_frontmatter(text: str) -> dict:
     """Parse YAML-like frontmatter from markdown."""
     meta = {}
@@ -378,6 +416,44 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .btn-new{background:var(--accent)}
 .btn-sm{font-size:12px;padding:5px 12px}
 
+/* Runs view */
+.runs-view{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.runs-toolbar{background:var(--card);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:12px}
+.runs-list{flex:1;overflow-y:auto}
+.run-row{display:flex;align-items:center;gap:12px;padding:10px 20px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .1s;font-size:13px}
+.run-row:hover{background:rgba(255,255,255,.03)}
+.run-row.active{background:rgba(217,119,6,.08)}
+.run-id{font-family:monospace;font-size:11px;color:var(--muted);width:140px;flex-shrink:0}
+.run-status{width:60px;text-align:center;font-size:10px;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0}
+.run-status.ok{background:rgba(34,197,94,.15);color:var(--green)}
+.run-status.failed{background:rgba(239,68,68,.15);color:var(--red)}
+.run-status.empty{background:rgba(148,163,184,.15);color:var(--muted)}
+.run-status.running{background:rgba(59,130,246,.15);color:var(--blue)}
+.run-slug{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.run-dur{color:var(--muted);font-size:12px;width:70px;text-align:right;flex-shrink:0}
+.run-stages{color:var(--muted);font-size:11px;width:80px;flex-shrink:0}
+
+/* Run detail */
+.run-detail{flex:1;overflow-y:auto;padding:24px 32px;max-width:900px}
+.run-detail h3{font-size:16px;margin:20px 0 10px;color:var(--text)}
+.run-detail table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0 16px}
+.run-detail th{text-align:left;color:var(--accent);font-size:10px;text-transform:uppercase;letter-spacing:.5px;padding:6px 10px;border-bottom:2px solid var(--border)}
+.run-detail td{padding:6px 10px;border-bottom:1px solid var(--border);color:var(--muted)}
+.run-detail td:first-child{color:var(--text)}
+.run-detail .kv{display:grid;grid-template-columns:140px 1fr;gap:4px 12px;font-size:13px;margin:8px 0}
+.run-detail .kv .k{color:var(--muted);font-weight:500}
+.run-detail .kv .v{color:var(--text)}
+.run-detail .v.ok{color:var(--green)}
+.run-detail .v.err{color:var(--red)}
+.run-detail .error-box{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);border-radius:6px;padding:10px 14px;font-size:12px;font-family:monospace;color:var(--red);margin:8px 0;white-space:pre-wrap;word-break:break-word}
+.stage-bar{height:6px;border-radius:3px;margin:2px 0}
+.stage-bar.ok{background:var(--green)}
+.stage-bar.failed{background:var(--red)}
+.stage-bar.skipped{background:var(--border)}
+
+/* Logs */
+.log-box{background:rgba(0,0,0,.4);border-radius:6px;padding:12px;font-family:monospace;font-size:11px;line-height:1.6;max-height:400px;overflow-y:auto;color:var(--muted);white-space:pre-wrap;word-break:break-word}
+
 @media(max-width:900px){.sidebar{width:260px}.stage-desc{display:none}.overview{padding:20px}.art-preview-pane{display:none}}
 </style>
 </head>
@@ -388,6 +464,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   <button class="nav-btn active" id="btn-overview" onclick="showOverview()">Overview</button>
   <button class="nav-btn" id="btn-editor" onclick="showEditor()">Prompts</button>
   <button class="nav-btn" id="btn-articles" onclick="showArticles()">Articles</button>
+  <button class="nav-btn" id="btn-runs" onclick="showRuns()">Runs</button>
 </div>
 <div class="container">
   <div class="sidebar" id="sidebar">
@@ -614,7 +691,7 @@ const OVERVIEW_HTML = `
 `;
 
 function _setNav(active) {
-  ['btn-overview','btn-editor','btn-articles'].forEach(id => {
+  ['btn-overview','btn-editor','btn-articles','btn-runs'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.toggle('active', id === active);
   });
@@ -759,6 +836,100 @@ async function redeploy() {
     st.className = d.ok ? 'status ok' : 'status err';
     setTimeout(() => { st.textContent = ''; }, 8000);
   }
+}
+
+// ---- Runs view ----
+
+async function showRuns() {
+  currentView = 'runs';
+  _setNav('btn-runs');
+  if (editor) { editor.dispose(); editor = null; }
+  currentFile = null;
+
+  document.getElementById('editor-area').innerHTML = `<div class="empty">Loading runs...</div>`;
+  const [runsResp, logsResp] = await Promise.all([
+    fetch('api/runs'),
+    fetch('api/logs?n=50'),
+  ]);
+  const runs = await runsResp.json();
+  const logs = await logsResp.json();
+
+  const rows = runs.map(r => {
+    const stageCount = (r.stages || []).length;
+    const okCount = (r.stages || []).filter(s => s.status === 'ok').length;
+    const dur = r.duration_s ? (r.duration_s > 60 ? Math.round(r.duration_s/60) + 'm' : Math.round(r.duration_s) + 's') : '-';
+    return `<div class="run-row" onclick="openRun('${r._file}')">
+      <span class="run-id">${r.timestamp || r._file}</span>
+      <span class="run-status ${r.status}">${r.status}</span>
+      <span class="run-slug">${esc(r.slug || '—')}</span>
+      <span class="run-stages">${okCount}/${stageCount} stages</span>
+      <span class="run-dur">${dur}</span>
+    </div>`;
+  }).join('');
+
+  const logLines = (logs.lines || []).slice(-30).map(l => esc(l)).join('\n');
+
+  document.getElementById('editor-area').innerHTML = `
+    <div class="runs-view">
+      <div class="runs-toolbar">
+        <span style="color:var(--muted);font-size:13px">${runs.length} pipeline runs</span>
+        <button class="btn btn-sm" style="background:var(--muted)" onclick="showRuns()">Refresh</button>
+      </div>
+      <div style="display:flex;flex:1;overflow:hidden">
+        <div class="runs-list" style="flex:1;overflow-y:auto">${rows || '<div class="empty">No runs</div>'}</div>
+        <div style="width:400px;border-left:1px solid var(--border);padding:12px;overflow-y:auto;background:rgba(0,0,0,.1)">
+          <div style="font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Live Log (last 30 lines)</div>
+          <div class="log-box">${logLines || 'No logs'}</div>
+        </div>
+      </div>
+    </div>`;
+}
+
+async function openRun(filename) {
+  const r = await fetch('api/runs/' + filename);
+  const run = await r.json();
+
+  const dur = run.duration_s ? (run.duration_s > 60 ? Math.round(run.duration_s/60) + ' min' : Math.round(run.duration_s) + ' sec') : '—';
+
+  const stagesHtml = (run.stages || []).map(s => {
+    const sDur = s.duration_s > 60 ? Math.round(s.duration_s/60) + 'm' : Math.round(s.duration_s) + 's';
+    const maxDur = Math.max(...(run.stages || []).map(x => x.duration_s || 0), 1);
+    const pct = Math.round(((s.duration_s || 0) / maxDur) * 100);
+    return `<tr>
+      <td>${s.name}</td>
+      <td><span class="run-status ${s.status}" style="display:inline-block">${s.status}</span></td>
+      <td>${sDur}</td>
+      <td style="width:200px"><div class="stage-bar ${s.status}" style="width:${pct}%"></div></td>
+      <td style="font-size:11px;color:var(--red)">${s.error ? esc(s.error.substring(0,80)) : ''}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('editor-area').innerHTML = `
+    <div class="run-detail">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+        <button class="btn btn-sm" style="background:var(--muted)" onclick="showRuns()">&larr; Runs</button>
+        <span class="run-status ${run.status}" style="font-size:14px;padding:4px 12px">${run.status}</span>
+        <span style="font-family:monospace;font-size:14px;color:var(--accent)">${run.timestamp}</span>
+      </div>
+
+      <div class="kv">
+        <span class="k">Slug</span><span class="v">${esc(run.slug || '—')}</span>
+        <span class="k">Author</span><span class="v">${esc(run.author || '—')}</span>
+        <span class="k">Duration</span><span class="v">${dur}</span>
+        <span class="k">Image Generated</span><span class="v">${run.image_generated ? 'Yes' : 'No'}</span>
+        <span class="k">TG Message ID</span><span class="v">${run.msg_id || '—'}</span>
+        <span class="k">Dry Run</span><span class="v">${run.dry_run ? 'Yes' : 'No'}</span>
+      </div>
+
+      ${run.error ? '<div class="error-box">' + esc(run.error) + '</div>' : ''}
+      ${run.failed_stage ? '<div class="kv"><span class="k">Failed Stage</span><span class="v err">' + run.failed_stage + '</span></div>' : ''}
+
+      <h3>Stages</h3>
+      <table>
+        <tr><th>Stage</th><th>Status</th><th>Duration</th><th>Timeline</th><th>Error</th></tr>
+        ${stagesHtml}
+      </table>
+    </div>`;
 }
 
 async function loadFiles() {
