@@ -35,7 +35,7 @@ trap "rm -f $LOCK" EXIT
 cd "$PROJECT_DIR"
 
 # Load environment
-export PATH="/usr/local/bin:/usr/bin:$PATH"
+export PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:$PATH"
 export HOME="${HOME:-/home/nero}"
 [ -f "$HOME/workspace/.env" ] && source "$HOME/workspace/.env"
 
