@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-04-10_080202",
+  "status": "empty",
+  "dry_run": false,
+  "slug": "",
+  "author": "Pastelka News",
+  "duration_s": 2265.0,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "research:Погода на вихідні: у суботу по",
+      "status": "ok",
+      "duration_s": 219.8,
+      "error": null
+    },
+    {
+      "name": "generate:Погода на вихідні: у суботу по",
+      "status": "failed",
+      "duration_s": 51.6,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:IRS 2026: податковий сезон для",
+      "status": "ok",
+      "duration_s": 265.4,
+      "error": null
+    },
+    {
+      "name": "generate:IRS 2026: податковий сезон для",
+      "status": "failed",
+      "duration_s": 114.0,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Євро зміцнюється на тлі невизн",
+      "status": "ok",
+      "duration_s": 297.8,
+      "error": null
+    },
+    {
+      "name": "generate:Євро зміцнюється на тлі невизн",
+      "status": "failed",
+      "duration_s": 60.2,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Система Volta: перший день роб",
+      "status": "ok",
+      "duration_s": 276.1,
+      "error": null
+    },
+    {
+      "name": "generate:Система Volta: перший день роб",
+      "status": "failed",
+      "duration_s": 73.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Метро Лісабона: другий страйк ",
+      "status": "ok",
+      "duration_s": 191.6,
+      "error": null
+    },
+    {
+      "name": "generate:Метро Лісабона: другий страйк ",
+      "status": "failed",
+      "duration_s": 53.8,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Португальські університети мас",
+      "status": "ok",
+      "duration_s": 175.1,
+      "error": null
+    },
+    {
+      "name": "generate:Португальські університети мас",
+      "status": "failed",
+      "duration_s": 67.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Вихідні в Португалії: куди піт",
+      "status": "ok",
+      "duration_s": 249.7,
+      "error": null
+    },
+    {
+      "name": "generate:Вихідні в Португалії: куди піт",
+      "status": "failed",
+      "duration_s": 167.4,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    }
+  ]
+}
