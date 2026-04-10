@@ -4433,3 +4433,34 @@ Error output: Check stderr output for details
 2026-04-10 08:52:36 [pipeline.stages.s6_generate_tg] INFO: TG caption: 781 chars, vocab: 5 words
 2026-04-10 08:52:36 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 2026-04-10 08:52:36 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/metro-lisboa-strike-april-14-alternatives.md
+2026-04-10 08:52:36 [pipeline] INFO: Article ready: metro-lisboa-strike-april-14-alternatives (Метро Лісабона: страйк у вівторок 14 квітня — пона)
+2026-04-10 08:52:36 [pipeline] INFO: === Article 10/11 ===
+2026-04-10 08:52:36 [pipeline] INFO: --- Article: [news] Португальські університети масово впроваджують ШІ, але інсти ---
+2026-04-10 08:52:36 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:52:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:55:05 [pipeline.stages.s2_research] INFO: Research complete: 9245 chars
+2026-04-10 08:55:05 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:55:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:56:08 [pipeline.stages.s3_generate] INFO: Generated: 'Більшість університетів Португалії вже використовують ШІ — але 83% не мають жодних правил' (slug=portuguese-universities-ai-adoption-no-rules, 492 words, 6 sources)
+2026-04-10 08:56:08 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:56:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:57:01 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-10 08:57:01 [pipeline.stages.s4_review] INFO: Feedback: Стаття структурно сильна, тема дуже релевантна для аудиторії, подача інформації грамотна. Але є кілька проблем, які потребують виправлення:
+
+1. ФАКТИЧНА ПОМИЛКА — VEGA: Суперкомп'ютер VEGA знаходиться
+2026-04-10 08:57:01 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:57:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:58:16 [pipeline.stages.s5_revise] INFO: Revised article: 428 words
+2026-04-10 08:58:16 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-10 08:58:16 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:58:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:59:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-10 08:59:01 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована і релевантна для аудиторії. Кілька зауважень:
+
+1. ЗАГОЛОВОК — незначна неточність: «83% не мають чітких правил» у заголовку читається як 83% усіх університетів, але 
+2026-04-10 08:59:01 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-10 08:59:01 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-10 08:59:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-10 08:59:11 [pipeline.stages.s6_generate_tg] INFO: TG caption: 968 chars, vocab: 5 words
+2026-04-10 08:59:11 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+2026-04-10 08:59:11 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/portuguese-universities-ai-adoption-no-rules.md
