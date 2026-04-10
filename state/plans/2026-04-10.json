@@ -1,0 +1,83 @@
+{
+  "articles": [
+    {
+      "topic": "Трудова реформа під загрозою зриву: PS відмовляє, Chega ставить 5 умов, Сеґуру натякає на вето (continuation)",
+      "type": "news",
+      "angle": "Після нашого матеріалу від 8 квітня ситуація різко загострилась: PS офіційно відмовився підтримувати реформу в парламенті, Chega висунув п'ять умов для голосування, а президент Сеґуру дав зрозуміти — може заветувати пакет. Аналіз: які пункти Trabalho XXI найбільш спірні, що саме загрожує працівникам і що буде з контрактами українців.",
+      "sources_hint": "RSS: rtp_economy (PS avisa Governo, Chega cinco condições, Seguro coerente, Governo porta aberta). Search: 'reforma laboral Trabalho XXI PS Chega Seguro veto abril 2026'. Publico, Observador, ECO.",
+      "priority": 1
+    },
+    {
+      "topic": "Рада Міністрів схвалила кредитну лінію €600 мільйонів для бізнесу через енергокризу",
+      "type": "news",
+      "angle": "Нова програма підтримки підприємств, які страждають від високих цін на енергоносії. Хто може подати заявку, які сектори охоплені, чи зможуть скористатися малі бізнеси українців (ресторани, будівельні компанії, магазини). Зв'язок із нашим матеріалом про газові резерви ЄС на мінімумі.",
+      "sources_hint": "RSS: rtp_economy (Conselho de Ministros 600 milhões custos energia empresas). Search: 'linha crédito 600 milhões energia empresas conselho ministros abril 2026'. DRE.pt for legislation.",
+      "priority": 1
+    },
+    {
+      "topic": "Зеленський: США ігнорували докази підтримки Росією Ірану — що це означає для перемир'я",
+      "type": "news",
+      "angle": "Заява Зеленського про те, що США мали докази російської підтримки Тегерана, але довіряли Путіну. Контекст: як це впливає на двотижневе перемир'я США-Іран, чи може це зірвати деескалацію, і що це означає для ціни на пальне в Португалії (яку ми висвітлювали 8 квітня).",
+      "sources_hint": "RSS: rtp_world (EUA ignoraram provas apoio russo Teerão Zelensky). Search: 'Zelensky Russia Iran support US ceasefire April 2026'. Reuters, AP, Ukrinform.",
+      "priority": 1
+    },
+    {
+      "topic": "До дедлайну AIMA 15 квітня залишилось 5 днів: продовження чи хаос? (continuation)",
+      "type": "immigration",
+      "angle": "Продовження нашого матеріалу від 8 квітня про збій системи AIMA. Нова інформація: чи відновлено портал, чи є офіційне рішення про продовження дедлайну, що кажуть юристи. Практичний чек-лист: що робити, якщо ваш título de residência прострочений і система не працює.",
+      "sources_hint": "Search: 'AIMA prazo 15 abril 2026 prorrogação título residência'. Check AIMA.gov.pt status. Imigrante.info, SEF.pt, immigration lawyers on social media. Decreto Regulamentar 84/2007 art.63.",
+      "priority": 1
+    },
+    {
+      "topic": "Погода на вихідні: у суботу повертаються шторми з вітром до 90 км/год і градом",
+      "type": "utility",
+      "angle": "П'ятничний прогноз на вихідні для планування. Сьогодні ще тепло (до 28°C у Центрі), але в суботу — різке погіршення: фронтальна система з заходу, зливи, град, пориви вітру до 90 км/год у горах. Неділя — прохолодно, можливі заморозки в горах. Конкретні прогнози для Лісабона, Порту, Фару.",
+      "sources_hint": "IPMA.pt forecast 10-13 April, weather warnings. Search: 'previsão meteo fim de semana 11 12 abril 2026 Portugal IPMA'. Windguru, meteoblue for detail.",
+      "priority": 1
+    },
+    {
+      "topic": "IRS 2026: податковий сезон для іммігрантів — ключові дати, відрахування та типові помилки",
+      "type": "material",
+      "angle": "Квітень — початок подачі IRS. Компіляція: коли відкривається IRS automático, дедлайни подачі, як правильно заповнити декларацію іммігранту, які витрати можна списати (оренда, освіта, здоров'я), статус residente não habitual, як декларувати доходи з України, e-fatura перевірка.",
+      "sources_hint": "Portal das Finanças (portaldasfinancas.gov.pt), AT.gov.pt IRS 2026 calendar. Search: 'IRS 2026 prazos entrega deduções imigrantes'. DECO Proteste IRS guide. Economias.pt, Doutor Finanças.",
+      "priority": 2
+    },
+    {
+      "topic": "Євро зміцнюється на тлі невизначеності навколо перемир'я: що це означає для грошових переказів в Україну",
+      "type": "news",
+      "angle": "Курс євро зріс через невизначеність навколо перемир'я США-Іран. Для українців у Португалії це прямо впливає на вартість переказів додому. Скільки гривень отримають рідні за €500 зараз vs місяць тому. Порівняння сервісів переказів (Wise, Remitly, Western Union, MoneyGram) за актуальним курсом.",
+      "sources_hint": "RSS: rtp_economy (Euro sobe incerteza cessar-fogo). ECB exchange rates, NBU.gov.ua UAH rate. Search: 'euro hryvnia exchange rate April 2026'. Wise, Remitly current rates comparison.",
+      "priority": 2
+    },
+    {
+      "topic": "Система Volta: перший день роботи — де шукати автомати і перші проблеми (continuation)",
+      "type": "news",
+      "angle": "Продовження вчорашнього матеріалу про запуск Volta. Сьогодні — перший робочий день системи. Репортаж: скільки автоматів реально працює, де їх знайти у Лісабоні та Порту, які мережі вже підключились (Continente, Pingo Doce, Lidl?), перші відгуки та проблеми користувачів, як знайти найближчий пункт.",
+      "sources_hint": "Search: 'sistema Volta depósito primeiro dia 10 abril 2026 problemas máquinas'. Volta website (sistemadevolta.pt), supermarket chains announcements. Social media reactions. DECO Proteste.",
+      "priority": 2
+    },
+    {
+      "topic": "Метро Лісабона: другий страйк у вівторок 14 квітня — нагадування та альтернативи",
+      "type": "utility",
+      "angle": "Нагадування для тих, хто планує тиждень: у вівторок 14 квітня метро знову зупиниться з 23:00 понеділка до 06:30 середи. Практичний список альтернатив: автобуси Carris (які маршрути дублюють лінії метро), потяги CP/Fertagus, трамваї, таксі-аплікації. Поради для тих, хто їде на роботу.",
+      "sources_hint": "Our previous article (metro-lisboa-24-hour-strike-april-9). Carris.pt route maps, CP.pt suburban trains, Fertagus.pt. Search: 'greve metro Lisboa 14 abril 2026 alternativas'.",
+      "priority": 2
+    },
+    {
+      "topic": "Португальські університети масово впроваджують ШІ, але інституційна готовність відстає",
+      "type": "news",
+      "angle": "За новим звітом, більшість університетів Португалії вже використовують штучний інтелект, але інституційна спроможність не встигає. Що це означає для українських студентів у Португалії: які ВНЗ лідирують, як ШІ змінює навчання, чи є ризик нерівності між іммігрантами та місцевими студентами у доступі до технологій.",
+      "sources_hint": "RSS: rtp_country (universidades IA relatório). Search: 'universidades portuguesas inteligência artificial relatório 2026'. DGES.gov.pt, A3ES, university press releases.",
+      "priority": 2
+    },
+    {
+      "topic": "Вихідні в Португалії: куди піти 11-13 квітня — події в Лісабоні, Порту та Алгарве",
+      "type": "guide",
+      "angle": "П'ятничний гід на вихідні. Підбірка подій: фестивалі, ринки, виставки, концерти, безкоштовні активності. Окремі блоки для Лісабона, Порту та Алгарве. Увага на бюджетні варіанти та сімейні події. Нагадування про погоду (шторм у суботу — краще планувати закриті локації).",
+      "sources_hint": "Search: 'eventos fim de semana Lisboa Porto Algarve 11 12 13 abril 2026'. Timeout Lisboa, Timeout Porto, VisitAlgarve. Agenda Cultural Lisboa, Porto Lazer. Eventbrite Portugal.",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-10",
+  "created_at": "2026-04-10T06:15:39.022199+00:00"
+}
