@@ -1,4 +1,12 @@
-"""Tests for pipeline.main — pipeline orchestrator."""
+"""Tests for pipeline orchestrator: modes (generate, publish, digest) and CLI.
+
+After refactoring, the code is split across:
+  - pipeline.modes.generate — batch generation
+  - pipeline.modes.publish — mechanical TG publish
+  - pipeline.modes.digest — evening digest
+  - pipeline.cli — CLI entry point
+  - pipeline.main — backward-compatible re-exports
+"""
 
 from __future__ import annotations
 
@@ -11,11 +19,35 @@ import pytest
 from pipeline.context import PipelineContext
 
 
+# ========== pipeline.main re-exports ==========
+
+class TestMainReexports:
+    """pipeline.main should re-export everything for backward compatibility."""
+
+    def test_exports_cli(self):
+        from pipeline.main import cli
+        assert callable(cli)
+
+    def test_exports_run_generate(self):
+        from pipeline.main import run_generate
+        assert callable(run_generate)
+
+    def test_exports_run_publish(self):
+        from pipeline.main import run_publish
+        assert callable(run_publish)
+
+    def test_exports_run_digest(self):
+        from pipeline.main import run_digest
+        assert callable(run_digest)
+
+
+# ========== pipeline.modes.generate ==========
+
 class TestReviewLoop:
     """_review_loop: article review cycle."""
 
-    @patch("pipeline.main.s5_revise")
-    @patch("pipeline.main.s4_review")
+    @patch("pipeline.modes.generate.s5_revise")
+    @patch("pipeline.modes.generate.s4_review")
     def test_approved_after_one_revision(self, mock_review, mock_revise):
         """Approves on second review (after 1 revision, cycle >= 1)."""
         ctx = PipelineContext()
@@ -28,24 +60,25 @@ class TestReviewLoop:
 
         mock_review.run.side_effect = review_side_effect
 
-        from pipeline.main import _review_loop
+        from pipeline.modes.generate import _review_loop
         _review_loop(ctx)
         assert ctx.review_approved is True
         assert mock_revise.run.call_count >= 1
 
-    @patch("pipeline.main.s5_revise")
-    @patch("pipeline.main.s4_review")
+    @patch("pipeline.modes.generate.s5_revise")
+    @patch("pipeline.modes.generate.s4_review")
     def test_max_cycles_reached(self, mock_review, mock_revise):
         """When max cycles reached, loop exits without approval."""
         ctx = PipelineContext()
         mock_review.run.side_effect = lambda c: None  # Never approves
 
-        from pipeline.main import _review_loop, MAX_REVIEW_CYCLES
+        from pipeline.modes.generate import _review_loop
+        from pipeline.config import MAX_REVIEW_CYCLES
         _review_loop(ctx)
         assert mock_review.run.call_count == MAX_REVIEW_CYCLES
 
-    @patch("pipeline.main.s5_revise")
-    @patch("pipeline.main.s4_review")
+    @patch("pipeline.modes.generate.s5_revise")
+    @patch("pipeline.modes.generate.s4_review")
     def test_always_does_at_least_one_revision(self, mock_review, mock_revise):
         """Even if approved on first review, must do at least 1 revision (cycle >= 1 check)."""
         ctx = PipelineContext()
@@ -55,7 +88,7 @@ class TestReviewLoop:
 
         mock_review.run.side_effect = review_first_approve
 
-        from pipeline.main import _review_loop
+        from pipeline.modes.generate import _review_loop
         _review_loop(ctx)
         # First cycle: review approves, but cycle=0 so cycle>=1 is False, so revise runs
         assert mock_revise.run.call_count >= 1
@@ -64,23 +97,23 @@ class TestReviewLoop:
 class TestLoadWrittenTopics:
     """_load_written_topics: load set of already-written topic labels."""
 
-    @patch("pipeline.config.STATE_DIR")
+    @patch("pipeline.modes.generate.STATE_DIR")
     def test_no_file(self, mock_state, tmp_path):
         mock_state.__truediv__ = lambda self, x: tmp_path / x
         (tmp_path / "plans").mkdir(parents=True)
 
-        from pipeline.main import _load_written_topics
+        from pipeline.modes.generate import _load_written_topics
         result = _load_written_topics({"date": "2026-04-09"})
         assert result == set()
 
-    @patch("pipeline.config.STATE_DIR")
+    @patch("pipeline.modes.generate.STATE_DIR")
     def test_existing_file(self, mock_state, tmp_path):
         mock_state.__truediv__ = lambda self, x: tmp_path / x
         plans_dir = tmp_path / "plans"
         plans_dir.mkdir(parents=True)
         (plans_dir / "2026-04-09_written.json").write_text('["Topic A", "Topic B"]', encoding="utf-8")
 
-        from pipeline.main import _load_written_topics
+        from pipeline.modes.generate import _load_written_topics
         result = _load_written_topics({"date": "2026-04-09"})
         assert result == {"Topic A", "Topic B"}
 
@@ -88,12 +121,12 @@ class TestLoadWrittenTopics:
 class TestMarkTopicWritten:
     """_mark_topic_written: mark a topic as written."""
 
-    @patch("pipeline.config.STATE_DIR")
+    @patch("pipeline.modes.generate.STATE_DIR")
     def test_mark_new_topic(self, mock_state, tmp_path):
         mock_state.__truediv__ = lambda self, x: tmp_path / x
         (tmp_path / "plans").mkdir(parents=True)
 
-        from pipeline.main import _mark_topic_written
+        from pipeline.modes.generate import _mark_topic_written
         _mark_topic_written({"date": "2026-04-09"}, "Topic A")
 
         written_file = tmp_path / "plans" / "2026-04-09_written.json"
@@ -101,14 +134,14 @@ class TestMarkTopicWritten:
         written = json.loads(written_file.read_text(encoding="utf-8"))
         assert "Topic A" in written
 
-    @patch("pipeline.config.STATE_DIR")
+    @patch("pipeline.modes.generate.STATE_DIR")
     def test_append_to_existing(self, mock_state, tmp_path):
         mock_state.__truediv__ = lambda self, x: tmp_path / x
         plans_dir = tmp_path / "plans"
         plans_dir.mkdir(parents=True)
         (plans_dir / "2026-04-09_written.json").write_text('["Topic A"]', encoding="utf-8")
 
-        from pipeline.main import _mark_topic_written
+        from pipeline.modes.generate import _mark_topic_written
         _mark_topic_written({"date": "2026-04-09"}, "Topic B")
 
         written = json.loads((plans_dir / "2026-04-09_written.json").read_text(encoding="utf-8"))
@@ -119,13 +152,13 @@ class TestMarkTopicWritten:
 class TestGenerateOneArticle:
     """_generate_one_article: generate a single article for one editorial topic."""
 
-    @patch("pipeline.main.s6_generate_tg")
-    @patch("pipeline.main.s4_review")
-    @patch("pipeline.main.s5_revise")
-    @patch("pipeline.main.s3_generate")
-    @patch("pipeline.main.s2_research")
-    @patch("pipeline.main.s7_deploy")
-    def test_successful_generation(self, mock_deploy, mock_research, mock_generate, mock_revise, mock_review, mock_tg):
+    @patch("pipeline.modes.generate.s6_generate_tg")
+    @patch("pipeline.modes.generate.s4_review")
+    @patch("pipeline.modes.generate.s5_revise")
+    @patch("pipeline.modes.generate.s3_generate")
+    @patch("pipeline.modes.generate.s2_research")
+    @patch("pipeline.modes.generate.s7_save")
+    def test_successful_generation(self, mock_save, mock_research, mock_generate, mock_revise, mock_review, mock_tg):
         from pipeline.run_report import RunReport
         report = RunReport()
 
@@ -141,7 +174,7 @@ class TestGenerateOneArticle:
 
         topic = {"topic": "Test topic", "type": "news", "priority": 1}
 
-        from pipeline.main import _generate_one_article
+        from pipeline.modes.generate import _generate_one_article
         result = _generate_one_article(
             topic=topic,
             rss_items=[],
@@ -153,7 +186,7 @@ class TestGenerateOneArticle:
         assert result.slot_type == "news"
         mock_research.run.assert_called_once()
 
-    @patch("pipeline.main.s2_research")
+    @patch("pipeline.modes.generate.s2_research")
     def test_generation_failure_returns_none(self, mock_research):
         from pipeline.run_report import RunReport
         report = RunReport()
@@ -161,7 +194,7 @@ class TestGenerateOneArticle:
 
         topic = {"topic": "Failing topic", "type": "news", "priority": 1}
 
-        from pipeline.main import _generate_one_article
+        from pipeline.modes.generate import _generate_one_article
         result = _generate_one_article(
             topic=topic,
             rss_items=[],
@@ -172,14 +205,14 @@ class TestGenerateOneArticle:
 
 
 class TestRunGenerate:
-    """run_generate: batch all articles for the day."""
+    """modes.generate.run: batch all articles for the day."""
 
-    @patch("pipeline.main.s8_verify")
-    @patch("pipeline.main.s7_deploy")
-    @patch("pipeline.main._generate_one_article")
-    @patch("pipeline.main._load_written_topics")
-    @patch("pipeline.main.s1_collect")
-    @patch("pipeline.main.s0_editorial_plan")
+    @patch("pipeline.modes.generate.s8_verify")
+    @patch("pipeline.modes.generate.s7_deploy")
+    @patch("pipeline.modes.generate._generate_one_article")
+    @patch("pipeline.modes.generate._load_written_topics")
+    @patch("pipeline.modes.generate.s1_collect")
+    @patch("pipeline.modes.generate.s0_editorial_plan")
     def test_full_generate_flow(self, mock_s0, mock_s1, mock_written, mock_gen, mock_deploy, mock_verify, tmp_path):
         mock_s0.run.return_value = {
             "date": "2026-04-09",
@@ -194,18 +227,18 @@ class TestRunGenerate:
         ctx.image_path = None
         mock_gen.return_value = ctx
 
-        with patch("pipeline.main._mark_topic_written"):
-            with patch("pipeline.main.RunReport") as MockReport:
+        with patch("pipeline.modes.generate._mark_topic_written"):
+            with patch("pipeline.modes.generate.RunReport") as MockReport:
                 mock_report_inst = MagicMock()
                 mock_report_inst.save.return_value = tmp_path / "report.json"
                 MockReport.return_value = mock_report_inst
 
-                from pipeline.main import run_generate
-                completed = run_generate(dry_run=True)
+                from pipeline.modes.generate import run
+                completed = run(dry_run=True)
                 assert len(completed) == 1
 
-    @patch("pipeline.main.s1_collect")
-    @patch("pipeline.main.s0_editorial_plan")
+    @patch("pipeline.modes.generate.s1_collect")
+    @patch("pipeline.modes.generate.s0_editorial_plan")
     def test_generate_skips_written_topics(self, mock_s0, mock_s1, tmp_path):
         mock_s0.run.return_value = {
             "date": "2026-04-09",
@@ -216,177 +249,30 @@ class TestRunGenerate:
         }
         mock_s1.collect_context.return_value = ([], [])
 
-        with patch("pipeline.main._load_written_topics", return_value={"Already Written"}):
-            with patch("pipeline.main._generate_one_article") as mock_gen:
+        with patch("pipeline.modes.generate._load_written_topics", return_value={"Already Written"}):
+            with patch("pipeline.modes.generate._generate_one_article") as mock_gen:
                 ctx = PipelineContext()
                 ctx.slug = "new-topic"
                 ctx.image_path = None
                 mock_gen.return_value = ctx
 
-                with patch("pipeline.main._mark_topic_written"):
-                    with patch("pipeline.main.RunReport") as MockReport:
+                with patch("pipeline.modes.generate._mark_topic_written"):
+                    with patch("pipeline.modes.generate.RunReport") as MockReport:
                         mock_report_inst = MagicMock()
                         mock_report_inst.save.return_value = tmp_path / "r.json"
                         MockReport.return_value = mock_report_inst
 
-                        from pipeline.main import run_generate
-                        completed = run_generate(dry_run=True)
+                        from pipeline.modes.generate import run
+                        completed = run(dry_run=True)
                         # Only "New Topic" should be generated
                         assert mock_gen.call_count == 1
 
-
-class TestRunPublish:
-    """run_publish: pick best article, send to TG."""
-
-    @patch("pipeline.main.s10_pick_and_publish")
-    def test_publish_success(self, mock_s10):
-        mock_s10.run.return_value = {"slug": "test", "msg_id": 123}
-
-        from pipeline.main import run_publish
-        result = run_publish()
-        assert result["slug"] == "test"
-
-    @patch("pipeline.main.s10_pick_and_publish")
-    def test_publish_nothing(self, mock_s10):
-        mock_s10.run.return_value = None
-
-        from pipeline.main import run_publish
-        result = run_publish()
-        assert result is None
-
-
-class TestRunDigest:
-    """run_digest: compile day's articles, send to TG."""
-
-    @patch("pipeline.main.s11_digest")
-    def test_digest_success(self, mock_s11):
-        mock_s11.run.return_value = {"msg_id": 789, "article_count": 5}
-
-        from pipeline.main import run_digest
-        result = run_digest()
-        assert result["msg_id"] == 789
-
-    @patch("pipeline.main.s11_digest")
-    def test_digest_skipped(self, mock_s11):
-        mock_s11.run.return_value = None
-
-        from pipeline.main import run_digest
-        result = run_digest()
-        assert result is None
-
-
-class TestCli:
-    """cli: CLI entry point."""
-
-    @patch("pipeline.main.sys.exit")
-    @patch("pipeline.main.run_generate")
-    @patch("pipeline.main.argparse.ArgumentParser.parse_args")
-    def test_cli_generate_mode(self, mock_args, mock_generate, mock_exit):
-        mock_args.return_value = MagicMock(mode="generate", dry_run=False, verbose=False)
-        mock_generate.return_value = []
-
-        from pipeline.main import cli
-        cli()
-        mock_generate.assert_called_once_with(dry_run=False)
-
-    @patch("pipeline.main.sys.exit")
-    @patch("pipeline.main.run_publish")
-    @patch("pipeline.main.argparse.ArgumentParser.parse_args")
-    def test_cli_publish_mode(self, mock_args, mock_publish, mock_exit):
-        mock_args.return_value = MagicMock(mode="publish", dry_run=False, verbose=False)
-        mock_publish.return_value = {"slug": "test", "msg_id": 1}
-
-        from pipeline.main import cli
-        cli()
-        mock_publish.assert_called_once()
-
-    @patch("pipeline.main.sys.exit")
-    @patch("pipeline.main.run_digest")
-    @patch("pipeline.main.argparse.ArgumentParser.parse_args")
-    def test_cli_digest_mode(self, mock_args, mock_digest, mock_exit):
-        mock_args.return_value = MagicMock(mode="digest", dry_run=False, verbose=False)
-        mock_digest.return_value = {"msg_id": 1, "article_count": 5}
-
-        from pipeline.main import cli
-        cli()
-        mock_digest.assert_called_once()
-
-    @patch("pipeline.main.sys.exit")
-    @patch("pipeline.main.s0_editorial_plan")
-    @patch("pipeline.main.argparse.ArgumentParser.parse_args")
-    def test_cli_plan_mode(self, mock_args, mock_s0, mock_exit):
-        mock_args.return_value = MagicMock(mode="plan", dry_run=False, verbose=False)
-        mock_s0.run.return_value = {"articles": [{"type": "news", "priority": 1, "topic": "Test"}]}
-
-        from pipeline.main import cli
-        cli()
-        mock_s0.run.assert_called_once()
-
-    @patch("pipeline.main.sys.exit")
-    @patch("pipeline.main.run_generate")
-    @patch("pipeline.main.argparse.ArgumentParser.parse_args")
-    def test_cli_dry_run(self, mock_args, mock_generate, mock_exit):
-        mock_args.return_value = MagicMock(mode="generate", dry_run=True, verbose=False)
-        mock_generate.return_value = []
-
-        from pipeline.main import cli
-        cli()
-        mock_generate.assert_called_once_with(dry_run=True)
-
-    @patch("pipeline.main.sys.exit")
-    @patch("pipeline.main.run_publish")
-    @patch("pipeline.main.argparse.ArgumentParser.parse_args")
-    def test_cli_publish_nothing_exits_1(self, mock_args, mock_publish, mock_exit):
-        mock_args.return_value = MagicMock(mode="publish", dry_run=False, verbose=False)
-        mock_publish.return_value = None
-
-        from pipeline.main import cli
-        cli()
-        mock_exit.assert_called_with(1)
-
-    @patch("pipeline.main.sys.exit")
-    @patch("pipeline.main.run_digest")
-    @patch("pipeline.main.argparse.ArgumentParser.parse_args")
-    def test_cli_digest_nothing_exits_1(self, mock_args, mock_digest, mock_exit):
-        mock_args.return_value = MagicMock(mode="digest", dry_run=False, verbose=False)
-        mock_digest.return_value = None
-
-        from pipeline.main import cli
-        cli()
-        mock_exit.assert_called_with(1)
-
-    @patch("pipeline.main.sys.exit")
-    @patch("pipeline.main.run_generate")
-    @patch("pipeline.main.argparse.ArgumentParser.parse_args")
-    def test_cli_exception_exits_1(self, mock_args, mock_generate, mock_exit):
-        mock_args.return_value = MagicMock(mode="generate", dry_run=False, verbose=False)
-        mock_generate.side_effect = Exception("Pipeline crashed")
-
-        from pipeline.main import cli
-        cli()
-        mock_exit.assert_called_with(1)
-
-    @patch("pipeline.main.sys.exit")
-    @patch("pipeline.main.run_generate")
-    @patch("pipeline.main.argparse.ArgumentParser.parse_args")
-    def test_cli_keyboard_interrupt(self, mock_args, mock_generate, mock_exit):
-        mock_args.return_value = MagicMock(mode="generate", dry_run=False, verbose=False)
-        mock_generate.side_effect = KeyboardInterrupt()
-
-        from pipeline.main import cli
-        cli()
-        mock_exit.assert_called_with(130)
-
-
-class TestGenerateFullFlow:
-    """run_generate: edge cases."""
-
-    @patch("pipeline.main.s8_verify")
-    @patch("pipeline.main.s7_deploy")
-    @patch("pipeline.main._generate_one_article")
-    @patch("pipeline.main._load_written_topics")
-    @patch("pipeline.main.s1_collect")
-    @patch("pipeline.main.s0_editorial_plan")
+    @patch("pipeline.modes.generate.s8_verify")
+    @patch("pipeline.modes.generate.s7_deploy")
+    @patch("pipeline.modes.generate._generate_one_article")
+    @patch("pipeline.modes.generate._load_written_topics")
+    @patch("pipeline.modes.generate.s1_collect")
+    @patch("pipeline.modes.generate.s0_editorial_plan")
     def test_generate_with_deploy(self, mock_s0, mock_s1, mock_written, mock_gen, mock_deploy, mock_verify, tmp_path):
         """Test the deploy path (non-dry-run) with completed articles."""
         mock_s0.run.return_value = {
@@ -402,47 +288,47 @@ class TestGenerateFullFlow:
         ctx.image_path = Path("/tmp/img.jpg")
         mock_gen.return_value = ctx
 
-        with patch("pipeline.main._mark_topic_written"):
-            with patch("pipeline.main.RunReport") as MockReport:
+        with patch("pipeline.modes.generate._mark_topic_written"):
+            with patch("pipeline.modes.generate.RunReport") as MockReport:
                 mock_report_inst = MagicMock()
                 mock_report_inst.save.return_value = tmp_path / "report.json"
                 MockReport.return_value = mock_report_inst
 
-                from pipeline.main import run_generate
-                completed = run_generate(dry_run=False)
+                from pipeline.modes.generate import run
+                completed = run(dry_run=False)
                 assert len(completed) == 1
-                mock_deploy.deploy_site.assert_called_once()
+                mock_deploy.run.assert_called_once()
                 mock_verify.run.assert_called_once()
 
-    @patch("pipeline.main._generate_one_article")
-    @patch("pipeline.main._load_written_topics")
-    @patch("pipeline.main.s1_collect")
-    @patch("pipeline.main.s0_editorial_plan")
+    @patch("pipeline.modes.generate._generate_one_article")
+    @patch("pipeline.modes.generate._load_written_topics")
+    @patch("pipeline.modes.generate.s1_collect")
+    @patch("pipeline.modes.generate.s0_editorial_plan")
     def test_generate_all_fail(self, mock_s0, mock_s1, mock_written, mock_gen, tmp_path):
-        """When all articles fail to generate, report saves with 'empty' status."""
+        """When all articles fail, report saves with 'empty' status."""
         mock_s0.run.return_value = {
             "date": "2026-04-09",
             "articles": [{"topic": "Failing", "type": "news"}],
         }
         mock_s1.collect_context.return_value = ([], [])
         mock_written.return_value = set()
-        mock_gen.return_value = None  # All fail
+        mock_gen.return_value = None
 
-        with patch("pipeline.main._mark_topic_written"):
-            with patch("pipeline.main.RunReport") as MockReport:
+        with patch("pipeline.modes.generate._mark_topic_written"):
+            with patch("pipeline.modes.generate.RunReport") as MockReport:
                 mock_report_inst = MagicMock()
                 mock_report_inst.save.return_value = tmp_path / "report.json"
                 MockReport.return_value = mock_report_inst
 
-                from pipeline.main import run_generate
-                completed = run_generate(dry_run=True)
+                from pipeline.modes.generate import run
+                completed = run(dry_run=True)
                 assert len(completed) == 0
                 mock_report_inst.finish.assert_called_with("empty")
 
-    @patch("pipeline.main._generate_one_article")
-    @patch("pipeline.main._load_written_topics")
-    @patch("pipeline.main.s1_collect")
-    @patch("pipeline.main.s0_editorial_plan")
+    @patch("pipeline.modes.generate._generate_one_article")
+    @patch("pipeline.modes.generate._load_written_topics")
+    @patch("pipeline.modes.generate.s1_collect")
+    @patch("pipeline.modes.generate.s0_editorial_plan")
     def test_generate_report_save_failure(self, mock_s0, mock_s1, mock_written, mock_gen, tmp_path):
         """Report save failure should not crash."""
         mock_s0.run.return_value = {
@@ -456,12 +342,153 @@ class TestGenerateFullFlow:
         ctx.image_path = None
         mock_gen.return_value = ctx
 
-        with patch("pipeline.main._mark_topic_written"):
-            with patch("pipeline.main.RunReport") as MockReport:
+        with patch("pipeline.modes.generate._mark_topic_written"):
+            with patch("pipeline.modes.generate.RunReport") as MockReport:
                 mock_report_inst = MagicMock()
                 mock_report_inst.save.side_effect = Exception("Save failed")
                 MockReport.return_value = mock_report_inst
 
-                from pipeline.main import run_generate
-                completed = run_generate(dry_run=True)
+                from pipeline.modes.generate import run
+                completed = run(dry_run=True)
                 assert len(completed) == 1
+
+
+# ========== pipeline.modes.publish ==========
+
+class TestRunPublish:
+    """modes.publish.run: pick best article, send to TG."""
+
+    @patch("pipeline.modes.publish.s10_pick_and_publish")
+    def test_publish_success(self, mock_s10):
+        mock_s10.run.return_value = {"slug": "test", "msg_id": 123}
+
+        from pipeline.modes.publish import run
+        result = run()
+        assert result["slug"] == "test"
+
+    @patch("pipeline.modes.publish.s10_pick_and_publish")
+    def test_publish_nothing(self, mock_s10):
+        mock_s10.run.return_value = None
+
+        from pipeline.modes.publish import run
+        result = run()
+        assert result is None
+
+
+# ========== pipeline.modes.digest ==========
+
+class TestRunDigest:
+    """modes.digest.run: compile day's articles, send to TG."""
+
+    @patch("pipeline.modes.digest.s11_digest")
+    def test_digest_success(self, mock_s11):
+        mock_s11.run.return_value = {"msg_id": 789, "article_count": 5}
+
+        from pipeline.modes.digest import run
+        result = run()
+        assert result["msg_id"] == 789
+
+    @patch("pipeline.modes.digest.s11_digest")
+    def test_digest_skipped(self, mock_s11):
+        mock_s11.run.return_value = None
+
+        from pipeline.modes.digest import run
+        result = run()
+        assert result is None
+
+
+# ========== pipeline.cli ==========
+
+class TestCli:
+    """cli: CLI entry point."""
+
+    @patch("pipeline.cli.sys.exit")
+    @patch("pipeline.cli.argparse.ArgumentParser.parse_args")
+    def test_cli_generate_mode(self, mock_args, mock_exit):
+        mock_args.return_value = MagicMock(mode="generate", dry_run=False, verbose=False)
+
+        with patch("pipeline.modes.generate.run", return_value=[]) as mock_gen:
+            from pipeline.cli import cli
+            cli()
+            mock_gen.assert_called_once_with(dry_run=False)
+
+    @patch("pipeline.cli.sys.exit")
+    @patch("pipeline.cli.argparse.ArgumentParser.parse_args")
+    def test_cli_publish_mode(self, mock_args, mock_exit):
+        mock_args.return_value = MagicMock(mode="publish", dry_run=False, verbose=False)
+
+        with patch("pipeline.modes.publish.run", return_value={"slug": "test", "msg_id": 1}) as mock_pub:
+            from pipeline.cli import cli
+            cli()
+            mock_pub.assert_called_once()
+
+    @patch("pipeline.cli.sys.exit")
+    @patch("pipeline.cli.argparse.ArgumentParser.parse_args")
+    def test_cli_digest_mode(self, mock_args, mock_exit):
+        mock_args.return_value = MagicMock(mode="digest", dry_run=False, verbose=False)
+
+        with patch("pipeline.modes.digest.run", return_value={"msg_id": 1, "article_count": 5}) as mock_dig:
+            from pipeline.cli import cli
+            cli()
+            mock_dig.assert_called_once()
+
+    @patch("pipeline.cli.sys.exit")
+    @patch("pipeline.cli.s0_editorial_plan")
+    @patch("pipeline.cli.argparse.ArgumentParser.parse_args")
+    def test_cli_plan_mode(self, mock_args, mock_s0, mock_exit):
+        mock_args.return_value = MagicMock(mode="plan", dry_run=False, verbose=False)
+        mock_s0.run.return_value = {"articles": [{"type": "news", "priority": 1, "topic": "Test"}]}
+
+        from pipeline.cli import cli
+        cli()
+        mock_s0.run.assert_called_once()
+
+    @patch("pipeline.cli.sys.exit")
+    @patch("pipeline.cli.argparse.ArgumentParser.parse_args")
+    def test_cli_dry_run(self, mock_args, mock_exit):
+        mock_args.return_value = MagicMock(mode="generate", dry_run=True, verbose=False)
+
+        with patch("pipeline.modes.generate.run", return_value=[]) as mock_gen:
+            from pipeline.cli import cli
+            cli()
+            mock_gen.assert_called_once_with(dry_run=True)
+
+    @patch("pipeline.cli.sys.exit")
+    @patch("pipeline.cli.argparse.ArgumentParser.parse_args")
+    def test_cli_publish_nothing_exits_1(self, mock_args, mock_exit):
+        mock_args.return_value = MagicMock(mode="publish", dry_run=False, verbose=False)
+
+        with patch("pipeline.modes.publish.run", return_value=None):
+            from pipeline.cli import cli
+            cli()
+            mock_exit.assert_called_with(1)
+
+    @patch("pipeline.cli.sys.exit")
+    @patch("pipeline.cli.argparse.ArgumentParser.parse_args")
+    def test_cli_digest_nothing_exits_1(self, mock_args, mock_exit):
+        mock_args.return_value = MagicMock(mode="digest", dry_run=False, verbose=False)
+
+        with patch("pipeline.modes.digest.run", return_value=None):
+            from pipeline.cli import cli
+            cli()
+            mock_exit.assert_called_with(1)
+
+    @patch("pipeline.cli.sys.exit")
+    @patch("pipeline.cli.argparse.ArgumentParser.parse_args")
+    def test_cli_exception_exits_1(self, mock_args, mock_exit):
+        mock_args.return_value = MagicMock(mode="generate", dry_run=False, verbose=False)
+
+        with patch("pipeline.modes.generate.run", side_effect=Exception("Pipeline crashed")):
+            from pipeline.cli import cli
+            cli()
+            mock_exit.assert_called_with(1)
+
+    @patch("pipeline.cli.sys.exit")
+    @patch("pipeline.cli.argparse.ArgumentParser.parse_args")
+    def test_cli_keyboard_interrupt(self, mock_args, mock_exit):
+        mock_args.return_value = MagicMock(mode="generate", dry_run=False, verbose=False)
+
+        with patch("pipeline.modes.generate.run", side_effect=KeyboardInterrupt()):
+            from pipeline.cli import cli
+            cli()
+            mock_exit.assert_called_with(130)

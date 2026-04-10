@@ -530,13 +530,13 @@ class TestS6GenerateTg:
 
 # ========== Stage 7: Deploy ==========
 
-class TestS7Deploy:
-    """s7_deploy: save article and deploy site."""
+class TestS7Save:
+    """s7_save: save article to disk, teaser, summary, and git commit."""
 
-    @patch("pipeline.stages.s7_deploy._git_commit")
-    @patch("pipeline.stages.s7_deploy.STATE_DIR")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    @patch("pipeline.stages.s7_deploy.IMAGES_DIR")
+    @patch("pipeline.stages.s7_save._git_commit")
+    @patch("pipeline.stages.s7_save.STATE_DIR")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    @patch("pipeline.stages.s7_save.IMAGES_DIR")
     def test_save_article(self, mock_images, mock_content, mock_state, mock_git, ctx, tmp_path):
         content_dir = tmp_path / "content"
         content_dir.mkdir()
@@ -550,8 +550,8 @@ class TestS7Deploy:
         ctx.image_path = None
         ctx.image_prompt = ""
 
-        from pipeline.stages.s7_deploy import save_article
-        save_article(ctx)
+        from pipeline.stages.s7_save import run
+        run(ctx)
 
         md_path = content_dir / f"{ctx.slug}.md"
         assert md_path.exists()
@@ -559,10 +559,10 @@ class TestS7Deploy:
         assert ctx.title in text
         assert ctx.slug in text
 
-    @patch("pipeline.stages.s7_deploy._git_commit")
-    @patch("pipeline.stages.s7_deploy.STATE_DIR")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    @patch("pipeline.stages.s7_deploy.IMAGES_DIR")
+    @patch("pipeline.stages.s7_save._git_commit")
+    @patch("pipeline.stages.s7_save.STATE_DIR")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    @patch("pipeline.stages.s7_save.IMAGES_DIR")
     def test_save_teaser(self, mock_images, mock_content, mock_state, mock_git, ctx, tmp_path):
         content_dir = tmp_path / "content"
         content_dir.mkdir()
@@ -576,8 +576,8 @@ class TestS7Deploy:
         ctx.image_path = None
         ctx.image_prompt = ""
 
-        from pipeline.stages.s7_deploy import save_article
-        save_article(ctx)
+        from pipeline.stages.s7_save import run
+        run(ctx)
 
         teaser_dir = state_dir / "teasers"
         assert teaser_dir.exists()
@@ -586,10 +586,10 @@ class TestS7Deploy:
         teaser = json.loads(teaser_file.read_text(encoding="utf-8"))
         assert teaser["slug"] == ctx.slug
 
-    @patch("pipeline.stages.s7_deploy._git_commit")
-    @patch("pipeline.stages.s7_deploy.STATE_DIR")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    @patch("pipeline.stages.s7_deploy.IMAGES_DIR")
+    @patch("pipeline.stages.s7_save._git_commit")
+    @patch("pipeline.stages.s7_save.STATE_DIR")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    @patch("pipeline.stages.s7_save.IMAGES_DIR")
     def test_save_summary(self, mock_images, mock_content, mock_state, mock_git, ctx, tmp_path):
         content_dir = tmp_path / "content"
         content_dir.mkdir()
@@ -603,39 +603,20 @@ class TestS7Deploy:
         ctx.image_path = None
         ctx.image_prompt = ""
 
-        from pipeline.stages.s7_deploy import save_article
-        save_article(ctx)
+        from pipeline.stages.s7_save import run
+        run(ctx)
 
         summaries_file = state_dir / "summaries.json"
         assert summaries_file.exists()
         summaries = json.loads(summaries_file.read_text(encoding="utf-8"))
         assert ctx.slug in summaries
 
-    @patch("pipeline.stages.s7_deploy.subprocess.run")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    def test_deploy_site(self, mock_content, mock_run):
-        mock_content.parent = Path("/fake/root")
-        mock_run.return_value = MagicMock(returncode=0, stderr="")
-
-        from pipeline.stages.s7_deploy import deploy_site
-        deploy_site()
-        assert mock_run.call_count >= 1  # At least git push
-
-    @patch("pipeline.stages.s7_deploy.subprocess.run")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    def test_git_commit(self, mock_content, mock_run, ctx):
-        mock_content.parent = Path("/fake/root")
-
-        from pipeline.stages.s7_deploy import _git_commit
-        _git_commit(ctx)
-        assert mock_run.call_count == 2  # git add + git commit
-
-    @patch("pipeline.stages.s7_deploy._git_commit")
-    @patch("pipeline.stages.s7_deploy.STATE_DIR")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    @patch("pipeline.stages.s7_deploy.IMAGES_DIR")
+    @patch("pipeline.stages.s7_save._git_commit")
+    @patch("pipeline.stages.s7_save.STATE_DIR")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    @patch("pipeline.stages.s7_save.IMAGES_DIR")
     def test_save_article_with_image(self, mock_images, mock_content, mock_state, mock_git, ctx, tmp_path):
-        """Test saving article when image_prompt triggers generation."""
+        """Test saving article when image already exists."""
         content_dir = tmp_path / "content"
         content_dir.mkdir()
         mock_content.__truediv__ = lambda self, x: content_dir / x
@@ -648,23 +629,22 @@ class TestS7Deploy:
         mock_images.__truediv__ = lambda self, x: images_dir / x
         mock_images.mkdir = MagicMock()
 
-        # Already have an image
         img_path = tmp_path / "existing.jpg"
         img_path.write_bytes(b"fake jpg data")
         ctx.image_path = img_path
         ctx.image_prompt = "test prompt"
 
-        from pipeline.stages.s7_deploy import save_article
-        save_article(ctx)
+        from pipeline.stages.s7_save import run
+        run(ctx)
         md_path = content_dir / f"{ctx.slug}.md"
         assert md_path.exists()
         text = md_path.read_text(encoding="utf-8")
         assert "image:" in text
 
-    @patch("pipeline.stages.s7_deploy._git_commit")
-    @patch("pipeline.stages.s7_deploy.STATE_DIR")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    @patch("pipeline.stages.s7_deploy.IMAGES_DIR")
+    @patch("pipeline.stages.s7_save._git_commit")
+    @patch("pipeline.stages.s7_save.STATE_DIR")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    @patch("pipeline.stages.s7_save.IMAGES_DIR")
     def test_save_article_git_commit_failure(self, mock_images, mock_content, mock_state, mock_git, ctx, tmp_path):
         """Git commit failure should not crash the pipeline."""
         content_dir = tmp_path / "content"
@@ -680,31 +660,13 @@ class TestS7Deploy:
 
         mock_git.side_effect = Exception("Git error")
 
-        from pipeline.stages.s7_deploy import save_article
-        save_article(ctx)  # Should not raise
+        from pipeline.stages.s7_save import run
+        run(ctx)  # Should not raise
 
-    @patch("pipeline.stages.s7_deploy.subprocess.run")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    def test_deploy_site_ssh_failure(self, mock_content, mock_run):
-        mock_content.parent = Path("/fake/root")
-        mock_run.return_value = MagicMock(returncode=1, stderr="SSH error")
-
-        from pipeline.stages.s7_deploy import deploy_site
-        deploy_site()  # Should not raise
-
-    @patch("pipeline.stages.s7_deploy.subprocess.run")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    def test_deploy_site_git_push_exception(self, mock_content, mock_run):
-        mock_content.parent = Path("/fake/root")
-        mock_run.side_effect = Exception("Git push failed")
-
-        from pipeline.stages.s7_deploy import deploy_site
-        deploy_site()  # Should not raise
-
-    @patch("pipeline.stages.s7_deploy._git_commit")
-    @patch("pipeline.stages.s7_deploy.STATE_DIR")
-    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
-    @patch("pipeline.stages.s7_deploy.IMAGES_DIR")
+    @patch("pipeline.stages.s7_save._git_commit")
+    @patch("pipeline.stages.s7_save.STATE_DIR")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    @patch("pipeline.stages.s7_save.IMAGES_DIR")
     def test_save_article_appends_to_existing_summaries(self, mock_images, mock_content, mock_state, mock_git, ctx, tmp_path):
         content_dir = tmp_path / "content"
         content_dir.mkdir()
@@ -717,24 +679,70 @@ class TestS7Deploy:
         ctx.image_path = None
         ctx.image_prompt = ""
 
-        # Pre-existing summaries
         summaries_file = state_dir / "summaries.json"
         summaries_file.write_text('{"old-slug": {"title": "Old"}}', encoding="utf-8")
 
-        from pipeline.stages.s7_deploy import save_article
-        save_article(ctx)
+        from pipeline.stages.s7_save import run
+        run(ctx)
 
         summaries = json.loads(summaries_file.read_text(encoding="utf-8"))
         assert "old-slug" in summaries
         assert ctx.slug in summaries
 
-    @patch("pipeline.stages.s7_deploy.deploy_site")
-    @patch("pipeline.stages.s7_deploy.save_article")
-    def test_run_legacy_alias(self, mock_save, mock_deploy, ctx):
+    @patch("pipeline.stages.s7_save.subprocess.run")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    def test_git_commit(self, mock_content, mock_run, ctx):
+        mock_content.parent = Path("/fake/root")
+
+        from pipeline.stages.s7_save import _git_commit
+        _git_commit(ctx)
+        assert mock_run.call_count == 2  # git add + git commit
+
+
+class TestS7Deploy:
+    """s7_deploy: push git and deploy site via SSH."""
+
+    @patch("pipeline.stages.s7_deploy.subprocess.run")
+    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
+    def test_deploy_site(self, mock_content, mock_run):
+        mock_content.parent = Path("/fake/root")
+        mock_run.return_value = MagicMock(returncode=0, stderr="")
+
         from pipeline.stages.s7_deploy import run
-        run(ctx)
-        mock_save.assert_called_once_with(ctx)
-        mock_deploy.assert_called_once()
+        run()
+        assert mock_run.call_count >= 1
+
+    @patch("pipeline.stages.s7_deploy.subprocess.run")
+    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
+    def test_deploy_site_ssh_failure(self, mock_content, mock_run):
+        mock_content.parent = Path("/fake/root")
+        mock_run.return_value = MagicMock(returncode=1, stderr="SSH error")
+
+        from pipeline.stages.s7_deploy import run
+        run()  # Should not raise
+
+    @patch("pipeline.stages.s7_deploy.subprocess.run")
+    @patch("pipeline.stages.s7_deploy.CONTENT_DIR")
+    def test_deploy_site_git_push_exception(self, mock_content, mock_run):
+        mock_content.parent = Path("/fake/root")
+        mock_run.side_effect = Exception("Git push failed")
+
+        from pipeline.stages.s7_deploy import run
+        run()  # Should not raise
+
+    def test_save_article_legacy_alias(self, ctx):
+        """save_article() delegates to s7_save.run()."""
+        with patch("pipeline.stages.s7_save.run") as mock_save_run:
+            from pipeline.stages.s7_deploy import save_article
+            save_article(ctx)
+            mock_save_run.assert_called_once_with(ctx)
+
+    def test_deploy_site_legacy_alias(self):
+        """deploy_site() delegates to s7_deploy.run()."""
+        with patch("pipeline.stages.s7_deploy.run") as mock_run:
+            from pipeline.stages.s7_deploy import deploy_site
+            deploy_site()
+            mock_run.assert_called_once()
 
 
 # ========== Stage 8: Verify ==========
