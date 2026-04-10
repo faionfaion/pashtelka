@@ -855,3 +855,22 @@ Already up to date.
 06:34:04 [pipeline.stages.s6_generate_tg] INFO: TG caption: 943 chars, vocab: 5 words
 06:34:04 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 06:34:04 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/energy-credit-line-600-million-businesses.md
+06:34:05 [pipeline] INFO: Article ready: energy-credit-line-600-million-businesses (Кредитна лінія €600 млн для бізнесу: як подати зая)
+06:34:05 [pipeline] INFO: === Article 3/11 ===
+06:34:05 [pipeline] INFO: --- Article: [news] Зеленський: США ігнорували докази підтримки Росією Ірану — щ ---
+06:36:42 [pipeline.stages.s2_research] INFO: Research complete: 7353 chars
+06:37:50 [pipeline.stages.s3_generate] INFO: Generated: 'Зеленський: США проігнорували докази підтримки Росією Ірану — і це може вдарити по гаманцях в Португалії' (slug=zelenskyy-us-ignored-russia-iran-evidence-fuel-prices, 399 words, 9 sources)
+06:39:00 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+06:39:00 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою та локальним кутом, але потребує доопрацювання:
+
+1. **Непідкріплене джерелом твердження**: «з початку конфлікту дизель подорожчав на 52 центи за літр, бензин — на 28 центів
+06:39:27 [pipeline.stages.s5_revise] INFO: Revised article: 420 words
+06:39:27 [pipeline] INFO: === Review cycle 1/3 complete ===
+06:40:26 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+06:40:26 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з вдалим мостом між геополітикою та гаманцем читача. Кілька зауважень:
+
+1. АНАЛІЗ vs НОВИНА: Речення «Якщо докази Зеленського правдиві, Росія підривала перемир'я ще до його початку» — це
+06:40:26 [pipeline] INFO: Article approved after 1 revision(s)
+06:40:36 [pipeline.stages.s6_generate_tg] INFO: TG caption: 935 chars, vocab: 5 words
+06:40:36 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+06:40:36 [pipeline.stages.s7_deploy] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/zelenskyy-us-ignored-russia-iran-evidence-fuel-prices.md
