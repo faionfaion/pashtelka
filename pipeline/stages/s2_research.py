@@ -22,7 +22,7 @@ def run(ctx: PipelineContext) -> None:
         prompt=prompt,
         system_prompt=system,
         model=MODEL_RESEARCH,
-        allowed_tools=["WebSearch", "WebFetch"],
+        allowed_tools=["WebSearch", "WebFetch", "Read", "Glob"],
         timeout=300,
     )
 

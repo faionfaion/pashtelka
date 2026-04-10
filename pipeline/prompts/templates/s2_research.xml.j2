@@ -49,3 +49,19 @@ Return your findings as a structured research brief.
 <existing_articles>
 Do NOT cover topics already published: {{ ctx.posted_slugs[-20:] | join(', ') }}
 </existing_articles>
+
+<previous_coverage>
+If this topic is a FOLLOW-UP or related to a previous article, you MUST read the full text of relevant previous articles to reference them properly.
+
+How to find previous articles:
+1. Use Glob to search: content/*.md
+2. Use Read to read the full markdown file, e.g.: content/some-slug.md
+3. Articles are markdown with YAML frontmatter (title, date, slug, tags, source_urls)
+4. The body text starts after the second "---" line
+
+Include in your research brief:
+- Which previous articles are related (slug + title)
+- Key facts from those articles that should be referenced
+- What's NEW in today's story vs. what we already covered
+- Suggested cross-reference: "Link to our previous article: https://pastelka.news/{slug}/"
+</previous_coverage>
