@@ -1749,3 +1749,42 @@ Already up to date.
 07:12:49 [pipeline.stages.s6_generate_tg] INFO: TG caption: 919 chars, vocab: 5 words
 07:12:49 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 07:12:49 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/medico-de-familia-family-doctor-guide-immigrants-2026.md
+07:12:49 [pipeline] INFO: Article ready: medico-de-familia-family-doctor-guide-immigrants-2026 (Médico de família: як отримати сімейного лікаря в )
+07:12:49 [pipeline] INFO: === Article 7/10 ===
+07:12:49 [pipeline] INFO: --- Article: [utility] Шторм 11 квітня: якщо є пошкодження — як повідомити страхову ---
+07:12:49 [asyncio] DEBUG: Using selector: EpollSelector
+07:12:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:17:49 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+07:17:54 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 7.4s
+07:18:02 [asyncio] DEBUG: Using selector: EpollSelector
+07:18:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:23:02 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+07:23:07 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 14.6s
+07:23:21 [asyncio] DEBUG: Using selector: EpollSelector
+07:23:21 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:28:08 [pipeline.stages.s2_research] INFO: Research complete: 13899 chars
+07:28:08 [asyncio] DEBUG: Using selector: EpollSelector
+07:28:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:29:18 [pipeline.stages.s3_generate] INFO: Generated: 'Шторм 11 квітня: пошкодження є — що робити прямо зараз' (slug=storm-april-11-damage-insurance-municipality-checklist, 397 words, 12 sources)
+07:29:18 [asyncio] DEBUG: Using selector: EpollSelector
+07:29:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:30:14 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+07:30:14 [pipeline.stages.s4_review] INFO: Feedback: Стаття дуже якісна, практична і добре структурована. Потрібні конкретні виправлення перед публікацією:
+
+1. **ФАКТИЧНА ПОМИЛКА — ASF:** Написано «Autoridade de Supervisão de Financeira» — правильна наз
+07:30:14 [asyncio] DEBUG: Using selector: EpollSelector
+07:30:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:31:14 [pipeline.stages.s5_revise] INFO: Revised article: 444 words
+07:31:14 [pipeline] INFO: === Review cycle 1/3 complete ===
+07:31:14 [asyncio] DEBUG: Using selector: EpollSelector
+07:31:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:32:05 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+07:32:05 [pipeline.stages.s4_review] INFO: Feedback: Сильна, своєчасна утилітарна стаття. Структура чітка, джерела підтверджують кожну тезу, португальські терміни пояснені українською при першому вживанні. Кілька зауважень для фінального полірування:
+
+1
+07:32:05 [pipeline] INFO: Article approved after 1 revision(s)
+07:32:05 [asyncio] DEBUG: Using selector: EpollSelector
+07:32:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:32:25 [pipeline.stages.s6_generate_tg] INFO: TG caption: 802 chars, vocab: 5 words
+07:32:25 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+07:32:25 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/storm-april-11-damage-insurance-municipality-checklist.md
