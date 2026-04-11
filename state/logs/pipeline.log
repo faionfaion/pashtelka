@@ -4625,3 +4625,32 @@ Error output: Check stderr output for details
 2026-04-11 06:31:12 [pipeline.stages.s6_generate_tg] INFO: TG caption: 977 chars, vocab: 5 words
 2026-04-11 06:31:12 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 2026-04-11 06:31:12 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sanchez-european-army-proposal-ukraine-impact.md
+2026-04-11 06:31:12 [pipeline] INFO: Article ready: sanchez-european-army-proposal-ukraine-impact (Санчес закликав створити єдину армію ЄС — що це оз)
+2026-04-11 06:31:12 [pipeline] INFO: === Article 3/10 ===
+2026-04-11 06:31:12 [pipeline] INFO: --- Article: [material] Орендар убив орендодавця через підвищення ренти — шокуюча сп ---
+2026-04-11 06:31:12 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 06:31:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 06:35:55 [pipeline.stages.s2_research] INFO: Research complete: 17505 chars
+2026-04-11 06:35:55 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 06:35:55 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 06:38:11 [pipeline.stages.s3_generate] INFO: Generated: 'Орендар убив орендодавця через підвищення ренти в Маріня-Гранді: шокуюча трагедія та повний гід з прав орендаря в Португалії' (slug=tenant-kills-landlord-marinha-grande-rent-rights-guide, 1090 words, 16 sources)
+2026-04-11 06:38:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 06:38:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 06:39:44 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-11 06:39:44 [pipeline.stages.s4_review] INFO: Feedback: Стаття ґрунтовна, юридична частина відмінна, джерела — на місці. Але є кілька проблем, які потрібно виправити перед публікацією:
+
+1. **Заголовок — сенсаційний.** «Шокуюча трагедія» — це клікбейт, непр
+2026-04-11 06:39:44 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 06:39:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 06:41:22 [pipeline.stages.s5_revise] INFO: Revised article: 1273 words
+2026-04-11 06:41:22 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-11 06:41:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 06:41:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 06:42:59 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-11 06:42:59 [pipeline.stages.s4_review] INFO: Feedback: Сильний, добре вивірений матеріал. Джерела — солідні (CM, CNN Portugal, JN, Jornal de Leiria), юридичні посилання коректні, гедж щодо неостаточних обставин справи ('за версією ЗМІ', 'нібито', 'обстави
+2026-04-11 06:42:59 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-11 06:42:59 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 06:42:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 06:43:10 [pipeline.stages.s6_generate_tg] INFO: TG caption: 901 chars, vocab: 5 words
+2026-04-11 06:43:10 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+2026-04-11 06:43:10 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tenant-kills-landlord-marinha-grande-rent-rights-guide.md
