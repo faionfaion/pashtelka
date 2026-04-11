@@ -4721,3 +4721,32 @@ Error output: Check stderr output for details
 2026-04-11 07:02:51 [pipeline.stages.s6_generate_tg] INFO: TG caption: 977 chars, vocab: 5 words
 2026-04-11 07:02:51 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 2026-04-11 07:02:51 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trump-orban-hungary-election-eu-ukraine-risks.md
+2026-04-11 07:02:52 [pipeline] INFO: Article ready: trump-orban-hungary-election-eu-ukraine-risks (Трамп обіцяє гроші Угорщині за Орбана — чим це заг)
+2026-04-11 07:02:52 [pipeline] INFO: === Article 6/10 ===
+2026-04-11 07:02:52 [pipeline] INFO: --- Article: [material] Médico de família: як отримати сімейного лікаря в Португалії ---
+2026-04-11 07:02:52 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:02:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:06:25 [pipeline.stages.s2_research] INFO: Research complete: 10865 chars
+2026-04-11 07:06:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:06:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:08:35 [pipeline.stages.s3_generate] INFO: Generated: 'Médico de família: як отримати сімейного лікаря в Португалії у 2026 році — покроковий гід' (slug=medico-de-familia-family-doctor-guide-immigrants-2026, 1179 words, 12 sources)
+2026-04-11 07:08:35 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:08:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:09:52 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-11 07:09:52 [pipeline.stages.s4_review] INFO: Feedback: Сильний практичний гід із добрим джерельним апаратом та логічною структурою. Потрібні незначні правки перед публікацією:
+
+1. **МОВА (помилка):** «іммігрантам» → «імігрантам» (одне «м» — українська нор
+2026-04-11 07:09:52 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:09:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:11:16 [pipeline.stages.s5_revise] INFO: Revised article: 1233 words
+2026-04-11 07:11:16 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-11 07:11:16 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:11:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:12:36 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-11 07:12:36 [pipeline.stages.s4_review] INFO: Feedback: Чудовий практичний матеріал. Структура логічна, джерела якісні (урядові портали, ERS, ACSS, авторитетні ЗМІ), португальські терміни послідовно розшифровані при першому вживанні. Порівняння з українськ
+2026-04-11 07:12:36 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-11 07:12:36 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:12:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:12:49 [pipeline.stages.s6_generate_tg] INFO: TG caption: 919 chars, vocab: 5 words
+2026-04-11 07:12:49 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+2026-04-11 07:12:49 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/medico-de-familia-family-doctor-guide-immigrants-2026.md
