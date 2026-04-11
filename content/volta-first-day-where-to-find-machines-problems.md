@@ -31,7 +31,7 @@ source_names:
   - "DECO Proteste"
   - "Quercus"
   - "Governo de Portugal"
-image: ""
+image: "/images/volta-first-day-where-to-find-machines-problems.jpg"
 tg_post: |
   <b>Система Volta стартувала — здавайте пляшки й бляшанки та повертайте свої €0,10.</b>
   

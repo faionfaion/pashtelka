@@ -27,7 +27,7 @@ source_names:
   - "LusoMeteo"
   - "Proteção Civil / Gov.pt"
   - "Renascença"
-image: ""
+image: "/images/weekend-storms-wind-90-kmh-april-11-12.jpg"
 tg_post: |
   <b>Завтра Португалію накриє полярне повітря — пориви вітру до 100 км/год і падіння температури на 12°C за добу.</b>
   

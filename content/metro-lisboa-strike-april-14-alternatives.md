@@ -38,7 +38,7 @@ source_names:
   - "CP"
   - "Fertagus"
   - "Gira"
-image: ""
+image: "/images/metro-lisboa-strike-april-14-alternatives.jpg"
 tg_post: |
   <b>Лісабонське метро знову стає — вівторок 14 квітня без жодної станції.</b>
   

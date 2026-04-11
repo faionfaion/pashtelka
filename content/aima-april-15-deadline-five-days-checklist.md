@@ -36,7 +36,7 @@ source_names:
   - "Visas.pt"
   - "Atlantic Bridge"
   - "DN Brasil — Guia do Imigrante"
-image: ""
+image: "/images/aima-april-15-deadline-five-days-checklist.jpg"
 tg_post: |
   <b>До дедлайну AIMA залишилось 5 днів — і ніхто його не переніс.</b>
   

@@ -27,7 +27,7 @@ source_names:
   - "Tek Sapo"
   - "Jornal de Notícias"
   - "FCCN / FCT"
-image: ""
+image: "/images/portuguese-universities-ai-adoption-no-rules.jpg"
 tg_post: |
   <b>Португальські університети масово впроваджують ШІ — але 83% працюють без жодних правил</b>
   

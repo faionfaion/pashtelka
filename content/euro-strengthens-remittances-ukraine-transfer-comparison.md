@@ -37,7 +37,7 @@ source_names:
   - "Trading Economics"
   - "CNN Brasil"
   - "Público"
-image: ""
+image: "/images/euro-strengthens-remittances-ukraine-transfer-comparison.jpg"
 tg_post: |
   <b>Євро зміцнюється — рідні в Україні отримають за переказ на 485 гривень більше, ніж на початку року.</b>
   

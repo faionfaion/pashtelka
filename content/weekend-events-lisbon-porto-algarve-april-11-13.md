@@ -52,7 +52,7 @@ source_names:
   - "GAMA RAMA"
   - "Timeout Lisboa"
   - "Beamian (Expocosmética)"
-image: ""
+image: "/images/weekend-events-lisbon-porto-algarve-april-11-13.jpg"
 tg_post: |
   <b>Вихідні 11-12 квітня: шторм у суботу, безкоштовні музеї в неділю — плануйте розумно.</b>
   

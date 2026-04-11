@@ -41,7 +41,7 @@ source_names:
   - "ECO"
   - "Jornal Económico"
   - "Idealista"
-image: ""
+image: "/images/labor-reform-crisis-ps-chega-seguro-veto.jpg"
 tg_post: |
   <b>Трудова реформа Trabalho XXI може провалитися — уряд втрачає підтримку з усіх боків.</b>
   

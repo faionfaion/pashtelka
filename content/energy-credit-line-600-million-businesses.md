@@ -33,7 +33,7 @@ source_names:
   - "Renascença"
   - "ECO"
   - "Observador"
-image: ""
+image: "/images/energy-credit-line-600-million-businesses.jpg"
 tg_post: |
   <b>Португалія відкриває кредитну лінію на €600 млн для бізнесу — і українські підприємці теж можуть скористатися.</b>
   

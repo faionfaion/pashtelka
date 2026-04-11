@@ -38,7 +38,7 @@ source_names:
   - "Renascença (economia)"
   - "Executive Digest (Koshta Silva)"
   - "Jornal Económico"
-image: ""
+image: "/images/zelenskyy-us-ignored-russia-iran-evidence-fuel-prices.jpg"
 tg_post: |
   <b>Зеленський заявив: США проігнорували докази шпигунства Росії на користь Ірану — бо «довіряють Путіну».</b>
   

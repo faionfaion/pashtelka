@@ -36,7 +36,7 @@ source_names:
   - "ComparaJá"
   - "DECO Proteste"
   - "Ministério Público"
-image: ""
+image: "/images/irs-2026-tax-guide-immigrants-portugal.jpg"
 tg_post: |
   <b>Податковий сезон у Португалії вже стартував — ось що потрібно знати іммігрантам.</b>
   
