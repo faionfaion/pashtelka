@@ -4789,3 +4789,43 @@ Error output: Check stderr output for details
 2026-04-11 07:32:25 [pipeline.stages.s6_generate_tg] INFO: TG caption: 802 chars, vocab: 5 words
 2026-04-11 07:32:25 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 2026-04-11 07:32:25 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/storm-april-11-damage-insurance-municipality-checklist.md
+2026-04-11 07:32:26 [pipeline] INFO: Article ready: storm-april-11-damage-insurance-municipality-checklist (Шторм 11 квітня: пошкодження є — що робити прямо з)
+2026-04-11 07:32:26 [pipeline] INFO: === Article 8/10 ===
+2026-04-11 07:32:26 [pipeline] INFO: --- Article: [news] Субота великого футболу: Sporting бореться за трикампеонат,  ---
+2026-04-11 07:32:26 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:32:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:36:16 [pipeline.stages.s2_research] INFO: Research complete: 9528 chars
+2026-04-11 07:36:16 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:36:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:37:32 [pipeline.stages.s3_generate] INFO: Generated: 'Субота великого футболу: Sporting бореться за трикампеонат, а борги Benfica перевищили €200 млн' (slug=sporting-tricampeonato-benfica-debt-200-million-liga-jornada-29, 536 words, 8 sources)
+2026-04-11 07:37:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:37:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:38:42 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-11 07:38:42 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, релевантна аудиторії й загалом якісна. Потрібні конкретні доопрацювання:
+
+**Джерела:**
+1. Цифри прибутку Benfica (€29 млн, падіння на 16%) не мають гіперпосилання в тексті,
+2026-04-11 07:38:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:38:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:39:24 [pipeline.stages.s5_revise] INFO: Revised article: 563 words
+2026-04-11 07:39:24 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-11 07:39:24 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:39:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:40:27 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-11 07:40:27 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — добре структурована, з якісними джерелами, практичною інформацією та влучним розділом «Чому це важливо для нас». Однак є кілька проблем, які потребують виправлення перед публік
+2026-04-11 07:40:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:40:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:41:28 [pipeline.stages.s5_revise] INFO: Revised article: 585 words
+2026-04-11 07:41:28 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-11 07:41:28 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:41:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:42:54 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-11 07:42:54 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з відмінним контекстом для іммігрантів та надійними джерелами. Кілька правок перед публікацією:
+
+1. **Транслітерація «Рубі» → «Руї»**: «Rui» по-португальськи — [ʁuj], стандартна українсь
+2026-04-11 07:42:54 [pipeline] INFO: Article approved after 2 revision(s)
+2026-04-11 07:42:54 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 07:42:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 07:43:06 [pipeline.stages.s6_generate_tg] INFO: TG caption: 958 chars, vocab: 5 words
+2026-04-11 07:43:06 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+2026-04-11 07:43:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sporting-tricampeonato-benfica-debt-200-million-liga-jornada-29.md
