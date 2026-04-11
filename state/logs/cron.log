@@ -1864,3 +1864,59 @@ Already up to date.
 08:00:19 [pipeline.stages.s6_generate_tg] INFO: TG caption: 927 chars, vocab: 5 words
 08:00:19 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 08:00:19 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/orthodox-easter-2026-portugal-churches-communities-guide.md
+08:00:19 [pipeline] INFO: Article ready: orthodox-easter-2026-portugal-churches-communities-guide (Православний Великдень 12 квітня: де святкувати в )
+08:00:19 [pipeline] INFO: === Article 10/10 ===
+08:00:19 [pipeline] INFO: --- Article: [news] Каннський кінофестиваль 2026 оголосив конкурсну програму: Ал ---
+08:00:19 [asyncio] DEBUG: Using selector: EpollSelector
+08:00:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-04-11 08:05:01 Pipeline publish started
+08:05:02 [pipeline] INFO: === TG Publish mode ===
+08:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+08:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 4113
+08:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+08:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+08:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: yellow-warnings-south-30c-storms -> msg 131
+08:05:02 [pipeline] INFO: Published to TG: yellow-warnings-south-30c-storms (msg 131)
+2026-04-11 08:05:02 Pipeline publish exit: 0
+---
+08:05:06 [pipeline.stages.s2_research] INFO: Research complete: 9749 chars
+08:05:06 [asyncio] DEBUG: Using selector: EpollSelector
+08:05:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:06:26 [pipeline.stages.s3_generate] INFO: Generated: 'Канни 2026: Альмодовар, Фархаді у вигнанні та де подивитися фестивальне кіно в Португалії' (slug=cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema, 502 words, 9 sources)
+08:06:26 [asyncio] DEBUG: Using selector: EpollSelector
+08:06:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:07:42 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+08:07:42 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, має сильну привʼязку до Португалії та влучний наратив про еміграцію. Потрібні виправлення:
+
+1. **Помилка в посиланні (Porto):** Гіперпосилання на Porto (Batalha Centro de C
+08:07:42 [asyncio] DEBUG: Using selector: EpollSelector
+08:07:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:08:54 [pipeline.stages.s5_revise] INFO: Revised article: 575 words
+08:08:54 [pipeline] INFO: === Review cycle 1/3 complete ===
+08:08:54 [asyncio] DEBUG: Using selector: EpollSelector
+08:08:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:09:46 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+08:09:46 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом якісна, добре структурована й релевантна для аудиторії. Але є кілька проблем, які потребують виправлення перед публікацією:
+
+**КРИТИЧНО — русизм у тексті:**
+- «Еще одна важлива постать»
+08:09:46 [asyncio] DEBUG: Using selector: EpollSelector
+08:09:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:10:22 [pipeline.stages.s5_revise] INFO: Revised article: 619 words
+08:10:22 [pipeline] INFO: === Review cycle 2/3 complete ===
+08:10:22 [asyncio] DEBUG: Using selector: EpollSelector
+08:10:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:11:31 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+08:11:31 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з актуальною темою, вдалим кутом для діаспори та практичною користю. Кілька дрібниць на доопрацювання:
+
+1. **Португальські терміни — пояснення для новоприбулих:**
+   - «UCI El Corte Ingl
+08:11:31 [pipeline] INFO: Article approved after 2 revision(s)
+08:11:31 [asyncio] DEBUG: Using selector: EpollSelector
+08:11:31 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+08:11:48 [pipeline.stages.s6_generate_tg] INFO: TG caption: 943 chars, vocab: 5 words
+08:11:48 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+08:11:48 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema.md
