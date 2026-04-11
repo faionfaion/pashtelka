@@ -1653,3 +1653,35 @@ Already up to date.
 06:43:10 [pipeline.stages.s6_generate_tg] INFO: TG caption: 901 chars, vocab: 5 words
 06:43:10 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 06:43:10 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tenant-kills-landlord-marinha-grande-rent-rights-guide.md
+06:43:11 [pipeline] INFO: Article ready: tenant-kills-landlord-marinha-grande-rent-rights-guide (Орендар убив орендодавця через підвищення ренти в )
+06:43:11 [pipeline] INFO: === Article 4/10 ===
+06:43:11 [pipeline] INFO: --- Article: [news] Місія Artemis II: астронавти повернулися на Землю після обле ---
+06:43:11 [asyncio] DEBUG: Using selector: EpollSelector
+06:43:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:45:36 [pipeline.stages.s2_research] INFO: Research complete: 9156 chars
+06:45:36 [asyncio] DEBUG: Using selector: EpollSelector
+06:45:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:46:34 [pipeline.stages.s3_generate] INFO: Generated: 'Artemis II: астронавти вперше за 53 роки облетіли Місяць — і португальська корка їх захищала' (slug=artemis-ii-moon-flyby-portugal-cork-esa, 378 words, 8 sources)
+06:46:34 [asyncio] DEBUG: Using selector: EpollSelector
+06:46:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:47:38 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+06:47:38 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — добре структурована, джерела валідні, португальський кут чудовий. Але є конкретні зауваження, які треба виправити:
+
+**Мова:**
+1. «Корка» (кірка, скоринка) — неправильне слово. 
+06:47:38 [asyncio] DEBUG: Using selector: EpollSelector
+06:47:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:49:15 [pipeline.stages.s5_revise] INFO: Revised article: 444 words
+06:49:15 [pipeline] INFO: === Review cycle 1/3 complete ===
+06:49:15 [asyncio] DEBUG: Using selector: EpollSelector
+06:49:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:50:18 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+06:50:18 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з міцною структурою, чистою мовою та добре розкритим португальським кутом. Кілька зауважень для доопрацювання:
+
+1. **Термінологічна неточність:** «перший темношкірий астронавт на місячні
+06:50:18 [pipeline] INFO: Article approved after 1 revision(s)
+06:50:18 [asyncio] DEBUG: Using selector: EpollSelector
+06:50:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:50:32 [pipeline.stages.s6_generate_tg] INFO: TG caption: 878 chars, vocab: 5 words
+06:50:32 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+06:50:32 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/artemis-ii-moon-flyby-portugal-cork-esa.md
