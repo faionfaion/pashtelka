@@ -1,0 +1,332 @@
+{
+  "timestamp": "2026-04-11_081224",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "ukraine-strikes-lukoil-caspian-oil-platforms, sanchez-european-army-proposal-ukraine-impact, tenant-kills-landlord-marinha-grande-rent-rights-guide, artemis-ii-moon-flyby-portugal-cork-esa, trump-orban-hungary-election-eu-ukraine-risks",
+  "author": "Pastelka News",
+  "duration_s": 7942.1,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 552.8,
+      "error": null
+    },
+    {
+      "name": "research:Україна вдарила по нафтових пл",
+      "status": "ok",
+      "duration_s": 218.8,
+      "error": null
+    },
+    {
+      "name": "generate:Україна вдарила по нафтових пл",
+      "status": "ok",
+      "duration_s": 73.8,
+      "error": null
+    },
+    {
+      "name": "review:Україна вдарила по нафтових пл",
+      "status": "ok",
+      "duration_s": 439.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Україна вдарила по нафтових пл",
+      "status": "ok",
+      "duration_s": 13.4,
+      "error": null
+    },
+    {
+      "name": "save:Україна вдарила по нафтових пл",
+      "status": "ok",
+      "duration_s": 0.5,
+      "error": null
+    },
+    {
+      "name": "research:Педро Санчес закликав створити",
+      "status": "ok",
+      "duration_s": 234.2,
+      "error": null
+    },
+    {
+      "name": "generate:Педро Санчес закликав створити",
+      "status": "ok",
+      "duration_s": 71.2,
+      "error": null
+    },
+    {
+      "name": "review:Педро Санчес закликав створити",
+      "status": "ok",
+      "duration_s": 250.3,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Педро Санчес закликав створити",
+      "status": "ok",
+      "duration_s": 14.5,
+      "error": null
+    },
+    {
+      "name": "save:Педро Санчес закликав створити",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Орендар убив орендодавця через",
+      "status": "ok",
+      "duration_s": 282.2,
+      "error": null
+    },
+    {
+      "name": "generate:Орендар убив орендодавця через",
+      "status": "ok",
+      "duration_s": 136.3,
+      "error": null
+    },
+    {
+      "name": "review:Орендар убив орендодавця через",
+      "status": "ok",
+      "duration_s": 287.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Орендар убив орендодавця через",
+      "status": "ok",
+      "duration_s": 11.7,
+      "error": null
+    },
+    {
+      "name": "save:Орендар убив орендодавця через",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Місія Artemis II: астронавти п",
+      "status": "ok",
+      "duration_s": 145.6,
+      "error": null
+    },
+    {
+      "name": "generate:Місія Artemis II: астронавти п",
+      "status": "ok",
+      "duration_s": 57.7,
+      "error": null
+    },
+    {
+      "name": "review:Місія Artemis II: астронавти п",
+      "status": "ok",
+      "duration_s": 224.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Місія Artemis II: астронавти п",
+      "status": "ok",
+      "duration_s": 13.5,
+      "error": null
+    },
+    {
+      "name": "save:Місія Artemis II: астронавти п",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Трамп обіцяє Угорщині економіч",
+      "status": "ok",
+      "duration_s": 511.2,
+      "error": null
+    },
+    {
+      "name": "generate:Трамп обіцяє Угорщині економіч",
+      "status": "ok",
+      "duration_s": 63.0,
+      "error": null
+    },
+    {
+      "name": "review:Трамп обіцяє Угорщині економіч",
+      "status": "ok",
+      "duration_s": 153.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Трамп обіцяє Угорщині економіч",
+      "status": "ok",
+      "duration_s": 11.2,
+      "error": null
+    },
+    {
+      "name": "save:Трамп обіцяє Угорщині економіч",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Médico de família: як отримати",
+      "status": "ok",
+      "duration_s": 213.4,
+      "error": null
+    },
+    {
+      "name": "generate:Médico de família: як отримати",
+      "status": "ok",
+      "duration_s": 129.9,
+      "error": null
+    },
+    {
+      "name": "review:Médico de família: як отримати",
+      "status": "ok",
+      "duration_s": 241.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Médico de família: як отримати",
+      "status": "ok",
+      "duration_s": 12.3,
+      "error": null
+    },
+    {
+      "name": "save:Médico de família: як отримати",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Шторм 11 квітня: якщо є пошкод",
+      "status": "ok",
+      "duration_s": 919.0,
+      "error": null
+    },
+    {
+      "name": "generate:Шторм 11 квітня: якщо є пошкод",
+      "status": "ok",
+      "duration_s": 69.6,
+      "error": null
+    },
+    {
+      "name": "review:Шторм 11 квітня: якщо є пошкод",
+      "status": "ok",
+      "duration_s": 167.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Шторм 11 квітня: якщо є пошкод",
+      "status": "ok",
+      "duration_s": 20.3,
+      "error": null
+    },
+    {
+      "name": "save:Шторм 11 квітня: якщо є пошкод",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Субота великого футболу: Sport",
+      "status": "ok",
+      "duration_s": 230.0,
+      "error": null
+    },
+    {
+      "name": "generate:Субота великого футболу: Sport",
+      "status": "ok",
+      "duration_s": 75.9,
+      "error": null
+    },
+    {
+      "name": "review:Субота великого футболу: Sport",
+      "status": "ok",
+      "duration_s": 322.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Субота великого футболу: Sport",
+      "status": "ok",
+      "duration_s": 11.5,
+      "error": null
+    },
+    {
+      "name": "save:Субота великого футболу: Sport",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Православний Великдень 12 квіт",
+      "status": "ok",
+      "duration_s": 551.1,
+      "error": null
+    },
+    {
+      "name": "generate:Православний Великдень 12 квіт",
+      "status": "ok",
+      "duration_s": 146.6,
+      "error": null
+    },
+    {
+      "name": "review:Православний Великдень 12 квіт",
+      "status": "ok",
+      "duration_s": 323.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Православний Великдень 12 квіт",
+      "status": "ok",
+      "duration_s": 11.8,
+      "error": null
+    },
+    {
+      "name": "save:Православний Великдень 12 квіт",
+      "status": "ok",
+      "duration_s": 0.5,
+      "error": null
+    },
+    {
+      "name": "research:Каннський кінофестиваль 2026 о",
+      "status": "ok",
+      "duration_s": 286.8,
+      "error": null
+    },
+    {
+      "name": "generate:Каннський кінофестиваль 2026 о",
+      "status": "ok",
+      "duration_s": 79.7,
+      "error": null
+    },
+    {
+      "name": "review:Каннський кінофестиваль 2026 о",
+      "status": "ok",
+      "duration_s": 305.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Каннський кінофестиваль 2026 о",
+      "status": "ok",
+      "duration_s": 17.1,
+      "error": null
+    },
+    {
+      "name": "save:Каннський кінофестиваль 2026 о",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 35.7,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

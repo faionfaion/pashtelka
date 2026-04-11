@@ -1920,3 +1920,13 @@ Already up to date.
 08:11:48 [pipeline.stages.s6_generate_tg] INFO: TG caption: 943 chars, vocab: 5 words
 08:11:48 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 08:11:48 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema.md
+08:11:48 [pipeline] INFO: Article ready: cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema (Канни 2026: Альмодовар, Фархаді у вигнанні та де п)
+08:11:48 [pipeline] INFO: Generated 10/10 articles
+08:11:50 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+08:11:50 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+08:12:24 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+08:12:24 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema/ (200 OK, title found)
+08:12:24 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-11_081224.json
+08:12:24 [pipeline] INFO: Batch complete: 10 articles
+2026-04-11 08:12:24 Pipeline generate exit: 0
+---

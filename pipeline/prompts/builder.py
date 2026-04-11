@@ -108,7 +108,7 @@ def build_generate_prompt(
     )
 
 
-def build_review_prompt(ctx: PipelineContext, author_name: str) -> tuple[str, str]:
+def build_review_prompt(ctx: PipelineContext, author_name: str, recent_titles: str = "") -> tuple[str, str]:
     """Build s4 review prompt."""
     sources_zip = list(zip(ctx.source_names, ctx.source_urls))
     return render(
@@ -116,6 +116,7 @@ def build_review_prompt(ctx: PipelineContext, author_name: str) -> tuple[str, st
         ctx=ctx,
         author_name=author_name,
         sources_zip=sources_zip,
+        recent_titles=recent_titles,
     )
 
 

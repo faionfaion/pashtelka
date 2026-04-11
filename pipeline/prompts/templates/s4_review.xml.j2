@@ -32,7 +32,18 @@ Author: {{ author_name }}
 9. LEGAL: No defamation, no unverified claims about specific people?
 10. PORTUGUESE TERMS: Explained in Ukrainian on first use?
 11. CONTEXT FOR IMMIGRANTS: Are all people introduced with name + role? Are institutions/acronyms explained? Does the reader understand WHY this matters without prior local knowledge? Would a Ukrainian who arrived last month understand this article?
+12. DEDUPLICATION (CRITICAL — auto-reject if violated):
+    - Does this article cover a topic/event already published in the last 3 days? Check recent articles below.
+    - Weather: is there already a weather article today? If yes → REJECT (score=2), suggest merging.
+    - Transport: is there already coverage of this exact disruption? If the only "new" info is "it's happening now" → REJECT (score=2).
+    - If >50% of facts in this article already appeared in a recent article → REJECT (score=2).
 </checklist>
+
+{% if recent_titles %}
+<recent_articles_for_dedup_check>
+{{ recent_titles }}
+</recent_articles_for_dedup_check>
+{% endif %}
 
 <scoring>
 - 8-10: Approved (minor issues only)
