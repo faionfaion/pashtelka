@@ -1,6 +1,9 @@
 """Claude Agent SDK wrapper: structured_query() + agent_query().
 
-Uses claude_agent_sdk with native structured output (output_format + ToolUseBlock).
+structured_query() — no-tool LLM call for JSON output. Disables all built-in tools
+to prevent the bundled CLI from using tools instead of returning JSON.
+agent_query() — LLM call with tool access (WebSearch, WebFetch, Read, etc.).
+
 Synchronous interface — wraps async SDK with asyncio.run().
 """
 
@@ -23,6 +26,14 @@ logger = logging.getLogger(__name__)
 
 _PROJECT_ROOT = str(Path(__file__).resolve().parent.parent)
 
+# All built-in tools to disable for structured queries.
+# Without this, Opus tries to use tools (Read, Grep...) instead of returning JSON.
+_ALL_BUILTIN_TOOLS = [
+    "Read", "Glob", "Grep", "Bash", "Write", "Edit",
+    "WebSearch", "WebFetch", "Agent", "TodoWrite", "TodoRead",
+    "NotebookEdit", "LSP",
+]
+
 
 def _backoff_delay(attempt: int) -> float:
     delay = min(RETRY_BASE_DELAY * (2 ** attempt), RETRY_MAX_DELAY)
@@ -44,14 +55,15 @@ async def _async_structured(
     system_prompt: str,
     model: str = "opus",
 ) -> str:
-    """SDK call for structured output. Returns raw text for JSON parsing."""
+    """SDK call for structured output. All tools disabled."""
     options = ClaudeAgentOptions(
         model=model,
         system_prompt=system_prompt,
         permission_mode="bypassPermissions",
         allowed_tools=[],
+        disallowed_tools=_ALL_BUILTIN_TOOLS,
         max_turns=1,
-        cwd=_PROJECT_ROOT,
+        cwd="/tmp",
     )
 
     parts: list[str] = []

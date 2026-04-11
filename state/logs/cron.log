@@ -1468,3 +1468,128 @@ Already up to date.
 09:09:41 [pipeline.stages.s6_generate_tg] INFO: TG caption: 851 chars, vocab: 5 words
 09:09:41 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 09:09:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/weekend-events-lisbon-porto-algarve-april-11-13.md
+09:09:41 [pipeline] INFO: Article ready: weekend-events-lisbon-porto-algarve-april-11-13 (Вихідні в Португалії 11-12 квітня: куди піти в Ліс)
+09:09:41 [pipeline] INFO: Generated 7/11 articles
+09:09:42 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+09:09:42 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+09:10:15 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+09:10:15 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/weekend-events-lisbon-porto-algarve-april-11-13/ (200 OK, title found)
+09:10:15 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-10_091015.json
+09:10:15 [pipeline] INFO: Batch complete: 7 articles
+2026-04-10 09:10:16 Pipeline generate exit: 0
+---
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-04-10 11:05:01 Pipeline publish started
+11:05:02 [pipeline] INFO: === TG Publish mode ===
+11:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 4428
+11:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+11:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: wildfire-season-prep-cipo -> msg 128
+11:05:02 [pipeline] INFO: Published to TG: wildfire-season-prep-cipo (msg 128)
+2026-04-10 11:05:03 Pipeline publish exit: 0
+---
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-04-10 14:05:02 Pipeline publish started
+14:05:03 [pipeline] INFO: === TG Publish mode ===
+14:05:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+14:05:03 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 3838
+14:05:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+14:05:03 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+14:05:03 [pipeline.stages.s10_pick_and_publish] INFO: TG published: weather-swings-saharan-dust-weekend -> msg 129
+14:05:03 [pipeline] INFO: Published to TG: weather-swings-saharan-dust-weekend (msg 129)
+2026-04-10 14:05:03 Pipeline publish exit: 0
+---
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-04-10 17:05:02 Pipeline publish started
+17:05:02 [pipeline] INFO: === TG Publish mode ===
+17:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+17:05:03 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 4046
+17:05:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+17:05:03 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+17:05:03 [pipeline.stages.s10_pick_and_publish] INFO: TG published: volta-deposit-system-bottles-cans-launch -> msg 130
+17:05:03 [pipeline] INFO: Published to TG: volta-deposit-system-bottles-cans-launch (msg 130)
+2026-04-10 17:05:03 Pipeline publish exit: 0
+---
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-04-10 19:05:01 Pipeline digest started
+19:05:02 [pipeline] INFO: === Digest mode ===
+19:05:02 [asyncio] DEBUG: Using selector: EpollSelector
+19:05:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+19:05:20 [pipeline.stages.s11_digest] WARNING: No image found for digest
+19:05:20 [pipeline] INFO: Digest skipped (not enough articles)
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-04-11 06:00:01 Pipeline generate started
+06:00:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+06:00:02 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+06:00:02 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+06:00:02 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+06:00:02 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+06:00:02 [pipeline.feeds] INFO: Feed publico: 10 items
+06:00:03 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+06:00:03 [asyncio] DEBUG: Using selector: EpollSelector
+06:00:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:04:24 [asyncio] DEBUG: Using selector: EpollSelector
+06:04:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:09:15 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 10 -> 10 articles
+06:09:15 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 10 articles for 2026-04-11
+06:09:15 [pipeline] INFO: Editorial plan: 10 topics
+06:09:15 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+06:09:15 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+06:09:15 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+06:09:15 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+06:09:15 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+06:09:15 [pipeline.feeds] INFO: Feed publico: 10 items
+06:09:16 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+06:09:16 [pipeline.stages.s1_collect] INFO: Context: 65 RSS items, 41 existing articles
+06:09:16 [pipeline] INFO: === Article 1/10 ===
+06:09:16 [pipeline] INFO: --- Article: [news] Україна вдарила по нафтових платформах Росії в Каспійському  ---
+06:09:16 [asyncio] DEBUG: Using selector: EpollSelector
+06:09:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:12:54 [pipeline.stages.s2_research] INFO: Research complete: 9275 chars
+06:12:54 [asyncio] DEBUG: Using selector: EpollSelector
+06:12:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:14:08 [pipeline.stages.s3_generate] INFO: Generated: 'Україна вдарила по нафтових платформах Lukoil у Каспійському морі — за 1000 км від фронту' (slug=ukraine-strikes-lukoil-caspian-oil-platforms, 411 words, 7 sources)
+06:14:08 [asyncio] DEBUG: Using selector: EpollSelector
+06:14:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:15:05 [pipeline.stages.s4_review] INFO: Review: score=6, approved=False
+06:15:05 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, збалансована та з чітким зв'язком до Португалії, але потребує виправлень перед публікацією:
+
+1. **ПОМИЛКА АТРИБУЦІЇ ДЖЕРЕЛА (критично):** Текст каже «Kyiv Independent зазна
+06:15:05 [asyncio] DEBUG: Using selector: EpollSelector
+06:15:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:16:42 [pipeline.stages.s5_revise] INFO: Revised article: 529 words
+06:16:42 [pipeline] INFO: === Review cycle 1/3 complete ===
+06:16:42 [asyncio] DEBUG: Using selector: EpollSelector
+06:16:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:18:09 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+06:18:09 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, релевантністю та тоном, але потребує кількох правок перед публікацією:
+
+**Джерела (критично):**
+1. Público цитується як джерело відмови Москви продовжити перемир'я, але UR
+06:18:09 [asyncio] DEBUG: Using selector: EpollSelector
+06:18:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:19:53 [pipeline.stages.s5_revise] INFO: Revised article: 545 words
+06:19:53 [pipeline] INFO: === Review cycle 2/3 complete ===
+06:19:53 [asyncio] DEBUG: Using selector: EpollSelector
+06:19:53 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:21:28 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+06:21:28 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з добрим балансом між геополітичним контекстом і практичною релевантністю для читача в Португалії. Кілька зауважень для фінального шліфування:
+
+1. **Причинно-наслідковий зв'язок щодо 34%
+06:21:28 [pipeline] INFO: Article approved after 2 revision(s)
+06:21:28 [asyncio] DEBUG: Using selector: EpollSelector
+06:21:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:21:41 [pipeline.stages.s6_generate_tg] INFO: TG caption: 939 chars, vocab: 5 words
+06:21:41 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+06:21:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ukraine-strikes-lukoil-caspian-oil-platforms.md

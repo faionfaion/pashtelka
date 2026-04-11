@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "Україна вдарила по нафтових платформах Росії в Каспійському морі",
+      "type": "news",
+      "angle": "Київ заявив про атаку на російські нафтові платформи в Каспії — стратегічний удар по енергетичній інфраструктурі РФ далеко від лінії фронту. Які платформи уражено, обсяг видобутку, наслідки для фінансування війни. Каспій як нова зона бойових дій. Реакція Росії та міжнародної спільноти. Контекст: ціни на нафту і так під тиском через Іран.",
+      "sources_hint": "RTP World ('Kiev reivindica ataque a plataformas petrolíferas russas no mar Cáspio'), Reuters, BBC Ukraine, Ukrinform, DeepState. Search: 'Ukraine Caspian oil platforms attack April 2026', 'Russian Caspian oil production'.",
+      "priority": 1
+    },
+    {
+      "topic": "Педро Санчес закликав створити єдину європейську армію — що це означає для України",
+      "type": "news",
+      "angle": "Прем'єр Іспанії виступив із заявою про необхідність спільних збройних сил ЄС. Аналіз: чи реалістична ідея, яка позиція Португалії (Монтенегру нещодавно підписав декларацію з ЄС та Канадою), як це вплине на підтримку України. Паралель із розгортанням португальських F-16 та фрегату у Балтиці (стаття від 9 квітня — є контекст). Різниця між армією ЄС і NATO. Реакції Франції, Німеччини.",
+      "sources_hint": "RTP ('Pedro Sánchez defende a criação de um exército europeu'), El País, Euronews, Público. Search: 'Sánchez European army proposal April 2026', 'EU defence integration Ukraine'. Check Portuguese MoD reaction.",
+      "priority": 1
+    },
+    {
+      "topic": "Орендар убив орендодавця через підвищення ренти — шокуюча справа та повний гід з прав орендаря в Португалії",
+      "type": "material",
+      "angle": "Шокуюча кримінальна хроніка як крайній прояв житлової кризи. ПЕРША ЧАСТИНА — новина: деталі справи (де, обставини, затримання), чому люди доходять до крайнощів. НЕ виправдання насильства. ДРУГА ЧАСТИНА — системний матеріал: легальні інструменти захисту орендарів. Закон NRAU: максимальне річне підвищення оренди (2,24% у 2026, коефіцієнт 1,0224). Як оскаржити незаконне підвищення. Строки повідомлення про виселення (contrato por prazo certo vs indeterminado). Обов'язки senhorio (obras de conservação, habitabilidade). Куди звертатися: DECO, Julgado de Paz, Balcão Nacional do Arrendamento. Спеціальний захист для сімей з дітьми та літніх людей. Контрасти з українським житловим законодавством. Один об'ємний матеріал замість двох окремих статей.",
+      "sources_hint": "CM Jornal ('Homem mata senhorio que lhe ia aumentar a renda'), Público, SIC Notícias, JN. NRAU (Lei 6/2006 updated), Portal da Habitação (portaldahabitacao.pt), DECO PROteste tenant guides, IHRU. Search: 'inquilino mata senhorio renda Portugal abril 2026', 'direitos inquilino Portugal 2026', 'aumento renda máximo coeficiente 2026', 'despejo processo judicial prazo', 'obras conservação obrigação senhorio NRAU'. Also: Balcão Nacional do Arrendamento, recent court decisions, police reports.",
+      "priority": 1
+    },
+    {
+      "topic": "Місія Artemis II: астронавти повернулися на Землю після облету Місяця",
+      "type": "news",
+      "angle": "Перший пілотований обліт Місяця з 1972 року — капсула Orion успішно приводнилася в Тихому океані. Реакція Трампа (\"наступний крок — Марс\"). Роль ESA у місії (модуль обслуговування — європейський). Чи є внесок Португалії через участь у ESA. Що це означає для програми повернення людини на Місяць. Тримати стисло — глобальна подія, але не першочергова для діаспори.",
+      "sources_hint": "RTP Notícias (Artemis II headlines), NASA.gov live updates, ESA press releases. Search: 'Artemis II splashdown April 2026', 'ESA European Service Module Artemis'. Check if Portugal Space Agency (PT Space) had any involvement.",
+      "priority": 2
+    },
+    {
+      "topic": "Трамп обіцяє Угорщині економічну допомогу за переобрання Орбана — ризики для підтримки України в ЄС",
+      "type": "news",
+      "angle": "Трамп публічно підтримав Орбана та пообіцяв економічну допомогу Угорщині. Чому це тривожно для України: Орбан блокує санкції проти РФ, гальмує військову допомогу ЄС, дружить з Путіним. Якщо Орбан отримає підкріплення від Трампа — ЄС буде ще складніше зберігати єдність. Позиція Португалії (голосування в Раді ЄС). Коли вибори в Угорщині.",
+      "sources_hint": "RTP ('Donald Trump promete ajuda económica à Hungria se Orbán for reeleito'), Reuters, Politico Europe, Guardian. Search: 'Trump Orbán Hungary economic aid 2026', 'Hungary EU Ukraine sanctions blocking'.",
+      "priority": 2
+    },
+    {
+      "topic": "Médico de família: як отримати сімейного лікаря в Португалії у 2026 році — покроковий гід",
+      "type": "material",
+      "angle": "Після матеріалу про кризу SNS (8 квітня) — практичний гід саме для іммігрантів. Як зареєструватися в centro de saúde (USF/UCSP). Що робити, якщо утенте sem médico (понад 1,6 млн португальців без лікаря). Альтернативи: SNS 24 (808 24 24 24), consulta aberta, urgências. Як працює referenciação до спеціалістів. Чи потрібен título de residência. Чи є право на лікаря з тимчасовим захистом. Різниця між isenção de taxas moderadoras для різних статусів.",
+      "sources_hint": "SNS.gov.pt (Portal do Utente), DGS guidelines, ACSS data on médicos de família allocation 2026, Lei de Bases da Saúde. Search: 'inscrição centro de saúde imigrante Portugal', 'utentes sem médico de família 2026', 'SNS 24 teleconsulta', 'taxas moderadoras isenção proteção temporária'. Also: Ordem dos Médicos statistics, SRS regional reports.",
+      "priority": 2
+    },
+    {
+      "topic": "Шторм 11 квітня: якщо є пошкодження — як повідомити страхову, муніципалітет і Proteção Civil",
+      "type": "utility",
+      "angle": "Сьогоднішній шторм з вітром до 90 км/год може пошкодити балкони, дахи, автомобілі. Практичний чек-лист дій ПІСЛЯ шторму (не прогноз — той був учора — а реагування): 1) Фото та документація збитків. 2) Як подати participação до страхової (seguro multirriscos habitação — чи покриває вітер/повені). 3) Куди дзвонити: Proteção Civil 112/808 200 520, муніципалітет, bombeiros. 4) Кому подавати заяву на допомогу (junta de freguesia, câmara municipal). 5) Для орендарів: хто відповідає за ремонт — орендар чи власник. Конкретні контакти для Лісабона, Порту, Фару.",
+      "sources_hint": "ANEPC (protecaocivil.pt), IPMA warnings, ASF.com.pt (insurance regulator), DECO PROteste insurance guides. Search: 'seguro multirriscos habitação cobertura tempestade', 'participar sinistro seguro casa temporal', 'apoio câmara municipal danos tempestade'. Municipal contacts: CML, CMP, CMF emergency lines.",
+      "priority": 2
+    },
+    {
+      "topic": "Субота великого футболу: Sporting бореться за трикампеонат, а борги Benfica перевищили €200 млн",
+      "type": "news",
+      "angle": "Суботній матч Sporting vs Estrela da Amadora — крок до історичного трикампеонату. Рубі Борхеш закликає до максимальної концентрації. Одночасно — фінансова криза Benfica: чиста заборгованість понад €200 млн, 100+ млн витрачено на гравців, яких тепер треба продати. Контраст двох клубів. Де дивитися матчі. Коротко: чому українцям у Португалії варто цікавитись місцевим футболом (інтеграція, розмови з колегами).",
+      "sources_hint": "CM Jornal (Sporting tricampeonato, Benfica dívida 200M), A Bola, Record, O Jogo, Mais Futebol. Search: 'Sporting Estrela Amadora April 11 2026', 'Benfica dívida líquida 2026'. Check Liga Portugal schedule for full Saturday matches.",
+      "priority": 2
+    },
+    {
+      "topic": "Православний Великдень 12 квітня: де святкувати в Португалії — церкви, громади, традиції",
+      "type": "guide",
+      "angle": "Завтра, 12 квітня — православна Пасха. Для українців у Португалії це одне з найважливіших свят року, часто вдалині від родини. Практичний гід: де відбудуться великодні літургії (Українська греко-католицька церква в Лісабоні, православні парафії в Порту, Фару, Сетубалі, Брагі). Час нічних та ранкових служб. Де знайти паску, крашанки та іншу святкову їжу (українські магазини, пекарні). Як пояснити сусідам-португальцям різницю між католицьким та православним Великоднем (був тиждень тому). Громадські святкування від українських організацій. Емоційний контекст: святкування далеко від дому під час війни.",
+      "sources_hint": "Associação dos Ucranianos em Portugal, Ukrainian Greek Catholic Church Lisbon (Paróquia de São Vladimiro), Orthodox parishes in Portugal (Patriarcado Ecuménico). Search: 'Páscoa ortodoxa Portugal 2026', 'igreja ucraniana Lisboa horário Páscoa', 'comunidade ucraniana Páscoa Portugal'. Facebook groups of Ukrainian communities in Lisbon, Porto, Algarve. Check: Embaixada da Ucrânia em Portugal for community events.",
+      "priority": 2
+    },
+    {
+      "topic": "Каннський кінофестиваль 2026 оголосив конкурсну програму: Альмодовар, Фархаді та Корієда",
+      "type": "news",
+      "angle": "Оголошено конкурсну програму 79-го Каннського фестивалю. Хто з режисерів і які фільми. Чи є португальське кіно у програмі (секції, паралельні програми). Фархаді — іранський режисер у вигнанні, паралель із українськими митцями в еміграції. Де в Португалії подивитися фестивальне кіно (Cinema São Jorge, Cinemateca, Medeia). Зв'язок із 19-м фестивалем італійського кіно, який зараз у Лісабоні.",
+      "sources_hint": "RTP Cultura ('Festival de Cinema de Cannes'), Variety, Screen Daily, Cineuropa. Search: 'Cannes 2026 official selection', 'Portuguese films Cannes 2026', 'cinema festival Lisboa abril 2026'.",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-11",
+  "created_at": "2026-04-11T06:00:02.464563+00:00"
+}

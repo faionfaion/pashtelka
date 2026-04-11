@@ -2,5 +2,17 @@
   "8": {
     "slug": "yellow-warnings-south-30c-storms",
     "msg_id": 127
+  },
+  "11": {
+    "slug": "wildfire-season-prep-cipo",
+    "msg_id": 128
+  },
+  "14": {
+    "slug": "weather-swings-saharan-dust-weekend",
+    "msg_id": 129
+  },
+  "17": {
+    "slug": "volta-deposit-system-bottles-cans-launch",
+    "msg_id": 130
   }
 }

@@ -1,0 +1,242 @@
+{
+  "timestamp": "2026-04-10_091015",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "weekend-storms-wind-90-kmh-april-11-12, irs-2026-tax-guide-immigrants-portugal, euro-strengthens-remittances-ukraine-transfer-comparison, volta-first-day-where-to-find-machines-problems, metro-lisboa-strike-april-14-alternatives",
+  "author": "Pastelka News",
+  "duration_s": 3902.5,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "research:Погода на вихідні: у суботу по",
+      "status": "ok",
+      "duration_s": 489.4,
+      "error": null
+    },
+    {
+      "name": "generate:Погода на вихідні: у суботу по",
+      "status": "ok",
+      "duration_s": 51.3,
+      "error": null
+    },
+    {
+      "name": "review:Погода на вихідні: у суботу по",
+      "status": "ok",
+      "duration_s": 159.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Погода на вихідні: у суботу по",
+      "status": "ok",
+      "duration_s": 12.2,
+      "error": null
+    },
+    {
+      "name": "save:Погода на вихідні: у суботу по",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:IRS 2026: податковий сезон для",
+      "status": "ok",
+      "duration_s": 226.5,
+      "error": null
+    },
+    {
+      "name": "generate:IRS 2026: податковий сезон для",
+      "status": "ok",
+      "duration_s": 104.8,
+      "error": null
+    },
+    {
+      "name": "review:IRS 2026: податковий сезон для",
+      "status": "ok",
+      "duration_s": 188.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:IRS 2026: податковий сезон для",
+      "status": "ok",
+      "duration_s": 11.2,
+      "error": null
+    },
+    {
+      "name": "save:IRS 2026: податковий сезон для",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Євро зміцнюється на тлі невизн",
+      "status": "ok",
+      "duration_s": 223.6,
+      "error": null
+    },
+    {
+      "name": "generate:Євро зміцнюється на тлі невизн",
+      "status": "ok",
+      "duration_s": 63.5,
+      "error": null
+    },
+    {
+      "name": "review:Євро зміцнюється на тлі невизн",
+      "status": "ok",
+      "duration_s": 423.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Євро зміцнюється на тлі невизн",
+      "status": "ok",
+      "duration_s": 11.8,
+      "error": null
+    },
+    {
+      "name": "save:Євро зміцнюється на тлі невизн",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Система Volta: перший день роб",
+      "status": "ok",
+      "duration_s": 238.4,
+      "error": null
+    },
+    {
+      "name": "generate:Система Volta: перший день роб",
+      "status": "ok",
+      "duration_s": 78.5,
+      "error": null
+    },
+    {
+      "name": "review:Система Volta: перший день роб",
+      "status": "ok",
+      "duration_s": 129.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Система Volta: перший день роб",
+      "status": "ok",
+      "duration_s": 9.9,
+      "error": null
+    },
+    {
+      "name": "save:Система Volta: перший день роб",
+      "status": "ok",
+      "duration_s": 0.3,
+      "error": null
+    },
+    {
+      "name": "research:Метро Лісабона: другий страйк ",
+      "status": "ok",
+      "duration_s": 193.3,
+      "error": null
+    },
+    {
+      "name": "generate:Метро Лісабона: другий страйк ",
+      "status": "ok",
+      "duration_s": 59.0,
+      "error": null
+    },
+    {
+      "name": "review:Метро Лісабона: другий страйк ",
+      "status": "ok",
+      "duration_s": 155.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Метро Лісабона: другий страйк ",
+      "status": "ok",
+      "duration_s": 10.5,
+      "error": null
+    },
+    {
+      "name": "save:Метро Лісабона: другий страйк ",
+      "status": "ok",
+      "duration_s": 0.4,
+      "error": null
+    },
+    {
+      "name": "research:Португальські університети мас",
+      "status": "ok",
+      "duration_s": 148.1,
+      "error": null
+    },
+    {
+      "name": "generate:Португальські університети мас",
+      "status": "ok",
+      "duration_s": 63.9,
+      "error": null
+    },
+    {
+      "name": "review:Португальські університети мас",
+      "status": "ok",
+      "duration_s": 172.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Португальські університети мас",
+      "status": "ok",
+      "duration_s": 9.3,
+      "error": null
+    },
+    {
+      "name": "save:Португальські університети мас",
+      "status": "ok",
+      "duration_s": 0.5,
+      "error": null
+    },
+    {
+      "name": "research:Вихідні в Португалії: куди піт",
+      "status": "ok",
+      "duration_s": 227.9,
+      "error": null
+    },
+    {
+      "name": "generate:Вихідні в Португалії: куди піт",
+      "status": "ok",
+      "duration_s": 128.1,
+      "error": null
+    },
+    {
+      "name": "review:Вихідні в Португалії: куди піт",
+      "status": "ok",
+      "duration_s": 264.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Вихідні в Португалії: куди піт",
+      "status": "ok",
+      "duration_s": 9.9,
+      "error": null
+    },
+    {
+      "name": "save:Вихідні в Португалії: куди піт",
+      "status": "ok",
+      "duration_s": 0.3,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 33.9,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}
