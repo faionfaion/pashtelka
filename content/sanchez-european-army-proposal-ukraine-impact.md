@@ -32,20 +32,23 @@ source_names:
   - "Observador"
   - "Público"
   - "Daily Post / AFP"
-image: ""
+image: "/images/sanchez-european-army-proposal-ukraine-impact.jpg"
 tg_post: |
-  <b>Іспанія готова створити єдину армію ЄС хоч завтра — і це безпосередньо стосується України.</b>
+  <b>Санчес хоче єдину армію ЄС — і готовий почати хоч завтра.</b>
   
-  Прем'єр Іспанії Педро Санчес на форумі European Pulse у Барселоні заявив про готовність негайно рухатися до спільних збройних сил ЄС. Єврокомісар з оборони Андріус Кубіліус ще в січні запропонував постійну армію з 100 000 осіб, назвавши 27 національних армій «армійками-бонсай». Аналітики вважають повноцінну армію малоймовірною найближчим часом — потрібна зміна договорів, подолання мовних бар'єрів та стандартів озброєння, хоча 81% громадян ЄС підтримують спільну оборону.
+  Прем'єр Іспанії <b>Педро Санчес</b> на форумі <b>European Pulse</b> у <b>Барселоні</b> заявив про готовність створювати спільну європейську армію негайно. Єврокомісар з оборони <b>Андріус Кубіліус</b> раніше запропонував постійні сили ЄС на <b>100 000</b> осіб, назвавши <b>27</b> національних армій «армійками-бонсай». <b>81%</b> громадян ЄС підтримують спільну оборонну політику, але до реальної армії далеко — потрібні зміни договорів, подолання мовних бар'єрів і стандартизація озброєнь.
   
   <a href="https://pastelka.news/sanchez-european-army-proposal-ukraine-impact/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>A Espanha quer criar um exército europeu para a segurança e a defesa de todos os países da Europa. O plano fala de 100 mil soldados europeus, mas o caminho é longo porque os países têm línguas e armas diferentes. A paz na Europa é importante e os países querem trabalhar juntos.</i>
+  
   📖 Словничок:
   exército — <tg-spoiler>армія</tg-spoiler>
-  defesa — <tg-spoiler>оборона</tg-spoiler>
   segurança — <tg-spoiler>безпека</tg-spoiler>
-  forças armadas — <tg-spoiler>збройні сили</tg-spoiler>
+  defesa — <tg-spoiler>оборона</tg-spoiler>
   soldado — <tg-spoiler>солдат</tg-spoiler>
+  paz — <tg-spoiler>мир</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

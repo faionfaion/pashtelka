@@ -27,6 +27,7 @@ def run(ctx: PipelineContext) -> None:
 
     hook = result["hook"]
     body = result["body"]
+    pt_paragraph = result.get("pt_paragraph", "")
     vocab = result.get("vocab", [])
 
     # Build vocab with spoilers
@@ -43,6 +44,9 @@ def run(ctx: PipelineContext) -> None:
         "",
         f'<a href="{article_url}">Дізнатись більше →</a>',
         "",
+        f"🇵🇹 Português fácil:",
+        f"<i>{pt_paragraph}</i>",
+        "",
         f"📖 Словничок:",
         vocab_block,
         "",
@@ -51,4 +55,5 @@ def run(ctx: PipelineContext) -> None:
 
     ctx.tg_post = "\n".join(parts)
     ctx.article_url = article_url
-    logger.info("TG caption: %d chars, vocab: %d words", len(ctx.tg_post), len(vocab))
+    logger.info("TG caption: %d chars, vocab: %d words, pt: %d chars",
+                len(ctx.tg_post), len(vocab), len(pt_paragraph))

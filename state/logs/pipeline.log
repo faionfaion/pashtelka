@@ -4923,3 +4923,36 @@ Error output: Check stderr output for details
 2026-04-11 08:12:24 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema/ (200 OK, title found)
 2026-04-11 08:12:24 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-11_081224.json
 2026-04-11 08:12:24 [pipeline] INFO: Batch complete: 10 articles
+2026-04-11 09:22:52 [pipeline] INFO: === TG Publish mode ===
+2026-04-11 09:22:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-11 09:22:52 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 4428
+2026-04-11 09:22:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-11 09:22:52 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-11 09:22:52 [pipeline.stages.s10_pick_and_publish] INFO: TG published: wildfire-season-prep-cipo -> msg 132
+2026-04-11 09:22:52 [pipeline] INFO: Published to TG: wildfire-season-prep-cipo (msg 132)
+2026-04-11 11:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-11 11:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-11 11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 3838
+2026-04-11 11:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-11 11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-11 11:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: weather-swings-saharan-dust-weekend -> msg 133
+2026-04-11 11:05:02 [pipeline] INFO: Published to TG: weather-swings-saharan-dust-weekend (msg 133)
+2026-04-11 14:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-11 14:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-11 14:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/sendPhoto HTTP/1.1" 200 4046
+2026-04-11 14:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-11 14:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8/setMessageReaction HTTP/1.1" 200 25
+2026-04-11 14:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: volta-deposit-system-bottles-cans-launch -> msg 134
+2026-04-11 14:05:02 [pipeline] INFO: Published to TG: volta-deposit-system-bottles-cans-launch (msg 134)
+2026-04-11 17:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-11 17:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-11 17:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4389
+2026-04-11 17:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-11 17:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-11 17:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: via-verde-immigration-one-year-results -> msg 135
+2026-04-11 17:05:02 [pipeline] INFO: Published to TG: via-verde-immigration-one-year-results (msg 135)
+2026-04-11 19:05:01 [pipeline] INFO: === Digest mode ===
+2026-04-11 19:05:01 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-11 19:05:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-11 19:05:25 [pipeline.stages.s11_digest] WARNING: No image found for digest
+2026-04-11 19:05:25 [pipeline] INFO: Digest skipped (not enough articles)

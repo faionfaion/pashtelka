@@ -33,20 +33,23 @@ source_names:
   - "Observador"
   - "Observador"
   - "Democracy Now"
-image: ""
+image: "/images/trump-orban-hungary-election-eu-ukraine-risks.jpg"
 tg_post: |
-  <b>Трамп публічно пообіцяв гроші Угорщині в обмін на переобрання Орбана — і це прямий удар по Україні в ЄС.</b>
+  <b>Трамп відкрито купує Орбана — і це прямий удар по Україні в ЄС.</b>
   
-  Дональд Трамп заявив про готовність використати «всю економічну міць США» для підтримки угорської економіки — за умови перемоги Віктора Орбана на виборах 12 квітня. Віцепрезидент Джей Ді Венс особисто прилетів до Будапешта і виступив на мітингу Орбана. Це критично для України: саме Угорщина заветувала 20-й пакет санкцій проти Росії та кредит у €90 млрд для України — і якщо Трамп підкріпить Орбана грошима, тиснути на Будапешт стане ще складніше.
+  <b>Дональд Трамп</b> пообіцяв «всю економічну міць США» для Угорщини — за умови перемоги <b>Орбана</b> на виборах <b>12 квітня</b>. Віцепрезидент <b>Венс</b> особисто виступив на мітингу в Будапешті. Орбан у лютому заветував <b>€90 млрд</b> кредиту для України та <b>20-й пакет санкцій</b> проти Росії — і якщо Трамп підкріпить його грошима, тиснути на Будапешт стане ще складніше.
   
   <a href="https://pastelka.news/trump-orban-hungary-election-eu-ukraine-risks/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>Trump promete dinheiro à Hungria, mas só se Orbán ganhar as eleições. Este apoio dos Estados Unidos é uma ameaça para a Ucrânia, porque Orbán usa o veto e bloqueia sanções contra a Rússia na União Europeia.</i>
+  
   📖 Словничок:
-  eleições parlamentares — <tg-spoiler>парламентські вибори</tg-spoiler>
+  eleições — <tg-spoiler>вибори</tg-spoiler>
+  dinheiro — <tg-spoiler>гроші</tg-spoiler>
+  ameaça — <tg-spoiler>загроза</tg-spoiler>
+  apoio — <tg-spoiler>підтримка</tg-spoiler>
   veto — <tg-spoiler>вето</tg-spoiler>
-  sanções — <tg-spoiler>санкції</tg-spoiler>
-  empréstimo — <tg-spoiler>позика</tg-spoiler>
-  defesa — <tg-spoiler>оборона</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

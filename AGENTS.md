@@ -19,9 +19,9 @@ News portal for Ukrainian diaspora in Portugal. Site: pastelka.news, TG: @pashte
 
 | Mode | Cron | What |
 |------|------|------|
-| `generate` | `0 7 * * *` | Morning batch: editorial plan → all 10-12 articles → 1 deploy |
-| `publish` | `5 9,12,15,18 * * *` | Mechanical: pick pre-generated article → send to TG (no LLM) |
-| `digest` | `5 20 * * *` | Compile day's articles → evening digest to TG |
+| `generate` | `0 6 * * *` | Morning batch: editorial plan → all 10-12 articles → 1 deploy |
+| `publish` | `5 8,11,14,17 * * *` | Mechanical: pick pre-generated article → send to TG (no LLM) |
+| `digest` | `5 19 * * *` | Compile day's articles → evening digest to TG |
 | `plan` | Manual | Show/create daily editorial plan |
 
 ## Key Commands

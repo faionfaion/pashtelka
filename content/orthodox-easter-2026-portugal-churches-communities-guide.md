@@ -45,20 +45,22 @@ source_names:
   - "Associação dos Ucranianos em Portugal (Spilka)"
   - "Embaixada da Ucrânia em Portugal"
   - "Pessanka Blog"
-image: ""
+image: "/images/orthodox-easter-2026-portugal-churches-communities-guide.jpg"
 tg_post: |
-  <b>Завтра православний Великдень — де в Португалії знайти службу, паску й рідну атмосферу</b>
+  <b>Завтра — Великдень: де знайти церкву, паску й рідну атмосферу по всій Португалії</b>
   
-  12 квітня — православна Пасха. Для майже 80 тисяч українців у Португалії це свято далеко від дому. У Лісабоні головна служба — в Igreja de São Jorge de Arroios, де збирається до 3 000 вірян; літургія починається близько опівночі в суботу, вранішня — у неділю, після неї — освячення кошиків. Перевірте розклад вашої парафії заздалегідь — час може відрізнятися.
+  <b>12 квітня</b> — православна Пасха. Найбільша служба в Лісабоні переїжджає до <b>Igreja de São Jorge de Arroios</b> — очікують до <b>3 000</b> українців, літургії <b>опівночі</b> та <b>вранці в неділю</b>, після них — освячення кошиків. На суботню ніч діє <b>штормове попередження IPMA</b> — якщо їдете на нічну службу, одягайтесь тепло.
   
   <a href="https://pastelka.news/orthodox-easter-2026-portugal-churches-communities-guide/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>Amanhã é a Páscoa ortodoxa e a comunidade ucraniana vai à igreja em Portugal. Depois da celebração, as pessoas levam um cesto com comida para a bênção.</i>
+  
   📖 Словничок:
-  igreja — <tg-spoiler>церква</tg-spoiler>
-  missa — <tg-spoiler>меса (літургія)</tg-spoiler>
   Páscoa — <tg-spoiler>Великдень</tg-spoiler>
-  cesta — <tg-spoiler>кошик</tg-spoiler>
-  Instituto Português do Mar e da Atmosfera — <tg-spoiler>Португальський інститут моря та атмосфери</tg-spoiler>
+  igreja — <tg-spoiler>церква</tg-spoiler>
+  comunidade — <tg-spoiler>громада</tg-spoiler>
+  cesto — <tg-spoiler>кошик</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

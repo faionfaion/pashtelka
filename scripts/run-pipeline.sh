@@ -1,10 +1,10 @@
 #!/bin/bash
 # Pashtelka pipeline runner — called by cron.
 #
-# Cron schedule (Lisbon time = UTC in winter, UTC+1 in summer):
-#   0 7 * * *          bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh generate
-#   5 9,12,15,18 * * * bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh publish
-#   5 20 * * *         bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh digest
+# Cron schedule (UTC — server timezone):
+#   0 6 * * *            bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh generate
+#   5 8,11,14,17 * * *   bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh publish
+#   5 19 * * *           bash ~/workspace/projects/pashtelka-faion-net/scripts/run-pipeline.sh digest
 #
 # Modes:
 #   generate — morning batch: editorial plan + all articles + deploy site

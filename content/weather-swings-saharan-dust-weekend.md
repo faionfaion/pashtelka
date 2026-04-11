@@ -27,15 +27,23 @@ source_names:
   - "Tempo.pt"
 image: "/images/weather-swings-saharan-dust-weekend.jpg"
 tg_post: |
-  🌡️ +13°C за добу — Португалію розгойдало не на жарт!
+  <b>🌡 Португалію розгойдало: +13°C за добу, сахарський пил і шторм на вихідні!</b>
   
-  Guarda стрибнула з 9°C до 22°C, Braga — з 15°C до 27°C. Але не поспішайте радіти: над країною <b>хмара сахарського пилу</b>, яка з дощем перетворюється на chuva de lama — брудний дощ. Білизну з балкона краще забрати 😅
+  Температура стрибнула на <b>+13°C за добу</b> — Guarda з 9° до 22°, Braga з 15° до 27°. Над країною <b>хмара сахарського пилу</b>: chuva de lama бруднить авто й білизну, алергікам краще не виходити. У <b>суботу</b> — фронт із вітром до <b>90 км/год</b> і різке похолодання, в неділю в горах — <b>заморозки</b>.
   
-  Сьогодні IPMA попереджає про <b>зливи з градом і грозами</b> на Півдні — жовтий рівень для Beja, Faro та Setúbal.
+  <a href="https://pastelka.news/weather-swings-saharan-dust-weekend/">Дізнатись більше →</a>
   
-  А в <b>суботу</b> — нова буря: вітер до 90 км/год і різке похолодання. Одягайтеся шарами та тримайте парасольку!
+  🇵🇹 Português fácil:
+  <i>Hoje há muita poeira do Saara e a chuva de lama suja os carros e a roupa. No centro e no sul, há trovoadas com rajadas de vento até 90 km/h. No domingo, há geada nas montanhas.</i>
   
-  #Лісабон #Порту #Фару #Алгарве #Погода #IPMA #СахарськийПил #Грози
+  📖 Словничок:
+  poeira — <tg-spoiler>пил</tg-spoiler>
+  chuva de lama — <tg-spoiler>дощ з багном</tg-spoiler>
+  trovoada — <tg-spoiler>гроза</tg-spoiler>
+  rajada — <tg-spoiler>порив</tg-spoiler>
+  geada — <tg-spoiler>заморозок</tg-spoiler>
+  
+  <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---
 
 Португалія сьогодні переживає температурний стрибок — до **+13°C за одну добу**. У Guarda було 9°C, а сьогодні прогноз показує 22°C. У Braga — з 15°C до 27°C. Porto прогрівається до 23°C. За даними [Tempo.pt](https://www.tempo.pt/noticias/previsao/a-previsao-de-variacao-de-temperatura-para-quinta-feira-esta-quase-fora-da-escala-ate-13-c-de-subida.html), такий перепад — «майже за межею шкали».

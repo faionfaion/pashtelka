@@ -40,20 +40,23 @@ source_names:
   - "ERS — Acesso de Cidadãos Estrangeiros"
   - "SNS 24"
   - "ACSS — Livre Acesso e Circulação"
-image: ""
+image: "/images/medico-de-familia-family-doctor-guide-immigrants-2026.jpg"
 tg_post: |
-  <b>1,6 мільйона людей у Португалії досі без сімейного лікаря — але зареєструватися можна і вам.</b>
+  <b>1,6 мільйона людей у Португалії досі без сімейного лікаря — ось як не бути серед них</b>
   
-  Щоб потрапити в систему SNS, потрібно звернутися до centro de saúde за місцем проживання. Там вам видадуть número de utente (номер пацієнта) і закріплять за медичною одиницею — USF або UCSP. Для реєстрації потрібні документ про легальне перебування, NIF та підтвердження адреси — реєстрація безкоштовна.
+  Щоб отримати <b>médico de família</b>, потрібно зареєструватися в <b>centro de saúde</b> за місцем проживання — це безкоштовно. Вам видадуть <b>número de utente</b> і поставлять у чергу на лікаря. Для іноземців потрібні документ про легальне перебування, <b>NIF</b> та підтвердження адреси (договір оренди або рахунок за комунальні послуги).
   
   <a href="https://pastelka.news/medico-de-familia-family-doctor-guide-immigrants-2026/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>Em Portugal, muitas pessoas não têm um médico de família. Para ter um, o utente precisa de fazer a inscrição no centro de saúde da sua área. É preciso levar um comprovativo de morada e a inscrição é gratuita.</i>
+  
   📖 Словничок:
-  médico de família — <tg-spoiler>лікар сім'ї</tg-spoiler>
+  médico de família — <tg-spoiler>сімейний лікар</tg-spoiler>
   centro de saúde — <tg-spoiler>центр здоров'я</tg-spoiler>
-  número de utente — <tg-spoiler>номер користувача</tg-spoiler>
+  inscrição — <tg-spoiler>реєстрація</tg-spoiler>
+  utente — <tg-spoiler>пацієнт</tg-spoiler>
   comprovativo de morada — <tg-spoiler>підтвердження адреси</tg-spoiler>
-  Serviço Nacional de Saúde — <tg-spoiler>Національна служба здоров'я</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

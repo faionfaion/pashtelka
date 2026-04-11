@@ -40,20 +40,23 @@ source_names:
   - "CMP"
   - "CMF"
   - "Doutor Finanças"
-image: ""
+image: "/images/storm-april-11-damage-insurance-municipality-checklist.jpg"
 tg_post: |
-  <b>Шторм вже тут — ось що робити, якщо є пошкодження.</b>
+  <b>Шторм прийшов — ось що робити, якщо є пошкодження</b>
   
-  Зафіксуйте кожне пошкодження на фото і відео, не викидайте зламані речі й не починайте ремонт до приїзду perito (експерта страхової). Подайте заяву в страхову протягом 8 днів — додайте фото та, якщо можливо, 3 кошториси ремонту. Екстрена допомога — 112, цивільний захист ANEPC — 808 200 520.
+  Фіксуйте все на фото і відео, <b>не викидайте зламані речі</b> і <b>не починайте ремонт</b> до приїзду оцінювача страхової. Подайте заяву до страхової протягом <b>8 днів</b> — компанія має відповісти за <b>4 робочі дні</b>. Для авто потрібна окрема опція <b>«fenómenos da natureza»</b> — звичайне ОСЦПВ шторми <b>не покриває</b>.
   
   <a href="https://pastelka.news/storm-april-11-damage-insurance-municipality-checklist/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>A tempestade de hoje causa danos em muitas casas. O vento forte parte janelas e o telhado também. É importante ter um seguro e tirar fotos de todos os danos.</i>
+  
   📖 Словничок:
-  perito — <tg-spoiler>експерт</tg-spoiler>
-  sinistro — <tg-spoiler>збиток</tg-spoiler>
-  seguro multirriscos — <tg-spoiler>мультиризикове страхування</tg-spoiler>
-  habitação — <tg-spoiler>житло</tg-spoiler>
-  fenómenos da natureza — <tg-spoiler>явища природи</tg-spoiler>
+  tempestade — <tg-spoiler>буря</tg-spoiler>
+  vento — <tg-spoiler>вітер</tg-spoiler>
+  danos — <tg-spoiler>пошкодження</tg-spoiler>
+  telhado — <tg-spoiler>дах</tg-spoiler>
+  seguro — <tg-spoiler>страхування</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

@@ -31,20 +31,23 @@ source_names:
   - "CNN Portugal (analysis)"
   - "Observador"
   - "Público"
-image: ""
+image: "/images/ukraine-strikes-lukoil-caspian-oil-platforms.jpg"
 tg_post: |
   <b>Українські дрони дістали нафтові платформи Lukoil у Каспії — за 1000 км від фронту.</b>
   
-  Вночі 10 квітня Сили спеціальних операцій атакували дві бурові платформи компанії Lukoil у Каспійському морі — на родовищах Грайфера та Корчагіна. Сумарний видобуток обох платформ — близько 49 тис. барелів на добу. Це найдальший удар по нафтовій інфраструктурі РФ з початку повномасштабної війни; CNN Portugal зазначає, що Москва заявила лише про перехоплення 7 дронів над Каспієм.
+  Вночі <b>10 квітня</b> Сили спецоперацій вразили <b>дві бурові платформи Lukoil</b> на родовищах <b>Корчагіна</b> та <b>Грайфера</b> у Каспійському морі — це найдальший удар по нафтовій інфраструктурі РФ за всю війну. Сумарний видобуток обох платформ — близько <b>49 тис. барелів на добу</b>. Генштаб заявив про <b>значні пошкодження</b>, що обмежують постачання палива армії РФ, але <b>CNN Portugal</b> зазначає: незалежно верифікувати інформацію не вдалося.
   
   <a href="https://pastelka.news/ukraine-strikes-lukoil-caspian-oil-platforms/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>A Ucrânia ataca plataformas de petróleo da Rússia no mar Cáspio. Este ataque é importante porque a Rússia usa o petróleo para abastecer o seu exército. As plataformas estão a mais de mil quilómetros da linha da frente.</i>
+  
   📖 Словничок:
-  plataforma petrolífera — <tg-spoiler>нафтова платформа</tg-spoiler>
-  mar Cáspio — <tg-spoiler>Каспійське море</tg-spoiler>
-  combustível — <tg-spoiler>паливо</tg-spoiler>
-  barril de petróleo — <tg-spoiler>барель нафти</tg-spoiler>
-  campo petrolífero — <tg-spoiler>нафтове родовище</tg-spoiler>
+  petróleo — <tg-spoiler>нафта</tg-spoiler>
+  plataforma — <tg-spoiler>платформа</tg-spoiler>
+  mar — <tg-spoiler>море</tg-spoiler>
+  ataque — <tg-spoiler>атака</tg-spoiler>
+  exército — <tg-spoiler>армія</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

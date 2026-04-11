@@ -23,17 +23,23 @@ source_names:
   - "Observador"
 image: "/images/via-verde-immigration-one-year-results.jpg"
 tg_post: |
-  🟢 «Via Verde» працює рік — і ось що вийшло
+  <b>🟢 «Зелений коридор» для мігрантів: понад 3 000 віз за рік — і це тільки початок.</b>
   
-  Португальська програма швидкого найму іноземців видала <b>3 328 робочих віз</b> за рік. Середній час оформлення — <b>21 день</b>. Хто чекав у чергах AIMA місяцями, може тихо позаздрити.
+  Програма <b>Via Verde</b> видала <b>3 328 робочих віз</b> за перший рік. <b>60%</b> — сільське господарство, <b>40%</b> — будівництво; середній час оформлення — лише <b>21 день</b> замість місяців черг в AIMA. Головна перешкода для малого бізнесу — вимога <b>гарантувати житло</b> працівнику в умовах житлової кризи.
   
-  <b>60%</b> віз — сільське господарство, ще 40% — будівництво. Заявки надійшли з 34 консульств у 29 країнах, лідирує Індія.
+  <a href="https://pastelka.news/via-verde-immigration-one-year-results/">Дізнатись більше →</a>
   
-  Але є підступ: роботодавець зобовʼязаний забезпечити житло працівнику. В умовах кризи малий бізнес каже — це нереально, пише Observador.
+  🇵🇹 Português fácil:
+  <i>O programa Via Verde já tem mais de três mil vistos. A agricultura e a construção são os setores com mais trabalhadores estrangeiros. As empresas precisam de oferecer um contrato de trabalho e alojamento para os funcionários.</i>
   
-  Фермери задоволені, а туристичний сектор називає результати «явно недостатніми». А ви як вважаєте?
+  📖 Словничок:
+  visto — <tg-spoiler>віза</tg-spoiler>
+  agricultura — <tg-spoiler>сільське господарство</tg-spoiler>
+  construção — <tg-spoiler>будівництво</tg-spoiler>
+  contrato de trabalho — <tg-spoiler>трудовий договір</tg-spoiler>
+  alojamento — <tg-spoiler>житло</tg-spoiler>
   
-  #Лісабон #Порту #Фару #Алгарве #Новини #Імміграція #Робота #ViaVerde #AIMA #Португалія
+  <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---
 
 Рік тому Португалія запустила програму швидкого працевлаштування іноземців «Via Verde» (Зелений коридор). Тепер є перші результати: 3 328 робочих віз, 130 компаній-учасниць і середній час оформлення — лише 21 день, [за даними ECO/Sapo](https://eco.sapo.pt/2026/04/01/um-ano-depois-via-verde-para-contratar-imigrantes-merece-balanco-positivo-com-mais-de-tres-mil-vistos-atribuidos/). Для порівняння: черги в AIMA тривають місяцями.

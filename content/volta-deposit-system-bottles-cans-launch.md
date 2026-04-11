@@ -25,22 +25,23 @@ source_names:
   - "AE Braga"
 image: "/images/volta-deposit-system-bottles-cans-launch.jpg"
 tg_post: |
-  🫙 Завтра в Португалії стартує система <b>Volta</b> — за кожну пластикову пляшку чи бляшанку платитимете на 10 центів більше.
+  <b><b>Завтра кожна пляшка в Португалії подорожчає на 10 центів — але їх можна повернути.</b></b>
   
-  Повернути депозит просто: здайте порожню тару в одному з 2 500 автоматів у супермаркетах або понад 8 000 пунктах ручного прийому.
+  Стартує система <b>Volta</b>: за кожну пластикову чи металеву упаковку до 3 л нараховують <b>€0,10 депозиту</b>. Повертаєш порожню тару — отримуєш гроші назад у <b>2 500 автоматах</b> або <b>8 000+ пунктах</b> ручного прийому. Пляшка має бути цілою, з кришкою та зі зчитуваним штрих-кодом і логотипом Volta. Скло поки що <b>не включили</b> — екологи критикують.
   
-  Приймають лише упаковку з логотипом <b>Volta</b>, цілу, з кришкою і зчитуваним штрих-кодом. Скло поки не включили.
+  <a href="https://pastelka.news/volta-deposit-system-bottles-cans-launch/">Дізнатись більше →</a>
   
-  Перехідний період — до 9 серпня. Не дивуйтесь, якщо символ Volta є ще не на всіх пляшках.
+  🇵🇹 Português fácil:
+  <i>O sistema Volta começa amanhã. Cada garrafa de plástico ou lata tem um depósito de 10 cêntimos. Para receber o reembolso, a embalagem precisa de estar vazia e ter a tampa.</i>
   
-  📖 <b>Словничок:</b>
-  🇺🇦 Депозит за упаковку — 🇵🇹 depósito de embalagem
-  🇺🇦 Повернення коштів — 🇵🇹 reembolso
-  🇺🇦 Пляшка — 🇵🇹 garrafa
-  🇺🇦 Бляшанка — 🇵🇹 lata
-  🇺🇦 Штрих-код — 🇵🇹 código de barras
+  📖 Словничок:
+  garrafa — <tg-spoiler>пляшка</tg-spoiler>
+  depósito — <tg-spoiler>застава</tg-spoiler>
+  reembolso — <tg-spoiler>відшкодування</tg-spoiler>
+  embalagem — <tg-spoiler>упаковка</tg-spoiler>
+  tampa — <tg-spoiler>кришка</tg-spoiler>
   
-  🇵🇹 Паштелька News
+  <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---
 
 Від завтра, 10 квітня, кожна пластикова пляшка чи бляшанка в Португалії коштуватиме на 10 євроцентів більше. Країна запускає систему депозиту та повернення упаковки під назвою **Volta** (Sistema de Depósito e Reembolso). Повернеш пляшку — отримаєш гроші назад.

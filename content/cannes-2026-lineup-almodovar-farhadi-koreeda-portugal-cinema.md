@@ -34,20 +34,23 @@ source_names:
   - "Festa do Cinema Italiano"
   - "IndieLisboa"
   - "Insider"
-image: ""
+image: "/images/cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema.jpg"
 tg_post: |
-  <b>Канни 2026 оголосили програму — серед зірок Альмодовар, Фархаді у вигнанні та режисер «Левіафана» Звягінцев.</b>
+  <b>Канни-2026 оголосили програму — Альмодовар, Фархаді у вигнанні та перший корейський голова журі.</b>
   
-  21 фільм змагатиметься за Золоту пальмову гілку з 12 по 23 травня. Журі очолює Пак Чхан Ук — перший кореєць в історії фестивалю. Іранець Асґар Фархаді, який відмовився знімати на батьківщині через репресії, представить франкомовний фільм із Ізабель Юппер та Катрін Денев, а росіянин Андрій Звягінцев, який засудив війну проти України, покаже першу роботу за 9 років.
+  <b>21</b> фільм змагатиметься за <b>Золоту пальмову гілку</b> з <b>12 по 23 травня</b>. Журі очолює <b>Пак Чхан Ук</b> — перший кореєць на цій посаді в історії. <b>Асґар Фархаді</b> вперше представить франкомовний фільм «Parallel Tales» із <b>Юппер</b>, <b>Денев</b> та <b>Касселем</b> — режисер покинув Іран на знак протесту, а <b>Звягінцев</b>, який засудив війну РФ проти України, повертається після <b>9 років</b> мовчання.
   
   <a href="https://pastelka.news/cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>O festival de Cannes apresenta 21 filmes em competição este ano. Realizadores famosos como Almodóvar e Farhadi concorrem ao prémio principal. Farhadi vive no exílio porque não quer filmar no Irão.</i>
+  
   📖 Словничок:
-  festival de cinema — <tg-spoiler>фестиваль кіно</tg-spoiler>
-  realizador — <tg-spoiler>режисер</tg-spoiler>
-  estreia — <tg-spoiler>прем'єра</tg-spoiler>
-  filme em competição — <tg-spoiler>фільм у конкурсі</tg-spoiler>
-  sala de cinema — <tg-spoiler>зала кіно</tg-spoiler>
+  o festival — <tg-spoiler>фестиваль</tg-spoiler>
+  o filme — <tg-spoiler>фільм</tg-spoiler>
+  o realizador — <tg-spoiler>режисер</tg-spoiler>
+  o prémio — <tg-spoiler>нагорода</tg-spoiler>
+  o exílio — <tg-spoiler>вигнання</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

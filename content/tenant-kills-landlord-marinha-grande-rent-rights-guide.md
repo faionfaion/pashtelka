@@ -47,20 +47,23 @@ source_names:
   - "Ricardo Gama"
   - "Idealista"
   - "Montepio"
-image: ""
+image: "/images/tenant-kills-landlord-marinha-grande-rent-rights-guide.jpg"
 tg_post: |
-  <b>Орендар убив орендодавця й вистрибнув із 7-го поверху — через подвоєння оренди в Маріня-Гранді.</b>
+  <b>Орендар убив орендодавця й вистрибнув з 7-го поверху — через подвоєння оренди в Маріня-Гранді</b>
   
-  У ніч із 9 на 10 квітня в Marinha Grande (округ Лейрія) 60-річний орендар завдав смертельного ножового поранення 63-річному власнику житла Карлушу Лограду — колишньому члену муніципальної ради міста. За даними ЗМІ, конфлікт виник через підвищення ренти удвічі, відмову платити та повідомлення про виселення. Після нападу орендар вистрибнув з вікна кухні — обидва загинули.
+  У ніч на <b>10 квітня</b> в <b>Маріня-Гранді</b> (округ Лейрія) <b>60-річний</b> орендар зарізав <b>63-річного</b> власника квартири <b>Карлуша Лограду</b> — колишнього члена муніципальної ради. Мотив — орендодавець підвищив ренту <b>удвічі</b>, орендар відмовився платити й отримав повідомлення про <b>виселення</b>. Після вбивства нападник вистрибнув з вікна кухні <b>7-го поверху</b> — обидва загинули.
   
   <a href="https://pastelka.news/tenant-kills-landlord-marinha-grande-rent-rights-guide/">Дізнатись більше →</a>
+  
+  🇵🇹 Português fácil:
+  <i>Na Marinha Grande, um inquilino mata o senhorio porque o senhorio quer um aumento da renda para o dobro. O inquilino não aceita a renda nova e recebe uma ordem de despejo. Em Portugal, muitas pessoas têm problemas com o aumento da renda.</i>
   
   📖 Словничок:
   inquilino — <tg-spoiler>орендар</tg-spoiler>
   senhorio — <tg-spoiler>орендодавець</tg-spoiler>
-  renda — <tg-spoiler>рента</tg-spoiler>
+  renda — <tg-spoiler>орендна плата</tg-spoiler>
+  aumento — <tg-spoiler>підвищення</tg-spoiler>
   despejo — <tg-spoiler>виселення</tg-spoiler>
-  vereador — <tg-spoiler>член муніципальної ради</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

@@ -31,20 +31,23 @@ source_names:
   - "PT Space"
   - "PT Space"
   - "ECO"
-image: ""
+image: "/images/artemis-ii-moon-flyby-portugal-cork-esa.jpg"
 tg_post: |
-  <b>Людство повернулося до Місяця — вперше за 53 роки, і з португальським корком на борту.</b>
+  <b>Людство повернулося до Місяця вперше за 53 роки — і з португальським корком на борту!</b>
   
-  Капсула Orion місії Artemis II приводнилася в Тихому океані біля Сан-Дієго після 10 днів польоту та 1 117 515 км шляху. Екіпаж побив рекорд Apollo 13, віддалившись від Землі на 406 777 км. На борту — перша жінка, перший темношкірий астронавт і перший не-американець на місячній орбіті, а сервісний модуль корабля створило Європейське космічне агентство (ESA).
+  Капсула <b>Orion</b> із <b>4</b> астронавтами місії <b>Artemis II</b> приводнилася в Тихому океані після <b>10</b> днів і <b>1 117 515 км</b> подорожі, побивши рекорд <b>Apollo 13</b> — екіпаж віддалився від Землі на <b>406 777 км</b>. Уперше Місяць облетіли <b>жінка</b> (Крістіна Кох), <b>темношкірий астронавт</b> (Віктор Гловер) і <b>не-американець</b> (канадець Джеремі Гансен). Європейський сервісний модуль <b>ESA</b> забезпечив кисень, воду, електрику та всі маневри корабля.
   
   <a href="https://pastelka.news/artemis-ii-moon-flyby-portugal-cork-esa/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>A tripulação da missão Artemis II faz uma viagem à Lua e regressa à Terra com sucesso. A cápsula pousa no oceano Pacífico e também há cortiça portuguesa a bordo do foguete.</i>
+  
   📖 Словничок:
-  amarar — <tg-spoiler>приводнитися</tg-spoiler>
-  tripulação — <tg-spoiler>екіпаж</tg-spoiler>
-  pouso — <tg-spoiler>посадка</tg-spoiler>
-  nave espacial — <tg-spoiler>космічний корабель</tg-spoiler>
-  voo tripulado — <tg-spoiler>пілотований політ</tg-spoiler>
+  a tripulação — <tg-spoiler>екіпаж</tg-spoiler>
+  a viagem — <tg-spoiler>подорож</tg-spoiler>
+  a Lua — <tg-spoiler>Місяць</tg-spoiler>
+  o regresso — <tg-spoiler>повернення</tg-spoiler>
+  a cortiça — <tg-spoiler>корок</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

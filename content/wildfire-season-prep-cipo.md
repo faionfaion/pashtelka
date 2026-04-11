@@ -25,15 +25,23 @@ source_names:
   - "Correio da Manhã"
 image: "/images/wildfire-season-prep-cipo.jpg"
 tg_post: |
-  🔥 Літо 2026 буде «дуже складним» — і це не я кажу, а міністр внутрішніх справ Luís Neves.
+  <b>🔥 Португалія готується до пекельного літа — уряд створив єдиний штаб проти пожеж.</b>
   
-  Після зимових штормів у лісах лишилися <b>тисячі повалених дерев</b>, особливо в районі Leiria — це величезне накопичення горючих матеріалів, повідомляє RTP.
+  Міністр внутрішніх справ попередив: літо 2026 буде <b>«дуже складним»</b> через тисячі повалених дерев після зимових штормів. Новий координаційний штаб <b>CIPO</b> об'єднає МВС, армію, цивільний захист і пожежників в єдину структуру. На піковий сезон планують задіяти <b>15 064</b> оперативники, <b>3 438</b> автомобілів і <b>76</b> повітряних засобів.
   
-  Уряд створив <b>CIPO</b> — єдиний штаб, що координує все: від GNR до бомбейрос. На літо готують <b>15 000+ оперативників</b>, 76 повітряних засобів і понад 3 400 автомобілів.
+  <a href="https://pastelka.news/wildfire-season-prep-cipo/">Дізнатись більше →</a>
   
-  Хто памʼятає катастрофічні пожежі минулих років — розуміє, наскільки це серйозно 🙏
+  🇵🇹 Português fácil:
+  <i>O verão de 2026 é muito perigoso em Portugal. Há muitas árvores caídas no chão e o risco de incêndios é grande. O governo cria um novo comando para coordenar a luta contra o fogo.</i>
   
-  #Лісабон #Порту #Фару #Алгарве #Лейрія #Пожежі #Безпека #Літо2026 #CIPO #Новини
+  📖 Словничок:
+  incêndio — <tg-spoiler>пожежа</tg-spoiler>
+  verão — <tg-spoiler>літо</tg-spoiler>
+  perigoso — <tg-spoiler>небезпечний</tg-spoiler>
+  árvore — <tg-spoiler>дерево</tg-spoiler>
+  comando — <tg-spoiler>командування</tg-spoiler>
+  
+  <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---
 
 Міністр внутрішніх справ Португалії Luís Neves попередив: літо 2026 року буде «muito complicado» — дуже складним — через тисячі повалених дерев після зимових штормів. Сьогодні, 8 квітня, уряд офіційно представив новий координаційний штаб [CIPO](https://observador.pt/2026/04/08/comando-integrado-de-prevencao-e-operacoes-vai-ser-apresentado-esta-quarta-feira/) (Comando Integrado de Prevenção e Operações — Інтегроване командування з запобігання та операцій).

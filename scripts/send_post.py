@@ -9,7 +9,7 @@ import sys
 
 import requests
 
-TOKEN = "8585090528:AAHWmjiT9TIlmdtz0x8Q_YpUCnP3APEx7i8"
+TOKEN = "8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA"
 CHANNEL_ID = "-1003726391778"
 API = f"https://api.telegram.org/bot{TOKEN}"
 

@@ -9,6 +9,10 @@
       "type": "string",
       "description": "2-3 sentences: key facts, practical info. Accent words in <b>bold</b>. Ukrainian, HTML only."
     },
+    "pt_paragraph": {
+      "type": "string",
+      "description": "2-3 sentences in simple Portuguese (A2 level) summarizing the news. MUST use all vocab words naturally. Short sentences, present tense, basic grammar. No HTML tags."
+    },
     "vocab": {
       "type": "array",
       "items": {
@@ -22,5 +26,5 @@
       "description": "3-5 Portuguese vocabulary words with precise Ukrainian translations"
     }
   },
-  "required": ["hook", "body", "vocab"]
+  "required": ["hook", "body", "pt_paragraph", "vocab"]
 }
