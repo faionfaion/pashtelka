@@ -1685,3 +1685,38 @@ Already up to date.
 06:50:32 [pipeline.stages.s6_generate_tg] INFO: TG caption: 878 chars, vocab: 5 words
 06:50:32 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
 06:50:32 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/artemis-ii-moon-flyby-portugal-cork-esa.md
+06:50:32 [pipeline] INFO: Article ready: artemis-ii-moon-flyby-portugal-cork-esa (Artemis II: астронавти вперше за 53 роки облетіли )
+06:50:32 [pipeline] INFO: === Article 5/10 ===
+06:50:32 [pipeline] INFO: --- Article: [news] Трамп обіцяє Угорщині економічну допомогу за переобрання Орб ---
+06:50:32 [asyncio] DEBUG: Using selector: EpollSelector
+06:50:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:55:32 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+06:55:37 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.1s
+06:55:42 [asyncio] DEBUG: Using selector: EpollSelector
+06:55:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:59:03 [pipeline.stages.s2_research] INFO: Research complete: 11825 chars
+06:59:03 [asyncio] DEBUG: Using selector: EpollSelector
+06:59:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:00:06 [pipeline.stages.s3_generate] INFO: Generated: 'Трамп обіцяє Угорщині економічну допомогу за переобрання Орбана — чому це загроза для підтримки України в ЄС' (slug=trump-orban-hungary-election-eu-ukraine-risks, 411 words, 8 sources)
+07:00:06 [asyncio] DEBUG: Using selector: EpollSelector
+07:00:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:01:12 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+07:01:12 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — добре структурована, джерела якісні, аналітика доречна. Але є конкретні зауваження перед публікацією:
+
+1. **ТЕГИ/ХЕШТЕГИ (чекліст п.8):** Відсутні повністю. Потрібні теги: тема
+07:01:12 [asyncio] DEBUG: Using selector: EpollSelector
+07:01:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:01:41 [pipeline.stages.s5_revise] INFO: Revised article: 507 words
+07:01:41 [pipeline] INFO: === Review cycle 1/3 complete ===
+07:01:41 [asyncio] DEBUG: Using selector: EpollSelector
+07:01:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:02:40 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+07:02:40 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з чіткою структурою, добре підібраними джерелами та високою релевантністю для цільової аудиторії. Кілька зауважень для доопрацювання:
+
+1. МОВА: «заветувала» — розмовний неологізм. Краще:
+07:02:40 [pipeline] INFO: Article approved after 1 revision(s)
+07:02:40 [asyncio] DEBUG: Using selector: EpollSelector
+07:02:40 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:02:51 [pipeline.stages.s6_generate_tg] INFO: TG caption: 977 chars, vocab: 5 words
+07:02:51 [pipeline.image_gen] WARNING: No OPENAI_API_KEY — skipping image generation
+07:02:51 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trump-orban-hungary-election-eu-ukraine-risks.md
