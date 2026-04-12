@@ -5526,3 +5526,77 @@ Error output: Check stderr output for details
 2026-04-12 07:27:28 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/temporary-protection-to-residence-permit-guide-ukrainians-portugal.jpg (211 KB)
 07:27:28 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/temporary-protection-to-residence-permit-guide-ukrainians-portugal.md
 2026-04-12 07:27:28 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/temporary-protection-to-residence-permit-guide-ukrainians-portugal.md
+07:27:28 [pipeline] INFO: Article ready: temporary-protection-to-residence-permit-guide-ukrainians-portugal (Від тимчасового захисту до постійного дозволу: пок)
+2026-04-12 07:27:28 [pipeline] INFO: Article ready: temporary-protection-to-residence-permit-guide-ukrainians-portugal (Від тимчасового захисту до постійного дозволу: пок)
+07:27:28 [pipeline] INFO: === Article 8/11 ===
+2026-04-12 07:27:28 [pipeline] INFO: === Article 8/11 ===
+07:27:28 [pipeline] INFO: --- Article: [material] Страйк будівельників 17 квітня: чи може імігрант брати участ ---
+2026-04-12 07:27:28 [pipeline] INFO: --- Article: [material] Страйк будівельників 17 квітня: чи може імігрант брати участ ---
+07:27:28 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:27:28 [asyncio] DEBUG: Using selector: EpollSelector
+07:27:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:27:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:32:19 [pipeline.stages.s2_research] INFO: Research complete: 16321 chars
+2026-04-12 07:32:19 [pipeline.stages.s2_research] INFO: Research complete: 16321 chars
+07:32:19 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:32:19 [asyncio] DEBUG: Using selector: EpollSelector
+07:32:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:32:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:34:27 [pipeline.stages.s3_generate] INFO: Generated: 'Страйк будівельників 17 квітня: чи може іммігрант брати участь і що загрожує за прогул' (slug=construction-strike-april-17-immigrant-rights-guide, 1139 words, 16 sources)
+2026-04-12 07:34:27 [pipeline.stages.s3_generate] INFO: Generated: 'Страйк будівельників 17 квітня: чи може іммігрант брати участь і що загрожує за прогул' (slug=construction-strike-april-17-immigrant-rights-guide, 1139 words, 16 sources)
+07:34:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:34:27 [asyncio] DEBUG: Using selector: EpollSelector
+07:34:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:34:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:35:48 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-12 07:35:48 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+07:35:48 [pipeline.stages.s4_review] INFO: Feedback: Сильний, практичний матеріал із чіткою структурою та відмінними джерелами. Кілька зауважень для фінального шліфування:
+
+1. **SNS без розшифрування.** У розділі «Чого вимагає CGTP» згадується «Здоров'я
+2026-04-12 07:35:48 [pipeline.stages.s4_review] INFO: Feedback: Сильний, практичний матеріал із чіткою структурою та відмінними джерелами. Кілька зауважень для фінального шліфування:
+
+1. **SNS без розшифрування.** У розділі «Чого вимагає CGTP» згадується «Здоров'я
+07:35:48 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:35:48 [asyncio] DEBUG: Using selector: EpollSelector
+07:35:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:35:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:40:15 [pipeline.stages.s5_revise] INFO: Revised article: 1187 words
+2026-04-12 07:40:15 [pipeline.stages.s5_revise] INFO: Revised article: 1187 words
+07:40:15 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-12 07:40:15 [pipeline] INFO: === Review cycle 1/3 complete ===
+07:40:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:40:15 [asyncio] DEBUG: Using selector: EpollSelector
+07:40:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:40:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:41:25 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-12 07:41:25 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+07:41:25 [pipeline.stages.s4_review] INFO: Feedback: Сильний, практичний матеріал із чіткою структурою та якісною джерельною базою. Незначні зауваження перед публікацією:
+
+1. **ОРФОГРАФІЯ (критично):** «іммігрант» → «імігрант» (одне «м»). Подвійне «м» —
+2026-04-12 07:41:25 [pipeline.stages.s4_review] INFO: Feedback: Сильний, практичний матеріал із чіткою структурою та якісною джерельною базою. Незначні зауваження перед публікацією:
+
+1. **ОРФОГРАФІЯ (критично):** «іммігрант» → «імігрант» (одне «м»). Подвійне «м» —
+07:41:25 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-12 07:41:25 [pipeline] INFO: Article approved after 1 revision(s)
+07:41:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:41:25 [asyncio] DEBUG: Using selector: EpollSelector
+07:41:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:41:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:41:39 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1003 chars, vocab: 5 words, pt: 190 chars
+2026-04-12 07:41:39 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1003 chars, vocab: 5 words, pt: 190 chars
+07:41:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-12 07:41:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+07:42:35 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-12 07:42:35 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+07:42:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-12 07:42:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+07:42:35 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 95571
+2026-04-12 07:42:35 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 95571
+07:42:35 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 95571 (unknown)
+2026-04-12 07:42:35 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 95571 (unknown)
+07:42:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 95624 2490942
+2026-04-12 07:42:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 95624 2490942
+07:42:35 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/construction-strike-april-17-immigrant-rights-guide.jpg (224 KB)
+2026-04-12 07:42:35 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/construction-strike-april-17-immigrant-rights-guide.jpg (224 KB)
+07:42:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/construction-strike-april-17-immigrant-rights-guide.md
+2026-04-12 07:42:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/construction-strike-april-17-immigrant-rights-guide.md
