@@ -5072,3 +5072,73 @@ Error output: Check stderr output for details
 2026-04-12 06:17:02 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal.jpg (252 KB)
 06:17:02 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal.md
 2026-04-12 06:17:02 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal.md
+06:17:03 [pipeline] INFO: Article ready: us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal (Переговори США-Іран зірвані: Венс повернувся без у)
+2026-04-12 06:17:03 [pipeline] INFO: Article ready: us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal (Переговори США-Іран зірвані: Венс повернувся без у)
+06:17:03 [pipeline] INFO: === Article 2/11 ===
+2026-04-12 06:17:03 [pipeline] INFO: === Article 2/11 ===
+06:17:03 [pipeline] INFO: --- Article: [news] Вибори в Угорщині сьогодні: чи програє Орбан і що зміниться  ---
+2026-04-12 06:17:03 [pipeline] INFO: --- Article: [news] Вибори в Угорщині сьогодні: чи програє Орбан і що зміниться  ---
+06:17:03 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:17:03 [asyncio] DEBUG: Using selector: EpollSelector
+06:17:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:17:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:20:37 [pipeline.stages.s2_research] INFO: Research complete: 11115 chars
+2026-04-12 06:20:37 [pipeline.stages.s2_research] INFO: Research complete: 11115 chars
+06:20:37 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:20:37 [asyncio] DEBUG: Using selector: EpollSelector
+06:20:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:20:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:21:57 [pipeline.stages.s3_generate] INFO: Generated: 'Вибори в Угорщині сьогодні: чи програє Орбан і що зміниться для України в ЄС' (slug=hungary-election-day-orban-magyar-ukraine-eu-impact, 473 words, 11 sources)
+2026-04-12 06:21:57 [pipeline.stages.s3_generate] INFO: Generated: 'Вибори в Угорщині сьогодні: чи програє Орбан і що зміниться для України в ЄС' (slug=hungary-election-day-orban-magyar-ukraine-eu-impact, 473 words, 11 sources)
+06:21:57 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:21:57 [asyncio] DEBUG: Using selector: EpollSelector
+06:21:57 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:21:57 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:23:16 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-12 06:23:16 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+06:23:16 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, має сильний лід і чіткий inverted pyramid. Джерела різноманітні (португальські + міжнародні), секція з позицією Португалії — плюс. Нюанс про Маджара як не безумовного союзн
+2026-04-12 06:23:16 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, має сильний лід і чіткий inverted pyramid. Джерела різноманітні (португальські + міжнародні), секція з позицією Португалії — плюс. Нюанс про Маджара як не безумовного союзн
+06:23:16 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:23:16 [asyncio] DEBUG: Using selector: EpollSelector
+06:23:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:23:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:24:58 [pipeline.stages.s5_revise] INFO: Revised article: 534 words
+2026-04-12 06:24:58 [pipeline.stages.s5_revise] INFO: Revised article: 534 words
+06:24:58 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-12 06:24:58 [pipeline] INFO: === Review cycle 1/3 complete ===
+06:24:58 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:24:58 [asyncio] DEBUG: Using selector: EpollSelector
+06:24:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:24:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:26:21 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-12 06:26:21 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+06:26:21 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована, з чіткою португальською та українською релевантністю. Кілька зауважень для доопрацювання:
+
+1. **Джерело до Nézőpont:** Дані провладного інституту (Fidesz 46%, Tisza
+2026-04-12 06:26:21 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована, з чіткою португальською та українською релевантністю. Кілька зауважень для доопрацювання:
+
+1. **Джерело до Nézőpont:** Дані провладного інституту (Fidesz 46%, Tisza
+06:26:21 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-12 06:26:21 [pipeline] INFO: Article approved after 1 revision(s)
+06:26:21 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:26:21 [asyncio] DEBUG: Using selector: EpollSelector
+06:26:21 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:26:21 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:26:37 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1044 chars, vocab: 5 words, pt: 217 chars
+2026-04-12 06:26:37 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1044 chars, vocab: 5 words, pt: 217 chars
+06:26:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-12 06:26:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+06:27:34 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-12 06:27:34 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+06:27:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-12 06:27:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+06:27:35 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 105915
+2026-04-12 06:27:35 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 105915
+06:27:35 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 105915 (unknown)
+2026-04-12 06:27:35 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 105915 (unknown)
+06:27:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 105968 3305085
+2026-04-12 06:27:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 105968 3305085
+06:27:35 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/hungary-election-day-orban-magyar-ukraine-eu-impact.jpg (272 KB)
+2026-04-12 06:27:35 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/hungary-election-day-orban-magyar-ukraine-eu-impact.jpg (272 KB)
+06:27:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hungary-election-day-orban-magyar-ukraine-eu-impact.md
+2026-04-12 06:27:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hungary-election-day-orban-magyar-ukraine-eu-impact.md
