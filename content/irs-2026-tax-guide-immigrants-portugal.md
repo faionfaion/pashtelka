@@ -38,18 +38,21 @@ source_names:
   - "Ministério Público"
 image: "/images/irs-2026-tax-guide-immigrants-portugal.jpg"
 tg_post: |
-  <b>Податковий сезон у Португалії вже стартував — ось що потрібно знати іммігрантам.</b>
+  <b>📋 Податковий сезон у Португалії вже стартував — і це стосується кожного іммігранта!</b>
   
-  Декларацію IRS за доходи 2025 року потрібно подати онлайн через Portal das Finanças до 30 червня 2026. Хто запізниться — штраф від €150 до €3 750, але якщо подасте самі протягом 30 днів після дедлайну — лише €25. Більшості іммігрантів IRS Automático не підходить — зокрема тим, хто має доходи з-за кордону або працює як самозайнятий.
+  Декларацію <b>IRS за 2025 рік</b> потрібно подати до <b>30 червня 2026</b> через Portal das Finanças. Не встигнете — штраф від <b>€150 до €3 750</b>, але якщо подасте протягом 30 днів після дедлайну — лише <b>€25</b>. Більшості іммігрантів <b>IRS Automático не підходить</b> — особливо якщо є доходи з-за кордону або працюєте як самозайнятий.
   
   <a href="https://pastelka.news/irs-2026-tax-guide-immigrants-portugal/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>O <b>prazo</b> para entregar a <b>declaração</b> de IRS é 30 de junho. Se você não entrega no <b>prazo</b>, paga uma <b>multa</b>. O Estado calcula o <b>rendimento</b> e pode fazer o <b>reembolso</b> até 31 de agosto.</i>
+  
   📖 Словничок:
-  Imposto sobre o Rendimento das Pessoas Singulares — <tg-spoiler>податок на дохід одиничних осіб</tg-spoiler>
-  reembolso — <tg-spoiler>повернення</tg-spoiler>
-  Número de Identificação Fiscal — <tg-spoiler>номер податкової ідентифікації</tg-spoiler>
-  trabalhador independente — <tg-spoiler>незалежний працівник</tg-spoiler>
   declaração — <tg-spoiler>декларація</tg-spoiler>
+  prazo — <tg-spoiler>строк</tg-spoiler>
+  multa — <tg-spoiler>штраф</tg-spoiler>
+  rendimento — <tg-spoiler>дохід</tg-spoiler>
+  reembolso — <tg-spoiler>повернення</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

@@ -35,18 +35,21 @@ source_names:
   - "Observador"
 image: "/images/energy-credit-line-600-million-businesses.jpg"
 tg_post: |
-  <b>Португалія відкриває кредитну лінію на €600 млн для бізнесу — і українські підприємці теж можуть скористатися.</b>
+  <b>🇵🇹 Португалія відкриває кредитну лінію на €600 млн для бізнесу — і це шанс для українських підприємців.</b>
   
-  Програма Portugal Resiliência Energética — кредити на 5 років із пільговим періодом 1 рік для компаній, де витрати на енергію перевищують 20% виробничих витрат. Держава покриває 80% гарантії для малих підприємств і 70% для середніх та великих. Заявки подаються через ваш банк, орієнтовний старт — після 20 квітня.
+  Рада Міністрів схвалила програму <b>Portugal Resiliência Energética</b>: кредити на <b>5 років</b> з пільговим періодом <b>1 рік</b> для компаній, де витрати на енергію перевищують 20% виробничих витрат. Держава покриває <b>80% ризику</b> для малого бізнесу (PME) та 70% — для середнього й великого. Заявки подаються <b>через ваш банк</b>, орієнтовний старт — після 20 квітня.
   
   <a href="https://pastelka.news/energy-credit-line-600-million-businesses/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>O governo aprova uma <b>linha de crédito</b> de 600 milhões de euros. Esta linha é para empresas com <b>custos de energia</b> altos e tem uma <b>garantia bancária</b> do Estado. O <b>prazo</b> do crédito é de cinco anos.</i>
+  
   📖 Словничок:
-  linha de crédito — <tg-spoiler>лінія кредиту</tg-spoiler>
+  linha de crédito — <tg-spoiler>кредитна лінія</tg-spoiler>
+  empresa — <tg-spoiler>підприємство</tg-spoiler>
   custos de energia — <tg-spoiler>витрати на енергію</tg-spoiler>
   garantia bancária — <tg-spoiler>банківська гарантія</tg-spoiler>
-  período de carência — <tg-spoiler>період пільги</tg-spoiler>
-  pequenas e médias empresas (PME) — <tg-spoiler>малі та середні підприємства</tg-spoiler>
+  prazo — <tg-spoiler>строк</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

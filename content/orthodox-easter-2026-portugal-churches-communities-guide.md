@@ -47,20 +47,21 @@ source_names:
   - "Pessanka Blog"
 image: "/images/orthodox-easter-2026-portugal-churches-communities-guide.jpg"
 tg_post: |
-  <b>Завтра — Великдень: де знайти церкву, паску й рідну атмосферу по всій Португалії</b>
+  <b>Завтра православна Пасха — зібрали все, щоб знати, куди йти в Португалії!</b>
   
-  <b>12 квітня</b> — православна Пасха. Найбільша служба в Лісабоні переїжджає до <b>Igreja de São Jorge de Arroios</b> — очікують до <b>3 000</b> українців, літургії <b>опівночі</b> та <b>вранці в неділю</b>, після них — освячення кошиків. На суботню ніч діє <b>штормове попередження IPMA</b> — якщо їдете на нічну службу, одягайтесь тепло.
+  У Лісабоні головна служба для українців — у <b>Igreja de São Jorge de Arroios</b>, куди на Великдень приходить до <b>3 000 людей</b>. Гід охоплює церкви від <b>Лісабона до Алгарве</b>: розклад літургій, освячення кошиків, паска і крашанки. Їдете на нічну службу — зверніть увагу на <b>штормове попередження IPMA</b> на суботу.
   
   <a href="https://pastelka.news/orthodox-easter-2026-portugal-churches-communities-guide/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>Amanhã é a Páscoa ortodoxa e a comunidade ucraniana vai à igreja em Portugal. Depois da celebração, as pessoas levam um cesto com comida para a bênção.</i>
+  <i><b>A Páscoa</b> ortodoxa é no dia 12 de abril. <b>A comunidade</b> ucraniana vai à igreja em Lisboa para <b>a missa</b>. Depois da missa, há <b>a bênção</b> dos cestos com comida.</i>
   
   📖 Словничок:
-  Páscoa — <tg-spoiler>Великдень</tg-spoiler>
-  igreja — <tg-spoiler>церква</tg-spoiler>
-  comunidade — <tg-spoiler>громада</tg-spoiler>
-  cesto — <tg-spoiler>кошик</tg-spoiler>
+  a Páscoa — <tg-spoiler>Великдень</tg-spoiler>
+  a igreja — <tg-spoiler>церква</tg-spoiler>
+  a comunidade — <tg-spoiler>громада</tg-spoiler>
+  a missa — <tg-spoiler>меса</tg-spoiler>
+  a bênção — <tg-spoiler>благословення</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

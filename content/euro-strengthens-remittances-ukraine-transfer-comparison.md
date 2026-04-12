@@ -39,18 +39,21 @@ source_names:
   - "Público"
 image: "/images/euro-strengthens-remittances-ukraine-transfer-comparison.jpg"
 tg_post: |
-  <b>Євро зміцнюється — рідні в Україні отримають за переказ на 485 гривень більше, ніж на початку року.</b>
+  <b>💶 Євро зміцнюється — рідні отримають на 485 ₴ більше за кожні €500 переказу!</b>
   
-  Курс євро зріс до 1,1712 до долара на тлі перемир'я між США та Іраном. За офіційним курсом НБУ €500 — це вже ~25 380 ₴, тоді як у січні було лише 24 895 ₴. Нафта Brent впала до $94,33 за барель, але вже відновлюється до ~$97 через сумніви у стійкості домовленості.
+  Курс євро до долара зріс до <b>1,1712</b> на тлі невизначеності навколо перемир'я між США та Іраном. За офіційним курсом НБУ (<b>~50,76 ₴/€</b>) за €500 рідні отримають <b>~25 380 ₴</b> — це на <b>485 ₴ більше</b>, ніж на початку року. Нафта Brent впала до <b>$94,33</b> за барель, але вже відновлюється через сумніви у стійкості перемир'я.
   
   <a href="https://pastelka.news/euro-strengthens-remittances-ukraine-transfer-comparison/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>O <b>cessar-fogo</b> entre os EUA e o Irão causa muita <b>incerteza</b> nos mercados. O <b>câmbio</b> do euro sobe porque o <b>petróleo</b> está instável e o dólar fica mais fraco. Para os ucranianos em Portugal, cada <b>transferência</b> de €500 vale agora mais 485 hryvnias.</i>
+  
   📖 Словничок:
-  câmbio — <tg-spoiler>обмін валюти</tg-spoiler>
   cessar-fogo — <tg-spoiler>припинення вогню</tg-spoiler>
-  transferência — <tg-spoiler>переказ</tg-spoiler>
+  incerteza — <tg-spoiler>невизначеність</tg-spoiler>
+  câmbio — <tg-spoiler>обмінний курс</tg-spoiler>
   petróleo — <tg-spoiler>нафта</tg-spoiler>
-  taxa de câmbio — <tg-spoiler>курс обміну</tg-spoiler>
+  transferência — <tg-spoiler>переказ</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

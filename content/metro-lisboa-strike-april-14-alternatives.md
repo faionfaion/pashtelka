@@ -40,18 +40,21 @@ source_names:
   - "Gira"
 image: "/images/metro-lisboa-strike-april-14-alternatives.jpg"
 tg_post: |
-  <b>Лісабонське метро знову стає — вівторок 14 квітня без жодної станції.</b>
+  <b>🚇 Метро Лісабона знову зупиняється — цього вівторка понад 31 годину без підземки!</b>
   
-  Метро не працюватиме понад 31 годину: з 23:00 понеділка 13 квітня до 06:30 середи 15 квітня. Мінімальних послуг не буде — арбітражний трибунал CES вирішив їх не встановлювати. Головна альтернатива — автобуси Carris: маршрути 736, 744, 783, 207 дублюють лінії метро, але будуть переповнені.
+  <b>14 квітня</b> з 23:00 понеділка до 06:30 середи метро <b>не працюватиме взагалі</b> — арбітражний трибунал не встановив мінімальних послуг. Минулого разу <b>100% працівників</b> страйкували, жодна станція не відкрилась. Головна альтернатива — автобуси <b>Carris</b> (маршрути 736, 744, 783, 207), але будьте готові до <b>переповнених</b> салонів.
   
   <a href="https://pastelka.news/metro-lisboa-strike-april-14-alternatives/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>Os trabalhadores do metro fazem <b>greve</b> na terça-feira. Eles querem um <b>salário</b> melhor. Nenhuma <b>estação</b> abre, por isso as pessoas usam o <b>autocarro</b>.</i>
+  
   📖 Словничок:
   greve — <tg-spoiler>страйк</tg-spoiler>
-  serviços mínimos — <tg-spoiler>мінімальні послуги</tg-spoiler>
-  sindicato — <tg-spoiler>профспілка</tg-spoiler>
+  trabalhador — <tg-spoiler>працівник</tg-spoiler>
+  salário — <tg-spoiler>заробітна плата</tg-spoiler>
+  estação — <tg-spoiler>станція</tg-spoiler>
   autocarro — <tg-spoiler>автобус</tg-spoiler>
-  carreira — <tg-spoiler>маршрут</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

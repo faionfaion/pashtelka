@@ -42,20 +42,20 @@ source_names:
   - "ACSS — Livre Acesso e Circulação"
 image: "/images/medico-de-familia-family-doctor-guide-immigrants-2026.jpg"
 tg_post: |
-  <b>1,6 мільйона людей у Португалії досі без сімейного лікаря — ось як не бути серед них</b>
+  <b><b>1,6 мільйона людей у Португалії без сімейного лікаря — як не опинитися серед них?</b></b>
   
-  Щоб отримати <b>médico de família</b>, потрібно зареєструватися в <b>centro de saúde</b> за місцем проживання — це безкоштовно. Вам видадуть <b>número de utente</b> і поставлять у чергу на лікаря. Для іноземців потрібні документ про легальне перебування, <b>NIF</b> та підтвердження адреси (договір оренди або рахунок за комунальні послуги).
+  Щоб отримати <b>médico de família</b>, потрібно зареєструватися в <b>centro de saúde</b> за місцем проживання. Вам видадуть <b>número de utente</b> і поставлять у чергу. Українцям із тимчасовим захистом потрібні: документ про легальне перебування, <b>NIF</b> та підтвердження адреси.
   
   <a href="https://pastelka.news/medico-de-familia-family-doctor-guide-immigrants-2026/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>Em Portugal, muitas pessoas não têm um médico de família. Para ter um, o utente precisa de fazer a inscrição no centro de saúde da sua área. É preciso levar um comprovativo de morada e a inscrição é gratuita.</i>
+  <i>Para ter um <b>médico de família</b>, é preciso fazer a <b>inscrição</b> no <b>centro de saúde</b>. Você precisa do <b>número de utente</b> e de um <b>comprovativo de morada</b>. A <b>inscrição</b> é gratuita e pode ser feita em pessoa.</i>
   
   📖 Словничок:
   médico de família — <tg-spoiler>сімейний лікар</tg-spoiler>
   centro de saúde — <tg-spoiler>центр здоров'я</tg-spoiler>
-  inscrição — <tg-spoiler>реєстрація</tg-spoiler>
-  utente — <tg-spoiler>пацієнт</tg-spoiler>
+  inscrição — <tg-spoiler>запис</tg-spoiler>
+  número de utente — <tg-spoiler>номер користувача</tg-spoiler>
   comprovativo de morada — <tg-spoiler>підтвердження адреси</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>

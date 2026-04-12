@@ -43,18 +43,21 @@ source_names:
   - "Idealista"
 image: "/images/labor-reform-crisis-ps-chega-seguro-veto.jpg"
 tg_post: |
-  <b>Трудова реформа Trabalho XXI може провалитися — уряд втрачає підтримку з усіх боків.</b>
+  <b>Трудова реформа Trabalho XXI — на межі провалу: ніхто не хоче голосувати «за»</b>
   
-  PS офіційно відмовився голосувати за реформу в парламенті, звинувативши уряд у тиску на профспілки. Chega висунула 5 умов для підтримки, а президент Сеґуру натякнув на можливе вето. Профспілка UGT одноголосно відхилила пропозицію — коаліція AD залишилась без союзників.
+  <b>PS офіційно відмовив</b> уряду в підтримці реформи в парламенті, звинувативши його в тиску на профспілки. <b>Chega висунула п'ять умов</b> для переговорів — єдиний шанс коаліції AD. Профспілка <b>UGT одноголосно відхилила</b> пропозицію, а президент <b>Сеґуру натякнув на вето</b>.
   
   <a href="https://pastelka.news/labor-reform-crisis-ps-chega-seguro-veto/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i><b>A reforma laboral</b> está em perigo. O PS não apoia a proposta no parlamento e o presidente prepara um veto. O Chega apresenta cinco condições para continuar <b>as negociações</b> com o governo.</i>
+  
   📖 Словничок:
-  reforma laboral — <tg-spoiler>трудова реформа</tg-spoiler>
-  lei laboral — <tg-spoiler>трудовий закон</tg-spoiler>
-  sindicato — <tg-spoiler>профспілка</tg-spoiler>
-  veto — <tg-spoiler>вето</tg-spoiler>
-  negociações — <tg-spoiler>переговори</tg-spoiler>
+  a reforma laboral — <tg-spoiler>трудова реформа</tg-spoiler>
+  o parlamento — <tg-spoiler>парламент</tg-spoiler>
+  o veto — <tg-spoiler>вето</tg-spoiler>
+  as condições — <tg-spoiler>умови</tg-spoiler>
+  as negociações — <tg-spoiler>переговори</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

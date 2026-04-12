@@ -29,18 +29,21 @@ source_names:
   - "FCCN / FCT"
 image: "/images/portuguese-universities-ai-adoption-no-rules.jpg"
 tg_post: |
-  <b>Португальські університети масово впроваджують ШІ — але 83% працюють без жодних правил</b>
+  <b>🎓 Португальські виші масово впровадили ШІ — але 83% працюють без жодних правил.</b>
   
-  Звіт CNIPES від 9 квітня показав: 52,9% вищих навчальних закладів Португалії вже використовують штучний інтелект у викладанні, але лише 17% з них мають чіткі регламенти. Решта 83% — без формальних правил щодо аудиту, валідації та відповідальності. Для українських студентів, які й так орієнтуються в португальській системі наосліп, це означає додаткову невизначеність — від оцінювання до академічної доброчесності.
+  Перший національний звіт CNIPES показав: <b>52,9%</b> закладів вищої освіти вже використовують ШІ у викладанні, але лише <b>17%</b> з них мають чіткі регламенти. Аудит, валідація, відповідальність — майже ніде не прописані. Для українських студентів, які й так орієнтуються в системі наосліп, це <b>додатковий ризик</b>.
   
   <a href="https://pastelka.news/portuguese-universities-ai-adoption-no-rules/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>A maioria das universidades portuguesas já usa <b>inteligência artificial</b> no <b>ensino superior</b>. Mas um <b>relatório</b> novo mostra que 83% não têm <b>regras</b> claras. A <b>capacidade</b> institucional ainda está atrasada.</i>
+  
   📖 Словничок:
   ensino superior — <tg-spoiler>вища освіта</tg-spoiler>
-  inteligência artificial — <tg-spoiler>штучний інтелект</tg-spoiler>
   regras — <tg-spoiler>правила</tg-spoiler>
-  investigação — <tg-spoiler>дослідження</tg-spoiler>
-  literacia digital — <tg-spoiler>цифрова грамотність</tg-spoiler>
+  relatório — <tg-spoiler>звіт</tg-spoiler>
+  inteligência artificial — <tg-spoiler>штучний інтелект</tg-spoiler>
+  capacidade — <tg-spoiler>спроможність</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

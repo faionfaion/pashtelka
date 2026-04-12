@@ -36,21 +36,21 @@ source_names:
   - "Insider"
 image: "/images/cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema.jpg"
 tg_post: |
-  <b>Канни-2026 оголосили програму — Альмодовар, Фархаді у вигнанні та перший корейський голова журі.</b>
+  <b>🎬 Канни-2026 оголосили програму — і серед зірок є митці у вигнанні</b>
   
-  <b>21</b> фільм змагатиметься за <b>Золоту пальмову гілку</b> з <b>12 по 23 травня</b>. Журі очолює <b>Пак Чхан Ук</b> — перший кореєць на цій посаді в історії. <b>Асґар Фархаді</b> вперше представить франкомовний фільм «Parallel Tales» із <b>Юппер</b>, <b>Денев</b> та <b>Касселем</b> — режисер покинув Іран на знак протесту, а <b>Звягінцев</b>, який засудив війну РФ проти України, повертається після <b>9 років</b> мовчання.
+  <b>21 фільм</b> змагатиметься за Золоту пальмову гілку з <b>12 по 23 травня</b>. Серед режисерів — Альмодовар, Фархаді (вперше з франкомовним фільмом після від'їзду з Ірану) та Звягінцев, який <b>засудив війну Росії проти України</b> і живе у Франції. Журі очолює <b>Пак Чхан Ук</b> — перший кореєць на цій посаді за всю історію фестивалю.
   
   <a href="https://pastelka.news/cannes-2026-lineup-almodovar-farhadi-koreeda-portugal-cinema/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>O festival de Cannes apresenta 21 filmes em competição este ano. Realizadores famosos como Almodóvar e Farhadi concorrem ao prémio principal. Farhadi vive no exílio porque não quer filmar no Irão.</i>
+  <i><b>O festival de cinema</b> de Cannes apresenta 21 filmes em competição este ano. <b>O júri</b> tem um novo presidente e muitos realizadores famosos participam. Asghar Farhadi vive no exílio e faz <b>a estreia</b> do seu primeiro filme em francês.</i>
   
   📖 Словничок:
-  o festival — <tg-spoiler>фестиваль</tg-spoiler>
-  o filme — <tg-spoiler>фільм</tg-spoiler>
-  o realizador — <tg-spoiler>режисер</tg-spoiler>
-  o prémio — <tg-spoiler>нагорода</tg-spoiler>
+  o festival de cinema — <tg-spoiler>кінофестиваль</tg-spoiler>
   o exílio — <tg-spoiler>вигнання</tg-spoiler>
+  o realizador — <tg-spoiler>режисер</tg-spoiler>
+  o júri — <tg-spoiler>журі</tg-spoiler>
+  a estreia — <tg-spoiler>прем'єра</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

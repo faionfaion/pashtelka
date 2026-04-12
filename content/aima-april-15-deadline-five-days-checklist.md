@@ -38,18 +38,21 @@ source_names:
   - "DN Brasil — Guia do Imigrante"
 image: "/images/aima-april-15-deadline-five-days-checklist.jpg"
 tg_post: |
-  <b>До дедлайну AIMA залишилось 5 днів — і ніхто його не переніс.</b>
+  <b><b>До дедлайну AIMA 15 квітня — лише 5 днів, а офіційного перенесення так і немає.</b></b>
   
-  AIMA почала видавати нові comprovativos de renovação, дійсні 60 днів з можливістю поновлення. Але це стосується лише тих, хто вже подав на продовження. Якщо ви ще не подали — з 15 квітня ваш título de residência стає недійсним, і ви переходите у статус нерегулярного перебування.
+  AIMA почала видавати нові <b>comprovativos de renovação</b> — довідки, дійсні <b>60 днів</b> із можливістю поновлення. Але це стосується лише тих, хто <b>вже подав</b> на продовження. Якщо ви ще не подали заявку — після <b>14 квітня</b> ваша посвідка стає недійсною, і ви в статусі нерегулярного перебування.
   
   <a href="https://pastelka.news/aima-april-15-deadline-five-days-checklist/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>O <b>prazo</b> para a <b>renovação</b> do <b>título de residência</b> é 15 de abril. A AIMA emite novos comprovativos de <b>renovação</b> válidos por 60 dias. Se ainda não pediu a <b>renovação</b>, o seu documento não é <b>válido</b> depois de 14 de abril.</i>
+  
   📖 Словничок:
-  comprovativo de renovação — <tg-spoiler>підтвердження продовження</tg-spoiler>
+  prazo — <tg-spoiler>строк</tg-spoiler>
+  renovação — <tg-spoiler>продовження</tg-spoiler>
   título de residência — <tg-spoiler>посвідка на проживання</tg-spoiler>
-  decreto-lei — <tg-spoiler>декрет-закон</tg-spoiler>
-  Lei de Estrangeiros — <tg-spoiler>Закон про іноземців</tg-spoiler>
-  manifestação de interesse — <tg-spoiler>вияв зацікавленості</tg-spoiler>
+  comprovativo de renovação — <tg-spoiler>довідка про продовження</tg-spoiler>
+  válido — <tg-spoiler>дійсний</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

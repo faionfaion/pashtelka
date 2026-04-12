@@ -30,10 +30,22 @@ def run(ctx: PipelineContext) -> None:
     pt_paragraph = result.get("pt_paragraph", "")
     vocab = result.get("vocab", [])
 
-    # Build vocab with spoilers
+    # Bold vocab words in pt_paragraph
+    pt_bold = pt_paragraph
+    for v in vocab:
+        import re
+        word = v["pt"]
+        pt_bold = re.sub(
+            rf'\b({re.escape(word)})\b',
+            r'<b>\1</b>',
+            pt_bold,
+            flags=re.IGNORECASE,
+        )
+
+    # Build vocab with bold PT + spoiler UA
     vocab_lines = []
     for v in vocab[:5]:
-        vocab_lines.append(f"{v['pt']} — <tg-spoiler>{v['uk']}</tg-spoiler>")
+        vocab_lines.append(f"<b>{v['pt']}</b> — <tg-spoiler>{v['uk']}</tg-spoiler>")
     vocab_block = "\n".join(vocab_lines)
 
     # Assemble caption
@@ -44,10 +56,10 @@ def run(ctx: PipelineContext) -> None:
         "",
         f'<a href="{article_url}">Дізнатись більше →</a>',
         "",
-        f"🇵🇹 Português fácil:",
-        f"<i>{pt_paragraph}</i>",
+        "🇵🇹 Português fácil:",
+        f"<i>{pt_bold}</i>",
         "",
-        f"📖 Словничок:",
+        "📖 Словничок:",
         vocab_block,
         "",
         '<a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>',

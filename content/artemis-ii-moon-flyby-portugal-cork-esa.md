@@ -33,21 +33,21 @@ source_names:
   - "ECO"
 image: "/images/artemis-ii-moon-flyby-portugal-cork-esa.jpg"
 tg_post: |
-  <b>Людство повернулося до Місяця вперше за 53 роки — і з португальським корком на борту!</b>
+  <b>Людство повернулось до Місяця вперше за 53 роки — з португальським корком на борту 🚀</b>
   
-  Капсула <b>Orion</b> із <b>4</b> астронавтами місії <b>Artemis II</b> приводнилася в Тихому океані після <b>10</b> днів і <b>1 117 515 км</b> подорожі, побивши рекорд <b>Apollo 13</b> — екіпаж віддалився від Землі на <b>406 777 км</b>. Уперше Місяць облетіли <b>жінка</b> (Крістіна Кох), <b>темношкірий астронавт</b> (Віктор Гловер) і <b>не-американець</b> (канадець Джеремі Гансен). Європейський сервісний модуль <b>ESA</b> забезпечив кисень, воду, електрику та всі маневри корабля.
+  Капсула <b>Orion</b> місії <b>Artemis II</b> приводнилася в Тихому океані після <b>10 днів</b> у космосі та <b>1 117 515 км</b> шляху — це рекорд дальності пілотованого польоту. На борту — три історичні «вперше»: <b>перша жінка</b>, <b>перший темношкірий астронавт</b> і <b>перший не-американець</b> на місячній орбіті. Сервісний модуль корабля створило <b>Європейське космічне агентство (ESA)</b> — без Європи Orion не полетів би.
   
   <a href="https://pastelka.news/artemis-ii-moon-flyby-portugal-cork-esa/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>A tripulação da missão Artemis II faz uma viagem à Lua e regressa à Terra com sucesso. A cápsula pousa no oceano Pacífico e também há cortiça portuguesa a bordo do foguete.</i>
+  <i>A <b>nave espacial</b> Orion amara com sucesso no oceano Pacífico. A <b>tripulação</b> bate um <b>recorde</b> de distância no voo à <b>Lua</b>. É a primeira vez em 53 anos que pessoas voam tão longe.</i>
   
   📖 Словничок:
-  a tripulação — <tg-spoiler>екіпаж</tg-spoiler>
-  a viagem — <tg-spoiler>подорож</tg-spoiler>
-  a Lua — <tg-spoiler>Місяць</tg-spoiler>
-  o regresso — <tg-spoiler>повернення</tg-spoiler>
-  a cortiça — <tg-spoiler>корок</tg-spoiler>
+  amarar — <tg-spoiler>приводнитися</tg-spoiler>
+  tripulação — <tg-spoiler>екіпаж</tg-spoiler>
+  nave espacial — <tg-spoiler>космічний корабель</tg-spoiler>
+  Lua — <tg-spoiler>Місяць</tg-spoiler>
+  recorde — <tg-spoiler>рекорд</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---
