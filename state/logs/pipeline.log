@@ -5142,3 +5142,77 @@ Error output: Check stderr output for details
 2026-04-12 06:27:35 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/hungary-election-day-orban-magyar-ukraine-eu-impact.jpg (272 KB)
 06:27:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hungary-election-day-orban-magyar-ukraine-eu-impact.md
 2026-04-12 06:27:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hungary-election-day-orban-magyar-ukraine-eu-impact.md
+06:27:35 [pipeline] INFO: Article ready: hungary-election-day-orban-magyar-ukraine-eu-impact (Вибори в Угорщині сьогодні: чи програє Орбан і що )
+2026-04-12 06:27:35 [pipeline] INFO: Article ready: hungary-election-day-orban-magyar-ukraine-eu-impact (Вибори в Угорщині сьогодні: чи програє Орбан і що )
+06:27:35 [pipeline] INFO: === Article 3/11 ===
+2026-04-12 06:27:35 [pipeline] INFO: === Article 3/11 ===
+06:27:35 [pipeline] INFO: --- Article: [news] Росія порушила пасхальне перемир'я: Київ фіксує удари — чого ---
+2026-04-12 06:27:35 [pipeline] INFO: --- Article: [news] Росія порушила пасхальне перемир'я: Київ фіксує удари — чого ---
+06:27:35 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:27:35 [asyncio] DEBUG: Using selector: EpollSelector
+06:27:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:27:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:31:27 [pipeline.stages.s2_research] INFO: Research complete: 10432 chars
+2026-04-12 06:31:27 [pipeline.stages.s2_research] INFO: Research complete: 10432 chars
+06:31:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:31:27 [asyncio] DEBUG: Using selector: EpollSelector
+06:31:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:31:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:32:39 [pipeline.stages.s3_generate] INFO: Generated: 'Росія порушила пасхальне перемир'я: 469 ударів за «32 години тиші»' (slug=russia-violated-easter-ceasefire-469-attacks, 444 words, 8 sources)
+2026-04-12 06:32:39 [pipeline.stages.s3_generate] INFO: Generated: 'Росія порушила пасхальне перемир'я: 469 ударів за «32 години тиші»' (slug=russia-violated-easter-ceasefire-469-attacks, 444 words, 8 sources)
+06:32:39 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:32:39 [asyncio] DEBUG: Using selector: EpollSelector
+06:32:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:32:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:34:07 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-12 06:34:07 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+06:34:07 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна: структура чітка, тон влучний (великоднє відкриття — потужне), джерела переважно португальські, що відповідає аудиторії. Кілька правок перед публікацією:
+
+1. **ФАКТИЧНА НЕВІДПОВІДНІСТЬ —
+2026-04-12 06:34:07 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна: структура чітка, тон влучний (великоднє відкриття — потужне), джерела переважно португальські, що відповідає аудиторії. Кілька правок перед публікацією:
+
+1. **ФАКТИЧНА НЕВІДПОВІДНІСТЬ —
+06:34:07 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:34:07 [asyncio] DEBUG: Using selector: EpollSelector
+06:34:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:34:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:35:14 [pipeline.stages.s5_revise] INFO: Revised article: 469 words
+2026-04-12 06:35:14 [pipeline.stages.s5_revise] INFO: Revised article: 469 words
+06:35:14 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-12 06:35:14 [pipeline] INFO: === Review cycle 1/3 complete ===
+06:35:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:35:14 [asyncio] DEBUG: Using selector: EpollSelector
+06:35:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:35:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:36:37 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-12 06:36:37 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+06:36:37 [pipeline.stages.s4_review] INFO: Feedback: Сильна, добре структурована стаття з емоційним відкриттям і логічним завершенням. 8 різних джерел (португальські, міжнародні, офіційні), перехресні посилання на власні матеріали — все відмінно.
+
+Заува
+2026-04-12 06:36:37 [pipeline.stages.s4_review] INFO: Feedback: Сильна, добре структурована стаття з емоційним відкриттям і логічним завершенням. 8 різних джерел (португальські, міжнародні, офіційні), перехресні посилання на власні матеріали — все відмінно.
+
+Заува
+06:36:37 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-12 06:36:37 [pipeline] INFO: Article approved after 1 revision(s)
+06:36:37 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:36:37 [asyncio] DEBUG: Using selector: EpollSelector
+06:36:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:36:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:36:53 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1110 chars, vocab: 5 words, pt: 197 chars
+2026-04-12 06:36:53 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1110 chars, vocab: 5 words, pt: 197 chars
+06:36:53 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-12 06:36:53 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+06:37:49 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-12 06:37:49 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+06:37:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-12 06:37:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+06:37:50 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 87751
+2026-04-12 06:37:50 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 87751
+06:37:50 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 87751 (unknown)
+2026-04-12 06:37:50 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 87751 (unknown)
+06:37:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 87804 2996193
+2026-04-12 06:37:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 87804 2996193
+06:37:50 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/russia-violated-easter-ceasefire-469-attacks.jpg (221 KB)
+2026-04-12 06:37:50 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/russia-violated-easter-ceasefire-469-attacks.jpg (221 KB)
+06:37:50 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/russia-violated-easter-ceasefire-469-attacks.md
+2026-04-12 06:37:50 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/russia-violated-easter-ceasefire-469-attacks.md
