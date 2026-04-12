@@ -4956,3 +4956,119 @@ Error output: Check stderr output for details
 2026-04-11 19:05:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
 2026-04-11 19:05:25 [pipeline.stages.s11_digest] WARNING: No image found for digest
 2026-04-11 19:05:25 [pipeline] INFO: Digest skipped (not enough articles)
+06:00:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-12 06:00:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+06:00:02 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-12 06:00:02 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+06:00:02 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-12 06:00:02 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+06:00:03 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-12 06:00:03 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+06:00:03 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-12 06:00:03 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+06:00:03 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-12 06:00:03 [pipeline.feeds] INFO: Feed publico: 10 items
+06:00:03 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-12 06:00:03 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+06:00:03 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:00:03 [asyncio] DEBUG: Using selector: EpollSelector
+06:00:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:00:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:03:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:03:14 [asyncio] DEBUG: Using selector: EpollSelector
+06:03:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:03:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:07:36 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 11 -> 11 articles
+2026-04-12 06:07:36 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 11 -> 11 articles
+06:07:36 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 11 articles for 2026-04-12
+2026-04-12 06:07:36 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 11 articles for 2026-04-12
+06:07:36 [pipeline] INFO: Editorial plan: 11 topics
+2026-04-12 06:07:36 [pipeline] INFO: Editorial plan: 11 topics
+06:07:36 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-12 06:07:36 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+06:07:36 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-12 06:07:36 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+06:07:36 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-12 06:07:36 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+06:07:36 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-12 06:07:36 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+06:07:36 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-12 06:07:36 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+06:07:36 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-12 06:07:36 [pipeline.feeds] INFO: Feed publico: 10 items
+06:07:37 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-12 06:07:37 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+06:07:37 [pipeline.stages.s1_collect] INFO: Context: 67 RSS items, 49 existing articles
+2026-04-12 06:07:37 [pipeline.stages.s1_collect] INFO: Context: 67 RSS items, 49 existing articles
+06:07:37 [pipeline] INFO: === Article 1/11 ===
+2026-04-12 06:07:37 [pipeline] INFO: === Article 1/11 ===
+06:07:37 [pipeline] INFO: --- Article: [news] Переговори США-Іран зірвані: Венс повернувся без угоди — цін ---
+2026-04-12 06:07:37 [pipeline] INFO: --- Article: [news] Переговори США-Іран зірвані: Венс повернувся без угоди — цін ---
+06:07:37 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:07:37 [asyncio] DEBUG: Using selector: EpollSelector
+06:07:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:07:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:11:09 [pipeline.stages.s2_research] INFO: Research complete: 9942 chars
+2026-04-12 06:11:09 [pipeline.stages.s2_research] INFO: Research complete: 9942 chars
+06:11:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:11:09 [asyncio] DEBUG: Using selector: EpollSelector
+06:11:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:11:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:12:25 [pipeline.stages.s3_generate] INFO: Generated: 'Переговори США-Іран зірвані: Венс повернувся без угоди — ціни на пальне в Португалії знову під загрозою' (slug=us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal, 462 words, 11 sources)
+2026-04-12 06:12:25 [pipeline.stages.s3_generate] INFO: Generated: 'Переговори США-Іран зірвані: Венс повернувся без угоди — ціни на пальне в Португалії знову під загрозою' (slug=us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal, 462 words, 11 sources)
+06:12:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:12:25 [asyncio] DEBUG: Using selector: EpollSelector
+06:12:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:12:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:13:38 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-12 06:13:38 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+06:13:38 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, релевантністю та джерелами, але потребує кількох правок перед публікацією:
+
+1. **МОВА: «ребаунд»** — це англіцизм без пояснення. Замініть на «відскок» або хоча б поясніть 
+2026-04-12 06:13:38 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, релевантністю та джерелами, але потребує кількох правок перед публікацією:
+
+1. **МОВА: «ребаунд»** — це англіцизм без пояснення. Замініть на «відскок» або хоча б поясніть 
+06:13:38 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:13:38 [asyncio] DEBUG: Using selector: EpollSelector
+06:13:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:13:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:14:25 [pipeline.stages.s5_revise] INFO: Revised article: 501 words
+2026-04-12 06:14:25 [pipeline.stages.s5_revise] INFO: Revised article: 501 words
+06:14:25 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-12 06:14:25 [pipeline] INFO: === Review cycle 1/3 complete ===
+06:14:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:14:25 [asyncio] DEBUG: Using selector: EpollSelector
+06:14:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:14:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:15:50 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-12 06:15:50 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+06:15:50 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою, якісними джерелами та високою практичною цінністю для аудиторії. Кілька зауважень для фінального шліфування:
+
+1. **«21 година переговорів»** — цифра не підтверджена 
+2026-04-12 06:15:50 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою, якісними джерелами та високою практичною цінністю для аудиторії. Кілька зауважень для фінального шліфування:
+
+1. **«21 година переговорів»** — цифра не підтверджена 
+06:15:50 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-12 06:15:50 [pipeline] INFO: Article approved after 1 revision(s)
+06:15:50 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:15:50 [asyncio] DEBUG: Using selector: EpollSelector
+06:15:50 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:15:50 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:16:03 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1007 chars, vocab: 5 words, pt: 179 chars
+2026-04-12 06:16:03 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1007 chars, vocab: 5 words, pt: 179 chars
+06:16:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-12 06:16:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+06:17:01 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-12 06:17:01 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+06:17:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-12 06:17:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+06:17:02 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 109860
+2026-04-12 06:17:02 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 109860
+06:17:02 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 109860 (unknown)
+2026-04-12 06:17:02 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 109860 (unknown)
+06:17:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 109913 3191283
+2026-04-12 06:17:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 109913 3191283
+06:17:02 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal.jpg (252 KB)
+2026-04-12 06:17:02 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal.jpg (252 KB)
+06:17:02 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal.md
+2026-04-12 06:17:02 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal.md

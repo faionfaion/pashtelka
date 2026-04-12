@@ -1,0 +1,83 @@
+{
+  "articles": [
+    {
+      "topic": "Переговори США-Іран зірвані: Венс повернувся без угоди — ціни на пальне в Португалії знову зростуть",
+      "type": "news",
+      "angle": "Продовження теми fuel-prices-drop-iran-ceasefire та zelenskyy-us-ignored-russia-iran-evidence. Двотижневе перемир'я під загрозою: Іран звинувачує США, Трамп заявляє «не важливо». Аналіз: що буде з цінами Brent і коли це дійде до заправок Португалії. Конкретний прогноз на тиждень для дизелю та бензину.",
+      "sources_hint": "RTP latest (JD Vance, Iran blame US), Reuters/Bloomberg Brent price, DGEG fuel prices Portugal, ANAREC statements, previous Pashtelka articles on fuel prices",
+      "priority": 1
+    },
+    {
+      "topic": "Вибори в Угорщині сьогодні: чи програє Орбан і що зміниться для України в ЄС",
+      "type": "news",
+      "angle": "Продовження теми trump-orban-hungary-election-eu-ukraine-risks. День голосування: опитування вперше показують можливу поразку Орбана, скандал з підозрами у фальсифікаціях напередодні. Конкретно: якщо Орбан програє, розблоковується 20-й пакет санкцій, кредит €90 млрд і зміна динаміки в Раді ЄС. Якщо виграє — статус-кво з вето. Позиція Португалії (жорстка критика Ранжела).",
+      "sources_hint": "RTP (Hungria ultimo dia campanha, suspeita fraude), CMJornal (Orbán rock star), Euronews, Politico Europe, Hungary election polls, Magyar Péter coverage",
+      "priority": 1
+    },
+    {
+      "topic": "Росія порушила пасхальне перемир'я: Київ фіксує удари — чого варте «слово Путіна»",
+      "type": "news",
+      "angle": "Контекст: Путін оголосив 32-годинне перемир'я на православний Великдень (згадане в нашому пасхальному гіді). Київ повідомляє про порушення. Аналіз: чому ці «перемир'я» — інструмент пропаганди, а не миротворчості. Реакція ЄС та Португалії. Емоційно найважливіша стаття дня для діаспори — сьогодні Великдень.",
+      "sources_hint": "RTP (Kiev acusa Moscovo violar cessar-fogo), Ukrainian General Staff updates, Zelenskyy Telegram, European Council statements, MNE Portugal",
+      "priority": 1
+    },
+    {
+      "topic": "Договір Порту Португалія-Франція набуває чинності завтра: що в ньому і як це підсилює оборону ЄС",
+      "type": "news",
+      "angle": "13 квітня набуває чинності оборонний Договір Порту з Францією (згаданий побіжно в статті про Санчеса). Окрема стаття: зміст договору, конкретні зобов'язання (спільні навчання, обмін розвідданими, промислова кооперація), чому Португалія обрала саме Францію, зв'язок з нарощуванням оборонного бюджету на 25% та розгортанням у Балтиці. Для українців: ще один елемент європейського «парасольки безпеки» без залежності від США.",
+      "sources_hint": "MNE Portugal press releases, Tratado do Porto text, RTP/Luso coverage of Portugal-France defense agreement, Publico defense reporting, previous Pashtelka article sanchez-european-army",
+      "priority": 2
+    },
+    {
+      "topic": "Liga Portugal Jornada 29: Sporting виграв і тисне на лідера — таблиця, Судаков і шанси на трикампеонат",
+      "type": "news",
+      "angle": "Продовження теми sporting-tricampeonato-benfica-debt. Sporting переміг у Ребольєйрі, тисне на лідера. Результати туру, оновлена таблиця, що далі. Окремо: як грає Судаков у Benfica, чи допоміг результат Sporting/Benfica. Матчі неділі (якщо є). Футбол як спосіб інтеграції — де дивитися, де обговорювати.",
+      "sources_hint": "RTP (Sporting triunfa na Reboleira), Liga Portugal standings, A Bola, O Jogo, Record, Sudakov stats Transfermarkt",
+      "priority": 2
+    },
+    {
+      "topic": "Після шторму: армія вийшла на розчистку доріг — які регіони ще заблоковані",
+      "type": "news",
+      "angle": "Нова подія після шторму 11 квітня: уряд розгорнув військові команди для розчистки доріг і стежок від повалених дерев. Які регіони найбільше постраждали (фокус на Centro, Norte — не лише Лісабон), де ще є проблеми з проїздом, зв'язок з пожежонебезпечним літом (повалені дерева = паливо для пожеж). НЕ повторювати страховий чек-лист зі вчорашньої статті.",
+      "sources_hint": "RTP (Equipas militares vão ser reforçadas para limpar caminhos e estradas), ANEPC reports, Proteção Civil updates, câmaras municipais affected areas, previous article storm-april-11-damage",
+      "priority": 2
+    },
+    {
+      "topic": "Від тимчасового захисту до постійного дозволу на проживання: покроковий гід для українців",
+      "type": "material",
+      "angle": "Тимчасовий захист (Proteção Temporária) продовжено до березня 2027, але це не вічне рішення. Після нового закону про громадянство (10 років замість 5) українцям критично важливо розуміти: як перейти на autorização de residência, чи зараховується час ПТ у стаж проживання, які документи потрібні, різниця між Art. 77 і Art. 89 шляхами, чи потрібен contrato de trabalho. Компіляція з юридичних джерел, AIMA, адвокатських консультацій.",
+      "sources_hint": "SEF/AIMA official guidance on PT→AR transition, Lei 23/2007 articles 77-89, Ordem dos Advogados immigration FAQ, previous Pashtelka articles (citizenship-law-10-year, aima-april-15-deadline, medico-de-familia for PT status), Ukrainian community Facebook groups for real experiences, ACM (Alto Comissariado para as Migrações)",
+      "priority": 2
+    },
+    {
+      "topic": "Страйк будівельників 17 квітня: чи може імігрант брати участь і що загрожує за прогул",
+      "type": "material",
+      "angle": "Продовження теми labor-reform-crisis. CGTP скликає національну маніфестацію 17 квітня з повним страйком будівельників. Багато українців працюють у будівництві. Практичний гід: право на страйк для іноземних працівників (так, ст. 530 Código do Trabalho), чи можна бути звільненим за участь (ні), чи оплачується страйковий день (ні), чи потрібно повідомляти роботодавця, що робити якщо тиснуть не виходити на страйк. Окремо: зміст вимог CGTP і чому вони важливі для іммігрантів-працівників.",
+      "sources_hint": "Código do Trabalho articles 530-541 (right to strike), CGTP April 17 mobilization details, ACT (labor inspection) FAQ on immigrant worker rights, previous Pashtelka labor-reform-crisis article, SMTC (construction union) statements, legal experts on immigrant strike rights",
+      "priority": 2
+    },
+    {
+      "topic": "IC19 перекриють у понеділок і вівторок + транспортний огляд тижня для Лісабона та Порту",
+      "type": "utility",
+      "angle": "Практика на тиждень: IC19 (головна артерія Лісабон-Сінтра) з обмеженим рухом понеділок-вівторок через ремонт. Плюс: нагадування про страйк метро вівторок 14 квітня (лише одне речення з посиланням на вже опубліковану статтю metro-lisboa-strike-april-14 — НЕ повторювати деталі), дедлайн AIMA 15 квітня. Для Порту: перевірити наявність змін CP та Metro do Porto. Компактний транспортно-логістичний огляд тижня.",
+      "sources_hint": "CMJornal (IC19 obras segunda terça), previous Pashtelka metro-strike-april-14, AIMA deadline april 15, CP comboios schedule changes, Metro do Porto updates, Google Maps traffic patterns",
+      "priority": 2
+    },
+    {
+      "topic": "Залежність від азартних ігор в Португалії: за лютий лікували стільки людей, скільки за півроку раніше",
+      "type": "news",
+      "angle": "Шокуюча статистика: кількість пацієнтів, що лікувалися від ігрової залежності у лютому 2026, перевищила половину всіх пролікованих за весь 2025 рік. Чому це стосується українців: стрес еміграції, доступність онлайн-казино, мовний бар'єр при зверненні по допомогу. Куди звертатися: Linha Vida (1414), SICAD, consultas de adictologia в SNS.",
+      "sources_hint": "RTP (Vício do jogo pessoas tratadas fevereiro), SICAD annual reports, Linha Vida statistics, WHO gambling disorder resources, Portuguese addiction treatment centers",
+      "priority": 2
+    },
+    {
+      "topic": "Національна бібліотека Португалії: безкоштовний ресурс для навчання, роботи та інтеграції, про який мало хто знає",
+      "type": "news",
+      "angle": "Інформаційний привід: смерть директора Бібліотеки Насіональ історика Діогу Рамада Курту — міністр культури висловила співчуття. Але основний фокус статті — практичний: що таке Biblioteca Nacional de Portugal, безкоштовний cartão de leitor для всіх резидентів, цифровий архів BND з доступом з дому, Wi-Fi та простір для навчання й дистанційної роботи, колекція іноземних видань. Для українських студентів, фрілансерів та тих, хто вчить португальську — конкретний безкоштовний ресурс.",
+      "sources_hint": "RTP (Morreu diretor Biblioteca Nacional), Publico (Morreu historiador Diogo Ramada Curto), BNP website (services, cartão de leitor, BND digital), cultural ministry statements",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-12",
+  "created_at": "2026-04-12T06:00:02.765069+00:00"
+}
