@@ -5366,3 +5366,75 @@ Error output: Check stderr output for details
 2026-04-12 07:00:41 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead.jpg (264 KB)
 07:00:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead.md
 2026-04-12 07:00:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead.md
+07:00:42 [pipeline] INFO: Article ready: liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead (Liga Portugal: Sporting за 2 очки від Porto, Судак)
+2026-04-12 07:00:42 [pipeline] INFO: Article ready: liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead (Liga Portugal: Sporting за 2 очки від Porto, Судак)
+07:00:42 [pipeline] INFO: === Article 6/11 ===
+2026-04-12 07:00:42 [pipeline] INFO: === Article 6/11 ===
+07:00:42 [pipeline] INFO: --- Article: [news] Після шторму: армія вийшла на розчистку доріг — які регіони  ---
+2026-04-12 07:00:42 [pipeline] INFO: --- Article: [news] Після шторму: армія вийшла на розчистку доріг — які регіони  ---
+07:00:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:00:42 [asyncio] DEBUG: Using selector: EpollSelector
+07:00:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:00:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:05:06 [pipeline.stages.s2_research] INFO: Research complete: 10869 chars
+2026-04-12 07:05:06 [pipeline.stages.s2_research] INFO: Research complete: 10869 chars
+07:05:06 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:05:06 [asyncio] DEBUG: Using selector: EpollSelector
+07:05:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:05:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:06:23 [pipeline.stages.s3_generate] INFO: Generated: 'Після шторму: армія вийшла на розчистку доріг — які регіони ще заблоковані' (slug=storm-aftermath-military-road-cleanup-blocked-regions, 476 words, 11 sources)
+2026-04-12 07:06:23 [pipeline.stages.s3_generate] INFO: Generated: 'Після шторму: армія вийшла на розчистку доріг — які регіони ще заблоковані' (slug=storm-aftermath-military-road-cleanup-blocked-regions, 476 words, 11 sources)
+07:06:23 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:06:23 [asyncio] DEBUG: Using selector: EpollSelector
+07:06:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:06:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:07:44 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-12 07:07:44 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+07:07:44 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна за структурою та релевантністю, але потребує виправлень:
+
+**Граматичні помилки:**
+1. «від повалених деревами після шторму» — не узгоджено. Має бути: «від дерев, повалених штормом 11 квіт
+2026-04-12 07:07:44 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна за структурою та релевантністю, але потребує виправлень:
+
+**Граматичні помилки:**
+1. «від повалених деревами після шторму» — не узгоджено. Має бути: «від дерев, повалених штормом 11 квіт
+07:07:44 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:07:44 [asyncio] DEBUG: Using selector: EpollSelector
+07:07:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:07:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:08:24 [pipeline.stages.s5_revise] INFO: Revised article: 573 words
+2026-04-12 07:08:24 [pipeline.stages.s5_revise] INFO: Revised article: 573 words
+07:08:24 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-12 07:08:24 [pipeline] INFO: === Review cycle 1/3 complete ===
+07:08:24 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:08:24 [asyncio] DEBUG: Using selector: EpollSelector
+07:08:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:08:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:10:18 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-12 07:10:18 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+07:10:18 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з хорошою структурою, 11 джерелами та практичною цінністю для читача. Дедуплікація пройдена — кут подачі (армія + CIPO + масштаб проблеми) відрізняється від попередніх матеріалів про што
+2026-04-12 07:10:18 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з хорошою структурою, 11 джерелами та практичною цінністю для читача. Дедуплікація пройдена — кут подачі (армія + CIPO + масштаб проблеми) відрізняється від попередніх матеріалів про што
+07:10:18 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-12 07:10:18 [pipeline] INFO: Article approved after 1 revision(s)
+07:10:18 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:10:18 [asyncio] DEBUG: Using selector: EpollSelector
+07:10:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:10:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:10:31 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1160 chars, vocab: 5 words, pt: 258 chars
+2026-04-12 07:10:31 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1160 chars, vocab: 5 words, pt: 258 chars
+07:10:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-12 07:10:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+07:11:32 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-12 07:11:32 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+07:11:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-12 07:11:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+07:11:33 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 100353
+2026-04-12 07:11:33 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 100353
+07:11:33 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 100353 (unknown)
+2026-04-12 07:11:33 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 100353 (unknown)
+07:11:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 100406 3036662
+2026-04-12 07:11:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 100406 3036662
+07:11:33 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/storm-aftermath-military-road-cleanup-blocked-regions.jpg (269 KB)
+2026-04-12 07:11:33 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/storm-aftermath-military-road-cleanup-blocked-regions.jpg (269 KB)
+07:11:33 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/storm-aftermath-military-road-cleanup-blocked-regions.md
+2026-04-12 07:11:33 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/storm-aftermath-military-road-cleanup-blocked-regions.md
