@@ -5600,3 +5600,97 @@ Error output: Check stderr output for details
 2026-04-12 07:42:35 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/construction-strike-april-17-immigrant-rights-guide.jpg (224 KB)
 07:42:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/construction-strike-april-17-immigrant-rights-guide.md
 2026-04-12 07:42:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/construction-strike-april-17-immigrant-rights-guide.md
+07:42:36 [pipeline] INFO: Article ready: construction-strike-april-17-immigrant-rights-guide (Страйк будівельників 17 квітня: чи може іммігрант )
+2026-04-12 07:42:36 [pipeline] INFO: Article ready: construction-strike-april-17-immigrant-rights-guide (Страйк будівельників 17 квітня: чи може іммігрант )
+07:42:36 [pipeline] INFO: === Article 9/11 ===
+2026-04-12 07:42:36 [pipeline] INFO: === Article 9/11 ===
+07:42:36 [pipeline] INFO: --- Article: [utility] IC19 перекриють у понеділок і вівторок + транспортний огляд  ---
+2026-04-12 07:42:36 [pipeline] INFO: --- Article: [utility] IC19 перекриють у понеділок і вівторок + транспортний огляд  ---
+07:42:36 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:42:36 [asyncio] DEBUG: Using selector: EpollSelector
+07:42:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:42:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:46:47 [pipeline.stages.s2_research] INFO: Research complete: 9730 chars
+2026-04-12 07:46:47 [pipeline.stages.s2_research] INFO: Research complete: 9730 chars
+07:46:47 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:46:47 [asyncio] DEBUG: Using selector: EpollSelector
+07:46:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:46:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:47:51 [pipeline.stages.s3_generate] INFO: Generated: 'IC19 на ремонті, метро на страйку: транспортний огляд тижня 14–18 квітня' (slug=ic19-road-works-transport-week-april-14-18-lisbon-porto, 320 words, 10 sources)
+2026-04-12 07:47:51 [pipeline.stages.s3_generate] INFO: Generated: 'IC19 на ремонті, метро на страйку: транспортний огляд тижня 14–18 квітня' (slug=ic19-road-works-transport-week-april-14-18-lisbon-porto, 320 words, 10 sources)
+07:47:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:47:51 [asyncio] DEBUG: Using selector: EpollSelector
+07:47:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:47:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:49:46 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-04-12 07:49:46 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+07:49:46 [pipeline.stages.s4_review] INFO: Feedback: ## Критичне: невідповідність днів тижня і дат у секції IC19
+
+14 квітня 2026 — це **вівторок**, а 15 квітня — **середа**. У підзаголовку і тексті написано «понеділок і вівторок», але дати вказані «14 і
+2026-04-12 07:49:46 [pipeline.stages.s4_review] INFO: Feedback: ## Критичне: невідповідність днів тижня і дат у секції IC19
+
+14 квітня 2026 — це **вівторок**, а 15 квітня — **середа**. У підзаголовку і тексті написано «понеділок і вівторок», але дати вказані «14 і
+07:49:46 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:49:46 [asyncio] DEBUG: Using selector: EpollSelector
+07:49:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:49:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:51:49 [pipeline.stages.s5_revise] INFO: Revised article: 412 words
+2026-04-12 07:51:49 [pipeline.stages.s5_revise] INFO: Revised article: 412 words
+07:51:49 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-12 07:51:49 [pipeline] INFO: === Review cycle 1/3 complete ===
+07:51:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:51:49 [asyncio] DEBUG: Using selector: EpollSelector
+07:51:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:51:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:53:02 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-12 07:53:02 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+07:53:02 [pipeline.stages.s4_review] INFO: Feedback: Сильний практичний огляд з хорошою структурою, чистою українською та якісним цитуванням джерел. Перехресні посилання на існуючі матеріали (метро, AIMA) — правильний підхід для формату тижневого огляду
+2026-04-12 07:53:02 [pipeline.stages.s4_review] INFO: Feedback: Сильний практичний огляд з хорошою структурою, чистою українською та якісним цитуванням джерел. Перехресні посилання на існуючі матеріали (метро, AIMA) — правильний підхід для формату тижневого огляду
+07:53:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:53:02 [asyncio] DEBUG: Using selector: EpollSelector
+07:53:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:53:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:54:00 [pipeline.stages.s5_revise] INFO: Revised article: 477 words
+2026-04-12 07:54:00 [pipeline.stages.s5_revise] INFO: Revised article: 477 words
+07:54:00 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-12 07:54:00 [pipeline] INFO: === Review cycle 2/3 complete ===
+07:54:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:54:00 [asyncio] DEBUG: Using selector: EpollSelector
+07:54:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:54:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:55:51 [pipeline.stages.s4_review] INFO: Review: score=6, approved=False
+2026-04-12 07:55:51 [pipeline.stages.s4_review] INFO: Review: score=6, approved=False
+07:55:51 [pipeline.stages.s4_review] INFO: Feedback: **Критична помилка у дні тижня:** 17 квітня 2026 року — це п'ятниця, а не четвер. Стаття двічі називає цей день четвергом: у вступі ("у четвер страйкують будівельники") та у секції про страйк ("четвер
+2026-04-12 07:55:51 [pipeline.stages.s4_review] INFO: Feedback: **Критична помилка у дні тижня:** 17 квітня 2026 року — це п'ятниця, а не четвер. Стаття двічі називає цей день четвергом: у вступі ("у четвер страйкують будівельники") та у секції про страйк ("четвер
+07:55:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:55:51 [asyncio] DEBUG: Using selector: EpollSelector
+07:55:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:55:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:56:45 [pipeline.stages.s5_revise] INFO: Revised article: 441 words
+2026-04-12 07:56:45 [pipeline.stages.s5_revise] INFO: Revised article: 441 words
+07:56:45 [pipeline] INFO: === Review cycle 3/3 complete ===
+2026-04-12 07:56:45 [pipeline] INFO: === Review cycle 3/3 complete ===
+07:56:45 [pipeline] WARNING: Max review cycles (3) reached, proceeding
+2026-04-12 07:56:45 [pipeline] WARNING: Max review cycles (3) reached, proceeding
+07:56:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 07:56:45 [asyncio] DEBUG: Using selector: EpollSelector
+07:56:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 07:56:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+07:57:08 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1069 chars, vocab: 5 words, pt: 187 chars
+2026-04-12 07:57:08 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1069 chars, vocab: 5 words, pt: 187 chars
+07:57:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-12 07:57:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+07:58:06 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-12 07:58:06 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+07:58:07 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-12 07:58:07 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+07:58:07 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 93210
+2026-04-12 07:58:07 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 93210
+07:58:07 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 93210 (unknown)
+2026-04-12 07:58:07 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 93210 (unknown)
+07:58:07 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 93263 3123776
+2026-04-12 07:58:07 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 93263 3123776
+07:58:07 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ic19-road-works-transport-week-april-14-18-lisbon-porto.jpg (235 KB)
+2026-04-12 07:58:07 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ic19-road-works-transport-week-april-14-18-lisbon-porto.jpg (235 KB)
+07:58:07 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ic19-road-works-transport-week-april-14-18-lisbon-porto.md
+2026-04-12 07:58:07 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ic19-road-works-transport-week-april-14-18-lisbon-porto.md
