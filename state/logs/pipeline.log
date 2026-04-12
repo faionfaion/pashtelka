@@ -5292,3 +5292,77 @@ Error output: Check stderr output for details
 2026-04-12 06:48:38 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/porto-treaty-france-defense-cooperation-enters-force.jpg (218 KB)
 06:48:38 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/porto-treaty-france-defense-cooperation-enters-force.md
 2026-04-12 06:48:38 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/porto-treaty-france-defense-cooperation-enters-force.md
+06:48:39 [pipeline] INFO: Article ready: porto-treaty-france-defense-cooperation-enters-force (Договір Порту набуває чинності: Португалія і Франц)
+2026-04-12 06:48:39 [pipeline] INFO: Article ready: porto-treaty-france-defense-cooperation-enters-force (Договір Порту набуває чинності: Португалія і Франц)
+06:48:39 [pipeline] INFO: === Article 5/11 ===
+2026-04-12 06:48:39 [pipeline] INFO: === Article 5/11 ===
+06:48:39 [pipeline] INFO: --- Article: [news] Liga Portugal Jornada 29: Sporting виграв і тисне на лідера  ---
+2026-04-12 06:48:39 [pipeline] INFO: --- Article: [news] Liga Portugal Jornada 29: Sporting виграв і тисне на лідера  ---
+06:48:39 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:48:39 [asyncio] DEBUG: Using selector: EpollSelector
+06:48:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:48:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:53:13 [pipeline.stages.s2_research] INFO: Research complete: 9300 chars
+2026-04-12 06:53:13 [pipeline.stages.s2_research] INFO: Research complete: 9300 chars
+06:53:13 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:53:13 [asyncio] DEBUG: Using selector: EpollSelector
+06:53:13 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:53:13 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:54:33 [pipeline.stages.s3_generate] INFO: Generated: 'Liga Portugal Jornada 29: Sporting переміг і вже за 2 очки від лідера — Судаков на лавці, дербі через тиждень' (slug=liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead, 493 words, 10 sources)
+2026-04-12 06:54:33 [pipeline.stages.s3_generate] INFO: Generated: 'Liga Portugal Jornada 29: Sporting переміг і вже за 2 очки від лідера — Судаков на лавці, дербі через тиждень' (slug=liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead, 493 words, 10 sources)
+06:54:33 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:54:33 [asyncio] DEBUG: Using selector: EpollSelector
+06:54:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:54:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:55:52 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-12 06:55:52 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+06:55:52 [pipeline.stages.s4_review] INFO: Feedback: Добра стаття з чіткою структурою, релевантна для аудиторії, гарний зв'язок із попереднім матеріалом. Але потребує доопрацювання перед публікацією:
+
+**КОНТЕКСТ ДЛЯ НОВОПРИБУЛИХ (пункт 11 — основна проб
+2026-04-12 06:55:52 [pipeline.stages.s4_review] INFO: Feedback: Добра стаття з чіткою структурою, релевантна для аудиторії, гарний зв'язок із попереднім матеріалом. Але потребує доопрацювання перед публікацією:
+
+**КОНТЕКСТ ДЛЯ НОВОПРИБУЛИХ (пункт 11 — основна проб
+06:55:52 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:55:52 [asyncio] DEBUG: Using selector: EpollSelector
+06:55:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:55:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:58:05 [pipeline.stages.s5_revise] INFO: Revised article: 565 words
+2026-04-12 06:58:05 [pipeline.stages.s5_revise] INFO: Revised article: 565 words
+06:58:05 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-12 06:58:05 [pipeline] INFO: === Review cycle 1/3 complete ===
+06:58:05 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:58:05 [asyncio] DEBUG: Using selector: EpollSelector
+06:58:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:58:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:59:19 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-12 06:59:19 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+06:59:19 [pipeline.stages.s4_review] INFO: Feedback: Якісна спортивна стаття з сильним кутом для діаспори та ретельним sourcing. Декілька дрібних зауважень:
+
+1. **«Jornada 29»** — потрібно пояснити: «Jornada 29 (29-й тур)». Новоприбулий українець не зна
+2026-04-12 06:59:19 [pipeline.stages.s4_review] INFO: Feedback: Якісна спортивна стаття з сильним кутом для діаспори та ретельним sourcing. Декілька дрібних зауважень:
+
+1. **«Jornada 29»** — потрібно пояснити: «Jornada 29 (29-й тур)». Новоприбулий українець не зна
+06:59:19 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-12 06:59:19 [pipeline] INFO: Article approved after 1 revision(s)
+06:59:19 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 06:59:19 [asyncio] DEBUG: Using selector: EpollSelector
+06:59:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 06:59:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:59:46 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1014 chars, vocab: 5 words, pt: 222 chars
+2026-04-12 06:59:46 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1014 chars, vocab: 5 words, pt: 222 chars
+06:59:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-12 06:59:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+07:00:40 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-12 07:00:40 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+07:00:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-12 07:00:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+07:00:41 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 100467
+2026-04-12 07:00:41 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 100467
+07:00:41 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 100467 (unknown)
+2026-04-12 07:00:41 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 100467 (unknown)
+07:00:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 100520 3336911
+2026-04-12 07:00:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 100520 3336911
+07:00:41 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead.jpg (264 KB)
+2026-04-12 07:00:41 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead.jpg (264 KB)
+07:00:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead.md
+2026-04-12 07:00:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead.md
