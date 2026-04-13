@@ -6427,3 +6427,39 @@ Error output: Check stderr output for details
 2026-04-13 12:18:45 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 106771 3007001
 2026-04-13 12:18:45 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/biometric-collection-suspended-portugal-airports-ees-ukrainians.jpg (265 KB)
 2026-04-13 12:18:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/biometric-collection-suspended-portugal-airports-ees-ukrainians.md
+2026-04-13 12:18:45 [pipeline] INFO: Article ready: biometric-collection-suspended-portugal-airports-ees-ukrainians (Біометрію знову призупинили в аеропортах Португалі)
+2026-04-13 12:18:45 [pipeline] INFO: === Article 6/11 ===
+2026-04-13 12:18:45 [pipeline] INFO: --- Article: [material] Хвороби, що передаються статевим шляхом, зростають у Португа ---
+2026-04-13 12:18:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:18:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:22:59 [pipeline.stages.s2_research] INFO: Research complete: 11736 chars
+2026-04-13 12:22:59 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:22:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:25:13 [pipeline.stages.s3_generate] INFO: Generated: 'Сифіліс, гонорея, ВІЛ: кількість випадків зростає — де в Португалії безкоштовно здати аналізи без документів' (slug=sti-rising-portugal-free-testing-cad-prep-guide, 1212 words, 16 sources)
+2026-04-13 12:25:13 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:25:13 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:26:38 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-13 12:26:38 [pipeline.stages.s4_review] INFO: Feedback: Стаття високоякісна, добре структурована і надзвичайно корисна для цільової аудиторії. Є кілька конкретних проблем, які потрібно виправити перед публікацією:
+
+**МОВА (критично):**
+1. «Іммігрантів/іммі
+2026-04-13 12:26:38 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:26:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:29:18 [pipeline.stages.s5_revise] INFO: Revised article: 1260 words
+2026-04-13 12:29:18 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-13 12:29:18 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:29:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:30:38 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-13 12:30:38 [pipeline.stages.s4_review] INFO: Feedback: Сильний, практичний матеріал із високою цінністю для цільової аудиторії. Джерела солідні (RTP, Público, INSA, DGS, ECDC), португальські терміни пояснені на першому вживанні, таблиці з адресами та теле
+2026-04-13 12:30:38 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-13 12:30:38 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:30:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:31:01 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1138 chars, vocab: 5 words, pt: 211 chars
+2026-04-13 12:31:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-13 12:31:58 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-13 12:31:59 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-13 12:31:59 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 99879
+2026-04-13 12:31:59 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 99879 (unknown)
+2026-04-13 12:31:59 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 99932 3033237
+2026-04-13 12:31:59 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sti-rising-portugal-free-testing-cad-prep-guide.jpg (243 KB)
+2026-04-13 12:31:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sti-rising-portugal-free-testing-cad-prep-guide.md
