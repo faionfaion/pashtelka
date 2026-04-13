@@ -6586,3 +6586,40 @@ Error output: Check stderr output for details
 2026-04-13 13:09:00 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 106287 3311663
 2026-04-13 13:09:00 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sporting-arsenal-champions-league-qf-where-to-watch-guide.jpg (264 KB)
 2026-04-13 13:09:00 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sporting-arsenal-champions-league-qf-where-to-watch-guide.md
+2026-04-13 13:09:01 [pipeline] INFO: Article ready: sporting-arsenal-champions-league-qf-where-to-watch-guide (Sporting проти Arsenal у чвертьфіналі Ліги чемпіон)
+2026-04-13 13:09:01 [pipeline] INFO: === Article 10/11 ===
+2026-04-13 13:09:01 [pipeline] INFO: --- Article: [utility] Погода на тиждень 14-18 квітня: після шторму — стабілізація, ---
+2026-04-13 13:09:01 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:09:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:13:05 [pipeline.stages.s2_research] INFO: Research complete: 11465 chars
+2026-04-13 13:13:05 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:13:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:14:18 [pipeline.stages.s3_generate] INFO: Generated: 'Погода на тиждень 14–18 квітня: після шторму — потепління, вітер і нічний холод' (slug=weather-forecast-april-14-18-post-storm-lisbon-porto-faro, 410 words, 12 sources)
+2026-04-13 13:14:18 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:14:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:15:13 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-13 13:15:13 [pipeline.stages.s4_review] INFO: Feedback: Добре структурована, практична стаття з якісними джерелами. Дедуплікації немає — попередній прогноз був на вихідні 11–12, цей на тиждень 14–18. Кілька дрібних правок перед публікацією:
+
+1. **QualAr — 
+2026-04-13 13:15:13 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:15:13 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:15:40 [pipeline.stages.s5_revise] INFO: Revised article: 447 words
+2026-04-13 13:15:40 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-13 13:15:40 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:15:40 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:16:34 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-13 13:16:34 [pipeline.stages.s4_review] INFO: Feedback: Якісна утилітарна стаття — добре структурована, практична, із джерелами. Кілька зауважень перед публікацією:
+
+1. **Дублювання заголовка і типу.** Title і Type прописані двічі на початку — явна помилка
+2026-04-13 13:16:34 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-13 13:16:34 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:16:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:16:54 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1066 chars, vocab: 5 words, pt: 212 chars
+2026-04-13 13:16:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-13 13:17:54 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-13 13:17:55 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-13 13:17:55 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 108754
+2026-04-13 13:17:55 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 108754 (unknown)
+2026-04-13 13:17:55 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 108807 2748861
+2026-04-13 13:17:55 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/weather-forecast-april-14-18-post-storm-lisbon-porto-faro.jpg (248 KB)
+2026-04-13 13:17:55 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/weather-forecast-april-14-18-post-storm-lisbon-porto-faro.md
