@@ -6463,3 +6463,40 @@ Error output: Check stderr output for details
 2026-04-13 12:31:59 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 99932 3033237
 2026-04-13 12:31:59 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sti-rising-portugal-free-testing-cad-prep-guide.jpg (243 KB)
 2026-04-13 12:31:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sti-rising-portugal-free-testing-cad-prep-guide.md
+2026-04-13 12:31:59 [pipeline] INFO: Article ready: sti-rising-portugal-free-testing-cad-prep-guide (Сифіліс, гонорея, ВІЛ: кількість випадків зростає )
+2026-04-13 12:32:00 [pipeline] INFO: === Article 7/11 ===
+2026-04-13 12:32:00 [pipeline] INFO: --- Article: [news] Насильство над літніми людьми: нове дослідження виявило сист ---
+2026-04-13 12:32:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:32:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:35:28 [pipeline.stages.s2_research] INFO: Research complete: 10989 chars
+2026-04-13 12:35:28 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:35:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:36:49 [pipeline.stages.s3_generate] INFO: Generated: 'Насильство над літніми людьми в Португалії: дослідження FMUP виявило системні прогалини — куди звертатися українським родинам' (slug=elder-abuse-portugal-fmup-study-reporting-barriers-ukrainian-guide, 613 words, 10 sources)
+2026-04-13 12:36:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:36:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:38:03 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-13 12:38:03 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з якісною джерельною базою та високою практичною цінністю для аудиторії. Кілька зауважень для фінального полірування:
+
+1. **Граматична помилка:** «якщо португальська мовою важко говорити
+2026-04-13 12:38:03 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:38:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:39:16 [pipeline.stages.s5_revise] INFO: Revised article: 644 words
+2026-04-13 12:39:16 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-13 12:39:16 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:39:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:40:43 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-13 12:40:43 [pipeline.stages.s4_review] INFO: Feedback: Сильний, добре структурований матеріал із високою практичною цінністю для української аудиторії. Дрібні зауваження:
+
+1. **Подвійний тип у шапці:** Вказано одночасно Type: news і Type: material — залиш
+2026-04-13 12:40:43 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-13 12:40:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:40:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:41:09 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1275 chars, vocab: 5 words, pt: 253 chars
+2026-04-13 12:41:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-13 12:42:04 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-13 12:42:05 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-13 12:42:05 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 90730
+2026-04-13 12:42:05 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 90730 (unknown)
+2026-04-13 12:42:05 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 90783 2872224
+2026-04-13 12:42:05 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/elder-abuse-portugal-fmup-study-reporting-barriers-ukrainian-guide.jpg (221 KB)
+2026-04-13 12:42:05 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/elder-abuse-portugal-fmup-study-reporting-barriers-ukrainian-guide.md
