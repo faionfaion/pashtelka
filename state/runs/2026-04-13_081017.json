@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-04-13_081017",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "hormuz-blockade-oil-100-gas-prices-portugal-week-april-14, hungary-election-results-orban-loses-tisza-supermajority-ukraine-eu-sanctions, eu-airports-jet-fuel-shortage-summer-tickets-passenger-rights, labor-reform-employers-accuse-ugt-bad-faith-april-17-strike",
+  "author": "Pastelka News",
+  "duration_s": 3602.6,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 538.9,
+      "error": null
+    },
+    {
+      "name": "research:Блокада Ормузької протоки стар",
+      "status": "ok",
+      "duration_s": 299.2,
+      "error": null
+    },
+    {
+      "name": "generate:Блокада Ормузької протоки стар",
+      "status": "ok",
+      "duration_s": 109.8,
+      "error": null
+    },
+    {
+      "name": "review:Блокада Ормузької протоки стар",
+      "status": "ok",
+      "duration_s": 308.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Блокада Ормузької протоки стар",
+      "status": "ok",
+      "duration_s": 14.5,
+      "error": null
+    },
+    {
+      "name": "save:Блокада Ормузької протоки стар",
+      "status": "ok",
+      "duration_s": 59.2,
+      "error": null
+    },
+    {
+      "name": "research:Орбан програв? Результати вибо",
+      "status": "ok",
+      "duration_s": 187.1,
+      "error": null
+    },
+    {
+      "name": "generate:Орбан програв? Результати вибо",
+      "status": "ok",
+      "duration_s": 80.9,
+      "error": null
+    },
+    {
+      "name": "review:Орбан програв? Результати вибо",
+      "status": "ok",
+      "duration_s": 199.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Орбан програв? Результати вибо",
+      "status": "ok",
+      "duration_s": 16.6,
+      "error": null
+    },
+    {
+      "name": "save:Орбан програв? Результати вибо",
+      "status": "ok",
+      "duration_s": 64.5,
+      "error": null
+    },
+    {
+      "name": "research:Аеропорти Європи можуть залиши",
+      "status": "ok",
+      "duration_s": 238.7,
+      "error": null
+    },
+    {
+      "name": "generate:Аеропорти Європи можуть залиши",
+      "status": "ok",
+      "duration_s": 79.9,
+      "error": null
+    },
+    {
+      "name": "review:Аеропорти Європи можуть залиши",
+      "status": "ok",
+      "duration_s": 232.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Аеропорти Європи можуть залиши",
+      "status": "ok",
+      "duration_s": 14.8,
+      "error": null
+    },
+    {
+      "name": "save:Аеропорти Європи можуть залиши",
+      "status": "ok",
+      "duration_s": 57.5,
+      "error": null
+    },
+    {
+      "name": "research:Конфедерації роботодавців звин",
+      "status": "ok",
+      "duration_s": 209.0,
+      "error": null
+    },
+    {
+      "name": "generate:Конфедерації роботодавців звин",
+      "status": "ok",
+      "duration_s": 88.1,
+      "error": null
+    },
+    {
+      "name": "review:Конфедерації роботодавців звин",
+      "status": "ok",
+      "duration_s": 186.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Конфедерації роботодавців звин",
+      "status": "ok",
+      "duration_s": 18.1,
+      "error": null
+    },
+    {
+      "name": "save:Конфедерації роботодавців звин",
+      "status": "ok",
+      "duration_s": 55.7,
+      "error": null
+    },
+    {
+      "name": "research:Збір біометричних даних знову ",
+      "status": "ok",
+      "duration_s": 252.8,
+      "error": null
+    },
+    {
+      "name": "generate:Збір біометричних даних знову ",
+      "status": "ok",
+      "duration_s": 66.9,
+      "error": null
+    },
+    {
+      "name": "review:Збір біометричних даних знову ",
+      "status": "ok",
+      "duration_s": 167.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Збір біометричних даних знову ",
+      "status": "failed",
+      "duration_s": 2.0,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Хвороби, що передаються статев",
+      "status": "failed",
+      "duration_s": 2.5,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Насильство над літніми людьми:",
+      "status": "failed",
+      "duration_s": 2.2,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Великдень на чужині: Росія пор",
+      "status": "failed",
+      "duration_s": 3.1,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Sporting vs Arsenal у чвертьфі",
+      "status": "failed",
+      "duration_s": 2.1,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Погода на тиждень 14-18 квітня",
+      "status": "failed",
+      "duration_s": 2.0,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Культурний тиждень 14-18 квітн",
+      "status": "failed",
+      "duration_s": 2.3,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 39.9,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

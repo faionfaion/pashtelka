@@ -6078,3 +6078,352 @@ Error output: Check stderr output for details
 2026-04-13 08:01:13 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 112781 3063162
 2026-04-13 08:01:13 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/labor-reform-employers-accuse-ugt-bad-faith-april-17-strike.jpg (276 KB)
 2026-04-13 08:01:14 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/labor-reform-employers-accuse-ugt-bad-faith-april-17-strike.md
+2026-04-13 08:01:14 [pipeline] INFO: Article ready: labor-reform-employers-accuse-ugt-bad-faith-april-17-strike (Роботодавці звинуватили UGT у недобросовісності — )
+2026-04-13 08:01:14 [pipeline] INFO: === Article 5/11 ===
+2026-04-13 08:01:14 [pipeline] INFO: --- Article: [news] Збір біометричних даних знову призупинили в аеропортах Порту ---
+2026-04-13 08:01:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:01:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:05:27 [pipeline.stages.s2_research] INFO: Research complete: 10608 chars
+2026-04-13 08:05:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:05:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:06:34 [pipeline.stages.s3_generate] INFO: Generated: 'Біометрію знову призупинили в аеропортах Португалії: що це означає для українців' (slug=biometrics-suspended-airports-portugal-ees-ukrainians-guide, 501 words, 8 sources)
+2026-04-13 08:06:34 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:06:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:07:44 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-13 08:07:44 [pipeline.stages.s4_review] INFO: Feedback: Сильна, добре структурована стаття з відмінною джерельною базою та високою практичною цінністю для аудиторії. Дедуплікації не виявлено. Кілька дрібниць для доопрацювання перед публікацією:
+
+1. **«auto
+2026-04-13 08:07:44 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:07:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:08:10 [pipeline.stages.s5_revise] INFO: Revised article: 545 words
+2026-04-13 08:08:10 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-13 08:08:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:08:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:09:21 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-13 08:09:21 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття, публікуємо з мінімальними зауваженнями.
+
+**Що добре:**
+- Бездоганна структура «перевернутої піраміди»: лід одразу відповідає на «що?» і «чому це важливо?»
+- Усі португальські терміни по
+2026-04-13 08:09:21 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-13 08:09:21 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:09:21 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:09:23 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:23 [pipeline] ERROR: Failed to generate article: Збір біометричних даних знову призупинили в аеропортах Порту
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 144, in _generate_one_article
+    s6_generate_tg.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s6_generate_tg.py", line 21, in run
+    result = structured_query(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 121, in structured_query
+    text = asyncio.run(
+           ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 92, in _async_structured
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:23 [pipeline] INFO: === Article 6/11 ===
+2026-04-13 08:09:23 [pipeline] INFO: --- Article: [material] Хвороби, що передаються статевим шляхом, зростають у Португа ---
+2026-04-13 08:09:23 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:09:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:09:25 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:25 [pipeline] ERROR: Failed to generate article: Хвороби, що передаються статевим шляхом, зростають у Португа
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 192, in agent_query
+    result = asyncio.run(
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 170, in _async_agent
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:25 [pipeline] INFO: === Article 7/11 ===
+2026-04-13 08:09:25 [pipeline] INFO: --- Article: [news] Насильство над літніми людьми: нове дослідження виявило сист ---
+2026-04-13 08:09:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:09:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:09:27 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:27 [pipeline] ERROR: Failed to generate article: Насильство над літніми людьми: нове дослідження виявило сист
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 192, in agent_query
+    result = asyncio.run(
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 170, in _async_agent
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:27 [pipeline] INFO: === Article 8/11 ===
+2026-04-13 08:09:27 [pipeline] INFO: --- Article: [material] Великдень на чужині: Росія порушила перемир'я, рідні далеко  ---
+2026-04-13 08:09:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:09:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:09:30 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:30 [pipeline] ERROR: Failed to generate article: Великдень на чужині: Росія порушила перемир'я, рідні далеко 
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 192, in agent_query
+    result = asyncio.run(
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 170, in _async_agent
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:30 [pipeline] INFO: === Article 9/11 ===
+2026-04-13 08:09:30 [pipeline] INFO: --- Article: [news] Sporting vs Arsenal у чвертьфіналі Ліги чемпіонів: де дивити ---
+2026-04-13 08:09:30 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:09:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:09:32 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:32 [pipeline] ERROR: Failed to generate article: Sporting vs Arsenal у чвертьфіналі Ліги чемпіонів: де дивити
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 192, in agent_query
+    result = asyncio.run(
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 170, in _async_agent
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:32 [pipeline] INFO: === Article 10/11 ===
+2026-04-13 08:09:32 [pipeline] INFO: --- Article: [utility] Погода на тиждень 14-18 квітня: після шторму — стабілізація, ---
+2026-04-13 08:09:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:09:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:09:35 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:35 [pipeline] ERROR: Failed to generate article: Погода на тиждень 14-18 квітня: після шторму — стабілізація,
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 192, in agent_query
+    result = asyncio.run(
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 170, in _async_agent
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:35 [pipeline] INFO: === Article 11/11 ===
+2026-04-13 08:09:35 [pipeline] INFO: --- Article: [guide] Культурний тиждень 14-18 квітня: виставка Маіоліно в Лісабон ---
+2026-04-13 08:09:35 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 08:09:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 08:09:37 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:37 [pipeline] ERROR: Failed to generate article: Культурний тиждень 14-18 квітня: виставка Маіоліно в Лісабон
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 192, in agent_query
+    result = asyncio.run(
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 170, in _async_agent
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-13 08:09:37 [pipeline] INFO: Generated 4/11 articles
+2026-04-13 08:09:39 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-04-13 08:09:39 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-13 08:10:17 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-04-13 08:10:17 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/labor-reform-employers-accuse-ugt-bad-faith-april-17-strike/ (200 OK, title found)
+2026-04-13 08:10:17 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-13_081017.json
+2026-04-13 08:10:17 [pipeline] INFO: Batch complete: 4 articles
+2026-04-13 12:09:28 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-04-13 (11 articles)
+2026-04-13 12:09:28 [pipeline] INFO: Editorial plan: 11 topics
+2026-04-13 12:09:28 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-13 12:09:28 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-13 12:09:28 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-13 12:09:28 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-13 12:09:28 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-13 12:09:28 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-13 12:09:28 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-13 12:09:28 [pipeline.stages.s1_collect] INFO: Context: 63 RSS items, 64 existing articles
+2026-04-13 12:09:28 [pipeline] INFO: === Article 1/11 === SKIP (already written): Блокада Ормузької протоки стартує сьогодні: нафта 
+2026-04-13 12:09:28 [pipeline] INFO: === Article 2/11 === SKIP (already written): Орбан програв? Результати виборів в Угорщині та що
+2026-04-13 12:09:28 [pipeline] INFO: === Article 3/11 === SKIP (already written): Аеропорти Європи можуть залишитися без авіапалива 
+2026-04-13 12:09:28 [pipeline] INFO: === Article 4/11 === SKIP (already written): Конфедерації роботодавців звинуватили UGT у недобр
+2026-04-13 12:09:28 [pipeline] INFO: === Article 5/11 ===
+2026-04-13 12:09:28 [pipeline] INFO: --- Article: [news] Збір біометричних даних знову призупинили в аеропортах Порту ---
+2026-04-13 12:09:29 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:09:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:13:09 [pipeline.stages.s2_research] INFO: Research complete: 11544 chars
+2026-04-13 12:13:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:13:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:14:17 [pipeline.stages.s3_generate] INFO: Generated: 'Біометрію знову призупинили в аеропортах Португалії: що це означає для українців' (slug=biometric-collection-suspended-portugal-airports-ees-ukrainians, 457 words, 7 sources)
+2026-04-13 12:14:17 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:14:17 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:15:17 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-13 12:15:17 [pipeline.stages.s4_review] INFO: Feedback: Якісна, актуальна стаття з чіткою структурою та практичною цінністю для аудиторії. Кілька зауважень для фінального доопрацювання:
+
+1. **AIMA без розшифровки.** Наприкінці згадано «дедлайн AIMA» без по
+2026-04-13 12:15:17 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:15:17 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:16:17 [pipeline.stages.s5_revise] INFO: Revised article: 535 words
+2026-04-13 12:16:17 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-13 12:16:17 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:16:17 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:17:33 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-13 12:17:33 [pipeline.stages.s4_review] INFO: Feedback: Якісна, добре структурована стаття з високою практичною цінністю для аудиторії. Кілька зауважень для фінального полірування:
+
+1. **Джерело для додатку «Travel to Europe»**: Стаття рекомендує завантажи
+2026-04-13 12:17:33 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-13 12:17:33 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:17:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:17:48 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1173 chars, vocab: 5 words, pt: 208 chars
+2026-04-13 12:17:48 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-13 12:18:44 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-13 12:18:45 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-13 12:18:45 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 106718
+2026-04-13 12:18:45 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 106718 (unknown)
+2026-04-13 12:18:45 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 106771 3007001
+2026-04-13 12:18:45 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/biometric-collection-suspended-portugal-airports-ees-ukrainians.jpg (265 KB)
+2026-04-13 12:18:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/biometric-collection-suspended-portugal-airports-ees-ukrainians.md
