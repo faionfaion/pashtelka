@@ -6500,3 +6500,36 @@ Error output: Check stderr output for details
 2026-04-13 12:42:05 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 90783 2872224
 2026-04-13 12:42:05 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/elder-abuse-portugal-fmup-study-reporting-barriers-ukrainian-guide.jpg (221 KB)
 2026-04-13 12:42:05 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/elder-abuse-portugal-fmup-study-reporting-barriers-ukrainian-guide.md
+2026-04-13 12:42:05 [pipeline] INFO: Article ready: elder-abuse-portugal-fmup-study-reporting-barriers-ukrainian-guide (Насильство над літніми людьми в Португалії: дослід)
+2026-04-13 12:42:05 [pipeline] INFO: === Article 8/11 ===
+2026-04-13 12:42:05 [pipeline] INFO: --- Article: [material] Великдень на чужині: Росія порушила перемир'я, рідні далеко  ---
+2026-04-13 12:42:05 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:42:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:45:34 [pipeline.stages.s2_research] INFO: Research complete: 13701 chars
+2026-04-13 12:45:34 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:45:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:47:50 [pipeline.stages.s3_generate] INFO: Generated: 'Великдень на чужині: 469 ударів, тривога за рідних — де в Португалії отримати безкоштовну психологічну допомогу' (slug=easter-anxiety-free-mental-health-support-ukrainians-portugal, 1259 words, 21 sources)
+2026-04-13 12:47:50 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:47:50 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:49:02 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-13 12:49:02 [pipeline.stages.s4_review] INFO: Feedback: Сильний, своєчасний і надзвичайно практичний матеріал. Структура логічна: емоційний хук → наукове обґрунтування → конкретні ресурси → зведена таблиця → заклик до дії. Джерела солідні (Lancet, ВООЗ, Pú
+2026-04-13 12:49:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:49:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:51:33 [pipeline.stages.s5_revise] INFO: Revised article: 1290 words
+2026-04-13 12:51:33 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-13 12:51:33 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:51:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:52:59 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-13 12:52:59 [pipeline.stages.s4_review] INFO: Feedback: Сильний, своєчасний і практично корисний матеріал. Джерела солідні (Lancet, ВООЗ, Público), структура чітка, зведена таблиця — відмінний елемент для збереження. Дедуплікації немає: стаття про 469 удар
+2026-04-13 12:52:59 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-13 12:52:59 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:52:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:53:20 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1098 chars, vocab: 5 words, pt: 177 chars
+2026-04-13 12:53:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-13 12:54:13 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-13 12:54:14 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-13 12:54:14 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 93802
+2026-04-13 12:54:14 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 93802 (unknown)
+2026-04-13 12:54:14 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 93855 2981075
+2026-04-13 12:54:14 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/easter-anxiety-free-mental-health-support-ukrainians-portugal.jpg (233 KB)
+2026-04-13 12:54:14 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/easter-anxiety-free-mental-health-support-ukrainians-portugal.md
