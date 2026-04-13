@@ -6533,3 +6533,56 @@ Error output: Check stderr output for details
 2026-04-13 12:54:14 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 93855 2981075
 2026-04-13 12:54:14 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/easter-anxiety-free-mental-health-support-ukrainians-portugal.jpg (233 KB)
 2026-04-13 12:54:14 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/easter-anxiety-free-mental-health-support-ukrainians-portugal.md
+2026-04-13 12:54:14 [pipeline] INFO: Article ready: easter-anxiety-free-mental-health-support-ukrainians-portugal (Великдень на чужині: 469 ударів, тривога за рідних)
+2026-04-13 12:54:14 [pipeline] INFO: === Article 9/11 ===
+2026-04-13 12:54:14 [pipeline] INFO: --- Article: [news] Sporting vs Arsenal у чвертьфіналі Ліги чемпіонів: де дивити ---
+2026-04-13 12:54:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:54:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 12:58:51 [pipeline.stages.s2_research] INFO: Research complete: 11426 chars
+2026-04-13 12:58:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 12:58:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:00:24 [pipeline.stages.s3_generate] INFO: Generated: 'Sporting проти Arsenal у чвертьфіналі Ліги чемпіонів: де дивитися, що знати і про що говорити з колегами' (slug=sporting-arsenal-champions-league-qf-where-to-watch-guide, 587 words, 12 sources)
+2026-04-13 13:00:24 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:00:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:01:51 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-13 13:01:51 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, джерелами та практичною цінністю. Потрібні точкові правки перед публікацією:
+
+**1. Фактична неточність — сценарії проходження:**
+«забити щонайменше два м'ячі, щоб пройти д
+2026-04-13 13:01:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:01:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:02:59 [pipeline.stages.s5_revise] INFO: Revised article: 571 words
+2026-04-13 13:02:59 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-13 13:02:59 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:02:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:04:30 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-13 13:04:30 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована, практична і релевантна для аудиторії. Проте є критична помилка та кілька дрібних зауважень:
+
+**КРИТИЧНО — невідповідність дати і дня тижня:**
+Стаття пише «У вівторо
+2026-04-13 13:04:30 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:04:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:05:56 [pipeline.stages.s5_revise] INFO: Revised article: 590 words
+2026-04-13 13:05:56 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-13 13:05:56 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:05:56 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:07:12 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-13 13:07:12 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна: унікальна тема (прев'ю матчу CL), чудова практична цінність, хороші джерела, правильна структура. Потрібні точкові виправлення для публікації:
+
+**Контекст для іммігрантів (check
+2026-04-13 13:07:12 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:07:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:07:42 [pipeline.stages.s5_revise] INFO: Revised article: 617 words
+2026-04-13 13:07:42 [pipeline] INFO: === Review cycle 3/3 complete ===
+2026-04-13 13:07:42 [pipeline] WARNING: Max review cycles (3) reached, proceeding
+2026-04-13 13:07:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 13:07:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 13:07:57 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1187 chars, vocab: 5 words, pt: 256 chars
+2026-04-13 13:07:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-13 13:08:59 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-13 13:09:00 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-13 13:09:00 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 106234
+2026-04-13 13:09:00 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 106234 (unknown)
+2026-04-13 13:09:00 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 106287 3311663
+2026-04-13 13:09:00 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sporting-arsenal-champions-league-qf-where-to-watch-guide.jpg (264 KB)
+2026-04-13 13:09:00 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sporting-arsenal-champions-league-qf-where-to-watch-guide.md
