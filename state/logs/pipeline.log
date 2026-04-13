@@ -5973,3 +5973,38 @@ Error output: Check stderr output for details
 2026-04-13 07:32:24 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 115318 3005046
 2026-04-13 07:32:24 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/hormuz-blockade-oil-100-gas-prices-portugal-week-april-14.jpg (286 KB)
 2026-04-13 07:32:24 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hormuz-blockade-oil-100-gas-prices-portugal-week-april-14.md
+2026-04-13 07:32:25 [pipeline] INFO: Article ready: hormuz-blockade-oil-100-gas-prices-portugal-week-april-14 (Блокада Ормузу стартує сьогодні: нафта перевищила )
+2026-04-13 07:32:25 [pipeline] INFO: === Article 2/11 ===
+2026-04-13 07:32:25 [pipeline] INFO: --- Article: [news] Орбан програв? Результати виборів в Угорщині та що змінюєтьс ---
+2026-04-13 07:32:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:32:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:35:32 [pipeline.stages.s2_research] INFO: Research complete: 9211 chars
+2026-04-13 07:35:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:35:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:36:53 [pipeline.stages.s3_generate] INFO: Generated: 'Орбан програв: Tisza здобула конституційну більшість в Угорщині — що це означає для санкцій проти РФ і €90 млрд для України' (slug=hungary-election-results-orban-loses-tisza-supermajority-ukraine-eu-sanctions, 499 words, 10 sources)
+2026-04-13 07:36:53 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:36:53 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:38:07 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-13 07:38:07 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, джерелами та актуальністю — це природне продовження вчорашньої передвиборчої публікації, тому дедуплікація OK. Однак є кілька проблем, які потребують виправлення перед пуб
+2026-04-13 07:38:07 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:38:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:38:45 [pipeline.stages.s5_revise] INFO: Revised article: 520 words
+2026-04-13 07:38:45 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-13 07:38:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:38:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:40:12 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-13 07:40:12 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою перевернутої піраміди та потужним португальським кутом. Кілька зауважень для фінального шліфування:
+
+1. **Сибіга без посади:** «Міністр Андрій Сибіга» — потрібно: «Мі
+2026-04-13 07:40:12 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-13 07:40:12 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:40:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:40:29 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1100 chars, vocab: 5 words, pt: 208 chars
+2026-04-13 07:40:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-13 07:41:32 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-13 07:41:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-13 07:41:33 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 89597
+2026-04-13 07:41:33 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 89597 (unknown)
+2026-04-13 07:41:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 89650 2916009
+2026-04-13 07:41:33 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/hungary-election-results-orban-loses-tisza-supermajority-ukraine-eu-sanctions.jpg (220 KB)
+2026-04-13 07:41:33 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hungary-election-results-orban-loses-tisza-supermajority-ukraine-eu-sanctions.md
