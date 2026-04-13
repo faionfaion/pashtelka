@@ -49,14 +49,14 @@ source_names:
   - "Montepio"
 image: "/images/tenant-kills-landlord-marinha-grande-rent-rights-guide.jpg"
 tg_post: |
-  <b>Орендар убив орендодавця й вистрибнув з 7-го поверху — через подвоєння оренди в Маріня-Гранді</b>
+  <b>🔴 Орендар убив орендодавця через подвоєння ренти — і вистрибнув з 7-го поверху.</b>
   
-  У ніч на <b>10 квітня</b> в <b>Маріня-Гранді</b> (округ Лейрія) <b>60-річний</b> орендар зарізав <b>63-річного</b> власника квартири <b>Карлуша Лограду</b> — колишнього члена муніципальної ради. Мотив — орендодавець підвищив ренту <b>удвічі</b>, орендар відмовився платити й отримав повідомлення про <b>виселення</b>. Після вбивства нападник вистрибнув з вікна кухні <b>7-го поверху</b> — обидва загинули.
+  У ніч з 9 на 10 квітня в <b>Маріня-Гранді</b> (Лейрія) 60-річний орендар наніс смертельне ножове поранення <b>Карлушу Лограду</b> — 63-річному підприємцю та колишньому члену муніципальної ради. Мотив — конфлікт через <b>підвищення оренди вдвічі</b> та повідомлення про виселення. Після вбивства нападник вистрибнув з вікна кухні — <b>обидва загинули</b>.
   
   <a href="https://pastelka.news/tenant-kills-landlord-marinha-grande-rent-rights-guide/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>Na Marinha Grande, um inquilino mata o senhorio porque o senhorio quer um aumento da renda para o dobro. O inquilino não aceita a renda nova e recebe uma ordem de despejo. Em Portugal, muitas pessoas têm problemas com o aumento da renda.</i>
+  <i>O <b>inquilino</b> recebe um <b>aumento</b> da <b>renda</b> e não quer pagar. O <b>senhorio</b> quer o <b>despejo</b>, mas o <b>inquilino</b> mata o <b>senhorio</b>. Esta tragédia acontece na Marinha Grande.</i>
   
   📖 Словничок:
   inquilino — <tg-spoiler>орендар</tg-spoiler>

@@ -33,17 +33,20 @@ source_names:
   - "Governo de Portugal"
 image: "/images/volta-first-day-where-to-find-machines-problems.jpg"
 tg_post: |
-  <b>Система Volta стартувала — здавайте пляшки й бляшанки та повертайте свої €0,10.</b>
+  <b>🇵🇹 Система Volta стартувала — здавайте пляшки й бляшанки в автомати та повертайте свої €0,10!</b>
   
-  По всій Португалії запрацювали ~2 000 автоматів для повернення тари (планували 2 500), плюс 48 кіосків і понад 8 000 ручних пунктів збору. У системі вже всі великі мережі: Continente, Pingo Doce, Lidl, Aldi, Auchan, Intermarché, Makro, Mercadona. Lidl інтегрував повернення депозиту прямо в додаток Lidl Plus — зручно без паперових чеків.
+  З <b>10 квітня</b> по всій Португалії запрацювала депозитна система <b>Volta</b>: кожна пляшка чи бляшанка до 3 л коштує на <b>€0,10</b> більше, які повертають при здачі тари. Встановлено вже <b>~2 000 автоматів</b>, <b>48 кіосків</b> і понад <b>8 000 ручних пунктів</b> прийому. Підключились всі великі мережі — <b>Continente, Pingo Doce, Lidl, Aldi, Auchan, Intermarché, Makro, Mercadona</b>.
   
   <a href="https://pastelka.news/volta-first-day-where-to-find-machines-problems/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>O sistema Volta já funciona em Portugal. As pessoas levam garrafas e latas às máquinas e recebem o <b>reembolso</b> do <b>depósito</b> de €0,10. Também é possível devolver no <b>balcão</b> da loja.</i>
+  
   📖 Словничок:
-  depósito — <tg-spoiler>застава</tg-spoiler>
-  reembolso — <tg-spoiler>відшкодування</tg-spoiler>
-  embalagem — <tg-spoiler>упаковка</tg-spoiler>
   garrafa — <tg-spoiler>пляшка</tg-spoiler>
+  lata — <tg-spoiler>бляшанка</tg-spoiler>
+  reembolso — <tg-spoiler>відшкодування</tg-spoiler>
+  depósito — <tg-spoiler>застава</tg-spoiler>
   balcão — <tg-spoiler>прилавок</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>

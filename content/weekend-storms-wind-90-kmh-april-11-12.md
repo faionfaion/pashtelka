@@ -29,18 +29,21 @@ source_names:
   - "Renascença"
 image: "/images/weekend-storms-wind-90-kmh-april-11-12.jpg"
 tg_post: |
-  <b>Завтра Португалію накриє полярне повітря — пориви вітру до 100 км/год і падіння температури на 12°C за добу.</b>
+  <b>🌪 Завтра Португалію накриє полярне повітря — вітер до 100 км/год і мінус 10°C за добу!</b>
   
-  У суботу 11 квітня фронтальна система принесе зливи, грози й град — пориви вітру до 90 км/год на узбережжі та понад 100 км/год у горах. Температура впаде на 10–12°C, хвилі зростуть до 4–5 метрів. IPMA оголосив жовте попередження по понад 10 округах — перевірте свій на сайті ipma.pt.
+  У <b>суботу 11 квітня</b> фронт із заходу принесе зливи, грози, град і пориви вітру <b>до 90–100 км/год</b> у горах. Температура впаде на <b>10–12°C за добу</b>, хвилі на узбережжі — до 5 метрів. IPMA оголосив <b>жовте попередження</b> по понад 10 округах — перевірте свій на сайті IPMA.
   
   <a href="https://pastelka.news/weekend-storms-wind-90-kmh-april-11-12/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>No sábado há uma <b>tempestade</b> em Portugal com <b>rajadas</b> de vento até 90 km/h. O IPMA tem um <b>aviso amarelo</b> para mais de 10 distritos. A <b>queda de temperatura</b> é de 10 graus e as <b>ondas</b> chegam a 5 metros na costa.</i>
+  
   📖 Словничок:
-  vento — <tg-spoiler>вітер</tg-spoiler>
   tempestade — <tg-spoiler>буря</tg-spoiler>
+  rajadas — <tg-spoiler>пориви</tg-spoiler>
+  queda de temperatura — <tg-spoiler>падіння температури</tg-spoiler>
+  ondas — <tg-spoiler>хвилі</tg-spoiler>
   aviso amarelo — <tg-spoiler>жовте попередження</tg-spoiler>
-  granizo — <tg-spoiler>град</tg-spoiler>
-  ondulação — <tg-spoiler>хвилювання</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

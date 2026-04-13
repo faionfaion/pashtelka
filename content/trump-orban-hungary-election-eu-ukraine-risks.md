@@ -35,21 +35,21 @@ source_names:
   - "Democracy Now"
 image: "/images/trump-orban-hungary-election-eu-ukraine-risks.jpg"
 tg_post: |
-  <b>Трамп відкрито купує Орбана — і це прямий удар по Україні в ЄС.</b>
+  <b>🇺🇸 Трамп відкрито купує Орбана — і це б'є по Україні.</b>
   
-  <b>Дональд Трамп</b> пообіцяв «всю економічну міць США» для Угорщини — за умови перемоги <b>Орбана</b> на виборах <b>12 квітня</b>. Віцепрезидент <b>Венс</b> особисто виступив на мітингу в Будапешті. Орбан у лютому заветував <b>€90 млрд</b> кредиту для України та <b>20-й пакет санкцій</b> проти Росії — і якщо Трамп підкріпить його грошима, тиснути на Будапешт стане ще складніше.
+  Президент США пообіцяв «всю економічну міць» для Угорщини — але лише якщо <b>Орбан залишиться при владі</b>. Віцепрезидент Венс особисто прилетів на передвиборчий мітинг до Будапешта. Це <b>безпрецедентне втручання</b> у вибори союзника по НАТО — і пряма <b>загроза для України</b>, бо саме Орбан блокує <b>€90 млрд кредиту</b> та <b>20-й пакет санкцій</b> проти Росії.
   
   <a href="https://pastelka.news/trump-orban-hungary-election-eu-ukraine-risks/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>Trump promete dinheiro à Hungria, mas só se Orbán ganhar as eleições. Este apoio dos Estados Unidos é uma ameaça para a Ucrânia, porque Orbán usa o veto e bloqueia sanções contra a Rússia na União Europeia.</i>
+  <i>Os EUA fazem uma <b>ingerência</b> nas <b>eleições</b> da Hungria. Trump promete <b>apoio</b> económico a Orbán. Isso é uma <b>ameaça</b> para a Ucrânia, porque Orbán usa o <b>veto</b> contra sanções à Rússia.</i>
   
   📖 Словничок:
   eleições — <tg-spoiler>вибори</tg-spoiler>
-  dinheiro — <tg-spoiler>гроші</tg-spoiler>
   ameaça — <tg-spoiler>загроза</tg-spoiler>
-  apoio — <tg-spoiler>підтримка</tg-spoiler>
   veto — <tg-spoiler>вето</tg-spoiler>
+  apoio — <tg-spoiler>підтримка</tg-spoiler>
+  ingerência — <tg-spoiler>втручання</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

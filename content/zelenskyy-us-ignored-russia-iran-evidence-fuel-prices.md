@@ -40,18 +40,21 @@ source_names:
   - "Jornal Económico"
 image: "/images/zelenskyy-us-ignored-russia-iran-evidence-fuel-prices.jpg"
 tg_post: |
-  <b>Зеленський заявив: США проігнорували докази шпигунства Росії на користь Ірану — бо «довіряють Путіну».</b>
+  <b>🔴 США проігнорували супутникові докази від України — бо «довіряють Путіну».</b>
   
-  Україна передала Вашингтону супутникові знімки, що доводять: Росія фотографувала американські бази, нафтові родовища та інфраструктуру на Близькому Сході й передавала дані Тегерану. Переговорники Трампа — Віткофф і Кушнер — їздили до Москви 5 разів, але жодного разу не відвідали Київ. Зеленський вимагає відновити санкції проти російської нафти і відмовляється здавати Донбас без сильних гарантій безпеки.
+  Зеленський заявив, що Україна передала Вашингтону знімки: <b>Росія фотографувала бази, нафтові родовища та інфраструктуру</b> на Близькому Сході й зливала дані Ірану. Білий дім не відреагував. Переговорники Трампа — Віткофф і Кушнер — <b>п'ять разів їздили до Москви</b>, але жодного разу не заїхали до Києва. Президент вимагає <b>відновити санкції проти російської нафти</b> та відмовляється здавати Донбас без гарантій безпеки.
   
   <a href="https://pastelka.news/zelenskyy-us-ignored-russia-iran-evidence-fuel-prices/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>A Ucrânia tem <b>provas</b> de que a Rússia ajuda o Irão, mas os EUA confiam em Putin. Os <b>negociadores</b> americanos visitam Moscovo cinco vezes, mas não vão a Kiev. A <b>trégua</b> entre os EUA e o Irão é frágil, e os <b>campos petrolíferos</b> do Médio Oriente estão em perigo.</i>
+  
   📖 Словничок:
   provas — <tg-spoiler>докази</tg-spoiler>
-  petróleo — <tg-spoiler>нафта</tg-spoiler>
-  cessar-fogo — <tg-spoiler>припинення вогню</tg-spoiler>
-  negociações — <tg-spoiler>переговори</tg-spoiler>
-  sanções — <tg-spoiler>санкції</tg-spoiler>
+  confiar — <tg-spoiler>довіряти</tg-spoiler>
+  negociadores — <tg-spoiler>переговорники</tg-spoiler>
+  trégua — <tg-spoiler>перемир'я</tg-spoiler>
+  campos petrolíferos — <tg-spoiler>нафтові родовища</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

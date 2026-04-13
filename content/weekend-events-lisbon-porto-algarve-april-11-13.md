@@ -54,18 +54,21 @@ source_names:
   - "Beamian (Expocosmética)"
 image: "/images/weekend-events-lisbon-porto-algarve-april-11-13.jpg"
 tg_post: |
-  <b>Вихідні 11-12 квітня: шторм у суботу, безкоштовні музеї в неділю — плануйте розумно.</b>
+  <b>🇵🇹 Вихідні в Португалії: субота — шторм, неділя — безкоштовні музеї!</b>
   
-  У суботу IPMA оголосив жовтий рівень попередження — пориви вітру до 90 км/год, дощ і град. Краще провести день у закритих приміщеннях: кіно, виставки, концерт Антоніу Замбужу. У неділю — безкоштовний вхід до всіх державних музеїв для резидентів: Mosteiro dos Jerónimos, Torre de Belém, Museu dos Coches. Потрібен лише Cartão de Residência.
+  У суботу <b>пориви вітру до 90 км/год</b> і дощ — IPMA оголосив жовтий рівень для 10+ округів. У неділю всі <b>державні музеї DGPC безкоштовні</b> для резидентів: Mosteiro dos Jerónimos, Torre de Belém, Museu dos Coches. Покажіть <b>Cartão de Cidadão</b> або посвідку на проживання — і вхід вільний.
   
   <a href="https://pastelka.news/weekend-events-lisbon-porto-algarve-april-11-13/">Дізнатись більше →</a>
   
+  🇵🇹 Português fácil:
+  <i>No sábado, uma <b>tempestade</b> traz <b>vento</b> forte a Portugal. No domingo, os museus são gratuitos para residentes. É um bom dia para um <b>passeio</b> em Lisboa.</i>
+  
   📖 Словничок:
-  tempo — <tg-spoiler>погода</tg-spoiler>
+  tempestade — <tg-spoiler>буря</tg-spoiler>
+  vento — <tg-spoiler>вітер</tg-spoiler>
   museu — <tg-spoiler>музей</tg-spoiler>
-  entrada gratuita — <tg-spoiler>безкоштовний вхід</tg-spoiler>
-  tempestade — <tg-spoiler>шторм</tg-spoiler>
-  fim de semana — <tg-spoiler>кінець тижня</tg-spoiler>
+  gratuito — <tg-spoiler>безкоштовний</tg-spoiler>
+  passeio — <tg-spoiler>прогулянка</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

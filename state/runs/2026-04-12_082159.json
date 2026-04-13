@@ -1,0 +1,362 @@
+{
+  "timestamp": "2026-04-12_082159",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "us-iran-talks-collapse-vance-no-deal-fuel-prices-portugal, hungary-election-day-orban-magyar-ukraine-eu-impact, russia-violated-easter-ceasefire-469-attacks, porto-treaty-france-defense-cooperation-enters-force, liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead",
+  "author": "Pastelka News",
+  "duration_s": 8516.8,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 453.6,
+      "error": null
+    },
+    {
+      "name": "research:Переговори США-Іран зірвані: В",
+      "status": "ok",
+      "duration_s": 212.6,
+      "error": null
+    },
+    {
+      "name": "generate:Переговори США-Іран зірвані: В",
+      "status": "ok",
+      "duration_s": 76.3,
+      "error": null
+    },
+    {
+      "name": "review:Переговори США-Іран зірвані: В",
+      "status": "ok",
+      "duration_s": 204.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Переговори США-Іран зірвані: В",
+      "status": "ok",
+      "duration_s": 13.3,
+      "error": null
+    },
+    {
+      "name": "save:Переговори США-Іран зірвані: В",
+      "status": "ok",
+      "duration_s": 59.5,
+      "error": null
+    },
+    {
+      "name": "research:Вибори в Угорщині сьогодні: чи",
+      "status": "ok",
+      "duration_s": 213.8,
+      "error": null
+    },
+    {
+      "name": "generate:Вибори в Угорщині сьогодні: чи",
+      "status": "ok",
+      "duration_s": 80.1,
+      "error": null
+    },
+    {
+      "name": "review:Вибори в Угорщині сьогодні: чи",
+      "status": "ok",
+      "duration_s": 264.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Вибори в Угорщині сьогодні: чи",
+      "status": "ok",
+      "duration_s": 15.6,
+      "error": null
+    },
+    {
+      "name": "save:Вибори в Угорщині сьогодні: чи",
+      "status": "ok",
+      "duration_s": 58.2,
+      "error": null
+    },
+    {
+      "name": "research:Росія порушила пасхальне перем",
+      "status": "ok",
+      "duration_s": 232.0,
+      "error": null
+    },
+    {
+      "name": "generate:Росія порушила пасхальне перем",
+      "status": "ok",
+      "duration_s": 72.3,
+      "error": null
+    },
+    {
+      "name": "review:Росія порушила пасхальне перем",
+      "status": "ok",
+      "duration_s": 237.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Росія порушила пасхальне перем",
+      "status": "ok",
+      "duration_s": 16.1,
+      "error": null
+    },
+    {
+      "name": "save:Росія порушила пасхальне перем",
+      "status": "ok",
+      "duration_s": 57.0,
+      "error": null
+    },
+    {
+      "name": "research:Договір Порту Португалія-Франц",
+      "status": "ok",
+      "duration_s": 277.5,
+      "error": null
+    },
+    {
+      "name": "generate:Договір Порту Португалія-Франц",
+      "status": "ok",
+      "duration_s": 79.6,
+      "error": null
+    },
+    {
+      "name": "review:Договір Порту Португалія-Франц",
+      "status": "ok",
+      "duration_s": 214.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Договір Порту Португалія-Франц",
+      "status": "ok",
+      "duration_s": 25.7,
+      "error": null
+    },
+    {
+      "name": "save:Договір Порту Португалія-Франц",
+      "status": "ok",
+      "duration_s": 51.3,
+      "error": null
+    },
+    {
+      "name": "research:Liga Portugal Jornada 29: Spor",
+      "status": "ok",
+      "duration_s": 274.5,
+      "error": null
+    },
+    {
+      "name": "generate:Liga Portugal Jornada 29: Spor",
+      "status": "ok",
+      "duration_s": 79.9,
+      "error": null
+    },
+    {
+      "name": "review:Liga Portugal Jornada 29: Spor",
+      "status": "ok",
+      "duration_s": 286.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Liga Portugal Jornada 29: Spor",
+      "status": "ok",
+      "duration_s": 26.6,
+      "error": null
+    },
+    {
+      "name": "save:Liga Portugal Jornada 29: Spor",
+      "status": "ok",
+      "duration_s": 55.8,
+      "error": null
+    },
+    {
+      "name": "research:Після шторму: армія вийшла на ",
+      "status": "ok",
+      "duration_s": 263.9,
+      "error": null
+    },
+    {
+      "name": "generate:Після шторму: армія вийшла на ",
+      "status": "ok",
+      "duration_s": 77.3,
+      "error": null
+    },
+    {
+      "name": "review:Після шторму: армія вийшла на ",
+      "status": "ok",
+      "duration_s": 234.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Після шторму: армія вийшла на ",
+      "status": "ok",
+      "duration_s": 13.9,
+      "error": null
+    },
+    {
+      "name": "save:Після шторму: армія вийшла на ",
+      "status": "ok",
+      "duration_s": 62.0,
+      "error": null
+    },
+    {
+      "name": "research:Від тимчасового захисту до пос",
+      "status": "ok",
+      "duration_s": 299.7,
+      "error": null
+    },
+    {
+      "name": "generate:Від тимчасового захисту до пос",
+      "status": "ok",
+      "duration_s": 123.4,
+      "error": null
+    },
+    {
+      "name": "review:Від тимчасового захисту до пос",
+      "status": "ok",
+      "duration_s": 459.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Від тимчасового захисту до пос",
+      "status": "ok",
+      "duration_s": 18.8,
+      "error": null
+    },
+    {
+      "name": "save:Від тимчасового захисту до пос",
+      "status": "ok",
+      "duration_s": 53.1,
+      "error": null
+    },
+    {
+      "name": "research:Страйк будівельників 17 квітня",
+      "status": "ok",
+      "duration_s": 291.1,
+      "error": null
+    },
+    {
+      "name": "generate:Страйк будівельників 17 квітня",
+      "status": "ok",
+      "duration_s": 128.0,
+      "error": null
+    },
+    {
+      "name": "review:Страйк будівельників 17 квітня",
+      "status": "ok",
+      "duration_s": 418.3,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Страйк будівельників 17 квітня",
+      "status": "ok",
+      "duration_s": 13.3,
+      "error": null
+    },
+    {
+      "name": "save:Страйк будівельників 17 квітня",
+      "status": "ok",
+      "duration_s": 56.8,
+      "error": null
+    },
+    {
+      "name": "research:IC19 перекриють у понеділок і ",
+      "status": "ok",
+      "duration_s": 251.5,
+      "error": null
+    },
+    {
+      "name": "generate:IC19 перекриють у понеділок і ",
+      "status": "ok",
+      "duration_s": 64.0,
+      "error": null
+    },
+    {
+      "name": "review:IC19 перекриють у понеділок і ",
+      "status": "ok",
+      "duration_s": 534.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:IC19 перекриють у понеділок і ",
+      "status": "ok",
+      "duration_s": 22.9,
+      "error": null
+    },
+    {
+      "name": "save:IC19 перекриють у понеділок і ",
+      "status": "ok",
+      "duration_s": 59.3,
+      "error": null
+    },
+    {
+      "name": "research:Залежність від азартних ігор в",
+      "status": "ok",
+      "duration_s": 292.4,
+      "error": null
+    },
+    {
+      "name": "generate:Залежність від азартних ігор в",
+      "status": "ok",
+      "duration_s": 79.3,
+      "error": null
+    },
+    {
+      "name": "review:Залежність від азартних ігор в",
+      "status": "ok",
+      "duration_s": 202.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Залежність від азартних ігор в",
+      "status": "ok",
+      "duration_s": 16.6,
+      "error": null
+    },
+    {
+      "name": "save:Залежність від азартних ігор в",
+      "status": "ok",
+      "duration_s": 52.7,
+      "error": null
+    },
+    {
+      "name": "research:Національна бібліотека Португа",
+      "status": "ok",
+      "duration_s": 261.5,
+      "error": null
+    },
+    {
+      "name": "generate:Національна бібліотека Португа",
+      "status": "ok",
+      "duration_s": 70.9,
+      "error": null
+    },
+    {
+      "name": "review:Національна бібліотека Португа",
+      "status": "ok",
+      "duration_s": 330.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Національна бібліотека Португа",
+      "status": "ok",
+      "duration_s": 23.0,
+      "error": null
+    },
+    {
+      "name": "save:Національна бібліотека Португа",
+      "status": "ok",
+      "duration_s": 58.1,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 43.7,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

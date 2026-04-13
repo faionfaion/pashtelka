@@ -33,21 +33,21 @@ source_names:
   - "Público"
 image: "/images/ukraine-strikes-lukoil-caspian-oil-platforms.jpg"
 tg_post: |
-  <b>Українські дрони дістали нафтові платформи Lukoil у Каспії — за 1000 км від фронту.</b>
+  <b>🇺🇦 Українські дрони дістали нафтові платформи Lukoil у Каспії — за 1000 км від фронту.</b>
   
-  Вночі <b>10 квітня</b> Сили спецоперацій вразили <b>дві бурові платформи Lukoil</b> на родовищах <b>Корчагіна</b> та <b>Грайфера</b> у Каспійському морі — це найдальший удар по нафтовій інфраструктурі РФ за всю війну. Сумарний видобуток обох платформ — близько <b>49 тис. барелів на добу</b>. Генштаб заявив про <b>значні пошкодження</b>, що обмежують постачання палива армії РФ, але <b>CNN Portugal</b> зазначає: незалежно верифікувати інформацію не вдалося.
+  Сили спецоперацій <b>вночі 10 квітня</b> атакували дві бурові платформи Lukoil у <b>Каспійському морі</b> — це найдальший удар по нафтовій інфраструктурі РФ за всю війну. Обидві платформи разом давали близько <b>49 тис. барелів на добу</b>. Генштаб заявив про значні пошкодження, які обмежують постачання палива армії РФ, хоча <b>CNN Portugal</b> зазначає, що незалежно верифікувати це не вдалося.
   
   <a href="https://pastelka.news/ukraine-strikes-lukoil-caspian-oil-platforms/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>A Ucrânia ataca plataformas de petróleo da Rússia no mar Cáspio. Este ataque é importante porque a Rússia usa o petróleo para abastecer o seu exército. As plataformas estão a mais de mil quilómetros da linha da frente.</i>
+  <i>Os <b>drones</b> ucranianos fazem um <b>ataque</b> a duas plataformas petrolíferas da Lukoil no <b>mar</b> Cáspio. As plataformas ficam a mil quilómetros da linha da frente e são importantes para o <b>abastecimento</b> de combustível do exército russo. É o <b>ataque</b> mais distante contra a infraestrutura de petróleo da Rússia.</i>
   
   📖 Словничок:
-  petróleo — <tg-spoiler>нафта</tg-spoiler>
-  plataforma — <tg-spoiler>платформа</tg-spoiler>
-  mar — <tg-spoiler>море</tg-spoiler>
+  plataforma petrolífera — <tg-spoiler>нафтова платформа</tg-spoiler>
   ataque — <tg-spoiler>атака</tg-spoiler>
-  exército — <tg-spoiler>армія</tg-spoiler>
+  mar — <tg-spoiler>море</tg-spoiler>
+  abastecimento — <tg-spoiler>постачання</tg-spoiler>
+  drones — <tg-spoiler>дрони</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

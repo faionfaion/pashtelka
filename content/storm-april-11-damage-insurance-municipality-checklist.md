@@ -42,21 +42,21 @@ source_names:
   - "Doutor Finanças"
 image: "/images/storm-april-11-damage-insurance-municipality-checklist.jpg"
 tg_post: |
-  <b>Шторм прийшов — ось що робити, якщо є пошкодження</b>
+  <b><b>Шторм вдарив по Португалії — ваш покроковий чек-лист дій, якщо є пошкодження.</b></b>
   
-  Фіксуйте все на фото і відео, <b>не викидайте зламані речі</b> і <b>не починайте ремонт</b> до приїзду оцінювача страхової. Подайте заяву до страхової протягом <b>8 днів</b> — компанія має відповісти за <b>4 робочі дні</b>. Для авто потрібна окрема опція <b>«fenómenos da natureza»</b> — звичайне ОСЦПВ шторми <b>не покриває</b>.
+  Фотографуйте всі <b>danos</b> (пошкодження), не викидайте зламане і <b>не починайте ремонт</b> до приїзду оцінювача страхової. Подайте заяву до страхової протягом <b>8 днів</b>, але краще — сьогодні. Seguro multirriscos покриває шторм зазвичай від <b>90–105 км/год</b> вітру — для авто потрібна окрема опція <b>fenómenos da natureza</b>.
   
   <a href="https://pastelka.news/storm-april-11-damage-insurance-municipality-checklist/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>A tempestade de hoje causa danos em muitas casas. O vento forte parte janelas e o telhado também. É importante ter um seguro e tirar fotos de todos os danos.</i>
+  <i>A <b>tempestade</b> causa <b>danos</b> na casa e no carro. Eu tenho um <b>seguro multirriscos</b> e comunico o <b>sinistro</b> à seguradora. Depois, o <b>perito</b> vem ver os <b>danos</b> e eu espero a decisão.</i>
   
   📖 Словничок:
   tempestade — <tg-spoiler>буря</tg-spoiler>
-  vento — <tg-spoiler>вітер</tg-spoiler>
   danos — <tg-spoiler>пошкодження</tg-spoiler>
-  telhado — <tg-spoiler>дах</tg-spoiler>
-  seguro — <tg-spoiler>страхування</tg-spoiler>
+  seguro multirriscos — <tg-spoiler>багаторизикове страхування</tg-spoiler>
+  sinistro — <tg-spoiler>страховий випадок</tg-spoiler>
+  perito — <tg-spoiler>оцінювач</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

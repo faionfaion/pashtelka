@@ -1,0 +1,83 @@
+{
+  "articles": [
+    {
+      "topic": "Блокада Ормузької протоки стартує сьогодні: нафта перевищила $100, газ +8% — що буде з цінами в Португалії цього тижня",
+      "type": "news",
+      "angle": "(continuation) Після зриву переговорів США-Іран (наш матеріал від 12 квітня) Вашингтон оголосив морську блокаду Ормузу для суден усіх країн. Brent пробив $100. Паралельно газ TTF +8%. Об'єднуємо обидві енергетичні новини в одну аналітику: що це означає для заправок (прогноз цін на дизель і бензин з понеділка), рахунків за газ/електрику, продуктового кошика. Порівняння: скільки середнє домогосподарство платило рік тому і скільки зараз.",
+      "sources_hint": "RTP latest (Hormuz blockade, Brent $100), CMJornal (gas +8%), DGEG fuel price monitor, ERSE tariff data, ANAREC commentary. Cross-ref our articles: us-iran-talks-collapse, fuel-prices-drop-iran-ceasefire, eu-gas-reserves-three-year-low-portugal-tariffs",
+      "priority": 1
+    },
+    {
+      "topic": "Орбан програв? Результати виборів в Угорщині та що змінюється для України в ЄС",
+      "type": "news",
+      "angle": "(continuation) Фактичні результати недільного голосування — хто переміг, скільки мандатів отримав Tisza/Fidesz, чи вийшов Орбан з конституційної більшості. Що тепер із 20-м пакетом санкцій проти РФ і кредитом €90 млрд для України. Реакція Португалії (Ранжел) і ЄС. Якщо Орбан зберіг владу — які механізми обходу вето обговорюють у Брюсселі.",
+      "sources_hint": "Reuters/AP Hungary election results, European Council statements, Portuguese MNE reactions, Lusa/RTP/Público. Cross-ref our articles: hungary-election-day-orban, trump-orban-hungary-election",
+      "priority": 1
+    },
+    {
+      "topic": "Аеропорти Європи можуть залишитися без авіапалива за три тижні — що робити з літніми квитками",
+      "type": "news",
+      "angle": "Нова загроза: блокада Ормузу ставить під ризик постачання керосину до європейських аеропортів. ACI Europe б'є на сполох. Які аеропорти найуразливіші? Як це вплине на рейси з Лісабона та Порту? Чи варто вже зараз купувати квитки на літо чи навпаки чекати? Права пасажирів за Регламентом ЄС 261/2004 у разі скасування рейсів через нестачу палива. Практичний кут для українців, які планують літні поїздки додому (Ryanair/Wizz через Варшаву/Краків). УВАГА РЕДАКТОРУ: не дублювати аналіз цін на нафту з першої статті — тут фокус виключно на авіацію, квитки та права пасажирів.",
+      "sources_hint": "RTP economy (aeroportos europeus combustível), ACI Europe press releases, IATA, EU regulation 261/2004, Ryanair/Wizz Air route status, Público/Observador aviation coverage",
+      "priority": 2
+    },
+    {
+      "topic": "Конфедерації роботодавців звинуватили UGT у недобросовісності — трудова реформа в глухому куті перед страйком 17 квітня",
+      "type": "news",
+      "angle": "(continuation) Новий поворот: CIP, CTP та інші конфедерації офіційно звинувачують UGT у зриві соціального діалогу. Тепер проти реформи і профспілки, і роботодавці — парадоксальна ситуація. Чим це загрожує: уряд може внести законопроєкт до парламенту без будь-якої соціальної підтримки. Як це вплине на маніфестацію CGTP 17 квітня. Конкретні ризики для українців-працівників: банк годин, строкові контракти, аутсорсинг.",
+      "sources_hint": "RTP country (confederações patronais UGT má fé), Lusa, Público trabalho section, CGTP press releases. Cross-ref our articles: labor-reform-crisis-ps-chega-seguro-veto, construction-strike-april-17",
+      "priority": 2
+    },
+    {
+      "topic": "Збір біометричних даних знову призупинили в аеропортах Португалії: кого це стосується і чи вплине на перетин кордону",
+      "type": "news",
+      "angle": "SEF/AIMA вдруге призупиняє збір біометрії на вильоті з аеропортів. Чому система не працює? Чи стосується це тільки громадян третіх країн? Як це впливає на EU Entry/Exit System (EES), який Португалія мала впровадити? Практичне питання: чи збільшаться черги на кордоні? Чи потрібен іммігрантам якийсь додатковий документ? Роз'яснення для українців з proteção temporária та тих, хто подорожує з título de residência.",
+      "sources_hint": "RTP country (recolha biométricos suspensa aeroportos), SEF/AIMA official statements, EU EES implementation timeline, Público/Expresso immigration section, Schengen Visa Info",
+      "priority": 2
+    },
+    {
+      "topic": "Хвороби, що передаються статевим шляхом, зростають у Португалії: де безкоштовно здати аналізи та отримати лікування",
+      "type": "material",
+      "angle": "INSA фіксує зростання випадків сифілісу, гонореї та ВІЛ. Чому іммігранти в групі ризику: мовний бар'єр при обговоренні сексуального здоров'я, необізнаність про безкоштовні послуги. Компіляція: повна карта CAD (Centros de Aconselhamento e Deteção Precoce VIH) у Лісабоні, Порту, Фару — анонімно, безкоштовно, без número de utente. Як працює PrEP в Португалії. Контакти AJPAS, GAT, Abraço. Рекомендації DGS.",
+      "sources_hint": "RTP country (doenças sexualmente transmissíveis), INSA annual STI report, DGS recommendations, GAT (Grupo de Ativistas em Tratamentos) website, SNS CAD center list, Abraço contacts, PrEP Portugal program",
+      "priority": 2
+    },
+    {
+      "topic": "Насильство над літніми людьми: нове дослідження виявило системні перешкоди для скарг — що це означає для українських родин",
+      "type": "news",
+      "angle": "Нове дослідження показує, що літні люди в Португалії масово не повідомляють про жорстоке поводження — через страх, залежність від агресора, незнання прав. Актуально для українських родин, де бабусі/дідусі приїхали до Португалії і живуть з родичами або в інтернатах. Куди звертатися: APAV, лінія SOS Idoso 900 203 040, junta de freguesia, GNR. Як розпізнати ознаки. Які обов'язки інтернатів (ERPI) і як перевірити їхню ліцензію.",
+      "sources_hint": "RTP country (maus tratos idosos estudo), APAV annual elder abuse report, ISS ERPI regulations, SOS Idoso helpline info, Público sociedade, Portuguese Ombudsman (Provedor de Justiça) recommendations",
+      "priority": 2
+    },
+    {
+      "topic": "Великдень на чужині: Росія порушила перемир'я, рідні далеко — де українцям у Португалії отримати психологічну підтримку",
+      "type": "material",
+      "angle": "Понеділок після першого (або третього, четвертого) Великодня далеко від дому. Росія порушила пасхальне перемир'я 469 ударами — українці в Португалії переживають тривогу за рідних. Дослідження показують підвищений рівень ПТСР та депресії серед біженців після свят. Практичний гід: безкоштовна психологічна допомога через SNS (consulta de psicologia через médico de família), програми JRS, Cruz Vermelha, AMI, Лінія SNS 24 (808 24 24 24) з можливістю перекладу, онлайн-терапія українською (Лайфлайн Україна, Безпечний простір), групи підтримки при українських церквах та громадах. Окремо: як розпізнати ознаки вигорання та коли звертатися по допомогу.",
+      "sources_hint": "WHO mental health & displacement reports, SNS 24 service info, JRS Portugal (Serviço Jesuíta aos Refugiados) contacts, Cruz Vermelha Portuguesa refugee support, AMI psychological services, Lifeline Ukraine, Ukrainian community organizations in Portugal, cross-ref our articles: orthodox-easter-2026, russia-violated-easter-ceasefire",
+      "priority": 2
+    },
+    {
+      "topic": "Sporting vs Arsenal у чвертьфіналі Ліги чемпіонів: де дивитися, як дістатися до стадіону і чому це важливо для інтеграції",
+      "type": "news",
+      "angle": "У вівторок 15 квітня — матч століття для Sporting: чвертьфінал ЛЧ проти Arsenal на Estádio José Alvalade. Практичний гід: де дивитися (ELEVEN, кафе з трансляцією), як дістатися (метро на страйку 14-го, але 15-го вже працює, станція Campo Grande). Ціни на квитки. Контекст: Sporting бореться і в ЛЧ, і за трикампеонат, плюс дербі з Benfica 19 квітня. Рубі Борхеш: ліга — пріоритет. Для українців: футбол — головний інструмент розмов з колегами-португальцями. Коротко: доля Судакова і Трубіна в Бенфіці (перехресне посилання на попередню статтю, без повторення деталей).",
+      "sources_hint": "UEFA Champions League QF schedule, Sporting CP official site, ELEVEN Sports Portugal, Liga Portugal standings, transport alternatives (Metro resumes April 15), Portuguese sports press (A Bola, O Jogo, Record). Cross-ref our articles: liga-portugal-jornada-29-sporting-wins-sudakov-benched-derby-ahead",
+      "priority": 2
+    },
+    {
+      "topic": "Погода на тиждень 14-18 квітня: після шторму — стабілізація, але з несподіванками",
+      "type": "utility",
+      "angle": "Понеділковий прогноз на робочий тиждень. Після шторму 11 квітня — яка погода чекає на тиждень. Температурний фон по регіонах (Лісабон, Порту, Фару), чи повернеться сахарський пил, чи безпечно вже виходити на пляжі в Алгарве. Окремо: стан моря (для тих, хто працює на узбережжі або планує серфінг). Коротко і практично.",
+      "sources_hint": "IPMA 7-day forecast, IPMA maritime forecast, Windy.com, previous Saharan dust CAMS/Copernicus data, APA air quality index",
+      "priority": 3
+    },
+    {
+      "topic": "Культурний тиждень 14-18 квітня: виставка Маіоліно в Лісабоні, останні дні фестивалю італійського кіно і не тільки",
+      "type": "guide",
+      "angle": "Понеділковий культурний гід на тиждень. Нові події: масштабна виставка Anna Maria Maiolino в Лісабоні (одна з найбільших у її кар'єрі), останні дні Festa do Cinema Italiano (до 19 квітня), підготовка до IndieLisboa (30 квітня). Концерти, виставки, безкоштовні заходи в Порту та Алгарве. Мистецький хаб GAMA RAMA у Фару (нагадування). Для українців — що можна відвідати безкоштовно або за мінімальну ціну.",
+      "sources_hint": "RTP cultura (Anna Maria Maiolino exposição Lisboa), Time Out Lisboa, Time Out Porto, Agenda Cultural Lisboa, Visit Algarve, Cinema São Jorge schedule, IndieLisboa program preview",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-13",
+  "created_at": "2026-04-13T07:10:14.758686+00:00"
+}

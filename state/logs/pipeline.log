@@ -5869,3 +5869,107 @@ Error output: Check stderr output for details
 2026-04-12 08:21:15 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/biblioteca-nacional-portugal-free-resource-ukrainians-guide.jpg (244 KB)
 08:21:15 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/biblioteca-nacional-portugal-free-resource-ukrainians-guide.md
 2026-04-12 08:21:15 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/biblioteca-nacional-portugal-free-resource-ukrainians-guide.md
+08:21:15 [pipeline] INFO: Article ready: biblioteca-nacional-portugal-free-resource-ukrainians-guide (Помер директор Національної бібліотеки Португалії )
+2026-04-12 08:21:15 [pipeline] INFO: Article ready: biblioteca-nacional-portugal-free-resource-ukrainians-guide (Помер директор Національної бібліотеки Португалії )
+08:21:15 [pipeline] INFO: Generated 11/11 articles
+2026-04-12 08:21:15 [pipeline] INFO: Generated 11/11 articles
+08:21:17 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-04-12 08:21:17 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+08:21:17 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-12 08:21:17 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+08:21:59 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-04-12 08:21:59 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+08:21:59 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/biblioteca-nacional-portugal-free-resource-ukrainians-guide/ (200 OK, title found)
+2026-04-12 08:21:59 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/biblioteca-nacional-portugal-free-resource-ukrainians-guide/ (200 OK, title found)
+08:21:59 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-12_082159.json
+2026-04-12 08:21:59 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-12_082159.json
+08:21:59 [pipeline] INFO: Batch complete: 11 articles
+2026-04-12 08:21:59 [pipeline] INFO: Batch complete: 11 articles
+2026-04-12 11:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-12 11:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-12 11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4580
+2026-04-12 11:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-12 11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-12 11:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: biblioteca-nacional-portugal-free-resource-ukrainians-guide -> msg 204
+2026-04-12 11:05:02 [pipeline] INFO: Published to TG: biblioteca-nacional-portugal-free-resource-ukrainians-guide (msg 204)
+2026-04-12 14:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-12 14:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-12 14:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4447
+2026-04-12 14:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-12 14:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-12 14:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: gambling-addiction-treatment-surge-portugal-2026 -> msg 205
+2026-04-12 14:05:02 [pipeline] INFO: Published to TG: gambling-addiction-treatment-surge-portugal-2026 (msg 205)
+2026-04-12 17:05:01 [pipeline] INFO: === TG Publish mode ===
+2026-04-12 17:05:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-12 17:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4223
+2026-04-12 17:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-12 17:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-12 17:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: construction-strike-april-17-immigrant-rights-guide -> msg 206
+2026-04-12 17:05:02 [pipeline] INFO: Published to TG: construction-strike-april-17-immigrant-rights-guide (msg 206)
+2026-04-12 19:05:02 [pipeline] INFO: === Digest mode ===
+2026-04-12 19:05:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-12 19:05:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-12 19:05:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-12 19:05:25 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 6039
+2026-04-12 19:05:25 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-12 19:05:25 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-12 19:05:25 [pipeline.stages.s11_digest] INFO: Digest published: msg 207 (11 articles)
+2026-04-12 19:05:25 [pipeline] INFO: Digest published (msg 207, 11 articles)
+2026-04-13 07:10:14 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-13 07:10:14 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-13 07:10:15 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-13 07:10:15 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-13 07:10:15 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-13 07:10:15 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-13 07:10:15 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-13 07:10:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:10:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:13:47 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:13:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:19:13 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 11 -> 11 articles
+2026-04-13 07:19:13 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 11 articles for 2026-04-13
+2026-04-13 07:19:13 [pipeline] INFO: Editorial plan: 11 topics
+2026-04-13 07:19:13 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-13 07:19:13 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-13 07:19:13 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-13 07:19:13 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-13 07:19:13 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-13 07:19:14 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-13 07:19:14 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-13 07:19:14 [pipeline.stages.s1_collect] INFO: Context: 56 RSS items, 60 existing articles
+2026-04-13 07:19:14 [pipeline] INFO: === Article 1/11 ===
+2026-04-13 07:19:14 [pipeline] INFO: --- Article: [news] Блокада Ормузької протоки стартує сьогодні: нафта перевищила ---
+2026-04-13 07:19:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:19:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:24:13 [pipeline.stages.s2_research] INFO: Research complete: 13237 chars
+2026-04-13 07:24:13 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:24:13 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:26:03 [pipeline.stages.s3_generate] INFO: Generated: 'Блокада Ормузу стартує сьогодні: нафта перевищила $100, газ +7% — що буде з цінами в Португалії цього тижня' (slug=hormuz-blockade-oil-100-gas-prices-portugal-week-april-14, 692 words, 18 sources)
+2026-04-13 07:26:03 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:26:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:27:48 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-13 07:27:48 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, релевантністю та практичністю, але потребує кількох виправлень перед публікацією.
+
+**DEDUPLICATION:** Стаття НЕ є дублікатом — вчорашня (12.04) стаття була про зрив перего
+2026-04-13 07:27:48 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:27:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:29:27 [pipeline.stages.s5_revise] INFO: Revised article: 811 words
+2026-04-13 07:29:27 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-13 07:29:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:29:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:31:11 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-13 07:31:11 [pipeline.stages.s4_review] INFO: Feedback: Сильна, добре побудована стаття з новим інформаційним приводом (початок блокади + ринкові дані), що чітко відрізняє її від учорашньої статті про зрив переговорів. Кілька зауважень:
+
+1. **DGEP не розши
+2026-04-13 07:31:11 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-13 07:31:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-13 07:31:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-13 07:31:26 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1149 chars, vocab: 5 words, pt: 176 chars
+2026-04-13 07:31:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-13 07:32:23 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-13 07:32:24 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-13 07:32:24 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 115265
+2026-04-13 07:32:24 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 115265 (unknown)
+2026-04-13 07:32:24 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 115318 3005046
+2026-04-13 07:32:24 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/hormuz-blockade-oil-100-gas-prices-portugal-week-april-14.jpg (286 KB)
+2026-04-13 07:32:24 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hormuz-blockade-oil-100-gas-prices-portugal-week-april-14.md

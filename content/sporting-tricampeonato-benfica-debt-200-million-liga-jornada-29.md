@@ -34,21 +34,21 @@ source_names:
   - "RTP"
 image: "/images/sporting-tricampeonato-benfica-debt-200-million-liga-jornada-29.jpg"
 tg_post: |
-  <b>Sporting крокує до історичного трикампеонату, а Benfica тоне у боргах на €200 млн</b>
+  <b>🏆 Sporting йде по третє чемпіонство поспіль, а Benfica тоне у боргах на €200+ млн!</b>
   
-  Сьогодні о <b>20:30</b> <b>Sporting</b> грає проти <b>Estrela da Amadora</b> — перемога наближає до <b>tricampeonato</b> (третього чемпіонського титулу поспіль). Головний конкурент <b>Benfica</b> має чисту заборгованість понад <b>€200 млн</b>, серед гравців на продаж — українець <b>Георгій Судаков</b>. У таблиці лідирує <b>FC Porto</b> з <b>73</b> очками, <b>Sporting</b> другий — <b>68</b>, але має матч у запасі.
+  Сьогодні о <b>20:30</b> Sporting грає з Estrela da Amadora — перемога наближає <b>tricampeonato</b>. Benfica у фінансовій кризі: чиста <b>заборгованість понад €200 млн</b>, серед гравців на продаж — українець <b>Георгій Судаков</b>. У таблиці лідирує FC Porto (73 очки), Sporting другий (68), але має матч у запасі.
   
   <a href="https://pastelka.news/sporting-tricampeonato-benfica-debt-200-million-liga-jornada-29/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>O Sporting tem um jogo importante hoje e quer ganhar o terceiro campeonato. A equipa está forte, mas o Benfica tem muitas dívidas. O Benfica também precisa de vender jogadores porque gastou muito dinheiro.</i>
+  <i>O Sporting quer o <b>tricampeonato</b>, um <b>título</b> muito importante para a história do clube. O Benfica tem uma <b>dívida</b> de mais de 200 milhões de euros e precisa de vender jogadores. O <b>campeonato</b> português está muito competitivo esta época.</i>
   
   📖 Словничок:
-  campeonato — <tg-spoiler>чемпіонат</tg-spoiler>
+  tricampeonato — <tg-spoiler>потрійне чемпіонство</tg-spoiler>
   dívida — <tg-spoiler>борг</tg-spoiler>
   jogador — <tg-spoiler>гравець</tg-spoiler>
-  jogo — <tg-spoiler>гра</tg-spoiler>
-  equipa — <tg-spoiler>команда</tg-spoiler>
+  título — <tg-spoiler>титул</tg-spoiler>
+  campeonato — <tg-spoiler>чемпіонат</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---

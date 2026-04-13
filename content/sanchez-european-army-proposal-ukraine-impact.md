@@ -34,21 +34,21 @@ source_names:
   - "Daily Post / AFP"
 image: "/images/sanchez-european-army-proposal-ukraine-impact.jpg"
 tg_post: |
-  <b>Санчес хоче єдину армію ЄС — і готовий почати хоч завтра.</b>
+  <b>🇪🇺 Санчес хоче єдину армію ЄС — і готовий почати хоч завтра.</b>
   
-  Прем'єр Іспанії <b>Педро Санчес</b> на форумі <b>European Pulse</b> у <b>Барселоні</b> заявив про готовність створювати спільну європейську армію негайно. Єврокомісар з оборони <b>Андріус Кубіліус</b> раніше запропонував постійні сили ЄС на <b>100 000</b> осіб, назвавши <b>27</b> національних армій «армійками-бонсай». <b>81%</b> громадян ЄС підтримують спільну оборонну політику, але до реальної армії далеко — потрібні зміни договорів, подолання мовних бар'єрів і стандартизація озброєнь.
+  Прем'єр Іспанії на форумі European Pulse назвав оборонний союз <b>«європейським суспільним благом»</b> і закликав не зволікати зі створенням спільних збройних сил. Єврокомісар з оборони Кубіліус ще раніше запропонував <b>100 000 постійних солдатів ЄС</b>, а 27 національних армій назвав <b>«армійками-бонсай»</b>. Повноцінна армія ЄС поки малоймовірна — потрібні зміни договорів, але <b>81% громадян ЄС</b> підтримують спільну оборону.
   
   <a href="https://pastelka.news/sanchez-european-army-proposal-ukraine-impact/">Дізнатись більше →</a>
   
   🇵🇹 Português fácil:
-  <i>A Espanha quer criar um exército europeu para a segurança e a defesa de todos os países da Europa. O plano fala de 100 mil soldados europeus, mas o caminho é longo porque os países têm línguas e armas diferentes. A paz na Europa é importante e os países querem trabalhar juntos.</i>
+  <i>Pedro Sánchez quer <b>criar</b> um <b>exército</b> da União Europeia. A <b>segurança</b> e a <b>defesa</b> são prioridades para a Europa hoje. O plano é ter 100 mil <b>soldados</b> europeus permanentes.</i>
   
   📖 Словничок:
   exército — <tg-spoiler>армія</tg-spoiler>
-  segurança — <tg-spoiler>безпека</tg-spoiler>
   defesa — <tg-spoiler>оборона</tg-spoiler>
-  soldado — <tg-spoiler>солдат</tg-spoiler>
-  paz — <tg-spoiler>мир</tg-spoiler>
+  segurança — <tg-spoiler>безпека</tg-spoiler>
+  soldados — <tg-spoiler>солдати</tg-spoiler>
+  criar — <tg-spoiler>створити</tg-spoiler>
   
   <a href="https://t.me/pashtelka_news">🇵🇹 Паштелька News</a>
 ---
