@@ -1,0 +1,242 @@
+{
+  "timestamp": "2026-04-13_134626",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "biometric-collection-suspended-portugal-airports-ees-ukrainians, sti-rising-portugal-free-testing-cad-prep-guide, elder-abuse-portugal-fmup-study-reporting-barriers-ukrainian-guide, easter-anxiety-free-mental-health-support-ukrainians-portugal, sporting-arsenal-champions-league-qf-where-to-watch-guide",
+  "author": "Pastelka News",
+  "duration_s": 5818.1,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "research:Збір біометричних даних знову ",
+      "status": "ok",
+      "duration_s": 220.5,
+      "error": null
+    },
+    {
+      "name": "generate:Збір біометричних даних знову ",
+      "status": "ok",
+      "duration_s": 68.3,
+      "error": null
+    },
+    {
+      "name": "review:Збір біометричних даних знову ",
+      "status": "ok",
+      "duration_s": 195.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Збір біометричних даних знову ",
+      "status": "ok",
+      "duration_s": 14.8,
+      "error": null
+    },
+    {
+      "name": "save:Збір біометричних даних знову ",
+      "status": "ok",
+      "duration_s": 57.5,
+      "error": null
+    },
+    {
+      "name": "research:Хвороби, що передаються статев",
+      "status": "ok",
+      "duration_s": 253.8,
+      "error": null
+    },
+    {
+      "name": "generate:Хвороби, що передаються статев",
+      "status": "ok",
+      "duration_s": 133.7,
+      "error": null
+    },
+    {
+      "name": "review:Хвороби, що передаються статев",
+      "status": "ok",
+      "duration_s": 324.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Хвороби, що передаються статев",
+      "status": "ok",
+      "duration_s": 22.9,
+      "error": null
+    },
+    {
+      "name": "save:Хвороби, що передаються статев",
+      "status": "ok",
+      "duration_s": 58.9,
+      "error": null
+    },
+    {
+      "name": "research:Насильство над літніми людьми:",
+      "status": "ok",
+      "duration_s": 208.3,
+      "error": null
+    },
+    {
+      "name": "generate:Насильство над літніми людьми:",
+      "status": "ok",
+      "duration_s": 81.3,
+      "error": null
+    },
+    {
+      "name": "review:Насильство над літніми людьми:",
+      "status": "ok",
+      "duration_s": 233.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Насильство над літніми людьми:",
+      "status": "ok",
+      "duration_s": 25.8,
+      "error": null
+    },
+    {
+      "name": "save:Насильство над літніми людьми:",
+      "status": "ok",
+      "duration_s": 56.4,
+      "error": null
+    },
+    {
+      "name": "research:Великдень на чужині: Росія пор",
+      "status": "ok",
+      "duration_s": 208.9,
+      "error": null
+    },
+    {
+      "name": "generate:Великдень на чужині: Росія пор",
+      "status": "ok",
+      "duration_s": 135.6,
+      "error": null
+    },
+    {
+      "name": "review:Великдень на чужині: Росія пор",
+      "status": "ok",
+      "duration_s": 309.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Великдень на чужині: Росія пор",
+      "status": "ok",
+      "duration_s": 21.3,
+      "error": null
+    },
+    {
+      "name": "save:Великдень на чужині: Росія пор",
+      "status": "ok",
+      "duration_s": 53.8,
+      "error": null
+    },
+    {
+      "name": "research:Sporting vs Arsenal у чвертьфі",
+      "status": "ok",
+      "duration_s": 276.6,
+      "error": null
+    },
+    {
+      "name": "generate:Sporting vs Arsenal у чвертьфі",
+      "status": "ok",
+      "duration_s": 93.5,
+      "error": null
+    },
+    {
+      "name": "review:Sporting vs Arsenal у чвертьфі",
+      "status": "ok",
+      "duration_s": 437.3,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Sporting vs Arsenal у чвертьфі",
+      "status": "ok",
+      "duration_s": 15.6,
+      "error": null
+    },
+    {
+      "name": "save:Sporting vs Arsenal у чвертьфі",
+      "status": "ok",
+      "duration_s": 63.5,
+      "error": null
+    },
+    {
+      "name": "research:Погода на тиждень 14-18 квітня",
+      "status": "ok",
+      "duration_s": 244.0,
+      "error": null
+    },
+    {
+      "name": "generate:Погода на тиждень 14-18 квітня",
+      "status": "ok",
+      "duration_s": 73.4,
+      "error": null
+    },
+    {
+      "name": "review:Погода на тиждень 14-18 квітня",
+      "status": "ok",
+      "duration_s": 136.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Погода на тиждень 14-18 квітня",
+      "status": "ok",
+      "duration_s": 20.0,
+      "error": null
+    },
+    {
+      "name": "save:Погода на тиждень 14-18 квітня",
+      "status": "ok",
+      "duration_s": 61.4,
+      "error": null
+    },
+    {
+      "name": "research:Культурний тиждень 14-18 квітн",
+      "status": "ok",
+      "duration_s": 286.5,
+      "error": null
+    },
+    {
+      "name": "generate:Культурний тиждень 14-18 квітн",
+      "status": "ok",
+      "duration_s": 156.8,
+      "error": null
+    },
+    {
+      "name": "review:Культурний тиждень 14-18 квітн",
+      "status": "ok",
+      "duration_s": 1147.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Культурний тиждень 14-18 квітн",
+      "status": "ok",
+      "duration_s": 18.2,
+      "error": null
+    },
+    {
+      "name": "save:Культурний тиждень 14-18 квітн",
+      "status": "ok",
+      "duration_s": 62.4,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 38.3,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

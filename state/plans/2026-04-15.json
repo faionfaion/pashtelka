@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "AIMA визнала помилку у відмові продовження документів дитині — що це означає для тисяч іммігрантів у день дедлайну",
+      "type": "immigration",
+      "angle": "AIMA офіційно визнала помилку у відмові продовження посвідки на проживання дитині. Це стається саме 15 квітня — у день дедлайну для прострочених документів. Аналізуємо: який саме помилковий критерій застосувала AIMA, чи це системна проблема (автоматичні відмови без перевірки), що робити тим, хто вже отримав відмову. Контекст: 54 000 українців, з яких тисячі мають справи в AIMA. Продовження серії про дедлайн 15 квітня з новим фактажем.",
+      "sources_hint": "RTP headline 'AIMA reconhece erro na recusa de pedido de renovação de residência a criança', AIMA portal, SEF/AIMA regulations, Lusa newswire, immigration lawyer commentary on social media, Jornal de Notícias, Público",
+      "priority": 1
+    },
+    {
+      "topic": "AIMA відмовила — що далі: скарга, суд, Provedor de Justiça — покроковий гід з оскарження рішень",
+      "type": "material",
+      "angle": "На тлі визнаної помилки AIMA та дедлайну 15 квітня — системний гід для тих, хто отримав відмову або мовчанку від AIMA. Три рівні захисту: 1) recurso gracioso (безкоштовна адмінскарга до AIMA, 15 днів), 2) адміністративний суд (ação administrativa через Tribunal Administrativo, ст. 66-69 CPTA, судовий захист від бездіяльності), 3) скарга до Provedor de Justiça (безкоштовно, онлайн). Плюс: як отримати безкоштовну юридичну допомогу (apoio judiciário) для іммігрантів та контакти CNAIM. Перехресне посилання на статтю про помилку AIMA з дитиною.",
+      "sources_hint": "CPTA (Código de Processo nos Tribunais Administrativos) arts 66-69, Provedor de Justiça website provedor-jus.pt, AIMA regulations on recurso gracioso, Segurança Social apoio judiciário rules, CNAIM contacts, immigration lawyer blogs (e.g. Edge International Lawyers, Legalibérica), Lei 23/2007 art 78",
+      "priority": 1
+    },
+    {
+      "topic": "Трудова реформа: UGT може прийняти банк годин за певних умов — що зміниться для працівників",
+      "type": "news",
+      "angle": "Ключовий розворот: UGT, яка одноголосно відхилила реформу 9 квітня і була звинувачена роботодавцями у недобросовісності 12 квітня, тепер може прийняти banco de horas за певних умов. Що це за умови? Як це змінює долю реформи в парламенті? Фокус на banco de horas: що це конкретно означає для працівника (до +2 год/день без оплати понаднормових) і за яких гарантій це може стати прийнятним. Продовження серії (4-та стаття) з чітким посиланням на попередні три матеріали.",
+      "sources_hint": "RTP headline 'Pacote Laboral. UGT pode aceitar banco de horas sob condições', Lusa wire, UGT press releases ugt.pt, RTP Economia, Público Economia, CGTP reaction, Código do Trabalho art 208-208B on banco de horas, Jornal de Negócios",
+      "priority": 1
+    },
+    {
+      "topic": "17 квітня — день масових страйків: до будівельників приєднуються працівники культури та HoReCa — повна карта закриттів",
+      "type": "news",
+      "angle": "Раніше ми писали про страйк будівельників FEVICCOM і маніфестацію CGTP 17 квітня. Тепер профспілка Cena-STE оголосила страйк працівників культури на ту ж п'ятницю. Це означає: можуть не працювати музеї, театри, концертні зали по всій країні. Плюс FESAHT (HoReCa) і STAL (держслужба) — теж 17 квітня. Збираємо повну карту: що буде закрите, які маршрути маніфестації, чи буде заблоковано Saldanha–São Bento. Практичні поради для тих, хто працює в цих секторах. Ключова відмінність від попереднього гіду (12 квітня): той пояснював права страйкувальників, цей — що закриється для всіх.",
+      "sources_hint": "RTP headline 'Sindicato Cena-STE do setor da Cultura convoca greve para sexta-feira', CGTP manifestation details cgtp.pt, FEVICCOM strike notice, FESAHT notice, STAL notice, Lusa, previous Pashtelka construction strike article, Câmara Municipal de Lisboa traffic alerts",
+      "priority": 1
+    },
+    {
+      "topic": "Поліція, прикордонники та тюремні охоронці протестують проти скорочення пенсій — чи вплине це на безпеку?",
+      "type": "news",
+      "angle": "Профспілки PSP, GNR, Polícia Marítima та тюремних охоронців вийшли на спільний протест проти урядових скорочень пенсійних умов силових структур. Це рідкісний випадок солідарності між різними силовиками. Для українців у Португалії: чи може невдоволення поліції вплинути на якість роботи, час реагування, перевірки документів? Контекст: GNR і PSP і так недоукомплектовані (дані RASI 2025 — ми про це писали). Пояснюємо суть претензій та можливі наслідки для повсякденної безпеки.",
+      "sources_hint": "RTP headline 'Estruturas da PSP, GNR, Polícia Marítima e guardas prisonais protestam contra cortes nas reformas', Lusa, ASPP/PSP union, APG/GNR union, RASI 2025 report data on understaffing, Diário de Notícias, Correio da Manhã",
+      "priority": 2
+    },
+    {
+      "topic": "35 900 заявок на відновлення і 75 мільйонів для муніципалітетів: оновлення програми допомоги після штормів",
+      "type": "news",
+      "angle": "Два свіжі факти: кількість заявок зросла з 34 000 до 35 900 (ще 1 900 за тиждень), і уряд виділив €75 млн авансом для муніципалітетів на відновлення обладнання та інфраструктури. Хто отримає гроші, за якою процедурою і коли? Чи стосується це приватних осіб або лише муніципальної інфраструктури? Як перевірити статус своєї заявки. Актуально для українців у Centro та Lisboa e Vale do Tejo. Продовження серії.",
+      "sources_hint": "RTP headlines 'Entregues cerca de 35.900 pedidos de apoio para reconstruir habitações' and 'Governo adianta 75 milhões para municípios recuperarem equipamentos', Lusa, government portal recuperar.gov.pt, Câmara Municipal contacts, Diário da República for decree",
+      "priority": 2
+    },
+    {
+      "topic": "IUC 2026: зміни в автоподатку для власників кількох авто — як перевірити і що робити",
+      "type": "utility",
+      "angle": "Autoridade Tributária вносить корективи в нарахування IUC (Imposto Único de Circulação), щоб правильно враховувати кілька автомобілів одного власника. Що саме змінюється: якщо ви маєте 2+ авто, сума IUC може бути перерахована. Практичний гід: де перевірити свій IUC на Portal das Finanças, дедлайн оплати, які авто підпадають під додатковий збір (componente ambiental + adicionamento), типові помилки. Для українців, які мають авто з португальськими або іноземними номерами.",
+      "sources_hint": "RTP headline 'Mudanças no IUC obrigam AT a ajustes para abarcar veículos do mesmo contribuinte', Portal das Finanças IUC simulator, Código do IUC arts 2-10, DECO Proteste IUC guide, Autoridade Tributária announcements, Jornal de Negócios",
+      "priority": 2
+    },
+    {
+      "topic": "Уряд відтерміновує внески до Segurança Social для транспортних компаній — сигнал глибини паливної кризи",
+      "type": "news",
+      "angle": "Рада Міністрів вирішила відкласти внески до Соцстрахування для компаній з перевезення вантажів. Це безпрецедентний крок, який сигналізує: паливна криза б'є по транспортному сектору настільки сильно, що компанії не можуть платити навіть обов'язкові внески. Для українських далекобійників і працівників логістики: чи захищені ваші пенсійні внески? Чи стосується це і працівників, а не лише роботодавців? Як перевірити, що ваш роботодавець сплачує за вас.",
+      "sources_hint": "RTP headline 'Governo vai adiar pagamentos à Segurança Social para empresas de transporte de mercadorias', Lusa, ANTRAM (transport association), Segurança Social Direta portal, Código Contributivo arts on employer obligations, Jornal de Negócios, Diário de Notícias",
+      "priority": 2
+    },
+    {
+      "topic": "SNS продовжить проєкт супроводу вагітних медсестрами — що це означає для іммігранток",
+      "type": "news",
+      "angle": "Дирекція SNS відхилила спроби зупинити пілотний проєкт, де медсестри ведуть нормальні вагітності (без ускладнень) замість лікарів. Для українок у Португалії, які часто не мають médico de família і чекають на акушера місяцями, це критично: проєкт розширює доступ до пренатального догляду. Де працює проєкт, як записатися, що входить у супровід, коли передають лікарю. Перехресне посилання на статтю про médico de família.",
+      "sources_hint": "RTP headline 'Direção do SNS rejeita travar projeto de acompanhamento de grávidas por enfermeiros', Lusa, Ordem dos Enfermeiros position, SNS portal, DGS guidelines on prenatal care, Público Saúde, previous Pashtelka article on médico de família",
+      "priority": 2
+    },
+    {
+      "topic": "Як зменшити рахунки за газ та електрику: соціальний тариф, симулятор ERSE та субсидія €25/міс",
+      "type": "utility",
+      "angle": "На тлі рекордних цін на газ (TTF +70% від довоєнного рівня), блокади Ормузу та зростання продуктового кошика на €70 з 2022 року — практичний гід зі зменшення витрат на енергію. Три рівні: 1) Перевірка тарифу через симулятор ERSE (erse.pt) — чи вигідний ваш поточний контракт, як змінити постачальника без штрафу, 2) Соціальний тариф на енергію (tarifa social de energia) — автоматичне право для отримувачів CSI, RSI, abono de família 1-го/2-го ешелону, а також ручна заявка через DGEG для тих, чий дохід нижче порогу, 3) Урядова субсидія на газ у балонах €25/міс — де перевірити, чи ви її отримуєте, і як подати заявку. Плюс: побутові поради для зменшення споживання. Перехресні посилання на статті про ціни на пальне та продуктовий кошик.",
+      "sources_hint": "ERSE tariff simulator erse.pt/simulador, DGEG social tariff eligibility dgeg.gov.pt, Segurança Social automatic tarifa social criteria, government gas bottle subsidy (botija de gás) rules via Portaria, DECO Proteste energy saving guides, Pordata energy consumption data, previous Pashtelka articles on fuel prices and grocery basket",
+      "priority": 2
+    }
+  ],
+  "date": "2026-04-15",
+  "created_at": "2026-04-15T18:25:39.741634+00:00"
+}
