@@ -6791,3 +6791,36 @@ Error output: Check stderr output for details
 2026-04-15 19:07:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3273046
 2026-04-15 19:07:02 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/aima-appeal-guide-complaint-court-provedor-de-justica.jpg (231 KB)
 2026-04-15 19:07:02 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/aima-appeal-guide-complaint-court-provedor-de-justica.md
+2026-04-15 19:07:02 [pipeline] INFO: Article ready: aima-appeal-guide-complaint-court-provedor-de-justica (AIMA відмовила — що далі: скарга, суд, Проведорія )
+2026-04-15 19:07:02 [pipeline] INFO: === Article 3/10 ===
+2026-04-15 19:07:02 [pipeline] INFO: --- Article: [news] Трудова реформа: UGT може прийняти банк годин за певних умов ---
+2026-04-15 19:07:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-15 19:07:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-15 19:11:40 [pipeline.stages.s2_research] INFO: Research complete: 11193 chars
+2026-04-15 19:11:40 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-15 19:11:40 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-15 19:12:51 [pipeline.stages.s3_generate] INFO: Generated: 'UGT готова прийняти banco de horas — але на своїх умовах. Що це означає для працівників' (slug=ugt-accepts-banco-de-horas-conditions-labor-reform-april-2026, 509 words, 7 sources)
+2026-04-15 19:12:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-15 19:12:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-15 19:14:04 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-15 19:14:04 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре написана, новинний привід чіткий — це дійсно нова подія (розворот UGT від відмови до умовного прийняття banco de horas), а не дублювання статті від 13 квітня. Структура, джерела та контек
+2026-04-15 19:14:04 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-15 19:14:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-15 19:14:38 [pipeline.stages.s5_revise] INFO: Revised article: 543 words
+2026-04-15 19:14:38 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-15 19:14:38 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-15 19:14:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-15 19:16:05 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-15 19:16:05 [pipeline.stages.s4_review] INFO: Feedback: Якісна новинна стаття, яка просуває історію трудової реформи з суттєво новою інформацією. Кілька зауважень для доопрацювання:
+
+**Джерела:** Джерело RTP вказане у списку джерел, але жодного разу не цит
+2026-04-15 19:16:05 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-15 19:16:05 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-15 19:16:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-15 19:16:21 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1214 chars, vocab: 5 words, pt: 208 chars
+2026-04-15 19:16:21 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-15 19:17:17 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-15 19:17:18 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-15 19:17:18 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3053751
+2026-04-15 19:17:18 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ugt-accepts-banco-de-horas-conditions-labor-reform-april-2026.jpg (250 KB)
+2026-04-15 19:17:18 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ugt-accepts-banco-de-horas-conditions-labor-reform-april-2026.md
