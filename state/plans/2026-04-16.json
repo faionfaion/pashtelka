@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "Дедлайн AIMA 15 квітня минув: документи не продовжили, портал падав — що робити на «день після»",
+      "type": "immigration",
+      "angle": "Перший повний робочий день після формального закінчення дії прострочених títulos de residência. Ключові питання: чи видав уряд нове продовження (Despacho/RCM), що кажуть юристи, який статус тих, хто подав через портал але не отримав підтвердження, і тих, хто не зміг подати через збої. Практичний чек-лист «дня після»: що показувати роботодавцю, поліції, банку, авіакомпанії. Правовий захист: ст. 66 CPTA, deferimento tácito, скарга до Provedor. Відрізняється від попередніх статей (до дедлайну) тим, що ситуація вже настала і потрібна нова стратегія дій.",
+      "sources_hint": "AIMA portal status, immigration lawyers on LinkedIn PT and X, Lusa/RTP for government extension announcement, Ordem dos Advogados statements, Provedor de Justiça communications, SEF/AIMA official channels, cross-reference our April 15 appeal guide and deadline checklist",
+      "priority": 1
+    },
+    {
+      "topic": "Concertação Social сьогодні: USI вимагає місця за столом переговорів — чи виживе Trabalho XXI",
+      "type": "news",
+      "angle": "(continuation) Засідання Ради соціального діалогу 16 квітня — перше після того, як UGT допустила banco de horas з п'ятьма умовами. Нова динаміка: Союз незалежних профспілок (USI) офіційно вимагає участі в переговорах як третій профспілковий гравець. Фокус: чи прийняв уряд умови UGT, яку позицію зайняли роботодавці, які шанси реформи потрапити до парламенту до літа. Контекст: завтра маніфестація CGTP, тиск зростає. П'ята стаття серії.",
+      "sources_hint": "RTP Economia (USI statement), Lusa wire, Público/Observador live updates from Concertação Social session April 16, CGTP and UGT press releases, government/Ministry of Labor spokesperson, Parlamento.pt",
+      "priority": 1
+    },
+    {
+      "topic": "Маніфестація CGTP 17 квітня: які вулиці перекриють, хто страйкує і як дістатися на роботу",
+      "type": "utility",
+      "angle": "Практичний гід на завтра. Маршрут ходи Saldanha → Assembleia da República (14:30), перекриті вулиці та часові рамки. Повний перелік секторів у страйку: будівництво (FEVICCOM, 00:00–23:59), HoReCa (FESAHT), держслужба (STAL), медсестри — які саме послуги не працюватимуть. Альтернативні маршрути транспорту в Лісабоні, чи працюватиме метро, чи буде зачинена Carris. Вплив у Порту та інших містах. ВІДМІННІСТЬ від статті 12 квітня: та була про ПРАВО іммігранта страйкувати, ця — про ПРАКТИЧНИЙ ВПЛИВ на тих, хто їде на роботу чи потребує послуг.",
+      "sources_hint": "CGTP-IN website (manifestation route map, list of striking unions), PSP/CML traffic announcements, Carris/Metro Lisboa/CP disruption notices for April 17, FEVICCOM and FESAHT strike notices on BTE, STAL press release, Porto municipal announcements",
+      "priority": 1
+    },
+    {
+      "topic": "SNS у двох обличчях: на Сетубалі відкрили нову акушерську невідкладку, а в Лісабоні закрили ще два відділення тривалого догляду",
+      "type": "news",
+      "angle": "Дві новини одного дня, що показують суперечливий стан португальської медицини. Позитив: нова Urgência Regional de Ginecologia e Obstetrícia для Півострова Сетубал — які лікарні входять, як потрапити, чому це важливо для вагітних українок в Almada/Seixal/Setúbal (де немає сімейного лікаря). Негатив: закриття двох Unidades de Cuidados Continuados у Лісабонському регіоні — що це означає для людей після інсультів, операцій, з деменцією; де шукати альтернативи. Перехресні посилання на наші статті про кризу SNS (8 квітня) та медсестер-акушерок (15 квітня).",
+      "sources_hint": "RTP País (new Setúbal urgency, UCC closures), ARS LVT official announcements, SNS.gov.pt facility registry, Rede Nacional de Cuidados Continuados Integrados (RNCCI) data, Ordem dos Médicos/Enfermeiros statements on closures, hospital websites for Setúbal catchment area",
+      "priority": 2
+    },
+    {
+      "topic": "Продуктовий кошик оновив рекорд вп'яте поспіль: €259,52 — що подорожчало і де купувати вигідніше",
+      "type": "news",
+      "angle": "(continuation) Нові тижневі дані DECO: +€1,57 за тиждень, +€21,36 за рік. Фокус на НОВИХ даних: які продукти подорожчали найбільше саме цього тижня (порівняння з нашою статтею від 8 квітня, де лідерами були спагетті +24% та ставрида +55%). Практичний кут, якого не було раніше: порівняння цін у мережах за категоріями (Continente vs Pingo Doce vs Lidl vs Aldi), стратегія покупок для економії €30–50/міс (акційні дні, власні марки, замороження, сезонні овочі). Контекст: блокада Ормузу як фактор подорожчання.",
+      "sources_hint": "RTP Economia (DECO PROTESTE cabaz alimentar April 16 data), DECO comparador de preços supermarkets, Continente/Pingo Doce/Lidl/Aldi weekly flyers and online prices, INE IPC consumer price index April, our April 8 article for comparison baseline",
+      "priority": 2
+    },
+    {
+      "topic": "40 найнебезпечніших доріг Португалії: де їздять українці і на що звертати увагу",
+      "type": "news",
+      "angle": "Нове дослідження визначило 40 найнебезпечніших доріг країни. Стаття прив'язує дані до маршрутів, якими щоденно їздять українці: EN125 (Алгарве), IC19 (Лісабон–Сінтра, що зараз на ремонті), IC2, A1, підʼїзди до промзон. Контекст наших попередніх матеріалів: 20 загиблих за Великдень (8 квітня), 4 100+ штрафів за телефон (9 квітня). Практичний блок: типові причини аварій на цих дорогах (вузькі смуги, відсутність роздільника, погане освітлення), де стоять радари, як працює система балів (pontos) за порушення.",
+      "sources_hint": "RTP País (40 estradas mais perigosas report), ANSR accident statistics by road, GNR enforcement data Q1 2026, Automóvel Club de Portugal road safety reports, Infraestruturas de Portugal road condition database, LNEC road safety audits",
+      "priority": 2
+    },
+    {
+      "topic": "Протест силовиків біля Сан-Бенту: скільки людей вийшло і чи відреагував уряд на вимоги щодо пенсій",
+      "type": "news",
+      "angle": "(continuation) Вечірня стаття за результатами протесту 16 квітня. Фокус на НОВИХ фактах: кількість учасників, чи вийшов хтось з уряду до мітингувальників, чи є обіцянки нових переговорів. Реакція прем'єра або МВС. Аналіз: чи може масовість протесту вплинути на безпеку напередодні завтрашньої маніфестації CGTP та пожежного літа. Ризик «тихого страйку» (robota-por-zelosidade) — коли поліція працює суворо за інструкцією, що уповільнює реагування. Планується до написання після 18:00.",
+      "sources_hint": "Lusa/RTP/SIC/TVI live coverage from São Bento, ASPP-PSP and SINAPOL-GNR union post-protest statements and social media, government/MAI spokesperson response, Parlamento.pt for any urgent debates or interpellations, Sindicato dos Guardas Prisionais press release",
+      "priority": 2
+    },
+    {
+      "topic": "Як подати скаргу на лікарню чи клініку в Португалії: ERS, Livro de Reclamações, Provedor — повний гід",
+      "type": "material",
+      "angle": "Системний практичний гід для іммігрантів, які зіткнулися з неналежним обслуговуванням, відмовою в допомозі або порушенням прав пацієнта у системі SNS чи приватній клініці. Три рівні захисту: 1) Livro de Reclamações — є в кожній установі, відповідь за 15 днів, можна онлайн. 2) ERS (Entidade Reguladora da Saúde) — онлайн-скарга, безкоштовно, розслідування. 3) Provedor de Justiça — для системних проблем. Додатково: права пацієнта за Carta dos Direitos do Utente (право на інформацію рідною мовою, право відмовитися від лікування, право на супровід), як вимагати перекладача, що робити у невідкладній ситуації якщо відмовляють. Прив'язка до інциденту з померлим пацієнтом у палаті (сьогоднішня новина RTP) та загальної кризи SNS.",
+      "sources_hint": "ERS (entidadereguladorasaude.pt) complaint portal and annual report, Livro de Reclamações online (livroreclamacoes.pt), Provedor de Justiça healthcare section and 2025 annual report, Lei de Bases da Saúde (Lei 95/2019), Carta dos Direitos e Deveres dos Utentes SNS, DECO Proteste healthcare rights guides, IGAS inspection reports, SNS portal patient rights page",
+      "priority": 2
+    },
+    {
+      "topic": "Руй де Карвалью — 97 років на сцені: парламент вшанував найвідомішого актора Португалії",
+      "type": "news",
+      "angle": "Культурна стаття для інтеграції. Assembleia da República сьогодні вшанувала Руя де Карвалью — 97-річного актора з рекордом Гіннесса (найстаріший діючий актор у світі), 73+ роки кар'єри. Чому це важливо знати українцям: його ім'я впізнає кожен португалець, він — символ португальського театру та телебачення. Що подивитися: ключові ролі на RTP Play (безкоштовно), серіал «Conta-me Como Foi» (португальські «Невідомі»), театральні роботи в D. Maria II. Інтеграційна підказка: фраза для розмови з колегами «Viu a homenagem ao Ruy de Carvalho no Parlamento?»",
+      "sources_hint": "RTP Cultura (homenagem no Parlamento), SIC Notícias, Público cultura, RTP Play archive of Ruy de Carvalho works, Teatro Nacional D. Maria II, Guinness World Records entry, IMDB filmography",
+      "priority": 3
+    },
+    {
+      "topic": "Погода 17–19 квітня: чи вплине негода на маніфестацію та чого чекати на вихідних",
+      "type": "utility",
+      "angle": "Компактний прогноз на три дні для Лісабона (маніфестація CGTP: дощ чи сухо?), Порту та Фару/Алгарве. Температури вдень і вночі (чи можна вже вимкнути обігрівач?), вітер (Nortada повертається?), стан океану для Алгарве (чи відкриваються пляжі для вихідних?). Коротко і по суті — без повторення формату попередніх прогнозів, лише факти та конкретні поради (що одягти на маніфестацію, чи потрібна парасолька на вихідні).",
+      "sources_hint": "IPMA.pt 10-day forecast and warnings page, IPMA sea state forecast, Windguru for coastal conditions Lisbon/Porto/Faro, meteoblue city-specific, compare with our April 13 forecast for accuracy check",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-16",
+  "created_at": "2026-04-16T01:17:02.826122+00:00"
+}

@@ -1,0 +1,284 @@
+{
+  "timestamp": "2026-04-15_203726",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "aima-error-child-deportation-april-15-deadline, aima-appeal-guide-complaint-court-provedor-de-justica, ugt-accepts-banco-de-horas-conditions-labor-reform-april-2026, police-gnr-prison-guards-pension-protest-april-2026, storm-recovery-35900-applications-75-million-municipalities-update",
+  "author": "Pastelka News",
+  "duration_s": 7906.8,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 527.1,
+      "error": null
+    },
+    {
+      "name": "research:AIMA визнала помилку у відмові",
+      "status": "ok",
+      "duration_s": 245.9,
+      "error": null
+    },
+    {
+      "name": "generate:AIMA визнала помилку у відмові",
+      "status": "ok",
+      "duration_s": 85.6,
+      "error": null
+    },
+    {
+      "name": "review:AIMA визнала помилку у відмові",
+      "status": "ok",
+      "duration_s": 407.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:AIMA визнала помилку у відмові",
+      "status": "ok",
+      "duration_s": 23.8,
+      "error": null
+    },
+    {
+      "name": "save:AIMA визнала помилку у відмові",
+      "status": "ok",
+      "duration_s": 57.8,
+      "error": null
+    },
+    {
+      "name": "research:AIMA відмовила — що далі: скар",
+      "status": "ok",
+      "duration_s": 603.3,
+      "error": null
+    },
+    {
+      "name": "generate:AIMA відмовила — що далі: скар",
+      "status": "ok",
+      "duration_s": 129.4,
+      "error": null
+    },
+    {
+      "name": "review:AIMA відмовила — що далі: скар",
+      "status": "ok",
+      "duration_s": 322.3,
+      "error": null
+    },
+    {
+      "name": "tg_caption:AIMA відмовила — що далі: скар",
+      "status": "ok",
+      "duration_s": 21.4,
+      "error": null
+    },
+    {
+      "name": "save:AIMA відмовила — що далі: скар",
+      "status": "ok",
+      "duration_s": 58.7,
+      "error": null
+    },
+    {
+      "name": "research:Трудова реформа: UGT може прий",
+      "status": "ok",
+      "duration_s": 278.1,
+      "error": null
+    },
+    {
+      "name": "generate:Трудова реформа: UGT може прий",
+      "status": "ok",
+      "duration_s": 70.4,
+      "error": null
+    },
+    {
+      "name": "review:Трудова реформа: UGT може прий",
+      "status": "ok",
+      "duration_s": 194.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Трудова реформа: UGT може прий",
+      "status": "ok",
+      "duration_s": 15.7,
+      "error": null
+    },
+    {
+      "name": "save:Трудова реформа: UGT може прий",
+      "status": "ok",
+      "duration_s": 57.5,
+      "error": null
+    },
+    {
+      "name": "research:17 квітня — день масових страй",
+      "status": "failed",
+      "duration_s": 932.8,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Поліція, прикордонники та тюре",
+      "status": "ok",
+      "duration_s": 195.8,
+      "error": null
+    },
+    {
+      "name": "generate:Поліція, прикордонники та тюре",
+      "status": "ok",
+      "duration_s": 78.4,
+      "error": null
+    },
+    {
+      "name": "review:Поліція, прикордонники та тюре",
+      "status": "ok",
+      "duration_s": 182.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Поліція, прикордонники та тюре",
+      "status": "ok",
+      "duration_s": 14.5,
+      "error": null
+    },
+    {
+      "name": "save:Поліція, прикордонники та тюре",
+      "status": "ok",
+      "duration_s": 65.0,
+      "error": null
+    },
+    {
+      "name": "research:35 900 заявок на відновлення і",
+      "status": "ok",
+      "duration_s": 189.2,
+      "error": null
+    },
+    {
+      "name": "generate:35 900 заявок на відновлення і",
+      "status": "ok",
+      "duration_s": 63.2,
+      "error": null
+    },
+    {
+      "name": "review:35 900 заявок на відновлення і",
+      "status": "ok",
+      "duration_s": 163.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:35 900 заявок на відновлення і",
+      "status": "ok",
+      "duration_s": 19.1,
+      "error": null
+    },
+    {
+      "name": "save:35 900 заявок на відновлення і",
+      "status": "ok",
+      "duration_s": 59.1,
+      "error": null
+    },
+    {
+      "name": "research:IUC 2026: зміни в автоподатку ",
+      "status": "ok",
+      "duration_s": 285.6,
+      "error": null
+    },
+    {
+      "name": "generate:IUC 2026: зміни в автоподатку ",
+      "status": "ok",
+      "duration_s": 52.7,
+      "error": null
+    },
+    {
+      "name": "review:IUC 2026: зміни в автоподатку ",
+      "status": "ok",
+      "duration_s": 263.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:IUC 2026: зміни в автоподатку ",
+      "status": "ok",
+      "duration_s": 27.8,
+      "error": null
+    },
+    {
+      "name": "save:IUC 2026: зміни в автоподатку ",
+      "status": "ok",
+      "duration_s": 58.3,
+      "error": null
+    },
+    {
+      "name": "research:Уряд відтерміновує внески до S",
+      "status": "failed",
+      "duration_s": 936.0,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:SNS продовжить проєкт супровод",
+      "status": "ok",
+      "duration_s": 212.3,
+      "error": null
+    },
+    {
+      "name": "generate:SNS продовжить проєкт супровод",
+      "status": "ok",
+      "duration_s": 73.2,
+      "error": null
+    },
+    {
+      "name": "review:SNS продовжить проєкт супровод",
+      "status": "ok",
+      "duration_s": 184.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:SNS продовжить проєкт супровод",
+      "status": "ok",
+      "duration_s": 17.7,
+      "error": null
+    },
+    {
+      "name": "save:SNS продовжить проєкт супровод",
+      "status": "ok",
+      "duration_s": 55.2,
+      "error": null
+    },
+    {
+      "name": "research:Як зменшити рахунки за газ та ",
+      "status": "ok",
+      "duration_s": 253.4,
+      "error": null
+    },
+    {
+      "name": "generate:Як зменшити рахунки за газ та ",
+      "status": "ok",
+      "duration_s": 111.9,
+      "error": null
+    },
+    {
+      "name": "review:Як зменшити рахунки за газ та ",
+      "status": "ok",
+      "duration_s": 199.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Як зменшити рахунки за газ та ",
+      "status": "ok",
+      "duration_s": 15.0,
+      "error": null
+    },
+    {
+      "name": "save:Як зменшити рахунки за газ та ",
+      "status": "ok",
+      "duration_s": 59.6,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 38.2,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}
