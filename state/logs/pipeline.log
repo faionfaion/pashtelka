@@ -7432,3 +7432,73 @@ TimeoutError: agent_query timed out after 300s
 2026-04-16 02:28:09 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sns-setubal-obstetric-emergency-lisbon-continuing-care-closures.jpg (198 KB)
 02:28:09 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sns-setubal-obstetric-emergency-lisbon-continuing-care-closures.md
 2026-04-16 02:28:09 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sns-setubal-obstetric-emergency-lisbon-continuing-care-closures.md
+02:28:09 [pipeline] INFO: Article ready: sns-setubal-obstetric-emergency-lisbon-continuing-care-closures (SNS у контрастах: нова акушерська невідкладка — і )
+2026-04-16 02:28:09 [pipeline] INFO: Article ready: sns-setubal-obstetric-emergency-lisbon-continuing-care-closures (SNS у контрастах: нова акушерська невідкладка — і )
+02:28:09 [pipeline] INFO: === Article 5/10 ===
+2026-04-16 02:28:09 [pipeline] INFO: === Article 5/10 ===
+02:28:09 [pipeline] INFO: --- Article: [news] Продуктовий кошик оновив рекорд вп'яте поспіль: €259,52 — що ---
+2026-04-16 02:28:09 [pipeline] INFO: --- Article: [news] Продуктовий кошик оновив рекорд вп'яте поспіль: €259,52 — що ---
+02:28:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 02:28:09 [asyncio] DEBUG: Using selector: EpollSelector
+02:28:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 02:28:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:31:53 [pipeline.stages.s2_research] INFO: Research complete: 9471 chars
+2026-04-16 02:31:53 [pipeline.stages.s2_research] INFO: Research complete: 9471 chars
+02:31:53 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 02:31:53 [asyncio] DEBUG: Using selector: EpollSelector
+02:31:53 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 02:31:53 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:33:13 [pipeline.stages.s3_generate] INFO: Generated: 'Продуктовий кошик б'є рекорд вп'яте поспіль: €259,52 — хліб, цибуля і салат подорожчали найбільше' (slug=grocery-basket-fifth-record-259-savings-guide, 578 words, 9 sources)
+2026-04-16 02:33:13 [pipeline.stages.s3_generate] INFO: Generated: 'Продуктовий кошик б'є рекорд вп'яте поспіль: €259,52 — хліб, цибуля і салат подорожчали найбільше' (slug=grocery-basket-fifth-record-259-savings-guide, 578 words, 9 sources)
+02:33:13 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 02:33:13 [asyncio] DEBUG: Using selector: EpollSelector
+02:33:13 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 02:33:13 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:34:36 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-16 02:34:36 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+02:34:36 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, фактологічно щільна та має високу практичну цінність для аудиторії. Але є кілька зауважень перед публікацією:
+
+**1. Перетин з матеріалом від 13 квітня (не критичний, але по
+2026-04-16 02:34:36 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, фактологічно щільна та має високу практичну цінність для аудиторії. Але є кілька зауважень перед публікацією:
+
+**1. Перетин з матеріалом від 13 квітня (не критичний, але по
+02:34:36 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 02:34:36 [asyncio] DEBUG: Using selector: EpollSelector
+02:34:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 02:34:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:35:38 [pipeline.stages.s5_revise] INFO: Revised article: 571 words
+2026-04-16 02:35:38 [pipeline.stages.s5_revise] INFO: Revised article: 571 words
+02:35:38 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-16 02:35:38 [pipeline] INFO: === Review cycle 1/3 complete ===
+02:35:38 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 02:35:38 [asyncio] DEBUG: Using selector: EpollSelector
+02:35:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 02:35:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:37:10 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-16 02:37:10 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:37:10 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття — добре структурована, практична, релевантна для аудиторії. Кілька зауважень для фінального полірування:
+
+1. **Розбіжність URL CNN Portugal.** У тексті статті посилання на INE/інфляцію м
+2026-04-16 02:37:10 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття — добре структурована, практична, релевантна для аудиторії. Кілька зауважень для фінального полірування:
+
+1. **Розбіжність URL CNN Portugal.** У тексті статті посилання на INE/інфляцію м
+02:37:10 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-16 02:37:10 [pipeline] INFO: Article approved after 1 revision(s)
+02:37:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 02:37:10 [asyncio] DEBUG: Using selector: EpollSelector
+02:37:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 02:37:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:37:28 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1133 chars, vocab: 5 words, pt: 212 chars
+2026-04-16 02:37:28 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1133 chars, vocab: 5 words, pt: 212 chars
+02:37:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-16 02:37:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:38:26 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-16 02:38:26 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+02:38:27 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-16 02:38:27 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+02:38:27 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 2971821
+2026-04-16 02:38:27 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 2971821
+02:38:27 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/grocery-basket-fifth-record-259-savings-guide.jpg (255 KB)
+2026-04-16 02:38:27 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/grocery-basket-fifth-record-259-savings-guide.jpg (255 KB)
+02:38:27 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/grocery-basket-fifth-record-259-savings-guide.md
+2026-04-16 02:38:27 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/grocery-basket-fifth-record-259-savings-guide.md
