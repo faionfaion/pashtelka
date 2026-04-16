@@ -7192,3 +7192,69 @@ TimeoutError: agent_query timed out after 300s
 2026-04-16 01:39:43 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/aima-deadline-passed-april-16-day-after-checklist.jpg (262 KB)
 01:39:43 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/aima-deadline-passed-april-16-day-after-checklist.md
 2026-04-16 01:39:43 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/aima-deadline-passed-april-16-day-after-checklist.md
+01:39:44 [pipeline] INFO: Article ready: aima-deadline-passed-april-16-day-after-checklist (Дедлайн AIMA 15 квітня минув: уряд нічого не продо)
+2026-04-16 01:39:44 [pipeline] INFO: Article ready: aima-deadline-passed-april-16-day-after-checklist (Дедлайн AIMA 15 квітня минув: уряд нічого не продо)
+01:39:44 [pipeline] INFO: === Article 2/10 ===
+2026-04-16 01:39:44 [pipeline] INFO: === Article 2/10 ===
+01:39:44 [pipeline] INFO: --- Article: [news] Concertação Social сьогодні: USI вимагає місця за столом пер ---
+2026-04-16 01:39:44 [pipeline] INFO: --- Article: [news] Concertação Social сьогодні: USI вимагає місця за столом пер ---
+01:39:44 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 01:39:44 [asyncio] DEBUG: Using selector: EpollSelector
+01:39:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 01:39:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:44:08 [pipeline.stages.s2_research] INFO: Research complete: 11825 chars
+2026-04-16 01:44:08 [pipeline.stages.s2_research] INFO: Research complete: 11825 chars
+01:44:08 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 01:44:08 [asyncio] DEBUG: Using selector: EpollSelector
+01:44:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 01:44:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:45:37 [pipeline.stages.s3_generate] INFO: Generated: 'Concertação Social засідає без результату: USI вимагає місця за столом, а завтра — страйки і маніфестація CGTP' (slug=concertacao-social-usi-demands-seat-trabalho-xxi-april-16, 574 words, 10 sources)
+2026-04-16 01:45:37 [pipeline.stages.s3_generate] INFO: Generated: 'Concertação Social засідає без результату: USI вимагає місця за столом, а завтра — страйки і маніфестація CGTP' (slug=concertacao-social-usi-demands-seat-trabalho-xxi-april-16, 574 words, 10 sources)
+01:45:37 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 01:45:37 [asyncio] DEBUG: Using selector: EpollSelector
+01:45:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 01:45:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:46:51 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-16 01:46:51 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+01:46:51 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — добре sourcing, корисний контекст для іммігрантів, практичні поради щодо страйків. Але є кілька питань перед публікацією:
+
+**1. ДЕДУПЛІКАЦІЯ (важливо):** Розділ «Banco de horas
+2026-04-16 01:46:51 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — добре sourcing, корисний контекст для іммігрантів, практичні поради щодо страйків. Але є кілька питань перед публікацією:
+
+**1. ДЕДУПЛІКАЦІЯ (важливо):** Розділ «Banco de horas
+01:46:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 01:46:51 [asyncio] DEBUG: Using selector: EpollSelector
+01:46:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 01:46:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:48:58 [pipeline.stages.s5_revise] INFO: Revised article: 616 words
+2026-04-16 01:48:58 [pipeline.stages.s5_revise] INFO: Revised article: 616 words
+01:48:58 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-16 01:48:58 [pipeline] INFO: === Review cycle 1/3 complete ===
+01:48:58 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 01:48:58 [asyncio] DEBUG: Using selector: EpollSelector
+01:48:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 01:48:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:50:20 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-16 01:50:20 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+01:50:20 [pipeline.stages.s4_review] INFO: Feedback: Якісний матеріал із сильним новим кутом (USI + петиція про неконституційність), який чітко відрізняється від попередніх публікацій про banco de horas (15.04) та позицію роботодавців (13.04). Перехресн
+2026-04-16 01:50:20 [pipeline.stages.s4_review] INFO: Feedback: Якісний матеріал із сильним новим кутом (USI + петиція про неконституційність), який чітко відрізняється від попередніх публікацій про banco de horas (15.04) та позицію роботодавців (13.04). Перехресн
+01:50:20 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-16 01:50:20 [pipeline] INFO: Article approved after 1 revision(s)
+01:50:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-16 01:50:20 [asyncio] DEBUG: Using selector: EpollSelector
+01:50:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-16 01:50:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:50:37 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1163 chars, vocab: 5 words, pt: 194 chars
+2026-04-16 01:50:37 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1163 chars, vocab: 5 words, pt: 194 chars
+01:50:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-16 01:50:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+01:51:34 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-16 01:51:34 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+01:51:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-16 01:51:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+01:51:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3392651
+2026-04-16 01:51:35 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3392651
+01:51:35 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/concertacao-social-usi-demands-seat-trabalho-xxi-april-16.jpg (279 KB)
+2026-04-16 01:51:35 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/concertacao-social-usi-demands-seat-trabalho-xxi-april-16.jpg (279 KB)
+01:51:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/concertacao-social-usi-demands-seat-trabalho-xxi-april-16.md
+2026-04-16 01:51:35 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/concertacao-social-usi-demands-seat-trabalho-xxi-april-16.md
