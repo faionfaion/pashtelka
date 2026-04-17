@@ -8589,3 +8589,91 @@ TimeoutError: agent_query timed out after 300s
 2026-04-17 03:22:15 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ajuste-direto-limits-construction-services-procurement-reform-2026.jpg (234 KB)
 03:22:15 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ajuste-direto-limits-construction-services-procurement-reform-2026.md
 2026-04-17 03:22:15 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ajuste-direto-limits-construction-services-procurement-reform-2026.md
+03:22:15 [pipeline] INFO: Article ready: ajuste-direto-limits-construction-services-procurement-reform-2026 (Уряд у 5 разів підвищує ліміт прямих закупівель у )
+2026-04-17 03:22:15 [pipeline] INFO: Article ready: ajuste-direto-limits-construction-services-procurement-reform-2026 (Уряд у 5 разів підвищує ліміт прямих закупівель у )
+03:22:15 [pipeline] INFO: === Article 10/10 ===
+2026-04-17 03:22:15 [pipeline] INFO: === Article 10/10 ===
+03:22:15 [pipeline] INFO: --- Article: [news] Тиждень із Volta: що працює, що ламається і де шукати автома ---
+2026-04-17 03:22:15 [pipeline] INFO: --- Article: [news] Тиждень із Volta: що працює, що ламається і де шукати автома ---
+03:22:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:22:15 [asyncio] DEBUG: Using selector: EpollSelector
+03:22:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:22:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:27:15 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-17 03:27:15 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+03:27:20 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.5s
+2026-04-17 03:27:20 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.5s
+03:27:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:27:27 [asyncio] DEBUG: Using selector: EpollSelector
+03:27:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:27:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:32:27 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-17 03:32:27 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+03:32:32 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 12.0s
+2026-04-17 03:32:32 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 12.0s
+03:32:44 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:32:44 [asyncio] DEBUG: Using selector: EpollSelector
+03:32:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:32:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:37:40 [pipeline.stages.s2_research] INFO: Research complete: 14384 chars
+2026-04-17 03:37:40 [pipeline.stages.s2_research] INFO: Research complete: 14384 chars
+03:37:40 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:37:40 [asyncio] DEBUG: Using selector: EpollSelector
+03:37:40 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:37:40 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:39:00 [pipeline.stages.s3_generate] INFO: Generated: 'Тиждень із Volta: автомати працюють, але пляшок із логотипом майже нема — де здавати тару в Порту та Фару' (slug=volta-first-week-results-problems-porto-faro-lifehacks, 392 words, 10 sources)
+2026-04-17 03:39:00 [pipeline.stages.s3_generate] INFO: Generated: 'Тиждень із Volta: автомати працюють, але пляшок із логотипом майже нема — де здавати тару в Порту та Фару' (slug=volta-first-week-results-problems-porto-faro-lifehacks, 392 words, 10 sources)
+03:39:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:39:00 [asyncio] DEBUG: Using selector: EpollSelector
+03:39:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:39:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:39:55 [pipeline.stages.s4_review] INFO: Review: score=6, approved=False
+2026-04-17 03:39:55 [pipeline.stages.s4_review] INFO: Review: score=6, approved=False
+03:39:55 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, актуальна й практична — але є кілька проблем, які блокують публікацію.
+
+**КРИТИЧНЕ:**
+1. **Обрізаний текст у секції DECO Proteste.** Пункт «Малі (» — речення обривається. З
+2026-04-17 03:39:55 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, актуальна й практична — але є кілька проблем, які блокують публікацію.
+
+**КРИТИЧНЕ:**
+1. **Обрізаний текст у секції DECO Proteste.** Пункт «Малі (» — речення обривається. З
+03:39:55 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:39:55 [asyncio] DEBUG: Using selector: EpollSelector
+03:39:55 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:39:55 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:42:16 [pipeline.stages.s5_revise] INFO: Revised article: 457 words
+2026-04-17 03:42:16 [pipeline.stages.s5_revise] INFO: Revised article: 457 words
+03:42:16 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-17 03:42:16 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:42:16 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:42:16 [asyncio] DEBUG: Using selector: EpollSelector
+03:42:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:42:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:43:18 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-17 03:43:18 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:43:18 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з практичною цінністю. Кілька дрібних зауважень для фіналу:
+
+1. **«Os meus depósitos» — не перекладено.** Чек-лист п.10: португальські терміни пояснюються при першому вживанні. Додайте: 
+2026-04-17 03:43:18 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з практичною цінністю. Кілька дрібних зауважень для фіналу:
+
+1. **«Os meus depósitos» — не перекладено.** Чек-лист п.10: португальські терміни пояснюються при першому вживанні. Додайте: 
+03:43:18 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-17 03:43:18 [pipeline] INFO: Article approved after 1 revision(s)
+03:43:18 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:43:18 [asyncio] DEBUG: Using selector: EpollSelector
+03:43:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:43:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:43:34 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1176 chars, vocab: 5 words, pt: 247 chars
+2026-04-17 03:43:34 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1176 chars, vocab: 5 words, pt: 247 chars
+03:43:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-17 03:43:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:44:28 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-17 03:44:28 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+03:44:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-17 03:44:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+03:44:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3155338
+2026-04-17 03:44:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3155338
+03:44:30 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/volta-first-week-results-problems-porto-faro-lifehacks.jpg (217 KB)
+2026-04-17 03:44:30 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/volta-first-week-results-problems-porto-faro-lifehacks.jpg (217 KB)
+03:44:30 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/volta-first-week-results-problems-porto-faro-lifehacks.md
+2026-04-17 03:44:30 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/volta-first-week-results-problems-porto-faro-lifehacks.md
