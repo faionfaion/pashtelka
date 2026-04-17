@@ -8363,3 +8363,69 @@ TimeoutError: agent_query timed out after 300s
 2026-04-17 02:51:10 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sns-dentist-career-parliament-cheque-dentista-guide.jpg (251 KB)
 02:51:10 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sns-dentist-career-parliament-cheque-dentista-guide.md
 2026-04-17 02:51:10 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sns-dentist-career-parliament-cheque-dentista-guide.md
+02:51:10 [pipeline] INFO: Article ready: sns-dentist-career-parliament-cheque-dentista-guide (Усі фракції за: SNS потрібна окрема кар'єра для ст)
+2026-04-17 02:51:10 [pipeline] INFO: Article ready: sns-dentist-career-parliament-cheque-dentista-guide (Усі фракції за: SNS потрібна окрема кар'єра для ст)
+02:51:10 [pipeline] INFO: === Article 7/10 ===
+2026-04-17 02:51:10 [pipeline] INFO: === Article 7/10 ===
+02:51:10 [pipeline] INFO: --- Article: [news] €76,6 млн на відновлення берегових і річкових зон — які регі ---
+2026-04-17 02:51:10 [pipeline] INFO: --- Article: [news] €76,6 млн на відновлення берегових і річкових зон — які регі ---
+02:51:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:51:10 [asyncio] DEBUG: Using selector: EpollSelector
+02:51:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:51:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:55:10 [pipeline.stages.s2_research] INFO: Research complete: 10095 chars
+2026-04-17 02:55:10 [pipeline.stages.s2_research] INFO: Research complete: 10095 chars
+02:55:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:55:10 [asyncio] DEBUG: Using selector: EpollSelector
+02:55:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:55:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:56:19 [pipeline.stages.s3_generate] INFO: Generated: '€76,6 млн на берегові зони: уряд виділив окреме фінансування на пляжі після штормів' (slug=coastal-riverbank-recovery-76-million-fundo-ambiental-storms, 497 words, 7 sources)
+2026-04-17 02:56:19 [pipeline.stages.s3_generate] INFO: Generated: '€76,6 млн на берегові зони: уряд виділив окреме фінансування на пляжі після штормів' (slug=coastal-riverbank-recovery-76-million-fundo-ambiental-storms, 497 words, 7 sources)
+02:56:19 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:56:19 [asyncio] DEBUG: Using selector: EpollSelector
+02:56:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:56:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:57:24 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-17 02:57:24 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:57:24 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований матеріал із чітким розмежуванням від попередньої публікації про €75 млн (15 квітня). Джерела перевіряються, практичний блок «Що це означає для вашого пляжного сезону» — с
+2026-04-17 02:57:24 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований матеріал із чітким розмежуванням від попередньої публікації про €75 млн (15 квітня). Джерела перевіряються, практичний блок «Що це означає для вашого пляжного сезону» — с
+02:57:24 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:57:24 [asyncio] DEBUG: Using selector: EpollSelector
+02:57:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:57:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:57:49 [pipeline.stages.s5_revise] INFO: Revised article: 539 words
+2026-04-17 02:57:49 [pipeline.stages.s5_revise] INFO: Revised article: 539 words
+02:57:49 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-17 02:57:49 [pipeline] INFO: === Review cycle 1/3 complete ===
+02:57:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:57:49 [asyncio] DEBUG: Using selector: EpollSelector
+02:57:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:57:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:59:16 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-17 02:59:16 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+02:59:16 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з високою практичною цінністю для аудиторії. Декілька зауважень:
+
+1. ЯСНІСТЬ ЦИФР: Розбивка за фазами (€15М + €12М + €31М + €53М = €111М) стоїть під заголовком, який починається з €76,6 
+2026-04-17 02:59:16 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з високою практичною цінністю для аудиторії. Декілька зауважень:
+
+1. ЯСНІСТЬ ЦИФР: Розбивка за фазами (€15М + €12М + €31М + €53М = €111М) стоїть під заголовком, який починається з €76,6 
+02:59:16 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-17 02:59:16 [pipeline] INFO: Article approved after 1 revision(s)
+02:59:16 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:59:16 [asyncio] DEBUG: Using selector: EpollSelector
+02:59:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:59:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:59:32 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1119 chars, vocab: 5 words, pt: 175 chars
+2026-04-17 02:59:32 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1119 chars, vocab: 5 words, pt: 175 chars
+02:59:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-17 02:59:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:00:28 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-17 03:00:28 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+03:00:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-17 03:00:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+03:00:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3022634
+2026-04-17 03:00:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3022634
+03:00:29 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/coastal-riverbank-recovery-76-million-fundo-ambiental-storms.jpg (256 KB)
+2026-04-17 03:00:29 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/coastal-riverbank-recovery-76-million-fundo-ambiental-storms.jpg (256 KB)
+03:00:29 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/coastal-riverbank-recovery-76-million-fundo-ambiental-storms.md
+2026-04-17 03:00:29 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/coastal-riverbank-recovery-76-million-fundo-ambiental-storms.md
