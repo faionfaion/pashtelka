@@ -1,0 +1,332 @@
+{
+  "timestamp": "2026-04-16_033144",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "aima-deadline-passed-april-16-day-after-checklist, concertacao-social-usi-demands-seat-trabalho-xxi-april-16, cgtp-strike-april-17-street-closures-transport-guide, sns-setubal-obstetric-emergency-lisbon-continuing-care-closures, grocery-basket-fifth-record-259-savings-guide",
+  "author": "Pastelka News",
+  "duration_s": 8082.2,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 555.4,
+      "error": null
+    },
+    {
+      "name": "research:Дедлайн AIMA 15 квітня минув: ",
+      "status": "ok",
+      "duration_s": 286.1,
+      "error": null
+    },
+    {
+      "name": "generate:Дедлайн AIMA 15 квітня минув: ",
+      "status": "ok",
+      "duration_s": 106.3,
+      "error": null
+    },
+    {
+      "name": "review:Дедлайн AIMA 15 квітня минув: ",
+      "status": "ok",
+      "duration_s": 331.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Дедлайн AIMA 15 квітня минув: ",
+      "status": "ok",
+      "duration_s": 19.9,
+      "error": null
+    },
+    {
+      "name": "save:Дедлайн AIMA 15 квітня минув: ",
+      "status": "ok",
+      "duration_s": 61.8,
+      "error": null
+    },
+    {
+      "name": "research:Concertação Social сьогодні: U",
+      "status": "ok",
+      "duration_s": 264.6,
+      "error": null
+    },
+    {
+      "name": "generate:Concertação Social сьогодні: U",
+      "status": "ok",
+      "duration_s": 88.7,
+      "error": null
+    },
+    {
+      "name": "review:Concertação Social сьогодні: U",
+      "status": "ok",
+      "duration_s": 283.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Concertação Social сьогодні: U",
+      "status": "ok",
+      "duration_s": 16.5,
+      "error": null
+    },
+    {
+      "name": "save:Concertação Social сьогодні: U",
+      "status": "ok",
+      "duration_s": 58.3,
+      "error": null
+    },
+    {
+      "name": "research:Маніфестація CGTP 17 квітня: я",
+      "status": "ok",
+      "duration_s": 568.2,
+      "error": null
+    },
+    {
+      "name": "generate:Маніфестація CGTP 17 квітня: я",
+      "status": "ok",
+      "duration_s": 67.1,
+      "error": null
+    },
+    {
+      "name": "review:Маніфестація CGTP 17 квітня: я",
+      "status": "ok",
+      "duration_s": 543.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Маніфестація CGTP 17 квітня: я",
+      "status": "ok",
+      "duration_s": 16.7,
+      "error": null
+    },
+    {
+      "name": "save:Маніфестація CGTP 17 квітня: я",
+      "status": "ok",
+      "duration_s": 60.5,
+      "error": null
+    },
+    {
+      "name": "research:SNS у двох обличчях: на Сетуба",
+      "status": "ok",
+      "duration_s": 551.0,
+      "error": null
+    },
+    {
+      "name": "generate:SNS у двох обличчях: на Сетуба",
+      "status": "ok",
+      "duration_s": 91.4,
+      "error": null
+    },
+    {
+      "name": "review:SNS у двох обличчях: на Сетуба",
+      "status": "ok",
+      "duration_s": 218.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:SNS у двох обличчях: на Сетуба",
+      "status": "ok",
+      "duration_s": 22.1,
+      "error": null
+    },
+    {
+      "name": "save:SNS у двох обличчях: на Сетуба",
+      "status": "ok",
+      "duration_s": 55.1,
+      "error": null
+    },
+    {
+      "name": "research:Продуктовий кошик оновив рекор",
+      "status": "ok",
+      "duration_s": 223.4,
+      "error": null
+    },
+    {
+      "name": "generate:Продуктовий кошик оновив рекор",
+      "status": "ok",
+      "duration_s": 80.8,
+      "error": null
+    },
+    {
+      "name": "review:Продуктовий кошик оновив рекор",
+      "status": "ok",
+      "duration_s": 236.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Продуктовий кошик оновив рекор",
+      "status": "ok",
+      "duration_s": 17.9,
+      "error": null
+    },
+    {
+      "name": "save:Продуктовий кошик оновив рекор",
+      "status": "ok",
+      "duration_s": 59.4,
+      "error": null
+    },
+    {
+      "name": "research:40 найнебезпечніших доріг Порт",
+      "status": "ok",
+      "duration_s": 232.5,
+      "error": null
+    },
+    {
+      "name": "generate:40 найнебезпечніших доріг Порт",
+      "status": "ok",
+      "duration_s": 86.9,
+      "error": null
+    },
+    {
+      "name": "review:40 найнебезпечніших доріг Порт",
+      "status": "ok",
+      "duration_s": 225.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:40 найнебезпечніших доріг Порт",
+      "status": "ok",
+      "duration_s": 20.5,
+      "error": null
+    },
+    {
+      "name": "save:40 найнебезпечніших доріг Порт",
+      "status": "ok",
+      "duration_s": 53.0,
+      "error": null
+    },
+    {
+      "name": "research:Протест силовиків біля Сан-Бен",
+      "status": "ok",
+      "duration_s": 593.4,
+      "error": null
+    },
+    {
+      "name": "generate:Протест силовиків біля Сан-Бен",
+      "status": "ok",
+      "duration_s": 73.0,
+      "error": null
+    },
+    {
+      "name": "review:Протест силовиків біля Сан-Бен",
+      "status": "ok",
+      "duration_s": 556.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Протест силовиків біля Сан-Бен",
+      "status": "ok",
+      "duration_s": 19.2,
+      "error": null
+    },
+    {
+      "name": "save:Протест силовиків біля Сан-Бен",
+      "status": "ok",
+      "duration_s": 60.7,
+      "error": null
+    },
+    {
+      "name": "research:Як подати скаргу на лікарню чи",
+      "status": "ok",
+      "duration_s": 232.1,
+      "error": null
+    },
+    {
+      "name": "generate:Як подати скаргу на лікарню чи",
+      "status": "ok",
+      "duration_s": 101.4,
+      "error": null
+    },
+    {
+      "name": "review:Як подати скаргу на лікарню чи",
+      "status": "ok",
+      "duration_s": 124.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Як подати скаргу на лікарню чи",
+      "status": "ok",
+      "duration_s": 13.3,
+      "error": null
+    },
+    {
+      "name": "save:Як подати скаргу на лікарню чи",
+      "status": "ok",
+      "duration_s": 54.9,
+      "error": null
+    },
+    {
+      "name": "research:Руй де Карвалью — 97 років на ",
+      "status": "ok",
+      "duration_s": 129.3,
+      "error": null
+    },
+    {
+      "name": "generate:Руй де Карвалью — 97 років на ",
+      "status": "ok",
+      "duration_s": 60.8,
+      "error": null
+    },
+    {
+      "name": "review:Руй де Карвалью — 97 років на ",
+      "status": "ok",
+      "duration_s": 91.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Руй де Карвалью — 97 років на ",
+      "status": "ok",
+      "duration_s": 17.3,
+      "error": null
+    },
+    {
+      "name": "save:Руй де Карвалью — 97 років на ",
+      "status": "ok",
+      "duration_s": 52.2,
+      "error": null
+    },
+    {
+      "name": "research:Погода 17–19 квітня: чи вплине",
+      "status": "ok",
+      "duration_s": 158.2,
+      "error": null
+    },
+    {
+      "name": "generate:Погода 17–19 квітня: чи вплине",
+      "status": "ok",
+      "duration_s": 53.0,
+      "error": null
+    },
+    {
+      "name": "review:Погода 17–19 квітня: чи вплине",
+      "status": "ok",
+      "duration_s": 82.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Погода 17–19 квітня: чи вплине",
+      "status": "ok",
+      "duration_s": 11.7,
+      "error": null
+    },
+    {
+      "name": "save:Погода 17–19 квітня: чи вплине",
+      "status": "ok",
+      "duration_s": 54.7,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 38.0,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

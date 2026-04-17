@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "Trabalho XXI: уряд оголосив «умови зібрані» для закриття переговорів — що ухвалять і що це означає для працівників (продовження)",
+      "type": "news",
+      "angle": "Сьогодні, поки CGTP страйкує на вулицях, уряд заявив що готовий завершити переговори про трудову реформу. Це 8-й матеріал серії. Фокус: які саме пункти лишились (banco de horas, строкові контракти, аутсорсинг), чому уряд вважає, що умови є, хоча жодна профспілка не погодилась. Що конкретно зміниться для українців у будівництві, HoReCa, прибиранні — секторах із найбільш вразливими контрактами. Часова лінія: коли текст потрапить до парламенту, коли голосування, коли набуде чинності.",
+      "sources_hint": "RTP Economia (today's headline 'condições para encerrar negociações'), Público, Jornal de Negócios, ECO, CGTP-IN press releases, government Concertação Social page, previous Pashtelka series articles for context",
+      "priority": 1
+    },
+    {
+      "topic": "Водії TVDE не можуть працювати через прострочені дозволи на проживання — тисячі заблокованих",
+      "type": "news",
+      "angle": "RTP повідомляє: водії Uber/Bolt (TVDE) масово не можуть працювати, бо їхні autorização de residência прострочені або застрягли в AIMA. IMT вимагає чинний документ для ліцензії, AIMA не встигає обробити. Перетин двох криз: AIMA бекдог + платформна економіка. Скільки водіїв TVDE в Португалії (~50 000), яка частка іммігрантів (>60%), які конкретно документи потрібні від AIMA. Для українців — як ця ситуація стосується тих, хто працює водієм або планує, та чи захищає proteção temporária від цієї проблеми (так, але з нюансами).",
+      "sources_hint": "RTP headline 'Motoristas TVDE impedidos de trabalhar por falta de autorização de residência', IMT regulations (Lei 45/2018), ANTRAL, STRUP union, AIMA backlog data from previous Pashtelka articles, TVDE driver forums",
+      "priority": 1
+    },
+    {
+      "topic": "Вихідні 18–20 квітня: Benfica vs Sporting, останній день кінофесту та весняні ринки",
+      "type": "guide",
+      "angle": "П'ятничний гід на вихідні. НЕ повторювати минулий тижневий гід (14–18 квітня). Нові події: дербі Лісабона Benfica–Sporting 19 квітня (де дивитись, перекриття доріг навколо Estádio da Luz), закриття 19-го Festa do Cinema Italiano 19 квітня (безкоштовний Armani Tribute), старт продажу квитків IndieLisboa, весняні ярмарки та mercados. Порту: що нового після тижня Холоденка. Алгарве/Фару: GAMA RAMA продовжується, ринки в Лоулі та Тавірі. Погода: субота найтепліша (до 26–30°C), переходити на літній одяг. Безкоштовні музеї DGPC у неділю.",
+      "sources_hint": "Timeout Lisboa, Timeout Porto, Agenda Cultural Lisboa (CML), VisitPorto, VisitAlgarve, Sport TV schedule for derby, IPMA weekend forecast, IndieLisboa.com, Festa Cinema Italiano schedule, DGPC museum list",
+      "priority": 1
+    },
+    {
+      "topic": "Як стати водієм TVDE у Португалії: документи, витрати, заробіток — повний гід для іммігрантів",
+      "type": "material",
+      "angle": "Прив'язано до сьогоднішньої новини про заблокованих водіїв. Компіляція з 5+ джерел. Повний шлях: які документи потрібні (AR або proteção temporária, сертифікат IMT, страховка, медогляд), скільки коштує старт (€500–1500 на ліцензування, авто в оренду vs власне), які платформи працюють (Uber, Bolt, FreeNow) і хто платить більше, середній заробіток (€1200–2000 чистими, залежно від годин), податки (ato isolado vs recibos verdes, IRS categoria B), ризики (відсутність соцзахисту, амортизація авто). Окремий блок: що робити, якщо документи застрягли в AIMA — як захистити ліцензію. ВАЖЛИВО: мінімізувати перетин з новинною статтею про TVDE — тут фокус на покроковому гіді для новачків, не на поточній кризі.",
+      "sources_hint": "Lei 45/2018 (TVDE framework), IMT.pt (licensing requirements), Uber/Bolt driver onboarding pages, ANTRAL statistics, Tax Authority portal (recibos verdes), TVDE Facebook groups Portugal, Deco Proteste TVDE analysis, Jornal de Negócios TVDE market reports",
+      "priority": 2
+    },
+    {
+      "topic": "Метро Лісабона: €48 млн на лінію Circular — загальний бюджет уже €380 млн, а кінця не видно",
+      "type": "news",
+      "angle": "Уряд схвалив ще €48 млн на завершення лінії Circular (колишня Verde/Amarela — об'єднання в кільце через Estrela–Santos–Cais do Sodré). Загальна вартість зросла до €380 млн — утричі від початкового бюджету. Коли реально відкриється? Очікувані нові станції. Як зміниться маршрутна мережа для мешканців центру Лісабона. Контекст: на тлі двох страйків метро за квітень і хронічного недофінансування — чому Лісабон одночасно будує нове і не може утримати те, що є. Практично: що це означає для тих, хто мешкає в зоні Estrela/Santos (багато українців орендують там).",
+      "sources_hint": "RTP Economia (headline '48 milhões para Circular Metro Lisboa 380 milhões'), Metropolitano de Lisboa official site, Resolução do Conselho de Ministros, Lusa, Jornal de Negócios, previous Pashtelka metro strike articles for context",
+      "priority": 2
+    },
+    {
+      "topic": "Парламент одностайний: SNS потрібна окрема кар'єра для стоматологів — що це змінить для пацієнтів",
+      "type": "news",
+      "angle": "Усі партії погодились: в SNS немає виділеної кар'єрної структури для стоматологів, тому система не може залучити і втримати зубних лікарів. Зараз у SNS — мізерна кількість стоматологів, черга на прийом — місяці. Практичний кут для українців: де зараз можна отримати безкоштовну стоматологічну допомогу (cheque-dentista для вагітних, дітей, 65+, діабетиків), скільки коштує приватний прийом (€40–80 консультація), чи покриває proteção temporária стоматологію (так, через cheque-dentista). Коли зміни набудуть чинності (не раніше 2027). Перехресне посилання на гід médico de família.",
+      "sources_hint": "RTP headline 'Partidos coincidem necessidade criar carreira médicos dentistas no SNS', Comissão Parlamentar de Saúde minutes, Ordem dos Médicos Dentistas (OMD) statistics, SNS cheque-dentista program page, DGS oral health data, WHO Portugal dental health report",
+      "priority": 2
+    },
+    {
+      "topic": "€76,6 млн на відновлення берегових і річкових зон — які регіони отримають гроші",
+      "type": "news",
+      "angle": "Уряд окремим рішенням виділив €76,6 млн саме на відновлення zonas ribeirinhas e costeiras після штормів Kristin, Leonardo та Marta. Це ОКРЕМА програма від €75 млн для муніципальної інфраструктури (наша стаття від 15 квітня). Фокус: які конкретно берегові зони отримають фінансування, які роботи будуть виконані (укріплення набережних, ремонт морських стін, дренаж), які муніципалітети подали заявки. Для українців в Алгарве, Сетубалі, Кашкайші — як це вплине на пляжну інфраструктуру до літа. Перехресне посилання на попередню статтю про 35 900 заявок.",
+      "sources_hint": "RTP headline 'Governo aprova apoio 76,6 ME danos zonas ribeirinhas costeiras', Resolução Conselho de Ministros, APA (Agência Portuguesa do Ambiente), CCDR-LVT, CCDR-Centro, Lusa, previous Pashtelka storm recovery articles",
+      "priority": 2
+    },
+    {
+      "topic": "Скандал у лікарні Santa Maria: 28 медиків отримували незаконну оплату за додаткові операції",
+      "type": "news",
+      "angle": "В Hospital de Santa Maria (найбільша лікарня Португалії) виявлено, що 28 медичних працівників отримували неправомірну оплату за cirurgias adicionais — додаткові хірургічні втручання у вечірній час. Це системна проблема SNS: програма SIGIC дозволяє додатково оплачувані операції для скорочення черг, але контроль слабкий. Для українських пацієнтів: чи вплине скандал на доступність операцій (черги можуть зрости, якщо програму тимчасово зупинять), що таке lista de espera e cirurgias adicionais, як перевірити свою чергу через Portal SNS 24. Перехресне посилання на серію про кризу SNS. УВАГА: це вже 6-та стаття про SNS за тиждень — публікувати лише за наявності вільного слоту, акцент суто на практиці (як перевірити чергу), мінімум про сам скандал.",
+      "sources_hint": "RTP headline 'Cirurgias adicionais no Santa Maria pagas indevidamente a 28 profissionais', IGAS inspection report, ULS São José (manages Santa Maria) response, SIGIC program rules (Portaria), SNS 24 portal for waiting lists, previous Pashtelka SNS articles",
+      "priority": 3
+    },
+    {
+      "topic": "Уряд підвищує ліміти прямих закупівель: послуги до €75 тис., будівництво до €150 тис. — як це вплине на ринок праці",
+      "type": "news",
+      "angle": "Рада Міністрів хоче підвищити поріг ajuste direto: для послуг з €20K до €75K, для будівельних підрядів з €30K до €150K. Це означає, що тисячі малих будівельних та сервісних проєктів можна буде замовляти без публічного тендеру. Для українців у будівництві (одна з найбільших секторів зайнятості діаспори): більше дрібних замовлень = більше роботи, швидше оплата. Але й ризики: менша прозорість, можливе зниження конкуренції, фаворитизм. Для українських підприємців — як потрапити в базу постачальників через Portal BASE та eCompras.",
+      "sources_hint": "RTP Economia headline 'Governo quer subir teto ajustes diretos serviços 75 mil empreitadas 150 mil', Código dos Contratos Públicos (CCP), Portal BASE.gov.pt statistics, IMPIC data on construction contracts, CIP/CCP reactions, previous Pashtelka articles on construction sector",
+      "priority": 3
+    },
+    {
+      "topic": "Тиждень із Volta: що працює, що ламається і де шукати автомати у вашому районі",
+      "type": "news",
+      "angle": "Система депозиту Volta працює рівно тиждень (з 10 квітня). Наша стаття від 10 квітня описала перший день. Тепер — підсумок першого тижня: скільки пляшок здано (SGIRS дані), які найпоширеніші проблеми (автомати не читають штрихкоди, зім'ята тара, черги), як знайти найближчий автомат (додаток/сайт SGIRS), нові мережі, що підключились за тиждень. Лайфхаки від перших користувачів: як правильно зберігати тару для максимального повернення. Фокус на Порту та Фару — в першій статті домінував Лісабон.",
+      "sources_hint": "SGIRS Volta official site and app, Volta social media feedback, DECO PROteste consumer reports, Continente/Pingo Doce/Lidl store announcements, RTP/SIC consumer segments on Volta first week, previous Pashtelka Volta article for cross-reference",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-17",
+  "created_at": "2026-04-17T01:17:02.576975+00:00"
+}
