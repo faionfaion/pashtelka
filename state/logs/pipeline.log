@@ -8289,3 +8289,77 @@ TimeoutError: agent_query timed out after 300s
 2026-04-17 02:35:48 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/lisbon-metro-circular-line-48-million-budget-380-total-2027.jpg (240 KB)
 02:35:48 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/lisbon-metro-circular-line-48-million-budget-380-total-2027.md
 2026-04-17 02:35:48 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/lisbon-metro-circular-line-48-million-budget-380-total-2027.md
+02:35:48 [pipeline] INFO: Article ready: lisbon-metro-circular-line-48-million-budget-380-total-2027 (Метро Лісабона: ще €48 млн на лінію Circular — бюд)
+2026-04-17 02:35:48 [pipeline] INFO: Article ready: lisbon-metro-circular-line-48-million-budget-380-total-2027 (Метро Лісабона: ще €48 млн на лінію Circular — бюд)
+02:35:48 [pipeline] INFO: === Article 6/10 ===
+2026-04-17 02:35:48 [pipeline] INFO: === Article 6/10 ===
+02:35:48 [pipeline] INFO: --- Article: [news] Парламент одностайний: SNS потрібна окрема кар'єра для стома ---
+2026-04-17 02:35:48 [pipeline] INFO: --- Article: [news] Парламент одностайний: SNS потрібна окрема кар'єра для стома ---
+02:35:48 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:35:48 [asyncio] DEBUG: Using selector: EpollSelector
+02:35:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:35:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:40:48 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-17 02:40:48 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:40:54 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.7s
+2026-04-17 02:40:54 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.7s
+02:41:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:41:00 [asyncio] DEBUG: Using selector: EpollSelector
+02:41:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:41:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:45:22 [pipeline.stages.s2_research] INFO: Research complete: 9725 chars
+2026-04-17 02:45:22 [pipeline.stages.s2_research] INFO: Research complete: 9725 chars
+02:45:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:45:22 [asyncio] DEBUG: Using selector: EpollSelector
+02:45:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:45:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:46:32 [pipeline.stages.s3_generate] INFO: Generated: 'Парламент одностайний: SNS потрібна окрема кар'єра для стоматологів — що це змінить для пацієнтів' (slug=sns-dentist-career-parliament-cheque-dentista-guide, 458 words, 8 sources)
+2026-04-17 02:46:32 [pipeline.stages.s3_generate] INFO: Generated: 'Парламент одностайний: SNS потрібна окрема кар'єра для стоматологів — що це змінить для пацієнтів' (slug=sns-dentist-career-parliament-cheque-dentista-guide, 458 words, 8 sources)
+02:46:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:46:32 [asyncio] DEBUG: Using selector: EpollSelector
+02:46:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:46:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:47:58 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-17 02:47:58 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+02:47:58 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, практичністю та релевантністю для аудиторії. Але є кілька проблем, які потрібно виправити перед публікацією:
+
+**1. Заголовок перебільшує (точність):** «Парламент одностайн
+2026-04-17 02:47:58 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, практичністю та релевантністю для аудиторії. Але є кілька проблем, які потрібно виправити перед публікацією:
+
+**1. Заголовок перебільшує (точність):** «Парламент одностайн
+02:47:58 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:47:58 [asyncio] DEBUG: Using selector: EpollSelector
+02:47:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:47:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:48:33 [pipeline.stages.s5_revise] INFO: Revised article: 495 words
+2026-04-17 02:48:33 [pipeline.stages.s5_revise] INFO: Revised article: 495 words
+02:48:33 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-17 02:48:33 [pipeline] INFO: === Review cycle 1/3 complete ===
+02:48:33 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:48:33 [asyncio] DEBUG: Using selector: EpollSelector
+02:48:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:48:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:49:43 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-17 02:49:43 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:49:43 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: актуальна тема, добре підкріплена джерелами, відмінна структура для іммігрантської аудиторії. Португальські терміни пояснені бездоганно. Практичний блок з cheque-dentista та університет
+2026-04-17 02:49:43 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: актуальна тема, добре підкріплена джерелами, відмінна структура для іммігрантської аудиторії. Португальські терміни пояснені бездоганно. Практичний блок з cheque-dentista та університет
+02:49:43 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-17 02:49:43 [pipeline] INFO: Article approved after 1 revision(s)
+02:49:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 02:49:43 [asyncio] DEBUG: Using selector: EpollSelector
+02:49:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 02:49:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:50:13 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1233 chars, vocab: 5 words, pt: 220 chars
+2026-04-17 02:50:13 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1233 chars, vocab: 5 words, pt: 220 chars
+02:50:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-17 02:50:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:51:09 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-17 02:51:09 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+02:51:10 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-17 02:51:10 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+02:51:10 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 2814328
+2026-04-17 02:51:10 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 2814328
+02:51:10 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sns-dentist-career-parliament-cheque-dentista-guide.jpg (251 KB)
+2026-04-17 02:51:10 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sns-dentist-career-parliament-cheque-dentista-guide.jpg (251 KB)
+02:51:10 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sns-dentist-career-parliament-cheque-dentista-guide.md
+2026-04-17 02:51:10 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sns-dentist-career-parliament-cheque-dentista-guide.md
