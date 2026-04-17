@@ -8023,3 +8023,73 @@ TimeoutError: agent_query timed out after 300s
 2026-04-17 01:42:26 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/trabalho-xxi-government-ready-close-negotiations-cgtp-strikes-april-2026.jpg (247 KB)
 01:42:26 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-government-ready-close-negotiations-cgtp-strikes-april-2026.md
 2026-04-17 01:42:26 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-government-ready-close-negotiations-cgtp-strikes-april-2026.md
+01:42:26 [pipeline] INFO: Article ready: trabalho-xxi-government-ready-close-negotiations-cgtp-strikes-april-2026 (Trabalho XXI: уряд оголосив «умови зібрані» для за)
+2026-04-17 01:42:26 [pipeline] INFO: Article ready: trabalho-xxi-government-ready-close-negotiations-cgtp-strikes-april-2026 (Trabalho XXI: уряд оголосив «умови зібрані» для за)
+01:42:26 [pipeline] INFO: === Article 2/10 ===
+2026-04-17 01:42:26 [pipeline] INFO: === Article 2/10 ===
+01:42:26 [pipeline] INFO: --- Article: [news] Водії TVDE не можуть працювати через прострочені дозволи на  ---
+2026-04-17 01:42:26 [pipeline] INFO: --- Article: [news] Водії TVDE не можуть працювати через прострочені дозволи на  ---
+01:42:26 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 01:42:26 [asyncio] DEBUG: Using selector: EpollSelector
+01:42:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 01:42:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:47:15 [pipeline.stages.s2_research] INFO: Research complete: 11696 chars
+2026-04-17 01:47:15 [pipeline.stages.s2_research] INFO: Research complete: 11696 chars
+01:47:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 01:47:15 [asyncio] DEBUG: Using selector: EpollSelector
+01:47:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 01:47:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:48:28 [pipeline.stages.s3_generate] INFO: Generated: 'Водії Uber і Bolt масово заблоковані: AIMA не встигає видати дозволи — тисячі без роботи' (slug=tvde-drivers-blocked-aima-residence-permits-crisis, 495 words, 7 sources)
+2026-04-17 01:48:28 [pipeline.stages.s3_generate] INFO: Generated: 'Водії Uber і Bolt масово заблоковані: AIMA не встигає видати дозволи — тисячі без роботи' (slug=tvde-drivers-blocked-aima-residence-permits-crisis, 495 words, 7 sources)
+01:48:28 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 01:48:28 [asyncio] DEBUG: Using selector: EpollSelector
+01:48:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 01:48:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:49:58 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-17 01:49:58 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+01:49:58 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна: унікальний кут (TVDE-водії, а не загальна AIMA-проблема), добра структура, релевантна для аудиторії, джерела верифіковані. Але є помилки, які треба виправити перед публікацією.
+
+**КРИТИ
+2026-04-17 01:49:58 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна: унікальний кут (TVDE-водії, а не загальна AIMA-проблема), добра структура, релевантна для аудиторії, джерела верифіковані. Але є помилки, які треба виправити перед публікацією.
+
+**КРИТИ
+01:49:58 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 01:49:58 [asyncio] DEBUG: Using selector: EpollSelector
+01:49:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 01:49:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:50:35 [pipeline.stages.s5_revise] INFO: Revised article: 508 words
+2026-04-17 01:50:35 [pipeline.stages.s5_revise] INFO: Revised article: 508 words
+01:50:35 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-17 01:50:35 [pipeline] INFO: === Review cycle 1/3 complete ===
+01:50:35 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 01:50:35 [asyncio] DEBUG: Using selector: EpollSelector
+01:50:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 01:50:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:51:41 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-17 01:51:41 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+01:51:41 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою, високою релевантністю для українців і ретельним sourcing. Кілька дрібниць перед публікацією:
+
+1. **Друкарська помилка:** «Картки ніколо не з'являються» → «ніколи» (с
+2026-04-17 01:51:41 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою, високою релевантністю для українців і ретельним sourcing. Кілька дрібниць перед публікацією:
+
+1. **Друкарська помилка:** «Картки ніколо не з'являються» → «ніколи» (с
+01:51:41 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-17 01:51:41 [pipeline] INFO: Article approved after 1 revision(s)
+01:51:41 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 01:51:41 [asyncio] DEBUG: Using selector: EpollSelector
+01:51:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 01:51:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:52:03 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1138 chars, vocab: 5 words, pt: 225 chars
+2026-04-17 01:52:03 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1138 chars, vocab: 5 words, pt: 225 chars
+01:52:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-17 01:52:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+01:52:59 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-17 01:52:59 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+01:53:01 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-17 01:53:01 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+01:53:01 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3035922
+2026-04-17 01:53:01 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3035922
+01:53:01 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/tvde-drivers-blocked-aima-residence-permits-crisis.jpg (242 KB)
+2026-04-17 01:53:01 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/tvde-drivers-blocked-aima-residence-permits-crisis.jpg (242 KB)
+01:53:01 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tvde-drivers-blocked-aima-residence-permits-crisis.md
+2026-04-17 01:53:01 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tvde-drivers-blocked-aima-residence-permits-crisis.md
