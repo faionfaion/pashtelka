@@ -8429,3 +8429,91 @@ TimeoutError: agent_query timed out after 300s
 2026-04-17 03:00:29 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/coastal-riverbank-recovery-76-million-fundo-ambiental-storms.jpg (256 KB)
 03:00:29 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/coastal-riverbank-recovery-76-million-fundo-ambiental-storms.md
 2026-04-17 03:00:29 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/coastal-riverbank-recovery-76-million-fundo-ambiental-storms.md
+03:00:30 [pipeline] INFO: Article ready: coastal-riverbank-recovery-76-million-fundo-ambiental-storms (€76,6 млн на берегові зони: уряд виділив окреме фі)
+2026-04-17 03:00:30 [pipeline] INFO: Article ready: coastal-riverbank-recovery-76-million-fundo-ambiental-storms (€76,6 млн на берегові зони: уряд виділив окреме фі)
+03:00:30 [pipeline] INFO: === Article 8/10 ===
+2026-04-17 03:00:30 [pipeline] INFO: === Article 8/10 ===
+03:00:30 [pipeline] INFO: --- Article: [news] Скандал у лікарні Santa Maria: 28 медиків отримували незакон ---
+2026-04-17 03:00:30 [pipeline] INFO: --- Article: [news] Скандал у лікарні Santa Maria: 28 медиків отримували незакон ---
+03:00:30 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:00:30 [asyncio] DEBUG: Using selector: EpollSelector
+03:00:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:00:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:04:09 [pipeline.stages.s2_research] INFO: Research complete: 10353 chars
+2026-04-17 03:04:09 [pipeline.stages.s2_research] INFO: Research complete: 10353 chars
+03:04:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:04:09 [asyncio] DEBUG: Using selector: EpollSelector
+03:04:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:04:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:05:32 [pipeline.stages.s3_generate] INFO: Generated: 'Скандал у лікарні Santa Maria: 28 медиків і незаконні виплати — як перевірити свою чергу на операцію' (slug=sns-santa-maria-surgery-fraud-check-waiting-list-guide, 524 words, 8 sources)
+2026-04-17 03:05:32 [pipeline.stages.s3_generate] INFO: Generated: 'Скандал у лікарні Santa Maria: 28 медиків і незаконні виплати — як перевірити свою чергу на операцію' (slug=sns-santa-maria-surgery-fraud-check-waiting-list-guide, 524 words, 8 sources)
+03:05:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:05:32 [asyncio] DEBUG: Using selector: EpollSelector
+03:05:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:05:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:06:47 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-17 03:06:47 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+03:06:47 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, має чіткий новинний привід і цінний сервісний блок. Але є кілька обов'язкових правок:
+
+1. **Нерозшифровані терміни (критично для новоприбулих):**
+   - **SIGIC** — при першо
+2026-04-17 03:06:47 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, має чіткий новинний привід і цінний сервісний блок. Але є кілька обов'язкових правок:
+
+1. **Нерозшифровані терміни (критично для новоприбулих):**
+   - **SIGIC** — при першо
+03:06:47 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:06:47 [asyncio] DEBUG: Using selector: EpollSelector
+03:06:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:06:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:08:01 [pipeline.stages.s5_revise] INFO: Revised article: 718 words
+2026-04-17 03:08:01 [pipeline.stages.s5_revise] INFO: Revised article: 718 words
+03:08:01 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-17 03:08:01 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:08:01 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:08:01 [asyncio] DEBUG: Using selector: EpollSelector
+03:08:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:08:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:09:32 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-17 03:09:32 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+03:09:32 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна: структура, джерела, пояснення португальських термінів і практична цінність для громади — на високому рівні. Але є кілька питань, які потрібно виправити перед публікацією:
+
+1. **TMRG — м
+2026-04-17 03:09:32 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна: структура, джерела, пояснення португальських термінів і практична цінність для громади — на високому рівні. Але є кілька питань, які потрібно виправити перед публікацією:
+
+1. **TMRG — м
+03:09:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:09:32 [asyncio] DEBUG: Using selector: EpollSelector
+03:09:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:09:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:10:10 [pipeline.stages.s5_revise] INFO: Revised article: 743 words
+2026-04-17 03:10:10 [pipeline.stages.s5_revise] INFO: Revised article: 743 words
+03:10:10 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-17 03:10:10 [pipeline] INFO: === Review cycle 2/3 complete ===
+03:10:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:10:11 [asyncio] DEBUG: Using selector: EpollSelector
+03:10:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:10:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:11:35 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-17 03:11:35 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:11:35 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал: актуальна новина органічно переходить у практичний гід, джерела цитуються коректно, португальська термінологія розшифрована ретельно, контекст для новоприбулих імігрантів — на високо
+2026-04-17 03:11:35 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал: актуальна новина органічно переходить у практичний гід, джерела цитуються коректно, португальська термінологія розшифрована ретельно, контекст для новоприбулих імігрантів — на високо
+03:11:35 [pipeline] INFO: Article approved after 2 revision(s)
+2026-04-17 03:11:35 [pipeline] INFO: Article approved after 2 revision(s)
+03:11:35 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-17 03:11:35 [asyncio] DEBUG: Using selector: EpollSelector
+03:11:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-17 03:11:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:12:02 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1169 chars, vocab: 4 words, pt: 233 chars
+2026-04-17 03:12:02 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1169 chars, vocab: 4 words, pt: 233 chars
+03:12:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-17 03:12:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:12:54 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-17 03:12:54 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+03:12:56 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-17 03:12:56 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+03:12:56 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 2931845
+2026-04-17 03:12:56 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 2931845
+03:12:56 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sns-santa-maria-surgery-fraud-check-waiting-list-guide.jpg (253 KB)
+2026-04-17 03:12:56 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/sns-santa-maria-surgery-fraud-check-waiting-list-guide.jpg (253 KB)
+03:12:56 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sns-santa-maria-surgery-fraud-check-waiting-list-guide.md
+2026-04-17 03:12:56 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/sns-santa-maria-surgery-fraud-check-waiting-list-guide.md
