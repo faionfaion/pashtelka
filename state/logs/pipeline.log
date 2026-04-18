@@ -8950,3 +8950,119 @@ TimeoutError: agent_query timed out after 300s
 2026-04-18 02:08:26 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/trabalho-xxi-ugt-rejects-april-18-reform-parliament-no-unions.jpg (248 KB)
 02:08:26 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-ugt-rejects-april-18-reform-parliament-no-unions.md
 2026-04-18 02:08:26 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-ugt-rejects-april-18-reform-parliament-no-unions.md
+02:08:27 [pipeline] INFO: Article ready: trabalho-xxi-ugt-rejects-april-18-reform-parliament-no-unions (Trabalho XXI: UGT не прийняла пропозицію уряду — о)
+2026-04-18 02:08:27 [pipeline] INFO: Article ready: trabalho-xxi-ugt-rejects-april-18-reform-parliament-no-unions (Trabalho XXI: UGT не прийняла пропозицію уряду — о)
+02:08:27 [pipeline] INFO: === Article 3/10 ===
+2026-04-18 02:08:27 [pipeline] INFO: === Article 3/10 ===
+02:08:27 [pipeline] INFO: --- Article: [guide] Вихідні 19–20 квітня: дербі та перекриття доріг біля Луш, бе ---
+2026-04-18 02:08:27 [pipeline] INFO: --- Article: [guide] Вихідні 19–20 квітня: дербі та перекриття доріг біля Луш, бе ---
+02:08:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 02:08:27 [asyncio] DEBUG: Using selector: EpollSelector
+02:08:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 02:08:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:13:27 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-18 02:13:27 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:13:32 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.3s
+2026-04-18 02:13:32 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.3s
+02:13:38 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 02:13:38 [asyncio] DEBUG: Using selector: EpollSelector
+02:13:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 02:13:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:18:38 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-18 02:18:38 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:18:44 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 10.2s
+2026-04-18 02:18:44 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 10.2s
+02:18:54 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 02:18:54 [asyncio] DEBUG: Using selector: EpollSelector
+02:18:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 02:18:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:23:54 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-18 02:23:54 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:23:59 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: agent_query timed out after 300s
+2026-04-18 02:23:59 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: agent_query timed out after 300s
+02:23:59 [pipeline] ERROR: Failed to generate article: Вихідні 19–20 квітня: дербі та перекриття доріг біля Луш, бе
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 222, in agent_query
+    raise last_error  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^
+TimeoutError: agent_query timed out after 300s
+2026-04-18 02:23:59 [pipeline] ERROR: Failed to generate article: Вихідні 19–20 квітня: дербі та перекриття доріг біля Луш, бе
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 222, in agent_query
+    raise last_error  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^
+TimeoutError: agent_query timed out after 300s
+02:23:59 [pipeline] INFO: === Article 4/10 ===
+2026-04-18 02:23:59 [pipeline] INFO: === Article 4/10 ===
+02:23:59 [pipeline] INFO: --- Article: [news] Перша нарада Ради держави при Сеґуру: нові радники та розмов ---
+2026-04-18 02:23:59 [pipeline] INFO: --- Article: [news] Перша нарада Ради держави при Сеґуру: нові радники та розмов ---
+02:23:59 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 02:23:59 [asyncio] DEBUG: Using selector: EpollSelector
+02:23:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 02:23:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:28:20 [pipeline.stages.s2_research] INFO: Research complete: 11571 chars
+2026-04-18 02:28:20 [pipeline.stages.s2_research] INFO: Research complete: 11571 chars
+02:28:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 02:28:20 [asyncio] DEBUG: Using selector: EpollSelector
+02:28:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 02:28:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:29:44 [pipeline.stages.s3_generate] INFO: Generated: 'Перша нарада Ради держави при Сеґуру: безпека, оборона і розмова наодинці з Марселу' (slug=seguro-first-conselho-de-estado-meeting-new-members-defense, 573 words, 9 sources)
+2026-04-18 02:29:44 [pipeline.stages.s3_generate] INFO: Generated: 'Перша нарада Ради держави при Сеґуру: безпека, оборона і розмова наодинці з Марселу' (slug=seguro-first-conselho-de-estado-meeting-new-members-defense, 573 words, 9 sources)
+02:29:44 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 02:29:44 [asyncio] DEBUG: Using selector: EpollSelector
+02:29:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 02:29:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:30:46 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-18 02:30:46 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:30:46 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: чітка структура, джерела на кожен факт, влучний блок «Чому це важливо для українців», дуже вдалий пояснювальний врізок про Conselho de Estado з порівнянням із РНБО. Дедуплікація ОК — те
+2026-04-18 02:30:46 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: чітка структура, джерела на кожен факт, влучний блок «Чому це важливо для українців», дуже вдалий пояснювальний врізок про Conselho de Estado з порівнянням із РНБО. Дедуплікація ОК — те
+02:30:46 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 02:30:46 [asyncio] DEBUG: Using selector: EpollSelector
+02:30:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 02:30:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:32:02 [pipeline.stages.s5_revise] INFO: Revised article: 613 words
+2026-04-18 02:32:02 [pipeline.stages.s5_revise] INFO: Revised article: 613 words
+02:32:02 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-18 02:32:02 [pipeline] INFO: === Review cycle 1/3 complete ===
+02:32:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 02:32:02 [asyncio] DEBUG: Using selector: EpollSelector
+02:32:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 02:32:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:33:06 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-18 02:33:06 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:33:06 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з чіткою структурою, добрим контекстом для імігрантів і сильним блоком «Чому це важливо для українців». Кілька зауважень для фінального полірування:
+
+1. **«Водночас з нарадою відсутній к
+2026-04-18 02:33:06 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з чіткою структурою, добрим контекстом для імігрантів і сильним блоком «Чому це важливо для українців». Кілька зауважень для фінального полірування:
+
+1. **«Водночас з нарадою відсутній к
+02:33:06 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-18 02:33:06 [pipeline] INFO: Article approved after 1 revision(s)
+02:33:06 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 02:33:06 [asyncio] DEBUG: Using selector: EpollSelector
+02:33:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 02:33:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:33:26 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1103 chars, vocab: 5 words, pt: 178 chars
+2026-04-18 02:33:26 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1103 chars, vocab: 5 words, pt: 178 chars
+02:33:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-18 02:33:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:34:29 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-18 02:34:29 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+02:34:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-18 02:34:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+02:34:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3034876
+2026-04-18 02:34:30 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 3034876
+02:34:30 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/seguro-first-conselho-de-estado-meeting-new-members-defense.jpg (292 KB)
+2026-04-18 02:34:30 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/seguro-first-conselho-de-estado-meeting-new-members-defense.jpg (292 KB)
+02:34:30 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/seguro-first-conselho-de-estado-meeting-new-members-defense.md
+2026-04-18 02:34:30 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/seguro-first-conselho-de-estado-meeting-new-members-defense.md
