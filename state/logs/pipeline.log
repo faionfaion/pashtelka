@@ -9404,3 +9404,69 @@ TimeoutError: agent_query timed out after 300s
 2026-04-18 03:43:00 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/matriculas-2026-2027-school-enrollment-guide-immigrants.jpg (201 KB)
 03:43:00 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/matriculas-2026-2027-school-enrollment-guide-immigrants.md
 2026-04-18 03:43:00 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/matriculas-2026-2027-school-enrollment-guide-immigrants.md
+03:43:00 [pipeline] INFO: Article ready: matriculas-2026-2027-school-enrollment-guide-immigrants (Матрікули 2026/2027: як записати дитину до школи в)
+2026-04-18 03:43:00 [pipeline] INFO: Article ready: matriculas-2026-2027-school-enrollment-guide-immigrants (Матрікули 2026/2027: як записати дитину до школи в)
+03:43:00 [pipeline] INFO: === Article 10/10 ===
+2026-04-18 03:43:00 [pipeline] INFO: === Article 10/10 ===
+03:43:00 [pipeline] INFO: --- Article: [news] Перший комерційний космічний запуск з Азорських островів: По ---
+2026-04-18 03:43:00 [pipeline] INFO: --- Article: [news] Перший комерційний космічний запуск з Азорських островів: По ---
+03:43:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 03:43:00 [asyncio] DEBUG: Using selector: EpollSelector
+03:43:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 03:43:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:46:39 [pipeline.stages.s2_research] INFO: Research complete: 10759 chars
+2026-04-18 03:46:39 [pipeline.stages.s2_research] INFO: Research complete: 10759 chars
+03:46:39 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 03:46:39 [asyncio] DEBUG: Using selector: EpollSelector
+03:46:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 03:46:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:47:59 [pipeline.stages.s3_generate] INFO: Generated: 'Перший ракетний пуск з Азорських островів у травні: Португалія стає європейським космопортом' (slug=azores-spaceport-first-launch-space-forest-portugal-jobs, 535 words, 11 sources)
+2026-04-18 03:47:59 [pipeline.stages.s3_generate] INFO: Generated: 'Перший ракетний пуск з Азорських островів у травні: Португалія стає європейським космопортом' (slug=azores-spaceport-first-launch-space-forest-portugal-jobs, 535 words, 11 sources)
+03:47:59 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 03:47:59 [asyncio] DEBUG: Using selector: EpollSelector
+03:47:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 03:47:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:49:22 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-18 03:49:22 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:49:22 [pipeline.stages.s4_review] INFO: Feedback: Якісна, добре структурована стаття з сильним набором джерел і чіткою релевантністю для аудиторії. Кілька зауважень для фінального доопрацювання:
+
+1. **Непідтверджена цифра населення.** «2 324 працезда
+2026-04-18 03:49:22 [pipeline.stages.s4_review] INFO: Feedback: Якісна, добре структурована стаття з сильним набором джерел і чіткою релевантністю для аудиторії. Кілька зауважень для фінального доопрацювання:
+
+1. **Непідтверджена цифра населення.** «2 324 працезда
+03:49:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 03:49:22 [asyncio] DEBUG: Using selector: EpollSelector
+03:49:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 03:49:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:51:42 [pipeline.stages.s5_revise] INFO: Revised article: 600 words
+2026-04-18 03:51:42 [pipeline.stages.s5_revise] INFO: Revised article: 600 words
+03:51:42 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-18 03:51:42 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:51:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 03:51:42 [asyncio] DEBUG: Using selector: EpollSelector
+03:51:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 03:51:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:52:52 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-18 03:52:52 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:52:52 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал: актуальна тема, добре структурований, з практичною цінністю для аудиторії. Джерела — авторитетні португальські ЗМІ (ECO, RTP, ANACOM). Секція з вакансіями — відмінний хід для Паштель
+2026-04-18 03:52:52 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал: актуальна тема, добре структурований, з практичною цінністю для аудиторії. Джерела — авторитетні португальські ЗМІ (ECO, RTP, ANACOM). Секція з вакансіями — відмінний хід для Паштель
+03:52:52 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-18 03:52:52 [pipeline] INFO: Article approved after 1 revision(s)
+03:52:52 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 03:52:52 [asyncio] DEBUG: Using selector: EpollSelector
+03:52:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 03:52:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:53:15 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1222 chars, vocab: 5 words, pt: 199 chars
+2026-04-18 03:53:15 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1222 chars, vocab: 5 words, pt: 199 chars
+03:53:15 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-18 03:53:15 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:54:05 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-18 03:54:05 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+03:54:06 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-18 03:54:06 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+03:54:06 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 2765079
+2026-04-18 03:54:06 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 2765079
+03:54:06 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/azores-spaceport-first-launch-space-forest-portugal-jobs.jpg (167 KB)
+2026-04-18 03:54:06 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/azores-spaceport-first-launch-space-forest-portugal-jobs.jpg (167 KB)
+03:54:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/azores-spaceport-first-launch-space-forest-portugal-jobs.md
+2026-04-18 03:54:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/azores-spaceport-first-launch-space-forest-portugal-jobs.md
