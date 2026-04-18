@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "Іран відкриває Ормузьку протоку, нафта падає на 10%: що буде з цінами на пальне в Португалії",
+      "type": "news",
+      "angle": "Блокада, яку ми висвітлювали з 13 квітня, закінчується. Конкретний розрахунок: наскільки впадуть ціни на заправках у понеділок (механіка тижневого перерахунку), скільки заощадить середній водій, чи повернуться ціни до доблокадного рівня, чи залишиться ISP-знижка. Трамп заявляє про угоду «за день-два». Окремо — вплив на продуктовий кошик (транспортні витрати, добрива) та рахунки за газ. Continuation серії з 5 статей про Ормуз/пальне.",
+      "sources_hint": "Search: 'Irão Ormuz abertura petróleo Portugal combustíveis' on RTP, Observador, Público, ECO. Check DGEG fuel price portal (precoscombustiveis.dgeg.gov.pt). Brent futures. ERSE gas tariff outlook. Previous Pashtelka coverage: hormuz-blockade, us-iran-talks-collapse, fuel-prices-drop.",
+      "priority": 1
+    },
+    {
+      "topic": "Trabalho XXI: UGT знову відхилила пропозицію уряду — реформа йде до парламенту без жодної профспілки (continuation)",
+      "type": "news",
+      "angle": "Після зустрічі 18 квітня UGT знову сказала «ні». CGTP вже відмовила, 17 квітня тисячі вийшли на вулиці. Президент CIP заявив, що «роботодавці — не вороги профспілок», але позицій не змінив. Ключове питання: чи підпише Сеґуру закон без згоди соцпартнерів (він попереджав про вето)? Аналіз парламентської арифметики: PSD+CDS vs PS+Chega+IL. Конкретний вплив на українців: яка версія banco de horas лягає на стіл (індивідуальний чи колективний), збережеться чи ні 3-річний строковий контракт. 9-та стаття серії.",
+      "sources_hint": "RSS: 'UGT não aceita última proposta', 'CIP patrões não são inimigos', 'Milhares manifestaram-se'. Search: 'Trabalho XXI parlamento votação' on RTP, Público, Observador, Jornal de Negócios. CPCS statements. Previous 8 articles in series.",
+      "priority": 1
+    },
+    {
+      "topic": "Вихідні 19–20 квітня: дербі та перекриття доріг біля Луш, безкоштовні музеї, культурні події",
+      "type": "guide",
+      "angle": "Субота-неділя у Лісабоні, Порту та Алгарве. Неділя 19 квітня — дербі Sporting–Benfica на Estádio da Luz: перекриті вулиці, зміни маршрутів Carris та Metro, де НЕ паркуватись (суто транспортний/логістичний блок, без спортивного контенту). Неділя — безкоштовні музеї DGPC для резидентів. «Мишоловка» з Руєм де Карвалью у Coliseu do Porto (наша стаття від 16 квітня). Закриття фестивалю італійського кіно — безкоштовний показ Armani Tribute. IndieLisboa стартував — перші сеанси. GAMA RAMA у Фару. Ярмарки та ринки. Погода на неділю-понеділок (коротко, не дублюючи прогноз від 16 квітня).",
+      "sources_hint": "Search: 'Sporting Benfica dérbi trânsito Luz estacionamento cortes ruas' on CML, PSP, Carris, Metropolitano de Lisboa. IndieLisboa.com program. DGPC.gov.pt free Sunday list. RTP Cultura events. IPMA forecast for April 19-20. Previous: cultural-week-april-14-18.",
+      "priority": 1
+    },
+    {
+      "topic": "Перша нарада Ради держави при Сеґуру: нові радники та розмова наодинці з Марселу",
+      "type": "news",
+      "angle": "Нещодавно обраний президент Сеґуру провів першу нараду Conselho de Estado з оновленим складом і мав окрему зустріч з колишнім президентом Марселу. Хто увійшов до складу ради, які сигнали це дає для політичного курсу (трудова реформа, імміграція, оборона). Чому це важливо для українців: Сеґуру має право вето на закони та впливає на зовнішню політику — зокрема підтримку України. Пояснення ролі Conselho de Estado для тих, хто не розуміє португальську систему влади.",
+      "sources_hint": "RSS: 'Primeira reunião do novo Conselho de Estado traça perfil para o país', 'Seguro junta novos conselheiros e fala a sós com Marcelo'. Search: 'Conselho de Estado Seguro abril 2026 composição' on RTP, Público, Observador, DN.",
+      "priority": 2
+    },
+    {
+      "topic": "Пологовий будинок у Лоуріш прийняв 201 пологи за перший місяць: нова модель SNS працює?",
+      "type": "news",
+      "angle": "Регіональна акушерська невідкладка в Лоуріш (Hospital Beatriz Ângelo) за перший місяць роботи зафіксувала 201 пологи — контраст із закриттям пологового в Баррейру (наша стаття від 16 квітня). Чи виправдовує себе централізація? Практичний кут: для вагітних українок у Великому Лісабоні — як працює маршрутизація через SNS 24 Grávida, які лікарні приймають, середній час очікування. Порівняння з Сетубалом. Continuation теми SNS.",
+      "sources_hint": "RSS: 'Urgência regional em Loures regista 201 partos no primeiro mês de atividade'. Search: 'Loures urgência obstétrica Hospital Beatriz Ângelo resultados' on RTP, Observador. SNS 24 Grávida service. Previous: sns-setubal-obstetric-emergency, sns-nurse-pregnancy-monitoring.",
+      "priority": 2
+    },
+    {
+      "topic": "Страйк прокурорів 24 квітня наближається: що робити, якщо у вас справа в суді (continuation)",
+      "type": "news",
+      "angle": "Через 6 днів — загальнонаціональний страйк прокурорів (SMMP). Ми писали про оголошення 9 квітня, тепер — практична підготовка. Які суди зупиняться: кримінальні справи, сімейні (опіка, розлучення), трудові спори — усе де бере участь Ministério Público. Як перевірити, чи перенесено ваше засідання (Citius.mj.pt, контакт секретаріату суду). Що робити, якщо ви свідок або потерпілий у справі. Особливо для українців: трудові спори з роботодавцем, справи з опіки, процеси легалізації через суд (оскарження AIMA). Перехресне посилання на наш гід з оскарження рішень AIMA (aima-appeal-guide).",
+      "sources_hint": "Search: 'greve procuradores 24 abril 2026 SMMP tribunais', 'greve Ministério Público impacto processos'. Check: SMMP.pt statements, CSMP responses. Citius.mj.pt for court scheduling. Previous: prosecutors-strike-april-24-pgr-rejects-rules, aima-appeal-guide.",
+      "priority": 2
+    },
+    {
+      "topic": "Туристичний сезон стартує: де в Алгарве та Лісабоні шукати сезонну роботу і на що звертати увагу",
+      "type": "material",
+      "angle": "Травень-жовтень — пік найму в туризмі. IEFP та Net Empregos фіксують зростання вакансій у HoReCa, пляжному сервісі, анімації, прибиранні. Конкретні цифри: скільки вакансій відкрито в Алгарве та Лісабоні, середня зарплата, типові умови. Підводні камені сезонних контрактів (contrato a termo, período experimental, banco de horas — перекличка з Trabalho XXI). Права: оплата відпустки навіть за 3-місячний контракт, subsidio de alimentação, страхування. Контакти IEFP (centros de emprego) у Фару, Портімані, Лісабоні. Для українців особливо актуально: перший повний сезон після стабілізації PT-статусу.",
+      "sources_hint": "Search: 'emprego sazonal turismo Algarve verão 2026 IEFP vagas' on IEFP.pt, NetEmpregos, Sapo Emprego, Turisver, Observador. AHRESP statements on labor needs. INE tourism employment data. Código do Trabalho: contrato a termo certo, Art. 139-149.",
+      "priority": 2
+    },
+    {
+      "topic": "Літні табори для дітей (ATL та colónias de férias): як записати дитину і не переплатити",
+      "type": "material",
+      "angle": "Квітень-травень — час реєстрації дітей у літні програми. Три типи: ATL при школах (IPSS, від €50-150/міс), colónias de férias при câmara municipal (часто безкоштовні або символічна плата), приватні табори (€150-400/тиждень). Документи для дітей-іммігрантів: NIF, NISS, cartão de utente, бланк здоров'я від лікаря. Субсидії Segurança Social для малозабезпечених сімей. Окремо — мовний бар'єр: чи потрібна дитині португальська, як підготувати. Географія: конкретні програми в Лісабоні (CML), Порту (CMP), Фару. Перехресне посилання на наш гід з médico de família (для медичної довідки).",
+      "sources_hint": "Search: 'colónias de férias 2026 inscrições câmara municipal', 'ATL verão Lisboa Porto Faro', 'atividades tempos livres crianças IPSS'. Check: CML (lisboa.pt), CMP (cm-porto.pt), CM Faro youth programs. Segurança Social subsidies for families. DECO advice on summer programs.",
+      "priority": 2
+    },
+    {
+      "topic": "Матрікули 2026/2027: терміни запису дітей до школи і що потрібно батькам-іммігрантам",
+      "type": "utility",
+      "angle": "Запис дітей до школи (matrículas) на 2026/2027 навчальний рік — терміни зазвичай квітень-червень. Pré-escolar (3-5 років), 1.º ciclo (6 років — обов'язково). Електронний запис через Portal das Matrículas. Документи для дитини з Proteção Temporária або AR: що потрібно, як обрати школу за місцем проживання (área de residência), що робити якщо дитина не говорить португальською (PLNM — Português Língua Não Materna, безкоштовні додаткові заняття). Право на шкільну допомогу ASE (підручники, обіди, транспорт) — три рівні за доходом. Як подати заявку на ASE паралельно з матрікулою.",
+      "sources_hint": "Search: 'matrículas escolares 2026 2027 prazos portal', 'inscrição escola crianças imigrantes Portugal PLNM'. Check: Portal das Matrículas (portaldasmatriculas.edu.gov.pt), DGE guidelines, Despacho normativo de matrículas 2026. OECD/PISA data on immigrant student integration in PT.",
+      "priority": 2
+    },
+    {
+      "topic": "Перший комерційний космічний запуск з Азорських островів: Португалія стає європейським космопортом",
+      "type": "news",
+      "angle": "З Азорських островів стартує комерційний космічний рейс — це історичний момент для Португалії. Що це за проєкт, хто стоїть за ним (компанія, інвестори), як пов'язано з підписанням Artemis Accords у січні 2026 та збільшенням внеску до ESA на 51%. Ширший контекст: чи створює це робочі місця на Азорах та материку, які компанії працюють у космічному секторі Португалії (Tekever, Active Space Technologies, GMV). Для українців: чи є шанс для інженерів/IT-спеціалістів з України знайти роботу в цій ніші. Перехресне посилання на нашу статтю про Artemis II.",
+      "sources_hint": "RSS: 'Voo espacial parte dos Açores'. Search: 'lançamento espacial Açores 2026 empresa', 'Portugal espaço comercial Açores base'. Check: PT Space agency, ESA Portugal, Tekever, Active Space Technologies. Previous: artemis-ii-moon-flyby-portugal-cork-esa.",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-18",
+  "created_at": "2026-04-18T01:17:02.364119+00:00"
+}

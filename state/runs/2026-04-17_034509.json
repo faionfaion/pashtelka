@@ -1,0 +1,308 @@
+{
+  "timestamp": "2026-04-17_034509",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "trabalho-xxi-government-ready-close-negotiations-cgtp-strikes-april-2026, tvde-drivers-blocked-aima-residence-permits-crisis, tvde-driver-guide-portugal-documents-costs-earnings-immigrants, lisbon-metro-circular-line-48-million-budget-380-total-2027, sns-dentist-career-parliament-cheque-dentista-guide",
+  "author": "Pastelka News",
+  "duration_s": 8886.4,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 583.9,
+      "error": null
+    },
+    {
+      "name": "research:Trabalho XXI: уряд оголосив «у",
+      "status": "ok",
+      "duration_s": 539.8,
+      "error": null
+    },
+    {
+      "name": "generate:Trabalho XXI: уряд оголосив «у",
+      "status": "ok",
+      "duration_s": 91.1,
+      "error": null
+    },
+    {
+      "name": "review:Trabalho XXI: уряд оголосив «у",
+      "status": "ok",
+      "duration_s": 228.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Trabalho XXI: уряд оголосив «у",
+      "status": "ok",
+      "duration_s": 20.1,
+      "error": null
+    },
+    {
+      "name": "save:Trabalho XXI: уряд оголосив «у",
+      "status": "ok",
+      "duration_s": 60.6,
+      "error": null
+    },
+    {
+      "name": "research:Водії TVDE не можуть працювати",
+      "status": "ok",
+      "duration_s": 288.9,
+      "error": null
+    },
+    {
+      "name": "generate:Водії TVDE не можуть працювати",
+      "status": "ok",
+      "duration_s": 72.9,
+      "error": null
+    },
+    {
+      "name": "review:Водії TVDE не можуть працювати",
+      "status": "ok",
+      "duration_s": 192.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Водії TVDE не можуть працювати",
+      "status": "ok",
+      "duration_s": 22.6,
+      "error": null
+    },
+    {
+      "name": "save:Водії TVDE не можуть працювати",
+      "status": "ok",
+      "duration_s": 57.7,
+      "error": null
+    },
+    {
+      "name": "research:Вихідні 18–20 квітня: Benfica ",
+      "status": "failed",
+      "duration_s": 933.0,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Як стати водієм TVDE у Португа",
+      "status": "ok",
+      "duration_s": 600.8,
+      "error": null
+    },
+    {
+      "name": "generate:Як стати водієм TVDE у Португа",
+      "status": "ok",
+      "duration_s": 138.5,
+      "error": null
+    },
+    {
+      "name": "review:Як стати водієм TVDE у Португа",
+      "status": "ok",
+      "duration_s": 317.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Як стати водієм TVDE у Португа",
+      "status": "ok",
+      "duration_s": 19.0,
+      "error": null
+    },
+    {
+      "name": "save:Як стати водієм TVDE у Португа",
+      "status": "ok",
+      "duration_s": 54.3,
+      "error": null
+    },
+    {
+      "name": "research:Метро Лісабона: €48 млн на лін",
+      "status": "ok",
+      "duration_s": 175.1,
+      "error": null
+    },
+    {
+      "name": "generate:Метро Лісабона: €48 млн на лін",
+      "status": "ok",
+      "duration_s": 75.5,
+      "error": null
+    },
+    {
+      "name": "review:Метро Лісабона: €48 млн на лін",
+      "status": "ok",
+      "duration_s": 180.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Метро Лісабона: €48 млн на лін",
+      "status": "ok",
+      "duration_s": 15.7,
+      "error": null
+    },
+    {
+      "name": "save:Метро Лісабона: €48 млн на лін",
+      "status": "ok",
+      "duration_s": 57.4,
+      "error": null
+    },
+    {
+      "name": "research:Парламент одностайний: SNS пот",
+      "status": "ok",
+      "duration_s": 573.5,
+      "error": null
+    },
+    {
+      "name": "generate:Парламент одностайний: SNS пот",
+      "status": "ok",
+      "duration_s": 69.9,
+      "error": null
+    },
+    {
+      "name": "review:Парламент одностайний: SNS пот",
+      "status": "ok",
+      "duration_s": 190.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Парламент одностайний: SNS пот",
+      "status": "ok",
+      "duration_s": 30.8,
+      "error": null
+    },
+    {
+      "name": "save:Парламент одностайний: SNS пот",
+      "status": "ok",
+      "duration_s": 57.0,
+      "error": null
+    },
+    {
+      "name": "research:€76,6 млн на відновлення берег",
+      "status": "ok",
+      "duration_s": 239.7,
+      "error": null
+    },
+    {
+      "name": "generate:€76,6 млн на відновлення берег",
+      "status": "ok",
+      "duration_s": 69.3,
+      "error": null
+    },
+    {
+      "name": "review:€76,6 млн на відновлення берег",
+      "status": "ok",
+      "duration_s": 176.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:€76,6 млн на відновлення берег",
+      "status": "ok",
+      "duration_s": 16.2,
+      "error": null
+    },
+    {
+      "name": "save:€76,6 млн на відновлення берег",
+      "status": "ok",
+      "duration_s": 57.3,
+      "error": null
+    },
+    {
+      "name": "research:Скандал у лікарні Santa Maria:",
+      "status": "ok",
+      "duration_s": 219.0,
+      "error": null
+    },
+    {
+      "name": "generate:Скандал у лікарні Santa Maria:",
+      "status": "ok",
+      "duration_s": 83.2,
+      "error": null
+    },
+    {
+      "name": "review:Скандал у лікарні Santa Maria:",
+      "status": "ok",
+      "duration_s": 362.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Скандал у лікарні Santa Maria:",
+      "status": "ok",
+      "duration_s": 27.1,
+      "error": null
+    },
+    {
+      "name": "save:Скандал у лікарні Santa Maria:",
+      "status": "ok",
+      "duration_s": 54.4,
+      "error": null
+    },
+    {
+      "name": "research:Уряд підвищує ліміти прямих за",
+      "status": "ok",
+      "duration_s": 223.4,
+      "error": null
+    },
+    {
+      "name": "generate:Уряд підвищує ліміти прямих за",
+      "status": "ok",
+      "duration_s": 77.1,
+      "error": null
+    },
+    {
+      "name": "review:Уряд підвищує ліміти прямих за",
+      "status": "ok",
+      "duration_s": 188.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Уряд підвищує ліміти прямих за",
+      "status": "ok",
+      "duration_s": 16.4,
+      "error": null
+    },
+    {
+      "name": "save:Уряд підвищує ліміти прямих за",
+      "status": "ok",
+      "duration_s": 53.8,
+      "error": null
+    },
+    {
+      "name": "research:Тиждень із Volta: що працює, щ",
+      "status": "ok",
+      "duration_s": 925.1,
+      "error": null
+    },
+    {
+      "name": "generate:Тиждень із Volta: що працює, щ",
+      "status": "ok",
+      "duration_s": 79.8,
+      "error": null
+    },
+    {
+      "name": "review:Тиждень із Volta: що працює, щ",
+      "status": "ok",
+      "duration_s": 258.3,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Тиждень із Volta: що працює, щ",
+      "status": "ok",
+      "duration_s": 15.3,
+      "error": null
+    },
+    {
+      "name": "save:Тиждень із Volta: що працює, щ",
+      "status": "ok",
+      "duration_s": 56.5,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 38.3,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}
