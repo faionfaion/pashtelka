@@ -9645,3 +9645,101 @@ TimeoutError: agent_query timed out after 300s
 2026-04-19 01:43:36 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/aima-reagrupamento-familiar-portal-family-reunification-guide.jpg (238 KB)
 01:43:36 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/aima-reagrupamento-familiar-portal-family-reunification-guide.md
 2026-04-19 01:43:36 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/aima-reagrupamento-familiar-portal-family-reunification-guide.md
+01:43:37 [pipeline] INFO: Article ready: aima-reagrupamento-familiar-portal-family-reunification-guide (AIMA відкрила портал возз'єднання сімей: що змінил)
+2026-04-19 01:43:37 [pipeline] INFO: Article ready: aima-reagrupamento-familiar-portal-family-reunification-guide (AIMA відкрила портал возз'єднання сімей: що змінил)
+01:43:37 [pipeline] INFO: === Article 2/10 ===
+2026-04-19 01:43:37 [pipeline] INFO: === Article 2/10 ===
+01:43:37 [pipeline] INFO: --- Article: [news] Trabalho XXI: президент Сеґуру особисто зустрінеться з кожни ---
+2026-04-19 01:43:37 [pipeline] INFO: --- Article: [news] Trabalho XXI: президент Сеґуру особисто зустрінеться з кожни ---
+01:43:37 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:43:37 [asyncio] DEBUG: Using selector: EpollSelector
+01:43:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:43:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:47:20 [pipeline.stages.s2_research] INFO: Research complete: 10011 chars
+2026-04-19 01:47:20 [pipeline.stages.s2_research] INFO: Research complete: 10011 chars
+01:47:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:47:20 [asyncio] DEBUG: Using selector: EpollSelector
+01:47:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:47:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:48:37 [pipeline.stages.s3_generate] INFO: Generated: 'Trabalho XXI: президент Сеґуру особисто зустрінеться з кожним соціальним партнером у середу' (slug=trabalho-xxi-seguro-individual-meetings-social-partners-april-22, 480 words, 9 sources)
+2026-04-19 01:48:37 [pipeline.stages.s3_generate] INFO: Generated: 'Trabalho XXI: президент Сеґуру особисто зустрінеться з кожним соціальним партнером у середу' (slug=trabalho-xxi-seguro-individual-meetings-social-partners-april-22, 480 words, 9 sources)
+01:48:37 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:48:37 [asyncio] DEBUG: Using selector: EpollSelector
+01:48:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:48:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:50:15 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 01:50:15 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+01:50:15 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна і журналістськи зріла — нова подія (середа, зустрічі Сеґуру) подана чітко, з аналізом і контекстом. Але є кілька питань до доопрацювання:
+
+**1. ДЕДУПЛІКАЦІЯ (не критична, але потребує ув
+2026-04-19 01:50:15 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна і журналістськи зріла — нова подія (середа, зустрічі Сеґуру) подана чітко, з аналізом і контекстом. Але є кілька питань до доопрацювання:
+
+**1. ДЕДУПЛІКАЦІЯ (не критична, але потребує ув
+01:50:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:50:15 [asyncio] DEBUG: Using selector: EpollSelector
+01:50:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:50:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:51:16 [pipeline.stages.s5_revise] INFO: Revised article: 458 words
+2026-04-19 01:51:16 [pipeline.stages.s5_revise] INFO: Revised article: 458 words
+01:51:16 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-19 01:51:16 [pipeline] INFO: === Review cycle 1/3 complete ===
+01:51:16 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:51:16 [asyncio] DEBUG: Using selector: EpollSelector
+01:51:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:51:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:52:46 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 01:52:46 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+01:52:46 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, має сильну джерельну базу та чіткий новинний привід (президентські зустрічі 22 квітня), який відрізняє її від публікації 18 квітня. Дедуплікацію пройдено — більше половини 
+2026-04-19 01:52:46 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, має сильну джерельну базу та чіткий новинний привід (президентські зустрічі 22 квітня), який відрізняє її від публікації 18 квітня. Дедуплікацію пройдено — більше половини 
+01:52:46 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:52:46 [asyncio] DEBUG: Using selector: EpollSelector
+01:52:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:52:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:53:49 [pipeline.stages.s5_revise] INFO: Revised article: 486 words
+2026-04-19 01:53:49 [pipeline.stages.s5_revise] INFO: Revised article: 486 words
+01:53:49 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-19 01:53:49 [pipeline] INFO: === Review cycle 2/3 complete ===
+01:53:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:53:49 [asyncio] DEBUG: Using selector: EpollSelector
+01:53:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:53:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:55:16 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 01:55:16 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+01:55:16 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре написана, має чіткий новий інфопривід (зустрічі Сеґуру 22 квітня), гарну структуру та релевантність для аудиторії. Але є кілька проблем, які потрібно виправити:
+
+1. **Непідтверджене джере
+2026-04-19 01:55:16 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре написана, має чіткий новий інфопривід (зустрічі Сеґуру 22 квітня), гарну структуру та релевантність для аудиторії. Але є кілька проблем, які потрібно виправити:
+
+1. **Непідтверджене джере
+01:55:16 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:55:16 [asyncio] DEBUG: Using selector: EpollSelector
+01:55:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:55:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:56:12 [pipeline.stages.s5_revise] INFO: Revised article: 515 words
+2026-04-19 01:56:12 [pipeline.stages.s5_revise] INFO: Revised article: 515 words
+01:56:12 [pipeline] INFO: === Review cycle 3/3 complete ===
+2026-04-19 01:56:12 [pipeline] INFO: === Review cycle 3/3 complete ===
+01:56:12 [pipeline] WARNING: Max review cycles (3) reached, proceeding
+2026-04-19 01:56:12 [pipeline] WARNING: Max review cycles (3) reached, proceeding
+01:56:12 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:56:12 [asyncio] DEBUG: Using selector: EpollSelector
+01:56:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:56:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:56:29 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1127 chars, vocab: 5 words, pt: 178 chars
+2026-04-19 01:56:29 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1127 chars, vocab: 5 words, pt: 178 chars
+01:56:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-19 01:56:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+01:57:24 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-19 01:57:24 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+01:57:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-19 01:57:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+01:57:25 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23624
+2026-04-19 01:57:25 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23624
+01:57:25 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23624 (unknown)
+2026-04-19 01:57:25 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23624 (unknown)
+01:57:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23677 2912038
+2026-04-19 01:57:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23677 2912038
+01:57:25 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/trabalho-xxi-seguro-individual-meetings-social-partners-april-22.jpg (237 KB)
+2026-04-19 01:57:25 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/trabalho-xxi-seguro-individual-meetings-social-partners-april-22.jpg (237 KB)
+01:57:25 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-seguro-individual-meetings-social-partners-april-22.md
+2026-04-19 01:57:25 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-seguro-individual-meetings-social-partners-april-22.md
