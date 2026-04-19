@@ -9845,3 +9845,79 @@ TimeoutError: agent_query timed out after 300s
 2026-04-19 02:24:06 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/week-ahead-april-20-25-fuel-school-strike-liberdade.jpg (207 KB)
 02:24:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/week-ahead-april-20-25-fuel-school-strike-liberdade.md
 2026-04-19 02:24:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/week-ahead-april-20-25-fuel-school-strike-liberdade.md
+02:24:06 [pipeline] INFO: Article ready: week-ahead-april-20-25-fuel-school-strike-liberdade (Тиждень уперед 21–25 квітня: День Свободи, книги, )
+2026-04-19 02:24:06 [pipeline] INFO: Article ready: week-ahead-april-20-25-fuel-school-strike-liberdade (Тиждень уперед 21–25 квітня: День Свободи, книги, )
+02:24:06 [pipeline] INFO: === Article 4/10 ===
+2026-04-19 02:24:06 [pipeline] INFO: === Article 4/10 ===
+02:24:06 [pipeline] INFO: --- Article: [news] PS наполягає на Тіаґу Антунеші для Provedor de Justiça — чом ---
+2026-04-19 02:24:06 [pipeline] INFO: --- Article: [news] PS наполягає на Тіаґу Антунеші для Provedor de Justiça — чом ---
+02:24:06 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:24:06 [asyncio] DEBUG: Using selector: EpollSelector
+02:24:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:24:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:28:20 [pipeline.stages.s2_research] INFO: Research complete: 9550 chars
+2026-04-19 02:28:20 [pipeline.stages.s2_research] INFO: Research complete: 9550 chars
+02:28:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:28:20 [asyncio] DEBUG: Using selector: EpollSelector
+02:28:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:28:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:29:22 [pipeline.stages.s3_generate] INFO: Generated: 'Португалія 10 місяців без омбудсмена: PS наполягає на Тіаґу Антунеші — чому це критично для іммігрантів' (slug=provedor-de-justica-vacancy-tiago-antunes-ps-immigrants, 398 words, 7 sources)
+2026-04-19 02:29:22 [pipeline.stages.s3_generate] INFO: Generated: 'Португалія 10 місяців без омбудсмена: PS наполягає на Тіаґу Антунеші — чому це критично для іммігрантів' (slug=provedor-de-justica-vacancy-tiago-antunes-ps-immigrants, 398 words, 7 sources)
+02:29:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:29:22 [asyncio] DEBUG: Using selector: EpollSelector
+02:29:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:29:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:31:30 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 02:31:30 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+02:31:30 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, актуальна для аудиторії та має чітку практичну цінність. Потрібні конкретні доопрацювання:
+
+**Фактична точність (критично):**
+1. URL джерела DN Brasil містить «mais-de-55-m
+2026-04-19 02:31:30 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, актуальна для аудиторії та має чітку практичну цінність. Потрібні конкретні доопрацювання:
+
+**Фактична точність (критично):**
+1. URL джерела DN Brasil містить «mais-de-55-m
+02:31:30 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:31:30 [asyncio] DEBUG: Using selector: EpollSelector
+02:31:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:31:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:34:47 [pipeline.stages.s5_revise] INFO: Revised article: 432 words
+2026-04-19 02:34:47 [pipeline.stages.s5_revise] INFO: Revised article: 432 words
+02:34:47 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-19 02:34:47 [pipeline] INFO: === Review cycle 1/3 complete ===
+02:34:47 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:34:47 [asyncio] DEBUG: Using selector: EpollSelector
+02:34:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:34:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:36:23 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-19 02:36:23 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:36:23 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований матеріал із чіткою релевантністю для цільової аудиторії. Джерела підтверджують ключові факти, контекст для іммігрантів — зразковий. Кілька правок перед публікацією:
+
+1. *
+2026-04-19 02:36:23 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований матеріал із чіткою релевантністю для цільової аудиторії. Джерела підтверджують ключові факти, контекст для іммігрантів — зразковий. Кілька правок перед публікацією:
+
+1. *
+02:36:23 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-19 02:36:23 [pipeline] INFO: Article approved after 1 revision(s)
+02:36:23 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:36:23 [asyncio] DEBUG: Using selector: EpollSelector
+02:36:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:36:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:36:44 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1174 chars, vocab: 5 words, pt: 237 chars
+2026-04-19 02:36:44 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1174 chars, vocab: 5 words, pt: 237 chars
+02:36:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-19 02:36:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:37:40 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-19 02:37:40 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+02:37:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-19 02:37:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+02:37:41 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+2026-04-19 02:37:41 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+02:37:41 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+2026-04-19 02:37:41 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+02:37:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3352046
+2026-04-19 02:37:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3352046
+02:37:41 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/provedor-de-justica-vacancy-tiago-antunes-ps-immigrants.jpg (266 KB)
+2026-04-19 02:37:41 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/provedor-de-justica-vacancy-tiago-antunes-ps-immigrants.jpg (266 KB)
+02:37:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/provedor-de-justica-vacancy-tiago-antunes-ps-immigrants.md
+2026-04-19 02:37:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/provedor-de-justica-vacancy-tiago-antunes-ps-immigrants.md
