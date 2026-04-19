@@ -9921,3 +9921,95 @@ TimeoutError: agent_query timed out after 300s
 2026-04-19 02:37:41 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/provedor-de-justica-vacancy-tiago-antunes-ps-immigrants.jpg (266 KB)
 02:37:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/provedor-de-justica-vacancy-tiago-antunes-ps-immigrants.md
 2026-04-19 02:37:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/provedor-de-justica-vacancy-tiago-antunes-ps-immigrants.md
+02:37:42 [pipeline] INFO: Article ready: provedor-de-justica-vacancy-tiago-antunes-ps-immigrants (Португалія 10 місяців без омбудсмена: PS наполягає)
+2026-04-19 02:37:42 [pipeline] INFO: Article ready: provedor-de-justica-vacancy-tiago-antunes-ps-immigrants (Португалія 10 місяців без омбудсмена: PS наполягає)
+02:37:42 [pipeline] INFO: === Article 5/10 ===
+2026-04-19 02:37:42 [pipeline] INFO: === Article 5/10 ===
+02:37:42 [pipeline] INFO: --- Article: [news] Пожежний сезон наближається: обов'язкове розчищення ділянок  ---
+2026-04-19 02:37:42 [pipeline] INFO: --- Article: [news] Пожежний сезон наближається: обов'язкове розчищення ділянок  ---
+02:37:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:37:42 [asyncio] DEBUG: Using selector: EpollSelector
+02:37:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:37:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:41:31 [pipeline.stages.s2_research] INFO: Research complete: 14016 chars
+2026-04-19 02:41:31 [pipeline.stages.s2_research] INFO: Research complete: 14016 chars
+02:41:31 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:41:31 [asyncio] DEBUG: Using selector: EpollSelector
+02:41:31 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:41:31 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:42:55 [pipeline.stages.s3_generate] INFO: Generated: 'Розчищення ділянок до 31 травня: GNR вже перевіряє — штрафи від €150 до €5 000' (slug=fire-season-land-clearing-deadline-gnr-inspections-fines-2026, 492 words, 10 sources)
+2026-04-19 02:42:55 [pipeline.stages.s3_generate] INFO: Generated: 'Розчищення ділянок до 31 травня: GNR вже перевіряє — штрафи від €150 до €5 000' (slug=fire-season-land-clearing-deadline-gnr-inspections-fines-2026, 492 words, 10 sources)
+02:42:55 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:42:55 [asyncio] DEBUG: Using selector: EpollSelector
+02:42:55 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:42:55 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:44:03 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 02:44:03 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+02:44:03 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, джерелами та практичною цінністю — але є кілька речей, які блокують публікацію.
+
+**Критичне (блокує публікацію):**
+1. **Обрізаний буліт:** «Кущі залежно від покриття: від 
+2026-04-19 02:44:03 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, джерелами та практичною цінністю — але є кілька речей, які блокують публікацію.
+
+**Критичне (блокує публікацію):**
+1. **Обрізаний буліт:** «Кущі залежно від покриття: від 
+02:44:03 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:44:03 [asyncio] DEBUG: Using selector: EpollSelector
+02:44:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:44:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:46:31 [pipeline.stages.s5_revise] INFO: Revised article: 546 words
+2026-04-19 02:46:31 [pipeline.stages.s5_revise] INFO: Revised article: 546 words
+02:46:31 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-19 02:46:31 [pipeline] INFO: === Review cycle 1/3 complete ===
+02:46:31 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:46:31 [asyncio] DEBUG: Using selector: EpollSelector
+02:46:31 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:46:31 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:47:35 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 02:47:35 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+02:47:35 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна: релевантна, добре зі структурою, джерела є, португальські терміни пояснені чудово, контекст для новоприбулих — один із кращих, що бачив. Але є кілька конкретних проблем, які блокують пу
+2026-04-19 02:47:35 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна: релевантна, добре зі структурою, джерела є, португальські терміни пояснені чудово, контекст для новоприбулих — один із кращих, що бачив. Але є кілька конкретних проблем, які блокують пу
+02:47:35 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:47:35 [asyncio] DEBUG: Using selector: EpollSelector
+02:47:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:47:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:48:54 [pipeline.stages.s5_revise] INFO: Revised article: 552 words
+2026-04-19 02:48:54 [pipeline.stages.s5_revise] INFO: Revised article: 552 words
+02:48:54 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-19 02:48:54 [pipeline] INFO: === Review cycle 2/3 complete ===
+02:48:54 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:48:54 [asyncio] DEBUG: Using selector: EpollSelector
+02:48:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:48:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:50:21 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-04-19 02:50:21 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+02:50:21 [pipeline.stages.s4_review] INFO: Feedback: Сильна, добре структурована стаття з високою практичною цінністю для аудиторії. Кілька дрібних зауважень:
+
+1. **Невикористане джерело:** bombeiros.pt є у списку джерел, але жодного разу не цитується в
+2026-04-19 02:50:21 [pipeline.stages.s4_review] INFO: Feedback: Сильна, добре структурована стаття з високою практичною цінністю для аудиторії. Кілька дрібних зауважень:
+
+1. **Невикористане джерело:** bombeiros.pt є у списку джерел, але жодного разу не цитується в
+02:50:21 [pipeline] INFO: Article approved after 2 revision(s)
+2026-04-19 02:50:21 [pipeline] INFO: Article approved after 2 revision(s)
+02:50:21 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 02:50:21 [asyncio] DEBUG: Using selector: EpollSelector
+02:50:21 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 02:50:21 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:50:41 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1170 chars, vocab: 5 words, pt: 241 chars
+2026-04-19 02:50:41 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1170 chars, vocab: 5 words, pt: 241 chars
+02:50:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-19 02:50:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:51:47 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-19 02:51:47 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+02:51:49 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-19 02:51:49 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+02:51:49 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23624
+2026-04-19 02:51:49 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23624
+02:51:49 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23624 (unknown)
+2026-04-19 02:51:49 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23624 (unknown)
+02:51:49 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23677 2547651
+2026-04-19 02:51:49 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23677 2547651
+02:51:49 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/fire-season-land-clearing-deadline-gnr-inspections-fines-2026.jpg (233 KB)
+2026-04-19 02:51:49 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/fire-season-land-clearing-deadline-gnr-inspections-fines-2026.jpg (233 KB)
+02:51:49 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/fire-season-land-clearing-deadline-gnr-inspections-fines-2026.md
+2026-04-19 02:51:49 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/fire-season-land-clearing-deadline-gnr-inspections-fines-2026.md
