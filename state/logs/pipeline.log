@@ -10149,3 +10149,123 @@ ValueError: [structured_query] All JSON repair attempts failed (5574 chars)
 2026-04-19 03:10:25 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/internamentos-sociais-745-patients-stuck-hospitals-rncci-guide.jpg (210 KB)
 03:10:25 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/internamentos-sociais-745-patients-stuck-hospitals-rncci-guide.md
 2026-04-19 03:10:25 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/internamentos-sociais-745-patients-stuck-hospitals-rncci-guide.md
+03:10:26 [pipeline] INFO: Article ready: internamentos-sociais-745-patients-stuck-hospitals-rncci-guide (745 людей живуть у лікарнях Португалії — не тому, )
+2026-04-19 03:10:26 [pipeline] INFO: Article ready: internamentos-sociais-745-patients-stuck-hospitals-rncci-guide (745 людей живуть у лікарнях Португалії — не тому, )
+03:10:26 [pipeline] INFO: === Article 8/10 ===
+2026-04-19 03:10:26 [pipeline] INFO: === Article 8/10 ===
+03:10:26 [pipeline] INFO: --- Article: [material] Алергія навесні в Португалії: піковий сезон пилку — де отрим ---
+2026-04-19 03:10:26 [pipeline] INFO: --- Article: [material] Алергія навесні в Португалії: піковий сезон пилку — де отрим ---
+03:10:26 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:10:26 [asyncio] DEBUG: Using selector: EpollSelector
+03:10:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:10:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:15:26 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-19 03:15:26 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+03:15:31 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.4s
+2026-04-19 03:15:31 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.4s
+03:15:36 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:15:36 [asyncio] DEBUG: Using selector: EpollSelector
+03:15:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:15:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:20:36 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-19 03:20:36 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+03:20:42 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 10.8s
+2026-04-19 03:20:42 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 10.8s
+03:20:52 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:20:52 [asyncio] DEBUG: Using selector: EpollSelector
+03:20:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:20:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:24:56 [pipeline.stages.s2_research] INFO: Research complete: 13295 chars
+2026-04-19 03:24:56 [pipeline.stages.s2_research] INFO: Research complete: 13295 chars
+03:24:56 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:24:56 [asyncio] DEBUG: Using selector: EpollSelector
+03:24:56 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:24:56 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:27:20 [pipeline.stages.s3_generate] INFO: Generated: 'Алергія навесні в Португалії: піковий сезон пилку — де отримати лікування через SNS' (slug=spring-pollen-allergy-portugal-sns-treatment-guide, 1081 words, 17 sources)
+2026-04-19 03:27:20 [pipeline.stages.s3_generate] INFO: Generated: 'Алергія навесні в Португалії: піковий сезон пилку — де отримати лікування через SNS' (slug=spring-pollen-allergy-portugal-sns-treatment-guide, 1081 words, 17 sources)
+03:27:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:27:20 [asyncio] DEBUG: Using selector: EpollSelector
+03:27:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:27:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:28:29 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 03:28:29 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+03:28:29 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, практична, дуже релевантна для аудиторії. Тон влучний, пояснення португальських термінів — на рівні. Але є помилки, які блокують публікацію:
+
+**КРИТИЧНО — зсув джерел (sour
+2026-04-19 03:28:29 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, практична, дуже релевантна для аудиторії. Тон влучний, пояснення португальських термінів — на рівні. Але є помилки, які блокують публікацію:
+
+**КРИТИЧНО — зсув джерел (sour
+03:28:29 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:28:29 [asyncio] DEBUG: Using selector: EpollSelector
+03:28:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:28:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:31:54 [pipeline.stages.s5_revise] INFO: Revised article: 1087 words
+2026-04-19 03:31:54 [pipeline.stages.s5_revise] INFO: Revised article: 1087 words
+03:31:54 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-19 03:31:54 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:31:54 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:31:54 [asyncio] DEBUG: Using selector: EpollSelector
+03:31:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:31:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:33:14 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 03:33:14 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+03:33:14 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за змістом, структурою та практичною цінністю — це саме те, що потрібно нашій аудиторії. Але є кілька проблем, які потребують виправлення перед публікацією.
+
+**КРИТИЧНО — зсув у списку д
+2026-04-19 03:33:14 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за змістом, структурою та практичною цінністю — це саме те, що потрібно нашій аудиторії. Але є кілька проблем, які потребують виправлення перед публікацією.
+
+**КРИТИЧНО — зсув у списку д
+03:33:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:33:14 [asyncio] DEBUG: Using selector: EpollSelector
+03:33:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:33:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:35:30 [pipeline.stages.s5_revise] INFO: Revised article: 1136 words
+2026-04-19 03:35:30 [pipeline.stages.s5_revise] INFO: Revised article: 1136 words
+03:35:30 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-19 03:35:30 [pipeline] INFO: === Review cycle 2/3 complete ===
+03:35:30 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:35:30 [asyncio] DEBUG: Using selector: EpollSelector
+03:35:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:35:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:36:49 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 03:36:49 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+03:36:49 [pipeline.stages.s4_review] INFO: Feedback: Стаття високоякісна за змістом, структурою та практичною цінністю. Потрібні виправлення перед публікацією:
+
+**КРИТИЧНО — зсув джерел (sources):**
+Останні 4 записи у блоці sources мають перемішані URL 
+2026-04-19 03:36:49 [pipeline.stages.s4_review] INFO: Feedback: Стаття високоякісна за змістом, структурою та практичною цінністю. Потрібні виправлення перед публікацією:
+
+**КРИТИЧНО — зсув джерел (sources):**
+Останні 4 записи у блоці sources мають перемішані URL 
+03:36:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:36:49 [asyncio] DEBUG: Using selector: EpollSelector
+03:36:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:36:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:39:06 [pipeline.stages.s5_revise] INFO: Revised article: 1159 words
+2026-04-19 03:39:06 [pipeline.stages.s5_revise] INFO: Revised article: 1159 words
+03:39:06 [pipeline] INFO: === Review cycle 3/3 complete ===
+2026-04-19 03:39:06 [pipeline] INFO: === Review cycle 3/3 complete ===
+03:39:06 [pipeline] WARNING: Max review cycles (3) reached, proceeding
+2026-04-19 03:39:06 [pipeline] WARNING: Max review cycles (3) reached, proceeding
+03:39:06 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 03:39:06 [asyncio] DEBUG: Using selector: EpollSelector
+03:39:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 03:39:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:39:29 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1169 chars, vocab: 5 words, pt: 219 chars
+2026-04-19 03:39:29 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1169 chars, vocab: 5 words, pt: 219 chars
+03:39:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-19 03:39:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:40:24 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-19 03:40:24 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+03:40:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-19 03:40:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+03:40:25 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23628
+2026-04-19 03:40:25 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23628
+03:40:25 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23628 (unknown)
+2026-04-19 03:40:25 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23628 (unknown)
+03:40:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23681 2629445
+2026-04-19 03:40:25 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23681 2629445
+03:40:25 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/spring-pollen-allergy-portugal-sns-treatment-guide.jpg (228 KB)
+2026-04-19 03:40:25 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/spring-pollen-allergy-portugal-sns-treatment-guide.jpg (228 KB)
+03:40:25 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/spring-pollen-allergy-portugal-sns-treatment-guide.md
+2026-04-19 03:40:25 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/spring-pollen-allergy-portugal-sns-treatment-guide.md
