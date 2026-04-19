@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "AIMA відкрила портал возз'єднання сімей: що відомо і як подати заявку",
+      "type": "immigration",
+      "angle": "Напередодні візиту Лули до Португалії AIMA несподівано відновила роботу порталу reagrupamento familiar, який був заблокований місяцями. Для українців це шанс привезти родичів — але чи тільки для бразильців відкриті двері? Покрокова інструкція: хто має право, які документи, терміни очікування, типові відмови. Окремо — чи працює reagrupamento для власників proteção temporária",
+      "sources_hint": "Search: 'AIMA reagrupamento familiar portal abril 2026', Público (headline about Lula visit + AIMA portal), AIMA.gov.pt portal status, SEF/AIMA legal framework Art. 98-108 Lei 23/2007, immigration lawyers on social media, CPR (Conselho Português para os Refugiados) updates",
+      "priority": 1
+    },
+    {
+      "topic": "Trabalho XXI: президент Сеґуру особисто зустрінеться з кожним соціальним партнером у середу",
+      "type": "news",
+      "angle": "Нове: Сеґуру скликає індивідуальні зустрічі з усіма профспілками та роботодавцями на середу — це безпрецедентний рівень президентського втручання в трудові переговори. UGT ухвалює остаточне рішення 23 квітня, CGTP та UGT обговорювали пропозиції уряду минулої ночі. Чи зможе президент зупинити реформу без згоди профспілок? Аналіз арифметики парламенту: AD+Chega+IL проти вето. Що це означає для banco de horas та строкових контрактів українців",
+      "sources_hint": "Search: 'Seguro parceiros sociais quarta-feira pacote laboral', RTP (22h headline 'PR recebe na 4ªf todos os parceiros sociais'), RTP 0h 'CGTP e UGT discutiram propostas', Lusa wire, Público, Observador. Cross-ref our previous 8 articles on Trabalho XXI for continuity",
+      "priority": 1
+    },
+    {
+      "topic": "Тиждень уперед 20–25 квітня: ключові дати, дедлайни та що чекає на українців",
+      "type": "utility",
+      "angle": "Понеділок: ціни на пальне (суперечливі сигнали з Ірану — протоку відкрили, але водночас погрожують кораблям; перемир'я закінчується 22 квітня). Вівторок 22: відкриття порталу Matrículas 2026/27. Середа: Сеґуру приймає соціальних партнерів. 23 квітня: UGT остаточне рішення + День книги. 24 квітня: страйк прокурорів (які суди зупиняться — посилання на наш гід). 25 квітня: Dia da Liberdade — вихідний, програма заходів. Нагадування: IRS до 30 червня, AIMA reagrupamento portal",
+      "sources_hint": "Cross-reference our recent articles: matriculas (Apr 18), prosecutors strike (Apr 18), Hormuz fuel (Apr 18), Trabalho XXI (Apr 18). RTP/Lusa for April 25 event programs. ANAREC for Monday fuel forecast. Iran headlines from today's RSS for Hormuz update. Portal das Matrículas schedule",
+      "priority": 1
+    },
+    {
+      "topic": "PS наполягає на Тіаґу Антунеші для Provedor de Justiça — чому омбудсмен критичний для іммігрантів",
+      "type": "news",
+      "angle": "Посада Provedor de Justiça вакантна вже понад 10 місяців — найдовше в історії демократичної Португалії. PS офіційно підтримує Тіаґу Антунеша (колишній держсекретар при уряді Кошти). Хто він, яка процедура призначення (потрібно 2/3 парламенту), чому блокується. Для українців Provedor — ключовий захисник: 5500+ скарг на AIMA за 2024 рік, інспекції притулків, захист від дискримінації. Без омбудсмена ці справи заморожені",
+      "sources_hint": "Search: 'Tiago Antunes provedor justiça PS', CMJornal headline, Público, RTP. Background: Provedor de Justiça website, Lei 9/91 (Estatuto do Provedor), our April 18 Conselho de Estado article mentioning vacancy. Cross-ref AIMA complaints data from our April 15 article",
+      "priority": 1
+    },
+    {
+      "topic": "Пожежний сезон наближається: обов'язкове розчищення ділянок до 15 травня — штрафи від €280",
+      "type": "news",
+      "angle": "Після зимових штормів, які повалили 5–8 млн дерев лише в Лейрії, Португалія входить у пожежний сезон з безпрецедентним обсягом горючого матеріалу. ICNF нагадує: дедлайн розчищення земельних ділянок у 100-метровій зоні навколо будівель — 15 травня. Штраф за невиконання: €280–€10 000. GNR та câmaras перевірятимуть. Для українців, які орендують або мають сільське житло в Centro/Алентежу/Алгарве — що саме потрібно зробити (відрізати гілки, прибрати сухостій, відстані між деревами), хто відповідає (орендар чи власник), як замовити розчищення через junta de freguesia",
+      "sources_hint": "Search: 'limpeza terrenos prazo maio 2026 ICNF', 'gestão combustível DL 124/2006', ICNF.pt fire prevention guidelines, GNR press releases on inspections, Proteção Civil fire season preparedness. Público editorial on eucalyptus as background. Cross-ref our April 12 military cleanup article and April 17 storm recovery €76.6M article",
+      "priority": 2
+    },
+    {
+      "topic": "Уряд гарантує компенсаційний фонд для ресторанів і готелів через кризу на Близькому Сході",
+      "type": "news",
+      "angle": "AHRESP (асоціація готельного та ресторанного бізнесу) заявила про гарантію уряду створити спеціальний фонд компенсації для HoReCa, постраждалого від зростання цін на енергію через Ормузьку кризу. Це окремий інструмент від кредитної лінії €600 млн (яку ми висвітлювали 10 квітня). Для українців у HoReCa (одна з найбільших галузей зайнятості діаспори) — як це вплине на збереження робочих місць, чи зможуть ФОП-и претендувати, які терміни",
+      "sources_hint": "Search: 'AHRESP fundo compensação Médio Oriente governo', RTP 23h headline, Lusa wire, AHRESP.com press releases, Jornal de Negócios, Dinheiro Vivo. Cross-ref our April 10 article on €600M credit line for comparison",
+      "priority": 2
+    },
+    {
+      "topic": "Інтернаменту соціал: тисячі пацієнтів застрягли в лікарнях, бо їм нікуди йти",
+      "type": "news",
+      "angle": "Público піднімає системну проблему 'internamentos sociais' — люди, яких лікарня готова виписати, але вони залишаються в палатах тижнями/місяцями, бо не мають житла, родини чи місця в інтернаті. Це блокує ліжка для інших пацієнтів і поглиблює кризу SNS. Скільки таких випадків, які рішення пропонуються. Для українських літніх людей та людей з інвалідністю — особливий ризик через відсутність родинної мережі, мовний бар'єр та незнання системи RNCCI (Rede Nacional de Cuidados Continuados)",
+      "sources_hint": "Search: 'internamentos sociais Portugal hospitais 2026', Público editorial/opinion piece today, ERS (Entidade Reguladora da Saúde) data, RNCCI reports, UMCCI statistics, Provedor de Justiça reports on hospital conditions. Cross-ref our April 16 article on RNCCI bed closures",
+      "priority": 2
+    },
+    {
+      "topic": "Алергія навесні в Португалії: піковий сезон пилку — де отримати безкоштовне лікування через SNS",
+      "type": "material",
+      "angle": "Квітень-травень — пік пилкового сезону в Португалії (грамінеї, оливкове дерево, платан). Для українців, які вперше переживають португальську весну, алергічні реакції можуть бути несподіваними — в Україні інший склад пилку. Стаття: карта пилку RPA (Rede Portuguesa de Aerobiologia), як отримати антигістамінні через SNS безкоштовно (receita médica + taxa moderadora €0 для PT), які ліки без рецепта в аптеці (€3–8), коли звертатися до лікаря. Окремо: астма та алергія — право на isenção від taxas moderadoras. Додаток для відстеження пилку: BulaAr",
+      "sources_hint": "Search: 'pólen Portugal abril 2026 RPA previsão', RPA (Rede Portuguesa de Aerobiologia) boletim semanal, SPAIC (Sociedade Portuguesa de Alergologia), DGS guidelines on allergic rhinitis, Infarmed OTC antihistamines list, SNS 24 allergy guidance, BulaAr app. Cross-ref our family doctor guide for how to access consulta through USF",
+      "priority": 2
+    },
+    {
+      "topic": "Безкоштовні курси португальської для дорослих: повний гід на 2026 рік",
+      "type": "guide",
+      "angle": "Мова — головний бар'єр для інтеграції. Стаття збирає ВСІ безкоштовні варіанти вивчення португальської для дорослих іммігрантів: програма PPT (Português para Todos) через IEFP з сертифікатом A1-B2, курси Portugal Acolhe (240 годин), муніципальні програми Лісабона/Порту/Фару, безкоштовні курси при CNAIM, волонтерські проекти (JRS, Cruz Vermelha, парафії). Онлайн-ресурси: Português Online (Camões IP), Duolingo, RTP Ensina. Окремо — сертифікат CIPLE для отримання громадянства. Як записатися, рівні, розклад, чи сумісно з роботою",
+      "sources_hint": "Search: 'cursos português gratuitos imigrantes 2026 IEFP PPT', IEFP.pt (Português para Todos enrollment), Alto Comissariado para as Migrações programs, CNAIM Lisbon/Porto/Faro course schedules, CML/CMP/CMF municipal integration programs, JRS Portugal language courses, Camões Instituto português online platform. CIPLE exam info from CAPLE",
+      "priority": 2
+    },
+    {
+      "topic": "Дезінформація загрожує десятиліттям прогресу у вакцинації — що потрібно знати українським батькам у Португалії",
+      "type": "news",
+      "angle": "Público та міжнародні джерела б'ють на сполох: антивакцинальні настрої зростають по Європі, зокрема в Португалії, де DGS фіксує зниження покриття окремими вакцинами. Для українських батьків подвійна проблема: (1) в Україні через війну зірвано графік щеплень, діти можуть мати прогалини; (2) у Португалії антивакс-наративи циркулюють в соцмережах. Стаття пояснює PNV (Programa Nacional de Vacinação) — безкоштовну вакцинацію для всіх резидентів включно з PT, як 'наздогнати' пропущені щеплення через centro de saúde, та де перевірити свій статус вакцинації",
+      "sources_hint": "Search: 'desinformação vacinação Portugal 2026 DGS', Público article today, DGS vaccination coverage reports, ECDC data on Portugal, WHO Europe measles/pertussis updates. PNV 2020 schedule on DGS.pt. Ukraine MoH data on disrupted childhood vaccination. UNICEF reports on war-affected vaccination",
+      "priority": 2
+    }
+  ],
+  "date": "2026-04-19",
+  "created_at": "2026-04-19T01:17:02.581035+00:00"
+}

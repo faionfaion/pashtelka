@@ -1,0 +1,260 @@
+{
+  "timestamp": "2026-04-18_035446",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "hormuz-open-oil-crash-fuel-prices-monday-april-21, trabalho-xxi-ugt-rejects-april-18-reform-parliament-no-unions, seguro-first-conselho-de-estado-meeting-new-members-defense, loures-obstetric-emergency-201-births-first-month-sns-routing-guide, prosecutors-strike-april-24-practical-guide-court-hearings",
+  "author": "Pastelka News",
+  "duration_s": 9464.2,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 560.9,
+      "error": null
+    },
+    {
+      "name": "research:Іран відкриває Ормузьку проток",
+      "status": "ok",
+      "duration_s": 609.5,
+      "error": null
+    },
+    {
+      "name": "generate:Іран відкриває Ормузьку проток",
+      "status": "ok",
+      "duration_s": 98.7,
+      "error": null
+    },
+    {
+      "name": "review:Іран відкриває Ормузьку проток",
+      "status": "ok",
+      "duration_s": 259.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Іран відкриває Ормузьку проток",
+      "status": "ok",
+      "duration_s": 18.0,
+      "error": null
+    },
+    {
+      "name": "save:Іран відкриває Ормузьку проток",
+      "status": "ok",
+      "duration_s": 54.5,
+      "error": null
+    },
+    {
+      "name": "research:Trabalho XXI: UGT знову відхил",
+      "status": "ok",
+      "duration_s": 910.4,
+      "error": null
+    },
+    {
+      "name": "generate:Trabalho XXI: UGT знову відхил",
+      "status": "ok",
+      "duration_s": 84.7,
+      "error": null
+    },
+    {
+      "name": "review:Trabalho XXI: UGT знову відхил",
+      "status": "ok",
+      "duration_s": 416.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Trabalho XXI: UGT знову відхил",
+      "status": "ok",
+      "duration_s": 16.1,
+      "error": null
+    },
+    {
+      "name": "save:Trabalho XXI: UGT знову відхил",
+      "status": "ok",
+      "duration_s": 54.8,
+      "error": null
+    },
+    {
+      "name": "research:Вихідні 19–20 квітня: дербі та",
+      "status": "failed",
+      "duration_s": 932.2,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Перша нарада Ради держави при ",
+      "status": "ok",
+      "duration_s": 261.2,
+      "error": null
+    },
+    {
+      "name": "generate:Перша нарада Ради держави при ",
+      "status": "ok",
+      "duration_s": 83.8,
+      "error": null
+    },
+    {
+      "name": "review:Перша нарада Ради держави при ",
+      "status": "ok",
+      "duration_s": 201.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Перша нарада Ради держави при ",
+      "status": "ok",
+      "duration_s": 20.3,
+      "error": null
+    },
+    {
+      "name": "save:Перша нарада Ради держави при ",
+      "status": "ok",
+      "duration_s": 64.5,
+      "error": null
+    },
+    {
+      "name": "research:Пологовий будинок у Лоуріш при",
+      "status": "ok",
+      "duration_s": 177.8,
+      "error": null
+    },
+    {
+      "name": "generate:Пологовий будинок у Лоуріш при",
+      "status": "ok",
+      "duration_s": 78.5,
+      "error": null
+    },
+    {
+      "name": "review:Пологовий будинок у Лоуріш при",
+      "status": "ok",
+      "duration_s": 812.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Пологовий будинок у Лоуріш при",
+      "status": "ok",
+      "duration_s": 26.0,
+      "error": null
+    },
+    {
+      "name": "save:Пологовий будинок у Лоуріш при",
+      "status": "ok",
+      "duration_s": 52.6,
+      "error": null
+    },
+    {
+      "name": "research:Страйк прокурорів 24 квітня на",
+      "status": "ok",
+      "duration_s": 214.3,
+      "error": null
+    },
+    {
+      "name": "generate:Страйк прокурорів 24 квітня на",
+      "status": "ok",
+      "duration_s": 71.4,
+      "error": null
+    },
+    {
+      "name": "review:Страйк прокурорів 24 квітня на",
+      "status": "ok",
+      "duration_s": 212.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Страйк прокурорів 24 квітня на",
+      "status": "ok",
+      "duration_s": 15.8,
+      "error": null
+    },
+    {
+      "name": "save:Страйк прокурорів 24 квітня на",
+      "status": "ok",
+      "duration_s": 57.2,
+      "error": null
+    },
+    {
+      "name": "research:Туристичний сезон стартує: де ",
+      "status": "failed",
+      "duration_s": 930.7,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Літні табори для дітей (ATL та",
+      "status": "failed",
+      "duration_s": 923.2,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Матрікули 2026/2027: терміни з",
+      "status": "ok",
+      "duration_s": 210.5,
+      "error": null
+    },
+    {
+      "name": "generate:Матрікули 2026/2027: терміни з",
+      "status": "ok",
+      "duration_s": 54.8,
+      "error": null
+    },
+    {
+      "name": "review:Матрікули 2026/2027: терміни з",
+      "status": "ok",
+      "duration_s": 198.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Матрікули 2026/2027: терміни з",
+      "status": "ok",
+      "duration_s": 21.2,
+      "error": null
+    },
+    {
+      "name": "save:Матрікули 2026/2027: терміни з",
+      "status": "ok",
+      "duration_s": 52.5,
+      "error": null
+    },
+    {
+      "name": "research:Перший комерційний космічний з",
+      "status": "ok",
+      "duration_s": 219.0,
+      "error": null
+    },
+    {
+      "name": "generate:Перший комерційний космічний з",
+      "status": "ok",
+      "duration_s": 80.0,
+      "error": null
+    },
+    {
+      "name": "review:Перший комерційний космічний з",
+      "status": "ok",
+      "duration_s": 293.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Перший комерційний космічний з",
+      "status": "ok",
+      "duration_s": 22.6,
+      "error": null
+    },
+    {
+      "name": "save:Перший комерційний космічний з",
+      "status": "ok",
+      "duration_s": 51.9,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 39.4,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

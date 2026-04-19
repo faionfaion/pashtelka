@@ -9470,3 +9470,178 @@ TimeoutError: agent_query timed out after 300s
 2026-04-18 03:54:06 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/azores-spaceport-first-launch-space-forest-portugal-jobs.jpg (167 KB)
 03:54:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/azores-spaceport-first-launch-space-forest-portugal-jobs.md
 2026-04-18 03:54:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/azores-spaceport-first-launch-space-forest-portugal-jobs.md
+03:54:07 [pipeline] INFO: Article ready: azores-spaceport-first-launch-space-forest-portugal-jobs (Перший ракетний пуск з Азорських островів у травні)
+2026-04-18 03:54:07 [pipeline] INFO: Article ready: azores-spaceport-first-launch-space-forest-portugal-jobs (Перший ракетний пуск з Азорських островів у травні)
+03:54:07 [pipeline] INFO: Generated 7/10 articles
+2026-04-18 03:54:07 [pipeline] INFO: Generated 7/10 articles
+03:54:09 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-04-18 03:54:09 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+03:54:09 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-18 03:54:09 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+03:54:46 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-04-18 03:54:46 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+03:54:46 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/azores-spaceport-first-launch-space-forest-portugal-jobs/ (200 OK, title found)
+2026-04-18 03:54:46 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/azores-spaceport-first-launch-space-forest-portugal-jobs/ (200 OK, title found)
+03:54:46 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-18_035446.json
+2026-04-18 03:54:46 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-18_035446.json
+03:54:46 [pipeline] INFO: Batch complete: 7 articles
+2026-04-18 03:54:46 [pipeline] INFO: Batch complete: 7 articles
+2026-04-18 08:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-18 08:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 08:05:03 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 5521
+2026-04-18 08:05:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 08:05:03 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-18 08:05:03 [pipeline.stages.s10_pick_and_publish] INFO: TG published: azores-spaceport-first-launch-space-forest-portugal-jobs -> msg 220
+2026-04-18 08:05:03 [pipeline] INFO: Published to TG: azores-spaceport-first-launch-space-forest-portugal-jobs (msg 220)
+2026-04-18 11:05:01 [pipeline] INFO: === TG Publish mode ===
+2026-04-18 11:05:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 5160
+2026-04-18 11:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-18 11:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: matriculas-2026-2027-school-enrollment-guide-immigrants -> msg 221
+2026-04-18 11:05:02 [pipeline] INFO: Published to TG: matriculas-2026-2027-school-enrollment-guide-immigrants (msg 221)
+2026-04-18 14:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-18 14:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 14:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4810
+2026-04-18 14:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 14:05:03 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-18 14:05:03 [pipeline.stages.s10_pick_and_publish] INFO: TG published: prosecutors-strike-april-24-practical-guide-court-hearings -> msg 222
+2026-04-18 14:05:03 [pipeline] INFO: Published to TG: prosecutors-strike-april-24-practical-guide-court-hearings (msg 222)
+2026-04-18 17:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-18 17:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 17:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4976
+2026-04-18 17:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 17:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-18 17:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: loures-obstetric-emergency-201-births-first-month-sns-routing-guide -> msg 223
+2026-04-18 17:05:02 [pipeline] INFO: Published to TG: loures-obstetric-emergency-201-births-first-month-sns-routing-guide (msg 223)
+2026-04-18 19:07:02 [pipeline] INFO: === Digest mode ===
+2026-04-18 19:07:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-18 19:07:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-18 19:07:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 19:07:19 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4903
+2026-04-18 19:07:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-18 19:07:19 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-18 19:07:19 [pipeline.stages.s11_digest] INFO: Digest published: msg 224 (7 articles)
+2026-04-18 19:07:19 [pipeline] INFO: Digest published (msg 224, 7 articles)
+01:17:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-19 01:17:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-19 01:17:02 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-19 01:17:02 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-19 01:17:02 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-19 01:17:02 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+01:17:03 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-19 01:17:03 [pipeline.feeds] INFO: Feed publico: 10 items
+01:17:03 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-19 01:17:03 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+01:17:03 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:17:03 [asyncio] DEBUG: Using selector: EpollSelector
+01:17:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:17:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:23:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:23:11 [asyncio] DEBUG: Using selector: EpollSelector
+01:23:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:23:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:26:57 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 10 -> 10 articles
+2026-04-19 01:26:57 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 10 -> 10 articles
+01:26:57 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 10 articles for 2026-04-19
+2026-04-19 01:26:57 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 10 articles for 2026-04-19
+01:26:57 [pipeline] INFO: Editorial plan: 10 topics
+2026-04-19 01:26:57 [pipeline] INFO: Editorial plan: 10 topics
+01:26:57 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-19 01:26:57 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+01:26:57 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-19 01:26:57 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+01:26:57 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-19 01:26:57 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+01:26:57 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-19 01:26:57 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+01:26:57 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-19 01:26:57 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+01:26:57 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-19 01:26:57 [pipeline.feeds] INFO: Feed publico: 10 items
+01:26:58 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-19 01:26:58 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+01:26:58 [pipeline.stages.s1_collect] INFO: Context: 69 RSS items, 105 existing articles
+2026-04-19 01:26:58 [pipeline.stages.s1_collect] INFO: Context: 69 RSS items, 105 existing articles
+01:26:58 [pipeline] INFO: === Article 1/10 ===
+2026-04-19 01:26:58 [pipeline] INFO: === Article 1/10 ===
+01:26:58 [pipeline] INFO: --- Article: [immigration] AIMA відкрила портал возз'єднання сімей: що відомо і як пода ---
+2026-04-19 01:26:58 [pipeline] INFO: --- Article: [immigration] AIMA відкрила портал возз'єднання сімей: що відомо і як пода ---
+01:26:58 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:26:58 [asyncio] DEBUG: Using selector: EpollSelector
+01:26:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:26:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:31:58 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-19 01:31:58 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+01:32:03 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.6s
+2026-04-19 01:32:03 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.6s
+01:32:08 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:32:08 [asyncio] DEBUG: Using selector: EpollSelector
+01:32:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:32:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:36:02 [pipeline.stages.s2_research] INFO: Research complete: 11301 chars
+2026-04-19 01:36:02 [pipeline.stages.s2_research] INFO: Research complete: 11301 chars
+01:36:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:36:02 [asyncio] DEBUG: Using selector: EpollSelector
+01:36:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:36:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:37:45 [pipeline.stages.s3_generate] INFO: Generated: 'AIMA відкрила портал возз'єднання сімей: що змінилося, хто може подати і чи працює це для українців' (slug=aima-reagrupamento-familiar-portal-family-reunification-guide, 863 words, 11 sources)
+2026-04-19 01:37:45 [pipeline.stages.s3_generate] INFO: Generated: 'AIMA відкрила портал возз'єднання сімей: що змінилося, хто може подати і чи працює це для українців' (slug=aima-reagrupamento-familiar-portal-family-reunification-guide, 863 words, 11 sources)
+01:37:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:37:45 [asyncio] DEBUG: Using selector: EpollSelector
+01:37:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:37:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:39:15 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-19 01:39:15 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+01:39:15 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, джерелами й релевантністю, але є кілька проблем, які потребують виправлення перед публікацією:
+
+**Мовні помилки:**
+1. «іммігрантська» → «імігрантська» (одна «м» в українсь
+2026-04-19 01:39:15 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, джерелами й релевантністю, але є кілька проблем, які потребують виправлення перед публікацією:
+
+**Мовні помилки:**
+1. «іммігрантська» → «імігрантська» (одна «м» в українсь
+01:39:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:39:15 [asyncio] DEBUG: Using selector: EpollSelector
+01:39:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:39:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:40:54 [pipeline.stages.s5_revise] INFO: Revised article: 916 words
+2026-04-19 01:40:54 [pipeline.stages.s5_revise] INFO: Revised article: 916 words
+01:40:54 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-19 01:40:54 [pipeline] INFO: === Review cycle 1/3 complete ===
+01:40:54 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:40:54 [asyncio] DEBUG: Using selector: EpollSelector
+01:40:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:40:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:42:22 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-19 01:42:22 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+01:42:22 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою, якісними джерелами та практичною цінністю для українських читачів. Чудово розмежовано новину для CPLP і ситуацію українців з proteção temporária. Кілька зауважень дл
+2026-04-19 01:42:22 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою структурою, якісними джерелами та практичною цінністю для українських читачів. Чудово розмежовано новину для CPLP і ситуацію українців з proteção temporária. Кілька зауважень дл
+01:42:22 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-19 01:42:22 [pipeline] INFO: Article approved after 1 revision(s)
+01:42:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 01:42:22 [asyncio] DEBUG: Using selector: EpollSelector
+01:42:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 01:42:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:42:44 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1289 chars, vocab: 5 words, pt: 206 chars
+2026-04-19 01:42:44 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1289 chars, vocab: 5 words, pt: 206 chars
+01:42:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-19 01:42:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+01:43:35 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-19 01:43:35 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+01:43:36 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-19 01:43:36 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+01:43:36 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+2026-04-19 01:43:36 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+01:43:36 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+2026-04-19 01:43:36 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+01:43:36 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 2955950
+2026-04-19 01:43:36 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 2955950
+01:43:36 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/aima-reagrupamento-familiar-portal-family-reunification-guide.jpg (238 KB)
+2026-04-19 01:43:36 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/aima-reagrupamento-familiar-portal-family-reunification-guide.jpg (238 KB)
+01:43:36 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/aima-reagrupamento-familiar-portal-family-reunification-guide.md
+2026-04-19 01:43:36 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/aima-reagrupamento-familiar-portal-family-reunification-guide.md
