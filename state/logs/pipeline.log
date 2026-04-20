@@ -10556,3 +10556,77 @@ TimeoutError: agent_query timed out after 300s
 2026-04-20 01:38:02 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians.jpg (190 KB)
 01:38:02 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians.md
 2026-04-20 01:38:02 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians.md
+01:38:03 [pipeline] INFO: Article ready: seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians (Сеґуру їде до Мадрида: перший закордонний візит но)
+2026-04-20 01:38:03 [pipeline] INFO: Article ready: seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians (Сеґуру їде до Мадрида: перший закордонний візит но)
+01:38:03 [pipeline] INFO: === Article 2/9 ===
+2026-04-20 01:38:03 [pipeline] INFO: === Article 2/9 ===
+01:38:03 [pipeline] INFO: --- Article: [news] Уряд обіцяє AHRESP фонди безповоротної допомоги — кредитна л ---
+2026-04-20 01:38:03 [pipeline] INFO: --- Article: [news] Уряд обіцяє AHRESP фонди безповоротної допомоги — кредитна л ---
+01:38:03 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:38:03 [asyncio] DEBUG: Using selector: EpollSelector
+01:38:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:38:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:42:19 [pipeline.stages.s2_research] INFO: Research complete: 9545 chars
+2026-04-20 01:42:19 [pipeline.stages.s2_research] INFO: Research complete: 9545 chars
+01:42:19 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:42:19 [asyncio] DEBUG: Using selector: EpollSelector
+01:42:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:42:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:43:35 [pipeline.stages.s3_generate] INFO: Generated: 'AHRESP заявляє про гарантії уряду щодо грантів — але поки це лише обіцянки' (slug=ahresp-fundo-perdido-grant-promise-600-million-credit-line-update, 549 words, 6 sources)
+2026-04-20 01:43:35 [pipeline.stages.s3_generate] INFO: Generated: 'AHRESP заявляє про гарантії уряду щодо грантів — але поки це лише обіцянки' (slug=ahresp-fundo-perdido-grant-promise-600-million-credit-line-update, 549 words, 6 sources)
+01:43:35 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:43:35 [asyncio] DEBUG: Using selector: EpollSelector
+01:43:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:43:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:44:41 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-20 01:44:41 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+01:44:41 [pipeline.stages.s4_review] INFO: Feedback: Стаття структурно сильна, добре пояснює португальські терміни та має чітку практичну секцію для українців. Але є кілька зауважень перед публікацією:
+
+1. **Непідкріплені джерелом факти:** Твердження «п
+2026-04-20 01:44:41 [pipeline.stages.s4_review] INFO: Feedback: Стаття структурно сильна, добре пояснює португальські терміни та має чітку практичну секцію для українців. Але є кілька зауважень перед публікацією:
+
+1. **Непідкріплені джерелом факти:** Твердження «п
+01:44:41 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:44:41 [asyncio] DEBUG: Using selector: EpollSelector
+01:44:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:44:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:45:22 [pipeline.stages.s5_revise] INFO: Revised article: 612 words
+2026-04-20 01:45:22 [pipeline.stages.s5_revise] INFO: Revised article: 612 words
+01:45:22 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-20 01:45:22 [pipeline] INFO: === Review cycle 1/3 complete ===
+01:45:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:45:22 [asyncio] DEBUG: Using selector: EpollSelector
+01:45:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:45:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:46:39 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-20 01:46:39 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+01:46:39 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з чіткою структурою, добрими джерелами та корисним практичним блоком для читачів. Кілька зауважень для доопрацювання:
+
+1. **Неточність терміну:** Стаття використовує «паливна криза» та «
+2026-04-20 01:46:39 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з чіткою структурою, добрими джерелами та корисним практичним блоком для читачів. Кілька зауважень для доопрацювання:
+
+1. **Неточність терміну:** Стаття використовує «паливна криза» та «
+01:46:39 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-20 01:46:39 [pipeline] INFO: Article approved after 1 revision(s)
+01:46:39 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:46:39 [asyncio] DEBUG: Using selector: EpollSelector
+01:46:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:46:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:46:59 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1194 chars, vocab: 5 words, pt: 233 chars
+2026-04-20 01:46:59 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1194 chars, vocab: 5 words, pt: 233 chars
+01:46:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-20 01:46:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+01:47:51 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-20 01:47:51 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+01:47:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-20 01:47:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+01:47:52 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+2026-04-20 01:47:52 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+01:47:52 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+2026-04-20 01:47:52 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+01:47:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3406685
+2026-04-20 01:47:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3406685
+01:47:52 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ahresp-fundo-perdido-grant-promise-600-million-credit-line-update.jpg (260 KB)
+2026-04-20 01:47:52 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ahresp-fundo-perdido-grant-promise-600-million-credit-line-update.jpg (260 KB)
+01:47:52 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ahresp-fundo-perdido-grant-promise-600-million-credit-line-update.md
+2026-04-20 01:47:52 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ahresp-fundo-perdido-grant-promise-600-million-credit-line-update.md
