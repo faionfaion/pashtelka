@@ -11094,3 +11094,97 @@ TimeoutError: agent_query timed out after 300s
 2026-04-20 03:20:52 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/war-stress-online-gambling-mechanism-prevention-self-exclusion-guide.jpg (193 KB)
 03:20:52 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/war-stress-online-gambling-mechanism-prevention-self-exclusion-guide.md
 2026-04-20 03:20:52 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/war-stress-online-gambling-mechanism-prevention-self-exclusion-guide.md
+03:20:52 [pipeline] INFO: Article ready: war-stress-online-gambling-mechanism-prevention-self-exclusion-guide (Війна мотивує онлайн-ставки: як стрес підштовхує д)
+2026-04-20 03:20:52 [pipeline] INFO: Article ready: war-stress-online-gambling-mechanism-prevention-self-exclusion-guide (Війна мотивує онлайн-ставки: як стрес підштовхує д)
+03:20:52 [pipeline] INFO: === Article 9/9 ===
+2026-04-20 03:20:52 [pipeline] INFO: === Article 9/9 ===
+03:20:52 [pipeline] INFO: --- Article: [news] Португальська компанія вирощує рибу з клітин: що це означає  ---
+2026-04-20 03:20:52 [pipeline] INFO: --- Article: [news] Португальська компанія вирощує рибу з клітин: що це означає  ---
+03:20:52 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:20:52 [asyncio] DEBUG: Using selector: EpollSelector
+03:20:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:20:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:24:42 [pipeline.stages.s2_research] INFO: Research complete: 11875 chars
+2026-04-20 03:24:42 [pipeline.stages.s2_research] INFO: Research complete: 11875 chars
+03:24:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:24:42 [asyncio] DEBUG: Using selector: EpollSelector
+03:24:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:24:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:26:10 [pipeline.stages.s3_generate] INFO: Generated: 'Португальський стартап вирощує восьминога з клітин: що це означає для ринку риби і де шукати роботу в біотеху' (slug=cell4food-cultured-fish-portugal-biotech-jobs, 629 words, 11 sources)
+2026-04-20 03:26:10 [pipeline.stages.s3_generate] INFO: Generated: 'Португальський стартап вирощує восьминога з клітин: що це означає для ринку риби і де шукати роботу в біотеху' (slug=cell4food-cultured-fish-portugal-biotech-jobs, 629 words, 11 sources)
+03:26:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:26:10 [asyncio] DEBUG: Using selector: EpollSelector
+03:26:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:26:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:27:36 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-20 03:27:36 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+03:27:36 [pipeline.stages.s4_review] INFO: Feedback: Стаття дуже якісна, добре структурована і з високою практичною цінністю для аудиторії. Потрібні мінімальні виправлення перед публікацією:
+
+**1. Граматична помилка в заголовку (критично — це перше, що 
+2026-04-20 03:27:36 [pipeline.stages.s4_review] INFO: Feedback: Стаття дуже якісна, добре структурована і з високою практичною цінністю для аудиторії. Потрібні мінімальні виправлення перед публікацією:
+
+**1. Граматична помилка в заголовку (критично — це перше, що 
+03:27:36 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:27:36 [asyncio] DEBUG: Using selector: EpollSelector
+03:27:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:27:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:29:26 [pipeline.stages.s5_revise] INFO: Revised article: 676 words
+2026-04-20 03:29:26 [pipeline.stages.s5_revise] INFO: Revised article: 676 words
+03:29:26 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-20 03:29:26 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:29:26 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:29:26 [asyncio] DEBUG: Using selector: EpollSelector
+03:29:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:29:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:30:48 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-20 03:30:48 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+03:30:48 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре досліджена, чудово структурована і має високу практичну цінність для цільової аудиторії. Але є кілька проблем, які потрібно виправити перед публікацією:
+
+1. **Заголовок вводить в оману.**
+2026-04-20 03:30:48 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре досліджена, чудово структурована і має високу практичну цінність для цільової аудиторії. Але є кілька проблем, які потрібно виправити перед публікацією:
+
+1. **Заголовок вводить в оману.**
+03:30:48 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:30:48 [asyncio] DEBUG: Using selector: EpollSelector
+03:30:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:30:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:32:15 [pipeline.stages.s5_revise] INFO: Revised article: 695 words
+2026-04-20 03:32:15 [pipeline.stages.s5_revise] INFO: Revised article: 695 words
+03:32:15 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-20 03:32:15 [pipeline] INFO: === Review cycle 2/3 complete ===
+03:32:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:32:15 [asyncio] DEBUG: Using selector: EpollSelector
+03:32:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:32:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:33:33 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-20 03:33:33 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:33:33 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття — ґрунтовне дослідження, багато джерел, чудовий практичний кут для аудиторії. Дрібниці на виправлення перед публікацією:
+
+1. **Дубльований заголовок.** Title з'являється двічі (один раз 
+2026-04-20 03:33:33 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття — ґрунтовне дослідження, багато джерел, чудовий практичний кут для аудиторії. Дрібниці на виправлення перед публікацією:
+
+1. **Дубльований заголовок.** Title з'являється двічі (один раз 
+03:33:33 [pipeline] INFO: Article approved after 2 revision(s)
+2026-04-20 03:33:33 [pipeline] INFO: Article approved after 2 revision(s)
+03:33:33 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:33:33 [asyncio] DEBUG: Using selector: EpollSelector
+03:33:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:33:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:33:52 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1081 chars, vocab: 5 words, pt: 164 chars
+2026-04-20 03:33:52 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1081 chars, vocab: 5 words, pt: 164 chars
+03:33:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-20 03:33:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:34:45 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-20 03:34:45 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+03:34:46 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-20 03:34:46 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+03:34:46 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+2026-04-20 03:34:46 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+03:34:46 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+2026-04-20 03:34:46 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+03:34:46 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3033596
+2026-04-20 03:34:46 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3033596
+03:34:46 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/cell4food-cultured-fish-portugal-biotech-jobs.jpg (240 KB)
+2026-04-20 03:34:46 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/cell4food-cultured-fish-portugal-biotech-jobs.jpg (240 KB)
+03:34:46 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/cell4food-cultured-fish-portugal-biotech-jobs.md
+2026-04-20 03:34:46 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/cell4food-cultured-fish-portugal-biotech-jobs.md
