@@ -10756,3 +10756,107 @@ TimeoutError: agent_query timed out after 300s
 2026-04-20 02:16:24 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ukrainian-diploma-recognition-portugal-equivalencia-guide.jpg (208 KB)
 02:16:24 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ukrainian-diploma-recognition-portugal-equivalencia-guide.md
 2026-04-20 02:16:24 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ukrainian-diploma-recognition-portugal-equivalencia-guide.md
+02:16:25 [pipeline] INFO: Article ready: ukrainian-diploma-recognition-portugal-equivalencia-guide (Визнання українського диплома в Португалії: еквіва)
+2026-04-20 02:16:25 [pipeline] INFO: Article ready: ukrainian-diploma-recognition-portugal-equivalencia-guide (Визнання українського диплома в Португалії: еквіва)
+02:16:25 [pipeline] INFO: === Article 5/9 ===
+2026-04-20 02:16:25 [pipeline] INFO: === Article 5/9 ===
+02:16:25 [pipeline] INFO: --- Article: [utility] Погода на тиждень 21–25 квітня: що вдягти на свято Свободи і ---
+2026-04-20 02:16:25 [pipeline] INFO: --- Article: [utility] Погода на тиждень 21–25 квітня: що вдягти на свято Свободи і ---
+02:16:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:16:25 [asyncio] DEBUG: Using selector: EpollSelector
+02:16:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:16:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:21:25 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-20 02:21:25 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:21:30 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.9s
+2026-04-20 02:21:30 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.9s
+02:21:36 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:21:36 [asyncio] DEBUG: Using selector: EpollSelector
+02:21:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:21:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:26:32 [pipeline.stages.s2_research] INFO: Research complete: 12156 chars
+2026-04-20 02:26:32 [pipeline.stages.s2_research] INFO: Research complete: 12156 chars
+02:26:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:26:32 [asyncio] DEBUG: Using selector: EpollSelector
+02:26:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:26:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:27:34 [pipeline.stages.s3_generate] INFO: Generated: 'Погода 21–25 квітня: вівторок із вітром до 80 км/год, а на свято Свободи — сонце й UV 8' (slug=weather-forecast-april-21-25-freedom-day-ipma, 304 words, 8 sources)
+2026-04-20 02:27:34 [pipeline.stages.s3_generate] INFO: Generated: 'Погода 21–25 квітня: вівторок із вітром до 80 км/год, а на свято Свободи — сонце й UV 8' (slug=weather-forecast-april-21-25-freedom-day-ipma, 304 words, 8 sources)
+02:27:34 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:27:34 [asyncio] DEBUG: Using selector: EpollSelector
+02:27:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:27:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:29:22 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-04-20 02:29:22 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+02:29:22 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре написана, має чітку структуру та високу практичну цінність, але містить кілька серйозних помилок, які блокують публікацію:
+
+**КРИТИЧНО — дні тижня в таблиці зсунуті на один:**
+20 квітня 2
+2026-04-20 02:29:22 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре написана, має чітку структуру та високу практичну цінність, але містить кілька серйозних помилок, які блокують публікацію:
+
+**КРИТИЧНО — дні тижня в таблиці зсунуті на один:**
+20 квітня 2
+02:29:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:29:22 [asyncio] DEBUG: Using selector: EpollSelector
+02:29:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:29:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:32:43 [pipeline.stages.s5_revise] INFO: Revised article: 374 words
+2026-04-20 02:32:43 [pipeline.stages.s5_revise] INFO: Revised article: 374 words
+02:32:43 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-20 02:32:43 [pipeline] INFO: === Review cycle 1/3 complete ===
+02:32:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:32:43 [asyncio] DEBUG: Using selector: EpollSelector
+02:32:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:32:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:34:09 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-20 02:34:09 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+02:34:09 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — чітка структура, практичні поради, добрий тон, корисна таблиця температур. Але є кілька проблем, які потрібно виправити перед публікацією:
+
+**1. КРИТИЧНО — Список джерел (sourc
+2026-04-20 02:34:09 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — чітка структура, практичні поради, добрий тон, корисна таблиця температур. Але є кілька проблем, які потрібно виправити перед публікацією:
+
+**1. КРИТИЧНО — Список джерел (sourc
+02:34:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:34:09 [asyncio] DEBUG: Using selector: EpollSelector
+02:34:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:34:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:36:22 [pipeline.stages.s5_revise] INFO: Revised article: 466 words
+2026-04-20 02:36:22 [pipeline.stages.s5_revise] INFO: Revised article: 466 words
+02:36:22 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-20 02:36:22 [pipeline] INFO: === Review cycle 2/3 complete ===
+02:36:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:36:22 [asyncio] DEBUG: Using selector: EpollSelector
+02:36:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:36:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:38:34 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-20 02:38:34 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:38:34 [pipeline.stages.s4_review] INFO: Feedback: Якісна утилітарна стаття з чіткою структурою, практичною цінністю та грамотним поясненням португальських реалій. Затверджую з кількома зауваженнями для фінального шліфування:
+
+1. **Історична точність 
+2026-04-20 02:38:34 [pipeline.stages.s4_review] INFO: Feedback: Якісна утилітарна стаття з чіткою структурою, практичною цінністю та грамотним поясненням португальських реалій. Затверджую з кількома зауваженнями для фінального шліфування:
+
+1. **Історична точність 
+02:38:34 [pipeline] INFO: Article approved after 2 revision(s)
+2026-04-20 02:38:34 [pipeline] INFO: Article approved after 2 revision(s)
+02:38:34 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:38:34 [asyncio] DEBUG: Using selector: EpollSelector
+02:38:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:38:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:38:59 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1118 chars, vocab: 5 words, pt: 235 chars
+2026-04-20 02:38:59 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1118 chars, vocab: 5 words, pt: 235 chars
+02:38:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-20 02:38:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:39:53 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-20 02:39:53 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+02:39:54 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-20 02:39:54 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+02:39:54 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23628
+2026-04-20 02:39:54 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23628
+02:39:54 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23628 (unknown)
+2026-04-20 02:39:54 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23628 (unknown)
+02:39:54 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23681 3274659
+2026-04-20 02:39:54 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23681 3274659
+02:39:54 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/weather-forecast-april-21-25-freedom-day-ipma.jpg (271 KB)
+2026-04-20 02:39:54 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/weather-forecast-april-21-25-freedom-day-ipma.jpg (271 KB)
+02:39:54 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/weather-forecast-april-21-25-freedom-day-ipma.md
+2026-04-20 02:39:54 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/weather-forecast-april-21-25-freedom-day-ipma.md
