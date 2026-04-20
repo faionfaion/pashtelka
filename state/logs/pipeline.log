@@ -10944,3 +10944,77 @@ TimeoutError: agent_query timed out after 300s
 2026-04-20 02:56:21 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/spring-2026-rent-prices-lisbon-porto-algarve-season.jpg (294 KB)
 02:56:21 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/spring-2026-rent-prices-lisbon-porto-algarve-season.md
 2026-04-20 02:56:21 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/spring-2026-rent-prices-lisbon-porto-algarve-season.md
+02:56:22 [pipeline] INFO: Article ready: spring-2026-rent-prices-lisbon-porto-algarve-season (Оренда навесні 2026: скільки коштує квартира в Ліс)
+2026-04-20 02:56:22 [pipeline] INFO: Article ready: spring-2026-rent-prices-lisbon-porto-algarve-season (Оренда навесні 2026: скільки коштує квартира в Ліс)
+02:56:22 [pipeline] INFO: === Article 7/9 ===
+2026-04-20 02:56:22 [pipeline] INFO: === Article 7/9 ===
+02:56:22 [pipeline] INFO: --- Article: [material] Обміняти водійські права: як українцю легально керувати в По ---
+2026-04-20 02:56:22 [pipeline] INFO: --- Article: [material] Обміняти водійські права: як українцю легально керувати в По ---
+02:56:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 02:56:22 [asyncio] DEBUG: Using selector: EpollSelector
+02:56:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 02:56:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:00:49 [pipeline.stages.s2_research] INFO: Research complete: 12340 chars
+2026-04-20 03:00:49 [pipeline.stages.s2_research] INFO: Research complete: 12340 chars
+03:00:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:00:49 [asyncio] DEBUG: Using selector: EpollSelector
+03:00:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:00:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:02:48 [pipeline.stages.s3_generate] INFO: Generated: 'Обміняти водійські права: як українцю легально керувати в Португалії у 2026 році' (slug=ukrainian-driving-license-exchange-portugal-imt-guide-2026, 1044 words, 12 sources)
+2026-04-20 03:02:48 [pipeline.stages.s3_generate] INFO: Generated: 'Обміняти водійські права: як українцю легально керувати в Португалії у 2026 році' (slug=ukrainian-driving-license-exchange-portugal-imt-guide-2026, 1044 words, 12 sources)
+03:02:48 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:02:48 [asyncio] DEBUG: Using selector: EpollSelector
+03:02:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:02:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:04:09 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-20 03:04:09 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:04:09 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований гід — практично готовий до публікації. Кілька правок перед випуском:
+
+1. **Непідкріплена заява про ЄС (важливо).** Речення «ЄС вже оголосив, що далі подовжувати не планує
+2026-04-20 03:04:09 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований гід — практично готовий до публікації. Кілька правок перед випуском:
+
+1. **Непідкріплена заява про ЄС (важливо).** Речення «ЄС вже оголосив, що далі подовжувати не планує
+03:04:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:04:09 [asyncio] DEBUG: Using selector: EpollSelector
+03:04:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:04:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:07:07 [pipeline.stages.s5_revise] INFO: Revised article: 1135 words
+2026-04-20 03:07:07 [pipeline.stages.s5_revise] INFO: Revised article: 1135 words
+03:07:07 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-20 03:07:07 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:07:07 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:07:07 [asyncio] DEBUG: Using selector: EpollSelector
+03:07:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:07:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:08:39 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-20 03:08:39 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:08:39 [pipeline.stages.s4_review] INFO: Feedback: Сильний, добре структурований гід із чіткою практичною цінністю. Декілька зауважень перед публікацією:
+
+1. **Джерело для 185 + 90 днів**: Ключове юридичне твердження про терміни дії українських прав (
+2026-04-20 03:08:39 [pipeline.stages.s4_review] INFO: Feedback: Сильний, добре структурований гід із чіткою практичною цінністю. Декілька зауважень перед публікацією:
+
+1. **Джерело для 185 + 90 днів**: Ключове юридичне твердження про терміни дії українських прав (
+03:08:39 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-20 03:08:39 [pipeline] INFO: Article approved after 1 revision(s)
+03:08:39 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:08:39 [asyncio] DEBUG: Using selector: EpollSelector
+03:08:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:08:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:08:59 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1145 chars, vocab: 5 words, pt: 229 chars
+2026-04-20 03:08:59 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1145 chars, vocab: 5 words, pt: 229 chars
+03:08:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-20 03:08:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:09:49 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-20 03:09:49 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+03:09:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-20 03:09:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+03:09:51 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+2026-04-20 03:09:51 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+03:09:51 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+2026-04-20 03:09:51 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+03:09:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3094925
+2026-04-20 03:09:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3094925
+03:09:51 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ukrainian-driving-license-exchange-portugal-imt-guide-2026.jpg (210 KB)
+2026-04-20 03:09:51 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ukrainian-driving-license-exchange-portugal-imt-guide-2026.jpg (210 KB)
+03:09:51 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ukrainian-driving-license-exchange-portugal-imt-guide-2026.md
+2026-04-20 03:09:51 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ukrainian-driving-license-exchange-portugal-imt-guide-2026.md
