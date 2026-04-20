@@ -1,0 +1,69 @@
+{
+  "articles": [
+    {
+      "topic": "Сеґуру їде до Мадрида: перший закордонний візит нового президента Португалії",
+      "type": "news",
+      "angle": "Антоніу Жозе Сеґуру обрав Іспанію для першого президентського візиту за кордон. Аналіз двосторонньої повістки: координація міграційної політики (обидві країни — топ-напрямки для українських біженців), потенційна гармонізація визнання кваліфікацій, координація трудових стандартів на тлі Trabalho XXI. Чому Мадрид, а не Брюссель — традиція сусідської дипломатії. Порівняння: скільки українців у Португалії (~54 тис.) vs Іспанії (~200 тис.), як координація країн може вплинути на права діаспори.",
+      "sources_hint": "RTP (confirmed headline), Público, Lusa, Presidência da República press releases, RTVE for Spanish coverage of the visit agenda. Search: 'Seguro Madrid visita presidencial abril 2026'",
+      "priority": 1
+    },
+    {
+      "topic": "Уряд обіцяє AHRESP фонди безповоротної допомоги — кредитна лінія €600 млн змінює формат (продовження)",
+      "type": "news",
+      "angle": "AHRESP (ресторани та готелі) заявила про гарантії уряду щодо включення компонента fundo perdido (грант) у лінію підтримки ліквідності для бізнесу, постраждалого від енергетичних цін. Це зсув від чисто кредитної моделі €600 млн, яку ми описували 10 квітня. Нові деталі: який відсоток безповоротний, які сектори мають пріоритет, чи стосується це мікробізнесу українських підприємців (пекарні, кафе, клінінг). Порівняння з вимогами CPPME. Чи відкрилась подача заявок (обіцяли після 20 квітня)?",
+      "sources_hint": "RTP RSS headline (AHRESP garantia fundo perdido), AHRESP press releases, CPPME, Jornal de Negócios, Dinheiro Vivo. Search: 'AHRESP fundo perdido linha tesouraria energia abril 2026', previous Pashtelka article energy-credit-line-600-million-businesses",
+      "priority": 1
+    },
+    {
+      "topic": "25 квітня — День Свободи: що потрібно знати кожному українцю в Португалії",
+      "type": "guide",
+      "angle": "П'ятниця — найважливіше свято Португалії. Гід для інтеграції: коротка історія Революції гвоздик 1974 (паралель із Майданом 2014 — боротьба за демократію), програма свят у Лісабоні (парад на Av. da Liberdade), Порту (концерт + феєрверк на Aliados), Фару, Алгарве. Що закрито (магазини, банки, держустанови), що працює (ресторани, деякі торгові центри), транспорт у святковий день. Традиція гвоздик — купити й носити. Готові фрази для розмови з колегами. Ponte (мостовий день) — чи беруть четвер вихідним? Увага: страйк прокурорів у четвер 24 квітня може вплинути на суди — хто має засідання, перевірте заздалегідь (посилання на статтю від 18 квітня).",
+      "sources_hint": "CML (Câmara Municipal de Lisboa) 25 de Abril program, CM Porto events, Algarve municipal sites, DGERT/DGC cultural program, Wikipedia/historical sources for Carnation Revolution. Search: '25 abril 2026 programa festas Lisboa Porto'",
+      "priority": 1
+    },
+    {
+      "topic": "Визнання українського диплома в Португалії: еквіваленція, нострифікація, професійні ордени — повний гід",
+      "type": "material",
+      "angle": "Тисячі українців у Португалії працюють не за фахом через невизнаний диплом. Покроковий гід: 1) Reconhecimento automático через NARIC Portugal (Convenção de Lisboa, 120 днів, €50), 2) Equivalência через DGES для повної еквівалентності (6–12 місяців), 3) Професійні ордени (Ordem dos Engenheiros, Ordem dos Médicos, OET для інженерів-технологів) — окремі процедури. Апостиль та переклад: де зробити присяжний переклад у Лісабоні/Порту. Вартість повного процесу (€150–500). Чи зараховується досвід роботи в Україні. Програма IEFP з визнання кваліфікацій.",
+      "sources_hint": "DGES portal (dges.gov.pt), NARIC Portugal, Ordem dos Engenheiros, Ordem dos Médicos, IEFP qualifications recognition, Diário da República for relevant portarias. Compile from 5+ official sources. Search: 'reconhecimento diploma estrangeiro Portugal DGES 2026', 'equivalência habilitações ucrânia'",
+      "priority": 2
+    },
+    {
+      "topic": "Погода на тиждень 21–25 квітня: що вдягти на свято Свободи і чи буде дощ",
+      "type": "utility",
+      "angle": "Понеділковий огляд погоди на робочий тиждень і свято 25 квітня. Прогнози IPMA для Лісабона, Порту, Фару. Чи очікуються попередження. Температурна динаміка (потепління після минулого штормового тижня?). Окремо — прогноз на п'ятницю 25 квітня для тих, хто планує парад у Лісабоні або вихідні на природі/узбережжі. Температура води — чи можна вже купатися в Алгарве? UV-індекс — нагадування про сонцезахист. Не повторювати загальні події тижня з недільного матеріалу «Тиждень уперед» — фокус суто на метеорологічних даних IPMA.",
+      "sources_hint": "IPMA.pt 10-day forecast, IPMA warnings, Windguru for coastal, Solcast UV index. Check: ipma.pt/en/otempo/prev.localidade/, specific forecasts for Lisboa, Porto, Faro, Albufeira",
+      "priority": 2
+    },
+    {
+      "topic": "Оренда навесні 2026: скільки коштує квартира в Лісабоні, Порту та Алгарве перед туристичним сезоном",
+      "type": "news",
+      "angle": "Весняний аналіз ринку оренди. Дані Idealista/Confidencial Imobiliário за березень–квітень 2026: середні ціни T1/T2 у Лісабоні (центр vs околиці), Порту, Фару. Вплив туристичного сезону на ціни — щороку з квітня Алгарве стає дорожчим через AL (alojamento local). Нові правила оренди після Lei n.º 61/2025. Порівняння: скільки відсотків мінімальної зарплати йде на оренду (поріг ООН 30%). Практичні поради: де шукати довгострокову оренду за межами центру, права орендаря при підвищенні (коефіцієнт 2026 = 1,0224). Перехресне посилання на наш гід з прав орендаря (11 квітня).",
+      "sources_hint": "Idealista.pt statistics page, Confidencial Imobiliário quarterly report, INE housing data, Supercasa.pt market reports. Search: 'preço médio renda T1 Lisboa Porto Faro abril 2026', 'mercado arrendamento primavera 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Обміняти водійські права: як українцю легально керувати в Португалії у 2026 році",
+      "type": "material",
+      "angle": "Повний гід з трьох шляхів: 1) Міжнародне посвідчення + українські права (дійсні 185 днів), 2) Troca de carta de condução для резидентів (IMT процедура, Конвенція 1968, перелік документів, вартість ~€30, термін до 60 днів), 3) Отримання нових прав з нуля (автошкола, іспити IMT, вартість €500–800). Нюанси: чи визнає IMT українські права з 2022+ (воєнний час), що робити, якщо права загублені/знищені (довідка від консульства), категорії B/C/D — різні вимоги. Штрафи за водіння з простроченими правами. Перехресне посилання на статтю про IUC та небезпечні дороги.",
+      "sources_hint": "IMT.pt (Instituto da Mobilidade e dos Transportes), Diário da República portaria on foreign license exchange, Ukrainian embassy in Portugal, Vienna Convention 1968 provisions. Search: 'troca carta condução estrangeira Portugal IMT 2026', 'reconhecimento carta condução ucraniana'",
+      "priority": 2
+    },
+    {
+      "topic": "Війна мотивує онлайн-ставки: як стрес і невизначеність підштовхують до гемблінгу — і як себе захистити",
+      "type": "news",
+      "angle": "Нова стаття на основі свіжого заголовку RTP, чітко відмежована від матеріалу 12 квітня (там — сплеск лікування +118% і куди звернутися). Тут фокус інший: МЕХАНІЗМ «стрес→ставки» і ПРОФІЛАКТИКА. SRIJ дані про зростання онлайн-ставок серед мігрантів, дослідження European Monitoring Centre про стресовий гемблінг серед переміщених осіб. Для українців: доступність ставок 24/7, мовний бар'єр при зверненні по допомогу, культурне ставлення. Головна практична частина: як розпізнати ранні ознаки залежності у себе чи рідних (чек-лист), платформа самовиключення від 8 квітня (покрокова інструкція реєстрації). НЕ дублювати контакти служб підтримки — посилання на статтю від 12 квітня.",
+      "sources_hint": "RTP headline 'Guerra motiva apostas online', SRIJ (Serviço de Regulação e Inspeção de Jogos) annual reports, SICAD/DICAD statistics, European Monitoring Centre for Drugs & Drug Addiction (gambling section), WHO reports on gambling in displaced populations. Previous Pashtelka: gambling-addiction-treatment-surge-portugal-2026",
+      "priority": 3
+    },
+    {
+      "topic": "Португальська компанія вирощує рибу з клітин: що це означає для харчової індустрії і нові вакансії в біотеху",
+      "type": "news",
+      "angle": "RTP повідомляє про португальський стартап, що розробляє частини риби з клітинних культур (cultured fish). Хто вони, де базуються, який продукт розробляють. Контекст: Португалія — один з лідерів ЄС зі споживання риби (57 кг/рік на людину), і lab-grown альтернативи можуть змінити ринок. Ширший контекст: food tech-екосистема Португалії (Eat Just Europe, інкубатор Fábrica de Startups). Вакансії для біотехнологів та лабораторних працівників — де шукати. Для українців: чи вплине на ціни на рибу, де купувати рибу дешевше вже зараз (mercado municipal vs супермаркет).",
+      "sources_hint": "RTP headline 'Empresa portuguesa desenvolve partes de pescado a partir de células', startup databases (Portuguese Startup Ecosystem), GFI Europe (Good Food Institute) Portugal data, Lusa coverage. Search: 'pescado celular Portugal startup 2026', 'cultured fish Portugal'",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-20",
+  "created_at": "2026-04-20T01:17:01.994717+00:00"
+}

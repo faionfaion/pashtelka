@@ -10385,3 +10385,174 @@ TimeoutError: agent_query timed out after 300s
 2026-04-19 04:06:58 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/vaccination-disinformation-pnv-free-catch-up-guide-ukraine-parents.jpg (230 KB)
 04:06:58 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/vaccination-disinformation-pnv-free-catch-up-guide-ukraine-parents.md
 2026-04-19 04:06:58 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/vaccination-disinformation-pnv-free-catch-up-guide-ukraine-parents.md
+04:06:58 [pipeline] INFO: Article ready: vaccination-disinformation-pnv-free-catch-up-guide-ukraine-parents (Дезінформація загрожує десятиліттям прогресу у вак)
+2026-04-19 04:06:58 [pipeline] INFO: Article ready: vaccination-disinformation-pnv-free-catch-up-guide-ukraine-parents (Дезінформація загрожує десятиліттям прогресу у вак)
+04:06:58 [pipeline] INFO: Generated 8/10 articles
+2026-04-19 04:06:58 [pipeline] INFO: Generated 8/10 articles
+04:07:00 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-04-19 04:07:00 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+04:07:00 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-19 04:07:00 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+04:07:37 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-04-19 04:07:37 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+04:07:37 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/vaccination-disinformation-pnv-free-catch-up-guide-ukraine-parents/ (200 OK, title found)
+2026-04-19 04:07:37 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/vaccination-disinformation-pnv-free-catch-up-guide-ukraine-parents/ (200 OK, title found)
+04:07:37 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-19_040737.json
+2026-04-19 04:07:37 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-19_040737.json
+04:07:37 [pipeline] INFO: Batch complete: 8 articles
+2026-04-19 04:07:37 [pipeline] INFO: Batch complete: 8 articles
+2026-04-19 08:05:01 [pipeline] INFO: === TG Publish mode ===
+2026-04-19 08:05:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 08:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 5410
+2026-04-19 08:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 08:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-19 08:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: vaccination-disinformation-pnv-free-catch-up-guide-ukraine-parents -> msg 225
+2026-04-19 08:05:02 [pipeline] INFO: Published to TG: vaccination-disinformation-pnv-free-catch-up-guide-ukraine-parents (msg 225)
+2026-04-19 11:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-19 11:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 5388
+2026-04-19 11:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 11:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-19 11:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: spring-pollen-allergy-portugal-sns-treatment-guide -> msg 226
+2026-04-19 11:05:02 [pipeline] INFO: Published to TG: spring-pollen-allergy-portugal-sns-treatment-guide (msg 226)
+2026-04-19 14:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-19 14:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 14:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4990
+2026-04-19 14:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 14:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-19 14:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: internamentos-sociais-745-patients-stuck-hospitals-rncci-guide -> msg 227
+2026-04-19 14:05:02 [pipeline] INFO: Published to TG: internamentos-sociais-745-patients-stuck-hospitals-rncci-guide (msg 227)
+2026-04-19 17:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-19 17:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 17:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4986
+2026-04-19 17:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 17:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-19 17:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: fire-season-land-clearing-deadline-gnr-inspections-fines-2026 -> msg 228
+2026-04-19 17:05:02 [pipeline] INFO: Published to TG: fire-season-land-clearing-deadline-gnr-inspections-fines-2026 (msg 228)
+2026-04-19 19:07:02 [pipeline] INFO: === Digest mode ===
+2026-04-19 19:07:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-19 19:07:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-19 19:07:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 19:07:20 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 5657
+2026-04-19 19:07:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-19 19:07:20 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-19 19:07:20 [pipeline.stages.s11_digest] INFO: Digest published: msg 229 (8 articles)
+2026-04-19 19:07:20 [pipeline] INFO: Digest published (msg 229, 8 articles)
+01:17:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-20 01:17:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-20 01:17:02 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-20 01:17:02 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-20 01:17:02 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-20 01:17:02 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-20 01:17:02 [pipeline.feeds] INFO: Feed publico: 10 items
+01:17:02 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-20 01:17:02 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+01:17:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:17:02 [asyncio] DEBUG: Using selector: EpollSelector
+01:17:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:17:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:22:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:22:14 [asyncio] DEBUG: Using selector: EpollSelector
+01:22:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:22:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:28:06 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 10 -> 9 articles
+2026-04-20 01:28:06 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 10 -> 9 articles
+01:28:06 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 9 articles for 2026-04-20
+2026-04-20 01:28:06 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 9 articles for 2026-04-20
+01:28:06 [pipeline] INFO: Editorial plan: 9 topics
+2026-04-20 01:28:06 [pipeline] INFO: Editorial plan: 9 topics
+01:28:06 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-20 01:28:06 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+01:28:06 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-20 01:28:06 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+01:28:06 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-20 01:28:06 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+01:28:06 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-20 01:28:06 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+01:28:06 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-20 01:28:06 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+01:28:06 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-20 01:28:06 [pipeline.feeds] INFO: Feed publico: 10 items
+01:28:06 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-20 01:28:06 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+01:28:06 [pipeline.stages.s1_collect] INFO: Context: 66 RSS items, 113 existing articles
+2026-04-20 01:28:06 [pipeline.stages.s1_collect] INFO: Context: 66 RSS items, 113 existing articles
+01:28:06 [pipeline] INFO: === Article 1/9 ===
+2026-04-20 01:28:06 [pipeline] INFO: === Article 1/9 ===
+01:28:06 [pipeline] INFO: --- Article: [news] Сеґуру їде до Мадрида: перший закордонний візит нового прези ---
+2026-04-20 01:28:06 [pipeline] INFO: --- Article: [news] Сеґуру їде до Мадрида: перший закордонний візит нового прези ---
+01:28:06 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:28:06 [asyncio] DEBUG: Using selector: EpollSelector
+01:28:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:28:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:31:20 [pipeline.stages.s2_research] INFO: Research complete: 11669 chars
+2026-04-20 01:31:20 [pipeline.stages.s2_research] INFO: Research complete: 11669 chars
+01:31:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:31:20 [asyncio] DEBUG: Using selector: EpollSelector
+01:31:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:31:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:32:35 [pipeline.stages.s3_generate] INFO: Generated: 'Сеґуру їде до Мадрида: перший закордонний візит нового президента Португалії — і чому це важливо для 260 тисяч українців на Піренеях' (slug=seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians, 513 words, 11 sources)
+2026-04-20 01:32:35 [pipeline.stages.s3_generate] INFO: Generated: 'Сеґуру їде до Мадрида: перший закордонний візит нового президента Португалії — і чому це важливо для 260 тисяч українців на Піренеях' (slug=seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians, 513 words, 11 sources)
+01:32:35 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:32:35 [asyncio] DEBUG: Using selector: EpollSelector
+01:32:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:32:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:34:11 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-20 01:34:11 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+01:34:11 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, якісно зреферована і релевантна аудиторії. Кілька правок до публікації:
+
+**1. Помилка в транслітерації іспанського імені (критично)**
+«Педру Санчешем (Pedro Sánchez)» — зас
+2026-04-20 01:34:11 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, якісно зреферована і релевантна аудиторії. Кілька правок до публікації:
+
+**1. Помилка в транслітерації іспанського імені (критично)**
+«Педру Санчешем (Pedro Sánchez)» — зас
+01:34:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:34:11 [asyncio] DEBUG: Using selector: EpollSelector
+01:34:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:34:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:35:33 [pipeline.stages.s5_revise] INFO: Revised article: 555 words
+2026-04-20 01:35:33 [pipeline.stages.s5_revise] INFO: Revised article: 555 words
+01:35:33 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-20 01:35:33 [pipeline] INFO: === Review cycle 1/3 complete ===
+01:35:33 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:35:33 [asyncio] DEBUG: Using selector: EpollSelector
+01:35:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:35:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:36:44 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-20 01:36:44 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+01:36:44 [pipeline.stages.s4_review] INFO: Feedback: Якісний матеріал із сильним sourcing та чіткою структурою. Кілька зауважень:
+
+1. **Заголовок занадто довгий** — 25 слів із підзаголовком через тире. Рекомендую розбити: основний заголовок до 10–12 слі
+2026-04-20 01:36:44 [pipeline.stages.s4_review] INFO: Feedback: Якісний матеріал із сильним sourcing та чіткою структурою. Кілька зауважень:
+
+1. **Заголовок занадто довгий** — 25 слів із підзаголовком через тире. Рекомендую розбити: основний заголовок до 10–12 слі
+01:36:44 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-20 01:36:44 [pipeline] INFO: Article approved after 1 revision(s)
+01:36:44 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 01:36:44 [asyncio] DEBUG: Using selector: EpollSelector
+01:36:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 01:36:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:37:10 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1150 chars, vocab: 5 words, pt: 222 chars
+2026-04-20 01:37:10 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1150 chars, vocab: 5 words, pt: 222 chars
+01:37:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-20 01:37:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+01:38:02 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-20 01:38:02 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+01:38:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-20 01:38:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+01:38:02 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+2026-04-20 01:38:02 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+01:38:02 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+2026-04-20 01:38:02 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+01:38:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 2820684
+2026-04-20 01:38:02 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 2820684
+01:38:02 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians.jpg (190 KB)
+2026-04-20 01:38:02 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians.jpg (190 KB)
+01:38:02 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians.md
+2026-04-20 01:38:02 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians.md

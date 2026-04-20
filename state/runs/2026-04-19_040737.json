@@ -1,0 +1,296 @@
+{
+  "timestamp": "2026-04-19_040737",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "aima-reagrupamento-familiar-portal-family-reunification-guide, trabalho-xxi-seguro-individual-meetings-social-partners-april-22, week-ahead-april-20-25-fuel-school-strike-liberdade, provedor-de-justica-vacancy-tiago-antunes-ps-immigrants, fire-season-land-clearing-deadline-gnr-inspections-fines-2026",
+  "author": "Pastelka News",
+  "duration_s": 10235.4,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 594.8,
+      "error": null
+    },
+    {
+      "name": "research:AIMA відкрила портал возз'єдна",
+      "status": "ok",
+      "duration_s": 544.3,
+      "error": null
+    },
+    {
+      "name": "generate:AIMA відкрила портал возз'єдна",
+      "status": "ok",
+      "duration_s": 103.4,
+      "error": null
+    },
+    {
+      "name": "review:AIMA відкрила портал возз'єдна",
+      "status": "ok",
+      "duration_s": 277.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:AIMA відкрила портал возз'єдна",
+      "status": "ok",
+      "duration_s": 21.9,
+      "error": null
+    },
+    {
+      "name": "save:AIMA відкрила портал возз'єдна",
+      "status": "ok",
+      "duration_s": 52.4,
+      "error": null
+    },
+    {
+      "name": "research:Trabalho XXI: президент Сеґуру",
+      "status": "ok",
+      "duration_s": 223.2,
+      "error": null
+    },
+    {
+      "name": "generate:Trabalho XXI: президент Сеґуру",
+      "status": "ok",
+      "duration_s": 77.6,
+      "error": null
+    },
+    {
+      "name": "review:Trabalho XXI: президент Сеґуру",
+      "status": "ok",
+      "duration_s": 454.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Trabalho XXI: президент Сеґуру",
+      "status": "ok",
+      "duration_s": 17.2,
+      "error": null
+    },
+    {
+      "name": "save:Trabalho XXI: президент Сеґуру",
+      "status": "ok",
+      "duration_s": 56.3,
+      "error": null
+    },
+    {
+      "name": "research:Тиждень уперед 20–25 квітня: к",
+      "status": "ok",
+      "duration_s": 296.4,
+      "error": null
+    },
+    {
+      "name": "generate:Тиждень уперед 20–25 квітня: к",
+      "status": "ok",
+      "duration_s": 449.9,
+      "error": null
+    },
+    {
+      "name": "review:Тиждень уперед 20–25 квітня: к",
+      "status": "ok",
+      "duration_s": 777.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Тиждень уперед 20–25 квітня: к",
+      "status": "ok",
+      "duration_s": 28.5,
+      "error": null
+    },
+    {
+      "name": "save:Тиждень уперед 20–25 квітня: к",
+      "status": "ok",
+      "duration_s": 48.0,
+      "error": null
+    },
+    {
+      "name": "research:PS наполягає на Тіаґу Антунеші",
+      "status": "ok",
+      "duration_s": 253.9,
+      "error": null
+    },
+    {
+      "name": "generate:PS наполягає на Тіаґу Антунеші",
+      "status": "ok",
+      "duration_s": 62.3,
+      "error": null
+    },
+    {
+      "name": "review:PS наполягає на Тіаґу Антунеші",
+      "status": "ok",
+      "duration_s": 420.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:PS наполягає на Тіаґу Антунеші",
+      "status": "ok",
+      "duration_s": 21.0,
+      "error": null
+    },
+    {
+      "name": "save:PS наполягає на Тіаґу Антунеші",
+      "status": "ok",
+      "duration_s": 57.6,
+      "error": null
+    },
+    {
+      "name": "research:Пожежний сезон наближається: о",
+      "status": "ok",
+      "duration_s": 229.9,
+      "error": null
+    },
+    {
+      "name": "generate:Пожежний сезон наближається: о",
+      "status": "ok",
+      "duration_s": 83.9,
+      "error": null
+    },
+    {
+      "name": "review:Пожежний сезон наближається: о",
+      "status": "ok",
+      "duration_s": 445.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Пожежний сезон наближається: о",
+      "status": "ok",
+      "duration_s": 19.3,
+      "error": null
+    },
+    {
+      "name": "save:Пожежний сезон наближається: о",
+      "status": "ok",
+      "duration_s": 68.7,
+      "error": null
+    },
+    {
+      "name": "research:Уряд гарантує компенсаційний ф",
+      "status": "ok",
+      "duration_s": 257.3,
+      "error": null
+    },
+    {
+      "name": "generate:Уряд гарантує компенсаційний ф",
+      "status": "ok",
+      "duration_s": 79.2,
+      "error": null
+    },
+    {
+      "name": "review:Уряд гарантує компенсаційний ф",
+      "status": "failed",
+      "duration_s": 155.1,
+      "error": "[structured_query] All JSON repair attempts failed (5574 chars)"
+    },
+    {
+      "name": "research:Інтернаменту соціал: тисячі па",
+      "status": "ok",
+      "duration_s": 260.0,
+      "error": null
+    },
+    {
+      "name": "generate:Інтернаменту соціал: тисячі па",
+      "status": "ok",
+      "duration_s": 68.1,
+      "error": null
+    },
+    {
+      "name": "review:Інтернаменту соціал: тисячі па",
+      "status": "ok",
+      "duration_s": 212.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Інтернаменту соціал: тисячі па",
+      "status": "ok",
+      "duration_s": 23.6,
+      "error": null
+    },
+    {
+      "name": "save:Інтернаменту соціал: тисячі па",
+      "status": "ok",
+      "duration_s": 60.4,
+      "error": null
+    },
+    {
+      "name": "research:Алергія навесні в Португалії: ",
+      "status": "ok",
+      "duration_s": 870.4,
+      "error": null
+    },
+    {
+      "name": "generate:Алергія навесні в Португалії: ",
+      "status": "ok",
+      "duration_s": 143.7,
+      "error": null
+    },
+    {
+      "name": "review:Алергія навесні в Португалії: ",
+      "status": "ok",
+      "duration_s": 706.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Алергія навесні в Португалії: ",
+      "status": "ok",
+      "duration_s": 23.1,
+      "error": null
+    },
+    {
+      "name": "save:Алергія навесні в Португалії: ",
+      "status": "ok",
+      "duration_s": 56.0,
+      "error": null
+    },
+    {
+      "name": "research:Безкоштовні курси португальськ",
+      "status": "failed",
+      "duration_s": 936.1,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Дезінформація загрожує десятил",
+      "status": "ok",
+      "duration_s": 252.1,
+      "error": null
+    },
+    {
+      "name": "generate:Дезінформація загрожує десятил",
+      "status": "ok",
+      "duration_s": 88.3,
+      "error": null
+    },
+    {
+      "name": "review:Дезінформація загрожує десятил",
+      "status": "ok",
+      "duration_s": 242.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Дезінформація загрожує десятил",
+      "status": "ok",
+      "duration_s": 18.2,
+      "error": null
+    },
+    {
+      "name": "save:Дезінформація загрожує десятил",
+      "status": "ok",
+      "duration_s": 55.9,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 39.4,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}
