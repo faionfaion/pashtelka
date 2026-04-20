@@ -11018,3 +11018,79 @@ TimeoutError: agent_query timed out after 300s
 2026-04-20 03:09:51 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/ukrainian-driving-license-exchange-portugal-imt-guide-2026.jpg (210 KB)
 03:09:51 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ukrainian-driving-license-exchange-portugal-imt-guide-2026.md
 2026-04-20 03:09:51 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ukrainian-driving-license-exchange-portugal-imt-guide-2026.md
+03:09:51 [pipeline] INFO: Article ready: ukrainian-driving-license-exchange-portugal-imt-guide-2026 (Обміняти водійські права: як українцю легально кер)
+2026-04-20 03:09:51 [pipeline] INFO: Article ready: ukrainian-driving-license-exchange-portugal-imt-guide-2026 (Обміняти водійські права: як українцю легально кер)
+03:09:51 [pipeline] INFO: === Article 8/9 ===
+2026-04-20 03:09:51 [pipeline] INFO: === Article 8/9 ===
+03:09:51 [pipeline] INFO: --- Article: [news] Війна мотивує онлайн-ставки: як стрес і невизначеність підшт ---
+2026-04-20 03:09:51 [pipeline] INFO: --- Article: [news] Війна мотивує онлайн-ставки: як стрес і невизначеність підшт ---
+03:09:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:09:51 [asyncio] DEBUG: Using selector: EpollSelector
+03:09:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:09:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:14:07 [pipeline.stages.s2_research] INFO: Research complete: 12339 chars
+2026-04-20 03:14:07 [pipeline.stages.s2_research] INFO: Research complete: 12339 chars
+03:14:07 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:14:07 [asyncio] DEBUG: Using selector: EpollSelector
+03:14:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:14:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:15:30 [pipeline.stages.s3_generate] INFO: Generated: 'Війна мотивує онлайн-ставки: як стрес підштовхує до гемблінгу — і як себе захистити' (slug=war-stress-online-gambling-mechanism-prevention-self-exclusion-guide, 511 words, 9 sources)
+2026-04-20 03:15:30 [pipeline.stages.s3_generate] INFO: Generated: 'Війна мотивує онлайн-ставки: як стрес підштовхує до гемблінгу — і як себе захистити' (slug=war-stress-online-gambling-mechanism-prevention-self-exclusion-guide, 511 words, 9 sources)
+03:15:30 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:15:30 [asyncio] DEBUG: Using selector: EpollSelector
+03:15:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:15:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:16:59 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-20 03:16:59 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+03:16:59 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за змістом, джерелами й практичною цінністю, але потребує кількох правок перед публікацією.
+
+**Критично:**
+1. **Битий лінк CNN Portugal:** у тексті статті написано `cnnportugol.iol.pt` (
+2026-04-20 03:16:59 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за змістом, джерелами й практичною цінністю, але потребує кількох правок перед публікацією.
+
+**Критично:**
+1. **Битий лінк CNN Portugal:** у тексті статті написано `cnnportugol.iol.pt` (
+03:16:59 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:16:59 [asyncio] DEBUG: Using selector: EpollSelector
+03:16:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:16:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:18:17 [pipeline.stages.s5_revise] INFO: Revised article: 633 words
+2026-04-20 03:18:17 [pipeline.stages.s5_revise] INFO: Revised article: 633 words
+03:18:17 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-20 03:18:17 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:18:17 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:18:17 [asyncio] DEBUG: Using selector: EpollSelector
+03:18:17 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:18:17 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:19:39 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-20 03:19:39 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:19:39 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал — актуальна тема, добре вибудувана структура від новинного гачка до практичної інструкції, відмінне джерелування. Кілька правок перед публікацією:
+
+1. **Метадані:** заголовок дублюєть
+2026-04-20 03:19:39 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал — актуальна тема, добре вибудувана структура від новинного гачка до практичної інструкції, відмінне джерелування. Кілька правок перед публікацією:
+
+1. **Метадані:** заголовок дублюєть
+03:19:39 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-20 03:19:39 [pipeline] INFO: Article approved after 1 revision(s)
+03:19:39 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-20 03:19:39 [asyncio] DEBUG: Using selector: EpollSelector
+03:19:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-20 03:19:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:19:59 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1267 chars, vocab: 5 words, pt: 190 chars
+2026-04-20 03:19:59 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1267 chars, vocab: 5 words, pt: 190 chars
+03:19:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-20 03:19:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:20:51 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-20 03:20:51 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+03:20:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-20 03:20:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+03:20:52 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+2026-04-20 03:20:52 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+03:20:52 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+2026-04-20 03:20:52 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+03:20:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 2874339
+2026-04-20 03:20:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 2874339
+03:20:52 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/war-stress-online-gambling-mechanism-prevention-self-exclusion-guide.jpg (193 KB)
+2026-04-20 03:20:52 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/war-stress-online-gambling-mechanism-prevention-self-exclusion-guide.jpg (193 KB)
+03:20:52 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/war-stress-online-gambling-mechanism-prevention-self-exclusion-guide.md
+2026-04-20 03:20:52 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/war-stress-online-gambling-mechanism-prevention-self-exclusion-guide.md
