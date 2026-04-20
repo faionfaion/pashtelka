@@ -37,12 +37,19 @@ def _load_style_prefix() -> str:
     return ""
 
 
-def generate_image(prompt: str, slug: str) -> Path | None:
+def generate_image(
+    prompt: str,
+    slug: str,
+    comic_mode: bool = False,
+    quality: str = "auto",
+) -> Path | None:
     """Generate a comic-style illustration and save to images dir.
 
     Args:
         prompt: Image description (in English).
         slug: Article slug for filename.
+        comic_mode: If True, skip the default style prefix (prompt is pre-styled).
+        quality: gpt-image-1 quality — "auto" (~$0.063), "low" (~$0.016), "high" (~$0.25).
 
     Returns:
         Path to saved image, or None on failure.
@@ -51,7 +58,7 @@ def generate_image(prompt: str, slug: str) -> Path | None:
         logger.warning("No OPENAI_API_KEY — skipping image generation")
         return None
 
-    full_prompt = f"{_load_style_prefix()}{prompt}"
+    full_prompt = prompt if comic_mode else f"{_load_style_prefix()}{prompt}"
 
     try:
         resp = requests.post(
@@ -65,8 +72,9 @@ def generate_image(prompt: str, slug: str) -> Path | None:
                 "prompt": full_prompt,
                 "n": 1,
                 "size": "1536x1024",  # landscape for article headers
+                "quality": quality,
             },
-            timeout=120,
+            timeout=180,
         )
         resp.raise_for_status()
         data = resp.json()
@@ -102,7 +110,7 @@ def generate_image(prompt: str, slug: str) -> Path | None:
             out_path = IMAGES_DIR / f"{slug}.png"
             out_path.write_bytes(img_bytes)
 
-        logger.info("Image saved: %s (%d KB)", out_path, out_path.stat().st_size // 1024)
+        logger.info("Image saved: %s (%d KB, quality=%s)", out_path, out_path.stat().st_size // 1024, quality)
         return out_path
 
     except requests.exceptions.HTTPError as e:

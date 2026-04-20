@@ -26,10 +26,10 @@ def run(ctx: PipelineContext) -> None:
     now = datetime.now(timezone.utc)
     date_str = now.strftime("%Y-%m-%d")
 
-    # 0. Generate comic-style image
+    # 0. Generate comic-style image (via orchestrator: editor -> gen -> QA -> retry)
     if ctx.image_prompt and not ctx.image_path:
-        from pipeline.image_gen import generate_image
-        ctx.image_path = generate_image(ctx.image_prompt, ctx.slug)
+        from pipeline.stages.s_image_orchestrator import generate_with_qa
+        ctx.image_path = generate_with_qa(ctx.image_prompt, ctx.slug)
 
     # 1. Write markdown article
     CONTENT_DIR.mkdir(parents=True, exist_ok=True)
