@@ -12121,3 +12121,135 @@ TimeoutError: agent_query timed out after 300s
 2026-04-21 04:02:06 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 04:02:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/summer-camps-children-portugal-2026-registration-free-municipal-paid-guide.md
 2026-04-21 04:02:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/summer-camps-children-portugal-2026-registration-free-municipal-paid-guide.md
+04:02:06 [pipeline] INFO: Article ready: summer-camps-children-portugal-2026-registration-free-municipal-paid-guide (Літні табори для дітей у Португалії: реєстрація ст)
+2026-04-21 04:02:06 [pipeline] INFO: Article ready: summer-camps-children-portugal-2026-registration-free-municipal-paid-guide (Літні табори для дітей у Португалії: реєстрація ст)
+04:02:06 [pipeline] INFO: === Article 9/9 ===
+2026-04-21 04:02:06 [pipeline] INFO: === Article 9/9 ===
+04:02:06 [pipeline] INFO: --- Article: [guide] Безкоштовні курси португальської мови для іммігрантів у 2026 ---
+2026-04-21 04:02:06 [pipeline] INFO: --- Article: [guide] Безкоштовні курси португальської мови для іммігрантів у 2026 ---
+04:02:06 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:02:06 [asyncio] DEBUG: Using selector: EpollSelector
+04:02:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:02:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:07:06 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-21 04:07:06 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+04:07:12 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.7s
+2026-04-21 04:07:12 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.7s
+04:07:18 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:07:18 [asyncio] DEBUG: Using selector: EpollSelector
+04:07:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:07:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:12:09 [pipeline.stages.s2_research] INFO: Research complete: 14651 chars
+2026-04-21 04:12:09 [pipeline.stages.s2_research] INFO: Research complete: 14651 chars
+04:12:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:12:09 [asyncio] DEBUG: Using selector: EpollSelector
+04:12:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:12:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:14:25 [pipeline.stages.s3_generate] INFO: Generated: 'Безкоштовні курси португальської для іммігрантів у 2026 році: повний гід від PLA до CAPLE' (slug=free-portuguese-courses-immigrants-2026-pla-caple-guide, 1274 words, 16 sources)
+2026-04-21 04:14:25 [pipeline.stages.s3_generate] INFO: Generated: 'Безкоштовні курси португальської для іммігрантів у 2026 році: повний гід від PLA до CAPLE' (slug=free-portuguese-courses-immigrants-2026-pla-caple-guide, 1274 words, 16 sources)
+04:14:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:14:25 [asyncio] DEBUG: Using selector: EpollSelector
+04:14:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:14:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:15:25 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-21 04:15:25 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+04:15:25 [pipeline.stages.s4_review] INFO: Feedback: Сильний, корисний гід із чіткою структурою та добрими джерелами. Кілька зауважень для фінальної правки:
+
+1. **Practice Portuguese без контексту:** У дереві рішень рекомендовано «Practice Portuguese (€
+2026-04-21 04:15:25 [pipeline.stages.s4_review] INFO: Feedback: Сильний, корисний гід із чіткою структурою та добрими джерелами. Кілька зауважень для фінальної правки:
+
+1. **Practice Portuguese без контексту:** У дереві рішень рекомендовано «Practice Portuguese (€
+04:15:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:15:25 [asyncio] DEBUG: Using selector: EpollSelector
+04:15:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:15:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:16:57 [pipeline.stages.s5_revise] INFO: Revised article: 1338 words
+2026-04-21 04:16:57 [pipeline.stages.s5_revise] INFO: Revised article: 1338 words
+04:16:57 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-21 04:16:57 [pipeline] INFO: === Review cycle 1/3 complete ===
+04:16:57 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:16:57 [asyncio] DEBUG: Using selector: EpollSelector
+04:16:57 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:16:57 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:18:12 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-21 04:18:12 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+04:18:12 [pipeline.stages.s4_review] INFO: Feedback: Сильний, практичний гід із чіткою структурою та відмінною контекстуалізацією для читача-новачка. Кілька зауважень для фіналізації:
+
+1. **ОРФОГРАФІЯ (наскрізна правка):** «іммігрантів» → «імігрантів» (
+2026-04-21 04:18:12 [pipeline.stages.s4_review] INFO: Feedback: Сильний, практичний гід із чіткою структурою та відмінною контекстуалізацією для читача-новачка. Кілька зауважень для фіналізації:
+
+1. **ОРФОГРАФІЯ (наскрізна правка):** «іммігрантів» → «імігрантів» (
+04:18:12 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-21 04:18:12 [pipeline] INFO: Article approved after 1 revision(s)
+04:18:12 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:18:12 [asyncio] DEBUG: Using selector: EpollSelector
+04:18:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:18:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:18:28 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1073 chars, vocab: 5 words, pt: 203 chars
+2026-04-21 04:18:28 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1073 chars, vocab: 5 words, pt: 203 chars
+04:18:28 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=free-portuguese-courses-immigrants-2026-pla-caple-guide
+2026-04-21 04:18:28 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=free-portuguese-courses-immigrants-2026-pla-caple-guide
+04:18:28 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:18:28 [asyncio] DEBUG: Using selector: EpollSelector
+04:18:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:18:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:18:48 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Restructured to lead with the main subject group and explicit anatomy counts (fingers, limbs, heads)
+2026-04-21 04:18:48 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Restructured to lead with the main subject group and explicit anatomy counts (fingers, limbs, heads)
+04:18:48 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-04-21 04:18:48 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+04:18:48 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-21 04:18:48 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+04:19:42 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-21 04:19:42 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+04:19:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-21 04:19:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+04:19:43 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+2026-04-21 04:19:43 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+04:19:43 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+2026-04-21 04:19:43 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+04:19:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 2840485
+2026-04-21 04:19:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 2840485
+04:19:43 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/free-portuguese-courses-immigrants-2026-pla-caple-guide.jpg (218 KB, quality=auto)
+2026-04-21 04:19:43 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/free-portuguese-courses-immigrants-2026-pla-caple-guide.jpg (218 KB, quality=auto)
+04:19:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:19:43 [asyncio] DEBUG: Using selector: EpollSelector
+04:19:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:19:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:20:30 [pipeline.stages.s_image_qa] INFO: Image QA: ok=False, severity=low, retry=True, issues=1 — Whiteboard text glitch: 'bom favor' is a nonsensical phrase — AI merged 'bom dia' and 'por favor' into a garbled combination
+2026-04-21 04:20:30 [pipeline.stages.s_image_qa] INFO: Image QA: ok=False, severity=low, retry=True, issues=1 — Whiteboard text glitch: 'bom favor' is a nonsensical phrase — AI merged 'bom dia' and 'por favor' into a garbled combination
+04:20:30 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1 failed QA (severity=low, issues=1)
+2026-04-21 04:20:30 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1 failed QA (severity=low, issues=1)
+04:20:30 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:20:30 [asyncio] DEBUG: Using selector: EpollSelector
+04:20:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:20:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:20:46 [pipeline.stages.s_image_prompt_editor] INFO: Prompt revised: The whiteboard text glitch occurred because the previous prompt described 'Portuguese vocabulary' on
+2026-04-21 04:20:46 [pipeline.stages.s_image_prompt_editor] INFO: Prompt revised: The whiteboard text glitch occurred because the previous prompt described 'Portuguese vocabulary' on
+04:20:46 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+2026-04-21 04:20:46 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+04:20:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-21 04:20:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+04:21:41 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-21 04:21:41 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+04:21:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-21 04:21:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+04:21:42 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+2026-04-21 04:21:42 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26418
+04:21:42 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+2026-04-21 04:21:42 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26418 (unknown)
+04:21:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3014261
+2026-04-21 04:21:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26471 3014261
+04:21:42 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/free-portuguese-courses-immigrants-2026-pla-caple-guide_try2.jpg (234 KB, quality=high)
+2026-04-21 04:21:42 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/free-portuguese-courses-immigrants-2026-pla-caple-guide_try2.jpg (234 KB, quality=high)
+04:21:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 04:21:42 [asyncio] DEBUG: Using selector: EpollSelector
+04:21:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 04:21:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+04:22:22 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-04-21 04:22:22 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+04:22:22 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 2
+2026-04-21 04:22:22 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 2
+04:22:22 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Finalized: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/free-portuguese-courses-immigrants-2026-pla-caple-guide.jpg
+2026-04-21 04:22:22 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Finalized: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/free-portuguese-courses-immigrants-2026-pla-caple-guide.jpg
+04:22:22 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/free-portuguese-courses-immigrants-2026-pla-caple-guide.md
+2026-04-21 04:22:22 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/free-portuguese-courses-immigrants-2026-pla-caple-guide.md
