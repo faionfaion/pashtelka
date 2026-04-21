@@ -11783,3 +11783,95 @@ TimeoutError: agent_query timed out after 300s
 2026-04-21 03:01:29 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 03:01:29 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/restauracao-vs-banco-portugal-governor-crisis-horeca-ukrainians.md
 2026-04-21 03:01:29 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/restauracao-vs-banco-portugal-governor-crisis-horeca-ukrainians.md
+03:01:29 [pipeline] INFO: Article ready: restauracao-vs-banco-portugal-governor-crisis-horeca-ukrainians (Цифри відірвані від реальності: ресторатори воюють)
+2026-04-21 03:01:29 [pipeline] INFO: Article ready: restauracao-vs-banco-portugal-governor-crisis-horeca-ukrainians (Цифри відірвані від реальності: ресторатори воюють)
+03:01:29 [pipeline] INFO: === Article 5/9 ===
+2026-04-21 03:01:29 [pipeline] INFO: === Article 5/9 ===
+03:01:29 [pipeline] INFO: --- Article: [news] Синдикати проти «мап персоналу» для вчителів: що це означає  ---
+2026-04-21 03:01:29 [pipeline] INFO: --- Article: [news] Синдикати проти «мап персоналу» для вчителів: що це означає  ---
+03:01:29 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 03:01:29 [asyncio] DEBUG: Using selector: EpollSelector
+03:01:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 03:01:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:04:22 [pipeline.stages.s2_research] INFO: Research complete: 11570 chars
+2026-04-21 03:04:22 [pipeline.stages.s2_research] INFO: Research complete: 11570 chars
+03:04:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 03:04:22 [asyncio] DEBUG: Using selector: EpollSelector
+03:04:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 03:04:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:05:39 [pipeline.stages.s3_generate] INFO: Generated: 'Профспілки вчителів проти нових штатних розкладів: що це означає для програм португальської мови, від яких залежать українські діти' (slug=teacher-unions-mapas-pessoal-plnm-ukrainian-students-schools, 534 words, 8 sources)
+2026-04-21 03:05:39 [pipeline.stages.s3_generate] INFO: Generated: 'Профспілки вчителів проти нових штатних розкладів: що це означає для програм португальської мови, від яких залежать українські діти' (slug=teacher-unions-mapas-pessoal-plnm-ukrainian-students-schools, 534 words, 8 sources)
+03:05:39 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 03:05:39 [asyncio] DEBUG: Using selector: EpollSelector
+03:05:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 03:05:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:07:05 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-21 03:07:05 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+03:07:05 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з добрим дослідженням та вдалим кутом подачі — зв'язок профспілкового конфлікту з PLNM і українськими дітьми. Потрібні виправлення:
+
+**1. Заголовок:** Занадто довгий (21 слово). Для news
+2026-04-21 03:07:05 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з добрим дослідженням та вдалим кутом подачі — зв'язок профспілкового конфлікту з PLNM і українськими дітьми. Потрібні виправлення:
+
+**1. Заголовок:** Занадто довгий (21 слово). Для news
+03:07:05 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 03:07:05 [asyncio] DEBUG: Using selector: EpollSelector
+03:07:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 03:07:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:07:45 [pipeline.stages.s5_revise] INFO: Revised article: 611 words
+2026-04-21 03:07:45 [pipeline.stages.s5_revise] INFO: Revised article: 611 words
+03:07:45 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-21 03:07:45 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:07:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 03:07:45 [asyncio] DEBUG: Using selector: EpollSelector
+03:07:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 03:07:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:08:49 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-21 03:08:49 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:08:49 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою релевантністю для аудиторії, гарним структуруванням і коректним розмежуванням фактів та редакційного аналізу. Кілька правок перед публікацією:
+
+1. **МОВА (Surzhyk):** «це наш ан
+2026-04-21 03:08:49 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з чіткою релевантністю для аудиторії, гарним структуруванням і коректним розмежуванням фактів та редакційного аналізу. Кілька правок перед публікацією:
+
+1. **МОВА (Surzhyk):** «це наш ан
+03:08:49 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-21 03:08:49 [pipeline] INFO: Article approved after 1 revision(s)
+03:08:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 03:08:49 [asyncio] DEBUG: Using selector: EpollSelector
+03:08:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 03:08:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:09:04 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1295 chars, vocab: 5 words, pt: 218 chars
+2026-04-21 03:09:04 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1295 chars, vocab: 5 words, pt: 218 chars
+03:09:04 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=teacher-unions-mapas-pessoal-plnm-ukrainian-students-schools
+2026-04-21 03:09:04 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=teacher-unions-mapas-pessoal-plnm-ukrainian-students-schools
+03:09:04 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 03:09:04 [asyncio] DEBUG: Using selector: EpollSelector
+03:09:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 03:09:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:09:22 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy counts (fingers, limbs, eyes), replaced
+2026-04-21 03:09:22 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy counts (fingers, limbs, eyes), replaced
+03:09:22 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-04-21 03:09:22 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+03:09:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-21 03:09:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:10:19 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-21 03:10:19 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+03:10:20 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-21 03:10:20 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+03:10:20 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23628
+2026-04-21 03:10:20 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23628
+03:10:20 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23628 (unknown)
+2026-04-21 03:10:20 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23628 (unknown)
+03:10:20 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23681 3099031
+2026-04-21 03:10:20 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23681 3099031
+03:10:20 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/teacher-unions-mapas-pessoal-plnm-ukrainian-students-schools.jpg (250 KB, quality=auto)
+2026-04-21 03:10:20 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/teacher-unions-mapas-pessoal-plnm-ukrainian-students-schools.jpg (250 KB, quality=auto)
+03:10:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-21 03:10:20 [asyncio] DEBUG: Using selector: EpollSelector
+03:10:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-21 03:10:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:11:11 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-04-21 03:11:11 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+03:11:11 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-04-21 03:11:11 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+03:11:11 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/teacher-unions-mapas-pessoal-plnm-ukrainian-students-schools.md
+2026-04-21 03:11:11 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/teacher-unions-mapas-pessoal-plnm-ukrainian-students-schools.md
