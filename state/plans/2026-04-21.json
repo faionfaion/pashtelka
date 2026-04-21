@@ -1,0 +1,69 @@
+{
+  "articles": [
+    {
+      "topic": "Перемир'я з Іраном закінчується у середу: Трамп каже «продовження малоймовірне» — що загрожує цінам на пальне в Португалії (continuation)",
+      "type": "news",
+      "angle": "Continuation 8-ї статті серії Ормуз/пальне. Перемир'я спливає 22 квітня, Трамп назвав продовження «highly unlikely», Венс летить до Пакистану на останні переговори. Дизель щойно впав нижче €2 — якщо перемир'я зірветься, ціни розвернуться. Фокус: прогноз ANAREC на наступний тиждень, залишки палива на Sines, чи варто заправитися сьогодні-завтра. Не дублює статтю від 18 квітня (та — про відкриття протоки й падіння цін); ця — про загрозу реверсу після зриву переговорів.",
+      "sources_hint": "RTP latest (Trump ceasefire quote, JD Vance Pakistan), Reuters, ANAREC Monday fuel forecast, ENSE strategic reserves data, DGEG, Observador, Público. Cross-ref our April 18 article hormuz-open-oil-crash.",
+      "priority": 1
+    },
+    {
+      "topic": "Amnistia Internacional: Португалія «не є винятком» — що річний звіт каже про права іммігрантів, поліцію та житлову кризу",
+      "type": "news",
+      "angle": "AI опублікувала річний звіт і окремо згадує Португалію. Фокус виключно на португальському розділі: що AI критикує — умови утримання іммігрантів, затримки AIMA, житлову кризу, поліцейський расизм? Як ці висновки резонують з досвідом українців (черги AIMA, нестача житла, дедлайн 15 квітня). Порівняти з іспанською масовою легалізацією 500К як контрастом. Дати контакти для скарг до AI Portugal та Provedor.",
+      "sources_hint": "Amnesty International Annual Report 2025/26 Portugal chapter (amnesty.org), RTP headline 'Portugal não escapa à tendência global de ataque aos direitos humanos', Público, AI Portugal website, Provedor de Justiça 2025 annual stats. Cross-ref our articles on AIMA deadline and ombudsman vacancy.",
+      "priority": 1
+    },
+    {
+      "topic": "25 квітня — День Свободи: що святкує Португалія, що працює й не працює, і чому Revolução dos Cravos стосується кожного іммігранта",
+      "type": "guide",
+      "angle": "Глибший гід, ніж двохрядкова згадка у тижневому огляді від 19 квітня. Три блоки: 1) Історія за 5 хв читання (Салазар/Каетану → 25 квітня 1974 → демократія → права іммігрантів як наслідок), 2) Що закрито: банки, держустанови, більшість магазинів; що працює: аптеки чергові (додаток Farmácias Portuguesas), деякі ТЦ з 14:00, кафе, транспорт (святковий розклад Carris/Metro/CP), 3) Де святкувати: Лісабон (хода Avenida da Liberdade — час, маршрут, як дістатися), Порту (концерт+феєрверк Aliados), Фару. Готові фрази для small-talk з колегами про 25 de Abril.",
+      "sources_hint": "CML April 25 program 2026, CMP events page, CM Faro, Carris/Metro/CP holiday schedule, Farmácias Portuguesas app, DGPC museum schedule on holidays, 25 de Abril commemoration committee website, RTP Memória for historical footage links. Historical context: Fundação Mário Soares.",
+      "priority": 1
+    },
+    {
+      "topic": "Ресторатори проти голови Банку Португалії: чому малий бізнес атакує Маріу Сентену — і що це означає для українських підприємців у HoReCa",
+      "type": "news",
+      "angle": "CM Jornal повідомляє про конфлікт ресторанних асоціацій з головою BdP. Розкрити причини: кредитні ставки, банківські комісії, доступ до фінансування. Зв'язати з AHRESP-вимогами грантів (наша стаття 20 квітня) і €600 млн кредитною лінією (10 квітня) — яка досі не запущена. Для українців у HoReCa: роботодавці під фінансовим тиском → ризик затримок зарплат, скорочень, закриттів закладів. Порівняти з європейськими ставками ЄЦБ.",
+      "sources_hint": "CM Jornal (headline 'Donos de restaurantes em guerra com o governador do Banco de Portugal'), AHRESP statements, CPPME, BdP monetary policy minutes, ECB rate decisions April 2026, INE hospitality sector stats. Cross-ref our ahresp-fundo-perdido and energy-credit-line articles.",
+      "priority": 1
+    },
+    {
+      "topic": "Синдикати проти «мап персоналу» для вчителів: що це означає для шкіл і для українських дітей, які вчать португальську",
+      "type": "news",
+      "angle": "FENPROF та інші профспілки виступають проти нових mapas de pessoal — системи, що визначає штатний розклад кожної школи. Чому проти: ризик скорочень ставок, перерозподіл без згоди, загроза якості. Для українських сімей ключове питання: чи це загрожує програмам PLNM (португальська для іноземців), від яких залежать тисячі дітей? Чи можуть класи збільшитися? Зв'язати з відкриттям матрікул 22 квітня — батьки записують дітей саме зараз.",
+      "sources_hint": "CM Jornal (headline 'Sindicatos contra mapas de pessoal para professores'), FENPROF website and press releases, Ministry of Education (ME), DGEEC stats on foreign students and PLNM coverage, RTP, Observador. Cross-ref our matriculas-2026-2027 article.",
+      "priority": 2
+    },
+    {
+      "topic": "Уряд пропонує Консультативну раду при Трибуналі де Контас — ще одне послаблення контролю за бюджетними грошима? (continuation)",
+      "type": "news",
+      "angle": "Continuation теми держзакупівель від 17 квітня. Тоді уряд підняв ліміт ajuste direto ×5 і поріг visto prévio до €10 млн. Тепер пропонує створити Conselho Consultivo при TdC — дорадчий орган. Це посилення контролю чи ширма? Опозиція (PS, Bloco, PCP) критикує. Для українців у будівництві та держпідрядах: менше контролю = більше дрібних замовлень швидше, але й більше ризиків фаворитизму та невиплат.",
+      "sources_hint": "CM Jornal (headline 'Executivo propõe criar Conselho Consultivo do Tribunal de Contas'), DRE.pt for draft legislation, TdC official statement, COFAP committee minutes, Transparency International Portugal, Público, Observador. Cross-ref our ajuste-direto-limits article from April 17.",
+      "priority": 2
+    },
+    {
+      "topic": "Як відкрити банківський рахунок у Португалії у 2026 році: порівняння банків, комісії, депозитний захист та права іммігрантів",
+      "type": "material",
+      "angle": "Жодного попереднього матеріалу. Компіляція з 6+ джерел. Блоки: 1) Документи (NIF, паспорт, comprovativo de morada — і що робити без morada), 2) Порівняння 6 банків (CGD, Millennium, ActivoBank, Moey, BPI, Santander) за щомісячними комісіями та умовами, 3) Conta de Serviços Mínimos Bancários — безкоштовний базовий рахунок, право кожного, 4) Підводні камені: заморожування рахунку при простроченому título, ліміти переказів в Україну, комплаєнс-запити, 5) MB Way, Multibanco та SEPA для новачків, 6) Цифрові банки (Moey, ActivoBank) vs традиційні, 7) Чи безпечні ваші гроші? Fundo de Garantia de Depósitos захищає перші €100 000 — як діє гарантія, навіть якщо банк збанкрутує (контекст BES/Novo Banco та €11 млрд дірки, яку оплачують ВСІ банки через Fundo de Resolução → закладено у комісії).",
+      "sources_hint": "Banco de Portugal (CSMB regulations, clientebancario.bportugal.pt), bank websites (CGD, Millennium, ActivoBank, Moey, BPI, Santander) fee schedules, DECO Proteste bank comparisons 2026, APB financial inclusion data, immigrant forums (Facebook groups), Lei 66/2015 on basic payment accounts, Fundo de Garantia de Depósitos (FGD) info, Fundo de Resolução annual report, CM Jornal BES headline.",
+      "priority": 2
+    },
+    {
+      "topic": "Літні табори для дітей у Португалії: реєстрація починається — де знайти, скільки коштують і які безкоштовні для українських сімей",
+      "type": "material",
+      "angle": "Квітень-травень — старт реєстрації на ATL та campos de férias (літо 2026). Критично для працюючих батьків: школи закриваються з кінця червня до середини вересня. Блоки: 1) Безкоштовні муніципальні програми (CML Férias Desportivas, CMP Atividades Júnior, CM Faro/Loulé), 2) IPDJ — держпрограми спортивних таборів, 3) Церковні та НГО (Santa Casa, Cruz Vermelha, скаути CNE), 4) Платні табори — €100–350/тиждень, 5) Знижки ASE для сімей з тимчасовим захистом (Escalão A = безкоштовно або мінімум), 6) Документи, дедлайни та як подати заявку.",
+      "sources_hint": "CML summer 2026 programs (lisboa.pt), CMP férias desportivas (porto.pt), CM Faro/Loulé youth programs, IPDJ campos de férias portal (ipdj.gov.pt), Santa Casa da Misericórdia Lisboa summer activities, Cruz Vermelha Portuguesa youth, CNE scouts, ColóniasdeFérias.pt for private options, ASE regulations (ME).",
+      "priority": 2
+    },
+    {
+      "topic": "Безкоштовні курси португальської мови для іммігрантів у 2026 році: IEFP, ACM, câmaras та онлайн-платформи — повний гід",
+      "type": "guide",
+      "angle": "Жодного попереднього матеріалу. Мова — найбільший бар'єр. Блоки: 1) IEFP Português Língua de Acolhimento (безкоштовно, 150–300 годин, A2/B1 сертифікат, як записатися на iefp.pt), 2) ACM/CNAIM курси, 3) Безкоштовні курси від câmaras (CML, CMP, CM Faro), 4) Онлайн MOOC — PPT на NAU.pt (безкоштовно), Duolingo, PortugueseLab, RTP Aprender Português, 5) Платні (ULisboa FLUL, UPorto FLUP — €200–600/семестр), 6) Який рівень CEFR потрібен для роботи, autorização de residência (A2) та громадянства (B1).",
+      "sources_hint": "IEFP.pt (Português Língua de Acolhimento program page), ACM language integration programs (acm.gov.pt), NAU.pt PPT MOOC, CML/CMP/CM Faro language programs, FLUL and FLUP Portuguese courses for foreigners, Lei da Nacionalidade (B1 requirement), RTP Ensina/Aprender Português, Duolingo Portuguese course.",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-21",
+  "created_at": "2026-04-21T01:17:02.072160+00:00"
+}

@@ -1,0 +1,278 @@
+{
+  "timestamp": "2026-04-20_033527",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "seguro-first-foreign-visit-madrid-spain-bilateral-migration-ukrainians, ahresp-fundo-perdido-grant-promise-600-million-credit-line-update, ukrainian-diploma-recognition-portugal-equivalencia-guide, weather-forecast-april-21-25-freedom-day-ipma, spring-2026-rent-prices-lisbon-porto-algarve-season",
+  "author": "Pastelka News",
+  "duration_s": 8305.4,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 664.2,
+      "error": null
+    },
+    {
+      "name": "research:Сеґуру їде до Мадрида: перший ",
+      "status": "ok",
+      "duration_s": 193.8,
+      "error": null
+    },
+    {
+      "name": "generate:Сеґуру їде до Мадрида: перший ",
+      "status": "ok",
+      "duration_s": 74.6,
+      "error": null
+    },
+    {
+      "name": "review:Сеґуру їде до Мадрида: перший ",
+      "status": "ok",
+      "duration_s": 249.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Сеґуру їде до Мадрида: перший ",
+      "status": "ok",
+      "duration_s": 25.5,
+      "error": null
+    },
+    {
+      "name": "save:Сеґуру їде до Мадрида: перший ",
+      "status": "ok",
+      "duration_s": 52.9,
+      "error": null
+    },
+    {
+      "name": "research:Уряд обіцяє AHRESP фонди безпо",
+      "status": "ok",
+      "duration_s": 256.3,
+      "error": null
+    },
+    {
+      "name": "generate:Уряд обіцяє AHRESP фонди безпо",
+      "status": "ok",
+      "duration_s": 76.2,
+      "error": null
+    },
+    {
+      "name": "review:Уряд обіцяє AHRESP фонди безпо",
+      "status": "ok",
+      "duration_s": 184.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Уряд обіцяє AHRESP фонди безпо",
+      "status": "ok",
+      "duration_s": 19.9,
+      "error": null
+    },
+    {
+      "name": "save:Уряд обіцяє AHRESP фонди безпо",
+      "status": "ok",
+      "duration_s": 53.4,
+      "error": null
+    },
+    {
+      "name": "research:25 квітня — День Свободи: що п",
+      "status": "failed",
+      "duration_s": 933.9,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Визнання українського диплома ",
+      "status": "ok",
+      "duration_s": 287.0,
+      "error": null
+    },
+    {
+      "name": "generate:Визнання українського диплома ",
+      "status": "ok",
+      "duration_s": 127.8,
+      "error": null
+    },
+    {
+      "name": "review:Визнання українського диплома ",
+      "status": "ok",
+      "duration_s": 290.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Визнання українського диплома ",
+      "status": "ok",
+      "duration_s": 19.6,
+      "error": null
+    },
+    {
+      "name": "save:Визнання українського диплома ",
+      "status": "ok",
+      "duration_s": 53.2,
+      "error": null
+    },
+    {
+      "name": "research:Погода на тиждень 21–25 квітня",
+      "status": "ok",
+      "duration_s": 606.8,
+      "error": null
+    },
+    {
+      "name": "generate:Погода на тиждень 21–25 квітня",
+      "status": "ok",
+      "duration_s": 62.0,
+      "error": null
+    },
+    {
+      "name": "review:Погода на тиждень 21–25 квітня",
+      "status": "ok",
+      "duration_s": 660.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Погода на тиждень 21–25 квітня",
+      "status": "ok",
+      "duration_s": 24.7,
+      "error": null
+    },
+    {
+      "name": "save:Погода на тиждень 21–25 квітня",
+      "status": "ok",
+      "duration_s": 55.2,
+      "error": null
+    },
+    {
+      "name": "research:Оренда навесні 2026: скільки к",
+      "status": "ok",
+      "duration_s": 604.9,
+      "error": null
+    },
+    {
+      "name": "generate:Оренда навесні 2026: скільки к",
+      "status": "ok",
+      "duration_s": 94.4,
+      "error": null
+    },
+    {
+      "name": "review:Оренда навесні 2026: скільки к",
+      "status": "ok",
+      "duration_s": 211.3,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Оренда навесні 2026: скільки к",
+      "status": "ok",
+      "duration_s": 17.7,
+      "error": null
+    },
+    {
+      "name": "save:Оренда навесні 2026: скільки к",
+      "status": "ok",
+      "duration_s": 59.3,
+      "error": null
+    },
+    {
+      "name": "research:Обміняти водійські права: як у",
+      "status": "ok",
+      "duration_s": 267.7,
+      "error": null
+    },
+    {
+      "name": "generate:Обміняти водійські права: як у",
+      "status": "ok",
+      "duration_s": 118.8,
+      "error": null
+    },
+    {
+      "name": "review:Обміняти водійські права: як у",
+      "status": "ok",
+      "duration_s": 350.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Обміняти водійські права: як у",
+      "status": "ok",
+      "duration_s": 19.7,
+      "error": null
+    },
+    {
+      "name": "save:Обміняти водійські права: як у",
+      "status": "ok",
+      "duration_s": 52.4,
+      "error": null
+    },
+    {
+      "name": "research:Війна мотивує онлайн-ставки: я",
+      "status": "ok",
+      "duration_s": 255.4,
+      "error": null
+    },
+    {
+      "name": "generate:Війна мотивує онлайн-ставки: я",
+      "status": "ok",
+      "duration_s": 83.4,
+      "error": null
+    },
+    {
+      "name": "review:Війна мотивує онлайн-ставки: я",
+      "status": "ok",
+      "duration_s": 248.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Війна мотивує онлайн-ставки: я",
+      "status": "ok",
+      "duration_s": 20.2,
+      "error": null
+    },
+    {
+      "name": "save:Війна мотивує онлайн-ставки: я",
+      "status": "ok",
+      "duration_s": 53.3,
+      "error": null
+    },
+    {
+      "name": "research:Португальська компанія вирощує",
+      "status": "ok",
+      "duration_s": 229.3,
+      "error": null
+    },
+    {
+      "name": "generate:Португальська компанія вирощує",
+      "status": "ok",
+      "duration_s": 88.4,
+      "error": null
+    },
+    {
+      "name": "review:Португальська компанія вирощує",
+      "status": "ok",
+      "duration_s": 442.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Португальська компанія вирощує",
+      "status": "ok",
+      "duration_s": 19.3,
+      "error": null
+    },
+    {
+      "name": "save:Португальська компанія вирощує",
+      "status": "ok",
+      "duration_s": 54.6,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 40.0,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}
