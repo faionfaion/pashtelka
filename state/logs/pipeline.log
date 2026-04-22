@@ -13230,3 +13230,103 @@ TimeoutError: agent_query timed out after 300s
 2026-04-22 03:23:55 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
 03:23:55 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/horta-airport-restrictions-lifted-azores-faial-summer-flights-guide.md
 2026-04-22 03:23:55 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/horta-airport-restrictions-lifted-azores-faial-summer-flights-guide.md
+03:23:55 [pipeline] INFO: Article ready: horta-airport-restrictions-lifted-azores-faial-summer-flights-guide (Аеропорт Орти знову працює без обмежень: нові літн)
+2026-04-22 03:23:55 [pipeline] INFO: Article ready: horta-airport-restrictions-lifted-azores-faial-summer-flights-guide (Аеропорт Орти знову працює без обмежень: нові літн)
+03:23:55 [pipeline] INFO: === Article 10/10 ===
+2026-04-22 03:23:55 [pipeline] INFO: === Article 10/10 ===
+03:23:55 [pipeline] INFO: --- Article: [news] Міністерство перегляне законодавство про наукове працевлашту ---
+2026-04-22 03:23:55 [pipeline] INFO: --- Article: [news] Міністерство перегляне законодавство про наукове працевлашту ---
+03:23:55 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 03:23:55 [asyncio] DEBUG: Using selector: EpollSelector
+03:23:55 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 03:23:55 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:26:55 [pipeline.stages.s2_research] INFO: Research complete: 8908 chars
+2026-04-22 03:26:55 [pipeline.stages.s2_research] INFO: Research complete: 8908 chars
+03:26:55 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 03:26:55 [asyncio] DEBUG: Using selector: EpollSelector
+03:26:55 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 03:26:55 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:28:19 [pipeline.stages.s3_generate] INFO: Generated: 'Португалія переглядає закон про наукове працевлаштування — що це означає для українських дослідників' (slug=scientific-employment-law-review-fct-tenure-ukrainian-researchers-portugal, 556 words, 13 sources)
+2026-04-22 03:28:19 [pipeline.stages.s3_generate] INFO: Generated: 'Португалія переглядає закон про наукове працевлаштування — що це означає для українських дослідників' (slug=scientific-employment-law-review-fct-tenure-ukrainian-researchers-portugal, 556 words, 13 sources)
+03:28:19 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 03:28:19 [asyncio] DEBUG: Using selector: EpollSelector
+03:28:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 03:28:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:29:39 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-22 03:29:39 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:29:39 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з високою практичною цінністю для цільової аудиторії. Структура чітка, інвертована піраміда дотримана, португальські терміни пояснені коректно. Кілька зауважень для доопрацювання:
+
+1. **
+2026-04-22 03:29:39 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття з високою практичною цінністю для цільової аудиторії. Структура чітка, інвертована піраміда дотримана, португальські терміни пояснені коректно. Кілька зауважень для доопрацювання:
+
+1. **
+03:29:39 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 03:29:39 [asyncio] DEBUG: Using selector: EpollSelector
+03:29:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 03:29:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:30:15 [pipeline.stages.s5_revise] INFO: Revised article: 647 words
+2026-04-22 03:30:15 [pipeline.stages.s5_revise] INFO: Revised article: 647 words
+03:30:15 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-22 03:30:15 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:30:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 03:30:15 [asyncio] DEBUG: Using selector: EpollSelector
+03:30:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 03:30:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:31:29 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-22 03:31:29 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:31:29 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: актуальна тема, солідна джерельна база (RTP, Público, Observador, FCT), чітка структура з практичним блоком. Кілька зауважень перед публікацією:
+
+1. **IEFP не розшифровано.** Перше згад
+2026-04-22 03:31:29 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: актуальна тема, солідна джерельна база (RTP, Público, Observador, FCT), чітка структура з практичним блоком. Кілька зауважень перед публікацією:
+
+1. **IEFP не розшифровано.** Перше згад
+03:31:29 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-22 03:31:29 [pipeline] INFO: Article approved after 1 revision(s)
+03:31:29 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 03:31:29 [asyncio] DEBUG: Using selector: EpollSelector
+03:31:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 03:31:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:31:41 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1161 chars, vocab: 5 words, pt: 188 chars
+2026-04-22 03:31:41 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1161 chars, vocab: 5 words, pt: 188 chars
+03:31:41 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=scientific-employment-law-review-fct-tenure-ukrainian-researchers-portugal
+2026-04-22 03:31:41 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=scientific-employment-law-review-fct-tenure-ukrainian-researchers-portugal
+03:31:41 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 03:31:41 [asyncio] DEBUG: Using selector: EpollSelector
+03:31:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 03:31:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:31:58 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first with explicit anatomy counts (five fingers, two arms, one head) to preven
+2026-04-22 03:31:58 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first with explicit anatomy counts (five fingers, two arms, one head) to preven
+03:31:58 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-04-22 03:31:58 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+03:31:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-22 03:31:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:32:00 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-22 03:32:00 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+03:32:00 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-22 03:32:00 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+03:32:00 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 1 failed to produce image
+2026-04-22 03:32:00 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 1 failed to produce image
+03:32:00 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+2026-04-22 03:32:00 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+03:32:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-22 03:32:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:32:00 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-22 03:32:00 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+03:32:00 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-22 03:32:00 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+03:32:00 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 2 failed to produce image
+2026-04-22 03:32:00 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 2 failed to produce image
+03:32:00 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 3/3 (quality=high)
+2026-04-22 03:32:00 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 3/3 (quality=high)
+03:32:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-22 03:32:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:32:01 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-22 03:32:01 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+03:32:01 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-22 03:32:01 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+03:32:01 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 3 failed to produce image
+2026-04-22 03:32:01 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 3 failed to produce image
+03:32:01 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
+2026-04-22 03:32:01 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
+03:32:01 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/scientific-employment-law-review-fct-tenure-ukrainian-researchers-portugal.md
+2026-04-22 03:32:01 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/scientific-employment-law-review-fct-tenure-ukrainian-researchers-portugal.md
