@@ -12562,3 +12562,99 @@ TimeoutError: agent_query timed out after 300s
 2026-04-22 01:58:41 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
 01:58:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-seguro-belem-meetings-ugt-rejection-april-22.md
 2026-04-22 01:58:41 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-seguro-belem-meetings-ugt-rejection-april-22.md
+01:58:41 [pipeline] INFO: Article ready: trabalho-xxi-seguro-belem-meetings-ugt-rejection-april-22 (Trabalho XXI: Сеґуру зустрівся з усіма партнерами )
+2026-04-22 01:58:41 [pipeline] INFO: Article ready: trabalho-xxi-seguro-belem-meetings-ugt-rejection-april-22 (Trabalho XXI: Сеґуру зустрівся з усіма партнерами )
+01:58:41 [pipeline] INFO: === Article 3/10 ===
+2026-04-22 01:58:41 [pipeline] INFO: === Article 3/10 ===
+01:58:41 [pipeline] INFO: --- Article: [news] ЄЦБ готує підвищення ставки у червні: що це означає для іпот ---
+2026-04-22 01:58:41 [pipeline] INFO: --- Article: [news] ЄЦБ готує підвищення ставки у червні: що це означає для іпот ---
+01:58:41 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 01:58:41 [asyncio] DEBUG: Using selector: EpollSelector
+01:58:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 01:58:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:03:09 [pipeline.stages.s2_research] INFO: Research complete: 13984 chars
+2026-04-22 02:03:09 [pipeline.stages.s2_research] INFO: Research complete: 13984 chars
+02:03:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 02:03:09 [asyncio] DEBUG: Using selector: EpollSelector
+02:03:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 02:03:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:04:38 [pipeline.stages.s3_generate] INFO: Generated: 'ЄЦБ готує підвищення ставки у червні: що це означає для вашої іпотеки, оренди та заощаджень у Португалії' (slug=ecb-rate-hike-june-2026-mortgage-rent-savings-portugal-guide, 583 words, 12 sources)
+2026-04-22 02:04:38 [pipeline.stages.s3_generate] INFO: Generated: 'ЄЦБ готує підвищення ставки у червні: що це означає для вашої іпотеки, оренди та заощаджень у Португалії' (slug=ecb-rate-hike-june-2026-mortgage-rent-savings-portugal-guide, 583 words, 12 sources)
+02:04:38 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 02:04:38 [asyncio] DEBUG: Using selector: EpollSelector
+02:04:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 02:04:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:06:04 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-22 02:06:04 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:06:04 [pipeline.stages.s4_review] INFO: Feedback: Сильна, ґрунтовна стаття з бездоганною математикою та якісними джерелами. Кілька дрібних зауважень перед публікацією:
+
+1. **URL-невідповідність для DN:** Посилання в тексті статті (…para-225-em-abril-
+2026-04-22 02:06:04 [pipeline.stages.s4_review] INFO: Feedback: Сильна, ґрунтовна стаття з бездоганною математикою та якісними джерелами. Кілька дрібних зауважень перед публікацією:
+
+1. **URL-невідповідність для DN:** Посилання в тексті статті (…para-225-em-abril-
+02:06:04 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 02:06:04 [asyncio] DEBUG: Using selector: EpollSelector
+02:06:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 02:06:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:07:12 [pipeline.stages.s5_revise] INFO: Revised article: 616 words
+2026-04-22 02:07:12 [pipeline.stages.s5_revise] INFO: Revised article: 616 words
+02:07:12 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-22 02:07:12 [pipeline] INFO: === Review cycle 1/3 complete ===
+02:07:12 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 02:07:12 [asyncio] DEBUG: Using selector: EpollSelector
+02:07:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 02:07:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:08:24 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-22 02:08:24 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:08:24 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал — добре структурований, практичний, з якісними джерелами та чіткими поясненнями для іммігрантської аудиторії. Таблиця з розрахунком іпотеки і блок «Що можна зробити прямо зараз» — від
+2026-04-22 02:08:24 [pipeline.stages.s4_review] INFO: Feedback: Сильний матеріал — добре структурований, практичний, з якісними джерелами та чіткими поясненнями для іммігрантської аудиторії. Таблиця з розрахунком іпотеки і блок «Що можна зробити прямо зараз» — від
+02:08:24 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-22 02:08:24 [pipeline] INFO: Article approved after 1 revision(s)
+02:08:24 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 02:08:24 [asyncio] DEBUG: Using selector: EpollSelector
+02:08:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 02:08:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:08:38 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1131 chars, vocab: 5 words, pt: 169 chars
+2026-04-22 02:08:38 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1131 chars, vocab: 5 words, pt: 169 chars
+02:08:38 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=ecb-rate-hike-june-2026-mortgage-rent-savings-portugal-guide
+2026-04-22 02:08:38 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=ecb-rate-hike-june-2026-mortgage-rent-savings-portugal-guide
+02:08:38 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-22 02:08:38 [asyncio] DEBUG: Using selector: EpollSelector
+02:08:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-22 02:08:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:08:56 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to place the main subject (house on graph) first, added explicit anatomy counts for the fa
+2026-04-22 02:08:56 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to place the main subject (house on graph) first, added explicit anatomy counts for the fa
+02:08:56 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-04-22 02:08:56 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+02:08:56 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-22 02:08:56 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:08:57 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-22 02:08:57 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+02:08:57 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-22 02:08:57 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+02:08:57 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 1 failed to produce image
+2026-04-22 02:08:57 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 1 failed to produce image
+02:08:57 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+2026-04-22 02:08:57 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+02:08:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-22 02:08:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:08:58 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-22 02:08:58 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+02:08:58 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-22 02:08:58 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+02:08:58 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 2 failed to produce image
+2026-04-22 02:08:58 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 2 failed to produce image
+02:08:58 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 3/3 (quality=high)
+2026-04-22 02:08:58 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 3/3 (quality=high)
+02:08:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-22 02:08:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:08:59 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-22 02:08:59 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+02:08:59 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-22 02:08:59 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+02:08:59 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 3 failed to produce image
+2026-04-22 02:08:59 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 3 failed to produce image
+02:08:59 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
+2026-04-22 02:08:59 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
+02:08:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ecb-rate-hike-june-2026-mortgage-rent-savings-portugal-guide.md
+2026-04-22 02:08:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/ecb-rate-hike-june-2026-mortgage-rent-savings-portugal-guide.md
