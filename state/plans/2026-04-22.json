@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "(continuation) Трамп продовжив перемир'я з Іраном, але блокада Ормузу залишається — що буде з цінами на пальне",
+      "type": "news",
+      "angle": "Всупереч вчорашнім прогнозам, Трамп оголосив продовження перемир'я — але одночасно підтвердив збереження морської блокади та військової готовності. Проаналізувати, чому це «перемир'я з зірочкою»: Іран заперечує ключові умови, Brent залишається на $95–97, флот США продовжує патрулювання. Конкретний прогноз: чи впаде дизель нижче €1.95 наступного тижня чи ні? Порівняння з ціновим дном понеділка (€1.96). Практична порада: заправлятися чи чекати. Оновити серію (9-та стаття).",
+      "sources_hint": "RTP: 'Trump anuncia prolongamento do cessar-fogo mas mantém bloqueio e forças militares em prontidão'; ANAREC fuel forecast for April 27; Brent futures; ISP tax discount status; ERSE gas tariff update; cross-ref our April 21 ceasefire-expires article",
+      "priority": 1
+    },
+    {
+      "topic": "(continuation) Trabalho XXI: Сеґуру зустрівся з усіма партнерами — а в UGT зростає спротив угоді",
+      "type": "news",
+      "angle": "Сьогодні Сеґуру провів безпрецедентні індивідуальні зустрічі з усіма 6 соціальними партнерами в Белені. CM Jornal повідомляє: «Voto contra acordo ganha força dentro da UGT» — голосування проти угоди набирає обертів напередодні вирішального засідання UGT 23 квітня. Фокус: що сказали партнери після зустрічі з президентом? Які сигнали подає Сеґуру щодо можливого вето? Як це вплине на banco de horas та строкові контракти, які безпосередньо стосуються українців у будівництві та HoReCa? Це 10-та стаття серії.",
+      "sources_hint": "CM Jornal: 'Voto contra acordo ganha força dentro da UGT'; RTP/Público/Observador for Belém meeting outcomes; UGT official statements; CGTP reaction; CIP/CCP employer reactions; cross-ref our April 19 article on Seguro meetings",
+      "priority": 1
+    },
+    {
+      "topic": "ЄЦБ готує підвищення ставки у червні: що це означає для іпотеки, оренди та заощаджень у Португалії",
+      "type": "news",
+      "angle": "CM Jornal повідомляє: «Subida dos juros pelo BCE reservada para junho». Після місяців зниження ставок ЄЦБ розвертає курс через інфляцію від блокади Ормузу. Для Португалії це критично: 90%+ іпотек прив'язані до Euribor (змінна ставка). Кожне підвищення на 0.25% = додаткові €20–40/міс для середнього кредиту. Непрямий ефект на оренду: орендодавці з іпотекою перекладають витрати на орендарів. Для українців: чи варто зараз переходити на фіксовану ставку? Що таке amortização antecipada без штрафу? Як перевірити свій контракт. Перша стаття Pashtelka про монетарну політику ЄЦБ.",
+      "sources_hint": "CM Jornal: 'Subida dos juros pelo BCE reservada para junho'; ECB press conference; Euribor 3M/6M/12M current rates; Banco de Portugal mortgage statistics; DECO Proteste mortgage comparison tool; idealista mortgage calculator; cross-ref our April 20 rent prices article",
+      "priority": 1
+    },
+    {
+      "topic": "IRS 2026: покрокова інструкція подачі податкової декларації для українців у Португалії",
+      "type": "material",
+      "angle": "Сезон подачі IRS відкритий з 1 квітня до 30 червня 2026. Перший повний гід Pashtelka з подання декларації: хто зобов'язаний подавати (навіть з мінімальним доходом!), як увійти на Portal das Finanças, IRS Automático vs ручне заповнення, категорії доходу (A — зарплата, B — фріланс/ENI), що таке deduções específicas (€4 104), як додати витрати з e-Fatura, коли подавати спільну декларацію (agregado familiar), угода про уникнення подвійного оподаткування з Україною, що робити, якщо працювали частину року в Україні. Окремий блок: типові помилки іммігрантів (забули включити дохід з-за кордону, не зареєстрували NIF подружжя, пропустили e-Fatura).",
+      "sources_hint": "Portal das Finanças IRS guide 2026; AT (Autoridade Tributária) FAQ; DECO Proteste IRS guide; Ukraine-Portugal double taxation agreement (Convenção para evitar dupla tributação); IRS code Articles 15-16 (tax residence); e-Fatura portal; cross-ref our April 15 IUC article for Portal das Finanças access; SOS Imigrante for NIF help",
+      "priority": 1
+    },
+    {
+      "topic": "GNR створює окрему Бригаду Дорожнього Руху — 1 300 офіцерів на дорогах",
+      "type": "news",
+      "angle": "MAI оголосив створення Brigada de Trânsito da GNR з ~1 300 офіцерами — виділена структура для контролю дорожнього руху на автострадах та національних дорогах. Що це означає практично: більше радарів, більше зупинок, жорсткіший контроль документів та алкотестування. Як це стосується українців-водіїв: перевірка carta de condução (особливо для тих, хто ще не обміняв українські права), контроль швидкості на чорних точках (A5, IC19, EN125 — маршрути з високою концентрацією українських працівників). Перехресне посилання на нашу статтю про 40 найнебезпечніших доріг та гід з обміну водійських прав.",
+      "sources_hint": "RTP: 'Brigada de Trânsito da GNR vai começar com cerca de 1.300 efetivos diz MAI'; MAI official statement; GNR reorganization decree; ANSR road safety statistics 2026; cross-ref our April 16 article on 40 dangerous roads and April 20 driving license guide",
+      "priority": 2
+    },
+    {
+      "topic": "Спека вбиває: Португалія та Іспанія — найвразливіші в Європі до впливу екстремальної температури на здоров'я",
+      "type": "news",
+      "angle": "Нове дослідження (Público: «Impactos na saúde do calor extremo: Portugal e Espanha são os países mais vulneráveis») показує, що Португалія — одна з найвразливіших країн Європи до впливу спеки на здоров'я. Це не абстрактне майбутнє: літо 2025 дало рекордні температури, а літо 2026 прогнозується ще гарячіше. Практичний фокус для українців: працівники будівництва та сільського господарства (десятки тисяч українців) найбільш уразливі; які права має працівник при екстремальній спеці (температурні пороги за Código do Trabalho); як працює план contingência Saúde Sazonal; безкоштовна вода в centro de saúde; SNS 24 як лінія допомоги; попередження через додаток IPMA.",
+      "sources_hint": "Público: 'Impactos na saúde do calor extremo: Portugal e Espanha são os países mais vulneráveis'; DGS Plano de Contingência Saúde Sazonal 2026; Código do Trabalho temperature/work conditions articles; IPMA climate projections; SNS 24 heat guidelines; ACT (labor inspection) guidance on heat; cross-ref our April 19 allergy article for SNS access info",
+      "priority": 2
+    },
+    {
+      "topic": "Лісабон закрив 2025 рік із прибутком €63,2 млн — куди йдуть гроші міста і що з цього доступно іммігрантам",
+      "type": "news",
+      "angle": "Assembleia Municipal de Lisboa затвердила звіт за 2025 рік з прибутком €63,2 млн. На тлі житлової кризи, перевантаженого AIMA та черг у центрах здоров'я — це парадокс. Стаття розбере: на що Лісабон витратив бюджет (транспорт, житло, соцпрограми), які муніципальні програми доступні українцям (Lisboa Solidária, Programa Municipal de Habitação, Cartão Municipal Senior, BLX бібліотеки, безкоштовні курси), чи планується збільшення фінансування GARE (центр допомоги біженцям). Порівняння з бюджетами Порту та Фару для читачів за межами столиці.",
+      "sources_hint": "RTP: 'AM Lisboa aprova contas do município com lucro de 63,2 ME em 2025'; CML (Câmara Municipal de Lisboa) budget report 2025; Lisboa Solidária program; Programa Renda Acessível; GARE refugee center funding; BLX library system; compare with Porto and Faro municipal reports; DGAL municipal finance data",
+      "priority": 2
+    },
+    {
+      "topic": "Як надіслати гроші в Україну з Португалії: порівняння Wise, Revolut, Western Union та банківських переказів",
+      "type": "guide",
+      "angle": "Практичний гід з переказу грошей в Україну. Порівняння: Wise (курс + комісія ~0.5–1%), Revolut (безкоштовний ліміт, потім 0.5%), Western Union (миттєво, але дорого — до 5%), MoneyGram, SWIFT-переказ через португальський банк (€15–30 + кореспондентський банк), Privat24 (прийом). Таблиця: швидкість, комісія, максимальна сума, потреба у верифікації, чи приймає українську гривню. Нюанси для іммігрантів: ліміти без повної верифікації, санкційні обмеження (які банки не відправляють в Україну), як уникнути подвійної конвертації EUR→USD→UAH. Поради: регулярні vs одноразові перекази, як заощадити на курсі. Перша стаття Pashtelka про фінансові перекази.",
+      "sources_hint": "Wise EUR→UAH current rates; Revolut transfer terms; Western Union PT pricing; MoneyGram PT; Banco de Portugal SWIFT/SEPA guides; PrivatBank international transfers; comparison sites: monito.com, exiap.com; BdP regulations on international transfers; sanctions compliance (EU Council regulations); DECO Proteste banking comparison",
+      "priority": 2
+    },
+    {
+      "topic": "Азори: уряд зняв обмеження на аеропорт Орти — нові повітряні маршрути влітку",
+      "type": "news",
+      "angle": "Регіональний уряд Азорських островів оголосив про зняття обмежень на аеропорт Орти (острів Файял). Що це означає: нові сезонні рейси з Лісабона та Порту, дешевші квитки, легший доступ до одного з найкрасивіших архіпелагів Європи. Для українців: Азори як бюджетна відпустка без візи (внутрішній рейс), сезонна робота в туризмі на островах (менша конкуренція, ніж на материку), космічна індустрія на Санта-Марії (перехресне посилання на статтю про космодром). Коротко про ціни на квитки, де бронювати та що подивитися на Файялі за вихідні.",
+      "sources_hint": "RTP Economia: 'Governo açoriano anuncia levantamento de restrições ao aeroporto da Horta'; SATA airline route announcements; Ryanair/TAP Azores summer schedules; Azores tourism board; cross-ref our April 18 Azores spaceport article",
+      "priority": 3
+    },
+    {
+      "topic": "Міністерство перегляне законодавство про наукове працевлаштування — шанс для українських дослідників",
+      "type": "news",
+      "angle": "RTP повідомляє: міністерство перегляне законодавство у сфері стимулювання наукового працевлаштування. Португалія має хронічну проблему з утриманням науковців (bolseiros без трудових прав, тимчасові контракти). Ревізія може відкрити нові можливості для українських дослідників, яких у Португалії сотні (фізики, IT-спеціалісти, інженери з українських університетів). Практичний блок: як знайти позицію через FCT та Euraxess, визнання наукового ступеня через DGES, право на trabalho científico з proteção temporária. Перехресне посилання на гід з визнання дипломів.",
+      "sources_hint": "RTP: 'Ministério vai rever legislação no âmbito do estímulo ao emprego científico'; FCT (Fundação para a Ciência e Tecnologia) bolsa listings; Euraxess Portugal; Lei do Emprego Científico (DL 57/2016); DGES PhD equivalence process; cross-ref our April 20 diploma recognition guide",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-22",
+  "created_at": "2026-04-22T01:17:02.802535+00:00"
+}
