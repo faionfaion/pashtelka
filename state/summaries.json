@@ -1834,5 +1834,22 @@
       "житло"
     ],
     "summary": "The ECB is expected to raise its base rate by 25bp (from 2.00% to 2.25%) at its June 2026 meeting — the first hike after months of cuts — driven by inflation from the Hormuz Strait blockade. Bloomberg surveys and CM Jornal confirm the consensus. Markets price in rates reaching 2.50–2.75% by December; the IMF projects ~50bp total in 2026, with reversal in 2027. For Portugal, where ~90% of existing mortgages are variable-rate (Euribor-indexed), this means €20–42/month extra on a typical €150k loan. The average mortgage payment already rose to €422, increasing for the 6th consecutive month. The article explains the indirect rent impact (landlords passing costs at renewal, legal cap 2.24%), and provides practical guidance: checking contract Euribor index and revision date, switching to fixed/mixed rates, early repayment rules (0.5% commission since Jan 2026), and a Euribor simulator link. This is Pashtelka's first dedicated ECB monetary policy article, building on the April 8 Euribor jump coverage and the Hormuz blockade series."
+  },
+  "irs-2026-step-by-step-filing-guide-ukrainians-portugal": {
+    "date": "2026-04-22",
+    "title": "IRS 2026 крок за кроком: як подати податкову декларацію в Португалії — від входу на портал до кнопки «Submeter»",
+    "type": "material",
+    "tags": [
+      "податки",
+      "IRS",
+      "Португалія",
+      "іммігранти",
+      "податкова декларація",
+      "Portal das Finanças",
+      "подвійне оподаткування",
+      "e-Fatura",
+      "фінанси"
+    ],
+    "summary": "Покрокова практична інструкція з подання податкової декларації IRS 2026 (за доходи 2025 року) для українців у Португалії. Дедлайн — 30 червня 2026. Стаття проводить читача через 8 кроків: авторизація на Portal das Finanças (NIF+пароль або Chave Móvel Digital з переліком пунктів активації CMD для іноземців), вибір між IRS Automático та ручною декларацією, заповнення Rosto та додатків за категоріями доходу (A — зарплата, B — фріланс), заповнення Anexo J для закордонних доходів з Україною, використання конвенції про уникнення подвійного оподаткування, перевірка e-Fatura, вибір між спільною та окремою декларацією, валідація та подача. Оновлена dedução específica — €4 587,09. Новинка 2026: культурне відрахування 15% ПДВ та можливість виправлення e-Fatura у полі 6C Anexo H. Окремий блок про типові помилки іммігрантів. Доповнює загальний гід IRS 2026, опублікований 10 квітня."
   }
 }
