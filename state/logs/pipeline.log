@@ -14197,3 +14197,119 @@ TimeoutError: agent_query timed out after 300s
 2026-04-23 03:10:32 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
 03:10:32 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/nova-university-rector-election-suspended-court-ruling-ukrainian-students.md
 2026-04-23 03:10:32 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/nova-university-rector-election-suspended-court-ruling-ukrainian-students.md
+03:10:32 [pipeline] INFO: Article ready: nova-university-rector-election-suspended-court-ruling-ukrainian-students (Суд зупинив вибори ректора Universidade NOVA — стр)
+2026-04-23 03:10:32 [pipeline] INFO: Article ready: nova-university-rector-election-suspended-court-ruling-ukrainian-students (Суд зупинив вибори ректора Universidade NOVA — стр)
+03:10:32 [pipeline] INFO: === Article 9/9 ===
+2026-04-23 03:10:32 [pipeline] INFO: === Article 9/9 ===
+03:10:32 [pipeline] INFO: --- Article: [news] Урочисте засідання парламенту до 52-ї річниці 25 квітня — дв ---
+2026-04-23 03:10:32 [pipeline] INFO: --- Article: [news] Урочисте засідання парламенту до 52-ї річниці 25 квітня — дв ---
+03:10:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 03:10:32 [asyncio] DEBUG: Using selector: EpollSelector
+03:10:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 03:10:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:15:32 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-23 03:15:32 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+03:15:37 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.1s
+2026-04-23 03:15:37 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.1s
+03:15:44 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 03:15:44 [asyncio] DEBUG: Using selector: EpollSelector
+03:15:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 03:15:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:20:08 [pipeline.stages.s2_research] INFO: Research complete: 13938 chars
+2026-04-23 03:20:08 [pipeline.stages.s2_research] INFO: Research complete: 13938 chars
+03:20:08 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 03:20:08 [asyncio] DEBUG: Using selector: EpollSelector
+03:20:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 03:20:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:21:33 [pipeline.stages.s3_generate] INFO: Generated: 'Парламент відкриває двері 25 квітня: урочисте засідання, безкоштовні екскурсії і права, народжені з Революції гвоздик' (slug=parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants, 564 words, 8 sources)
+2026-04-23 03:21:33 [pipeline.stages.s3_generate] INFO: Generated: 'Парламент відкриває двері 25 квітня: урочисте засідання, безкоштовні екскурсії і права, народжені з Революції гвоздик' (slug=parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants, 564 words, 8 sources)
+03:21:33 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 03:21:33 [asyncio] DEBUG: Using selector: EpollSelector
+03:21:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 03:21:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:22:35 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-23 03:22:35 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:22:35 [pipeline.stages.s4_review] INFO: Feedback: Добре написана, релевантна стаття з чіткою структурою та якісними джерелами. Декілька зауважень:
+
+1. **PORTUGUESE TERMS:** «cartão de residência» у секції «Як дістатися» не пояснено українською при пе
+2026-04-23 03:22:35 [pipeline.stages.s4_review] INFO: Feedback: Добре написана, релевантна стаття з чіткою структурою та якісними джерелами. Декілька зауважень:
+
+1. **PORTUGUESE TERMS:** «cartão de residência» у секції «Як дістатися» не пояснено українською при пе
+03:22:35 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 03:22:35 [asyncio] DEBUG: Using selector: EpollSelector
+03:22:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 03:22:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:23:33 [pipeline.stages.s5_revise] INFO: Revised article: 508 words
+2026-04-23 03:23:33 [pipeline.stages.s5_revise] INFO: Revised article: 508 words
+03:23:33 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-23 03:23:33 [pipeline] INFO: === Review cycle 1/3 complete ===
+03:23:33 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 03:23:33 [asyncio] DEBUG: Using selector: EpollSelector
+03:23:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 03:23:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:38:34 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-23 03:38:34 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+03:38:39 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-04-23 03:38:39 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+03:38:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 03:38:45 [asyncio] DEBUG: Using selector: EpollSelector
+03:38:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 03:38:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:40:10 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-23 03:40:10 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+03:40:10 [pipeline.stages.s4_review] INFO: Feedback: Якісна, практична стаття з чіткою структурою та гарною релевантністю для аудиторії. Перед публікацією потрібно виправити кілька речей:
+
+1. **Тег з помилкою (критично):** «#ДеsньСвободи» — латинська лі
+2026-04-23 03:40:10 [pipeline.stages.s4_review] INFO: Feedback: Якісна, практична стаття з чіткою структурою та гарною релевантністю для аудиторії. Перед публікацією потрібно виправити кілька речей:
+
+1. **Тег з помилкою (критично):** «#ДеsньСвободи» — латинська лі
+03:40:10 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-23 03:40:10 [pipeline] INFO: Article approved after 1 revision(s)
+03:40:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 03:40:10 [asyncio] DEBUG: Using selector: EpollSelector
+03:40:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 03:40:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:40:25 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1111 chars, vocab: 5 words, pt: 166 chars
+2026-04-23 03:40:25 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1111 chars, vocab: 5 words, pt: 166 chars
+03:40:25 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants
+2026-04-23 03:40:25 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants
+03:40:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 03:40:25 [asyncio] DEBUG: Using selector: EpollSelector
+03:40:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 03:40:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:40:43 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to put focal subject (palace + crowd) first; replaced all negative instructions ('no text'
+2026-04-23 03:40:43 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to put focal subject (palace + crowd) first; replaced all negative instructions ('no text'
+03:40:43 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-04-23 03:40:43 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+03:40:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-23 03:40:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:40:44 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-23 03:40:44 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+03:40:44 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-23 03:40:44 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+03:40:44 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 1 failed to produce image
+2026-04-23 03:40:44 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 1 failed to produce image
+03:40:44 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+2026-04-23 03:40:44 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+03:40:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-23 03:40:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:40:45 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-23 03:40:45 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+03:40:45 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-23 03:40:45 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+03:40:45 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 2 failed to produce image
+2026-04-23 03:40:45 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 2 failed to produce image
+03:40:45 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 3/3 (quality=high)
+2026-04-23 03:40:45 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 3/3 (quality=high)
+03:40:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-23 03:40:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+03:40:46 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-23 03:40:46 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+03:40:46 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-23 03:40:46 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+03:40:46 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 3 failed to produce image
+2026-04-23 03:40:46 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 3 failed to produce image
+03:40:46 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
+2026-04-23 03:40:46 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
+03:40:46 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants.md
+2026-04-23 03:40:46 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants.md
