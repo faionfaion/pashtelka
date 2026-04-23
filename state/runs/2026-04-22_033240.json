@@ -1,0 +1,308 @@
+{
+  "timestamp": "2026-04-22_033240",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "trump-extends-iran-ceasefire-hormuz-blockade-diesel-prices-portugal-april-22, trabalho-xxi-seguro-belem-meetings-ugt-rejection-april-22, ecb-rate-hike-june-2026-mortgage-rent-savings-portugal-guide, irs-2026-step-by-step-filing-guide-ukrainians-portugal, gnr-brigada-transito-1300-officers-road-enforcement-drivers-guide",
+  "author": "Pastelka News",
+  "duration_s": 8137.8,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 565.1,
+      "error": null
+    },
+    {
+      "name": "research:(continuation) Трамп продовжив",
+      "status": "ok",
+      "duration_s": 925.8,
+      "error": null
+    },
+    {
+      "name": "generate:(continuation) Трамп продовжив",
+      "status": "ok",
+      "duration_s": 106.7,
+      "error": null
+    },
+    {
+      "name": "review:(continuation) Трамп продовжив",
+      "status": "ok",
+      "duration_s": 222.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:(continuation) Трамп продовжив",
+      "status": "ok",
+      "duration_s": 14.8,
+      "error": null
+    },
+    {
+      "name": "save:(continuation) Трамп продовжив",
+      "status": "ok",
+      "duration_s": 20.4,
+      "error": null
+    },
+    {
+      "name": "research:(continuation) Trabalho XXI: С",
+      "status": "ok",
+      "duration_s": 294.0,
+      "error": null
+    },
+    {
+      "name": "generate:(continuation) Trabalho XXI: С",
+      "status": "ok",
+      "duration_s": 83.7,
+      "error": null
+    },
+    {
+      "name": "review:(continuation) Trabalho XXI: С",
+      "status": "ok",
+      "duration_s": 232.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:(continuation) Trabalho XXI: С",
+      "status": "ok",
+      "duration_s": 11.5,
+      "error": null
+    },
+    {
+      "name": "save:(continuation) Trabalho XXI: С",
+      "status": "ok",
+      "duration_s": 22.0,
+      "error": null
+    },
+    {
+      "name": "research:ЄЦБ готує підвищення ставки у ",
+      "status": "ok",
+      "duration_s": 267.1,
+      "error": null
+    },
+    {
+      "name": "generate:ЄЦБ готує підвищення ставки у ",
+      "status": "ok",
+      "duration_s": 89.4,
+      "error": null
+    },
+    {
+      "name": "review:ЄЦБ готує підвищення ставки у ",
+      "status": "ok",
+      "duration_s": 225.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:ЄЦБ готує підвищення ставки у ",
+      "status": "ok",
+      "duration_s": 14.4,
+      "error": null
+    },
+    {
+      "name": "save:ЄЦБ готує підвищення ставки у ",
+      "status": "ok",
+      "duration_s": 21.0,
+      "error": null
+    },
+    {
+      "name": "research:IRS 2026: покрокова інструкція",
+      "status": "ok",
+      "duration_s": 291.3,
+      "error": null
+    },
+    {
+      "name": "generate:IRS 2026: покрокова інструкція",
+      "status": "ok",
+      "duration_s": 154.6,
+      "error": null
+    },
+    {
+      "name": "review:IRS 2026: покрокова інструкція",
+      "status": "ok",
+      "duration_s": 280.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:IRS 2026: покрокова інструкція",
+      "status": "ok",
+      "duration_s": 16.5,
+      "error": null
+    },
+    {
+      "name": "save:IRS 2026: покрокова інструкція",
+      "status": "ok",
+      "duration_s": 22.7,
+      "error": null
+    },
+    {
+      "name": "research:GNR створює окрему Бригаду Дор",
+      "status": "ok",
+      "duration_s": 216.1,
+      "error": null
+    },
+    {
+      "name": "generate:GNR створює окрему Бригаду Дор",
+      "status": "ok",
+      "duration_s": 88.0,
+      "error": null
+    },
+    {
+      "name": "review:GNR створює окрему Бригаду Дор",
+      "status": "ok",
+      "duration_s": 206.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:GNR створює окрему Бригаду Дор",
+      "status": "ok",
+      "duration_s": 19.5,
+      "error": null
+    },
+    {
+      "name": "save:GNR створює окрему Бригаду Дор",
+      "status": "ok",
+      "duration_s": 27.9,
+      "error": null
+    },
+    {
+      "name": "research:Спека вбиває: Португалія та Іс",
+      "status": "ok",
+      "duration_s": 600.6,
+      "error": null
+    },
+    {
+      "name": "generate:Спека вбиває: Португалія та Іс",
+      "status": "ok",
+      "duration_s": 91.4,
+      "error": null
+    },
+    {
+      "name": "review:Спека вбиває: Португалія та Іс",
+      "status": "ok",
+      "duration_s": 240.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Спека вбиває: Португалія та Іс",
+      "status": "ok",
+      "duration_s": 15.4,
+      "error": null
+    },
+    {
+      "name": "save:Спека вбиває: Португалія та Іс",
+      "status": "ok",
+      "duration_s": 22.2,
+      "error": null
+    },
+    {
+      "name": "research:Лісабон закрив 2025 рік із при",
+      "status": "ok",
+      "duration_s": 285.2,
+      "error": null
+    },
+    {
+      "name": "generate:Лісабон закрив 2025 рік із при",
+      "status": "ok",
+      "duration_s": 84.7,
+      "error": null
+    },
+    {
+      "name": "review:Лісабон закрив 2025 рік із при",
+      "status": "ok",
+      "duration_s": 216.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Лісабон закрив 2025 рік із при",
+      "status": "ok",
+      "duration_s": 17.8,
+      "error": null
+    },
+    {
+      "name": "save:Лісабон закрив 2025 рік із при",
+      "status": "ok",
+      "duration_s": 20.0,
+      "error": null
+    },
+    {
+      "name": "research:Як надіслати гроші в Україну з",
+      "status": "failed",
+      "duration_s": 932.7,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Азори: уряд зняв обмеження на ",
+      "status": "ok",
+      "duration_s": 218.0,
+      "error": null
+    },
+    {
+      "name": "generate:Азори: уряд зняв обмеження на ",
+      "status": "ok",
+      "duration_s": 83.1,
+      "error": null
+    },
+    {
+      "name": "review:Азори: уряд зняв обмеження на ",
+      "status": "ok",
+      "duration_s": 305.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Азори: уряд зняв обмеження на ",
+      "status": "ok",
+      "duration_s": 14.4,
+      "error": null
+    },
+    {
+      "name": "save:Азори: уряд зняв обмеження на ",
+      "status": "ok",
+      "duration_s": 24.4,
+      "error": null
+    },
+    {
+      "name": "research:Міністерство перегляне законод",
+      "status": "ok",
+      "duration_s": 180.0,
+      "error": null
+    },
+    {
+      "name": "generate:Міністерство перегляне законод",
+      "status": "ok",
+      "duration_s": 83.3,
+      "error": null
+    },
+    {
+      "name": "review:Міністерство перегляне законод",
+      "status": "ok",
+      "duration_s": 190.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Міністерство перегляне законод",
+      "status": "ok",
+      "duration_s": 11.9,
+      "error": null
+    },
+    {
+      "name": "save:Міністерство перегляне законод",
+      "status": "ok",
+      "duration_s": 20.3,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 39.1,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

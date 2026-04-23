@@ -1,0 +1,69 @@
+{
+  "articles": [
+    {
+      "topic": "Trabalho XXI: UGT голосує сьогодні — генсек каже «нічого не закрито», роботодавці кидають виклик (continuation)",
+      "type": "news",
+      "angle": "11-та стаття серії. День вирішального голосування Національного секретаріату UGT. Новина: генсек Моуран заявив «нічого не закрито, але мені некомфортно» — раптова невизначеність після вчорашньої «майже впевненості» у відхиленні. CCP сумнівається, що «можна просунутися далі», CTP відкрито викликає UGT визначитися. Фокус: що означає рішення UGT для banco de horas individual (ключове для українців у будівництві/HoReCa), парламентська арифметика AD+Chega+IL, і чи скористається Сеґуру правом вето. Перехресні посилання на 10 попередніх статей серії.",
+      "sources_hint": "RTP Economy (3 headlines today: UGT SG quote, CCP statement, CTP challenge), Lusa wire, Público labor section. UGT official site for vote result timing. Track CPCS developments. SIC Notícias live coverage.",
+      "priority": 1
+    },
+    {
+      "topic": "Prestação Social Única: уряд об'єднує 13 соціальних виплат в одну — що зміниться для іммігрантів",
+      "type": "news",
+      "angle": "Уряд оголосив про швидке затвердження Prestação Social Única — об'єднання 13 окремих соціальних допомог (RSI, abono de família, CSI, complemento solidário та ін.) в єдину виплату. Для українських сімей, які отримують кілька допомог одночасно, це може означати спрощення або ризик затримок при переході. Ключові питання: які саме 13 виплат об'єднують, чи зміняться суми, новий порядок подачі заявок, чи зберігається право для бенефіціарів тимчасового захисту, терміни запуску. Порівняти з іспанською моделлю Ingreso Mínimo Vital.",
+      "sources_hint": "RTP Economy headline today ('Prestação Social Única vai juntar 13 apoios sociais e será aprovada em breve'), government Council of Ministers press releases, Segurança Social Direta portal documentation, ISS institutional site. Search: 'prestação social única portugal 2026 regulamentação'. Check DRE for enabling legislation. EAPN Portugal reaction.",
+      "priority": 1
+    },
+    {
+      "topic": "Медичні пристрої починають бракувати в лікарнях Португалії — що під загрозою і як це впливає на пацієнтів",
+      "type": "news",
+      "angle": "Нова тема для Pashtelka. RTP повідомляє про початок дефіциту медичних пристроїв у португальських лікарнях. Розслідувати: які саме пристрої (хірургічні імпланти? діагностичне обладнання? протези?), причини (ланцюг постачання через Ормуз? бюрократія закупівель після реформи ajuste direto? бюджетні обмеження?), які лікарні постраждали. Для українців: вплив на черги на операції через SNS, як перевірити статус своєї операції через eSIGIC/MySNS, альтернативи (vale-cirurgia), чи стосується це стоматологічних пристроїв (cheque-dentista). Перехресне посилання на статтю про шахрайство в Santa Maria.",
+      "sources_hint": "RTP País headline today ('Dispositivos médicos começam a escassear em Portugal'), INFARMED ruptura alerts database, APORMED (medical device industry association) press releases, SNS executive directorate. Público/Expresso hospital reporting. Search: 'dispositivos médicos escassez ruptura portugal 2026', 'INFARMED notificações'. Check if Hormuz blockade disrupted medical supply chains.",
+      "priority": 1
+    },
+    {
+      "topic": "Кошик продуктів перевищив €260 вшосте — а ОЕСР каже, що зарплати зросли. Парадокс, розбір по секторах і що робити",
+      "type": "news",
+      "angle": "Об'єднана стаття з двох сюжетів. Два контрастні факти в один день: (1) DECO фіксує 6-й рекорд поспіль — кошик перетнув €260; (2) ОЕСР включила Португалію до країн із реальним зростанням зарплат у 2025. Парадокс: зарплати зросли в середньому, але кошик зростає швидше для низькодохідних домогосподарств. Деталізація по секторах: IT та фінанси (найбільше зростання) vs будівництво, сільське господарство, HoReCa (де працюють українці — мінімальне або нульове зростання). Калькуляція: мінімальна зарплата €818,80 нетто — кошик €260 — оренда T1 в Лісабоні €1100+ = дефіцит. Які продукти подорожчали цього тижня (інші ніж 16 квітня). Колективні угоди (IRCT) — чи покривають вони іммігрантів у конкретних секторах. Практичний блок: як перевірити, чи ваш роботодавець правильно підвищив оклад, як подати скаргу до ACT, сезонні овочі кінця квітня як спосіб економії. Continuation від 16 квітня.",
+      "sources_hint": "RTP Economy headline ('Cabaz alimentar atinge valor recorde superior a 260 euros'), RTP Economy headline ('Portugal entre países da OCDE onde salários registaram crescimento real em 2025'), DECO PROteste weekly grocery monitor (latest data vs April 15 data in our article), OECD Employment Outlook 2026 full report (Portugal country profile), INE wage statistics by sector + Inquérito ao Emprego Q4 2025, GEP/MTSSS Quadros de Pessoal data, Pordata salary series. BTE (Boletim do Trabalho e Emprego) for collective agreements in construction/HoReCa. Ensure different highlighted products from April 16 article.",
+      "priority": 1
+    },
+    {
+      "topic": "SNS отримує €50 млн на приймальні відділення та вакансії лікарів у всіх дефіцитних зонах — опозиція каже: замало",
+      "type": "news",
+      "angle": "Три новини SNS в одній статті з контрастною структурою: (1) Міністерка здоров'я оголосила €50 млн на реконструкцію приймальних відділень — які лікарні, терміни, що включено; (2) Відкрито вакансії сімейних лікарів у ВСІХ визначених дефіцитних зонах — скільки місць, як записатися; (3) Опозиція звинувачує уряд у невиконанні обіцянок щодо SNS — що обіцяли vs що зроблено. Для українців: як перевірити, чи ваша ULS отримала нові місця лікарів, як зареєструватися на сімейного лікаря (покрокова інструкція через RNU), як оцінити шанси на покращення у вашому приймальному відділенні. Перехресне посилання на наш гід з отримання сімейного лікаря (11 квітня).",
+      "sources_hint": "RTP Economy ('Ministra anuncia programa de 50 milhões para requalificar urgências'), RTP País ('Vagas para medicina geral e familiar em todos os lugares identificados como necessários', 'Oposição acusa Governo de falhar nas promessas para resolver problemas do SNS'). SNS Portal, ACSS vacancy maps, government press releases. Search: 'programa urgências 50 milhões hospitais lista 2026'.",
+      "priority": 2
+    },
+    {
+      "topic": "Смерть близького в Португалії: субсидія на поховання розширена на 1400 осіб — і повний гід від документів до репатріації тіла в Україну",
+      "type": "material",
+      "angle": "Новинний хук: уряд розширив subsídio de funeral на 1400 неповнолітніх і людей з інвалідністю. Ширший матеріал (вперше на Pashtelka): покроковий гід — що робити, коли помирає близька людина в Португалії. Теми: (1) Негайні кроки: виклик лікаря, отримання certidão de óbito, повідомлення conservatória; (2) Subsídio por morte та subsídio de funeral — хто має право, суми (€1 270.92 / ~€230), як подати через SS Direta; (3) Витрати на похорон (€1 500–4 000), порівняння агентств; (4) Репатріація тіла до України — контакт посольства, вартість (€3 000–8 000), документи, транспортні компанії; (5) Кремація в Португалії — процедура та вартість. Окремий блок для людей із тимчасовим захистом.",
+      "sources_hint": "RTP País headline ('Aumento do subsídio de funeral irá abranger 1.400 menores e pessoas com deficiência'), Segurança Social subsídio por morte/funeral pages, ISS Guia Prático, Ukrainian Embassy in Lisbon website (consular services section). DECO funeral cost comparisons. Search: 'repatriação corpo estrangeiro portugal custos', 'subsídio funeral 2026 valor atualizado'. Contact Ukrainian community organizations (APUPT) for repatriation practical info.",
+      "priority": 2
+    },
+    {
+      "topic": "Всесвітній день книги: де отримати безкоштовні книги, що читати португальською і найкращі бібліотеки для іммігрантів",
+      "type": "utility",
+      "angle": "23 квітня — Всесвітній день книги та авторського права (UNESCO). Практичний гід для українців: (1) Безкоштовні книги сьогодні — Torre do Tombo (Лісабон), DGLAB ініціативи, муніципальні бібліотеки; (2) Мережа бібліотек як ресурс для іммігрантів: BLX (Лісабон), бібліотеки Порту та Фару — безкоштовний інтернет, курси мови, дитячі програми; (3) Топ-10 книг португальською для рівнів A2-B2 (легке читання для вивчення мови); (4) Книги українських авторів у португальському перекладі (Жадан, Андрухович); (5) Безкоштовні електронні бібліотеки (Biblioteca Digital do Alentejo, b-on, LeYa Online). Перехресне посилання на гід з вивчення португальської (21 квітня).",
+      "sources_hint": "UNESCO World Book Day events Portugal 2026, DGLAB (Direcção-Geral do Livro, dos Arquivos e das Bibliotecas) event calendar, BLX (Bibliotecas de Lisboa) program, Câmara do Porto cultural agenda, FNAC/Bertrand bookstore promotions. Search: 'dia mundial do livro 2026 portugal eventos gratuitos', 'livros ucranianos traduzidos português'. RTP Cultura coverage.",
+      "priority": 2
+    },
+    {
+      "topic": "Суд зупинив вибори ректора Universidade NOVA — що це означає для академічної автономії та іноземних дослідників",
+      "type": "news",
+      "angle": "Судове рішення про зупинку виборів ректора NOVA (один із найпрестижніших університетів Португалії, де навчаються й працюють українці). Контекст: це відбувається на тлі перегляду закону про наукове працевлаштування (наша стаття від 22 квітня). Питання: хто оскаржив і чому, які порушення процедури, як це впливає на поточні проєкти та контракти дослідників, чи загрожує це стипендіям FCT. Ширший контекст: криза управління в португальських університетах (Порту, Лісабон також мали конфлікти). Для українських дослідників та студентів у NOVA: чи впливає це на навчальний процес, подачу заявок, стипендії.",
+      "sources_hint": "RTP País headline ('Eleição do reitor da NOVA suspensa por decisão judicial'), Público/Observador university governance coverage, NOVA University official statements, CRUP (Conselho de Reitores). Search: 'NOVA universidade eleição reitor suspensa tribunal 2026', 'providência cautelar reitor NOVA'. Cross-reference April 22 article on FCT-Tenure reform.",
+      "priority": 3
+    },
+    {
+      "topic": "Урочисте засідання парламенту до 52-ї річниці 25 квітня — двері відкриті для всіх громадян",
+      "type": "news",
+      "angle": "Парламент проводить урочисте засідання (sessão solene) з нагоди 52-ї річниці Революції гвоздик і відкриває двері для відвідувачів. Фокус НЕ на програмі свята (це покрито 21 квітня), а на: (1) Що сказали депутати в промовах — ключові цитати про свободу, демократію, міграцію; (2) Як відвідати парламент — практична інструкція для іммігрантів (безкоштовно, документи, години роботи, де знаходиться Palácio de São Bento); (3) Символічний контекст: конституційні права іммігрантів народжені саме з 25 квітня (ст. 15 Конституції). Легкий інтеграційний матеріал — розуміння того, чому португальці так шанують цей день. Не повторювати програму подій 25 квітня — це вже опубліковано 21 квітня.",
+      "sources_hint": "RTP País headline ('Parlamento abre as portas aos cidadãos ao início da tarde após sessão solene'), Assembleia da República official site and live stream, Canal Parlamento, AR visitor info page. Público/Observador coverage of solemn session speeches. Search: 'sessão solene 25 abril 2026 assembleia república'. Focus on new speeches, not historical recap (already in April 21 guide).",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-23",
+  "created_at": "2026-04-23T01:17:02.283245+00:00"
+}
