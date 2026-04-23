@@ -13525,3 +13525,101 @@ TimeoutError: agent_query timed out after 300s
 2026-04-23 01:47:01 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
 01:47:01 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-ugt-vote-day-mourao-nothing-closed-employers-challenge-april-23.md
 2026-04-23 01:47:01 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-ugt-vote-day-mourao-nothing-closed-employers-challenge-april-23.md
+01:47:02 [pipeline] INFO: Article ready: trabalho-xxi-ugt-vote-day-mourao-nothing-closed-employers-challenge-april-23 (Trabalho XXI: UGT голосує сьогодні — генсек каже «)
+2026-04-23 01:47:02 [pipeline] INFO: Article ready: trabalho-xxi-ugt-vote-day-mourao-nothing-closed-employers-challenge-april-23 (Trabalho XXI: UGT голосує сьогодні — генсек каже «)
+01:47:02 [pipeline] INFO: === Article 2/9 ===
+2026-04-23 01:47:02 [pipeline] INFO: === Article 2/9 ===
+01:47:02 [pipeline] INFO: --- Article: [news] Prestação Social Única: уряд об'єднує 13 соціальних виплат в ---
+2026-04-23 01:47:02 [pipeline] INFO: --- Article: [news] Prestação Social Única: уряд об'єднує 13 соціальних виплат в ---
+01:47:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 01:47:02 [asyncio] DEBUG: Using selector: EpollSelector
+01:47:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 01:47:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:51:00 [pipeline.stages.s2_research] INFO: Research complete: 13055 chars
+2026-04-23 01:51:00 [pipeline.stages.s2_research] INFO: Research complete: 13055 chars
+01:51:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 01:51:00 [asyncio] DEBUG: Using selector: EpollSelector
+01:51:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 01:51:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:52:30 [pipeline.stages.s3_generate] INFO: Generated: 'Prestação Social Única: уряд об'єднує 13 соціальних виплат в одну — що зміниться для іммігрантів' (slug=prestacao-social-unica-13-benefits-merged-immigrants-guide, 661 words, 9 sources)
+2026-04-23 01:52:30 [pipeline.stages.s3_generate] INFO: Generated: 'Prestação Social Única: уряд об'єднує 13 соціальних виплат в одну — що зміниться для іммігрантів' (slug=prestacao-social-unica-13-benefits-merged-immigrants-guide, 661 words, 9 sources)
+01:52:30 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 01:52:30 [asyncio] DEBUG: Using selector: EpollSelector
+01:52:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 01:52:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:53:48 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-23 01:53:48 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+01:53:48 [pipeline.stages.s4_review] INFO: Feedback: Стаття дуже якісна за структурою, джерелами та практичною цінністю для аудиторії. Однак є кілька моментів, які потрібно виправити перед публікацією:
+
+**Мовні помилки (обов'язково виправити):**
+1. «Пра
+2026-04-23 01:53:48 [pipeline.stages.s4_review] INFO: Feedback: Стаття дуже якісна за структурою, джерелами та практичною цінністю для аудиторії. Однак є кілька моментів, які потрібно виправити перед публікацією:
+
+**Мовні помилки (обов'язково виправити):**
+1. «Пра
+01:53:48 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 01:53:48 [asyncio] DEBUG: Using selector: EpollSelector
+01:53:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 01:53:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:55:12 [pipeline.stages.s5_revise] INFO: Revised article: 731 words
+2026-04-23 01:55:12 [pipeline.stages.s5_revise] INFO: Revised article: 731 words
+01:55:12 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-23 01:55:12 [pipeline] INFO: === Review cycle 1/3 complete ===
+01:55:12 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 01:55:12 [asyncio] DEBUG: Using selector: EpollSelector
+01:55:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 01:55:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:56:29 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-23 01:56:29 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+01:56:29 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з високою релевантністю для цільової аудиторії. Добре структурована, з правильною перевернутою пірамідою, практичними порадами та порівнянням з Іспанією. Джерела здебільшого верифіковані
+2026-04-23 01:56:29 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з високою релевантністю для цільової аудиторії. Добре структурована, з правильною перевернутою пірамідою, практичними порадами та порівнянням з Іспанією. Джерела здебільшого верифіковані
+01:56:29 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-23 01:56:29 [pipeline] INFO: Article approved after 1 revision(s)
+01:56:29 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 01:56:29 [asyncio] DEBUG: Using selector: EpollSelector
+01:56:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 01:56:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:56:43 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1113 chars, vocab: 5 words, pt: 183 chars
+2026-04-23 01:56:43 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1113 chars, vocab: 5 words, pt: 183 chars
+01:56:43 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=prestacao-social-unica-13-benefits-merged-immigrants-guide
+2026-04-23 01:56:43 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=prestacao-social-unica-13-benefits-merged-immigrants-guide
+01:56:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-23 01:56:43 [asyncio] DEBUG: Using selector: EpollSelector
+01:56:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-23 01:56:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:56:59 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy counts (fingers, arms, heads, eyes) for
+2026-04-23 01:56:59 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy counts (fingers, arms, heads, eyes) for
+01:56:59 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-04-23 01:56:59 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+01:56:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-23 01:56:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+01:57:00 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-23 01:57:00 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+01:57:00 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-23 01:57:00 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+01:57:00 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 1 failed to produce image
+2026-04-23 01:57:00 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 1 failed to produce image
+01:57:00 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+2026-04-23 01:57:00 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+01:57:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-23 01:57:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+01:57:01 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-23 01:57:01 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+01:57:01 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-23 01:57:01 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+01:57:01 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 2 failed to produce image
+2026-04-23 01:57:01 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 2 failed to produce image
+01:57:01 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 3/3 (quality=high)
+2026-04-23 01:57:01 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 3/3 (quality=high)
+01:57:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-23 01:57:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+01:57:01 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+2026-04-23 01:57:01 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 400 175
+01:57:01 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+2026-04-23 01:57:01 [pipeline.image_gen] ERROR: OpenAI API error: 400 — 
+01:57:01 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 3 failed to produce image
+2026-04-23 01:57:01 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Attempt 3 failed to produce image
+01:57:01 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
+2026-04-23 01:57:01 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
+01:57:01 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/prestacao-social-unica-13-benefits-merged-immigrants-guide.md
+2026-04-23 01:57:01 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/prestacao-social-unica-13-benefits-merged-immigrants-guide.md
