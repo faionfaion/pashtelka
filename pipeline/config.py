@@ -57,11 +57,25 @@ MAX_TG_CAPTION = 900
 # Batch generation: runs once in the morning, generates all articles for the day
 GENERATE_HOUR = 7  # Lisbon time, single morning run
 
-# TG publish schedule — mechanical publish of pre-generated articles
-TG_PUBLISH_HOURS = [9, 12, 15, 18]
+# TG publish schedule — DISABLED: switched to digest-only model (2026-04-24)
+# All TG traffic now goes through a single evening digest at DIGEST_HOUR.
+# Kept for reference only; media-manager schedule no longer lists publish slots.
+TG_PUBLISH_HOURS: list[int] = []
 
-# Digest hour — compile day's best articles into one TG post
-DIGEST_HOUR = 20
+# Digest hour — 21:00 Lisbon (WEST, UTC+1) = 20:00 UTC. Single daily TG post.
+DIGEST_HOUR = 21
+
+# Daily content composition (enforced by s0 editorial plan)
+DAILY_NEWS_COUNT = 10
+DAILY_MATERIAL_COUNT = 1
+DAILY_GUIDE_COUNT = 1
+
+# Optional sponsor line shown in digest between news items and glossary.
+# Set to "" to hide. Supports plain text.
+SPONSOR_LINE = ""
+
+# Digest image quality — always high (single premium image per day)
+DIGEST_IMAGE_QUALITY = "high"
 
 # Content type configs
 CONTENT_TYPES = {

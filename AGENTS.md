@@ -19,10 +19,11 @@ News portal for Ukrainian diaspora in Portugal. Site: pastelka.news, TG: @pashte
 
 | Mode | Cron | What |
 |------|------|------|
-| `generate` | `17 1 * * *` | Night batch (01:17 UTC): editorial plan → all 10-12 articles → 1 deploy |
-| `publish` | `5 8,11,14,17 * * *` | Mechanical: pick pre-generated article → send to TG (no LLM) |
-| `digest` | `5 19 * * *` | Compile day's articles → evening digest to TG |
+| `generate` | `17 1 * * *` | Night batch (01:17 UTC): editorial plan → 1 material + 1 guide + 10 news → 1 deploy |
+| `digest` | `0 20 * * *` | 20:00 UTC = 21:00 Lisbon (WEST). Single daily TG post: 10 news + 2-word glossary + premium image |
 | `plan` | Manual | Show/create daily editorial plan |
+
+**Digest-only model (2026-04-24):** per-slot publishes removed. TG gets one high-quality post per day at 21:00 Lisbon. Material and guide live on the site only, surfaced via "Читайте також" blocks at the bottom of news articles.
 
 ## Key Commands
 

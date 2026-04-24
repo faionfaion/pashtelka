@@ -3,25 +3,42 @@
   "properties": {
     "intro": {
       "type": "string",
-      "description": "1-2 sentence warm intro to the evening digest (Ukrainian, HTML). Use <b>bold</b> for accents."
+      "description": "Warm evening greeting, 2-3 sentences (Ukrainian). Include current day of week and a 1-sentence summary naming 2-3 key themes from today's news. Plain text (no HTML)."
     },
     "items": {
       "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
       "items": {
         "type": "object",
         "properties": {
           "emoji": {"type": "string", "description": "One relevant emoji for the topic"},
-          "title": {"type": "string", "description": "Short headline (5-10 words, Ukrainian)"},
-          "slug": {"type": "string", "description": "Article slug for link"}
+          "title": {"type": "string", "description": "Short bold-worthy headline (5-10 Ukrainian words, rewritten shorter than original)"},
+          "hook": {"type": "string", "description": "One-line teaser/question under the title (Ukrainian, 3-8 words). Intrigues to click."},
+          "slug": {"type": "string", "description": "Article slug for link (must match a provided slug exactly)"}
         },
-        "required": ["emoji", "title", "slug"]
+        "required": ["emoji", "title", "hook", "slug"]
       },
-      "description": "5-10 best articles of the day, ordered by importance"
+      "description": "Exactly 10 news articles of the day, ordered by importance"
     },
-    "outro": {
+    "glossary": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "properties": {
+          "pt": {"type": "string", "description": "Portuguese word that appears in today's news articles"},
+          "ua": {"type": "string", "description": "Ukrainian translation (single word or short phrase)"}
+        },
+        "required": ["pt", "ua"]
+      },
+      "description": "Exactly 2 Portuguese words extracted from today's news, with Ukrainian translations"
+    },
+    "image_prompt": {
       "type": "string",
-      "description": "1 sentence closing (Ukrainian). Warm, friendly tone."
+      "description": "English prompt for gpt-image-1. Describe a single photorealistic Lisbon or Porto cityscape scene with people, where elements from all 10 news stories are visually woven into the environment (billboards, newspapers people read, background activities, shop windows, street scenes). One coherent image — not a collage. 2-4 dominant stories visible, others as subtle background hints."
     }
   },
-  "required": ["intro", "items", "outro"]
+  "required": ["intro", "items", "glossary", "image_prompt"]
 }

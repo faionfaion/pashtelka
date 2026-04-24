@@ -14313,3 +14313,100 @@ TimeoutError: agent_query timed out after 300s
 2026-04-23 03:40:46 [pipeline.stages.s_image_orchestrator] ERROR: [image-orchestrator] No image produced after 3 attempts
 03:40:46 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants.md
 2026-04-23 03:40:46 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants.md
+03:40:46 [pipeline] INFO: Article ready: parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants (Парламент відкриває двері 25 квітня: урочисте засі)
+2026-04-23 03:40:46 [pipeline] INFO: Article ready: parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants (Парламент відкриває двері 25 квітня: урочисте засі)
+03:40:46 [pipeline] INFO: Generated 8/9 articles
+2026-04-23 03:40:46 [pipeline] INFO: Generated 8/9 articles
+03:40:48 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-04-23 03:40:48 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+03:40:48 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-23 03:40:48 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+03:41:26 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-04-23 03:41:26 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+03:41:26 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants/ (200 OK, title found)
+2026-04-23 03:41:26 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/parliament-open-doors-25-april-solemn-session-constitution-article-15-immigrants/ (200 OK, title found)
+03:41:26 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-23_034126.json
+2026-04-23 03:41:26 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-23_034126.json
+03:41:26 [pipeline] INFO: Batch complete: 8 articles
+2026-04-23 03:41:26 [pipeline] INFO: Batch complete: 8 articles
+2026-04-23 08:05:02 [pipeline] INFO: === TG Publish mode ===
+2026-04-23 08:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-23 08:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/sendPhoto HTTP/1.1" 200 4684
+2026-04-23 08:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-04-23 08:05:02 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAFhkTHh_D40VdCc7em5U9taM5a-o00JzaA/setMessageReaction HTTP/1.1" 200 25
+2026-04-23 08:05:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: free-portuguese-courses-immigrants-2026-pla-caple-guide -> msg 244
+2026-04-23 08:05:02 [pipeline] INFO: Published to TG: free-portuguese-courses-immigrants-2026-pla-caple-guide (msg 244)
+2026-04-24 23:20:52 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-24 23:20:52 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-24 23:20:52 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-24 23:20:52 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-24 23:20:52 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-24 23:20:52 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-24 23:20:53 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-24 23:20:53 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:20:53 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:29:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:29:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:34:48 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 12 -> 10 articles
+2026-04-24 23:34:48 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 10 articles for 2026-04-24
+2026-04-24 23:34:48 [pipeline] INFO: Editorial plan: 10 topics
+2026-04-24 23:34:48 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-24 23:34:48 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-24 23:34:48 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-24 23:34:48 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-24 23:34:48 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-24 23:34:48 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-24 23:34:49 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-24 23:34:49 [pipeline.stages.s1_collect] INFO: Context: 57 RSS items, 146 existing articles
+2026-04-24 23:34:49 [pipeline] INFO: === Article 1/10 ===
+2026-04-24 23:34:49 [pipeline] INFO: --- Article: [news] Trabalho XXI: UGT відкинула реформу, а Сеґуру на вечері 25 к ---
+2026-04-24 23:34:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:34:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:38:45 [pipeline.stages.s2_research] INFO: Research complete: 14324 chars
+2026-04-24 23:38:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:38:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:40:20 [pipeline.stages.s3_generate] INFO: Generated: 'Trabalho XXI: UGT одноголосно відкинула реформу — а Сеґуру на вечері 25 квітня заговорив про «гідність праці»' (slug=trabalho-xxi-ugt-unanimous-rejection-seguro-april-25-dinner-veto-signal, 677 words, 14 sources)
+2026-04-24 23:40:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:40:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:42:01 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-24 23:42:01 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом сильна — чітка структура, відмінна секція «Що це означає для українців», португальські терміни пояснені при першому вживанні, ключові особи ідентифіковані з посадами. Але є кілька пробл
+2026-04-24 23:42:01 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:42:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:44:09 [pipeline.stages.s5_revise] INFO: Revised article: 725 words
+2026-04-24 23:44:09 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-24 23:44:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:44:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:45:49 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-24 23:45:49 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована, з сильним блоком для українців — але є кілька речей, які потрібно виправити перед публікацією.
+
+**1. Фактична неточність у хронології (важливо):**
+У секції про вече
+2026-04-24 23:45:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:45:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:47:20 [pipeline.stages.s5_revise] INFO: Revised article: 753 words
+2026-04-24 23:47:20 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-04-24 23:47:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:47:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:49:10 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-24 23:49:10 [pipeline.stages.s4_review] INFO: Feedback: Сильний follow-up із чітким новим інфоприводом (результат голосування, 15-денний ультиматум, промова Сеґуру). Структура, релевантність для українців і контекстуалізація — на високому рівні. Потрібні д
+2026-04-24 23:49:10 [pipeline] INFO: Article approved after 2 revision(s)
+2026-04-24 23:49:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:49:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:49:27 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1286 chars, vocab: 5 words, pt: 223 chars
+2026-04-24 23:49:27 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=trabalho-xxi-ugt-unanimous-rejection-seguro-april-25-dinner-veto-signal
+2026-04-24 23:49:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:49:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:49:44 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to lead with the main subject (banquet hall and table), replaced negative instructions ('n
+2026-04-24 23:49:44 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-04-24 23:49:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-24 23:50:40 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-24 23:50:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-24 23:50:41 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26415
+2026-04-24 23:50:41 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26415 (unknown)
+2026-04-24 23:50:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26468 3196382
+2026-04-24 23:50:41 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/trabalho-xxi-ugt-unanimous-rejection-seguro-april-25-dinner-veto-signal.jpg (277 KB, quality=auto)
+2026-04-24 23:50:41 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-24 23:50:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-24 23:51:08 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-04-24 23:51:08 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-04-24 23:51:08 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-ugt-unanimous-rejection-seguro-april-25-dinner-veto-signal.md

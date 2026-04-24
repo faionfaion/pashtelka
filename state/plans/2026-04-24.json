@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "Trabalho XXI: UGT відкинула реформу, а Сеґуру на вечері 25 квітня сигналізує вето — що далі",
+      "type": "news",
+      "angle": "Об'єднана стаття з двох подій одного наративу. Блок 1 — результат голосування Національного секретаріату UGT 23 квітня: відхилили чи Моуран таки домовився? Якщо «ні» — уряд подає до парламенту без жодної профспілки. Блок 2 — вечірня промова Сеґуру 24 квітня: конкретні цитати про justiça social, dignidade do trabalho. Спільна вечеря з екс-президентом Марселу — символ демократичної спадкоємності. Сеґуру в січні обіцяв не підписувати без згоди соціальних партнерів; зараз обидві профспілки проти. Чи це остаточний сигнал вето? Порівняння з Марселу, який би підписав. Блок 3 — парламентська арифметика AD+Chega+IL=160 голосів, але 5 умов Chega. Наступна точка — дата подання законопроєкту. Для українців: banco de horas individual та строкові контракти для тих, хто ніколи не мав безстроковий — залишаються в тексті? Вето = затримка цих змін.",
+      "sources_hint": "Search: 'UGT voto nacional secretariado Trabalho XXI abril 2026', 'Seguro discurso jantar 25 abril 2026', 'Seguro Marcelo jantar liberdade', Lusa, RTP Economia, Público Trabalho, Observador, Expresso, CGTP.pt, UGT.pt. Check if Mourão's 'nothing is closed' led to any last-minute changes. Cross-reference Seguro's January promise (our earlier articles). Check exact quotes from the dinner speech. Previous Pashtelka series: 11 articles on Trabalho XXI.",
+      "priority": 1
+    },
+    {
+      "topic": "Уряд знову зрізав знижку на паливний акциз — дизель не впаде: прогноз на понеділок",
+      "type": "news",
+      "angle": "Рада міністрів зменшила desconto ISP на дизель черговий раз (третє скорочення). На тлі: Brent $95–97, переговори через Пакістан продовжуються, блокада Ормузу тримається. Фокус на внутрішній економіці: розрахунок — скільки з кишені водія забирає зменшення ISP vs скільки б зекономив за ринковою ціною. Порада: заправитися до неділі. Таблиця: ISP-знижка у січні vs зараз, скільки «з'їв» уряд. Мінімізувати міжнародну геополітику, фокус — португальська фіскальна політика та вплив на гаманець. Перехресні посилання на серію Ормуз (9 статей).",
+      "sources_hint": "Search: 'ISP desconto combustíveis redução abril 2026', DGEG preços combustíveis, ANAREC previsão segunda-feira, Reuters Brent crude. Compare previous ISP reductions from our Hormuz series. Focus on Portuguese government ISP decision, not US-Iran diplomacy.",
+      "priority": 1
+    },
+    {
+      "topic": "Страйк прокурорів: 75% участі — нижче за очікуване, але суди зупинені (результати дня)",
+      "type": "news",
+      "angle": "Фактичні результати страйку 24 квітня: 75% участі (проти 90% у липні 2025). Які суди найбільше постраждали. Кількість відкладених засідань (якщо дані є). Ключове для українців: трудові та адміністративні суди (де розглядаються справи проти AIMA — 133 000+) мали мінімальні послуги. Коли перенесені засідання буде заплановано. SMMP заявив, що протестуватиме далі. Наступні кроки: чи підтримає новий генпрокурор реформу. Стаття-довідка: для практичних порад (як перевірити своє засідання) — посилання на наш гід від 18 квітня.",
+      "sources_hint": "Search: 'greve magistrados ministério público adesão 75% abril 2026', 'SMMP resultados greve 24 abril', Lusa, RTP País. Check Citius portal for postponed hearings data. Cross-ref our prosecutors-strike-april-24-practical-guide. Check if SMMP announced new actions.",
+      "priority": 1
+    },
+    {
+      "topic": "Жити за межами Лісабона і Порту: що пропонують середні міста Португалії українським родинам",
+      "type": "material",
+      "angle": "Компільований аналіз із 5+ джерел: Лейрія, Авейру, Коімбра, Візеу, Сетубал, Евора — як альтернативи столичним цінам. Для кожного міста: медіана оренди T2, середня зарплата, наявність CNAIM/CLAIM, лікарня SNS і час до urgência, школи з PLNM, громада українців (за даними SEF/AIMA), транспорт до Лісабона/Порту (час і ціна), IEFP вакансії. Плюси: оренда на 40–60% нижча, менша конкуренція за житло. Мінуси: менше робочих місць, далі від посольства/консульства, менший вибір послуг. Реальні кейси: чому Лейрія — №3 за кількістю українців (інтеграція з сьогоднішньою новиною про запит €50 млн CIM Leiria на доступне житло), чому Авейру приваблює IT-фахівців. Перехресні посилання: оренда навесні (20 квітня), визнання дипломів (20 квітня), IEFP курси (21 квітня).",
+      "sources_hint": "INE Censos/population data by municipality, Idealista rent data by city (idealista.pt/arrendar), IEFP ofertas de emprego by region, Pordata salários médios por distrito, AIMA/SEF foreign population by nationality and district, DGEEC schools with PLNM by region, CIM Leiria housing request (today's news — 'Leiria habitação acessível 50 milhões CIM'), ARS healthcare coverage maps, CP/Rede Expressos timetables and prices to Lisbon/Porto.",
+      "priority": 2
+    },
+    {
+      "topic": "Як подати скаргу на роботодавця до ACT: покрокова інструкція для іммігранта",
+      "type": "guide",
+      "angle": "Повний гід: ACT (Autoridade para as Condições do Trabalho) — що це, як працює. Три шляхи: онлайн-скарга на act.gov.pt (анонімна можлива), телефонна лінія 300 069 300, особистий візит до делегації. Які порушення покриває: невиплата зарплати, незаконне звільнення, порушення робочого часу, відсутність контракту, небезпечні умови, banco de horas без згоди. Процес: скарга → інспекція (до 60 днів) → auto de notícia → Tribunal do Trabalho. Захист від помсти роботодавця (Art. 331 CT). Для українців з ТЗ: статус не впливає на право скаржитися, ACT не повідомляє AIMA. Безкоштовна правова допомога: apoio judiciário, CNAIM, SOLIM. Перехресні посилання: серія Trabalho XXI, гід TVDE, Lancet/спека (права працівників). Редакційний контекст: поки політики сперечаються про реформу, ці права вже діють — ось як ними скористатися.",
+      "sources_hint": "ACT.gov.pt official complaint portal and procedures, Código do Trabalho Art. 129 (employer obligations), Art. 331 (whistleblower protection), CITE (gender equality), apoio judiciário via Segurança Social, CNAIM contact list, ACT annual activity report 2025. Search: 'como apresentar queixa ACT trabalhador imigrante', 'ACT denúncia anónima online'. Check ACT delegações addresses in Lisbon, Porto, Faro.",
+      "priority": 2
+    },
+    {
+      "topic": "Переривання вагітності зросло на 5% у 2024 році: доступ до репродуктивного здоров'я для іммігранток",
+      "type": "news",
+      "angle": "DGS опублікувала дані: понад 18 000 переривань у 2024 (+5%). Контекст для українок: закон Португалії дозволяє до 10 тижнів (в Україні — 12), процедура безкоштовна через SNS, не потрібен сімейний лікар для першого звернення. Як працює: лінія SNS 24 → consulta prévia → período de reflexão (3 дні) → процедура. Конфіденційність гарантована. Контрацепція через SNS: безкоштовні засоби за рецептом, comparticipação. Окремо: планування сім'ї через Centro de Saúde — безкоштовно для всіх резидентів і бенефіціарів ТЗ.",
+      "sources_hint": "Search: 'DGS interrupção voluntária gravidez 2024 dados', 'aborto Portugal estatísticas 2024', Lei 16/2007, SNS contraception access, ACSS family planning guidelines. Check regional breakdown if available. Compare PT law vs UA law on gestational limits.",
+      "priority": 2
+    },
+    {
+      "topic": "Прибуток CUF зріс до €49 млн — приватне здоров'я процвітає, поки SNS буксує: що це означає для пацієнтів",
+      "type": "news",
+      "angle": "CUF SGPS (Hospital da Luz, CUF Descobertas, CUF Porto) — чистий прибуток €49 млн (+6,4%) у 2025. Одночасно SNS втрачає лікарів, закриває відділення. Що може іммігрант отримати в приватному секторі: primeira consulta €50–120, urgência €100–250, seguro de saúde від €30/міс (Multicare, Médis, AdvanceCare). ADSE для тих, хто працює на державу. Convenções SNS-privados — безкоштовні послуги в приватних клініках за направленням SNS. Чек-дентіста та vale-cirurgia — де приватне і державне перетинаються. Не реклама — а карта можливостей.",
+      "sources_hint": "Search: 'CUF SGPS lucro 2025 resultados', 'seguros saúde Portugal preços 2026', 'convenções SNS hospitais privados'. Compare Luz Saúde and Lusíadas results if available. DECO Proteste seguro saúde comparisons. Check ADSE eligibility for foreign workers in public sector.",
+      "priority": 2
+    },
+    {
+      "topic": "МВС звільнило 20 поліцейських за два місяці: дисципліна на тлі кадрового дефіциту",
+      "type": "news",
+      "angle": "MAI повідомило: 11 агентів PSP та 9 військових GNR звільнені за дисциплінарні порушення за лютий–квітень 2026. Контекст: звіт Amnesty International (наша стаття 21 квітня) про поліцейське насильство, протест силовиків через пенсії (наша стаття 16 квітня). Парадокс: з одного боку — чистка рядів, з іншого — дефіцит кадрів (PSP −437 за рік, RASI 2025). Які порушення призводять до звільнення? Як це впливає на безпеку у районах, де живуть українці? Контакти для скарг на поліцію: IGAI, Provedor.",
+      "sources_hint": "Search: 'MAI expulsão PSP GNR agentes militares 2026', RTP País, CM Jornal, Lusa. Cross-ref RASI 2025 staffing data. Check IGAI annual report. Our articles: amnesty-international-annual-report, police-pension-protest. What were the specific grounds for expulsion?",
+      "priority": 2
+    },
+    {
+      "topic": "Linha do Oeste перервана: як дістатися з Калдаш-да-Раїнья та Торреш-Ведраш до Лісабона",
+      "type": "news",
+      "angle": "CP Comboios перервала рух на Лінії Оесте — заміна автобусним трансфером. Маршрут: Lisboa–Torres Vedras–Caldas da Rainha–Leiria. Причина перерви, терміни відновлення. Альтернативи: Rede Expressos, FlixBus, BlaBlaCar, розклад трансбордо. Для українців у регіоні Оесте — як спланувати поїздку у святковий вікенд. Ширший контекст: CP інвестує €409 млн у нові потяги (Stadler), але інфраструктура потребує ремонту.",
+      "sources_hint": "Search: 'Linha do Oeste interrompida abril 2026 CP', cp.pt avisos, 'transbordo rodoviário Oeste'. Check CP website for specific dates, affected stations. Rede Expressos schedules Torres Vedras–Lisboa. Check if Caldas da Rainha-Lisboa alternatives exist via Rede Expressos.",
+      "priority": 3
+    },
+    {
+      "topic": "Португальський оборонний сектор шукає партнерів: нові вакансії для STEM-спеціалістів",
+      "type": "news",
+      "angle": "Португальські оборонні компанії (EDISOFT, Critical Software, EID, GMV Portugal) розширюють партнерства та збільшують штат. Контекст: Португалія збільшує оборонний бюджет до 2%+ ВВП (зобов'язання НАТО). Для українських IT/інженерних фахівців — нові можливості: кібербезпека, комунікаційні системи, безпілотники. Вимоги: визнаний диплом, security clearance (NOS — credenciação de segurança), знання англійської. Відмінність від космічної статті (18 квітня): тут фокус на оборонних контрактах, а не цивільному космосі. Платформи для пошуку: LinkedIn, NATO ncia.nato.int, idD Portugal Defence.",
+      "sources_hint": "Search: 'indústria defesa Portugal 2026 crescimento', 'Portugal NATO 2% PIB defesa orçamento', 'idD Portugal Defence vagas', EDISOFT careers, Critical Software defense division. Cross-ref our azores-spaceport article for non-overlap. Check Tekever defense vs space roles.",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-24",
+  "created_at": "2026-04-24T23:20:52.359027+00:00"
+}

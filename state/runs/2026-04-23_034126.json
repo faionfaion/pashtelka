@@ -1,0 +1,278 @@
+{
+  "timestamp": "2026-04-23_034126",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "trabalho-xxi-ugt-vote-day-mourao-nothing-closed-employers-challenge-april-23, prestacao-social-unica-13-benefits-merged-immigrants-guide, medical-device-shortage-hospitals-portugal-hormuz-surgery-waiting-list-guide, sns-50m-urgencias-family-doctor-vacancies-opposition-interpelacao-guide, death-in-portugal-funeral-subsidy-1400-repatriation-ukraine-guide",
+  "author": "Pastelka News",
+  "duration_s": 8664.3,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 851.7,
+      "error": null
+    },
+    {
+      "name": "research:Trabalho XXI: UGT голосує сьог",
+      "status": "ok",
+      "duration_s": 596.4,
+      "error": null
+    },
+    {
+      "name": "generate:Trabalho XXI: UGT голосує сьог",
+      "status": "ok",
+      "duration_s": 82.1,
+      "error": null
+    },
+    {
+      "name": "review:Trabalho XXI: UGT голосує сьог",
+      "status": "ok",
+      "duration_s": 234.3,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Trabalho XXI: UGT голосує сьог",
+      "status": "ok",
+      "duration_s": 14.9,
+      "error": null
+    },
+    {
+      "name": "save:Trabalho XXI: UGT голосує сьог",
+      "status": "ok",
+      "duration_s": 19.9,
+      "error": null
+    },
+    {
+      "name": "research:Prestação Social Única: уряд о",
+      "status": "ok",
+      "duration_s": 238.6,
+      "error": null
+    },
+    {
+      "name": "generate:Prestação Social Única: уряд о",
+      "status": "ok",
+      "duration_s": 89.6,
+      "error": null
+    },
+    {
+      "name": "review:Prestação Social Única: уряд о",
+      "status": "ok",
+      "duration_s": 238.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Prestação Social Única: уряд о",
+      "status": "ok",
+      "duration_s": 14.0,
+      "error": null
+    },
+    {
+      "name": "save:Prestação Social Única: уряд о",
+      "status": "ok",
+      "duration_s": 19.0,
+      "error": null
+    },
+    {
+      "name": "research:Медичні пристрої починають бра",
+      "status": "ok",
+      "duration_s": 224.0,
+      "error": null
+    },
+    {
+      "name": "generate:Медичні пристрої починають бра",
+      "status": "ok",
+      "duration_s": 75.0,
+      "error": null
+    },
+    {
+      "name": "review:Медичні пристрої починають бра",
+      "status": "ok",
+      "duration_s": 188.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Медичні пристрої починають бра",
+      "status": "ok",
+      "duration_s": 19.9,
+      "error": null
+    },
+    {
+      "name": "save:Медичні пристрої починають бра",
+      "status": "ok",
+      "duration_s": 18.7,
+      "error": null
+    },
+    {
+      "name": "research:Кошик продуктів перевищив €260",
+      "status": "failed",
+      "duration_s": 938.1,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:SNS отримує €50 млн на приймал",
+      "status": "ok",
+      "duration_s": 276.8,
+      "error": null
+    },
+    {
+      "name": "generate:SNS отримує €50 млн на приймал",
+      "status": "ok",
+      "duration_s": 118.3,
+      "error": null
+    },
+    {
+      "name": "review:SNS отримує €50 млн на приймал",
+      "status": "ok",
+      "duration_s": 203.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:SNS отримує €50 млн на приймал",
+      "status": "ok",
+      "duration_s": 19.9,
+      "error": null
+    },
+    {
+      "name": "save:SNS отримує €50 млн на приймал",
+      "status": "ok",
+      "duration_s": 22.1,
+      "error": null
+    },
+    {
+      "name": "research:Смерть близького в Португалії:",
+      "status": "ok",
+      "duration_s": 294.3,
+      "error": null
+    },
+    {
+      "name": "generate:Смерть близького в Португалії:",
+      "status": "ok",
+      "duration_s": 141.5,
+      "error": null
+    },
+    {
+      "name": "review:Смерть близького в Португалії:",
+      "status": "ok",
+      "duration_s": 259.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Смерть близького в Португалії:",
+      "status": "ok",
+      "duration_s": 22.8,
+      "error": null
+    },
+    {
+      "name": "save:Смерть близького в Португалії:",
+      "status": "ok",
+      "duration_s": 21.0,
+      "error": null
+    },
+    {
+      "name": "research:Всесвітній день книги: де отри",
+      "status": "ok",
+      "duration_s": 581.3,
+      "error": null
+    },
+    {
+      "name": "generate:Всесвітній день книги: де отри",
+      "status": "ok",
+      "duration_s": 65.2,
+      "error": null
+    },
+    {
+      "name": "review:Всесвітній день книги: де отри",
+      "status": "ok",
+      "duration_s": 377.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Всесвітній день книги: де отри",
+      "status": "ok",
+      "duration_s": 13.2,
+      "error": null
+    },
+    {
+      "name": "save:Всесвітній день книги: де отри",
+      "status": "ok",
+      "duration_s": 19.1,
+      "error": null
+    },
+    {
+      "name": "research:Суд зупинив вибори ректора Uni",
+      "status": "ok",
+      "duration_s": 216.1,
+      "error": null
+    },
+    {
+      "name": "generate:Суд зупинив вибори ректора Uni",
+      "status": "ok",
+      "duration_s": 73.6,
+      "error": null
+    },
+    {
+      "name": "review:Суд зупинив вибори ректора Uni",
+      "status": "ok",
+      "duration_s": 181.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Суд зупинив вибори ректора Uni",
+      "status": "ok",
+      "duration_s": 16.4,
+      "error": null
+    },
+    {
+      "name": "save:Суд зупинив вибори ректора Uni",
+      "status": "ok",
+      "duration_s": 22.6,
+      "error": null
+    },
+    {
+      "name": "research:Урочисте засідання парламенту ",
+      "status": "ok",
+      "duration_s": 575.4,
+      "error": null
+    },
+    {
+      "name": "generate:Урочисте засідання парламенту ",
+      "status": "ok",
+      "duration_s": 85.3,
+      "error": null
+    },
+    {
+      "name": "review:Урочисте засідання парламенту ",
+      "status": "ok",
+      "duration_s": 1117.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Урочисте засідання парламенту ",
+      "status": "ok",
+      "duration_s": 15.3,
+      "error": null
+    },
+    {
+      "name": "save:Урочисте засідання парламенту ",
+      "status": "ok",
+      "duration_s": 21.0,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 39.7,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

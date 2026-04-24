@@ -146,10 +146,11 @@ def build_pick_publish_prompt(title: str, article_text: str) -> tuple[str, str]:
     )
 
 
-def build_digest_prompt(articles_text: str, today_str: str) -> tuple[str, str]:
+def build_digest_prompt(articles_text: str, today_str: str, weekday_uk: str) -> tuple[str, str]:
     """Build s11 digest prompt."""
     return render(
         "s11_digest.xml.j2",
         articles_text=articles_text,
         today_str=today_str,
+        weekday_uk=weekday_uk,
     )
