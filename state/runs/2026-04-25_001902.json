@@ -1,0 +1,128 @@
+{
+  "timestamp": "2026-04-25_001902",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "trabalho-xxi-ugt-unanimous-rejection-seguro-april-25-dinner-veto-signal",
+  "author": "Pastelka News",
+  "duration_s": 3489.7,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 835.8,
+      "error": null
+    },
+    {
+      "name": "research:Trabalho XXI: UGT відкинула ре",
+      "status": "ok",
+      "duration_s": 236.2,
+      "error": null
+    },
+    {
+      "name": "generate:Trabalho XXI: UGT відкинула ре",
+      "status": "ok",
+      "duration_s": 94.8,
+      "error": null
+    },
+    {
+      "name": "review:Trabalho XXI: UGT відкинула ре",
+      "status": "ok",
+      "duration_s": 530.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Trabalho XXI: UGT відкинула ре",
+      "status": "ok",
+      "duration_s": 16.3,
+      "error": null
+    },
+    {
+      "name": "save:Trabalho XXI: UGT відкинула ре",
+      "status": "ok",
+      "duration_s": 102.0,
+      "error": null
+    },
+    {
+      "name": "research:Уряд знову зрізав знижку на па",
+      "status": "failed",
+      "duration_s": 936.1,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Страйк прокурорів: 75% участі ",
+      "status": "ok",
+      "duration_s": 491.4,
+      "error": null
+    },
+    {
+      "name": "generate:Страйк прокурорів: 75% участі ",
+      "status": "ok",
+      "duration_s": 70.4,
+      "error": null
+    },
+    {
+      "name": "review:Страйк прокурорів: 75% участі ",
+      "status": "failed",
+      "duration_s": 120.6,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Жити за межами Лісабона і Порт",
+      "status": "failed",
+      "duration_s": 1.8,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Як подати скаргу на роботодавц",
+      "status": "failed",
+      "duration_s": 1.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Переривання вагітності зросло ",
+      "status": "failed",
+      "duration_s": 1.8,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Прибуток CUF зріс до €49 млн —",
+      "status": "failed",
+      "duration_s": 2.3,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:МВС звільнило 20 поліцейських ",
+      "status": "failed",
+      "duration_s": 1.8,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Linha do Oeste перервана: як д",
+      "status": "failed",
+      "duration_s": 2.3,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Португальський оборонний секто",
+      "status": "failed",
+      "duration_s": 1.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 40.3,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

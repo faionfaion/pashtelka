@@ -1,0 +1,83 @@
+{
+  "articles": [
+    {
+      "topic": "40 років Чорнобилю: як українська громада Португалії згадує катастрофу — і чому 26 квітня досі визначає покоління",
+      "type": "news",
+      "angle": "Саме сьогодні — 40-а річниця аварії на ЧАЕС. Серед 60–79 тис. українців у Португалії є ліквідатори, переселенці, діти «чорнобильської зони». Стаття: які пам'ятні заходи проводить громада (церкви, асоціації), як Чорнобиль вплинув на антиядерний рух Португалії (референдум 1978, закриття проєкту Ferrel), де отримати медичне обстеження щитоподібної залози через SNS (безкоштовно), та короткий блок «як пояснити колегам-португальцям, чому цей день важливий». Не міжнародна політика — фокус виключно на діаспорі в Португалії.",
+      "sources_hint": "Search: 'Chernobyl 40 anos Portugal 2026', Ukrainian associations in Portugal (Facebook groups Associação dos Ucranianos em Portugal, Fundação Calouste Gulbenkian), RTP/Público archives on Portugal's nuclear referendum 1978, SNS 24 thyroid screening info, IPMA radiation monitoring (RADNET). CM Jornal column 'Chernobyl e um saco de batatas' from today.",
+      "priority": 1
+    },
+    {
+      "topic": "Підсумки 25 квітня: Сеґуру закликав молодь захищати свободу, Монтенеґро обіцяє децентралізацію — і 50 років перших вільних виборів",
+      "type": "news",
+      "angle": "Об'єднаний підсумок 25 квітня. Блок 1 — святкування: що сказав Сеґуру в промові (заклик до молоді, цитати про свободу — чи є підтекст для вето Trabalho XXI?), рекордні ходи в Лісабоні та Порту, інцидент чи спокій? Саме 25 квітня 1975 відбулися перші вільні вибори (50 років!). Блок 2 — Монтенеґро на 25 квітня заявив про пріоритет descentralização: що конкретно децентралізується (освіта, соцзахист, житло), яку роль уже відіграють Juntas для українців (атестадо резиденції, документи), ризики нерівності між муніципалітетами (Лісабон vs Ovar vs Loulé). Для українців: паралелі з Революцією гідності, що залишається актуальним із конституційних гарантій, і чому децентралізація важлива для тих, хто живе поза великими містами.",
+      "sources_hint": "RTP: 'Seguro pede aos jovens que defendam a liberdade', 'Desfile do 25 de abril volta a encher as ruas de Lisboa', 'Há 50 anos decorriam as primeiras eleições para a Assembleia da República'. CM Jornal: 'Primeiro-ministro defende descentralização'. DGAL, Lei 50/2018 competence transfers status, ACM/AIMA local integration programs. Público, Lusa wire.",
+      "priority": 1
+    },
+    {
+      "topic": "Тиждень уперед 27 квітня – 1 травня: День працівника, тиждень рефлексії вчителів, зустріч Concertação Social і що працює на свято",
+      "type": "utility",
+      "angle": "Щотижневий огляд на наступний тиждень. Ключові події: 27.04 — чергове засідання ECD (вчителі, FENPROF); 28.04 — нові ціни на паливо (Іран назвав відповідь «недостатньою» — ризик подорожчання); 1.05 — День працівника (feriado nacional): маніфестації CGTP та UGT (цьогоріч із особливим контекстом Trabalho XXI), що закрито (банки, AIMA, Finanças, школи), метро/автобуси — перевіряти розклад вихідного дня. 7.05 — фінальне засідання Concertação Social (дедлайн уряду для реформи). Паливо, IRS нагадування (30 червня), погода на тиждень.",
+      "sources_hint": "CGTP.pt and UGT.pt May 1 event pages, AIMA holiday schedule, Carris/Metro Lisboa/STCP/Metro do Porto feriado schedules, CP comboios, IPMA 7-day forecast, ANAREC fuel price forecast Monday April 28, FENPROF 'Semana de Reflexão April 24-30'. Cross-ref our Trabalho XXI coverage.",
+      "priority": 1
+    },
+    {
+      "topic": "Банківські рахунки та грошові перекази для іммігрантів у Португалії: від NIF до Wise — повний огляд 2026",
+      "type": "material",
+      "angle": "Перший матеріал Pashtelka про банківську систему. Компіляція з 5+ джерел: порівняння банків (CGD, BPI, ActivoBank, Moey, Revolut) за умовами для іммігрантів, комісіями, вимогами до документів (NIF, AR/PT). Блок «грошові перекази в Україну»: банківський переказ (SWIFT, €15–30), Wise (0,5–1,5%), Western Union (готівка), MoneyGram — порівняння вартості на €500. Податковий аспект: декларування закордонних рахунків у IRS (Anexo J), порог €50 000 для FATCA/CRS. Окремий блок: що робити, якщо банк відмовляє у відкритті рахунку (право за Diretiva Contas de Pagamento, скарга до Banco de Portugal). Для тимчасового захисту: які документи приймають банки замість AR.",
+      "sources_hint": "Banco de Portugal consumer portal (clientebancario.bpo.pt), DECO Proteste bank comparison 2026, individual bank websites (CGD, BPI, Millennium BCP, ActivoBank, Moey), Wise/Western Union/MoneyGram Portugal fee calculators, Diretiva 2014/92/EU (Payment Accounts Directive), AT (Autoridade Tributária) Anexo J guidance, CNAIM banking assistance info. Reddit r/portugal banking threads for immigrant experiences.",
+      "priority": 1
+    },
+    {
+      "topic": "Ціна на електрику не зросте: президент Mibel заспокоює — але рахунки все ще кусаються",
+      "type": "news",
+      "angle": "Новина ночі: президент Mibel (іберійського ринку електроенергії) заявив, що ціна на електроенергію не підвищиться. Це контрастує з прогнозом ERSE +6,3% з жовтня 2026 (згадували 15.04). Стаття: що саме сказав, чи це стосується регульованого тарифу чи ринкового, як це впливає на домогосподарства з контрактом mercado livre vs regulado. Для українців — нагадування про Tarifa Social (наш гід 15.04) та симулятор ERSE для зміни постачальника. Свіжий кут: не повторюємо гід, а пояснюємо нову заяву і її наслідки.",
+      "sources_hint": "RTP: 'Preço da luz não vai aumentar, diz presidente da Mibel'. Search: 'Mibel preço eletricidade 2026', ERSE price forecast, OMIE spot prices April 2026, Público/Expresso analysis. Cross-ref our April 15 article on energy bills.",
+      "priority": 2
+    },
+    {
+      "topic": "20 тисяч абонентів досі без зв'язку: що стоїть за збоєм і як підготуватися до наступного",
+      "type": "news",
+      "angle": "CM Jornal повідомляє: 20 000 клієнтів досі без зв'язку (телефон, інтернет, ТВ). Для українців, які залежать від відеодзвінків з родиною в Україні та мобільних застосунків для роботи (Uber/Bolt, доставка) — це критично. Стаття: який оператор, який регіон, причина збою, терміни відновлення. Практичний блок: права споживача при перебої зв'язку (ANACOM, компенсація), безкоштовний Wi-Fi в бібліотеках та CNAIM, альтернативні способи зв'язку (WhatsApp через Wi-Fi, eSIM backup).",
+      "sources_hint": "CM Jornal: '20 mil clientes continuam sem comunicações'. ANACOM incident reports, operator status pages (NOS, MEO, Vodafone), DECO Proteste consumer rights for telecom outages, municipal library Wi-Fi networks. SIC, TVI, RTP coverage.",
+      "priority": 2
+    },
+    {
+      "topic": "Іммігрантки складають майже 40% абортів у Португалії: що це говорить про доступ до контрацепції",
+      "type": "news",
+      "angle": "CM Jornal: жінки-іноземки складають майже 40% абортів, хоча іноземці — лише 12% населення. Стаття не сенсаційна, а аналітична: що стоїть за цифрами (бар'єри доступу до сімейного лікаря → до контрацепції, мовний бар'єр, культурні фактори, невизнання рецептів з країн походження). Для українок: безкоштовна контрацепція через SNS (comparticipação 100% для частини засобів), consulta de planeamento familiar без потреби в médico de família, телефон SNS 24 з перекладом. Перша стаття Pashtelka про репродуктивне здоров'я іммігранток.",
+      "sources_hint": "CM Jornal: 'Mulheres estrangeiras fazem quase 40% dos abortos'. DGS (Direção-Geral da Saúde) abortion statistics 2025, SNS contraception programs, CNPMA data, CITE reports on migrant women's health, WHO reproductive health data for migrant populations. APF (Associação para o Planeamento da Família).",
+      "priority": 2
+    },
+    {
+      "topic": "Два нових тренди в міграційному праві ЄС і що вони означають для іммігрантів у Португалії",
+      "type": "news",
+      "angle": "Público публікує аналіз двох нових розвитків у міграційному праві ЄС. Для українців у Португалії: будь-які зміни в EU Pact on Migration and Asylum, оновлення Temporary Protection Directive, або нові правила визнання кваліфікацій — безпосередньо впливають на їхній статус. Стаття: що конкретно змінюється, терміни транспозиції в португальське законодавство, чи впливає це на proteção temporária, і що робити вже зараз.",
+      "sources_hint": "Público: 'Dois desdobramentos no direito migratório da UE'. EUR-Lex recent migration directives/regulations 2026, European Commission migration updates, Diário da República transposition acts. SEF/AIMA official guidance. Jornal de Notícias, Observador legal analysis.",
+      "priority": 2
+    },
+    {
+      "topic": "Протест в Албуфейрі проти опріснювальної станції: що відбувається з водою в Алгарве і чому це важливо для кожного мешканця",
+      "type": "news",
+      "angle": "Сьогоднішня новина: жителі Албуфейри вийшли на протест проти будівництва dessalinizadora (опріснювальної станції). Алгарве — регіон з найгострішим дефіцитом води (водосховища нижче 40%). Для українців, які працюють у туризмі Алгарве, вода — базова потреба: обмеження на полив уже діють, ресторани зменшують використання. Стаття: чому місцеві проти (екологія, вплив на море, вартість), що пропонує уряд (€100 млн+), які обмеження на воду діють зараз і куди звертатися при проблемах з водопостачанням.",
+      "sources_hint": "RTP: 'Protesto em Albufeira junta população contra dessalinizadora'. Search: 'dessalinizadora Algarve 2026', APA (Agência Portuguesa do Ambiente) reservoir levels, Águas do Algarve, municipal water restrictions Albufeira/Loulé/Faro. Público, SIC Notícias.",
+      "priority": 2
+    },
+    {
+      "topic": "Громадський транспорт зі знижкою: як оформити Navegante, Andante, Sub23 та Social+ у 2026 році",
+      "type": "guide",
+      "angle": "Перший гід Pashtelka про транспортні проїзні. Покроково для трьох міст: Лісабон (Navegante Municipal €30/Metropolitano €40, Navegante Ocasional, passe Social+ для отримувачів RSI/CSI), Порту (Andante €30/40, Andante Tour для туристичного використання), Алгарве (Próximo, Vamus). Окремий блок Sub23 (€20/міс для молоді до 23 років — потрібен тільки CC/AR/PT + NIF). Де подати: Espaços Navegante (адреси), Lojas Andante, онлайн через navegante.pt та andante.pt. Документи: для AR — стандартно; для PT — які документи приймають (картка + NIF); для undocumented — що робити. Лайфхаки: Zapping vs passe, безкоштовний транспорт для дітей до 12 у Лісабоні, знижка 25% для 65+.",
+      "sources_hint": "navegante.pt, TML (Transportes Metropolitanos de Lisboa), andante.pt, TIP (Transportes Intermodais do Porto), Vamus Algarve, Próximo Algarve bus, CP (Comboios de Portugal) passes, Sub23 program page on governo.pt, Navegante social+ criteria, DECO Proteste transport passes comparison. Municipal transport authority websites.",
+      "priority": 2
+    },
+    {
+      "topic": "Парламент не зміг проконтролювати кризовий штаб уряду після блекауту: чому прозорість критична для безпеки",
+      "type": "news",
+      "angle": "Público: уряд створив célula de resposta a crises після великого блекауту, але парламент не зміг отримати інформацію про її роботу. Річниця іберійського апагау 28 квітня 2025 наближається. Для українців, які пережили блекаути під час війни: готовність Португалії до масштабних збоїв (електрика, зв'язок, вода) — питання безпеки. Стаття: що відомо про кризовий штаб, яких уроків навчилися (чи ні), рекомендації CNPCE, і практичний міні-блок «домашній аварійний набір» (ліхтарик, powerbank, запас води, готівка).",
+      "sources_hint": "Público: 'Parlamento não conseguiu escrutinar célula de resposta a crises criada pelo Governo depois do apagão'. Search: 'célula crise apagão parlamento 2026', CNPCE (Conselho Nacional de Planeamento Civil de Emergência), ERSE post-blackout report, REN grid resilience updates. Parlamento.pt committee records.",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-26",
+  "created_at": "2026-04-26T01:17:02.092978+00:00"
+}
