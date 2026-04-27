@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "Тиждень уперед 28 квітня – 4 травня: 1 Травня — довгі вихідні, Trabalho XXI у парламенті, дедлайни, погода та решта",
+      "type": "utility",
+      "angle": "Понеділковий day-by-day планер із інтегрованим прогнозом погоди. 28 квітня — нові ціни на пальне (DGEG), 6-й тур переговорів ECD (Статут вчителя). 30 квітня — закінчення Тижня рефлексії FENPROF. 1 травня (п'ятниця!) — Dia do Trabalhador, природний long weekend: що зачинено (банки, AIMA, Finanças, школи), що працює (торгові центри, Lidl/Continente — графіки, аптеки, метро), транспорт. 7 травня — фінальне засідання Concertação Social по Trabalho XXI. Нагадування: Portal das Matrículas відкритий, дедлайн 1 червня; IRS до 30 червня; розчищення ділянок до 31 травня. Погода на тиждень для Лісабона, Порту та Фару: чи буде дощ на 1 Травня, UV-індекс (перехід у травень — перший тиждень із UV 8–9), температура моря. IPMA попередження, якщо є.",
+      "sources_hint": "DGEG fuel prices Monday, FENPROF.pt, CML/CMP event calendars, Portal das Matrículas, CPCS press releases, Lusa, RTP, IPMA.pt 10-day forecast, IPMA marine/UV forecast, windguru.cz, Copernicus sea temperature",
+      "priority": 1
+    },
+    {
+      "topic": "Сім'ї після штормів знову платять кредити: мораторій закінчився — як переглянути умови або отримати відстрочку",
+      "type": "news",
+      "angle": "RTP повідомляє: мораторій на виплати іпотеки/кредитів для постраждалих від штормів Kristin/Leonardo/Marta завершується. Сім'ї у Centro та Lisboa e Vale do Tejo, які отримали відстрочку, мусять відновити платежі. Стаття пояснює: хто мав право на мораторій (DL 2/2026), що робити, якщо доходи не відновилися (переговори з банком, Lei 74/2009, DECO mediation, Balcão do Banco de Portugal), права на reestruturação кредиту, контакти. Для українських сімей у постраждалих районах — окремий блок. Перехресне посилання на статтю від 22 квітня про ЄЦБ та іпотеку та на серію про відновлення після штормів.",
+      "sources_hint": "RTP article 'Famílias afetadas pelas tempestades voltam a pagar empréstimos', DL 2/2026 moratorium text, Banco de Portugal consumer protection, DECO Proteste, ASF insurance data, Leiria/Coimbra municipal websites",
+      "priority": 1
+    },
+    {
+      "topic": "Trabalho XXI іде в парламент: 15-денний ультиматум, вето-калькуляція і що реально зміниться для працівників (continuation)",
+      "type": "news",
+      "angle": "Нова фаза після одноголосного відхилення UGT 23 квітня. Міністерка Палма Рамалью дала 15 днів — фінальне засідання CPCS 7 травня. Далі текст іде в парламент без жодної профспілки. Калькуляція вето: Сеґуру 24 квітня натякнув на «гідність праці» = вето-сигнал. AD+Chega+IL=160, але 5 умов Chega. Цей матеріал фокусується на ПАРЛАМЕНТСЬКОМУ етапі: процедура, терміни, можливість змін у комітеті, реалістичний графік набрання чинності. Перехресне посилання на 11 попередніх статей серії. УВАГА РЕДАКТОРУ: це 12-та стаття серії за місяць — максимально уникати повторів, фокус лише на нових фактах парламентського процесу.",
+      "sources_hint": "Parlamento.pt agenda, Lusa, Observador, Público political coverage, RTP Parlamento, Chega website for 5 conditions, Seguro April 25 speech transcript",
+      "priority": 1
+    },
+    {
+      "topic": "1 Травня в Португалії: маніфестації CGTP і UGT, трудові права у feriado — і чим Dia do Trabalhador відрізняється від українського свята",
+      "type": "news",
+      "angle": "1 травня (п'ятниця) — Dia do Trabalhador. Практичну інформацію «що працює/зачинено» читач знайде у тижневому планері — цей матеріал фокусується на трьох унікальних кутах. (1) Маніфестації CGTP і UGT: повні маршрути в Лісабоні, Порту, Фару — перекриті вулиці, зміни транспорту, де стояти, якщо хочете подивитися. (2) Культурний блок: пояснення Dia do Trabalhador у португальському контексті (перше святкування 1974, одразу після революції, конституційне право на страйк) vs 1 травня в Україні — як пояснити різницю португальським колегам. (3) Права працівників: робота у feriado — подвійна оплата або відгул (Art. 269 CT), що робити, якщо роботодавець вимагає вийти без компенсації.",
+      "sources_hint": "CGTP.pt May 1 program, UGT.pt, CML/CMP event pages, Código do Trabalho Art. 269, Metro/Carris/CP schedules, historical archives Fundação Mário Soares",
+      "priority": 2
+    },
+    {
+      "topic": "Енергетична мережа гальмує економіку: підключення нового бізнесу чекають місяцями",
+      "type": "news",
+      "angle": "Público аналізує: попри 80% відновлюваних джерел, фізична електрична мережа Португалії не справляється — черги на підключення для нових підприємств та індустріальних об'єктів. Це інший бік проблеми від стабільних оптових цін (наша стаття 26 квітня). Вплив на українських підприємців: затримки з відкриттям кафе, пекарні, автомийки, TVDE-зарядки. REN investment plan, bottleneck у трансформаторних підстанціях, фонд PRR на модернізацію мережі. Географія: проблема особливо гостра в промислових зонах Setúbal, Aveiro, Braga.",
+      "sources_hint": "Público article 'A falta de energia está a emperrar a economia', REN annual report 2025, ERSE grid access data, E-REDES connection queue statistics, PRR energy investments tracker, DGEG",
+      "priority": 2
+    },
+    {
+      "topic": "35% студентів у Політехніці Браганси — іноземці: як навчатися в інтер'єрі Португалії вдвічі дешевше",
+      "type": "news",
+      "angle": "RTP повідомляє: Instituto Politécnico de Bragança має 35% іноземних студентів. Ширший тренд — інтер'єр Португалії стає привабливим для іммігрантів: доступне житло (оренда T1 €250–400 vs €800–1200 у Лісабоні), менша конкуренція, програми інтеграції. Крім IPB: Politécnico de Viseu, Universidade de Trás-os-Montes (UTAD), Politécnico de Castelo Branco. Для українців: стипендії DGES, bolsas SASIPB, визнання дипломів (перехресне посилання на наш гід від 20 квітня), мешканці 6+ місяців платять propinas €697/рік як португальці.",
+      "sources_hint": "RTP article on IPB 35% foreign students, IPB.pt international office, DGES bolsas, SASIPB housing, Idealista Bragança rent data, UTAD/IPV websites, INE regional population data",
+      "priority": 2
+    },
+    {
+      "topic": "Новий закон про оренду Lei 9-A/2026: режим RSAA з червня — як це може збільшити пропозицію доступного житла",
+      "type": "news",
+      "angle": "З червня 2026 запускається режим RSAA — глибший аналіз механіки, ніж у нашому огляді цін від 20 квітня (де лише згадано три ставки). Фокус на НОВИХ деталях: як працює реєстрація орендодавця на Portal das Finanças, процедура сертифікації «доступної ціни» (методика INE/IHRU), чи зобов'язаний орендодавець передати знижку орендарю (ні — лише стимул), прогнозні моделі конверсії з AL у довгостроковий ринок. Аналіз: чи реально орендодавці перейдуть з AL на довгостроковий ринок? AHRESP/ALEP вже протестують. Коефіцієнт підвищення 2026 — 2,24%. Перехресне посилання на огляд цін від 20 квітня — без повтору базової інформації.",
+      "sources_hint": "Lei 9-A/2026 full text (DRE.pt), RSAA regime rules, Portal das Finanças landlord registration, Confidencial Imobiliário AL-to-rental conversion data, AHRESP/ALEP reaction, INE housing data Q1 2026, IHRU affordable rent methodology",
+      "priority": 2
+    },
+    {
+      "topic": "FENPROF: проміжні результати Тижня рефлексії та сьогоднішній 6-й раунд переговорів ECD — що це означає для батьків (continuation)",
+      "type": "news",
+      "angle": "Два паралельні треки. (1) СЬОГОДНІ 27 квітня — 6-й раунд переговорів з Міністерством освіти щодо перегляду ECD (Статуту педагогічної кар'єри). Головне питання: mapas de pessoal vs quadros — чи збережуться постійні посади вчителів PLNM. (2) Тиждень рефлексії FENPROF (24–30 квітня) на середині: перші результати шкільних зборів, масштаб підтримки страйку, підготовка до маніфестації 16 травня. Практичний фокус: якщо у вашої дитини немає вчителя PLNM — альтернативи (PPT Online, RTP Ensina, бібліотечні програми). Як перевірити, чи школа вашої дитини охоплена PLNM, через DGEEC. Перехресне посилання на статтю від 21 квітня.",
+      "sources_hint": "FENPROF.pt Week of Reflection reports, SPGL communiqués, DGEEC PLNM coverage data, school assembly reports (sindical bulletins), Ministry of Education press releases, PPT Online platform, ECD negotiation schedule",
+      "priority": 2
+    },
+    {
+      "topic": "Банківські послуги для іммігрантів у Португалії: рахунок, картка, перекази в Україну — повний порівняльний гід",
+      "type": "material",
+      "angle": "Компіляція з 5+ джерел. Блок 1: відкриття рахунку (мінімальний — conta base за законом, звичайний) у ActivoBank, Moey, CGD, Millennium, Novobanco — порівняння вимог до документів (NIF, AR/PT, comprovativo morada). Блок 2: грошові перекази в Україну — банківський SWIFT (€15–30, 2–5 днів), Wise (0.5–1.5%, хвилини), Western Union, MoneyGram, PUMB Direct — порівняння комісій і курсів. Блок 3: картки для щоденного використання — MBWay, MB NET, дебетові vs кредитні. Блок 4: типові проблеми іммігрантів — відмова у відкритті рахунку (і як оскаржити через Banco de Portugal), заморожування рахунку через compliance, підтвердження доходів. Блок 5: crypto-to-UAH опції. Перша стаття Pashtelka про банкінг.",
+      "sources_hint": "Banco de Portugal conta base rules, ActivoBank/Moey/CGD/BCP account comparison, Wise/WU/MoneyGram fee calculators, DECO Proteste banking comparisons, Banco de Portugal complaints portal, MBWay documentation, NBU cross-border transfer rules, community forums (Facebook groups 'Українці в Португалії')",
+      "priority": 2
+    },
+    {
+      "topic": "Іспанія легалізує 500 тис. іммігрантів за 75 днів — а що пропонує Португалія? Порівняння двох моделей",
+      "type": "immigration",
+      "angle": "Іспанія запустила масову регуляризацію 16 квітня (до 30 червня): будь-хто з 2+ роками проживання та робочим контрактом може легалізуватися. Португалія обрала протилежний шлях: жорсткіший закон Lei 61/2025, бекґраунд-чеки, AIMA з індексом довіри 17,2/100. УВАГА РЕДАКТОРУ: Сеґуру у Мадриді (20 квітня) та звіт Amnesty (21 квітня) вже торкалися теми, стаття від 26 квітня про ЄС-дедлайни покрила опції переходу на AR. Цей матеріал виправданий лише якщо дає СИСТЕМАТИЧНЕ порівняння моделей (вимоги, терміни, результати), а не повторює «переходьте на AR». Фокус: конкретні уроки іспанського досвіду, ризики масової регуляризації, і ЧОТИРИ реальні шляхи для українців зараз (тимчасовий захист, перехід на AR, навчальна віза, Golden Visa). Уникати повторів із 26 квітня.",
+      "sources_hint": "BOE Spain regularization decree, Público/Observador comparison analysis, Lei 61/2025 text, AIMA statistics Q1 2026, SEF/AIMA backlog data, Casa da América Latina, Amnesty International Portugal report, Spanish Ministry of Inclusion data",
+      "priority": 3
+    }
+  ],
+  "date": "2026-04-27",
+  "created_at": "2026-04-27T01:17:02.405738+00:00"
+}
