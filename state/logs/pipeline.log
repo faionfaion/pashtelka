@@ -16044,3 +16044,161 @@ TimeoutError: agent_query timed out after 300s
 2026-04-27 01:58:59 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Finalized: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/storm-moratorium-ends-april-27-credit-restructuring-guide.jpg
 01:58:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/storm-moratorium-ends-april-27-credit-restructuring-guide.md
 2026-04-27 01:58:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/storm-moratorium-ends-april-27-credit-restructuring-guide.md
+01:59:00 [pipeline] INFO: Article ready: storm-moratorium-ends-april-27-credit-restructuring-guide (Мораторій на кредити після штормів закінчився: 7 4)
+2026-04-27 01:59:00 [pipeline] INFO: Article ready: storm-moratorium-ends-april-27-credit-restructuring-guide (Мораторій на кредити після штормів закінчився: 7 4)
+01:59:00 [pipeline] INFO: === Article 3/10 ===
+2026-04-27 01:59:00 [pipeline] INFO: === Article 3/10 ===
+01:59:00 [pipeline] INFO: --- Article: [news] Trabalho XXI іде в парламент: 15-денний ультиматум, вето-кал ---
+2026-04-27 01:59:00 [pipeline] INFO: --- Article: [news] Trabalho XXI іде в парламент: 15-денний ультиматум, вето-кал ---
+01:59:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 01:59:00 [asyncio] DEBUG: Using selector: EpollSelector
+01:59:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 01:59:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:04:00 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-27 02:04:00 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:04:05 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.2s
+2026-04-27 02:04:05 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.2s
+02:04:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:04:10 [asyncio] DEBUG: Using selector: EpollSelector
+02:04:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:04:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:09:10 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-27 02:09:10 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:09:15 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 11.4s
+2026-04-27 02:09:15 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 11.4s
+02:09:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:09:27 [asyncio] DEBUG: Using selector: EpollSelector
+02:09:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:09:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:14:27 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-27 02:14:27 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:14:32 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: agent_query timed out after 300s
+2026-04-27 02:14:32 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: agent_query timed out after 300s
+02:14:32 [pipeline] ERROR: Failed to generate article: Trabalho XXI іде в парламент: 15-денний ультиматум, вето-кал
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 222, in agent_query
+    raise last_error  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^
+TimeoutError: agent_query timed out after 300s
+2026-04-27 02:14:32 [pipeline] ERROR: Failed to generate article: Trabalho XXI іде в парламент: 15-денний ультиматум, вето-кал
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 222, in agent_query
+    raise last_error  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^
+TimeoutError: agent_query timed out after 300s
+02:14:32 [pipeline] INFO: === Article 4/10 ===
+2026-04-27 02:14:32 [pipeline] INFO: === Article 4/10 ===
+02:14:32 [pipeline] INFO: --- Article: [news] 1 Травня в Португалії: маніфестації CGTP і UGT, трудові прав ---
+2026-04-27 02:14:32 [pipeline] INFO: --- Article: [news] 1 Травня в Португалії: маніфестації CGTP і UGT, трудові прав ---
+02:14:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:14:32 [asyncio] DEBUG: Using selector: EpollSelector
+02:14:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:14:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:19:32 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-27 02:19:32 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:19:37 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.9s
+2026-04-27 02:19:37 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.9s
+02:19:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:19:43 [asyncio] DEBUG: Using selector: EpollSelector
+02:19:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:19:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:24:43 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-27 02:24:43 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+02:24:48 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 13.2s
+2026-04-27 02:24:48 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 13.2s
+02:25:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:25:02 [asyncio] DEBUG: Using selector: EpollSelector
+02:25:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:25:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:29:27 [pipeline.stages.s2_research] INFO: Research complete: 13461 chars
+2026-04-27 02:29:27 [pipeline.stages.s2_research] INFO: Research complete: 13461 chars
+02:29:27 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:29:27 [asyncio] DEBUG: Using selector: EpollSelector
+02:29:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:29:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:31:04 [pipeline.stages.s3_generate] INFO: Generated: '1 Травня в Португалії: маніфестації CGTP і UGT, маршрути, перекриття — і що робити, якщо вас змусили працювати у feriado' (slug=may-1-dia-do-trabalhador-cgtp-ugt-marches-workers-rights-feriado, 593 words, 12 sources)
+2026-04-27 02:31:04 [pipeline.stages.s3_generate] INFO: Generated: '1 Травня в Португалії: маніфестації CGTP і UGT, маршрути, перекриття — і що робити, якщо вас змусили працювати у feriado' (slug=may-1-dia-do-trabalhador-cgtp-ugt-marches-workers-rights-feriado, 593 words, 12 sources)
+02:31:04 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:31:04 [asyncio] DEBUG: Using selector: EpollSelector
+02:31:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:31:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:32:14 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-04-27 02:32:14 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+02:32:14 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, релевантністю та практичною цінністю. Кілька правок — і можна публікувати.
+
+**Що потрібно виправити:**
+
+1. **Трамвай 15E до Жаморі — перевірити або прибрати.** 15E курсує 
+2026-04-27 02:32:14 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за структурою, релевантністю та практичною цінністю. Кілька правок — і можна публікувати.
+
+**Що потрібно виправити:**
+
+1. **Трамвай 15E до Жаморі — перевірити або прибрати.** 15E курсує 
+02:32:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:32:14 [asyncio] DEBUG: Using selector: EpollSelector
+02:32:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:32:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:33:20 [pipeline.stages.s5_revise] INFO: Revised article: 637 words
+2026-04-27 02:33:20 [pipeline.stages.s5_revise] INFO: Revised article: 637 words
+02:33:20 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-04-27 02:33:20 [pipeline] INFO: === Review cycle 1/3 complete ===
+02:33:20 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:33:20 [asyncio] DEBUG: Using selector: EpollSelector
+02:33:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:33:20 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:34:28 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-04-27 02:34:28 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+02:34:28 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований матеріал з високою практичною цінністю для аудиторії. Джерела перевірені, португальські терміни пояснені, юридична частина коректна (Ст. 269 CT). Історична паралель Порту
+2026-04-27 02:34:28 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований матеріал з високою практичною цінністю для аудиторії. Джерела перевірені, португальські терміни пояснені, юридична частина коректна (Ст. 269 CT). Історична паралель Порту
+02:34:28 [pipeline] INFO: Article approved after 1 revision(s)
+2026-04-27 02:34:28 [pipeline] INFO: Article approved after 1 revision(s)
+02:34:28 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:34:28 [asyncio] DEBUG: Using selector: EpollSelector
+02:34:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:34:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:34:49 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1226 chars, vocab: 5 words, pt: 222 chars
+2026-04-27 02:34:49 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1226 chars, vocab: 5 words, pt: 222 chars
+02:34:49 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=may-1-dia-do-trabalhador-cgtp-ugt-marches-workers-rights-feriado
+2026-04-27 02:34:49 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=may-1-dia-do-trabalhador-cgtp-ugt-marches-workers-rights-feriado
+02:34:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:34:49 [asyncio] DEBUG: Using selector: EpollSelector
+02:34:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:34:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:35:29 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy counts (fingers, limbs, eyes) to preven
+2026-04-27 02:35:29 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy counts (fingers, limbs, eyes) to preven
+02:35:29 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-04-27 02:35:29 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+02:35:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-04-27 02:35:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+02:37:02 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-04-27 02:37:02 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+02:37:03 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-04-27 02:37:03 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+02:37:03 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23622
+2026-04-27 02:37:03 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23622
+02:37:03 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23622 (unknown)
+2026-04-27 02:37:03 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23622 (unknown)
+02:37:03 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23675 3205762
+2026-04-27 02:37:03 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23675 3205762
+02:37:03 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/may-1-dia-do-trabalhador-cgtp-ugt-marches-workers-rights-feriado.jpg (286 KB, quality=auto)
+2026-04-27 02:37:03 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/may-1-dia-do-trabalhador-cgtp-ugt-marches-workers-rights-feriado.jpg (286 KB, quality=auto)
+02:37:03 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 02:37:03 [asyncio] DEBUG: Using selector: EpollSelector
+02:37:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 02:37:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+02:37:58 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-04-27 02:37:58 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+02:37:58 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-04-27 02:37:58 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+02:37:58 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/may-1-dia-do-trabalhador-cgtp-ugt-marches-workers-rights-feriado.md
+2026-04-27 02:37:58 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/may-1-dia-do-trabalhador-cgtp-ugt-marches-workers-rights-feriado.md
