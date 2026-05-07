@@ -9,6 +9,19 @@ project uses semantic-ish versioning loosely — one logical change per commit
 ## [Unreleased]
 
 ### Added
+- `pipeline/b1_validator.py` — sync B1 readability validator. Three
+  metrics (Flesch reading ease via textstat, avg sentence length, B1
+  lemma coverage) return `passed` flag + `retry_addendum` for prompt
+  retry. Strips markdown markup; rule-based PT lemmatiser folds common
+  inflections so the 3000-lemma list covers more surface forms.
+  [pt-translation-b1 TASK-01]
+- `pipeline/data/pt_b1_lemmas.txt` — 3000 top PT lemmas from
+  OpenSubtitles 2018 50k frequency list. [pt-translation-b1 TASK-01]
+- `tests/test_b1_validator.py` — 15 cases across basics, markdown
+  stripping, retry addendum, sentinels. All green.
+  [pt-translation-b1 TASK-01]
+- `textstat>=0.7.4` declared in `requirements.txt`.
+  [pt-translation-b1 TASK-01]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
