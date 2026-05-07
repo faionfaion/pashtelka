@@ -217,7 +217,7 @@ grep -c "/pt/" gatsby/public/sitemap-pt.xml   # ≥1 (after first PT article)
 grep -c 'lang="uk"' gatsby/public/index.html   # ≥1
 ```
 
-## AC6 — TG channel @pastelka_pt
+## AC6 — TG channel @pashtelka_pt
 
 Manual until the operator creates the channel:
 
@@ -225,7 +225,7 @@ Manual until the operator creates the channel:
 # Config knob exists
 python3 -c "from pipeline.config import TG_CHANNEL_PT_USERNAME, TG_CHANNEL_PT_ID; \
   print('username:', TG_CHANNEL_PT_USERNAME, 'id:', TG_CHANNEL_PT_ID or 'EMPTY')"
-# expect: username=pastelka_pt, id=EMPTY (until operator sets env)
+# expect: username=pashtelka_pt, id=EMPTY (until operator sets env)
 
 # Empty id triggers clear failure
 python3 -c "
@@ -241,7 +241,7 @@ except RuntimeError as e:
 After channel exists (operator-side):
 
 ```bash
-# 1. Operator creates @pastelka_pt
+# 1. Operator creates @pashtelka_pt
 # 2. Adds @nero_open_bot as admin
 # 3. Looks up chat_id via getUpdates
 # 4. export TG_CHANNEL_PT_ID=-1003xxxxxxxxxx

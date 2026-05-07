@@ -55,7 +55,7 @@ Make every pashtelka article available in **simplified Portuguese (max CEFR B1)*
 - Hreflang link tags between UA/PT versions on every article.
 
 ### AC6 — New TG channel for PT
-- Channel handle: **`@pastelka_pt`** (mirror of UA brand for both audiences).
+- Channel handle: **`@pashtelka_pt`** (mirror of UA brand for both audiences).
 - Bot: `@nero_open_bot` (shared) added as admin.
 - Channel chat_id added to `pipeline/config.py` as `TG_CHANNEL_PT`.
 - Avatar + bio set up in PT (mirrors UA channel intent).
@@ -83,7 +83,7 @@ Make every pashtelka article available in **simplified Portuguese (max CEFR B1)*
 
 ## Decisions
 
-- **PT channel name:** `@pastelka_pt` (decided 2026-05-07).
+- **PT channel name:** `@pashtelka_pt` (decided 2026-05-07).
 - **Target audience:** both equal weight — native PT speakers AND UA diaspora practising PT. B1 constraint serves both. Tone neutral-friendly, no insider UA framing in body copy; UA framing only in editorial bylines / about page.
 
 ## Open Questions

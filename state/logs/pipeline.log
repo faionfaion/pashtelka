@@ -16530,3 +16530,1746 @@ TimeoutError: agent_query timed out after 300s
 2026-04-27 03:29:23 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 03:29:23 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/fenprof-ecd-6th-round-week-reflection-plnm-parents-guide-april-27.md
 2026-04-27 03:29:23 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/fenprof-ecd-6th-round-week-reflection-plnm-parents-guide-april-27.md
+03:29:23 [pipeline] INFO: Article ready: fenprof-ecd-6th-round-week-reflection-plnm-parents-guide-april-27 (Сьогодні — 6-й раунд переговорів щодо кар'єри вчит)
+2026-04-27 03:29:23 [pipeline] INFO: Article ready: fenprof-ecd-6th-round-week-reflection-plnm-parents-guide-april-27 (Сьогодні — 6-й раунд переговорів щодо кар'єри вчит)
+03:29:23 [pipeline] INFO: === Article 9/10 ===
+2026-04-27 03:29:23 [pipeline] INFO: === Article 9/10 ===
+03:29:23 [pipeline] INFO: --- Article: [material] Банківські послуги для іммігрантів у Португалії: рахунок, ка ---
+2026-04-27 03:29:23 [pipeline] INFO: --- Article: [material] Банківські послуги для іммігрантів у Португалії: рахунок, ка ---
+03:29:23 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 03:29:23 [asyncio] DEBUG: Using selector: EpollSelector
+03:29:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 03:29:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:34:23 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-27 03:34:23 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+03:34:28 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.2s
+2026-04-27 03:34:28 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.2s
+03:34:34 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 03:34:34 [asyncio] DEBUG: Using selector: EpollSelector
+03:34:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 03:34:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:39:34 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-27 03:39:34 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+03:39:39 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 11.9s
+2026-04-27 03:39:39 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 11.9s
+03:39:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 03:39:51 [asyncio] DEBUG: Using selector: EpollSelector
+03:39:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 03:39:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:44:51 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-04-27 03:44:51 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+03:44:56 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: agent_query timed out after 300s
+2026-04-27 03:44:56 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: agent_query timed out after 300s
+03:44:56 [pipeline] ERROR: Failed to generate article: Банківські послуги для іммігрантів у Португалії: рахунок, ка
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 222, in agent_query
+    raise last_error  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^
+TimeoutError: agent_query timed out after 300s
+2026-04-27 03:44:56 [pipeline] ERROR: Failed to generate article: Банківські послуги для іммігрантів у Португалії: рахунок, ка
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 222, in agent_query
+    raise last_error  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^
+TimeoutError: agent_query timed out after 300s
+03:44:56 [pipeline] INFO: === Article 10/10 ===
+2026-04-27 03:44:56 [pipeline] INFO: === Article 10/10 ===
+03:44:56 [pipeline] INFO: --- Article: [immigration] Іспанія легалізує 500 тис. іммігрантів за 75 днів — а що про ---
+2026-04-27 03:44:56 [pipeline] INFO: --- Article: [immigration] Іспанія легалізує 500 тис. іммігрантів за 75 днів — а що про ---
+03:44:56 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 03:44:56 [asyncio] DEBUG: Using selector: EpollSelector
+03:44:56 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 03:44:56 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:45:36 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-27 03:45:36 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+03:45:36 [pipeline] ERROR: Failed to generate article: Іспанія легалізує 500 тис. іммігрантів за 75 днів — а що про
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 192, in agent_query
+    result = asyncio.run(
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 170, in _async_agent
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-27 03:45:36 [pipeline] ERROR: Failed to generate article: Іспанія легалізує 500 тис. іммігрантів за 75 днів — а що про
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 135, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 21, in run
+    ctx.research_text = agent_query(
+                        ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 192, in agent_query
+    result = asyncio.run(
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 170, in _async_agent
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+03:45:36 [pipeline] INFO: Generated 5/10 articles
+2026-04-27 03:45:36 [pipeline] INFO: Generated 5/10 articles
+03:45:38 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-04-27 03:45:38 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+03:45:38 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-04-27 03:45:38 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+03:46:17 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-04-27 03:46:17 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+03:46:17 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/fenprof-ecd-6th-round-week-reflection-plnm-parents-guide-april-27/ (200 OK, title found)
+2026-04-27 03:46:17 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/fenprof-ecd-6th-round-week-reflection-plnm-parents-guide-april-27/ (200 OK, title found)
+03:46:17 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-27_034617.json
+2026-04-27 03:46:17 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-04-27_034617.json
+03:46:17 [pipeline] INFO: Batch complete: 5 articles
+2026-04-27 03:46:17 [pipeline] INFO: Batch complete: 5 articles
+2026-04-27 20:00:02 [pipeline] INFO: === Digest mode ===
+2026-04-27 20:00:02 [pipeline.stages.s11_digest] INFO: Building digest for 5 news articles
+2026-04-27 20:00:02 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-27 20:00:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-27 20:00:04 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-27 20:00:04 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 63, in cli
+    result = run_digest()
+             ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/digest.py", line 19, in run
+    result = s11_digest.run()
+             ^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s11_digest.py", line 52, in run
+    result = _generate_digest(articles, today_str, weekday_uk)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s11_digest.py", line 147, in _generate_digest
+    return structured_query(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 121, in structured_query
+    text = asyncio.run(
+           ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 92, in _async_structured
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+01:17:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-04-28 01:17:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+01:17:03 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-04-28 01:17:03 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+01:17:03 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-04-28 01:17:03 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+01:17:03 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-04-28 01:17:03 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+01:17:03 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-04-28 01:17:03 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+01:17:03 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-04-28 01:17:03 [pipeline.feeds] INFO: Feed publico: 10 items
+01:17:04 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-04-28 01:17:04 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+01:17:04 [asyncio] DEBUG: Using selector: EpollSelector
+2026-04-28 01:17:04 [asyncio] DEBUG: Using selector: EpollSelector
+01:17:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-04-28 01:17:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+01:17:06 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-28 01:17:06 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+01:17:06 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 54, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 44, in run
+    plan = s0_editorial_plan.run()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s0_editorial_plan.py", line 53, in run
+    plan = structured_query(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 121, in structured_query
+    text = asyncio.run(
+           ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 92, in _async_structured
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-04-28 01:17:06 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 54, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 44, in run
+    plan = s0_editorial_plan.run()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s0_editorial_plan.py", line 53, in run
+    plan = structured_query(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 121, in structured_query
+    text = asyncio.run(
+           ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 92, in _async_structured
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-05-07 01:18:04 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-05-07 01:18:04 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-05-07 01:18:04 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-05-07 01:18:04 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-05-07 01:18:04 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-05-07 01:18:05 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-05-07 01:18:05 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-05-07 01:18:05 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-07 01:18:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-07 01:20:16 [pipeline] ERROR: Pre-flight check failed:
+LLM_STACK=new requires:
+  - GEMINI_API_KEY env var
+Add to ~/workspace/.env or unset LLM_STACK to fall back.
+2026-05-07 01:20:20 [pipeline] ERROR: Pre-flight check failed:
+LLM_STACK=new requires:
+  - GEMINI_API_KEY env var
+Add to ~/workspace/.env or unset LLM_STACK to fall back.
+2026-05-07 01:24:01 [pipeline] INFO: Batch complete: 0 articles
+2026-05-07 01:24:01 [pipeline] INFO:   1. [news] P1: Test
+2026-05-07 01:24:01 [pipeline] INFO:   1. [news] P1: Test
+2026-05-07 01:24:01 [pipeline] INFO:   1. [news] P1: Test
+2026-05-07 01:24:01 [pipeline] INFO:   1. [news] P1: Test
+2026-05-07 01:24:01 [pipeline] INFO: Batch complete: 0 articles
+2026-05-07 01:24:01 [pipeline] INFO: Batch complete: 0 articles
+2026-05-07 01:24:01 [pipeline] INFO: Batch complete: 0 articles
+2026-05-07 01:24:01 [pipeline] INFO: Batch complete: 0 articles
+2026-05-07 01:24:01 [pipeline] INFO: Batch complete: 0 articles
+2026-05-07 01:24:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 63, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Pipeline crashed
+2026-05-07 01:24:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 63, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Pipeline crashed
+2026-05-07 01:24:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 63, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Pipeline crashed
+2026-05-07 01:24:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 63, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Pipeline crashed
+2026-05-07 01:24:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 63, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Pipeline crashed
+2026-05-07 01:24:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 63, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Pipeline crashed
+2026-05-07 01:24:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 63, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Pipeline crashed
+2026-05-07 01:24:01 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 63, in cli
+    completed = run_generate(dry_run=args.dry_run)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Pipeline crashed
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: structured_query timed out after 900s — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 1/2: Server overloaded — 6.3s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 2/2: Server overloaded — 10.0s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 2/2: Server overloaded — 10.0s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 2/2: Server overloaded — 10.0s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 2/2: Server overloaded — 10.0s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 2/2: Server overloaded — 10.0s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 2/2: Server overloaded — 10.0s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 2/2: Server overloaded — 10.0s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 2/2: Server overloaded — 10.0s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: structured_query retry 2/2: Server overloaded — 10.0s
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: structured_query failed after 3 attempts: Server overloaded
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: structured_query failed after 3 attempts: Server overloaded
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: structured_query failed after 3 attempts: Server overloaded
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: structured_query failed after 3 attempts: Server overloaded
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: structured_query failed after 3 attempts: Server overloaded
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: structured_query failed after 3 attempts: Server overloaded
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: structured_query failed after 3 attempts: Server overloaded
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: structured_query failed after 3 attempts: Server overloaded
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: structured_query failed after 3 attempts: Server overloaded
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: Empty response — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: Empty response — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: Empty response — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: Empty response — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: Empty response — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: Empty response — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: Empty response — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: Empty response — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: Empty response — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 900s — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 900s — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 900s — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 900s — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 900s — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 900s — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 900s — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 900s — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 900s — 6.8s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: HTTP 503 — 7.1s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: HTTP 503 — 7.1s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: HTTP 503 — 7.1s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: HTTP 503 — 7.1s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: HTTP 503 — 7.1s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: HTTP 503 — 7.1s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: HTTP 503 — 7.1s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: HTTP 503 — 7.1s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 1/2: HTTP 503 — 7.1s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 2/2: HTTP 503 — 11.9s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 2/2: HTTP 503 — 11.9s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 2/2: HTTP 503 — 11.9s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 2/2: HTTP 503 — 11.9s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 2/2: HTTP 503 — 11.9s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 2/2: HTTP 503 — 11.9s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 2/2: HTTP 503 — 11.9s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 2/2: HTTP 503 — 11.9s
+2026-05-07 01:24:01 [pipeline.sdk] WARNING: agent_query retry 2/2: HTTP 503 — 11.9s
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: HTTP 503
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: HTTP 503
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: HTTP 503
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: HTTP 503
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: HTTP 503
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: HTTP 503
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: HTTP 503
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: HTTP 503
+2026-05-07 01:24:01 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: HTTP 503
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 1 articles for 2026-05-07
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 1 articles for 2026-05-07
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 1 articles for 2026-05-07
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 1 articles for 2026-05-07
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 1 articles for 2026-05-07
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 1 articles for 2026-05-07
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 1 articles for 2026-05-07
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 1 articles for 2026-05-07
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 1 articles for 2026-05-07
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (1 articles)
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (1 articles)
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (1 articles)
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (1 articles)
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (1 articles)
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (1 articles)
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (1 articles)
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (1 articles)
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (1 articles)
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editor notes cleared after use
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editor notes cleared after use
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editor notes cleared after use
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editor notes cleared after use
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editor notes cleared after use
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editor notes cleared after use
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editor notes cleared after use
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editor notes cleared after use
+2026-05-07 01:24:01 [pipeline.stages.s0_editorial_plan] INFO: Editor notes cleared after use
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 1 RSS items, 1 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 1 RSS items, 1 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 1 RSS items, 1 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 1 RSS items, 1 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 1 RSS items, 1 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 1 RSS items, 1 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 1 RSS items, 1 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 1 RSS items, 1 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 1 RSS items, 1 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 0 RSS items, 0 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 0 RSS items, 0 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 0 RSS items, 0 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 0 RSS items, 0 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 0 RSS items, 0 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 0 RSS items, 0 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 0 RSS items, 0 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 0 RSS items, 0 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s1_collect] INFO: Context: 0 RSS items, 0 existing articles
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Feedback: Good article, well written.
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Feedback: Good article, well written.
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Feedback: Good article, well written.
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Feedback: Good article, well written.
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Feedback: Good article, well written.
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Feedback: Good article, well written.
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Feedback: Good article, well written.
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Feedback: Good article, well written.
+2026-05-07 01:24:01 [pipeline.stages.s4_review] INFO: Feedback: Good article, well written.
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Review: score=5, approved=False
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Feedback: Needs more sources and detail.
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Feedback: Needs more sources and detail.
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Feedback: Needs more sources and detail.
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Feedback: Needs more sources and detail.
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Feedback: Needs more sources and detail.
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Feedback: Needs more sources and detail.
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Feedback: Needs more sources and detail.
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Feedback: Needs more sources and detail.
+2026-05-07 01:24:02 [pipeline.stages.s4_review] INFO: Feedback: Needs more sources and detail.
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_teaser0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_teaser0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_teaser0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_teaser0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_teaser0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_teaser0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_teaser0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_teaser0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_teaser0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_summary0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_summary0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_summary0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_summary0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_summary0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_summary0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_summary0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_summary0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_summary0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Image copied to: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/images/test-article-slug.jpg
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Image copied to: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/images/test-article-slug.jpg
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Image copied to: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/images/test-article-slug.jpg
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Image copied to: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/images/test-article-slug.jpg
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Image copied to: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/images/test-article-slug.jpg
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Image copied to: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/images/test-article-slug.jpg
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Image copied to: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/images/test-article-slug.jpg
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Image copied to: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/images/test-article-slug.jpg
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Image copied to: /tmp/pytest-of-nero/pytest-476/test_save_article_with_image0/images/test-article-slug.jpg
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_git_commit_f0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_git_commit_f0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_git_commit_f0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_git_commit_f0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_git_commit_f0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_git_commit_f0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_git_commit_f0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_git_commit_f0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_git_commit_f0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] WARNING: Git commit failed for test-article-slug, continuing
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_save.py", line 106, in run
+    _git_commit(ctx)
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git error
+2026-05-07 01:24:02 [pipeline.stages.s7_save] WARNING: Git commit failed for test-article-slug, continuing
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_save.py", line 106, in run
+    _git_commit(ctx)
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git error
+2026-05-07 01:24:02 [pipeline.stages.s7_save] WARNING: Git commit failed for test-article-slug, continuing
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_save.py", line 106, in run
+    _git_commit(ctx)
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git error
+2026-05-07 01:24:02 [pipeline.stages.s7_save] WARNING: Git commit failed for test-article-slug, continuing
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_save.py", line 106, in run
+    _git_commit(ctx)
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git error
+2026-05-07 01:24:02 [pipeline.stages.s7_save] WARNING: Git commit failed for test-article-slug, continuing
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_save.py", line 106, in run
+    _git_commit(ctx)
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git error
+2026-05-07 01:24:02 [pipeline.stages.s7_save] WARNING: Git commit failed for test-article-slug, continuing
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_save.py", line 106, in run
+    _git_commit(ctx)
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git error
+2026-05-07 01:24:02 [pipeline.stages.s7_save] WARNING: Git commit failed for test-article-slug, continuing
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_save.py", line 106, in run
+    _git_commit(ctx)
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git error
+2026-05-07 01:24:02 [pipeline.stages.s7_save] WARNING: Git commit failed for test-article-slug, continuing
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_save.py", line 106, in run
+    _git_commit(ctx)
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git error
+2026-05-07 01:24:02 [pipeline.stages.s7_save] WARNING: Git commit failed for test-article-slug, continuing
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_save.py", line 106, in run
+    _git_commit(ctx)
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git error
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_appends_to_e0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_appends_to_e0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_appends_to_e0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_appends_to_e0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_appends_to_e0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_appends_to_e0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_appends_to_e0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_appends_to_e0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_save] INFO: Article saved: /tmp/pytest-of-nero/pytest-476/test_save_article_appends_to_e0/content/test-article-slug.md
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: SSH error
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: SSH error
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: SSH error
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: SSH error
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: SSH error
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: SSH error
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: SSH error
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: SSH error
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Server deploy failed: SSH error
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Git push failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Git push failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Git push failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Git push failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Git push failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Git push failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Git push failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Git push failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Git push failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Deploy failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 47, in run
+    result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Deploy failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 47, in run
+    result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Deploy failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 47, in run
+    result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Deploy failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 47, in run
+    result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Deploy failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 47, in run
+    result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Deploy failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 47, in run
+    result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Deploy failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 47, in run
+    result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Deploy failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 47, in run
+    result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s7_deploy] ERROR: Deploy failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 47, in run
+    result = subprocess.run(ssh_cmd, capture_output=True, text=True, timeout=600)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s7_deploy.py", line 30, in run
+    subprocess.run(["git", "push", "origin", "master"],
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Git push failed
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/test-article-slug/ (200 OK, title found)
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/test-article-slug/ (200 OK, title found)
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/test-article-slug/ (200 OK, title found)
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/test-article-slug/ (200 OK, title found)
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/test-article-slug/ (200 OK, title found)
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/test-article-slug/ (200 OK, title found)
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/test-article-slug/ (200 OK, title found)
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/test-article-slug/ (200 OK, title found)
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] INFO: Site verified: https://pastelka.news/test-article-slug/ (200 OK, title found)
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] WARNING: Site returned 200 but title not found in body: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/test-article-slug/ — <urlopen error Connection refused>
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/test-article-slug/ — <urlopen error Connection refused>
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/test-article-slug/ — <urlopen error Connection refused>
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/test-article-slug/ — <urlopen error Connection refused>
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/test-article-slug/ — <urlopen error Connection refused>
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/test-article-slug/ — <urlopen error Connection refused>
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/test-article-slug/ — <urlopen error Connection refused>
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/test-article-slug/ — <urlopen error Connection refused>
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/test-article-slug/ — <urlopen error Connection refused>
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification error
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s8_verify.py", line 20, in run
+    with urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification error
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s8_verify.py", line 20, in run
+    with urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification error
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s8_verify.py", line 20, in run
+    with urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification error
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s8_verify.py", line 20, in run
+    with urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification error
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s8_verify.py", line 20, in run
+    with urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification error
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s8_verify.py", line 20, in run
+    with urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification error
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s8_verify.py", line 20, in run
+    with urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification error
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s8_verify.py", line 20, in run
+    with urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site verification error
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s8_verify.py", line 20, in run
+    with urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site returned status 500: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site returned status 500: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site returned status 500: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site returned status 500: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site returned status 500: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site returned status 500: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site returned status 500: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site returned status 500: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s8_verify] ERROR: Site returned status 500: https://pastelka.news/test-article-slug/
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=123
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=123
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=123
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=123
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=123
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=123
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=123
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=123
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=123
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] WARNING: No image found for test-article-slug, skipping TG publish
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] WARNING: No image found for test-article-slug, skipping TG publish
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] WARNING: No image found for test-article-slug, skipping TG publish
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] WARNING: No image found for test-article-slug, skipping TG publish
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] WARNING: No image found for test-article-slug, skipping TG publish
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] WARNING: No image found for test-article-slug, skipping TG publish
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] WARNING: No image found for test-article-slug, skipping TG publish
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] WARNING: No image found for test-article-slug, skipping TG publish
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] WARNING: No image found for test-article-slug, skipping TG publish
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] ERROR: Failed to publish to Telegram
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] ERROR: Failed to publish to Telegram
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] ERROR: Failed to publish to Telegram
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] ERROR: Failed to publish to Telegram
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] ERROR: Failed to publish to Telegram
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] ERROR: Failed to publish to Telegram
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] ERROR: Failed to publish to Telegram
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] ERROR: Failed to publish to Telegram
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] ERROR: Failed to publish to Telegram
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=200
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=200
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=200
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=200
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=200
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=200
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=200
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=200
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=200
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=321
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=321
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=321
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=321
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=321
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=321
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=321
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=321
+2026-05-07 01:24:02 [pipeline.stages.s9_publish_tg] INFO: Published photo to @pashtelka_news: msg_id=321
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: test-article -> msg 456
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: test-article -> msg 456
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: test-article -> msg 456
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: test-article -> msg 456
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: test-article -> msg 456
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: test-article -> msg 456
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: test-article -> msg 456
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: test-article -> msg 456
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: test-article -> msg 456
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] ERROR: Failed to publish test to TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] ERROR: Failed to publish test to TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] ERROR: Failed to publish test to TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] ERROR: Failed to publish test to TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] ERROR: Failed to publish test to TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] ERROR: Failed to publish test to TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] ERROR: Failed to publish test to TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] ERROR: Failed to publish test to TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] ERROR: Failed to publish test to TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: No unpublished articles available for TG
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: old-article -> msg 999
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: old-article -> msg 999
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: old-article -> msg 999
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: old-article -> msg 999
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: old-article -> msg 999
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: old-article -> msg 999
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: old-article -> msg 999
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: old-article -> msg 999
+2026-05-07 01:24:02 [pipeline.stages.s10_pick_and_publish] INFO: TG published: old-article -> msg 999
+2026-05-07 01:24:02 [pipeline.stages.s11_digest] INFO: Only 2 news articles today, skipping digest (min=5)
+2026-05-07 01:24:02 [pipeline.stages.s11_digest] INFO: Only 2 news articles today, skipping digest (min=5)
+2026-05-07 01:24:02 [pipeline.stages.s11_digest] INFO: Only 2 news articles today, skipping digest (min=5)
+2026-05-07 01:24:02 [pipeline.stages.s11_digest] INFO: Only 2 news articles today, skipping digest (min=5)
+2026-05-07 01:24:02 [pipeline.stages.s11_digest] INFO: Only 2 news articles today, skipping digest (min=5)
+2026-05-07 01:24:02 [pipeline.stages.s11_digest] INFO: Only 2 news articles today, skipping digest (min=5)
+2026-05-07 01:24:02 [pipeline.stages.s11_digest] INFO: Only 2 news articles today, skipping digest (min=5)
+2026-05-07 01:24:02 [pipeline.stages.s11_digest] INFO: Only 2 news articles today, skipping digest (min=5)
+2026-05-07 01:24:02 [pipeline.stages.s11_digest] INFO: Only 2 news articles today, skipping digest (min=5)
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send error: Bad Request
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send error: Bad Request
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send error: Bad Request
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send error: Bad Request
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send error: Bad Request
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send error: Bad Request
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send error: Bad Request
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send error: Bad Request
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send error: Bad Request
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 53, in send_text
+    resp = requests.post(f"{api}/sendMessage", json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Network error
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 53, in send_text
+    resp = requests.post(f"{api}/sendMessage", json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Network error
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 53, in send_text
+    resp = requests.post(f"{api}/sendMessage", json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Network error
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 53, in send_text
+    resp = requests.post(f"{api}/sendMessage", json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Network error
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 53, in send_text
+    resp = requests.post(f"{api}/sendMessage", json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Network error
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 53, in send_text
+    resp = requests.post(f"{api}/sendMessage", json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Network error
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 53, in send_text
+    resp = requests.post(f"{api}/sendMessage", json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Network error
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 53, in send_text
+    resp = requests.post(f"{api}/sendMessage", json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Network error
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 53, in send_text
+    resp = requests.post(f"{api}/sendMessage", json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Network error
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo error: Photo too large
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo error: Photo too large
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo error: Photo too large
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo error: Photo too large
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo error: Photo too large
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo error: Photo too large
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo error: Photo too large
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo error: Photo too large
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo error: Photo too large
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 78, in send_photo
+    with open(image_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test.jpg'
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 78, in send_photo
+    with open(image_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test.jpg'
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 78, in send_photo
+    with open(image_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test.jpg'
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 78, in send_photo
+    with open(image_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test.jpg'
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 78, in send_photo
+    with open(image_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test.jpg'
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 78, in send_photo
+    with open(image_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test.jpg'
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 78, in send_photo
+    with open(image_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test.jpg'
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 78, in send_photo
+    with open(image_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test.jpg'
+2026-05-07 01:24:02 [pipeline.telegram] ERROR: TG photo send failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 78, in send_photo
+    with open(image_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test.jpg'
+2026-05-07 01:24:02 [pipeline.telegram] WARNING: Failed to add reaction
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 105, in add_reaction
+    requests.post(
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: API error
+2026-05-07 01:24:02 [pipeline.telegram] WARNING: Failed to add reaction
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 105, in add_reaction
+    requests.post(
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: API error
+2026-05-07 01:24:02 [pipeline.telegram] WARNING: Failed to add reaction
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 105, in add_reaction
+    requests.post(
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: API error
+2026-05-07 01:24:02 [pipeline.telegram] WARNING: Failed to add reaction
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 105, in add_reaction
+    requests.post(
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: API error
+2026-05-07 01:24:02 [pipeline.telegram] WARNING: Failed to add reaction
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 105, in add_reaction
+    requests.post(
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: API error
+2026-05-07 01:24:02 [pipeline.telegram] WARNING: Failed to add reaction
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 105, in add_reaction
+    requests.post(
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: API error
+2026-05-07 01:24:02 [pipeline.telegram] WARNING: Failed to add reaction
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 105, in add_reaction
+    requests.post(
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: API error
+2026-05-07 01:24:02 [pipeline.telegram] WARNING: Failed to add reaction
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 105, in add_reaction
+    requests.post(
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: API error
+2026-05-07 01:24:02 [pipeline.telegram] WARNING: Failed to add reaction
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/telegram.py", line 105, in add_reaction
+    requests.post(
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: API error

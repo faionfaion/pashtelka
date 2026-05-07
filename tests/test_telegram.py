@@ -276,7 +276,7 @@ class TestRequirePtChannelId:
             tg.require_pt_channel_id()
         msg = str(exc_info.value)
         assert "TG_CHANNEL_PT_ID" in msg
-        assert "@pastelka_pt" in msg
+        assert "@pashtelka_pt" in msg
         assert "@nero_open_bot" in msg
         assert "~/workspace/.env" in msg
 

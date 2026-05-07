@@ -75,7 +75,7 @@ We hard-code `lang="pt"` for v1 — when ES/FR/EN come, a switch goes here.
   `_maybe_warn_translation_cost` after each call (best-effort; never
   fails the call).
 - `pipeline/config.py` — added `TRANSLATION_COST_WARN_USD` (default
-  $0.10/call), `TG_CHANNEL_PT_USERNAME = "pastelka_pt"`,
+  $0.10/call), `TG_CHANNEL_PT_USERNAME = "pashtelka_pt"`,
   `TG_CHANNEL_PT_ID` from env.
 - `tests/test_llm.py` — added 4 cases:
   - `test_dispatch_translate_routes_via_revise`

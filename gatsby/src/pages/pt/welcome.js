@@ -4,7 +4,7 @@ import heroPng from "../../images/welcome/hero-placeholder.png";
 import heroWebp from "../../images/welcome/hero-placeholder.webp";
 import heroAvif from "../../images/welcome/hero-placeholder.avif";
 
-const TG_HANDLE = "pastelka_pt";
+const TG_HANDLE = "pashtelka_pt";
 const SITE_URL = "https://pastelka.news";
 const PAGE_PATH = "/pt/welcome/";
 const OG_IMAGE = `${SITE_URL}/og/welcome-pt.png`;

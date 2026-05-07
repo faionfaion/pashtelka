@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-04-27_034617",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "storm-moratorium-ends-april-27-credit-restructuring-guide, may-1-dia-do-trabalhador-cgtp-ugt-marches-workers-rights-feriado, portugal-electric-grid-bottleneck-business-connection-delays-ukrainian-entrepreneurs, ipb-braganca-35-percent-foreign-students-interior-portugal-study-cheaper, fenprof-ecd-6th-round-week-reflection-plnm-parents-guide-april-27",
+  "author": "Pastelka News",
+  "duration_s": 8954.8,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 778.8,
+      "error": null
+    },
+    {
+      "name": "research:Тиждень уперед 28 квітня – 4 т",
+      "status": "failed",
+      "duration_s": 934.4,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Сім'ї після штормів знову плат",
+      "status": "ok",
+      "duration_s": 267.0,
+      "error": null
+    },
+    {
+      "name": "generate:Сім'ї після штормів знову плат",
+      "status": "ok",
+      "duration_s": 93.6,
+      "error": null
+    },
+    {
+      "name": "review:Сім'ї після штормів знову плат",
+      "status": "ok",
+      "duration_s": 144.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Сім'ї після штормів знову плат",
+      "status": "ok",
+      "duration_s": 14.0,
+      "error": null
+    },
+    {
+      "name": "save:Сім'ї після штормів знову плат",
+      "status": "ok",
+      "duration_s": 285.2,
+      "error": null
+    },
+    {
+      "name": "research:Trabalho XXI іде в парламент: ",
+      "status": "failed",
+      "duration_s": 932.4,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:1 Травня в Португалії: маніфес",
+      "status": "ok",
+      "duration_s": 895.5,
+      "error": null
+    },
+    {
+      "name": "generate:1 Травня в Португалії: маніфес",
+      "status": "ok",
+      "duration_s": 96.3,
+      "error": null
+    },
+    {
+      "name": "review:1 Травня в Португалії: маніфес",
+      "status": "ok",
+      "duration_s": 203.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:1 Травня в Португалії: маніфес",
+      "status": "ok",
+      "duration_s": 21.8,
+      "error": null
+    },
+    {
+      "name": "save:1 Травня в Португалії: маніфес",
+      "status": "ok",
+      "duration_s": 189.4,
+      "error": null
+    },
+    {
+      "name": "research:Енергетична мережа гальмує еко",
+      "status": "ok",
+      "duration_s": 268.8,
+      "error": null
+    },
+    {
+      "name": "generate:Енергетична мережа гальмує еко",
+      "status": "ok",
+      "duration_s": 85.3,
+      "error": null
+    },
+    {
+      "name": "review:Енергетична мережа гальмує еко",
+      "status": "ok",
+      "duration_s": 259.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Енергетична мережа гальмує еко",
+      "status": "ok",
+      "duration_s": 24.9,
+      "error": null
+    },
+    {
+      "name": "save:Енергетична мережа гальмує еко",
+      "status": "ok",
+      "duration_s": 141.7,
+      "error": null
+    },
+    {
+      "name": "research:35% студентів у Політехніці Бр",
+      "status": "ok",
+      "duration_s": 248.5,
+      "error": null
+    },
+    {
+      "name": "generate:35% студентів у Політехніці Бр",
+      "status": "ok",
+      "duration_s": 72.0,
+      "error": null
+    },
+    {
+      "name": "review:35% студентів у Політехніці Бр",
+      "status": "ok",
+      "duration_s": 269.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:35% студентів у Політехніці Бр",
+      "status": "ok",
+      "duration_s": 17.5,
+      "error": null
+    },
+    {
+      "name": "save:35% студентів у Політехніці Бр",
+      "status": "ok",
+      "duration_s": 114.1,
+      "error": null
+    },
+    {
+      "name": "research:Новий закон про оренду Lei 9-A",
+      "status": "failed",
+      "duration_s": 934.9,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:FENPROF: проміжні результати Т",
+      "status": "ok",
+      "duration_s": 246.8,
+      "error": null
+    },
+    {
+      "name": "generate:FENPROF: проміжні результати Т",
+      "status": "ok",
+      "duration_s": 79.5,
+      "error": null
+    },
+    {
+      "name": "review:FENPROF: проміжні результати Т",
+      "status": "ok",
+      "duration_s": 182.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:FENPROF: проміжні результати Т",
+      "status": "ok",
+      "duration_s": 13.2,
+      "error": null
+    },
+    {
+      "name": "save:FENPROF: проміжні результати Т",
+      "status": "ok",
+      "duration_s": 127.1,
+      "error": null
+    },
+    {
+      "name": "research:Банківські послуги для іммігра",
+      "status": "failed",
+      "duration_s": 932.9,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Іспанія легалізує 500 тис. імм",
+      "status": "failed",
+      "duration_s": 39.3,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 41.1,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

@@ -5535,7 +5535,7 @@ const RouteAnnouncerProps={id:`gatsby-announcer`,style:{position:`absolute`,top:
 /***/ 6877:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-exports.components={"component---src-pages-index-js":()=>__webpack_require__.e(/* import() | component---src-pages-index-js */ 293).then(__webpack_require__.bind(__webpack_require__, 9639)),"component---src-templates-article-js":()=>__webpack_require__.e(/* import() | component---src-templates-article-js */ 196).then(__webpack_require__.bind(__webpack_require__, 3622)),"component---src-templates-tag-js":()=>__webpack_require__.e(/* import() | component---src-templates-tag-js */ 502).then(__webpack_require__.bind(__webpack_require__, 1804))};
+exports.components={"component---src-pages-index-js":()=>__webpack_require__.e(/* import() | component---src-pages-index-js */ 293).then(__webpack_require__.bind(__webpack_require__, 9639)),"component---src-pages-pt-index-js":()=>__webpack_require__.e(/* import() | component---src-pages-pt-index-js */ 386).then(__webpack_require__.bind(__webpack_require__, 688)),"component---src-pages-pt-welcome-js":()=>__webpack_require__.e(/* import() | component---src-pages-pt-welcome-js */ 18).then(__webpack_require__.bind(__webpack_require__, 5904)),"component---src-pages-uk-index-js":()=>__webpack_require__.e(/* import() | component---src-pages-uk-index-js */ 734).then(__webpack_require__.bind(__webpack_require__, 800)),"component---src-pages-uk-welcome-js":()=>__webpack_require__.e(/* import() | component---src-pages-uk-welcome-js */ 198).then(__webpack_require__.bind(__webpack_require__, 3968)),"component---src-templates-article-js":()=>__webpack_require__.e(/* import() | component---src-templates-article-js */ 196).then(__webpack_require__.bind(__webpack_require__, 3622)),"component---src-templates-tag-js":()=>__webpack_require__.e(/* import() | component---src-templates-tag-js */ 502).then(__webpack_require__.bind(__webpack_require__, 1804))};
 
 /***/ }),
 
@@ -9532,7 +9532,7 @@ function getReplacer(map) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + ({"196":"component---src-templates-article-js","293":"component---src-pages-index-js","502":"component---src-templates-tag-js"}[chunkId] || chunkId) + ".js";
+/******/ 			return "" + ({"18":"component---src-pages-pt-welcome-js","196":"component---src-templates-article-js","198":"component---src-pages-uk-welcome-js","293":"component---src-pages-index-js","386":"component---src-pages-pt-index-js","502":"component---src-templates-tag-js","734":"component---src-pages-uk-index-js"}[chunkId] || chunkId) + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	

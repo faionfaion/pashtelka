@@ -10,7 +10,7 @@ Add Portuguese as a fully-fledged second locale on top of the existing UA
 pipeline without forking the editorial process. The plan stays UA-side; the
 PT version is produced by a mechanical translation stage that runs after
 revise and before save. PT readers consume the same articles in simplified
-B1 Portuguese on `/pt/<slug>/` and via a dedicated TG channel `@pastelka_pt`.
+B1 Portuguese on `/pt/<slug>/` and via a dedicated TG channel `@pashtelka_pt`.
 
 Five concerns, five layers:
 
@@ -27,7 +27,7 @@ Five concerns, five layers:
    parametrised by locale. Root `/` redirects to `/uk/`. Hreflang link
    tags between locales. Split sitemaps.
 5. **Digest** — `s11_digest` produces UA + PT captions for the same image,
-   sends in parallel to `@pashtelka_news` and `@pastelka_pt` at the same
+   sends in parallel to `@pashtelka_news` and `@pashtelka_pt` at the same
    cron slot.
 
 ## Stage chain (after this feature)
@@ -369,14 +369,14 @@ plugin instances; alternative is a post-build node script that splits the
 output. We pick the post-build approach for simplicity:
 `gatsby/scripts/split-sitemaps.mjs` runs in `package.json` `postbuild`.
 
-## TG channel `@pastelka_pt`
+## TG channel `@pashtelka_pt`
 
 ### Config
 
 Add to `pipeline/config.py`:
 
 ```python
-TG_CHANNEL_PT_USERNAME = "pastelka_pt"
+TG_CHANNEL_PT_USERNAME = "pashtelka_pt"
 TG_CHANNEL_PT_ID = os.environ.get("TG_CHANNEL_PT_ID", "")
 ```
 
@@ -387,13 +387,13 @@ empty. Publish path detects the empty value and FAILS with a clear
 message:
 
 ```
-RuntimeError: TG_CHANNEL_PT_ID is not set. Create @pastelka_pt in
+RuntimeError: TG_CHANNEL_PT_ID is not set. Create @pashtelka_pt in
 Telegram, add @nero_open_bot as admin, look up the chat_id (start with
 "-100"), and put it in ~/workspace/.env as TG_CHANNEL_PT_ID=…
 ```
 
 Ditto: `TG_CHANNEL_PT_USERNAME` always exists for caption-side
-references (used in `<a href="https://t.me/pastelka_pt">` links and the
+references (used in `<a href="https://t.me/pashtelka_pt">` links and the
 Welcome page CTA — already wired by Wave 2).
 
 ## Digest dual-language

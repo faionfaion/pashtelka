@@ -51,9 +51,9 @@ grep -c "t.me/pashtelka_news"                /tmp/uk.html   # ≥1 (TG CTA)
 grep -cE 'href="/"'                          /tmp/uk.html   # ≥1 (secondary CTA)
 grep -c "Editorial since 2026"               /tmp/uk.html   # ≥1 (trust line)
 
-# PT page B1 copy + @pastelka_pt CTA
+# PT page B1 copy + @pashtelka_pt CTA
 curl -s http://localhost:9000/pt/welcome/ > /tmp/pt.html
-grep -c "t.me/pastelka_pt"                   /tmp/pt.html   # ≥1
+grep -c "t.me/pashtelka_pt"                   /tmp/pt.html   # ≥1
 grep -cE "Notícias de Portugal em ucraniano" /tmp/pt.html   # ≥1
 ```
 

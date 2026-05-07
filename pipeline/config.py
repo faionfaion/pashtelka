@@ -188,5 +188,5 @@ TRANSLATION_COST_WARN_USD = float(
 # Portuguese TG channel for the dual-language digest. Username is public
 # (brand), chat_id is private and must be set in env after the operator
 # creates the channel and adds @nero_open_bot as admin.
-TG_CHANNEL_PT_USERNAME = "pastelka_pt"
+TG_CHANNEL_PT_USERNAME = "pashtelka_pt"
 TG_CHANNEL_PT_ID = os.environ.get("TG_CHANNEL_PT_ID", "").strip()

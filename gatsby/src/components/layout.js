@@ -14,7 +14,7 @@ const Layout = ({ children, lang = "uk", otherLocaleHref }) => {
   const otherI18n = lang === "pt" ? uk : pt;
   const switchHref = otherLocaleHref || (lang === "pt" ? "/uk/" : "/pt/");
   const homeHref = lang === "pt" ? "/pt/" : "/uk/";
-  const tgHandle = lang === "pt" ? "pastelka_pt" : "pashtelka_news";
+  const tgHandle = lang === "pt" ? "pashtelka_pt" : "pashtelka_news";
 
   return (
     <div className="site">

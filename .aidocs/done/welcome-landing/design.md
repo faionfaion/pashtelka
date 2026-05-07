@@ -185,7 +185,7 @@ documents the dashboard-side setup task.
 ## UTM passthrough
 
 CTA primary URL is `https://t.me/pashtelka_news` (UA) /
-`https://t.me/pastelka_pt` (PT). Telegram's deep-link `?start=` parameter
+`https://t.me/pashtelka_pt` (PT). Telegram's deep-link `?start=` parameter
 only accepts a short token (≤64 chars, alphanumeric + underscore), so we
 cannot pass arbitrary UTM strings via `start`. Instead:
 
@@ -291,6 +291,6 @@ canonical mascot replaces the placeholder.
 - **Placeholder mascot** — generated via OpenAI today; canonical mascot path
   documented for `print-stickers-posters` to swap in later.
 - **Plausible only on welcome pages** — site-wide rollout is out of scope.
-- **PT TG handle `@pastelka_pt`** — channel doesn't exist yet; link will 404
+- **PT TG handle `@pashtelka_pt`** — channel doesn't exist yet; link will 404
   gracefully (TG shows "Channel not found"). Operator creates the channel as
   part of the Lisbon launch.

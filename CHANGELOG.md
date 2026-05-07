@@ -219,7 +219,7 @@ project uses semantic-ish versioning loosely — one logical change per commit
   tests green. [pt-translation-b1 TASK-10]
 - `pipeline/stages/s11_digest.py` — dual-language digest. UA send
   unchanged; when `TG_CHANNEL_PT_ID` is set, the same image is sent
-  with a PT-translated caption to `@pastelka_pt`. PT failures
+  with a PT-translated caption to `@pashtelka_pt`. PT failures
   isolated — UA always wins. `_translate_digest_to_pt`,
   `_build_caption(*, lang)`, schema-validated digest_pt output.
   [pt-translation-b1 TASK-11]
@@ -244,14 +244,14 @@ project uses semantic-ish versioning loosely — one logical change per commit
   `COVERAGE_MIN_PCT=90`) are deliberately conservative for v1.
   Operator should tune them after observing 50+ real pipeline
   translations; documented in `done.md`.
-- PT TG channel `@pastelka_pt` must be created by the operator and
+- PT TG channel `@pashtelka_pt` must be created by the operator and
   `TG_CHANNEL_PT_ID` exported in `~/workspace/.env` on faion-net
   before the digest cron picks up the dual-language flow.
 - 157 historic UA articles do NOT have PT counterparts yet — operator
   triggers `scripts/backfill_pt.py` after the live pipeline is
   healthy.
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
-  translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
+  translation pipeline + `/pt/` site routing + `@pashtelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
   migration to `content/<slug>/{uk,pt}.md`, Flesch + lemma B1 validator,
   cost guardrails. [pt-translation-b1]
@@ -280,7 +280,7 @@ project uses semantic-ish versioning loosely — one logical change per commit
   weight 249 KB uncompressed (≤ 250 KB AC3 budget). [welcome-landing
   TASK-04]
 - PT welcome page `gatsby/src/pages/pt/welcome.js` → `/pt/welcome/`. Same
-  structure as UA, B1-level Portuguese copy, `@pastelka_pt` handle,
+  structure as UA, B1-level Portuguese copy, `@pashtelka_pt` handle,
   `welcome-pt.png` OG card. [welcome-landing TASK-05]
 - `/welcome/` static redirect (`gatsby/static/welcome/index.html`, 1.3 KB).
   Three layers: navigator.languages JS → meta-refresh fallback → visible

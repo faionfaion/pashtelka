@@ -1,7 +1,7 @@
 # TASK-05 — PT welcome page (B1 copy)
 
 **Subject:** Build `gatsby/src/pages/pt/welcome.js`. Same structure as UA
-page, B1-level Portuguese copy, `@pastelka_pt` TG handle, `/` as secondary
+page, B1-level Portuguese copy, `@pashtelka_pt` TG handle, `/` as secondary
 (falls back to UA homepage until a PT site root exists).
 
 ## Files touched
@@ -13,7 +13,7 @@ page, B1-level Portuguese copy, `@pastelka_pt` TG handle, `/` as secondary
 Copy `uk/welcome.js`. Replace:
 
 - `lang="uk"` → `lang="pt"`
-- TG handle → `@pastelka_pt`
+- TG handle → `@pashtelka_pt`
 - All copy → CEFR B1 Portuguese (short sentences, common verbs only,
   no idioms, no subjunctive unless standard)
 - Lang switcher → links to `/uk/welcome/`
@@ -27,7 +27,7 @@ Copy `uk/welcome.js`. Replace:
   - "Todos os dias: as notícias principais de Portugal, em poucas linhas."
   - "Todas as semanas: guias úteis — impostos, AIMA, escolas, saúde."
   - "Imigração: prazos, multas, recursos."
-- CTA primary: "Seguir no Telegram → @pastelka_pt"
+- CTA primary: "Seguir no Telegram → @pashtelka_pt"
 - CTA secondary: "Ler os artigos mais recentes →"
 - Trust: "Redação desde 2026 • Ruslan • hello@pastelka.news"
 
@@ -47,7 +47,7 @@ twice, no rare vocabulary. Aim for the same registry the
 ### Status: COMPLETED
 
 ### What Was Done
-- Wrote `gatsby/src/pages/pt/welcome.js` mirroring the UA page structure with PT-specific values: `lang="pt"`, `@pastelka_pt` handle, `welcome-pt.png` OG image, lang chip points back to `/uk/welcome/`. Copy is in B1 Portuguese with short sentences and common verbs.
+- Wrote `gatsby/src/pages/pt/welcome.js` mirroring the UA page structure with PT-specific values: `lang="pt"`, `@pashtelka_pt` handle, `welcome-pt.png` OG image, lang chip points back to `/uk/welcome/`. Copy is in B1 Portuguese with short sentences and common verbs.
 - Same `<picture>` AVIF/WebP/PNG fallback chain as UA. Same Plausible tagged-events wiring. Same hreflang pair. Same UTM-preserving lang-switch handler.
 
 ### Files Changed
@@ -62,7 +62,7 @@ Build:
 
 Grep matrix on `/pt/welcome/`:
 - `lang="pt"`: 1 — PASS
-- `t.me/pastelka_pt`: 1 — PASS
+- `t.me/pashtelka_pt`: 1 — PASS
 - `Notícias de Portugal em ucraniano`: 1 — PASS
 - `plausible-event-name=welcome_tg_click`: 1 — PASS
 - `plausible-event-name=welcome_site_click`: 1 — PASS

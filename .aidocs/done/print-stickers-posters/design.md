@@ -337,7 +337,7 @@ Phase 4b (next run, after operator approves the mascot):
 - **Mascot at `gatsby/src/images/brand/pashtelka-mascot.png`** — single
   source of truth. Welcome page swap is a separate task in Phase 4b.
 - **No PT TG channel link in v1 sticker copy** — the welcome-landing PT
-  channel `@pastelka_pt` doesn't exist yet. Sticker shows the URL
+  channel `@pashtelka_pt` doesn't exist yet. Sticker shows the URL
   `pastelka.news` only; the welcome page handles the language split.
 - **Two-script vs one-script:** kept three scripts (`generate_mascot`,
   `generate_qr`, `svg_to_cmyk_pdf`) instead of one bundle so each is

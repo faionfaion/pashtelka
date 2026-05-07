@@ -24,7 +24,7 @@ Shipped (master, 13 tasks, single-repo, 14 commits including planning).
   links lead to `/uk/<slug>/`.
 - **Sitemaps split**. Post-build script writes `sitemap-uk.xml`,
   `sitemap-pt.xml`, and a `sitemap.xml` index referencing both.
-- **TG channel `@pastelka_pt`**. Config knobs in `pipeline/config.py`,
+- **TG channel `@pashtelka_pt`**. Config knobs in `pipeline/config.py`,
   clear-fail helper `require_pt_channel_id()` in `pipeline/telegram.py`,
   dual-language daily digest in `s11_digest.py` (same image, different
   caption per locale, glossary stripped from PT).
@@ -68,9 +68,9 @@ folder promotion.
 | `GEMINI_API_KEY` | `LLM_STACK=new` | — | Set per Wave 1. |
 | `OPENAI_API_KEY` | `LLM_STACK=new` | — | Set per Wave 1. Codex uses it. |
 | `ANTHROPIC_API_KEY` | always | — | Used by review stage (and translation when `LLM_STACK=old`). |
-| `TG_CHANNEL_PT_ID` | before PT digest publish | `""` (empty) | Operator creates `@pastelka_pt`, adds `@nero_open_bot` as admin, copies the chat_id (starts with `-100`), exports here. |
+| `TG_CHANNEL_PT_ID` | before PT digest publish | `""` (empty) | Operator creates `@pashtelka_pt`, adds `@nero_open_bot` as admin, copies the chat_id (starts with `-100`), exports here. |
 | `TRANSLATION_COST_WARN_USD` | optional | `0.10` | Soft warning threshold per translation call. |
-| `TG_CHANNEL_PT_USERNAME` | (constant) | `pastelka_pt` | Hard-coded brand handle. |
+| `TG_CHANNEL_PT_USERNAME` | (constant) | `pashtelka_pt` | Hard-coded brand handle. |
 
 ## B1 metrics (smoke article)
 
@@ -108,7 +108,7 @@ real-world output. The constants are deliberately conservative for v1.
 
 ## Operator items before / after deploy
 
-1. **Create the PT TG channel** `@pastelka_pt`.
+1. **Create the PT TG channel** `@pashtelka_pt`.
    - Add `@nero_open_bot` as admin with publishing rights.
    - Set avatar + bio in PT (mirror UA channel intent; pinned welcome
      post linking to `https://pastelka.news/pt/welcome/` per the AC6

@@ -40,7 +40,7 @@ version (PT readers don't need PT→UA word cards).
 - UA: existing format, "Дайджест дня", `📰`, "Словничок", footer
   `🇵🇹 Паштелька News`.
 - PT: "Resumo do dia", same emoji, no glossary, footer
-  `🇺🇦 Pastelka News` (linking to `https://t.me/pastelka_pt`).
+  `🇺🇦 Pastelka News` (linking to `https://t.me/pashtelka_pt`).
 
 Image is the same for both (per AC7 spec decision).
 
@@ -76,7 +76,7 @@ Image is the same for both (per AC7 spec decision).
   - UA: `📰 Дайджест дня`, glossary block, `Паштелька News` footer,
     `/uk/<slug>/` URLs.
   - PT: `📰 Resumo do dia`, NO glossary block, `Pastelka News`
-    footer linking to `https://t.me/pastelka_pt`, `/pt/<slug>/` URLs.
+    footer linking to `https://t.me/pashtelka_pt`, `/pt/<slug>/` URLs.
 - `_send_digest(image_path, caption, silent, chat_id)` — defaults to
   `TG_CHANNEL_ID` for backwards compatibility but accepts any chat_id.
 - `_translate_digest_to_pt(digest_ua)` — small helper that calls

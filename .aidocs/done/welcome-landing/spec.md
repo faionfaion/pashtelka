@@ -27,7 +27,7 @@ Two short single-purpose pages — `/uk/welcome/` and `/pt/welcome/` — that in
 ### AC2 — Content blocks per page
 1. **Hero** — one-sentence value prop ("Новини Португалії українською, без води" / equivalent PT B1).
 2. **What we do** — 3 short bullets: daily news, weekly guides, immigration-tracker.
-3. **CTA primary** — TG button: UA page → @pashtelka_news, PT page → @pastelka_pt.
+3. **CTA primary** — TG button: UA page → @pashtelka_news, PT page → @pashtelka_pt.
 4. **CTA secondary** — link to `/uk/` or `/pt/` (latest articles).
 5. **Trust** — small footer: "Editorial since 2026 • Ruslan • contact email".
 
@@ -70,7 +70,7 @@ Two short single-purpose pages — `/uk/welcome/` and `/pt/welcome/` — that in
 ## Decisions
 
 - **Hero artwork:** new pashtelka-specific mascot. Generated once via OpenAI iterative reviewer loop (same flow as `print-stickers-posters`). Mascot reference saved at `gatsby/src/images/brand/pashtelka-mascot.png` and reused on welcome page, stickers, posters, and digest images going forward.
-- **PT channel handle:** `@pastelka_pt`.
+- **PT channel handle:** `@pashtelka_pt`.
 
 ## Open Questions
 

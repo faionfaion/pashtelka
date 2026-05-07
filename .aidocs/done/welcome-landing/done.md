@@ -2,7 +2,7 @@
 
 Shipped (master, 7 tasks, single-repo, 8 commits):
 
-- Two locale routes — `/uk/welcome/` (UA) and `/pt/welcome/` (PT B1) — with hero + 3 bullets + Telegram CTA + secondary CTA + trust footer + Plausible (`welcome_view`, `welcome_tg_click`, `welcome_site_click`) + OG/Twitter cards. PT TG handle is `@pastelka_pt` (channel will be created separately by the operator before the Lisbon launch).
+- Two locale routes — `/uk/welcome/` (UA) and `/pt/welcome/` (PT B1) — with hero + 3 bullets + Telegram CTA + secondary CTA + trust footer + Plausible (`welcome_view`, `welcome_tg_click`, `welcome_site_click`) + OG/Twitter cards. PT TG handle is `@pashtelka_pt` (channel will be created separately by the operator before the Lisbon launch).
 - `/welcome/` static redirect (1.3 KB, 3 layers: navigator.languages → meta-refresh → visible UA/PT links). UTM search params passthrough on redirect.
 - Hero placeholder + OG cards generated via OpenAI gpt-image-1 + sharp (one-shot script `gatsby/scripts/gen-welcome-assets.mjs`, idempotent). Hero: 940×940 AVIF/WebP/PNG. OG cards: exactly 1200×630 PNG.
 - Above-the-fold weight uncompressed: UK 249 420 B / PT 248 977 B — both within the 250 KB budget. Real-world over gzip will be ~75-90 KB.
@@ -23,7 +23,7 @@ The hero image at `gatsby/src/images/welcome/hero-placeholder.{png,webp,avif}` i
 ## Operator items before / after deploy
 
 - **Plausible:** add `pastelka.news` to your Plausible workspace if not already present. Until then, `welcome_view` / `welcome_tg_click` / `welcome_site_click` events 404 silently — no breakage.
-- **PT TG channel:** create `@pastelka_pt` before printing PT-locale stickers. The CTA link is hard-coded to that handle; if the channel doesn't exist at scan time the CTA shows TG's "Channel not found" message.
+- **PT TG channel:** create `@pashtelka_pt` before printing PT-locale stickers. The CTA link is hard-coded to that handle; if the channel doesn't exist at scan time the CTA shows TG's "Channel not found" message.
 - **Lighthouse mobile perf:** could not run in the build sandbox (no Chrome binary). Operator runs from a workstation:
 
 ```bash

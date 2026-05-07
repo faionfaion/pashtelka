@@ -1567,7 +1567,7 @@ class TestS11DigestDualLang:
         assert "Словничок" not in caption     # no UA glossary heading
         assert "Glossário" not in caption     # no PT glossary heading either
         assert "Pastelka News" in caption
-        assert "pastelka_pt" in caption
+        assert "pashtelka_pt" in caption
 
     @patch("pipeline.stages.s11_digest.dispatch_translate")
     @patch("pipeline.stages.s11_digest.load_schema")

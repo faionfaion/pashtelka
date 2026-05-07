@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pastelka.news — Welcome / Bem-vindo / Ласкаво просимо</title>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="refresh" content="3;url=/uk/welcome/">
+<link rel="canonical" href="https://pastelka.news/welcome/">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-align:center;padding:48px 20px;color:#1a1a2e;background:#fefcfa;line-height:1.5}
+a{color:#d97706;text-decoration:underline}
+.muted{color:#6b7280;font-size:13px;margin-top:24px}
+</style>
+</head>
+<body>
+<script>
+(function(){
+  try {
+    var langs = (navigator.languages || [navigator.language || "en"]).map(function(l){return (l||"").toLowerCase();});
+    var pt = langs.some(function(l){return l.indexOf("pt") === 0;});
+    var search = window.location.search || "";
+    var dest = (pt ? "/pt/welcome/" : "/uk/welcome/") + search;
+    window.location.replace(dest);
+  } catch (e) {
+    // fall through to <meta refresh> + visible links
+  }
+})();
+</script>
+<p>Redirecting to <a href="/uk/welcome/">/uk/welcome/</a> …</p>
+<p class="muted">
+  Wrong language? <a href="/uk/welcome/">UA</a> · <a href="/pt/welcome/">PT</a>
+</p>
+</body>
+</html>
