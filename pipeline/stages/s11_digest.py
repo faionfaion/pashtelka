@@ -5,7 +5,11 @@ Used in 'digest' mode (21:00 Lisbon = 20:00 UTC, April/WEST).
 - Collects today's news articles (type=news only) from CONTENT_DIR
 - Generates structured digest via LLM: intro, 10 items, 2 glossary words, image prompt
 - Generates a premium cityscape image via gpt-image-1 quality=high
-- Sends single TG post (photo + caption); splits if caption exceeds 1024 chars
+- Sends UA digest to TG_CHANNEL_ID
+- pt-translation-b1: when TG_CHANNEL_PT_ID is set, translates the UA digest
+  (intro + items) into B1 PT and sends the same image with PT caption to
+  TG_CHANNEL_PT_ID. PT digest skips the glossary block. PT failures are
+  logged but never fail the run — UA send always wins.
 """
 
 from __future__ import annotations
@@ -16,11 +20,14 @@ from datetime import datetime, timezone
 from pipeline.config import (
     CONTENT_DIR, DIGEST_IMAGE_QUALITY, SITE_BASE_URL,
     SOUND_ON_END, SOUND_ON_START, SPONSOR_LINE,
-    TG_BOT_TOKEN, TG_CHANNEL_ID,
+    TG_BOT_TOKEN, TG_CHANNEL_ID, TG_CHANNEL_PT_ID,
+    TG_CHANNEL_PT_USERNAME, TG_CHANNEL_USERNAME,
 )
 from pipeline.image_gen import generate_image
-from pipeline.llm import dispatch_structured
-from pipeline.prompts.builder import build_digest_prompt
+from pipeline.llm import dispatch_structured, dispatch_translate
+from pipeline.prompts.builder import (
+    build_digest_prompt, build_translate_digest_pt_prompt,
+)
 from pipeline.schemas import load_schema
 from pipeline.telegram import add_reaction, send_photo, send_text
 
@@ -67,31 +74,59 @@ def run() -> dict | None:
         logger.error("Digest image generation failed — aborting digest")
         return None
 
-    caption = _build_caption(intro, items, glossary)
+    caption_ua = _build_caption(intro, items, glossary, lang="uk")
 
     # WEST (April) is UTC+1; silent window 08:00-22:00 Lisbon
     lisbon_hour = (now.hour + 1) % 24
     silent = not (SOUND_ON_START <= lisbon_hour < SOUND_ON_END)
 
-    msg_id = _send_digest(str(image_path), caption, silent)
+    # UA-side send: existing channel.
+    msg_id_ua = _send_digest(str(image_path), caption_ua, silent, TG_CHANNEL_ID)
+    if not msg_id_ua:
+        logger.error("Failed to publish UA digest")
+        return None
+    add_reaction(TG_CHANNEL_ID, msg_id_ua, "\U0001f525", TG_BOT_TOKEN)
+    logger.info(
+        "UA digest published: msg %d (%d news, glossary: %s)",
+        msg_id_ua, len(items),
+        ", ".join(f"{g['pt']}->{g['ua']}" for g in glossary),
+    )
 
-    if msg_id:
-        add_reaction(TG_CHANNEL_ID, msg_id, "\U0001f525", TG_BOT_TOKEN)
-        logger.info(
-            "Digest published: msg %d (%d news, glossary: %s)",
-            msg_id, len(items),
-            ", ".join(f"{g['pt']}→{g['ua']}" for g in glossary),
+    # PT-side send: only when the operator has wired the chat_id.
+    msg_id_pt = None
+    if TG_CHANNEL_PT_ID:
+        try:
+            result_pt = _translate_digest_to_pt(result)
+            caption_pt = _build_caption(
+                result_pt["intro"], result_pt["items"], glossary=[],
+                lang="pt",
+            )
+            msg_id_pt = _send_digest(str(image_path), caption_pt, silent, TG_CHANNEL_PT_ID)
+            if msg_id_pt:
+                add_reaction(TG_CHANNEL_PT_ID, msg_id_pt, "\U0001f525", TG_BOT_TOKEN)
+                logger.info(
+                    "PT digest published: msg %d (%d news)",
+                    msg_id_pt, len(result_pt["items"]),
+                )
+            else:
+                logger.error("Failed to publish PT digest (UA already sent)")
+        except Exception:
+            logger.exception("PT digest failed (UA already sent)")
+    else:
+        logger.warning(
+            "TG_CHANNEL_PT_ID not set; skipping PT digest. Operator: create "
+            "@%s, add @nero_open_bot as admin, then export TG_CHANNEL_PT_ID.",
+            TG_CHANNEL_PT_USERNAME,
         )
-        return {
-            "type": "digest",
-            "msg_id": msg_id,
-            "article_count": len(items),
-            "glossary": glossary,
-            "image_path": str(image_path),
-        }
 
-    logger.error("Failed to publish digest")
-    return None
+    return {
+        "type": "digest",
+        "msg_id": msg_id_ua,
+        "msg_id_pt": msg_id_pt,
+        "article_count": len(items),
+        "glossary": glossary,
+        "image_path": str(image_path),
+    }
 
 
 def _collect_today_news(today_str: str) -> list[dict]:
@@ -152,19 +187,37 @@ def _generate_digest(articles: list[dict], today_str: str, weekday_uk: str) -> d
     )
 
 
-def _build_caption(intro: str, items: list[dict], glossary: list[dict]) -> str:
-    parts = [
-        "<b>\U0001f4f0 Дайджест дня</b>",
-        "",
-        intro,
-        "",
-    ]
+def _build_caption(intro: str, items: list[dict], glossary: list[dict],
+                    *, lang: str = "uk") -> str:
+    """Build the TG caption for either UA or PT digest.
+
+    PT digests skip the glossary block (PT readers don't need PT->UA word
+    cards). URL prefix is /uk/<slug>/ for UA digest, /pt/<slug>/ for PT.
+    """
+    if lang == "pt":
+        title_line = "<b>\U0001f4f0 Resumo do dia</b>"
+        url_prefix = "pt"
+        footer = (
+            f'\U0001f1fa\U0001f1e6 <a href="https://t.me/{TG_CHANNEL_PT_USERNAME}">'
+            "Pastelka News</a>"
+        )
+        glossary_label = None
+    else:
+        title_line = "<b>\U0001f4f0 Дайджест дня</b>"
+        url_prefix = "uk"
+        footer = (
+            f'\U0001f1fa\U0001f1e6 <a href="https://t.me/{TG_CHANNEL_USERNAME}">'
+            "Паштелька News</a>"
+        )
+        glossary_label = "\U0001f4d6 <b>Словничок:</b>"
+
+    parts = [title_line, "", intro, ""]
     for item in items:
-        emoji = item.get("emoji", "\u2022")
+        emoji = item.get("emoji", "•")
         title = item["title"]
         hook = item.get("hook", "")
         slug = item["slug"]
-        url = f"{SITE_BASE_URL}/{slug}/"
+        url = f"{SITE_BASE_URL}/{url_prefix}/{slug}/"
         parts.append(f'{emoji} <a href="{url}"><b>{title}</b></a>')
         if hook:
             parts.append(hook)
@@ -174,27 +227,31 @@ def _build_caption(intro: str, items: list[dict], glossary: list[dict]) -> str:
         parts.append(f"\U0001f4ac {SPONSOR_LINE}")
         parts.append("")
 
-    parts.append("\U0001f4d6 <b>Словничок:</b>")
-    for g in glossary:
-        parts.append(f"{g['pt']} — {g['ua']}")
-    parts.append("")
+    if glossary and glossary_label:
+        parts.append(glossary_label)
+        for g in glossary:
+            parts.append(f"{g['pt']} — {g['ua']}")
+        parts.append("")
 
-    parts.append('\U0001f1f5\U0001f1f9 <a href="https://t.me/pashtelka_news">Паштелька News</a>')
-
+    parts.append(footer)
     return "\n".join(parts)
 
 
-def _send_digest(image_path: str, caption: str, silent: bool) -> int | None:
-    """Send photo + caption. Splits into photo + reply-text if caption > 1024 chars."""
+def _send_digest(image_path: str, caption: str, silent: bool,
+                  chat_id: str = TG_CHANNEL_ID) -> int | None:
+    """Send photo + caption to chat_id. Splits into photo + reply-text if caption > limit."""
     if len(caption) <= TG_CAPTION_LIMIT:
         return send_photo(
-            chat_id=TG_CHANNEL_ID,
+            chat_id=chat_id,
             image_path=image_path,
             caption=caption,
             bot_token=TG_BOT_TOKEN,
             silent=silent,
         )
 
+    # Split marker: UA glossary heading. PT digests skip the glossary so a
+    # PT caption that needs splitting will fall through to the char-index
+    # split — fine because PT captions are shorter than UA + glossary.
     split_marker = "\U0001f4d6 <b>Словничок:</b>"
     idx = caption.find(split_marker)
     if idx == -1:
@@ -204,7 +261,7 @@ def _send_digest(image_path: str, caption: str, silent: bool) -> int | None:
     tail = caption[idx:].lstrip()
 
     msg_id = send_photo(
-        chat_id=TG_CHANNEL_ID,
+        chat_id=chat_id,
         image_path=image_path,
         caption=head[:TG_CAPTION_LIMIT],
         bot_token=TG_BOT_TOKEN,
@@ -214,9 +271,21 @@ def _send_digest(image_path: str, caption: str, silent: bool) -> int | None:
         return None
 
     send_text(
-        chat_id=TG_CHANNEL_ID,
+        chat_id=chat_id,
         caption=tail,
         silent=silent,
         bot_token=TG_BOT_TOKEN,
     )
     return msg_id
+
+
+def _translate_digest_to_pt(digest_ua: dict) -> dict:
+    """Translate the UA digest (intro + 10 items) into B1 Portuguese.
+
+    Returns dict with `intro` and `items` (each item: emoji, title, hook,
+    slug). Glossary is dropped — PT readers don't need PT->UA card.
+    Image is reused, so image_prompt is not translated.
+    """
+    system, prompt = build_translate_digest_pt_prompt(digest_ua)
+    schema = load_schema("digest_pt")
+    return dispatch_translate(prompt, system=system, schema=schema, lang="pt")

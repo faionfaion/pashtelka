@@ -1537,3 +1537,161 @@ class TestSTranslatePt:
         assert "b1_warning" not in text        # passed validator
 
 
+# ========== Stage 11 dual-language digest (pt-translation-b1) ==========
+
+class TestS11DigestDualLang:
+    """s11_digest: dual-language UA + PT send."""
+
+    def test_build_caption_uk(self):
+        from pipeline.stages.s11_digest import _build_caption
+        items = [
+            {"emoji": "🏛", "title": "Закон", "hook": "Що важливо", "slug": "law-1"},
+        ]
+        glossary = [{"pt": "lei", "ua": "закон"}]
+        caption = _build_caption("Привіт!", items, glossary, lang="uk")
+        assert "Дайджест дня" in caption
+        assert "/uk/law-1/" in caption
+        assert "Словничок" in caption
+        assert "lei — закон" in caption
+        assert "Паштелька News" in caption
+
+    def test_build_caption_pt_skips_glossary(self):
+        from pipeline.stages.s11_digest import _build_caption
+        items = [
+            {"emoji": "🏛", "title": "Lei nova", "hook": "O que muda", "slug": "law-1"},
+        ]
+        # PT digests pass empty glossary
+        caption = _build_caption("Bom dia!", items, [], lang="pt")
+        assert "Resumo do dia" in caption
+        assert "/pt/law-1/" in caption
+        assert "Словничок" not in caption     # no UA glossary heading
+        assert "Glossário" not in caption     # no PT glossary heading either
+        assert "Pastelka News" in caption
+        assert "pastelka_pt" in caption
+
+    @patch("pipeline.stages.s11_digest.dispatch_translate")
+    @patch("pipeline.stages.s11_digest.load_schema")
+    @patch("pipeline.stages.s11_digest.build_translate_digest_pt_prompt")
+    def test_translate_digest_to_pt_calls_dispatch(self, mock_build, mock_schema, mock_d):
+        mock_build.return_value = ("sys", "usr")
+        mock_schema.return_value = {"type": "object"}
+        mock_d.return_value = {
+            "intro": "Bom dia!",
+            "items": [{"emoji": "🏛", "title": "Lei", "hook": "Hook", "slug": "s1"}] * 10,
+        }
+        from pipeline.stages.s11_digest import _translate_digest_to_pt
+        ua = {
+            "intro": "Привіт", "items": [], "glossary": [], "image_prompt": "x",
+        }
+        out = _translate_digest_to_pt(ua)
+        assert "intro" in out and "items" in out
+        kwargs = mock_d.call_args.kwargs
+        assert kwargs["lang"] == "pt"
+
+    @patch("pipeline.stages.s11_digest.add_reaction")
+    @patch("pipeline.stages.s11_digest.send_photo")
+    @patch("pipeline.stages.s11_digest.generate_image")
+    @patch("pipeline.stages.s11_digest._collect_today_news")
+    @patch("pipeline.stages.s11_digest._generate_digest")
+    @patch("pipeline.stages.s11_digest._translate_digest_to_pt")
+    def test_dual_language_send_when_pt_id_set(
+        self, mock_tr_pt, mock_gen, mock_collect, mock_image,
+        mock_send, mock_react, monkeypatch, tmp_path,
+    ):
+        import pipeline.stages.s11_digest as digest_mod
+        # Force PT id to be set
+        monkeypatch.setattr(digest_mod, "TG_CHANNEL_PT_ID", "-1003999")
+        monkeypatch.setattr(digest_mod, "TG_CHANNEL_ID", "-1003111")
+
+        # 10 dummy news articles
+        mock_collect.return_value = [
+            {"slug": f"slug-{i}", "title": f"Title {i}", "body": "Body."}
+            for i in range(10)
+        ]
+        mock_gen.return_value = {
+            "intro": "UA intro",
+            "items": [
+                {"emoji": "🏛", "title": f"T{i}", "hook": "H", "slug": f"s-{i}"}
+                for i in range(10)
+            ],
+            "glossary": [{"pt": "lei", "ua": "закон"}, {"pt": "obrigado", "ua": "дякую"}],
+            "image_prompt": "img",
+        }
+        img = tmp_path / "img.jpg"
+        img.write_bytes(b"x")
+        mock_image.return_value = img
+
+        mock_tr_pt.return_value = {
+            "intro": "PT intro",
+            "items": [
+                {"emoji": "🏛", "title": f"PT{i}", "hook": "H", "slug": f"s-{i}"}
+                for i in range(10)
+            ],
+        }
+
+        # Both sends succeed
+        mock_send.side_effect = [101, 202]
+
+        from pipeline.stages.s11_digest import run
+        result = run()
+        assert result is not None
+        assert result["msg_id"] == 101
+        assert result["msg_id_pt"] == 202
+
+        # Two photo sends — both with the same image, different chat_ids.
+        assert mock_send.call_count == 2
+        chat_ids = [c.kwargs["chat_id"] for c in mock_send.call_args_list]
+        assert chat_ids == ["-1003111", "-1003999"]
+        # Same image both times.
+        image_paths = [c.kwargs["image_path"] for c in mock_send.call_args_list]
+        assert image_paths[0] == image_paths[1] == str(img)
+        # Captions differ (UA vs PT).
+        captions = [c.kwargs["caption"] for c in mock_send.call_args_list]
+        assert "Дайджест дня" in captions[0]
+        assert "Resumo do dia" in captions[1]
+
+    @patch("pipeline.stages.s11_digest.add_reaction")
+    @patch("pipeline.stages.s11_digest.send_photo")
+    @patch("pipeline.stages.s11_digest.generate_image")
+    @patch("pipeline.stages.s11_digest._collect_today_news")
+    @patch("pipeline.stages.s11_digest._generate_digest")
+    @patch("pipeline.stages.s11_digest._translate_digest_to_pt")
+    def test_pt_skipped_when_id_empty(
+        self, mock_tr_pt, mock_gen, mock_collect, mock_image,
+        mock_send, mock_react, monkeypatch, tmp_path,
+    ):
+        import pipeline.stages.s11_digest as digest_mod
+        # Empty PT id -> only UA send.
+        monkeypatch.setattr(digest_mod, "TG_CHANNEL_PT_ID", "")
+        monkeypatch.setattr(digest_mod, "TG_CHANNEL_ID", "-1003111")
+
+        mock_collect.return_value = [
+            {"slug": f"slug-{i}", "title": f"Title {i}", "body": "Body."}
+            for i in range(10)
+        ]
+        mock_gen.return_value = {
+            "intro": "UA intro",
+            "items": [
+                {"emoji": "🏛", "title": f"T{i}", "hook": "H", "slug": f"s-{i}"}
+                for i in range(10)
+            ],
+            "glossary": [{"pt": "lei", "ua": "закон"}, {"pt": "obrigado", "ua": "дякую"}],
+            "image_prompt": "img",
+        }
+        img = tmp_path / "img.jpg"
+        img.write_bytes(b"x")
+        mock_image.return_value = img
+        mock_send.return_value = 101
+
+        from pipeline.stages.s11_digest import run
+        result = run()
+        assert result is not None
+        assert result["msg_id"] == 101
+        assert result["msg_id_pt"] is None
+
+        # Translate helper never called.
+        assert mock_tr_pt.call_count == 0
+        # Only one send.
+        assert mock_send.call_count == 1
+
+

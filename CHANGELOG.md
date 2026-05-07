@@ -121,6 +121,17 @@ project uses semantic-ish versioning loosely — one logical change per commit
   operator-actionable message otherwise. Tests in
   `tests/test_telegram.py::TestRequirePtChannelId`. 19/19 telegram
   tests green. [pt-translation-b1 TASK-10]
+- `pipeline/stages/s11_digest.py` — dual-language digest. UA send
+  unchanged; when `TG_CHANNEL_PT_ID` is set, the same image is sent
+  with a PT-translated caption to `@pastelka_pt`. PT failures
+  isolated — UA always wins. `_translate_digest_to_pt`,
+  `_build_caption(*, lang)`, schema-validated digest_pt output.
+  [pt-translation-b1 TASK-11]
+- `pipeline/schemas/digest_pt.json` — subset schema for the PT digest
+  payload (intro + items only). [pt-translation-b1 TASK-11]
+- `tests/test_stages.py::TestS11DigestDualLang` — 5 cases (UA/PT
+  caption shape, translate helper routing, dual-send happy path,
+  empty-id skip). 5/5 green. [pt-translation-b1 TASK-11]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content

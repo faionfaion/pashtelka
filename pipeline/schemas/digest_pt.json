@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "intro": {
+      "type": "string",
+      "description": "Warm evening greeting in simplified European Portuguese (B1), 2-3 sentences. Includes day-of-week and 1-sentence summary of 2-3 key themes. Plain text (no HTML)."
+    },
+    "items": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "properties": {
+          "emoji": {"type": "string", "description": "Pass-through unchanged from input."},
+          "title": {"type": "string", "description": "Translated headline in B1 PT (5-10 words)."},
+          "hook":  {"type": "string", "description": "Translated teaser in B1 PT (3-8 words)."},
+          "slug":  {"type": "string", "description": "Pass-through unchanged from input."}
+        },
+        "required": ["emoji", "title", "hook", "slug"]
+      }
+    }
+  },
+  "required": ["intro", "items"]
+}
