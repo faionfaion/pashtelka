@@ -1,0 +1,33 @@
+A friendly, expressive mascot character for "pashtelka.news" — a
+Ukrainian-language news media for the Ukrainian community living in
+Portugal. The name "pashtelka" / "pastelka" plays on the Portuguese
+"pastel" (the famous pastel de nata) and a soft Ukrainian diminutive,
+roughly meaning "the little colourful one".
+
+Subject: a small, plump, friendly bird-shaped mascot, plump and rounded,
+with large expressive eyes and a tiny smiling beak. The bird should feel
+welcoming, gentle, slightly cheeky — a friend, not a logo.
+
+Style: a hybrid of modern flat cartoon illustration and pixel-art accents.
+Mostly clean flat vector shapes, but the wing feathers and tail have a
+subtle pixel-grid texture giving it a hint of game-character charm. No
+photorealism. Crisp, friendly, mobile-thumbnail-legible.
+
+Palette: warm pastel colours. The body in soft cream (#fefcfa) with a
+warm amber accent (#d97706) on the wing tips and crest, and a touch of
+azulejo blue (#7ba8c7) on the eye details and on a small bow tie or
+shoulder ribbon. Warm sunset palette overall — golden hour, not midday.
+
+Composition: the mascot is centred, facing slightly forward and to the
+left, holding a small pastel de nata (Portuguese custard tart) in its
+wings. Behind it, very subtly, hint at Lisbon: a faint pattern of azulejo
+tiles on a pale wall, a distant silhouette of the 25 de Abril bridge over
+the Tagus, and a tiny yellow tram in the lower right corner. These
+backdrop elements should be soft, low-contrast, never competing with the
+mascot itself.
+
+Background: simple solid pastel-cream or transparent — the mascot will be
+cut out and re-placed on stickers, posters, and digital cards, so the
+edge silhouette must be clean.
+
+Output: square, 1024x1024 minimum. NO TEXT in the image.

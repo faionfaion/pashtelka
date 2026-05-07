@@ -41,6 +41,13 @@ project uses semantic-ish versioning loosely — one logical change per commit
   Affinity Publisher import procedure (PDF/X-1a:2003 + FOGRA39 + 300
   DPI), QR + mascot generation commands, print-shop candidates.
   [print-stickers-posters TASK-06]
+- `assets/print/prompts/mascot-v1.txt` — first OpenAI prompt for the
+  canonical pashtelka mascot (~280 words, bird-shaped, pastel palette,
+  Lisbon-coded surroundings). [print-stickers-posters TASK-07]
+- `gatsby/src/images/brand/pashtelka-mascot.png` — mascot v1 draft
+  (1024×1024 RGBA PNG, generated via OpenAI `gpt-image-1.5`). Pending
+  operator approval before Phase 4b finalises the print PDFs and the
+  welcome-page hero swap. [print-stickers-posters TASK-07]
 - `pipeline/b1_validator.py` — sync B1 readability validator. Three
   metrics (Flesch reading ease via textstat, avg sentence length, B1
   lemma coverage) return `passed` flag + `retry_addendum` for prompt
