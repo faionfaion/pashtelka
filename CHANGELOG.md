@@ -9,6 +9,11 @@ project uses semantic-ish versioning loosely — one logical change per commit
 ## [Unreleased]
 
 ### Added
+- SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
+  translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
+  + dual-language daily digest. Plan covers 13 atomic tasks, content
+  migration to `content/<slug>/{uk,pt}.md`, Flesch + lemma B1 validator,
+  cost guardrails. [pt-translation-b1]
 - SDD plan for `welcome-landing` feature: bilingual `/uk/welcome/` +
   `/pt/welcome/` landing pages, `/welcome/` redirect, OG cards, hero
   placeholder. Docs: `design.md`, `test-plan.md`, `implementation-plan.md`,
