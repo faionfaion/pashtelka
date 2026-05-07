@@ -88,6 +88,12 @@ project uses semantic-ish versioning loosely — one logical change per commit
 - `tests/test_stages.py::TestS7Save` — 3 existing tests updated for
   nested layout, 3 new cases for dual-locale write + b1_warning
   flag. 10/10 green. [pt-translation-b1 TASK-06]
+- `gatsby/gatsby-node.js` — locale-aware page creation. Articles
+  build at `/uk/<slug>/` and `/pt/<slug>/` (where the PT variant
+  exists). Per-locale prev/next pagination. Tag pages stay flat with
+  UA tags only for v1. [pt-translation-b1 TASK-07]
+- `gatsby/src/i18n/{uk,pt}.json` — 10 UI strings per locale.
+  [pt-translation-b1 TASK-07]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
