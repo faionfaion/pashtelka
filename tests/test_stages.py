@@ -553,11 +553,13 @@ class TestS7Save:
         from pipeline.stages.s7_save import run
         run(ctx)
 
-        md_path = content_dir / f"{ctx.slug}.md"
+        md_path = content_dir / ctx.slug / "uk.md"
         assert md_path.exists()
         text = md_path.read_text(encoding="utf-8")
         assert ctx.title in text
         assert ctx.slug in text
+        # No PT translation on ctx -> no pt.md
+        assert not (content_dir / ctx.slug / "pt.md").exists()
 
     @patch("pipeline.stages.s7_save._git_commit")
     @patch("pipeline.stages.s7_save.STATE_DIR")
@@ -636,7 +638,7 @@ class TestS7Save:
 
         from pipeline.stages.s7_save import run
         run(ctx)
-        md_path = content_dir / f"{ctx.slug}.md"
+        md_path = content_dir / ctx.slug / "uk.md"
         assert md_path.exists()
         text = md_path.read_text(encoding="utf-8")
         assert "image:" in text
@@ -695,8 +697,93 @@ class TestS7Save:
         mock_content.parent = Path("/fake/root")
 
         from pipeline.stages.s7_save import _git_commit
-        _git_commit(ctx)
+        _git_commit(ctx, pt_written=False)
         assert mock_run.call_count == 2  # git add + git commit
+        # commit message reflects locale set
+        commit_args = mock_run.call_args_list[1].args[0]
+        assert "[uk]" in commit_args[-1]
+
+    @patch("pipeline.stages.s7_save.subprocess.run")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    def test_git_commit_dual_locale(self, mock_content, mock_run, ctx):
+        mock_content.parent = Path("/fake/root")
+
+        from pipeline.stages.s7_save import _git_commit
+        _git_commit(ctx, pt_written=True)
+        commit_args = mock_run.call_args_list[1].args[0]
+        assert "[uk+pt]" in commit_args[-1]
+
+    @patch("pipeline.stages.s7_save._git_commit")
+    @patch("pipeline.stages.s7_save.STATE_DIR")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    @patch("pipeline.stages.s7_save.IMAGES_DIR")
+    def test_save_dual_locale_writes_pt_md(self, mock_images, mock_content,
+                                            mock_state, mock_git, ctx, tmp_path):
+        """When ctx.article_text_pt is set, both uk.md and pt.md are written."""
+        content_dir = tmp_path / "content"
+        content_dir.mkdir()
+        mock_content.__truediv__ = lambda self, x: content_dir / x
+        mock_content.mkdir = MagicMock()
+        state_dir = tmp_path / "state"
+        state_dir.mkdir()
+        mock_state.__truediv__ = lambda self, x: state_dir / x
+        mock_images.mkdir = MagicMock()
+
+        ctx.image_path = None
+        ctx.image_prompt = ""
+        ctx.article_text_pt = "# Título\n\nCorpo do artigo em português."
+        ctx.title_pt = "Título PT"
+        ctx.description_pt = "Descrição PT."
+        ctx.b1_warning = False
+
+        from pipeline.stages.s7_save import run
+        run(ctx)
+
+        uk_md = content_dir / ctx.slug / "uk.md"
+        pt_md = content_dir / ctx.slug / "pt.md"
+        assert uk_md.exists()
+        assert pt_md.exists()
+
+        uk_text = uk_md.read_text(encoding="utf-8")
+        pt_text = pt_md.read_text(encoding="utf-8")
+        assert 'lang: "ua"' in uk_text
+        assert 'lang: "pt"' in pt_text
+        assert "Título PT" in pt_text
+        assert "Corpo do artigo em português." in pt_text
+        # No b1_warning field when validator passed
+        assert "b1_warning" not in pt_text
+
+    @patch("pipeline.stages.s7_save._git_commit")
+    @patch("pipeline.stages.s7_save.STATE_DIR")
+    @patch("pipeline.stages.s7_save.CONTENT_DIR")
+    @patch("pipeline.stages.s7_save.IMAGES_DIR")
+    def test_save_pt_b1_warning_in_frontmatter(self, mock_images, mock_content,
+                                                 mock_state, mock_git, ctx, tmp_path):
+        """ctx.b1_warning=True puts b1_warning: true in pt.md frontmatter."""
+        content_dir = tmp_path / "content"
+        content_dir.mkdir()
+        mock_content.__truediv__ = lambda self, x: content_dir / x
+        mock_content.mkdir = MagicMock()
+        state_dir = tmp_path / "state"
+        state_dir.mkdir()
+        mock_state.__truediv__ = lambda self, x: state_dir / x
+        mock_images.mkdir = MagicMock()
+
+        ctx.image_path = None
+        ctx.image_prompt = ""
+        ctx.article_text_pt = "Corpo."
+        ctx.title_pt = "Título"
+        ctx.description_pt = "Descrição."
+        ctx.b1_warning = True
+
+        from pipeline.stages.s7_save import run
+        run(ctx)
+
+        pt_text = (content_dir / ctx.slug / "pt.md").read_text(encoding="utf-8")
+        assert "b1_warning: true" in pt_text
+        # UA file does NOT carry the flag
+        uk_text = (content_dir / ctx.slug / "uk.md").read_text(encoding="utf-8")
+        assert "b1_warning" not in uk_text
 
 
 class TestS7Deploy:

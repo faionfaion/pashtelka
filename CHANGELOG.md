@@ -78,6 +78,16 @@ project uses semantic-ish versioning loosely — one logical change per commit
 - 158 articles relocated from `content/<slug>.md` to
   `content/<slug>/uk.md` via the migration script. Pure renames, zero
   body changes. [pt-translation-b1 TASK-05]
+- `pipeline/stages/s7_save.py` — writes per-locale markdown into
+  `content/<slug>/uk.md` (always) and `content/<slug>/pt.md` (when
+  `ctx.article_text_pt`). Frontmatter builder extracted to
+  `_build_md(ctx, *, lang, date_str)`. Git commit message reads
+  `content: <slug> [uk]` or `[uk+pt]`. Per-locale teaser URL bumped
+  to `/uk/<slug>/`. PT frontmatter adds `b1_warning: true` only when
+  the validator failed twice. [pt-translation-b1 TASK-06]
+- `tests/test_stages.py::TestS7Save` — 3 existing tests updated for
+  nested layout, 3 new cases for dual-locale write + b1_warning
+  flag. 10/10 green. [pt-translation-b1 TASK-06]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
