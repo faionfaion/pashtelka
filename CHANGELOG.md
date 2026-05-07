@@ -62,6 +62,17 @@ project uses semantic-ish versioning loosely — one logical change per commit
   `_generate_one_article`. Translation duration captured in the run
   report. Translation failure aborts the article (avoids asymmetric
   UA-only shipping). [pt-translation-b1 TASK-04]
+- `content/` layout migrated from flat `<slug>.md` to nested
+  `<slug>/uk.md` for 158 articles. Per-locale dirs let
+  `s_translate_pt` write `<slug>/pt.md` alongside the UA original.
+  Renames preserved via `git mv` so file history follows.
+  Migration script `scripts/migrate_to_locale_dirs.py` is idempotent
+  and re-runnable. [pt-translation-b1 TASK-05]
+
+### Added (TASK-05)
+- `scripts/migrate_to_locale_dirs.py` — one-shot migration helper.
+  `--dry-run` preview + live mode. Uses `git mv` with
+  `shutil.move` fallback. [pt-translation-b1 TASK-05]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content

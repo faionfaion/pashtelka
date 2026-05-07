@@ -67,3 +67,41 @@ for d in content/*/; do
   mv "$d/uk.md" "${d%/}.md" && rmdir "$d"
 done
 ```
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Wrote `scripts/migrate_to_locale_dirs.py` (~130 lines) — sync,
+  idempotent, uses `git mv` so renames record as renames in git
+  history (not add+delete). Falls back to `shutil.move` for non-git
+  checkouts.
+- CLI flags: `--dry-run` (preview), `--root <path>` (override).
+- Ran `--dry-run` first: 158 candidate files listed cleanly.
+- Ran live: `moved=158 skipped=0 failed=0`.
+- Re-ran on the migrated tree: prints
+  `no flat *.md files in content — already migrated or empty` and
+  exits 0 — idempotent confirmed.
+- `git status` shows 158 renames staged; 0 byte-level body diff.
+
+### Files Changed
+| Repo | File | Change |
+|------|------|--------|
+| pashtelka-faion-net | `scripts/migrate_to_locale_dirs.py` | new (~130 lines) |
+| pashtelka-faion-net | `content/<slug>.md` | renamed -> `content/<slug>/uk.md` (158 files) |
+
+### Tests
+- Dry-run prints all 158 candidates, ends with
+  `done: moved=158 skipped=0 failed=0 (dry-run)`.
+- Live run: `done: moved=158 skipped=0 failed=0 (live)`.
+- Re-run: idempotent no-op message.
+- `find content/ -name uk.md | wc -l` -> 158.
+- `ls content/*.md 2>/dev/null | wc -l` -> 0.
+- `git diff --cached --stat` shows the 158 renames as zero-byte diffs
+  (pure renames, no body changes).
+
+### Issues
+- None. Pre-existing git history is preserved per `git log --follow`
+  on a sample slug (chain `f3d2e349 -> 2cd2f25a -> c66e8fd4` recorded
+  pre-migration; `--follow` will chain through after the commit lands).
