@@ -134,3 +134,27 @@ except RuntimeError as e: print('OK raised:', str(e)[:60])
 Real-API smoke test deferred (requires key + costs $).
 
 **Rollback:** Re-stub `gemini_search` to `NotImplementedError`. No callers wired yet (TASK-07 wires it).
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Added `import requests`, `GEMINI_ENDPOINT` constant.
+- Filled `gemini_search()` with REST POST to `v1beta/models/{model}:generateContent`, `tools=[{"google_search":{}}]`, optional `system_instruction`, `temperature=0.4`, `maxOutputTokens=4096`.
+- Retries on `requests.Timeout`, 429, and 5xx. Raises immediately on 4xx (non-retryable auth/quota).
+- Raises explicit error on empty `candidates[]` and exposes `blockReason` from `promptFeedback`.
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/llm.py` | +90 lines for `gemini_search` + endpoint constant |
+
+### Tests
+- `python3 -m py_compile pipeline/llm.py` → OK
+- Symbol import: ok
+- Missing-key path: `RuntimeError: GEMINI_API_KEY is empty. Set it in ~/workspace/.env`
+- Real API smoke test deferred until `GEMINI_API_KEY` is added by operator.
+
+### Issues
+- None.

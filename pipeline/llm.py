@@ -27,6 +27,7 @@ import time
 from pathlib import Path
 
 import jsonschema
+import requests
 
 from pipeline.config import (
     CLAUDE_MODEL, CODEX_BIN, CODEX_MODEL, CODEX_TIMEOUT,
@@ -107,9 +108,111 @@ def preflight_check() -> None:
 
 # Public API stubs — real implementations land in TASK-03/04/05.
 
-def gemini_search(prompt: str, *, system: str = "", model: str | None = None,
-                  timeout: int = GEMINI_TIMEOUT) -> str:
-    raise NotImplementedError("gemini_search lands in TASK-04")
+GEMINI_ENDPOINT = (
+    "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+)
+
+
+def gemini_search(
+    prompt: str,
+    *,
+    system: str = "",
+    model: str | None = None,
+    timeout: int = GEMINI_TIMEOUT,
+) -> str:
+    """Run Gemini with google_search grounding. Return concatenated text.
+
+    Raises RuntimeError on missing key, safety-block, or retry exhaustion.
+    """
+    chosen_model = model or GEMINI_MODEL
+
+    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
+    if not api_key:
+        raise RuntimeError(
+            "GEMINI_API_KEY is empty. Set it in ~/workspace/.env"
+        )
+
+    body: dict = {
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "tools": [{"google_search": {}}],
+        "generationConfig": {
+            "temperature": 0.4,
+            "maxOutputTokens": 4096,
+        },
+    }
+    if system:
+        body["system_instruction"] = {"parts": [{"text": system}]}
+
+    url = GEMINI_ENDPOINT.format(model=chosen_model)
+
+    last_error: Exception | None = None
+
+    for attempt in range(RETRY_MAX_ATTEMPTS):
+        try:
+            resp = requests.post(
+                url,
+                params={"key": api_key},
+                json=body,
+                timeout=timeout,
+                headers={"Content-Type": "application/json"},
+            )
+        except requests.Timeout:
+            exc = TimeoutError(f"gemini_search timed out after {timeout}s")
+            if attempt < RETRY_MAX_ATTEMPTS - 1:
+                last_error = exc
+                _sleep_backoff(attempt, "gemini_search", exc)
+                continue
+            raise exc
+        except requests.RequestException as e:
+            if _is_retryable(e) and attempt < RETRY_MAX_ATTEMPTS - 1:
+                last_error = e
+                _sleep_backoff(attempt, "gemini_search", e)
+                continue
+            raise
+
+        if resp.status_code >= 500 or resp.status_code == 429:
+            exc = RuntimeError(
+                f"gemini_search HTTP {resp.status_code}: {resp.text[:200]}"
+            )
+            if attempt < RETRY_MAX_ATTEMPTS - 1:
+                last_error = exc
+                _sleep_backoff(attempt, "gemini_search", exc)
+                continue
+            raise exc
+
+        if resp.status_code >= 400:
+            raise RuntimeError(
+                f"gemini_search HTTP {resp.status_code}: {resp.text[:500]}"
+            )
+
+        data = resp.json()
+        candidates = data.get("candidates") or []
+        if not candidates:
+            block = data.get("promptFeedback", {}).get("blockReason")
+            raise RuntimeError(
+                f"gemini_search empty candidates (blockReason={block}): "
+                f"{json.dumps(data)[:300]}"
+            )
+
+        parts = candidates[0].get("content", {}).get("parts", [])
+        text = "\n".join(p.get("text", "") for p in parts if "text" in p).strip()
+
+        if not text:
+            exc = RuntimeError("gemini_search returned empty text")
+            if attempt < RETRY_MAX_ATTEMPTS - 1:
+                last_error = exc
+                _sleep_backoff(attempt, "gemini_search", exc)
+                continue
+            raise exc
+
+        logger.info(
+            "gemini_search: model=%s, %d chars, finish=%s",
+            chosen_model, len(text),
+            candidates[0].get("finishReason", "?"),
+        )
+        return text
+
+    raise last_error or RuntimeError("gemini_search: retry exhausted")
 
 
 def codex_generate(
