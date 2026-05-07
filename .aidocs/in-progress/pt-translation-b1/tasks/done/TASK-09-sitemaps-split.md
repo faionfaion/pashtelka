@@ -57,3 +57,47 @@ Wire into `package.json`:
 ## Rollback
 
 `git revert <commit>` — single script + package.json one-liner.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Wrote `gatsby/scripts/split-sitemaps.mjs` (~75 lines, ESM, no
+  external deps). Reads `public/sitemap-0.xml`, partitions URL blocks
+  by `/uk/`, `/pt/`, locale-neutral. Writes
+  `public/sitemap-uk.xml`, `public/sitemap-pt.xml`,
+  `public/sitemap.xml` (index).
+- Idempotent: re-running just rewrites. Exits 0 on missing input so
+  it never blocks a partial build.
+- Wired via `package.json` `postbuild` hook so one `npm run build`
+  produces all files.
+
+### Files Changed
+| Repo | File | Change |
+|------|------|--------|
+| pashtelka-faion-net | `gatsby/scripts/split-sitemaps.mjs` | new (~75 lines) |
+| pashtelka-faion-net | `gatsby/package.json` | +1 postbuild line |
+
+### Tests
+- `npm run build` exits 0. Postbuild line:
+  `split-sitemaps: wrote sitemap-uk.xml (804 urls), sitemap-pt.xml
+  (647 urls), sitemap.xml (index of 2)` — counts are inflated by
+  642 locale-neutral tag pages duplicated across both locale
+  sitemaps.
+- UA-prefix URLs in `sitemap-uk.xml`: **160** (158 articles + /uk/ +
+  /uk/welcome/).
+- PT-prefix URLs in `sitemap-pt.xml`: **3** (1 article + /pt/ +
+  /pt/welcome/) — scales up as the pipeline writes more PT
+  articles.
+- `sitemap.xml` is the proper sitemapindex referencing both locale
+  files at absolute URLs.
+
+### Issues
+- Locale-neutral pages duplicated across both sitemaps. Harmless —
+  search engines deduplicate by URL — but inflates count.
+- gatsby-plugin-sitemap's original outputs (`sitemap-0.xml`,
+  `sitemap-index.xml`) still exist on disk alongside our three new
+  files. They don't hurt anything; removing them risks break-glass
+  recovery if the splitter has a bug. Operator can `rm` them after
+  a clean deploy if desired.

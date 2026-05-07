@@ -6,6 +6,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
+    "postbuild": "node scripts/split-sitemaps.mjs",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },

@@ -112,6 +112,10 @@ project uses semantic-ish versioning loosely — one logical change per commit
   `content/aima-deadline-passed-april-16-day-after-checklist/pt.md`
   used to verify dual-locale build (smoke test for TASK-13 reuses).
   [pt-translation-b1 TASK-08]
+- `gatsby/scripts/split-sitemaps.mjs` post-build splitter. Writes
+  `public/sitemap-uk.xml`, `public/sitemap-pt.xml`, and the
+  `public/sitemap.xml` index referencing both. Wired via
+  `gatsby/package.json` `postbuild` hook. [pt-translation-b1 TASK-09]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
