@@ -120,3 +120,26 @@ print('ok')
 Routing unit tests come in TASK-12.
 
 **Rollback:** Restore stubs from TASK-02. No stage callers wired yet (TASK-07..11 wire them).
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Implemented `claude_review`, `_claude_structured`, `_claude_research` (all delegate to `pipeline.sdk` via local imports — keeps the SDK import-time patch off the hot path when only the new stack is exercised).
+- Implemented `dispatch_research` (`old → _claude_research`, `new → gemini_search`).
+- Implemented `dispatch_structured` with stage-aware routing: `{review, plan}` → always Claude; `{generate, revise, tg, digest}` → flips with stack; unknown stage → `ValueError`.
+- Exposed `_CLAUDE_ONLY_STAGES` and `_CODEX_STAGES` as module attrs for the unit tests in TASK-12.
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/llm.py` | +90 lines for wrappers + dispatch shims |
+
+### Tests
+- `python3 -m py_compile pipeline/llm.py` → OK
+- All public symbols importable in one statement → ok
+- `_stack() == 'old'`, both stage sets correctly populated.
+
+### Issues
+- None.

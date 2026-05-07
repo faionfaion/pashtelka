@@ -330,16 +330,96 @@ def codex_generate(
     raise last_error or RuntimeError("codex_generate: retry exhausted")
 
 
-def claude_review(prompt: str, *, system: str, schema: dict,
-                  model: str = "opus", timeout: int = 900) -> dict:
-    raise NotImplementedError("claude_review lands in TASK-05")
+def claude_review(
+    prompt: str,
+    *,
+    system: str,
+    schema: dict,
+    model: str = "opus",
+    timeout: int = 900,
+) -> dict:
+    """Thin wrapper over pipeline.sdk.structured_query. Used by s4_review."""
+    # Local import keeps pipeline.sdk's import-time SDK patch out of the way
+    # for code paths that only need codex/gemini.
+    from pipeline.sdk import structured_query
+    return structured_query(
+        prompt=prompt,
+        system_prompt=system,
+        schema=schema,
+        model=model,
+        timeout=timeout,
+    )
 
 
-def dispatch_research(prompt: str, *, system: str = "",
-                      timeout: int = GEMINI_TIMEOUT) -> str:
-    raise NotImplementedError("dispatch_research lands in TASK-05")
+def _claude_structured(prompt: str, system: str, schema: dict, timeout: int) -> dict:
+    """Old-stack call for stages that originally used structured_query."""
+    from pipeline.sdk import structured_query
+    return structured_query(
+        prompt=prompt,
+        system_prompt=system,
+        schema=schema,
+        model="opus",
+        timeout=timeout,
+    )
 
 
-def dispatch_structured(prompt: str, *, system: str, schema: dict, stage: str,
-                        timeout: int = CODEX_TIMEOUT) -> dict:
-    raise NotImplementedError("dispatch_structured lands in TASK-05")
+def _claude_research(prompt: str, system: str, timeout: int) -> str:
+    """Old-stack call for s2_research using agent_query + WebSearch tools."""
+    from pipeline.sdk import agent_query
+    return agent_query(
+        prompt=prompt,
+        system_prompt=system,
+        model="opus",
+        allowed_tools=["WebSearch", "WebFetch", "Read", "Glob"],
+        timeout=timeout,
+    )
+
+
+def dispatch_research(
+    prompt: str,
+    *,
+    system: str = "",
+    timeout: int = GEMINI_TIMEOUT,
+) -> str:
+    """Stack-aware research call.
+
+    old → Claude agent_query with WebSearch / WebFetch / Read / Glob.
+    new → Gemini 2.5 Flash with google_search grounding.
+    """
+    if _stack() == "new":
+        return gemini_search(prompt, system=system, timeout=timeout)
+    return _claude_research(prompt, system, timeout)
+
+
+# Stages that always stay on Claude regardless of LLM_STACK.
+_CLAUDE_ONLY_STAGES = {"review", "plan"}
+
+# Stages that flip to Codex on the new stack.
+_CODEX_STAGES = {"generate", "revise", "tg", "digest"}
+
+
+def dispatch_structured(
+    prompt: str,
+    *,
+    system: str,
+    schema: dict,
+    stage: str,
+    timeout: int = CODEX_TIMEOUT,
+) -> dict:
+    """Stack + stage aware structured-output call.
+
+    Routing:
+      - stage in {review, plan}: always Claude (AC3 + s0 not in AC2 list)
+      - stage in {generate, revise, tg, digest}:
+          new → codex_generate, old → Claude structured_query
+    """
+    if stage in _CLAUDE_ONLY_STAGES:
+        return _claude_structured(prompt, system, schema, timeout=timeout)
+
+    if stage not in _CODEX_STAGES:
+        raise ValueError(f"dispatch_structured: unknown stage {stage!r}")
+
+    if _stack() == "new":
+        return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+
+    return _claude_structured(prompt, system, schema, timeout=timeout)
