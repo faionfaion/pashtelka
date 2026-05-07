@@ -6,7 +6,9 @@ from unittest.mock import MagicMock, patch, mock_open
 
 import pytest
 
-from pipeline.telegram import add_reaction, send_photo, send_text
+from pipeline.telegram import (
+    add_reaction, require_pt_channel_id, send_photo, send_text,
+)
 
 
 class TestSendText:
@@ -255,3 +257,26 @@ class TestAddReaction:
             emoji="\U0001f525",
             bot_token="test-token",
         )
+
+
+# ---- pt-translation-b1: PT channel guard ----
+
+class TestRequirePtChannelId:
+    """require_pt_channel_id: clear-fail when the env var is missing."""
+
+    def test_returns_id_when_set(self, monkeypatch):
+        import pipeline.telegram as tg
+        monkeypatch.setattr(tg, "TG_CHANNEL_PT_ID", "-1003999999999")
+        assert tg.require_pt_channel_id() == "-1003999999999"
+
+    def test_raises_with_actionable_message_when_empty(self, monkeypatch):
+        import pipeline.telegram as tg
+        monkeypatch.setattr(tg, "TG_CHANNEL_PT_ID", "")
+        with pytest.raises(RuntimeError) as exc_info:
+            tg.require_pt_channel_id()
+        msg = str(exc_info.value)
+        assert "TG_CHANNEL_PT_ID" in msg
+        assert "@pastelka_pt" in msg
+        assert "@nero_open_bot" in msg
+        assert "~/workspace/.env" in msg
+

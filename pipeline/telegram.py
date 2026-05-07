@@ -7,7 +7,28 @@ import sys
 
 import requests
 
+from pipeline.config import TG_CHANNEL_PT_ID, TG_CHANNEL_PT_USERNAME
+
 logger = logging.getLogger(__name__)
+
+
+def require_pt_channel_id() -> str:
+    """Return TG_CHANNEL_PT_ID or raise a clear error.
+
+    The PT channel is created manually by the operator before launch.
+    Until then, the env var is empty and the publish path must fail
+    with an actionable message instead of crashing later inside the
+    Telegram API.
+    """
+    cid = TG_CHANNEL_PT_ID
+    if not cid:
+        raise RuntimeError(
+            f"TG_CHANNEL_PT_ID is not set. Create @{TG_CHANNEL_PT_USERNAME} "
+            "in Telegram, add @nero_open_bot as admin, look up the chat_id "
+            "(starts with -100), and put it in ~/workspace/.env as "
+            "TG_CHANNEL_PT_ID=…"
+        )
+    return cid
 
 
 def send_text(

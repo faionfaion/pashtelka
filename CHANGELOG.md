@@ -116,6 +116,11 @@ project uses semantic-ish versioning loosely — one logical change per commit
   `public/sitemap-uk.xml`, `public/sitemap-pt.xml`, and the
   `public/sitemap.xml` index referencing both. Wired via
   `gatsby/package.json` `postbuild` hook. [pt-translation-b1 TASK-09]
+- `pipeline.telegram.require_pt_channel_id()` — clear-fail helper.
+  Returns `TG_CHANNEL_PT_ID` when set, raises `RuntimeError` with an
+  operator-actionable message otherwise. Tests in
+  `tests/test_telegram.py::TestRequirePtChannelId`. 19/19 telegram
+  tests green. [pt-translation-b1 TASK-10]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
