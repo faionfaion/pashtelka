@@ -24,6 +24,9 @@ project uses semantic-ish versioning loosely — one logical change per commit
 - Hero placeholder under `gatsby/src/images/welcome/hero-placeholder.{png,
   webp, avif}` (940×940, AVIF 16.6 KB). Will be swapped for the canonical
   mascot from `print-stickers-posters` later. [welcome-landing TASK-02]
+- OG cards `gatsby/static/og/welcome-uk.png` and `welcome-pt.png`, both
+  exactly 1200×630 PNG, ~450 KB each. Generated via the same
+  `gen-welcome-assets.mjs` script. [welcome-landing TASK-03]
 - LLM dispatcher module `pipeline/llm.py` with three backends:
   Gemini 2.5 Flash (web-search grounded research), Codex CLI gpt-5.5
   (generation/revision/TG/digest), Claude Opus (review).
