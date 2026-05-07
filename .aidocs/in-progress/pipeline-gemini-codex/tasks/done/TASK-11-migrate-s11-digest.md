@@ -39,3 +39,22 @@ python3 -c "from pipeline.stages import s11_digest; print('ok')"
 ```
 
 **Rollback:** Revert single-file change.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Replaced `structured_query(model=MODEL_TG, ...)` inside `_generate_digest()` with `dispatch_structured(stage="digest", ...)`. Dropped `MODEL_TG` import.
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/stages/s11_digest.py` | -3 / +3 lines (net 0) |
+
+### Tests
+- `python3 -m py_compile pipeline/stages/s11_digest.py` → OK
+- Module imports cleanly.
+
+### Issues
+- Spec Open Question reserves the right to revisit Codex vs Opus for digest creativity. Default per spec is Codex; revisit after first 3 digests.

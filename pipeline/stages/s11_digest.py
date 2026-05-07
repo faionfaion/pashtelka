@@ -14,14 +14,14 @@ import logging
 from datetime import datetime, timezone
 
 from pipeline.config import (
-    CONTENT_DIR, DIGEST_IMAGE_QUALITY, MODEL_TG, SITE_BASE_URL,
+    CONTENT_DIR, DIGEST_IMAGE_QUALITY, SITE_BASE_URL,
     SOUND_ON_END, SOUND_ON_START, SPONSOR_LINE,
     TG_BOT_TOKEN, TG_CHANNEL_ID,
 )
 from pipeline.image_gen import generate_image
+from pipeline.llm import dispatch_structured
 from pipeline.prompts.builder import build_digest_prompt
 from pipeline.schemas import load_schema
-from pipeline.sdk import structured_query
 from pipeline.telegram import add_reaction, send_photo, send_text
 
 logger = logging.getLogger(__name__)
@@ -144,11 +144,11 @@ def _generate_digest(articles: list[dict], today_str: str, weekday_uk: str) -> d
         for a in articles
     )
     system, prompt = build_digest_prompt(articles_text, today_str, weekday_uk)
-    return structured_query(
+    return dispatch_structured(
         prompt=prompt,
-        system_prompt=system,
+        system=system,
         schema=load_schema("digest"),
-        model=MODEL_TG,
+        stage="digest",
     )
 
 
