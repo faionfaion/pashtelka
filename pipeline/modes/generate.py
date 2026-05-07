@@ -27,6 +27,7 @@ from pipeline.stages import (
     s7_deploy,
     s7_save,
     s8_verify,
+    s_translate_pt,
 )
 
 logger = logging.getLogger("pipeline")
@@ -150,6 +151,13 @@ def _generate_one_article(
 
         with time_stage(report, f"review:{topic_label[:30]}"):
             _review_loop(ctx)
+
+        # PT translation (pt-translation-b1): runs after revise loop, before
+        # TG caption generation. Failures here abort this article — UA shipping
+        # without a PT counterpart would create asymmetric content. Operator
+        # backfills if needed via scripts/backfill_pt.py.
+        with time_stage(report, f"translate_pt:{topic_label[:30]}"):
+            s_translate_pt.run(ctx)
 
         with time_stage(report, f"tg_caption:{topic_label[:30]}"):
             s6_generate_tg.run(ctx)

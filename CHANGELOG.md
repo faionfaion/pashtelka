@@ -55,6 +55,13 @@ project uses semantic-ish versioning loosely — one logical change per commit
   shape, ctx mutation, retry-with-addendum, b1_warning on double
   failure, empty-body guard, file roundtrip). 6/6 green.
   [pt-translation-b1 TASK-03]
+
+### Changed
+- `pipeline/modes/generate.py` — `s_translate_pt.run(ctx)` now runs
+  between the revise loop and TG-caption generation in
+  `_generate_one_article`. Translation duration captured in the run
+  report. Translation failure aborts the article (avoids asymmetric
+  UA-only shipping). [pt-translation-b1 TASK-04]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
