@@ -43,3 +43,25 @@ LLM_STACK=new GEMINI_MODEL=gemini-2.5-pro python3 -c "from pipeline.config impor
 ```
 
 **Rollback:** `git revert <commit>` — config-only change, no runtime impact when `LLM_STACK` is unset.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Added `import os` at top of `pipeline/config.py`.
+- Appended `LLM_STACK`, `GEMINI_MODEL`, `CODEX_MODEL`, `CLAUDE_MODEL`, `CODEX_BIN`, `GEMINI_TIMEOUT`, `CODEX_TIMEOUT` constants — all read from env with documented defaults.
+- Did NOT touch existing `MODEL_*` constants (kept for backward compat on `LLM_STACK=old`).
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/config.py` | +18 lines (imports + LLM_STACK block) |
+
+### Tests
+- `python3 -m py_compile pipeline/config.py` → OK
+- Default import: `old gemini-2.5-flash gpt-5.5 codex`
+- Override: `LLM_STACK=new GEMINI_MODEL=gemini-2.5-pro` → `new gemini-2.5-pro`
+
+### Issues
+- None.
