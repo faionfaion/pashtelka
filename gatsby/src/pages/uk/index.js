@@ -1,13 +1,9 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import Layout from "../components/layout";
-import uk from "../i18n/uk.json";
+import Layout from "../../components/layout";
+import uk from "../../i18n/uk.json";
 
-// Root /. UA-default homepage that lists UA articles and points each link
-// at /uk/<slug>/. The pt/uk lang chip in the header lets PT readers
-// switch to /pt/. Browser-language redirects can be wired into nginx
-// later; static SSG can't sniff Accept-Language.
-const IndexPage = ({ data }) => {
+const UkIndex = ({ data }) => {
   const articles = data.allMarkdownRemark.nodes;
 
   const grouped = {};
@@ -95,7 +91,7 @@ export const query = graphql`
   }
 `;
 
-export default IndexPage;
+export default UkIndex;
 
 export const Head = () => (
   <>
@@ -104,11 +100,11 @@ export const Head = () => (
     <meta property="og:title" content={uk.homeTitle} />
     <meta property="og:description" content={uk.siteDescription} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pastelka.news" />
+    <meta property="og:url" content="https://pastelka.news/uk/" />
     <meta property="og:site_name" content={uk.siteName} />
     <meta property="og:locale" content="uk_UA" />
     <meta property="og:locale:alternate" content="pt_PT" />
-    <link rel="canonical" href="https://pastelka.news/" />
+    <link rel="canonical" href="https://pastelka.news/uk/" />
     <link rel="alternate" hrefLang="uk" href="https://pastelka.news/uk/" />
     <link rel="alternate" hrefLang="pt" href="https://pastelka.news/pt/" />
     <link rel="alternate" hrefLang="x-default" href="https://pastelka.news/uk/" />

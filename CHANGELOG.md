@@ -94,6 +94,24 @@ project uses semantic-ish versioning loosely — one logical change per commit
   UA tags only for v1. [pt-translation-b1 TASK-07]
 - `gatsby/src/i18n/{uk,pt}.json` — 10 UI strings per locale.
   [pt-translation-b1 TASK-07]
+- `gatsby/src/templates/article.js` — locale-aware. GraphQL filters
+  by slug AND lang. Hreflang triplet (uk + pt-when-available +
+  x-default), per-locale OG, canonical, html lang.
+  [pt-translation-b1 TASK-08]
+- `gatsby/src/components/layout.js` — accepts `lang` /
+  `otherLocaleHref` props. Header lang-chip switches to the other
+  locale. Footer + sitemap link + TG handle adapt per locale.
+  [pt-translation-b1 TASK-08]
+- `gatsby/src/pages/{uk,pt}/index.js` — explicit per-locale homepages.
+  Root `/` keeps serving UA-default with hreflang triplet.
+  [pt-translation-b1 TASK-08]
+- `gatsby/src/components/layout.css` — `.site-lang-chip`,
+  `.empty-state`, header `position: relative` for chip anchoring.
+  [pt-translation-b1 TASK-08]
+- One sample PT article at
+  `content/aima-deadline-passed-april-16-day-after-checklist/pt.md`
+  used to verify dual-locale build (smoke test for TASK-13 reuses).
+  [pt-translation-b1 TASK-08]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
