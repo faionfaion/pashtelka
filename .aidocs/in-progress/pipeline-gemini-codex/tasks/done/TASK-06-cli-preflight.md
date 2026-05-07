@@ -32,3 +32,24 @@ LLM_STACK=new python3 -m pipeline plan 2>&1 | tail -5; echo "rc=$?"
 ```
 
 **Rollback:** Remove the inserted block. The pipeline reverts to the previous behavior (no startup check).
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Inserted preflight call in `pipeline/cli.py` between the file-logging setup and the mode-dispatch try/except block.
+- On `RuntimeError` from `preflight_check`, log the message at ERROR level (preserves the `\n  -` listing) and `sys.exit(2)`.
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/cli.py` | +9 lines |
+
+### Tests
+- `python3 -m py_compile pipeline/cli.py` → OK
+- Smoke harness emulating cli startup with default stack → `preflight ok (old)`.
+- `LLM_STACK=new python3 -m pipeline plan` → exits with code 2 and prints `Pre-flight check failed:` followed by `LLM_STACK=new requires: - GEMINI_API_KEY env var` (codex bin is found on this dev box, so only the key is flagged).
+
+### Issues
+- None.

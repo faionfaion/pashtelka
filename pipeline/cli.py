@@ -43,6 +43,15 @@ def cli() -> None:
     ))
     logging.getLogger().addHandler(fh)
 
+    # Pre-flight: when LLM_STACK=new, verify codex CLI + GEMINI_API_KEY.
+    # No-op when LLM_STACK is unset or "old".
+    try:
+        from pipeline.llm import preflight_check
+        preflight_check()
+    except RuntimeError as e:
+        logger.error("Pre-flight check failed:\n%s", e)
+        sys.exit(2)
+
     try:
         if args.mode == "plan":
             plan = s0_editorial_plan.run()
