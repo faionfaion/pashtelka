@@ -83,3 +83,27 @@ test -f .aidocs/in-progress/pipeline-gemini-codex/done.md
 ```
 
 **Rollback:** `git revert` the docs commit.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Created `CHANGELOG.md` with `[Unreleased]` section listing Added / Changed / Notes for the feature.
+- Updated `AGENTS.md`: replaced single-line `LLM:` row with a multi-line description covering both stacks, required env vars, and the pre-flight check behavior.
+- Created `.aidocs/in-progress/pipeline-gemini-codex/done.md` (25 lines) summarizing what shipped, rollback, and the operator's checklist before flipping the default.
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `CHANGELOG.md` | NEW (39 lines) |
+| `AGENTS.md` | -1 / +5 lines (LLM section) |
+| `.aidocs/in-progress/pipeline-gemini-codex/done.md` | NEW (25 lines) |
+
+### Tests
+- `test -f CHANGELOG.md` → exists
+- `grep -q "LLM_STACK" AGENTS.md` → matches
+- `test -f .aidocs/in-progress/pipeline-gemini-codex/done.md` → exists
+
+### Issues
+- None.

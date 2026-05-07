@@ -41,7 +41,11 @@ python3 -m pipeline generate --dry-run  # Test without deploy
 - **Channel:** @pashtelka_news (chat_id: -1003726391778)
 - **Domain:** pastelka.news (Cloudflare DNS → faion-net nginx)
 - **Deploy:** git push → SSH faion@46.225.58.119:22022 → gatsby build → rsync
-- **LLM:** All stages use Claude Opus via CLI
+- **LLM:** Per-stage stack via `pipeline/llm.py` dispatcher.
+  - Default (`LLM_STACK=old`): Claude Opus everywhere.
+  - New (`LLM_STACK=new`): Gemini 2.5 Flash (research, web-search grounded), Codex CLI gpt-5.5 (generate/revise/TG/digest), Claude Opus (review/plan).
+  - Required env when `LLM_STACK=new`: `GEMINI_API_KEY` (`~/workspace/.env`), `OPENAI_API_KEY` (Codex auth), `ANTHROPIC_API_KEY` (Claude SDK).
+  - Pre-flight check at startup fails fast with `exit 2` if a prereq is missing.
 - **Images:** OpenAI gpt-image-1, comic style, JPEG
 
 ## Sources
