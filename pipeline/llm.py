@@ -1,19 +1,17 @@
-# TASK-02 — Create `pipeline/llm.py` skeleton + preflight
-
-**Subject:** Establish the new module with imports, retry helpers, stack accessor, pricing dict, and `preflight_check()`. Functions that do real LLM work are stubs in this task; they get filled in TASK-03/04/05.
-
-**Files touched:**
-- `pipeline/llm.py` (NEW)
-
-**Module skeleton:**
-
-```python
 """Pipeline LLM dispatcher: Gemini (search), Codex (generate), Claude (review).
 
 Single integration point for the multi-vendor stack introduced by feature
 pipeline-gemini-codex. All migrated stages call this module instead of
 pipeline.sdk directly. The LLM_STACK env var (old|new) chooses the backend
 per stage; old delegates back to pipeline.sdk.
+
+Public API:
+    gemini_search(prompt, *, system, model, timeout) -> str
+    codex_generate(prompt, *, system, schema, model, timeout) -> dict
+    claude_review(prompt, *, system, schema, model, timeout) -> dict
+    preflight_check() -> None
+    dispatch_research(prompt, *, system, timeout) -> str
+    dispatch_structured(prompt, *, system, schema, stage, timeout) -> dict
 """
 
 from __future__ import annotations
@@ -32,7 +30,7 @@ from pipeline.config import (
 
 logger = logging.getLogger(__name__)
 
-# --- Pricing for AC5 bench (USD per 1M tokens) ---
+# --- Pricing for AC5 bench (USD per 1M tokens; rough Q2 2026 reference) ---
 PRICING = {
     "claude-opus-4-7":  {"in": 15.00, "out": 75.00},
     "gemini-2.5-flash": {"in":  0.30, "out":  2.50},
@@ -58,6 +56,15 @@ def _is_retryable(error: Exception) -> bool:
         "timeout", "overloaded", "rate limit", "429",
         "500", "502", "503", "504", "resource_exhausted",
     ))
+
+
+def _sleep_backoff(attempt: int, label: str, err: Exception) -> None:
+    delay = _backoff_delay(attempt)
+    logger.warning(
+        "%s retry %d/%d: %s — sleeping %.1fs",
+        label, attempt + 1, RETRY_MAX_ATTEMPTS - 1, str(err)[:120], delay,
+    )
+    time.sleep(delay)
 
 
 def preflight_check() -> None:
@@ -86,12 +93,13 @@ def preflight_check() -> None:
         raise RuntimeError(msg)
 
     logger.info(
-        "preflight ok (codex=%s, gemini_key=set, codex_model=%s, gemini_model=%s, claude_model=%s)",
+        "preflight ok (codex=%s, codex_model=%s, gemini_model=%s, claude_model=%s)",
         codex_path, CODEX_MODEL, GEMINI_MODEL, CLAUDE_MODEL,
     )
 
 
-# Public API stubs filled in TASK-03/04/05.
+# Public API stubs — real implementations land in TASK-03/04/05.
+
 def gemini_search(prompt: str, *, system: str = "", model: str | None = None,
                   timeout: int = GEMINI_TIMEOUT) -> str:
     raise NotImplementedError("gemini_search lands in TASK-04")
@@ -115,23 +123,3 @@ def dispatch_research(prompt: str, *, system: str = "",
 def dispatch_structured(prompt: str, *, system: str, schema: dict, stage: str,
                         timeout: int = CODEX_TIMEOUT) -> dict:
     raise NotImplementedError("dispatch_structured lands in TASK-05")
-```
-
-**Success criterion:**
-
-```bash
-# Stack=old: preflight is a no-op
-python3 -c "from pipeline.llm import preflight_check; preflight_check(); print('ok')"
-# Expected: ok
-
-# Stack=new with no key: preflight raises with clear message
-LLM_STACK=new python3 -c "from pipeline.llm import preflight_check; preflight_check()" 2>&1 | head -5
-# Expected: RuntimeError: LLM_STACK=new requires: ...
-```
-
-```bash
-python3 -m py_compile pipeline/llm.py
-# Expected: no output, exit 0
-```
-
-**Rollback:** `rm pipeline/llm.py`. No callers yet.
