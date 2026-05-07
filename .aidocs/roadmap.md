@@ -29,6 +29,17 @@
 - [ ] TG channel growth tactics (pinned intro post, community seeding)
 - [ ] Content quality tracking (review scores over time)
 
+## Phase 3.5: Stack & Reach (2026-Q2) — backlog
+
+Each line links to its SDD spec at `.aidocs/backlog/<feature>/spec.md`.
+
+- [ ] **pipeline-gemini-codex** — research → Gemini Flash, generation/revise/TG/digest → Codex CLI (gpt-5.5), review stays Opus.
+- [ ] **pt-translation-b1** — every article in B1 Portuguese, `/pt/` site routes, dedicated PT TG channel, dual digest.
+- [ ] **welcome-landing** — `/uk/welcome/` + `/pt/welcome/` landing pages for QR-driven first-time visitors.
+- [ ] **print-stickers-posters** — round 75 mm sticker + A5 poster, CMYK 300 DPI for Lisbon typography print, QR → `/welcome/`.
+
+Order: (1) → (2). (3) and (4) parallel-ready, but (4) depends on (3)'s URL existing. PT channel name is the only blocking decision before (2) starts.
+
 ## Phase 4: Expansion
 - [ ] Weekly practical guides (immigration, taxes, healthcare)
 - [ ] Immigration law tracker (AIMA changes monitoring)
