@@ -44,3 +44,23 @@ python3 -m pytest tests/test_stages.py -v -k "generate" 2>&1 | tail -10
 ```
 
 **Rollback:** Revert single-file change.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Replaced `from pipeline.sdk import structured_query` and dropped `MODEL_GENERATE` from the config import (unused after migration in this file).
+- Swapped `structured_query(model=MODEL_GENERATE, ...)` for `dispatch_structured(stage="generate", ...)`.
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/stages/s3_generate.py` | -3 / +3 lines (net 0) |
+
+### Tests
+- `python3 -m py_compile pipeline/stages/s3_generate.py` → OK
+- `python3 -c "from pipeline.stages import s3_generate; print('ok')"` → ok
+
+### Issues
+- None.

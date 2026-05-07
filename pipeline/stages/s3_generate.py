@@ -5,12 +5,12 @@ from __future__ import annotations
 import logging
 
 from pipeline.config import (
-    CONTENT_DIR, CONTENT_TYPES, MODEL_GENERATE, SITE_BASE_URL,
+    CONTENT_DIR, CONTENT_TYPES, SITE_BASE_URL,
 )
 from pipeline.context import PipelineContext
+from pipeline.llm import dispatch_structured
 from pipeline.prompts.builder import build_generate_prompt
 from pipeline.schemas import load_schema
-from pipeline.sdk import structured_query
 
 logger = logging.getLogger(__name__)
 
@@ -25,11 +25,11 @@ def run(ctx: PipelineContext) -> None:
         existing_articles_text=_format_existing_articles(ctx.posted_slugs[-30:]),
     )
 
-    result = structured_query(
+    result = dispatch_structured(
         prompt=prompt,
-        system_prompt=system,
+        system=system,
         schema=load_schema("generation"),
-        model=MODEL_GENERATE,
+        stage="generate",
     )
 
     ctx.title = result["title"]
