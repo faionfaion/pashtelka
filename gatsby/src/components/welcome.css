@@ -1,0 +1,211 @@
+/* welcome.css — page-scoped styles for /uk/welcome/ and /pt/welcome/.
+ * Mobile-first. System fonts only. Aim ≤ 4 KB minified.
+ *
+ * Scoping: every selector is prefixed with .wl-page so this file does not
+ * leak into the rest of the site. Welcome pages do NOT import the global
+ * layout.css — they ship their own minimal reset below.
+ */
+
+.wl-page,
+.wl-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wl-page {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1a1a2e;
+  background: #fefcfa;
+  line-height: 1.55;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wl-page a {
+  color: #d97706;
+}
+
+/* Header --------------------------------------------------------- */
+.wl-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid #f1e9d9;
+  background: #fffaf0;
+}
+
+.wl-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #1a1a2e;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
+
+.wl-logo img {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.wl-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border: 1px solid #f1e9d9;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 500;
+  background: #fff;
+}
+
+.wl-lang:hover {
+  color: #1a1a2e;
+  border-color: #d97706;
+}
+
+/* Hero ----------------------------------------------------------- */
+.wl-hero {
+  padding: 28px 20px 18px;
+  text-align: center;
+}
+
+.wl-hero h1 {
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.wl-hero p {
+  color: #6b7280;
+  font-size: 15px;
+  max-width: 36ch;
+  margin: 0 auto 18px;
+}
+
+.wl-hero picture,
+.wl-hero img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+
+/* What we do ---------------------------------------------------- */
+.wl-what {
+  padding: 8px 20px 20px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.wl-what ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wl-what li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  color: #1a1a2e;
+}
+
+.wl-what li::before {
+  content: "→";
+  color: #d97706;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* CTAs ----------------------------------------------------------- */
+.wl-ctas {
+  padding: 8px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 360px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wl-cta-primary {
+  display: block;
+  background: #d97706;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(217, 119, 6, 0.25);
+  transition: transform 0.1s ease, background 0.15s ease;
+}
+
+.wl-cta-primary:active {
+  transform: scale(0.98);
+  background: #b45309;
+}
+
+.wl-cta-secondary {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: #d97706;
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid #f1e9d9;
+}
+
+.wl-cta-secondary:hover {
+  background: #fffaf0;
+}
+
+/* Trust footer -------------------------------------------------- */
+.wl-trust {
+  margin-top: auto;
+  padding: 16px 20px 22px;
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+  border-top: 1px solid #f1e9d9;
+}
+
+.wl-trust a {
+  color: #6b7280;
+  text-decoration: underline;
+}
+
+/* Tablet+ -------------------------------------------------------- */
+@media (min-width: 600px) {
+  .wl-hero h1 {
+    font-size: 30px;
+  }
+
+  .wl-hero picture,
+  .wl-hero img {
+    max-width: 460px;
+  }
+}
