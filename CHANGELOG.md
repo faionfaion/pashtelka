@@ -18,6 +18,12 @@ project uses semantic-ish versioning loosely — one logical change per commit
   Plus scaffold dirs under `gatsby/src/images/welcome/`,
   `gatsby/static/welcome/`, `gatsby/static/og/`, `gatsby/scripts/`.
   [welcome-landing TASK-01]
+- `gatsby/scripts/gen-welcome-assets.mjs` — one-shot ESM generator using
+  OpenAI gpt-image-1 + sharp to produce hero AVIF/WebP/PNG variants and
+  the OG cards. Sub-commands: `hero | og-uk | og-pt | all`. Idempotent.
+- Hero placeholder under `gatsby/src/images/welcome/hero-placeholder.{png,
+  webp, avif}` (940×940, AVIF 16.6 KB). Will be swapped for the canonical
+  mascot from `print-stickers-posters` later. [welcome-landing TASK-02]
 - LLM dispatcher module `pipeline/llm.py` with three backends:
   Gemini 2.5 Flash (web-search grounded research), Codex CLI gpt-5.5
   (generation/revision/TG/digest), Claude Opus (review).
