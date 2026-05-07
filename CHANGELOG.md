@@ -15,6 +15,12 @@ project uses semantic-ish versioning loosely — one logical change per commit
   poster). Two-phase rollout: Phase 4a builds infra + first mascot draft,
   Phase 4b iterates the mascot to operator approval and ships final
   Affinity-exported PDFs. [print-stickers-posters TASK-01]
+- `scripts/print/generate_qr.py` — QR code generator for sticker / poster
+  print assets. `qrcode` lib at error-correction `H`, emits both raster
+  PNG and vector SVG (preferred for Affinity Publisher import).
+  [print-stickers-posters TASK-03]
+- `qrcode[pil]>=7.4` declared in `requirements.txt`.
+  [print-stickers-posters TASK-03]
 - `pipeline/b1_validator.py` — sync B1 readability validator. Three
   metrics (Flesch reading ease via textstat, avg sentence length, B1
   lemma coverage) return `passed` flag + `retry_addendum` for prompt
