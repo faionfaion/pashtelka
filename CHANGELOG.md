@@ -132,6 +132,12 @@ project uses semantic-ish versioning loosely — one logical change per commit
 - `tests/test_stages.py::TestS11DigestDualLang` — 5 cases (UA/PT
   caption shape, translate helper routing, dual-send happy path,
   empty-id skip). 5/5 green. [pt-translation-b1 TASK-11]
+- `scripts/backfill_pt.py` — operator-triggered helper. Iterates
+  `content/<slug>/uk.md` and calls the translation stage for each
+  slug that has no `pt.md` sibling. Scope flags: `--all`,
+  `--since YYYY-MM-DD`, `--slug <slug>`. `--dry-run` previews;
+  `--max N` is a safety net. Late import of the stage helper keeps
+  `--help` cheap. [pt-translation-b1 TASK-12]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
