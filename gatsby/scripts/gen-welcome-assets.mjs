@@ -7,16 +7,27 @@
  *   node scripts/gen-welcome-assets.mjs og-pt     # 1200x630 PT card
  *   node scripts/gen-welcome-assets.mjs all       # all three
  *
+ *   # Re-encode the hero from a local PNG (no OpenAI call):
+ *   node scripts/gen-welcome-assets.mjs hero \
+ *     --source ../src/images/brand/pashtelka-mascot.png
+ *
  * Reads OPENAI_API_KEY from env or ~/workspace/.env. Idempotent — re-running
  * overwrites. Calls OpenAI gpt-image-1 (size 1536x1024, quality auto), then
  * post-processes via the bundled sharp module (transitive dep of
  * gatsby-plugin-sharp).
  *
+ * When `--source <path>` is supplied for the `hero` sub-command the script
+ * skips the OpenAI call and uses the local PNG as the input for the sharp
+ * resize chain. Used in print-stickers-posters Phase 4b to swap the welcome
+ * hero placeholder for the now-canonical brand mascot. The output filenames
+ * stay `hero-placeholder.{png,webp,avif}` so the welcome page imports keep
+ * working without code changes — only the bytes behind the names change.
+ *
  * Hero output: gatsby/src/images/welcome/hero-placeholder.{png,webp,avif}
  * OG output:   gatsby/static/og/welcome-{uk,pt}.png
  *
  * Designed to be re-run when the canonical mascot replaces the placeholder
- * (just point the script at a different prompt).
+ * (just point the script at a different prompt or use `--source`).
  */
 
 import fs from "node:fs";
@@ -50,10 +61,6 @@ function loadOpenAIKey() {
 }
 
 const OPENAI_KEY = loadOpenAIKey();
-if (!OPENAI_KEY) {
-  console.error("FATAL: no OPENAI_API_KEY in env or ~/workspace/.env");
-  process.exit(2);
-}
 
 // ---- Prompts -------------------------------------------------------------
 const PROMPTS = {
@@ -84,6 +91,9 @@ thumbnail size — large bold letters with high contrast.`,
 
 // ---- OpenAI image call ---------------------------------------------------
 async function generateImage(prompt, size = "1536x1024") {
+  if (!OPENAI_KEY) {
+    throw new Error("FATAL: no OPENAI_API_KEY in env or ~/workspace/.env");
+  }
   console.log(`→ OpenAI gpt-image-1 (size=${size}, prompt ~${prompt.length} chars)…`);
   const resp = await fetch("https://api.openai.com/v1/images/generations", {
     method: "POST",
@@ -118,11 +128,23 @@ async function generateImage(prompt, size = "1536x1024") {
 }
 
 // ---- Pipelines -----------------------------------------------------------
-async function buildHero() {
+async function buildHero({ sourcePath = null } = {}) {
   const outDir = path.join(GATSBY_ROOT, "src", "images", "welcome");
   fs.mkdirSync(outDir, { recursive: true });
 
-  const raw = await generateImage(PROMPTS.hero, "1024x1024");
+  let raw;
+  if (sourcePath) {
+    const abs = path.isAbsolute(sourcePath)
+      ? sourcePath
+      : path.resolve(process.cwd(), sourcePath);
+    if (!fs.existsSync(abs)) {
+      throw new Error(`--source path not found: ${abs}`);
+    }
+    console.log(`→ reading local source: ${abs}`);
+    raw = fs.readFileSync(abs);
+  } else {
+    raw = await generateImage(PROMPTS.hero, "1024x1024");
+  }
   // Resize to 940 wide (above-the-fold target) and emit three formats.
   const base = sharp(raw).resize({ width: 940, withoutEnlargement: true });
 
@@ -162,7 +184,23 @@ async function buildOg(locale) {
 }
 
 // ---- Main ----------------------------------------------------------------
-const cmd = process.argv[2] || "all";
+// Parse argv: first positional = sub-command, then optional `--source <path>`
+// (only meaningful for the `hero` sub-command — re-encodes from a local PNG
+// instead of calling OpenAI).
+const argv = process.argv.slice(2);
+let cmd = "all";
+let sourcePath = null;
+for (let i = 0; i < argv.length; i++) {
+  const a = argv[i];
+  if (a === "--source") {
+    sourcePath = argv[++i];
+  } else if (a.startsWith("--source=")) {
+    sourcePath = a.slice("--source=".length);
+  } else if (!a.startsWith("--")) {
+    cmd = a;
+  }
+}
+
 const wanted =
   cmd === "all"
     ? ["hero", "og-uk", "og-pt"]
@@ -179,9 +217,14 @@ if (!wanted) {
   process.exit(1);
 }
 
+if (sourcePath && !wanted.includes("hero")) {
+  console.error("--source only applies to the `hero` sub-command.");
+  process.exit(1);
+}
+
 for (const w of wanted) {
   console.log(`\n=== ${w} ===`);
-  if (w === "hero") await buildHero();
+  if (w === "hero") await buildHero({ sourcePath });
   if (w === "og-uk") await buildOg("uk");
   if (w === "og-pt") await buildOg("pt");
 }

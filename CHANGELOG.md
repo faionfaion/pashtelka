@@ -54,6 +54,19 @@ project uses semantic-ish versioning loosely — one logical change per commit
   house style, no Lisbon scene around it (clean cut-out subject).
   Replaces the v1 anthropomorphic-bird misread. Approved as canonical
   brand mascot v2. [print-stickers-posters TASK-08]
+- `gatsby/scripts/gen-welcome-assets.mjs` `--source <path>` flag — when
+  set with the `hero` sub-command, the script re-encodes the welcome
+  hero variants from a local PNG instead of calling OpenAI. Used to
+  swap the welcome-landing placeholder for the brand mascot without a
+  fresh image generation. [print-stickers-posters TASK-09]
+
+### Changed
+- `gatsby/src/images/welcome/hero-placeholder.{png,webp,avif}` — re-
+  encoded from the brand mascot (`gatsby/src/images/brand/pashtelka-
+  mascot.png`). Filenames preserved on purpose so welcome page imports
+  stay stable — only the bytes change. AVIF 37.8 KB (under the 80 KB
+  ceiling from welcome-landing test plan), PNG 162 KB, WebP 143 KB.
+  [print-stickers-posters TASK-09]
 - `pipeline/b1_validator.py` — sync B1 readability validator. Three
   metrics (Flesch reading ease via textstat, avg sentence length, B1
   lemma coverage) return `passed` flag + `retry_addendum` for prompt
