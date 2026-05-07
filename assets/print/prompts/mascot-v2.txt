@@ -1,0 +1,24 @@
+Single pastel de nata (Portuguese custard tart) as the Pashtelka News mascot, drawn as a friendly character.
+
+THIS IS THE TART — not holding a tart, not next to a tart. The tart IS the character.
+
+Subject:
+- One round Portuguese pastel de nata, classic shape: golden caramelized custard top with characteristic dark-brown caramel spots, fluted golden-brown puff-pastry edge.
+- Cute simple smiling face DRAWN ON the custard surface: two small black dot eyes, a small soft smile, optional tiny rosy cheeks.
+- Slightly anthropomorphic: friendly expression, alive feel, but body shape is the tart itself — no arms, no legs, no wings, no extra appendages.
+- Three-quarter or front view, sitting upright or floating slightly.
+
+Style:
+- Colorful comic book illustration in Pashtelka News house style.
+- Clean bold dark outlines.
+- Warm pastel color palette: cream, peach, soft gold, terracotta, sky blue accents.
+- Flat shading with light gradients, NOT photo-realistic, NOT 3D-rendered.
+- Cheerful, welcoming, child-friendly but not babyish.
+
+Composition:
+- Subject centered, square frame, fills 60-70% of canvas.
+- Simple soft cream or off-white background — this image will be cut out for brand reuse, keep background uniform and minimal.
+- No text, no speech bubbles, no watermarks, no logos.
+- No other characters, no scene, no Lisbon landmarks — just the smiling pastel de nata alone.
+
+Output: 1024x1024 PNG, RGBA preferred so the background can be removed if needed.

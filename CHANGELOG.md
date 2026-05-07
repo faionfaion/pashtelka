@@ -48,6 +48,12 @@ project uses semantic-ish versioning loosely — one logical change per commit
   (1024×1024 RGBA PNG, generated via OpenAI `gpt-image-1.5`). Pending
   operator approval before Phase 4b finalises the print PDFs and the
   welcome-page hero swap. [print-stickers-posters TASK-07]
+- `assets/print/prompts/mascot-v2.txt` — corrected mascot prompt: the
+  pastel de nata IS the character (face drawn on the custard surface),
+  not a separate creature holding a tart. Comic-book Pashtelka News
+  house style, no Lisbon scene around it (clean cut-out subject).
+  Replaces the v1 anthropomorphic-bird misread. Approved as canonical
+  brand mascot v2. [print-stickers-posters TASK-08]
 - `pipeline/b1_validator.py` — sync B1 readability validator. Three
   metrics (Flesch reading ease via textstat, avg sentence length, B1
   lemma coverage) return `passed` flag + `retry_addendum` for prompt
