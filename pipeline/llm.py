@@ -130,20 +130,21 @@ def preflight_check() -> None:
     if not codex_path:
         missing.append(f"codex CLI on PATH (looked for: {CODEX_BIN!r})")
 
-    if not os.environ.get("GEMINI_API_KEY", "").strip():
-        missing.append("GEMINI_API_KEY env var")
+    gemini_path = shutil.which(GEMINI_BIN)
+    if not gemini_path:
+        missing.append(f"gemini CLI on PATH (looked for: {GEMINI_BIN!r})")
 
     if missing:
         msg = (
             "LLM_STACK=new requires:\n  - "
             + "\n  - ".join(missing)
-            + "\nAdd to ~/workspace/.env or unset LLM_STACK to fall back."
+            + "\nInstall the missing CLI(s) or unset LLM_STACK to fall back."
         )
         raise RuntimeError(msg)
 
     logger.info(
-        "preflight ok (codex=%s, codex_model=%s, gemini_model=%s, claude_model=%s)",
-        codex_path, CODEX_MODEL, GEMINI_MODEL, CLAUDE_MODEL,
+        "preflight ok (codex=%s, gemini=%s, codex_model=%s, gemini_model=%s, claude_model=%s)",
+        codex_path, gemini_path, CODEX_MODEL, GEMINI_MODEL, CLAUDE_MODEL,
     )
 
 

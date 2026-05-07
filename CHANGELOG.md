@@ -20,6 +20,11 @@ project uses semantic-ish versioning loosely — one logical change per commit
 - `pipeline/config.py` — adds `GEMINI_BIN` (default `"gemini"`, env
   override `GEMINI_BIN`) mirroring the existing `CODEX_BIN` pattern.
   [pipeline-gemini-codex follow-up]
+- `pipeline/llm.py::preflight_check` now requires the gemini CLI on
+  PATH (`shutil.which(GEMINI_BIN)`) instead of `GEMINI_API_KEY`. Same
+  pattern as the existing codex CLI check; the CLI handles its own
+  auth so the env-var requirement is gone. [pipeline-gemini-codex
+  follow-up]
 
 ### Added
 - `.aidocs/todo/print-stickers-posters/{design,test-plan,implementation-plan}.md`
