@@ -42,6 +42,19 @@ project uses semantic-ish versioning loosely — one logical change per commit
 - `tests/test_llm.py` — +4 cases for dispatch_translate routing /
   rejection / cost-warn fires / cost-warn silent. 20/20 green.
   [pt-translation-b1 TASK-02]
+- `pipeline/stages/s_translate_pt.py` — UA→PT B1 translation stage.
+  `run(ctx)` pipeline entry + `translate_one_file(path)` standalone
+  helper. Routes through `dispatch_translate` (not `pipeline.sdk`),
+  validates with `b1_validate`, retries once with addendum on failure,
+  ships with `b1_warning: true` if both attempts fail.
+  [pt-translation-b1 TASK-03]
+- `PipelineContext` PT fields: `article_text_pt`, `title_pt`,
+  `description_pt`, `summary_pt`, `b1_metrics`, `b1_warning`.
+  [pt-translation-b1 TASK-03]
+- `tests/test_stages.py::TestSTranslatePt` — 6 cases (dispatcher call
+  shape, ctx mutation, retry-with-addendum, b1_warning on double
+  failure, empty-body guard, file roundtrip). 6/6 green.
+  [pt-translation-b1 TASK-03]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content

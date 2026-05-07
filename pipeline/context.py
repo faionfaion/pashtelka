@@ -57,3 +57,11 @@ class PipelineContext:
 
     # State
     posted_slugs: list[str] = field(default_factory=list)
+
+    # PT translation (pt-translation-b1)
+    article_text_pt: str = ""
+    title_pt: str = ""
+    description_pt: str = ""
+    summary_pt: str = ""
+    b1_metrics: dict = field(default_factory=dict)
+    b1_warning: bool = False

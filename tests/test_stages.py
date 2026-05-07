@@ -1266,3 +1266,187 @@ Body of today's article.
             assert _find_image("nonexistent") is None
             (tmp_path / "test.jpg").write_bytes(b"jpg")
             assert _find_image("test") is not None
+
+
+# ========== Stage: s_translate_pt (pt-translation-b1) ==========
+
+class TestSTranslatePt:
+    """s_translate_pt: UA -> PT (B1) translation stage."""
+
+    @patch("pipeline.stages.s_translate_pt.b1_validate")
+    @patch("pipeline.stages.s_translate_pt.dispatch_translate")
+    @patch("pipeline.stages.s_translate_pt.load_schema")
+    @patch("pipeline.stages.s_translate_pt.build_translate_pt_prompt")
+    def test_calls_dispatch_translate(self, mock_build, mock_schema,
+                                       mock_dispatch, mock_b1, ctx):
+        mock_build.return_value = ("system", "user")
+        mock_schema.return_value = {"type": "object"}
+        mock_dispatch.return_value = {
+            "title": "Título",
+            "description": "Descrição.",
+            "summary": "Resumo.",
+            "article": "Corpo do artigo em português.",
+        }
+        mock_b1.return_value = {
+            "passed": True,
+            "flesch": 70.0,
+            "avg_sentence_words": 8.0,
+            "b1_coverage_pct": 95.0,
+            "retry_addendum": None,
+        }
+
+        from pipeline.stages.s_translate_pt import run
+        run(ctx)
+
+        # Called once (passed first try, no retry)
+        assert mock_dispatch.call_count == 1
+        kwargs = mock_dispatch.call_args.kwargs
+        assert kwargs["lang"] == "pt"
+        assert kwargs["schema"] == {"type": "object"}
+
+    @patch("pipeline.stages.s_translate_pt.b1_validate")
+    @patch("pipeline.stages.s_translate_pt.dispatch_translate")
+    @patch("pipeline.stages.s_translate_pt.load_schema")
+    @patch("pipeline.stages.s_translate_pt.build_translate_pt_prompt")
+    def test_writes_pt_fields(self, mock_build, mock_schema,
+                               mock_dispatch, mock_b1, ctx):
+        mock_build.return_value = ("system", "user")
+        mock_schema.return_value = {"type": "object"}
+        mock_dispatch.return_value = {
+            "title": "Título PT",
+            "description": "Descrição PT.",
+            "summary": "Resumo PT.",
+            "article": "Corpo PT.",
+        }
+        mock_b1.return_value = {
+            "passed": True, "flesch": 80.0, "avg_sentence_words": 7.0,
+            "b1_coverage_pct": 95.0, "retry_addendum": None,
+        }
+
+        from pipeline.stages.s_translate_pt import run
+        run(ctx)
+        assert ctx.article_text_pt == "Corpo PT."
+        assert ctx.title_pt == "Título PT"
+        assert ctx.description_pt == "Descrição PT."
+        assert ctx.summary_pt == "Resumo PT."
+        assert ctx.b1_warning is False
+        assert ctx.b1_metrics["passed"] is True
+
+    @patch("pipeline.stages.s_translate_pt.b1_validate")
+    @patch("pipeline.stages.s_translate_pt.dispatch_translate")
+    @patch("pipeline.stages.s_translate_pt.load_schema")
+    @patch("pipeline.stages.s_translate_pt.build_translate_pt_prompt")
+    def test_retries_once_on_b1_failure(self, mock_build, mock_schema,
+                                         mock_dispatch, mock_b1, ctx):
+        mock_build.return_value = ("system", "user")
+        mock_schema.return_value = {"type": "object"}
+        mock_dispatch.side_effect = [
+            {"title": "T", "description": "D", "summary": "", "article": "Hard text."},
+            {"title": "T2", "description": "D2", "summary": "", "article": "Easy text."},
+        ]
+        # First validation fails, second passes
+        mock_b1.side_effect = [
+            {"passed": False, "flesch": 30.0, "avg_sentence_words": 28.0,
+             "b1_coverage_pct": 70.0,
+             "retry_addendum": "Use shorter sentences."},
+            {"passed": True, "flesch": 75.0, "avg_sentence_words": 9.0,
+             "b1_coverage_pct": 95.0, "retry_addendum": None},
+        ]
+
+        from pipeline.stages.s_translate_pt import run
+        run(ctx)
+        assert mock_dispatch.call_count == 2
+        # Second prompt contains the addendum
+        second_prompt = mock_dispatch.call_args_list[1].args[0]
+        assert "Use shorter sentences." in second_prompt
+        # Final ctx state from the second (successful) call
+        assert ctx.article_text_pt == "Easy text."
+        assert ctx.b1_warning is False
+
+    @patch("pipeline.stages.s_translate_pt.b1_validate")
+    @patch("pipeline.stages.s_translate_pt.dispatch_translate")
+    @patch("pipeline.stages.s_translate_pt.load_schema")
+    @patch("pipeline.stages.s_translate_pt.build_translate_pt_prompt")
+    def test_b1_warning_on_double_failure(self, mock_build, mock_schema,
+                                           mock_dispatch, mock_b1, ctx):
+        mock_build.return_value = ("system", "user")
+        mock_schema.return_value = {"type": "object"}
+        mock_dispatch.return_value = {
+            "title": "T", "description": "D", "summary": "",
+            "article": "Still hard text.",
+        }
+        mock_b1.return_value = {
+            "passed": False, "flesch": 20.0, "avg_sentence_words": 25.0,
+            "b1_coverage_pct": 60.0,
+            "retry_addendum": "Try harder.",
+        }
+
+        from pipeline.stages.s_translate_pt import run
+        run(ctx)
+        assert mock_dispatch.call_count == 2
+        # Article still set; warning flag raised
+        assert ctx.article_text_pt == "Still hard text."
+        assert ctx.b1_warning is True
+        assert ctx.b1_metrics["passed"] is False
+
+    def test_run_raises_on_empty_body(self, ctx):
+        ctx.article_text = ""
+        from pipeline.stages.s_translate_pt import run
+        with pytest.raises(RuntimeError, match="article_text"):
+            run(ctx)
+
+    def test_translate_one_file_roundtrip(self, tmp_path):
+        # Build a fake content/<slug>/uk.md
+        slug_dir = tmp_path / "test-slug"
+        slug_dir.mkdir()
+        uk_md = slug_dir / "uk.md"
+        uk_md.write_text(
+            '---\n'
+            'title: "Тест заголовок"\n'
+            'slug: "test-slug"\n'
+            'date: "2026-05-06"\n'
+            'type: "news"\n'
+            'lang: "ua"\n'
+            'tags:\n'
+            '  - "новини"\n'
+            'description: "Тестовий опис"\n'
+            'author: "Паштелька News"\n'
+            'source_urls:\n'
+            '  - "https://example.com"\n'
+            'source_names:\n'
+            '  - "Example"\n'
+            'image: "/images/test-slug.jpg"\n'
+            '---\n'
+            '\n'
+            '# Тест\n\nКоротке тіло статті.\n',
+            encoding="utf-8",
+        )
+
+        with patch("pipeline.stages.s_translate_pt.dispatch_translate") as mock_d, \
+             patch("pipeline.stages.s_translate_pt.b1_validate") as mock_b1:
+            mock_d.return_value = {
+                "title": "Teste",
+                "description": "Descrição teste.",
+                "summary": "Resumo.",
+                "article": "# Teste\n\nCorpo curto.\n",
+            }
+            mock_b1.return_value = {
+                "passed": True, "flesch": 80.0, "avg_sentence_words": 4.0,
+                "b1_coverage_pct": 100.0, "retry_addendum": None,
+            }
+
+            from pipeline.stages.s_translate_pt import translate_one_file
+            pt_path = translate_one_file(uk_md)
+
+        assert pt_path == slug_dir / "pt.md"
+        text = pt_path.read_text(encoding="utf-8")
+        assert 'lang: "pt"' in text
+        assert 'title: "Teste"' in text
+        assert 'slug: "test-slug"' in text     # passthrough
+        assert 'date: "2026-05-06"' in text    # passthrough
+        assert 'tags:' in text                 # passthrough multi-line list
+        assert "новини" in text                # tag value preserved
+        assert "Corpo curto." in text          # body
+        assert "b1_warning" not in text        # passed validator
+
+
