@@ -1,5 +1,6 @@
 """Pipeline configuration: paths, models, constants."""
 
+import os
 from pathlib import Path
 
 # Project root
@@ -158,3 +159,20 @@ IPMA_CITIES = {
 
 # Metro Lisboa API
 METRO_LISBOA_API = "http://app.metrolisboa.pt/status/getLinhas.php"
+
+# ---- LLM stack switch (feature pipeline-gemini-codex) ----
+# Values: "old" (legacy: Claude Opus everywhere) or "new" (Gemini + Codex + Claude review).
+# Default stays "old" until AC5+AC6 bench validates the new stack.
+LLM_STACK = os.environ.get("LLM_STACK", "old").lower().strip()
+
+# Per-vendor model overrides (read at import time; can be re-read in tests).
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+CODEX_MODEL = os.environ.get("CODEX_MODEL", "gpt-5.5")
+CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-4-7")
+
+# Codex CLI binary (allow override; PATH lookup by default).
+CODEX_BIN = os.environ.get("CODEX_BIN", "codex")
+
+# Per-vendor timeouts (seconds).
+GEMINI_TIMEOUT = int(os.environ.get("GEMINI_TIMEOUT", "300"))
+CODEX_TIMEOUT = int(os.environ.get("CODEX_TIMEOUT", "600"))
