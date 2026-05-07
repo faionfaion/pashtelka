@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Translated headline in simplified European Portuguese (CEFR B1). Short, declarative, no more than 14 words. Proper nouns preserved."
+    },
+    "description": {
+      "type": "string",
+      "description": "Translated meta description in simplified European Portuguese (CEFR B1). One sentence, max 160 characters."
+    },
+    "summary": {
+      "type": "string",
+      "description": "Optional 1-2 sentence PT summary used for the dedup index. May be empty."
+    },
+    "article": {
+      "type": "string",
+      "description": "Full article body translated into simplified European Portuguese (CEFR B1). Markdown structure preserved (headings, lists, links). Sentence length <= 20 words. Idioms replaced with literal equivalents. Proper nouns preserved (NATO -> OTAN convention applied where standard PT exists)."
+    }
+  },
+  "required": ["title", "description", "article"]
+}

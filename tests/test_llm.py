@@ -10,6 +10,7 @@ Covers:
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 from unittest.mock import MagicMock
 
@@ -266,3 +267,68 @@ def test_gemini_search_missing_key(monkeypatch):
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     with pytest.raises(RuntimeError, match="GEMINI_API_KEY"):
         llm.gemini_search("p")
+
+
+# ---- pt-translation-b1: dispatch_translate ----
+
+def test_dispatch_translate_routes_via_revise(monkeypatch):
+    """dispatch_translate(lang='pt') must call dispatch_structured(stage='revise')."""
+    seen: dict = {}
+
+    def fake_dispatch_structured(prompt, *, system, schema, stage, timeout):
+        seen["stage"] = stage
+        seen["prompt"] = prompt
+        seen["system"] = system
+        seen["schema"] = schema
+        return {"title": "T", "description": "D", "article": "A"}
+
+    monkeypatch.setattr(llm, "dispatch_structured", fake_dispatch_structured)
+
+    schema = {"type": "object", "required": ["title", "description", "article"]}
+    out = llm.dispatch_translate("p", system="s", schema=schema, lang="pt")
+    assert out == {"title": "T", "description": "D", "article": "A"}
+    assert seen["stage"] == "revise"
+    assert seen["schema"] is schema
+
+
+def test_dispatch_translate_rejects_non_pt(monkeypatch):
+    with pytest.raises(ValueError, match="lang='pt'"):
+        llm.dispatch_translate("p", system="s", schema={}, lang="es")
+
+
+class _LogCapture(logging.Handler):
+    def __init__(self):
+        super().__init__(level=logging.WARNING)
+        self.records: list[logging.LogRecord] = []
+
+    def emit(self, record):
+        self.records.append(record)
+
+
+def test_translation_cost_warn_fires_above_threshold(monkeypatch):
+    """_maybe_warn_translation_cost logs WARNING when estimated cost exceeds threshold."""
+    import pipeline.config as cfg
+
+    monkeypatch.setattr(cfg, "TRANSLATION_COST_WARN_USD", 0.0001)
+    cap = _LogCapture()
+    llm.logger.addHandler(cap)
+    try:
+        llm._maybe_warn_translation_cost(in_chars=1_000_000, out_chars=1_000_000)
+    finally:
+        llm.logger.removeHandler(cap)
+    msgs = [r.getMessage() for r in cap.records]
+    assert any("translation cost" in m for m in msgs), msgs
+
+
+def test_translation_cost_warn_silent_below_threshold(monkeypatch):
+    import pipeline.config as cfg
+
+    monkeypatch.setattr(cfg, "TRANSLATION_COST_WARN_USD", 1000.0)
+    cap = _LogCapture()
+    llm.logger.addHandler(cap)
+    try:
+        llm._maybe_warn_translation_cost(in_chars=10, out_chars=10)
+    finally:
+        llm.logger.removeHandler(cap)
+    msgs = [r.getMessage() for r in cap.records]
+    assert not any("translation cost" in m for m in msgs), msgs

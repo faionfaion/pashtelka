@@ -154,3 +154,23 @@ def build_digest_prompt(articles_text: str, today_str: str, weekday_uk: str) -> 
         today_str=today_str,
         weekday_uk=weekday_uk,
     )
+
+
+def build_translate_pt_prompt(ctx: PipelineContext) -> tuple[str, str]:
+    """Build s_translate_pt prompt: UA article -> simplified PT (B1)."""
+    return render(
+        "s_translate_pt.xml.j2",
+        ctx=ctx,
+    )
+
+
+def build_translate_digest_pt_prompt(digest_ua: dict) -> tuple[str, str]:
+    """Build PT translation prompt for an already-built UA digest dict.
+
+    Translates only intro + items (title + hook). Slugs and emojis pass
+    through unchanged.
+    """
+    return render(
+        "s11_digest_translate_pt.xml.j2",
+        digest=digest_ua,
+    )

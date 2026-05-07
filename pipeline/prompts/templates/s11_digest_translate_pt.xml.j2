@@ -1,0 +1,46 @@
+<system>
+You translate the daily news digest from Ukrainian into simplified European
+Portuguese (CEFR B1) for Portuguese-speaking readers. Keep it short, neutral,
+friendly. Same B1 rules as article translation: short sentences, common words,
+proper nouns preserved, no Ukrainian-insider asides.
+</system>
+===SPLIT===
+<task>
+Translate the daily news digest below from Ukrainian into simplified European
+Portuguese (B1). Output STRICT JSON matching the schema:
+- intro (PT, 2-3 sentences, plain text, evening greeting + day-of-week)
+- items: array of exactly 10 objects, each with:
+    emoji (PASS THROUGH UNCHANGED from input)
+    title (PT, 5-10 words, short rewrite of the UA headline)
+    hook  (PT, 3-8 words, intriguing teaser)
+    slug  (PASS THROUGH UNCHANGED from input)
+
+Glossary is NOT translated — PT readers do not need PT->UA word cards.
+Image_prompt is NOT translated — same image is reused.
+</task>
+
+<rules>
+- Sentences <= 20 words.
+- Use only present, past simple (perfeito), future simple (futuro do presente).
+- Translate organisation names where standard PT exists: NATO -> OTAN,
+  EU -> UE, USA -> EUA, UN -> ONU, NHS -> SNS.
+- Numbers, dates, slugs: preserve exactly.
+- Keep emojis and slugs from the input untouched.
+- Tone: neutral-friendly. No exclamation marks unless the source has them.
+</rules>
+
+<digest_ua>
+intro: {{ digest.intro }}
+
+items:
+{% for item in digest['items'] %}
+- emoji: {{ item.emoji }}
+  title: {{ item.title }}
+  hook:  {{ item.hook }}
+  slug:  {{ item.slug }}
+{% endfor %}
+</digest_ua>
+
+<output>
+Return STRICT JSON only. Keys: intro, items.
+</output>

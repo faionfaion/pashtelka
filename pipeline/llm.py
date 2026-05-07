@@ -465,3 +465,75 @@ def dispatch_structured(
         return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
 
     return _claude_structured(prompt, system, schema, timeout=timeout)
+
+
+# ---- pt-translation-b1: PT translation routing ----
+
+# Translation slots into the existing dispatch as stage="revise":
+# - Same vendor preference (Codex on `new`, Claude on `old`).
+# - Same timeout class (long output expected).
+# - Reuses the structured-output path with our translation schema.
+# A dedicated wrapper keeps the call site readable and gives us a single
+# place to tune translation routing later (e.g. cheaper model per locale)
+# without touching every call site.
+
+def dispatch_translate(
+    prompt: str,
+    *,
+    system: str,
+    schema: dict,
+    lang: str,
+    timeout: int = CODEX_TIMEOUT,
+) -> dict:
+    """Stack-aware PT translation call.
+
+    For now, only `lang="pt"` is supported. Routes through
+    `dispatch_structured(stage="revise")` to inherit the existing
+    LLM_STACK behaviour. A future locale (es/fr/en) can pick a different
+    routing path here without changing call sites.
+    """
+    if lang != "pt":
+        raise ValueError(
+            f"dispatch_translate: only lang='pt' is supported in v1, got {lang!r}"
+        )
+    result = dispatch_structured(
+        prompt, system=system, schema=schema, stage="revise", timeout=timeout,
+    )
+
+    # Soft cost-warn (AC9): no hard ceiling, log only.
+    try:
+        _maybe_warn_translation_cost(
+            in_chars=len(prompt) + len(system),
+            out_chars=sum(len(v) for v in result.values() if isinstance(v, str)),
+        )
+    except Exception:
+        # Cost-warn is best-effort and must never fail the call.
+        logger.exception("translation cost-warn raised; ignoring")
+
+    return result
+
+
+def _maybe_warn_translation_cost(*, in_chars: int, out_chars: int) -> None:
+    """Log a WARNING when a translation call's estimated USD cost exceeds the
+    `TRANSLATION_COST_WARN_USD` threshold from config. Soft guardrail only.
+    """
+    from pipeline.config import TRANSLATION_COST_WARN_USD
+
+    in_tokens = estimate_tokens("x" * in_chars)
+    out_tokens = estimate_tokens("x" * out_chars)
+    # Use the dispatcher's stack to pick the dominant model.
+    model = stack_models(_stack())["revise"]
+    usd = estimate_usd(model, in_tokens, out_tokens)
+
+    if usd > TRANSLATION_COST_WARN_USD:
+        logger.warning(
+            "translation cost ${%.4f} exceeds threshold ${%.4f} "
+            "(model=%s, in_tokens=%d, out_tokens=%d). "
+            "Tune TRANSLATION_COST_WARN_USD if this is expected.",
+            usd, TRANSLATION_COST_WARN_USD, model, in_tokens, out_tokens,
+        )
+    else:
+        logger.debug(
+            "translation cost ${%.4f} within threshold ${%.4f} (model=%s)",
+            usd, TRANSLATION_COST_WARN_USD, model,
+        )

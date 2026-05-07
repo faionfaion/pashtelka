@@ -22,6 +22,26 @@ project uses semantic-ish versioning loosely — one logical change per commit
   [pt-translation-b1 TASK-01]
 - `textstat>=0.7.4` declared in `requirements.txt`.
   [pt-translation-b1 TASK-01]
+- `pipeline/prompts/templates/s_translate_pt.xml.j2` — UA→PT B1
+  translation prompt with five rule blocks (tenses, sentence length,
+  vocabulary, proper nouns / numbers / dates, tone, structure) and
+  three few-shot examples (lede, 3-item list, idiom flattened).
+  [pt-translation-b1 TASK-02]
+- `pipeline/schemas/translation_pt.json` — title/description/article
+  required, optional summary. [pt-translation-b1 TASK-02]
+- `pipeline.llm.dispatch_translate(prompt, *, system, schema, lang)` —
+  PT-only v1, routes via `dispatch_structured(stage="revise")` so
+  LLM_STACK toggle drives translation too. Soft cost-warn after each
+  call. [pt-translation-b1 TASK-02]
+- `TRANSLATION_COST_WARN_USD`, `TG_CHANNEL_PT_USERNAME`,
+  `TG_CHANNEL_PT_ID` env-driven knobs in `pipeline/config.py`.
+  [pt-translation-b1 TASK-02]
+- `pipeline/prompts/templates/s11_digest_translate_pt.xml.j2` — PT
+  digest translation template (used in TASK-11).
+  [pt-translation-b1 TASK-02]
+- `tests/test_llm.py` — +4 cases for dispatch_translate routing /
+  rejection / cost-warn fires / cost-warn silent. 20/20 green.
+  [pt-translation-b1 TASK-02]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content

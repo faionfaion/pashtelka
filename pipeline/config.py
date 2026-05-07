@@ -176,3 +176,17 @@ CODEX_BIN = os.environ.get("CODEX_BIN", "codex")
 # Per-vendor timeouts (seconds).
 GEMINI_TIMEOUT = int(os.environ.get("GEMINI_TIMEOUT", "300"))
 CODEX_TIMEOUT = int(os.environ.get("CODEX_TIMEOUT", "600"))
+
+# ---- pt-translation-b1 ----
+# Soft cost ceiling per translation call (USD). Above this, log a WARNING
+# but never block — production must not silently skip articles. Tune via
+# `TRANSLATION_COST_WARN_USD=0.20` in ~/workspace/.env to suppress noise.
+TRANSLATION_COST_WARN_USD = float(
+    os.environ.get("TRANSLATION_COST_WARN_USD", "0.10")
+)
+
+# Portuguese TG channel for the dual-language digest. Username is public
+# (brand), chat_id is private and must be set in env after the operator
+# creates the channel and adds @nero_open_bot as admin.
+TG_CHANNEL_PT_USERNAME = "pastelka_pt"
+TG_CHANNEL_PT_ID = os.environ.get("TG_CHANNEL_PT_ID", "").strip()
