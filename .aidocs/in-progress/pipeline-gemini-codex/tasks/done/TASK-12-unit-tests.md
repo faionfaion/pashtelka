@@ -186,3 +186,25 @@ python3 -m pytest tests/test_llm.py -v
 ```
 
 **Rollback:** `rm tests/test_llm.py`. No production code dependency.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Created `tests/test_llm.py` with 16 tests covering: preflight no-op + two failure paths; dispatch routing for old/new × research/structured + always-Claude (review, plan) + Codex on new (generate) + Claude on old (generate) + unknown stage error; codex command shape (assertions on `cmd[0]`/`cmd[1]`/required flags + stdin contents); codex schema-validation rejection; codex retry on transient (rc=1 with "rate limit" → second call succeeds); gemini request shape (params, body, system_instruction); gemini 429-retry; gemini missing-key.
+- Updated `tests/test_stages.py` mocks: replaced `pipeline.stages.s2_research.agent_query` → `dispatch_research`, and `pipeline.stages.s{3,5,6,11}.structured_query` → `dispatch_structured`. Reworked the `test_research_calls_with_correct_tools` assertion to verify `prompt`/`system` kwargs on the new contract (the old assertion on `allowed_tools` is invalid for the dispatcher API).
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `tests/test_llm.py` | NEW (~250 lines, 16 tests) |
+| `tests/test_stages.py` | -8 / +8 lines mock-target updates; renamed `test_research_calls_with_correct_tools` to `test_research_calls_with_prompt_and_system` and rewrote its body |
+
+### Tests
+- `python3 -m pytest tests/test_llm.py -v` → **16 passed**
+- `python3 -m pytest tests/test_llm.py tests/test_stages.py` → **80 passed, 5 failed** — the 5 failures are pre-existing (TestS11Digest tests for `IMAGES_DIR`, `_collect_today_articles`, `_find_image`, removed in the 2026-04-24 digest-only refactor BEFORE this feature). Verified via `git show 49af9af0~1:pipeline/stages/s11_digest.py | grep IMAGES_DIR` → no output.
+
+### Issues
+- 5 pre-existing test failures in `TestS11Digest` are out of scope for this feature.
+- Bug fix during execution: my first version of `test_dispatch_research_old_calls_claude` used `dict.setdefault(...) or "x"` which short-circuits to `True`; rewrote with a closure to set the marker and return the literal.

@@ -307,28 +307,28 @@ class TestS1Collect:
 class TestS2Research:
     """s2_research: search for Portuguese news on the assigned topic."""
 
-    @patch("pipeline.stages.s2_research.agent_query")
+    @patch("pipeline.stages.s2_research.dispatch_research")
     @patch("pipeline.stages.s2_research.build_research_prompt")
-    def test_research_populates_context(self, mock_build, mock_aq, ctx):
+    def test_research_populates_context(self, mock_build, mock_dr, ctx):
         mock_build.return_value = ("system prompt", "user prompt")
-        mock_aq.return_value = "Research findings about Portugal economy"
+        mock_dr.return_value = "Research findings about Portugal economy"
 
         from pipeline.stages.s2_research import run
         run(ctx)
         assert ctx.research_text == "Research findings about Portugal economy"
-        mock_aq.assert_called_once()
+        mock_dr.assert_called_once()
 
-    @patch("pipeline.stages.s2_research.agent_query")
+    @patch("pipeline.stages.s2_research.dispatch_research")
     @patch("pipeline.stages.s2_research.build_research_prompt")
-    def test_research_calls_with_correct_tools(self, mock_build, mock_aq, ctx):
-        mock_build.return_value = ("system", "user")
-        mock_aq.return_value = "text"
+    def test_research_calls_with_prompt_and_system(self, mock_build, mock_dr, ctx):
+        mock_build.return_value = ("the system", "the user prompt")
+        mock_dr.return_value = "text"
 
         from pipeline.stages.s2_research import run
         run(ctx)
-        call_kwargs = mock_aq.call_args[1]
-        assert "WebSearch" in call_kwargs["allowed_tools"]
-        assert "WebFetch" in call_kwargs["allowed_tools"]
+        call_kwargs = mock_dr.call_args[1]
+        assert call_kwargs["prompt"] == "the user prompt"
+        assert call_kwargs["system"] == "the system"
 
     def test_format_headlines(self):
         from pipeline.stages.s2_research import _format_headlines
@@ -360,7 +360,7 @@ class TestS3Generate:
     """s3_generate: write the article in Ukrainian from research."""
 
     @patch("pipeline.stages.s3_generate.CONTENT_DIR")
-    @patch("pipeline.stages.s3_generate.structured_query")
+    @patch("pipeline.stages.s3_generate.dispatch_structured")
     @patch("pipeline.stages.s3_generate.build_generate_prompt")
     @patch("pipeline.stages.s3_generate.load_schema")
     def test_generate_populates_context(self, mock_schema, mock_build, mock_sq, mock_content, ctx, generation_result):
@@ -439,7 +439,7 @@ class TestS4Review:
 class TestS5Revise:
     """s5_revise: apply editorial feedback to the article."""
 
-    @patch("pipeline.stages.s5_revise.structured_query")
+    @patch("pipeline.stages.s5_revise.dispatch_structured")
     @patch("pipeline.stages.s5_revise.build_revise_prompt")
     @patch("pipeline.stages.s5_revise.load_schema")
     def test_revise_updates_article(self, mock_schema, mock_build, mock_sq, ctx):
@@ -457,7 +457,7 @@ class TestS5Revise:
         assert ctx.title == "Revised Title"
         assert ctx.description == "Revised description."
 
-    @patch("pipeline.stages.s5_revise.structured_query")
+    @patch("pipeline.stages.s5_revise.dispatch_structured")
     @patch("pipeline.stages.s5_revise.build_revise_prompt")
     @patch("pipeline.stages.s5_revise.load_schema")
     def test_revise_without_optional_fields(self, mock_schema, mock_build, mock_sq, ctx):
@@ -481,7 +481,7 @@ class TestS5Revise:
 class TestS6GenerateTg:
     """s6_generate_tg: write Telegram photo caption."""
 
-    @patch("pipeline.stages.s6_generate_tg.structured_query")
+    @patch("pipeline.stages.s6_generate_tg.dispatch_structured")
     @patch("pipeline.stages.s6_generate_tg.build_tg_post_prompt")
     @patch("pipeline.stages.s6_generate_tg.load_schema")
     def test_generates_tg_caption(self, mock_schema, mock_build, mock_sq, ctx, tg_post_result):
@@ -497,7 +497,7 @@ class TestS6GenerateTg:
         assert "tg-spoiler" in ctx.tg_post  # spoiler tag
         assert "pastelka.news" in ctx.article_url
 
-    @patch("pipeline.stages.s6_generate_tg.structured_query")
+    @patch("pipeline.stages.s6_generate_tg.dispatch_structured")
     @patch("pipeline.stages.s6_generate_tg.build_tg_post_prompt")
     @patch("pipeline.stages.s6_generate_tg.load_schema")
     def test_tg_caption_contains_link(self, mock_schema, mock_build, mock_sq, ctx, tg_post_result):
@@ -510,7 +510,7 @@ class TestS6GenerateTg:
         assert ctx.slug in ctx.article_url
         assert "pashtelka_news" in ctx.tg_post
 
-    @patch("pipeline.stages.s6_generate_tg.structured_query")
+    @patch("pipeline.stages.s6_generate_tg.dispatch_structured")
     @patch("pipeline.stages.s6_generate_tg.build_tg_post_prompt")
     @patch("pipeline.stages.s6_generate_tg.load_schema")
     def test_tg_caption_vocab_limit(self, mock_schema, mock_build, mock_sq, ctx):
@@ -1133,7 +1133,7 @@ class TestS11Digest:
 
     @patch("pipeline.stages.s11_digest.send_photo")
     @patch("pipeline.stages.s11_digest.add_reaction")
-    @patch("pipeline.stages.s11_digest.structured_query")
+    @patch("pipeline.stages.s11_digest.dispatch_structured")
     @patch("pipeline.stages.s11_digest.IMAGES_DIR")
     @patch("pipeline.stages.s11_digest.CONTENT_DIR")
     def test_digest_success(self, mock_content, mock_images, mock_sq, mock_react, mock_send, tmp_path, digest_result):
@@ -1192,7 +1192,7 @@ Body.
         result = run()
         assert result is None
 
-    @patch("pipeline.stages.s11_digest.structured_query")
+    @patch("pipeline.stages.s11_digest.dispatch_structured")
     @patch("pipeline.stages.s11_digest.IMAGES_DIR")
     @patch("pipeline.stages.s11_digest.CONTENT_DIR")
     def test_digest_no_image_returns_none(self, mock_content, mock_images, mock_sq, tmp_path, digest_result):
@@ -1214,7 +1214,7 @@ Body.
 
     @patch("pipeline.stages.s11_digest.send_photo")
     @patch("pipeline.stages.s11_digest.add_reaction")
-    @patch("pipeline.stages.s11_digest.structured_query")
+    @patch("pipeline.stages.s11_digest.dispatch_structured")
     @patch("pipeline.stages.s11_digest.IMAGES_DIR")
     @patch("pipeline.stages.s11_digest.CONTENT_DIR")
     def test_digest_send_failure(self, mock_content, mock_images, mock_sq, mock_react, mock_send, tmp_path, digest_result):
