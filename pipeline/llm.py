@@ -16,17 +16,24 @@ Public API:
 
 from __future__ import annotations
 
+import json
 import logging
 import os
 import random
 import shutil
+import subprocess
+import tempfile
 import time
+from pathlib import Path
+
+import jsonschema
 
 from pipeline.config import (
     CLAUDE_MODEL, CODEX_BIN, CODEX_MODEL, CODEX_TIMEOUT,
     GEMINI_MODEL, GEMINI_TIMEOUT, LLM_STACK,
     RETRY_BASE_DELAY, RETRY_MAX_ATTEMPTS, RETRY_MAX_DELAY,
 )
+from pipeline.json_repair import safe_parse_json
 
 logger = logging.getLogger(__name__)
 
@@ -105,9 +112,119 @@ def gemini_search(prompt: str, *, system: str = "", model: str | None = None,
     raise NotImplementedError("gemini_search lands in TASK-04")
 
 
-def codex_generate(prompt: str, *, system: str = "", schema: dict,
-                   model: str | None = None, timeout: int = CODEX_TIMEOUT) -> dict:
-    raise NotImplementedError("codex_generate lands in TASK-03")
+def codex_generate(
+    prompt: str,
+    *,
+    system: str = "",
+    schema: dict,
+    model: str | None = None,
+    timeout: int = CODEX_TIMEOUT,
+) -> dict:
+    """Run Codex CLI in non-interactive JSON mode. Validate + return dict.
+
+    Concatenates (system, prompt) into a single instruction blob, writes
+    the schema to a temp file, runs `codex exec` with `--output-schema` and
+    `--output-last-message`, parses the captured JSON via safe_parse_json,
+    validates against the schema. Retries on transient failures.
+    """
+    chosen_model = model or CODEX_MODEL
+
+    full_prompt = (
+        (f"<system>\n{system}\n</system>\n\n" if system else "")
+        + f"<task>\n{prompt}\n</task>\n\n"
+        + "Output ONLY valid JSON matching the supplied output schema. "
+        + "No markdown fences. No explanation. Do not call any tools."
+    )
+
+    last_error: Exception | None = None
+
+    for attempt in range(RETRY_MAX_ATTEMPTS):
+        with tempfile.TemporaryDirectory(prefix="codex_") as tmpdir:
+            schema_path = Path(tmpdir) / "schema.json"
+            out_path = Path(tmpdir) / "last.txt"
+            schema_path.write_text(json.dumps(schema), encoding="utf-8")
+
+            cmd = [
+                CODEX_BIN, "exec",
+                "-m", chosen_model,
+                "--output-schema", str(schema_path),
+                "--output-last-message", str(out_path),
+                "--skip-git-repo-check",
+                "--sandbox", "read-only",
+                "--ephemeral",
+                "--color", "never",
+                "-",
+            ]
+
+            try:
+                proc = subprocess.run(
+                    cmd,
+                    input=full_prompt,
+                    capture_output=True,
+                    text=True,
+                    timeout=timeout,
+                    cwd="/tmp",
+                    check=False,
+                )
+            except subprocess.TimeoutExpired:
+                exc = TimeoutError(f"codex exec timed out after {timeout}s")
+                if attempt < RETRY_MAX_ATTEMPTS - 1:
+                    last_error = exc
+                    _sleep_backoff(attempt, "codex_generate", exc)
+                    continue
+                raise exc
+            except FileNotFoundError as e:
+                raise RuntimeError(
+                    f"codex CLI not found at {CODEX_BIN!r}. "
+                    "Install via `npm i -g @openai/codex` or set CODEX_BIN."
+                ) from e
+
+            if proc.returncode != 0:
+                err_text = (proc.stderr or proc.stdout or "").strip()[:500]
+                exc = RuntimeError(f"codex exec rc={proc.returncode}: {err_text}")
+                if _is_retryable(exc) and attempt < RETRY_MAX_ATTEMPTS - 1:
+                    last_error = exc
+                    _sleep_backoff(attempt, "codex_generate", exc)
+                    continue
+                raise exc
+
+            raw = ""
+            if out_path.exists():
+                raw = out_path.read_text(encoding="utf-8")
+            if not raw.strip():
+                raw = (proc.stdout or "").strip()
+
+            if not raw.strip():
+                exc = RuntimeError("codex exec returned empty last-message")
+                if attempt < RETRY_MAX_ATTEMPTS - 1:
+                    last_error = exc
+                    _sleep_backoff(attempt, "codex_generate", exc)
+                    continue
+                raise exc
+
+            try:
+                data = safe_parse_json(raw, context="codex_generate")
+                jsonschema.validate(instance=data, schema=schema)
+                logger.info(
+                    "codex_generate: model=%s, %d chars in, %d chars out",
+                    chosen_model, len(full_prompt), len(raw),
+                )
+                return data
+            except jsonschema.ValidationError as e:
+                logger.error(
+                    "codex_generate schema validation failed: path=%s msg=%s raw_head=%s",
+                    list(e.absolute_path), e.message, raw[:300],
+                )
+                raise
+            except ValueError as e:
+                exc = RuntimeError(f"codex_generate JSON parse failed: {e}")
+                if attempt < RETRY_MAX_ATTEMPTS - 1:
+                    last_error = exc
+                    _sleep_backoff(attempt, "codex_generate", exc)
+                    continue
+                raise exc
+
+    raise last_error or RuntimeError("codex_generate: retry exhausted")
 
 
 def claude_review(prompt: str, *, system: str, schema: dict,

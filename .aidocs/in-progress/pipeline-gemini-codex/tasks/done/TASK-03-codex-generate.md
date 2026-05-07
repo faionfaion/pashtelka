@@ -152,3 +152,29 @@ python3 -c "from pipeline.llm import codex_generate; print('ok')"
 The unit test in TASK-12 will cover the subprocess-mocked path. Manual e2e test deferred to bench mode.
 
 **Rollback:** Revert `pipeline/llm.py` to the TASK-02 skeleton. No external callers wired yet.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Filled in `codex_generate()` body in `pipeline/llm.py`. Added `subprocess`, `tempfile`, `jsonschema`, `Path`, `safe_parse_json` imports.
+- Concatenates `<system>` + `<task>` + JSON-only directive into a single stdin blob; runs `codex exec -m <model> --output-schema <file> --output-last-message <file> --skip-git-repo-check --sandbox read-only --ephemeral --color never -`.
+- Reads the captured last-message, falls back to `proc.stdout` if empty, repairs/parses JSON, validates against schema. Schema-validation failure is non-retryable (real bug).
+- Subprocess `FileNotFoundError` raises a clear "codex not installed" message.
+- Added `jsonschema>=4.0.0` to `requirements.txt` (was transitively present, now declared).
+- Helper `_retry_or_raise` from the task spec was inlined into the loop (cleaner than extra function).
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/llm.py` | +95 lines for `codex_generate` + new imports |
+| `requirements.txt` | +1 line: `jsonschema>=4.0.0` |
+
+### Tests
+- `python3 -m py_compile pipeline/llm.py` → OK
+- `python3 -c "from pipeline.llm import codex_generate; print('ok')"` → ok
+- Subprocess-mock unit tests deferred to TASK-12 (per plan).
+
+### Issues
+- None.
