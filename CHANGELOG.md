@@ -9,6 +9,10 @@ project uses semantic-ish versioning loosely — one logical change per commit
 ## [Unreleased]
 
 ### Added
+- SDD plan for `welcome-landing` feature: bilingual `/uk/welcome/` +
+  `/pt/welcome/` landing pages, `/welcome/` redirect, OG cards, hero
+  placeholder. Docs: `design.md`, `test-plan.md`, `implementation-plan.md`,
+  7 task stubs. [welcome-landing]
 - LLM dispatcher module `pipeline/llm.py` with three backends:
   Gemini 2.5 Flash (web-search grounded research), Codex CLI gpt-5.5
   (generation/revision/TG/digest), Claude Opus (review).
