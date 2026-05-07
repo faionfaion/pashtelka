@@ -39,3 +39,23 @@ python3 -c "from pipeline.stages import s6_generate_tg; print('ok')"
 ```
 
 **Rollback:** Revert single-file change.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Replaced `structured_query(model=MODEL_TG, ...)` with `dispatch_structured(stage="tg", ...)`. Dropped `MODEL_TG` import (was only used here for this stage).
+- `MAX_TG_CAPTION` was already imported-but-unused in the original file; left as-is (out of scope for this task).
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/stages/s6_generate_tg.py` | -3 / +3 lines (net 0) |
+
+### Tests
+- `python3 -m py_compile pipeline/stages/s6_generate_tg.py` → OK
+- Module imports cleanly.
+
+### Issues
+- None.

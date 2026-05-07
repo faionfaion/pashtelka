@@ -4,11 +4,11 @@ from __future__ import annotations
 
 import logging
 
-from pipeline.config import MAX_TG_CAPTION, MODEL_TG, SITE_BASE_URL
+from pipeline.config import MAX_TG_CAPTION, SITE_BASE_URL
 from pipeline.context import PipelineContext
+from pipeline.llm import dispatch_structured
 from pipeline.prompts.builder import build_tg_post_prompt
 from pipeline.schemas import load_schema
-from pipeline.sdk import structured_query
 
 logger = logging.getLogger(__name__)
 
@@ -18,11 +18,11 @@ def run(ctx: PipelineContext) -> None:
 
     system, prompt = build_tg_post_prompt(ctx)
 
-    result = structured_query(
+    result = dispatch_structured(
         prompt=prompt,
-        system_prompt=system,
+        system=system,
         schema=load_schema("tg_post"),
-        model=MODEL_TG,
+        stage="tg",
     )
 
     hook = result["hook"]
