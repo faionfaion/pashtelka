@@ -58,3 +58,42 @@ needed. Print the file size on completion.
 - Output PNG path is created and is > 50 KB.
 - Script exits non-zero with a clear message if `OPENAI_API_KEY` is
   missing.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Wrote `scripts/print/generate_mascot.py` (~270 lines, stdlib only —
+  `urllib.request` + `base64` + a hand-rolled multipart encoder so no
+  third-party deps).
+- API key loader mirrors the welcome-landing pattern: env first, then
+  `~/workspace/.env`.
+- Two code paths:
+  - `generate_fresh()` for fresh generation via
+    `POST /v1/images/generations`.
+  - `generate_edit()` for iterative edits via `POST /v1/images/edits`
+    with a hand-built multipart body (`image=<previous PNG>`).
+- Model fallback: tries `gpt-image-1.5` first, falls back to
+  `gpt-image-1` on `model_not_found` (the OpenAI naming for the
+  vision-image family is not stable across the SDK).
+- Sanity check: warns if the resulting PNG is < 50 KB (likely a stub
+  rather than a real generation).
+
+### Files Changed
+| Repo | File | Change |
+|------|------|--------|
+| pashtelka-faion-net | `scripts/print/generate_mascot.py` | new (chmod +x) |
+
+### Tests
+- `python3 scripts/print/generate_mascot.py --help` — lists all flags
+  including `--reference`. Epilog explains the v1-vs-v2+ branching. PASS.
+- API path exercised end-to-end in TASK-07 with the real mascot v1
+  prompt — output written to
+  `gatsby/src/images/brand/pashtelka-mascot.png`, size verified > 50 KB.
+
+### Issues
+- OpenAI `gpt-image-1.5` model name might not be live in every account.
+  Fallback to `gpt-image-1` covers it. The model actually used is
+  printed for traceability.
+

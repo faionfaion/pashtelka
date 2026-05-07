@@ -21,6 +21,11 @@ project uses semantic-ish versioning loosely — one logical change per commit
   [print-stickers-posters TASK-03]
 - `qrcode[pil]>=7.4` declared in `requirements.txt`.
   [print-stickers-posters TASK-03]
+- `scripts/print/generate_mascot.py` — OpenAI `gpt-image-1.5` (with
+  `gpt-image-1` fallback) wrapper for the canonical pashtelka mascot.
+  Stdlib only (urllib + multipart). Two modes: fresh
+  `/v1/images/generations` (v1) and iterative `/v1/images/edits` with a
+  reference PNG (v2+). [print-stickers-posters TASK-04]
 - `pipeline/b1_validator.py` — sync B1 readability validator. Three
   metrics (Flesch reading ease via textstat, avg sentence length, B1
   lemma coverage) return `passed` flag + `retry_addendum` for prompt
