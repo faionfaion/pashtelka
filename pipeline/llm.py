@@ -51,6 +51,48 @@ def _stack() -> str:
     return os.environ.get("LLM_STACK", LLM_STACK).lower().strip() or "old"
 
 
+def estimate_tokens(text: str) -> int:
+    """Rough char-to-token approximation (~4 chars per token).
+
+    Used by the AC5 bench when the upstream API does not surface a
+    structured usage field. Direction-of-delta is what matters; absolute
+    numbers are advisory.
+    """
+    return max(1, len(text) // 4)
+
+
+def estimate_usd(model: str, in_tokens: int, out_tokens: int) -> float:
+    """Convert (in_tokens, out_tokens) to USD using PRICING.
+
+    Returns 0.0 for an unknown model so the bench never crashes on a
+    typo; the operator should sanity-check PRICING annually.
+    """
+    p = PRICING.get(model)
+    if not p:
+        logger.warning("estimate_usd: no PRICING entry for %r — returning 0.0", model)
+        return 0.0
+    return (in_tokens / 1e6) * p["in"] + (out_tokens / 1e6) * p["out"]
+
+
+def stack_models(stack: str) -> dict:
+    """Map stack value -> {stage: model_name} for AC5 cost calc."""
+    if stack == "new":
+        return {
+            "research": GEMINI_MODEL,
+            "generate": CODEX_MODEL,
+            "revise":   CODEX_MODEL,
+            "tg":       CODEX_MODEL,
+            "review":   CLAUDE_MODEL,
+        }
+    return {
+        "research": CLAUDE_MODEL,
+        "generate": CLAUDE_MODEL,
+        "revise":   CLAUDE_MODEL,
+        "tg":       CLAUDE_MODEL,
+        "review":   CLAUDE_MODEL,
+    }
+
+
 def _backoff_delay(attempt: int) -> float:
     delay = min(RETRY_BASE_DELAY * (2 ** attempt), RETRY_MAX_DELAY)
     return delay + random.uniform(0, delay * 0.5)

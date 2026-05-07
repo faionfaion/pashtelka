@@ -23,6 +23,9 @@ def cli() -> None:
                         help="Pipeline mode (default: generate)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Run without deploy/publish")
+    parser.add_argument("--bench", action="store_true",
+                        help="AC5 bench: run first article twice (old vs new stack), "
+                             "write state/bench/<date>.json. Implies --dry-run.")
     parser.add_argument("--verbose", "-v", action="store_true")
     args = parser.parse_args()
 
@@ -60,7 +63,10 @@ def cli() -> None:
             sys.exit(0)
         elif args.mode == "generate":
             from pipeline.modes.generate import run as run_generate
-            completed = run_generate(dry_run=args.dry_run)
+            completed = run_generate(
+                dry_run=args.dry_run or args.bench,
+                bench=args.bench,
+            )
             logger.info("Batch complete: %d articles", len(completed))
             sys.exit(0)
         elif args.mode == "publish":

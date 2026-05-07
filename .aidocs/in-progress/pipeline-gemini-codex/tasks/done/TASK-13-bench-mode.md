@@ -77,3 +77,33 @@ cat state/bench/$(date -u +%F).json
 **Notes:**
 - This is a "best-effort" bench. AC5 sets a soft goal (≥30% cheaper); the operator runs it once and uses the output to decide whether to flip `LLM_STACK` default to `new`. AC6 requires a manual quality check independent of this script.
 - We do NOT ship a test for the bench file format (it's a one-shot operator tool).
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Added `estimate_tokens`, `estimate_usd`, `stack_models` helpers to `pipeline/llm.py`.
+- Added `--bench` flag to `pipeline/cli.py`. The flag implies `--dry-run`.
+- Extended `pipeline/modes/generate.py` with a `bench` keyword arg and a `_run_bench()` helper that:
+  1. Picks the first topic from the plan.
+  2. Loops over `("old", "new")`, sets `LLM_STACK` env var, runs s2 → s6.
+  3. Times each loop with `time.monotonic()`; counts approximate input/output chars from prompt/result strings; converts to tokens (chars/4); maps token counts to USD via the `PRICING` table using each stack's primary `generate` model (gpt-5.5 for new, claude-opus-4-7 for old).
+  4. Restores the original `LLM_STACK` env var.
+  5. Writes `state/bench/<UTC-date>.json` with `topic`, `type`, `old`, `new`, `delta`, `notes`. Per-stack errors are caught and recorded in the JSON instead of crashing the writer.
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/llm.py` | +40 lines (helpers) |
+| `pipeline/cli.py` | +5 lines (`--bench` arg + propagation) |
+| `pipeline/modes/generate.py` | +130 lines (`_run_bench` + imports) |
+
+### Tests
+- `python3 -m py_compile` on all three files → OK
+- `python3 -m pipeline generate --bench --help` → shows the new flag.
+- Smoke test with stages monkey-patched (no API calls): writes `state/bench/2026-05-07.json` with all required top-level keys; `delta.cost_pct = -87.6` (mock — confirms PRICING attribution direction is correct).
+
+### Issues
+- Token counts are char/4 approximations. Documented in the JSON `notes` field. Direction-of-delta is reliable; absolute cost numbers should be sanity-checked against the operator's actual API invoice once a real bench is run.
+- Real-API bench requires both `OPENAI_API_KEY` (codex) and `GEMINI_API_KEY` to be present; otherwise the new-stack measurements record an error and the old-stack measurements still complete normally — the JSON is still written.
