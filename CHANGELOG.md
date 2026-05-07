@@ -101,6 +101,10 @@ project uses semantic-ish versioning loosely — one logical change per commit
   / `poster_a5.pdf`). Also documents the new `*-final.svg` and QR
   outputs in the source-files table, and the git-LFS bootstrap.
   [print-stickers-posters TASK-10]
+
+### Shipped
+- print-stickers-posters: brand mascot, sticker + A5 poster SVGs,
+  operator-ready Affinity export workflow
 - `pipeline/b1_validator.py` — sync B1 readability validator. Three
   metrics (Flesch reading ease via textstat, avg sentence length, B1
   lemma coverage) return `passed` flag + `retry_addendum` for prompt
