@@ -27,6 +27,12 @@ project uses semantic-ish versioning loosely — one logical change per commit
 - OG cards `gatsby/static/og/welcome-uk.png` and `welcome-pt.png`, both
   exactly 1200×630 PNG, ~450 KB each. Generated via the same
   `gen-welcome-assets.mjs` script. [welcome-landing TASK-03]
+- UA welcome page `gatsby/src/pages/uk/welcome.js` → `/uk/welcome/`. Hero
+  + 3 bullets + TG primary CTA (@pashtelka_news) + secondary CTA + trust
+  footer. Open Graph + Twitter card + Plausible (tagged-events) wired in
+  the `Head` export. Lang chip preserves UTM search params. Above-the-fold
+  weight 249 KB uncompressed (≤ 250 KB AC3 budget). [welcome-landing
+  TASK-04]
 - LLM dispatcher module `pipeline/llm.py` with three backends:
   Gemini 2.5 Flash (web-search grounded research), Codex CLI gpt-5.5
   (generation/revision/TG/digest), Claude Opus (review).
