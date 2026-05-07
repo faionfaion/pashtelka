@@ -40,6 +40,15 @@ project uses semantic-ish versioning loosely — one logical change per commit
   delta and CLI gotchas (`--skip-trust`, `-y` vs `--approval-mode`).
   [pipeline-gemini-codex follow-up]
 
+### Verified
+- `LLM_STACK=new python3 -c "from pipeline.llm import preflight_check;
+  preflight_check()"` — passes (gemini CLI v0.41.1 + codex CLI v0.128.0
+  both on PATH). [pipeline-gemini-codex follow-up]
+- `LLM_STACK=new python3 -c "from pipeline.llm import gemini_search;
+  print(gemini_search('What is 2+2? Reply with just the number.'))"`
+  — returns `"4"` (one round-trip via the gemini CLI, ~20 s).
+  [pipeline-gemini-codex follow-up]
+
 ### Added
 - `.aidocs/todo/print-stickers-posters/{design,test-plan,implementation-plan}.md`
   + 11 `tasks/todo/TASK-*.md` stubs — SDD planning for the Lisbon
