@@ -138,6 +138,22 @@ project uses semantic-ish versioning loosely — one logical change per commit
   `--since YYYY-MM-DD`, `--slug <slug>`. `--dry-run` previews;
   `--max N` is a safety net. Late import of the stage helper keeps
   `--help` cheap. [pt-translation-b1 TASK-12]
+
+### Notes
+- `pt-translation-b1` feature shipped: see
+  `.aidocs/done/pt-translation-b1/` for spec, design, test plan,
+  implementation plan, 13 task reports, and `done.md` (env-var
+  contract + rollback + operator follow-ups).
+- B1 validator thresholds (`FLESCH_MIN=65`, `AVG_SENT_WORDS_MAX=20`,
+  `COVERAGE_MIN_PCT=90`) are deliberately conservative for v1.
+  Operator should tune them after observing 50+ real pipeline
+  translations; documented in `done.md`.
+- PT TG channel `@pastelka_pt` must be created by the operator and
+  `TG_CHANNEL_PT_ID` exported in `~/workspace/.env` on faion-net
+  before the digest cron picks up the dual-language flow.
+- 157 historic UA articles do NOT have PT counterparts yet — operator
+  triggers `scripts/backfill_pt.py` after the live pipeline is
+  healthy.
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
