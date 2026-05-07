@@ -40,6 +40,15 @@ project uses semantic-ish versioning loosely — one logical change per commit
   Three layers: navigator.languages JS → meta-refresh fallback → visible
   UA/PT links. Preserves UTM search params on redirect. `noindex`.
   [welcome-landing TASK-06]
+
+### Notes
+- `welcome-landing` feature shipped: see `.aidocs/done/welcome-landing/`
+  for spec, design, test plan, implementation plan, 7 task reports, and
+  `done.md` (rollback + mascot-swap path + operator follow-ups).
+  Lighthouse mobile-perf run is deferred to the operator (no Chrome in
+  build sandbox). Hero image is a placeholder; canonical mascot lives at
+  `gatsby/src/images/brand/pashtelka-mascot.png` once
+  `print-stickers-posters` ships.
 - LLM dispatcher module `pipeline/llm.py` with three backends:
   Gemini 2.5 Flash (web-search grounded research), Codex CLI gpt-5.5
   (generation/revision/TG/digest), Claude Opus (review).
