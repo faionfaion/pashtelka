@@ -27,10 +27,14 @@ def test_preflight_old_noop(monkeypatch):
     assert llm.preflight_check() is None
 
 
-def test_preflight_new_missing_codex(monkeypatch):
+def test_preflight_new_missing_codex(monkeypatch, tmp_path):
     monkeypatch.setenv("LLM_STACK", "new")
     monkeypatch.setattr(llm, "CODEX_BIN", "/no/such/codex")
-    monkeypatch.setenv("GEMINI_API_KEY", "anything")
+    # Ensure gemini check passes so the failure must be the codex one.
+    fake_gemini = tmp_path / "gemini"
+    fake_gemini.write_text("#!/bin/sh\n")
+    fake_gemini.chmod(0o755)
+    monkeypatch.setattr(llm, "GEMINI_BIN", str(fake_gemini))
     with pytest.raises(RuntimeError, match="codex"):
         llm.preflight_check()
 
@@ -41,8 +45,8 @@ def test_preflight_new_missing_gemini(monkeypatch, tmp_path):
     fake_codex.write_text("#!/bin/sh\n")
     fake_codex.chmod(0o755)
     monkeypatch.setattr(llm, "CODEX_BIN", str(fake_codex))
-    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
-    with pytest.raises(RuntimeError, match="GEMINI_API_KEY"):
+    monkeypatch.setattr(llm, "GEMINI_BIN", "/no/such/gemini")
+    with pytest.raises(RuntimeError, match="gemini"):
         llm.preflight_check()
 
 
@@ -213,59 +217,91 @@ def test_codex_generate_retries_on_transient(monkeypatch):
 
 # ---- gemini_search ----
 
-def test_gemini_search_request_shape(monkeypatch):
+def test_gemini_search_command_shape(monkeypatch):
+    """gemini_search shells out with the documented flag set."""
     captured: dict = {}
 
-    def fake_post(url, params=None, json=None, timeout=None, headers=None):
-        captured["url"] = url
-        captured["params"] = params
-        captured["body"] = json
+    def fake_run(cmd, **kwargs):
+        captured["cmd"] = cmd
+        captured["kwargs"] = kwargs
         m = MagicMock()
-        m.status_code = 200
-        m.json.return_value = {
-            "candidates": [{
-                "content": {"parts": [{"text": "answer"}]},
-                "finishReason": "STOP",
-            }]
-        }
+        m.returncode = 0
+        m.stdout = json.dumps({
+            "session_id": "abc",
+            "response": "answer",
+            "stats": {},
+        })
+        m.stderr = ""
         return m
 
-    monkeypatch.setenv("GEMINI_API_KEY", "fake")
-    monkeypatch.setattr(llm.requests, "post", fake_post)
+    monkeypatch.setattr(llm.subprocess, "run", fake_run)
     text = llm.gemini_search("p", system="sys")
     assert text == "answer"
-    assert captured["params"] == {"key": "fake"}
-    assert "google_search" in captured["body"]["tools"][0]
-    assert captured["body"]["system_instruction"]["parts"][0]["text"] == "sys"
+
+    cmd = captured["cmd"]
+    assert cmd[0] == llm.GEMINI_BIN
+    # -p <prompt> -m <model> -o json --approval-mode plan --skip-trust
+    assert "-p" in cmd
+    p_idx = cmd.index("-p")
+    # System block prepended into the prompt argument when system is set.
+    assert "<system>" in cmd[p_idx + 1]
+    assert "sys" in cmd[p_idx + 1]
+    assert "p" in cmd[p_idx + 1]
+    assert "-m" in cmd
+    assert "-o" in cmd and cmd[cmd.index("-o") + 1] == "json"
+    assert "--approval-mode" in cmd
+    assert cmd[cmd.index("--approval-mode") + 1] == "plan"
+    assert "--skip-trust" in cmd
+    # Mutually exclusive with --approval-mode in v0.41.1; must NOT be set.
+    assert "-y" not in cmd and "--yolo" not in cmd
 
 
-def test_gemini_search_429_retries(monkeypatch):
+def test_gemini_search_retries_on_transient(monkeypatch):
+    """Non-zero return code matching `_is_retryable` triggers a retry."""
     calls = {"n": 0}
 
-    def fake_post(url, params=None, json=None, timeout=None, headers=None):
+    def fake_run(cmd, **kwargs):
         calls["n"] += 1
         m = MagicMock()
         if calls["n"] == 1:
-            m.status_code = 429
-            m.text = "rate limit"
+            m.returncode = 1
+            m.stdout = ""
+            m.stderr = "rate limit (429)"
             return m
-        m.status_code = 200
-        m.json.return_value = {
-            "candidates": [{"content": {"parts": [{"text": "ok"}]}}]
-        }
+        m.returncode = 0
+        m.stdout = json.dumps({"response": "ok", "stats": {}})
+        m.stderr = ""
         return m
 
-    monkeypatch.setenv("GEMINI_API_KEY", "fake")
-    monkeypatch.setattr(llm.requests, "post", fake_post)
+    monkeypatch.setattr(llm.subprocess, "run", fake_run)
     monkeypatch.setattr(llm, "_sleep_backoff", lambda *a, **kw: None)
     out = llm.gemini_search("p")
     assert out == "ok"
     assert calls["n"] == 2
 
 
-def test_gemini_search_missing_key(monkeypatch):
-    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
-    with pytest.raises(RuntimeError, match="GEMINI_API_KEY"):
+def test_gemini_search_cli_not_found(monkeypatch):
+    """Missing CLI surfaces an actionable RuntimeError, not a bare FNFE."""
+    def fake_run(cmd, **kwargs):
+        raise FileNotFoundError(cmd[0])
+
+    monkeypatch.setattr(llm.subprocess, "run", fake_run)
+    with pytest.raises(RuntimeError, match="gemini CLI not found"):
+        llm.gemini_search("p")
+
+
+def test_gemini_search_empty_response_field(monkeypatch):
+    """Stdout JSON without a usable `response` field raises after retry."""
+    def fake_run(cmd, **kwargs):
+        m = MagicMock()
+        m.returncode = 0
+        m.stdout = json.dumps({"session_id": "x", "response": "", "stats": {}})
+        m.stderr = ""
+        return m
+
+    monkeypatch.setattr(llm.subprocess, "run", fake_run)
+    monkeypatch.setattr(llm, "_sleep_backoff", lambda *a, **kw: None)
+    with pytest.raises(RuntimeError, match="empty 'response'"):
         llm.gemini_search("p")
 
 

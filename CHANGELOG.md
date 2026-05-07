@@ -25,6 +25,13 @@ project uses semantic-ish versioning loosely — one logical change per commit
   pattern as the existing codex CLI check; the CLI handles its own
   auth so the env-var requirement is gone. [pipeline-gemini-codex
   follow-up]
+- `tests/test_llm.py` — gemini tests rewritten to mock
+  `subprocess.run` (not `requests.post`); preflight tests assert
+  `which(GEMINI_BIN)` instead of `GEMINI_API_KEY`. Adds
+  `test_gemini_search_cli_not_found` and
+  `test_gemini_search_empty_response_field`; replaces the
+  `test_gemini_search_missing_key` case which is no longer relevant.
+  21/21 green. [pipeline-gemini-codex follow-up]
 
 ### Added
 - `.aidocs/todo/print-stickers-posters/{design,test-plan,implementation-plan}.md`
