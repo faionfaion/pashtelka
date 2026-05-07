@@ -36,6 +36,10 @@ project uses semantic-ish versioning loosely — one logical change per commit
 - PT welcome page `gatsby/src/pages/pt/welcome.js` → `/pt/welcome/`. Same
   structure as UA, B1-level Portuguese copy, `@pastelka_pt` handle,
   `welcome-pt.png` OG card. [welcome-landing TASK-05]
+- `/welcome/` static redirect (`gatsby/static/welcome/index.html`, 1.3 KB).
+  Three layers: navigator.languages JS → meta-refresh fallback → visible
+  UA/PT links. Preserves UTM search params on redirect. `noindex`.
+  [welcome-landing TASK-06]
 - LLM dispatcher module `pipeline/llm.py` with three backends:
   Gemini 2.5 Flash (web-search grounded research), Codex CLI gpt-5.5
   (generation/revision/TG/digest), Claude Opus (review).
