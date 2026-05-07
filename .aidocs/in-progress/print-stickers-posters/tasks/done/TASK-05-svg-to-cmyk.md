@@ -82,3 +82,43 @@ or:
 - File at `--out` is a valid PDF (`file <pdf>` reports `PDF document`).
 - Naive-CMYK fallback documents the FOGRA39 limitation in stderr output
   every run.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Wrote `scripts/print/svg_to_cmyk_pdf.py` (~210 lines).
+- Path 1 (preferred): Inkscape CLI for SVG → PDF, then ghostscript with
+  the FOGRA39 ICC for true CMYK conversion. Both checked with
+  `shutil.which`; ghostscript step is skipped (with a clear warning) if
+  ghostscript or the ICC are missing.
+- Path 2 (fallback): cairosvg → PIL.convert("CMYK") (naive sRGB→CMYK,
+  documented as proofing-only in stderr every run) → reportlab single-
+  page PDF at the SVG's physical mm dimensions. SVG dimensions parsed
+  via regex from `width="…mm"` / `height="…mm"`.
+- Path 3 (no toolchain): exits non-zero with both install commands
+  printed.
+
+### Files Changed
+| Repo | File | Change |
+|------|------|--------|
+| pashtelka-faion-net | `scripts/print/svg_to_cmyk_pdf.py` | new (chmod +x) |
+
+### Tests
+- `python3 scripts/print/svg_to_cmyk_pdf.py --help` — lists `--in`,
+  `--out`, `--icc`. PASS.
+- Run on a minimal test SVG with neither Inkscape nor cairosvg installed
+  on this box: exits 2 with the install hint. PASS (matches success
+  criterion).
+
+### Issues
+- Neither Inkscape nor cairosvg is currently installed on the agent box.
+  Both code paths are unexercised end-to-end here; they are reachable
+  and the imports are guarded so the script's failure mode is the
+  documented install-hint exit.
+- **Operator action before Phase 4b:** install Inkscape +
+  ghostscript + icc-profiles-free OR pip install cairosvg + reportlab,
+  so the proofing PDF generates and the SVG layouts can be sanity-checked
+  pre-Affinity.
+

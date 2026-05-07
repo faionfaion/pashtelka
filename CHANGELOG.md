@@ -26,6 +26,11 @@ project uses semantic-ish versioning loosely — one logical change per commit
   Stdlib only (urllib + multipart). Two modes: fresh
   `/v1/images/generations` (v1) and iterative `/v1/images/edits` with a
   reference PNG (v2+). [print-stickers-posters TASK-04]
+- `scripts/print/svg_to_cmyk_pdf.py` — SVG → CMYK proofing PDF tool. Path
+  1: Inkscape + ghostscript with FOGRA39 ICC. Path 2: cairosvg + PIL
+  CMYK + reportlab fallback (proofing only, no ICC gamut mapping). If
+  neither is installed, exits with the documented install hint.
+  [print-stickers-posters TASK-05]
 - `pipeline/b1_validator.py` — sync B1 readability validator. Three
   metrics (Flesch reading ease via textstat, avg sentence length, B1
   lemma coverage) return `passed` flag + `retry_addendum` for prompt
