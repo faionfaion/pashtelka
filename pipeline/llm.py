@@ -27,11 +27,10 @@ import time
 from pathlib import Path
 
 import jsonschema
-import requests
 
 from pipeline.config import (
     CLAUDE_MODEL, CODEX_BIN, CODEX_MODEL, CODEX_TIMEOUT,
-    GEMINI_MODEL, GEMINI_TIMEOUT, LLM_STACK,
+    GEMINI_BIN, GEMINI_MODEL, GEMINI_TIMEOUT, LLM_STACK,
     RETRY_BASE_DELAY, RETRY_MAX_ATTEMPTS, RETRY_MAX_DELAY,
 )
 from pipeline.json_repair import safe_parse_json
@@ -148,13 +147,6 @@ def preflight_check() -> None:
     )
 
 
-# Public API stubs — real implementations land in TASK-03/04/05.
-
-GEMINI_ENDPOINT = (
-    "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-)
-
-
 def gemini_search(
     prompt: str,
     *,
@@ -162,59 +154,97 @@ def gemini_search(
     model: str | None = None,
     timeout: int = GEMINI_TIMEOUT,
 ) -> str:
-    """Run Gemini with google_search grounding. Return concatenated text.
+    """Run the `gemini` CLI in non-interactive headless mode. Return text.
 
-    Raises RuntimeError on missing key, safety-block, or retry exhaustion.
+    Shells out to `gemini -p <prompt> -m <model> -o json --approval-mode plan
+    --skip-trust`. The CLI manages its own auth chain (cached Google login
+    or its own env-var pickup); we do NOT pass any API key from Python.
+    `--approval-mode plan` keeps the run read-only (no edits, no file writes
+    — we only need the search-grounded response). `--skip-trust` bypasses
+    the trusted-folder prompt that otherwise downgrades the approval mode
+    in headless contexts.
+
+    `--approval-mode` and `-y/--yolo` are mutually exclusive in CLI
+    v0.41.1, so we use `plan` alone.
+
+    The CLI's `-o json` output on stdout is a single object of the shape
+    `{"session_id": "...", "response": "<text>", "stats": {...}}`. We
+    extract the `response` field. Warnings (terminal capability hints,
+    ripgrep fallback notice) go to stderr and are ignored.
+
+    If `system` is provided we prepend it to the prompt — the CLI has no
+    separate system field in headless mode.
+
+    Raises RuntimeError on retry exhaustion or empty/garbled output.
     """
     chosen_model = model or GEMINI_MODEL
 
-    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not api_key:
-        raise RuntimeError(
-            "GEMINI_API_KEY is empty. Set it in ~/workspace/.env"
-        )
+    full_prompt = (
+        f"<system>\n{system}\n</system>\n\n<task>\n{prompt}\n</task>"
+        if system
+        else prompt
+    )
 
-    body: dict = {
-        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "tools": [{"google_search": {}}],
-        "generationConfig": {
-            "temperature": 0.4,
-            "maxOutputTokens": 4096,
-        },
-    }
-    if system:
-        body["system_instruction"] = {"parts": [{"text": system}]}
-
-    url = GEMINI_ENDPOINT.format(model=chosen_model)
+    cmd = [
+        GEMINI_BIN,
+        "-p", full_prompt,
+        "-m", chosen_model,
+        "-o", "json",
+        "--approval-mode", "plan",
+        "--skip-trust",
+    ]
 
     last_error: Exception | None = None
 
     for attempt in range(RETRY_MAX_ATTEMPTS):
         try:
-            resp = requests.post(
-                url,
-                params={"key": api_key},
-                json=body,
+            proc = subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
                 timeout=timeout,
-                headers={"Content-Type": "application/json"},
+                cwd="/tmp",
+                check=False,
             )
-        except requests.Timeout:
+        except subprocess.TimeoutExpired:
             exc = TimeoutError(f"gemini_search timed out after {timeout}s")
             if attempt < RETRY_MAX_ATTEMPTS - 1:
                 last_error = exc
                 _sleep_backoff(attempt, "gemini_search", exc)
                 continue
             raise exc
-        except requests.RequestException as e:
-            if _is_retryable(e) and attempt < RETRY_MAX_ATTEMPTS - 1:
-                last_error = e
-                _sleep_backoff(attempt, "gemini_search", e)
-                continue
-            raise
+        except FileNotFoundError as e:
+            raise RuntimeError(
+                f"gemini CLI not found at {GEMINI_BIN!r}. "
+                "Install via `npm i -g @google/gemini-cli` or set GEMINI_BIN."
+            ) from e
 
-        if resp.status_code >= 500 or resp.status_code == 429:
+        if proc.returncode != 0:
+            err_text = (proc.stderr or proc.stdout or "").strip()[:500]
             exc = RuntimeError(
-                f"gemini_search HTTP {resp.status_code}: {resp.text[:200]}"
+                f"gemini exec rc={proc.returncode}: {err_text}"
+            )
+            if _is_retryable(exc) and attempt < RETRY_MAX_ATTEMPTS - 1:
+                last_error = exc
+                _sleep_backoff(attempt, "gemini_search", exc)
+                continue
+            raise exc
+
+        raw = (proc.stdout or "").strip()
+        if not raw:
+            exc = RuntimeError("gemini_search: empty stdout")
+            if attempt < RETRY_MAX_ATTEMPTS - 1:
+                last_error = exc
+                _sleep_backoff(attempt, "gemini_search", exc)
+                continue
+            raise exc
+
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError as e:
+            exc = RuntimeError(
+                f"gemini_search: stdout is not valid JSON: {e}; "
+                f"head={raw[:200]!r}"
             )
             if attempt < RETRY_MAX_ATTEMPTS - 1:
                 last_error = exc
@@ -222,36 +252,31 @@ def gemini_search(
                 continue
             raise exc
 
-        if resp.status_code >= 400:
-            raise RuntimeError(
-                f"gemini_search HTTP {resp.status_code}: {resp.text[:500]}"
-            )
-
-        data = resp.json()
-        candidates = data.get("candidates") or []
-        if not candidates:
-            block = data.get("promptFeedback", {}).get("blockReason")
-            raise RuntimeError(
-                f"gemini_search empty candidates (blockReason={block}): "
-                f"{json.dumps(data)[:300]}"
-            )
-
-        parts = candidates[0].get("content", {}).get("parts", [])
-        text = "\n".join(p.get("text", "") for p in parts if "text" in p).strip()
-
+        text = (data.get("response") or "").strip()
         if not text:
-            exc = RuntimeError("gemini_search returned empty text")
+            exc = RuntimeError(
+                f"gemini_search: empty 'response' field (keys={list(data)})"
+            )
             if attempt < RETRY_MAX_ATTEMPTS - 1:
                 last_error = exc
                 _sleep_backoff(attempt, "gemini_search", exc)
                 continue
             raise exc
 
-        logger.info(
-            "gemini_search: model=%s, %d chars, finish=%s",
-            chosen_model, len(text),
-            candidates[0].get("finishReason", "?"),
-        )
+        # Stats block is best-effort: surface model + latency for ops.
+        try:
+            mstats = data.get("stats", {}).get("models", {}).get(chosen_model, {})
+            api = mstats.get("api", {}) or {}
+            tokens = mstats.get("tokens", {}) or {}
+            logger.info(
+                "gemini_search: model=%s, %d chars, latency_ms=%s, tokens_in=%s, tokens_out=%s",
+                chosen_model, len(text),
+                api.get("totalLatencyMs", "?"),
+                tokens.get("input", "?"), tokens.get("candidates", "?"),
+            )
+        except Exception:
+            logger.info("gemini_search: model=%s, %d chars", chosen_model, len(text))
+
         return text
 
     raise last_error or RuntimeError("gemini_search: retry exhausted")

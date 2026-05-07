@@ -173,6 +173,12 @@ CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-4-7")
 # Codex CLI binary (allow override; PATH lookup by default).
 CODEX_BIN = os.environ.get("CODEX_BIN", "codex")
 
+# Gemini CLI binary (allow override; PATH lookup by default).
+# We shell out to the official `gemini` CLI in non-interactive headless mode
+# instead of calling the REST API directly. Auth is handled by the CLI's own
+# chain (cached Google login or its own env-var pickup).
+GEMINI_BIN = os.environ.get("GEMINI_BIN", "gemini")
+
 # Per-vendor timeouts (seconds).
 GEMINI_TIMEOUT = int(os.environ.get("GEMINI_TIMEOUT", "300"))
 CODEX_TIMEOUT = int(os.environ.get("CODEX_TIMEOUT", "600"))

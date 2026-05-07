@@ -8,6 +8,19 @@ project uses semantic-ish versioning loosely — one logical change per commit
 
 ## [Unreleased]
 
+### Changed
+- pipeline: gemini integration switched from REST API to gemini CLI (no
+  GEMINI_API_KEY needed; CLI manages its own auth).
+  [pipeline-gemini-codex follow-up]
+- `pipeline/llm.py::gemini_search` now shells out to `gemini -p <prompt>
+  -m <model> -o json --approval-mode plan --skip-trust` and parses the
+  `response` field of the CLI's JSON stdout. Drops `requests` from
+  `pipeline/llm.py` and removes the `GEMINI_ENDPOINT` constant.
+  [pipeline-gemini-codex follow-up]
+- `pipeline/config.py` — adds `GEMINI_BIN` (default `"gemini"`, env
+  override `GEMINI_BIN`) mirroring the existing `CODEX_BIN` pattern.
+  [pipeline-gemini-codex follow-up]
+
 ### Added
 - `.aidocs/todo/print-stickers-posters/{design,test-plan,implementation-plan}.md`
   + 11 `tasks/todo/TASK-*.md` stubs — SDD planning for the Lisbon
