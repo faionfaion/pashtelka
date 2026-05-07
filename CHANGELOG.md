@@ -73,6 +73,11 @@ project uses semantic-ish versioning loosely — one logical change per commit
 - `scripts/migrate_to_locale_dirs.py` — one-shot migration helper.
   `--dry-run` preview + live mode. Uses `git mv` with
   `shutil.move` fallback. [pt-translation-b1 TASK-05]
+
+### Changed (TASK-05 migration result)
+- 158 articles relocated from `content/<slug>.md` to
+  `content/<slug>/uk.md` via the migration script. Pure renames, zero
+  body changes. [pt-translation-b1 TASK-05]
 - SDD plan for `pt-translation-b1`: simplified Portuguese (CEFR B1)
   translation pipeline + `/pt/` site routing + `@pastelka_pt` TG channel
   + dual-language daily digest. Plan covers 13 atomic tasks, content
