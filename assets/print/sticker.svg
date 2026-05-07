@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  pashtelka.news — sticker layout (75 mm round, 3 mm bleed → 81×81 mm artboard)
+
+  Placeholders the operator replaces in Affinity Publisher:
+    {{MASCOT_PATH}}   = gatsby/src/images/brand/pashtelka-mascot.png
+    {{QR_PATH}}       = output of `scripts/print/generate_qr.py`. Run command
+                        documented in `assets/print/README.md`. Use the .svg
+                        variant (vector) when placing in Affinity.
+    {{HEADLINE_UA}}   = "Українські новини в Португалії" (default — keep or rewrite)
+    {{HEADLINE_PT}}   = "Notícias em ucraniano e português"  (default)
+
+  Layout (top to bottom, mm-from-top inside the safe circle):
+     14 mm  WORDMARK_TOP_ARC      pashtelka.news, top-arc text along curved path
+     24 mm  MASCOT_PLACEHOLDER    22×22 mm
+     36 mm  QR_PLACEHOLDER        35×35 mm
+     60 mm  TAG_UA                {{HEADLINE_UA}}
+     65 mm  TAG_PT                {{HEADLINE_PT}}
+     70 mm  URL_LINE              pastelka.news (bold)
+
+  CMYK conversion: open in Affinity Publisher,
+     File → Place → this SVG → replace MASCOT_PLACEHOLDER + QR_PLACEHOLDER
+     File → Export → PDF/X-1a:2003 with FOGRA39 ICC, 300 DPI, fonts outlined
+  See assets/print/README.md for the full operator handoff.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="81mm" height="81mm" viewBox="0 0 81 81">
+
+  <defs>
+    <!-- Curved path the wordmark sits on (top arc inside the safe circle). -->
+    <path id="topArcPath" d="M 16 26 A 28 28 0 0 1 65 26"/>
+  </defs>
+
+  <!-- BLEED layer: full artboard background, brand cream. -->
+  <g id="BLEED_GUIDE" inkscape:label="BLEED_GUIDE">
+    <rect x="0" y="0" width="81" height="81" fill="#fefcfa"/>
+  </g>
+
+  <!-- Trim circle (Ø75 mm) — visual reference, also serves as cut line marker
+       for the print shop. Operator may toggle visibility before export. -->
+  <g id="TRIM_CIRCLE" inkscape:label="TRIM_CIRCLE">
+    <circle cx="40.5" cy="40.5" r="37.5"
+            fill="none" stroke="#d97706" stroke-width="0.5"
+            stroke-dasharray="0.8 0.8"/>
+  </g>
+
+  <!-- Safe-zone (Ø65 mm). Critical content stays inside this circle.
+       Visual only — toggle off before final export. -->
+  <g id="SAFE_ZONE_GUIDE" inkscape:label="SAFE_ZONE_GUIDE">
+    <circle cx="40.5" cy="40.5" r="32.5"
+            fill="none" stroke="#7ba8c7" stroke-width="0.2"
+            stroke-dasharray="0.5 0.5" opacity="0.6"/>
+  </g>
+
+  <!-- Brand ring inside the trim — printed amber stroke. -->
+  <g id="BRAND_RING" inkscape:label="BRAND_RING">
+    <circle cx="40.5" cy="40.5" r="36.5"
+            fill="none" stroke="#d97706" stroke-width="1"/>
+  </g>
+
+  <!-- Wordmark on top arc. {{WORDMARK}} -->
+  <g id="WORDMARK_TOP_ARC" inkscape:label="WORDMARK_TOP_ARC">
+    <text font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="5.5" font-weight="700" fill="#1a1a2e"
+          letter-spacing="0.15">
+      <textPath href="#topArcPath" startOffset="50%" text-anchor="middle">
+        pashtelka.news
+      </textPath>
+    </text>
+  </g>
+
+  <!-- Mascot placeholder — 22×22 mm. Operator replaces in Affinity. -->
+  <g id="MASCOT_PLACEHOLDER" inkscape:label="MASCOT_PLACEHOLDER">
+    <rect x="29.5" y="22" width="22" height="22"
+          fill="#fef0e0" stroke="#d97706" stroke-width="0.2"
+          stroke-dasharray="0.5 0.5"/>
+    <text x="40.5" y="34" font-family="system-ui, sans-serif"
+          font-size="2" fill="#d97706" text-anchor="middle">
+      MASCOT_PLACEHOLDER
+    </text>
+    <text x="40.5" y="36.5" font-family="system-ui, sans-serif"
+          font-size="1.3" fill="#1a1a2e" text-anchor="middle">
+      {{MASCOT_PATH}}
+    </text>
+  </g>
+
+  <!-- QR placeholder — 35×35 mm. Centred horizontally. -->
+  <g id="QR_PLACEHOLDER" inkscape:label="QR_PLACEHOLDER">
+    <rect x="23" y="36" width="35" height="35"
+          fill="#ffffff" stroke="#1a1a2e" stroke-width="0.3"
+          stroke-dasharray="0.6 0.6"/>
+    <text x="40.5" y="52.5" font-family="system-ui, sans-serif"
+          font-size="2" fill="#1a1a2e" text-anchor="middle"
+          font-weight="700">
+      QR_PLACEHOLDER
+    </text>
+    <text x="40.5" y="55" font-family="system-ui, sans-serif"
+          font-size="1.3" fill="#1a1a2e" text-anchor="middle">
+      {{QR_PATH}}
+    </text>
+  </g>
+
+  <!-- UA tag line. {{HEADLINE_UA}} -->
+  <g id="TAG_UA" inkscape:label="TAG_UA">
+    <text x="40.5" y="60.5"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="3.2" fill="#1a1a2e" text-anchor="middle">
+      Українські новини в Португалії
+    </text>
+  </g>
+
+  <!-- PT tag line. {{HEADLINE_PT}} -->
+  <g id="TAG_PT" inkscape:label="TAG_PT">
+    <text x="40.5" y="64.8"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="2.8" fill="#1a1a2e" text-anchor="middle">
+      Notícias em ucraniano e português
+    </text>
+  </g>
+
+  <!-- URL line. -->
+  <g id="URL_LINE" inkscape:label="URL_LINE">
+    <text x="40.5" y="70"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="3.0" font-weight="700" fill="#d97706"
+          text-anchor="middle">
+      pastelka.news
+    </text>
+  </g>
+</svg>

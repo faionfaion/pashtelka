@@ -97,6 +97,55 @@ Sections:
 6. **Mascot regeneration** — pointer to `scripts/print/generate_mascot.py`
    and `assets/print/prompts/mascot-v*.txt`.
 
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Wrote `assets/print/sticker.svg` — 81×81 mm artboard, named layers
+  (BLEED_GUIDE, TRIM_CIRCLE, SAFE_ZONE_GUIDE, BRAND_RING,
+  WORDMARK_TOP_ARC with `<textPath>` curve, MASCOT_PLACEHOLDER,
+  QR_PLACEHOLDER, TAG_UA, TAG_PT, URL_LINE). Templating header comment
+  lists the four `{{...}}` placeholders.
+- Wrote `assets/print/poster_a5.svg` — 154×216 mm artboard, named
+  layers (BLEED_GUIDE, TRIM_GUIDE, SAFE_ZONE_GUIDE, HERO_PLACEHOLDER,
+  HEADLINE_UA, HEADLINE_PT, BULLETS_UA, BULLETS_PT, QR_PLACEHOLDER,
+  SCAN_LABEL). UA + PT headlines + bullets baked in (operator can
+  rewrite in Affinity).
+- Wrote `assets/print/README.md` — print specs table, paper recs,
+  required tools (Affinity + optional CLI proofing), QR + mascot
+  generation commands, full Affinity import procedure (9 steps), print
+  test loop, print-shop candidates, decisions.
+- Created `assets/print/prompts/.gitkeep` so the directory is tracked.
+
+### Files Changed
+| Repo | File | Change |
+|------|------|--------|
+| pashtelka-faion-net | `assets/print/sticker.svg` | new |
+| pashtelka-faion-net | `assets/print/poster_a5.svg` | new |
+| pashtelka-faion-net | `assets/print/README.md` | new |
+| pashtelka-faion-net | `assets/print/prompts/.gitkeep` | new |
+
+### Tests
+- `xmllint --noout assets/print/sticker.svg` — PASS.
+- `xmllint --noout assets/print/poster_a5.svg` — PASS.
+- Sticker grep checks: MASCOT_PATH ×2, QR_PATH ×2, HEADLINE_UA ×3,
+  HEADLINE_PT ×3, `width="81mm"` ×1, `height="81mm"` ×1.
+- Poster grep checks: MASCOT_PATH ×2, QR_PATH ×2, `width="154mm"` ×1,
+  `height="216mm"` ×1, "Новини Португалії" ×2, "Notícias de Portugal"
+  ×2.
+- README keywords: "Affinity Publisher" ×5, "PDF/X-1a:2003" ×4,
+  "FOGRA39" ×3, "300 DPI" ×2.
+
+### Issues
+- First SVG draft had `--` inside XML comments (in CLI command examples).
+  XML doesn't allow double-hyphen in comments — fixed by replacing the
+  inline examples with a pointer to README.md.
+- SVGs ship with debug guides visible (TRIM_GUIDE, SAFE_ZONE_GUIDE).
+  Operator must hide them in Affinity before final PDF export —
+  documented as step 6 of the import procedure.
+
+
 ## Success criterion
 
 - Both SVGs validate as XML (`xmllint --noout` exits 0).

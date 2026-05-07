@@ -31,6 +31,16 @@ project uses semantic-ish versioning loosely — one logical change per commit
   CMYK + reportlab fallback (proofing only, no ICC gamut mapping). If
   neither is installed, exits with the documented install hint.
   [print-stickers-posters TASK-05]
+- `assets/print/sticker.svg` — 75 mm round sticker layout source
+  (81×81 mm artboard with 3 mm bleed). Named placeholder layers for
+  Affinity Publisher import. [print-stickers-posters TASK-06]
+- `assets/print/poster_a5.svg` — A5 portrait poster layout source
+  (154×216 mm artboard, 3 mm bleed). UA + PT headlines + bullets baked
+  in. [print-stickers-posters TASK-06]
+- `assets/print/README.md` — operator handoff: print specs, paper recs,
+  Affinity Publisher import procedure (PDF/X-1a:2003 + FOGRA39 + 300
+  DPI), QR + mascot generation commands, print-shop candidates.
+  [print-stickers-posters TASK-06]
 - `pipeline/b1_validator.py` — sync B1 readability validator. Three
   metrics (Flesch reading ease via textstat, avg sentence length, B1
   lemma coverage) return `passed` flag + `retry_addendum` for prompt

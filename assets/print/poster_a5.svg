@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  pashtelka.news — A5 portrait poster layout (148×210 mm trim, 3 mm bleed →
+  154×216 mm artboard)
+
+  Placeholders the operator replaces in Affinity Publisher:
+    {{MASCOT_PATH}}   = gatsby/src/images/brand/pashtelka-mascot.png
+                        (or a wider Lisbon-scene composition once the
+                         brand mascot is approved)
+    {{QR_PATH}}       = output of `scripts/print/generate_qr.py`. Run command
+                        documented in `assets/print/README.md`. Use the .svg
+                        variant (vector) when placing in Affinity.
+
+  Layout (top to bottom, mm-from-top of the artboard, all inside the 5 mm
+  safe zone — i.e. positions assume +3 mm bleed offset already applied):
+       6 mm  HERO_PLACEHOLDER       148×84 mm hero illustration zone
+      96 mm  HEADLINE_UA            "Новини Португалії — українською"
+     112 mm  HEADLINE_PT            "Notícias de Portugal — em ucraniano e em português simples"
+     132 mm  BULLETS_UA             three lines
+     154 mm  BULLETS_PT             three lines
+     180 mm  QR_PLACEHOLDER         35×35 mm bottom-right
+     180 mm  SCAN_LABEL             "Scan • Escaneia"  + URL beside QR
+
+  CMYK conversion: open in Affinity Publisher,
+     File → Place → this SVG → replace placeholders with brand mascot + QR
+     File → Export → PDF/X-1a:2003 with FOGRA39 ICC, 300 DPI, fonts outlined
+  See assets/print/README.md.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="154mm" height="216mm" viewBox="0 0 154 216">
+
+  <!-- Background (full bleed). Brand cream. -->
+  <g id="BLEED_GUIDE" inkscape:label="BLEED_GUIDE">
+    <rect x="0" y="0" width="154" height="216" fill="#fefcfa"/>
+  </g>
+
+  <!-- Trim guides (3 mm inset). Visual only — toggle off before export. -->
+  <g id="TRIM_GUIDE" inkscape:label="TRIM_GUIDE">
+    <rect x="3" y="3" width="148" height="210"
+          fill="none" stroke="#d97706" stroke-width="0.3"
+          stroke-dasharray="1 1" opacity="0.6"/>
+  </g>
+
+  <!-- Safe-zone (5 mm inside trim). Visual only. -->
+  <g id="SAFE_ZONE_GUIDE" inkscape:label="SAFE_ZONE_GUIDE">
+    <rect x="8" y="8" width="138" height="200"
+          fill="none" stroke="#7ba8c7" stroke-width="0.2"
+          stroke-dasharray="0.5 0.5" opacity="0.6"/>
+  </g>
+
+  <!-- HERO placeholder — 148 mm wide × 84 mm tall, top of poster. -->
+  <g id="HERO_PLACEHOLDER" inkscape:label="HERO_PLACEHOLDER">
+    <rect x="3" y="6" width="148" height="84"
+          fill="#fef0e0" stroke="#d97706" stroke-width="0.3"
+          stroke-dasharray="0.8 0.8"/>
+    <text x="77" y="46" font-family="system-ui, sans-serif"
+          font-size="4" fill="#d97706" text-anchor="middle"
+          font-weight="700">
+      HERO_PLACEHOLDER
+    </text>
+    <text x="77" y="51" font-family="system-ui, sans-serif"
+          font-size="2.5" fill="#1a1a2e" text-anchor="middle">
+      {{MASCOT_PATH}} — Lisbon-scene composition
+    </text>
+  </g>
+
+  <!-- UA headline. -->
+  <g id="HEADLINE_UA" inkscape:label="HEADLINE_UA">
+    <text x="77" y="103"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="11" font-weight="700" fill="#1a1a2e"
+          text-anchor="middle">
+      Новини Португалії — українською
+    </text>
+  </g>
+
+  <!-- PT headline (B1). -->
+  <g id="HEADLINE_PT" inkscape:label="HEADLINE_PT">
+    <text x="77" y="121"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="9" font-weight="700" fill="#1a1a2e"
+          text-anchor="middle">
+      Notícias de Portugal — em ucraniano e em português simples
+    </text>
+  </g>
+
+  <!-- UA bullets — three lines. -->
+  <g id="BULLETS_UA" inkscape:label="BULLETS_UA"
+     font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+     font-size="4" fill="#1a1a2e">
+    <text x="14" y="138">• щоденні новини</text>
+    <text x="14" y="144">• тижневі гайди</text>
+    <text x="14" y="150">• трекер імміграційних новин</text>
+  </g>
+
+  <!-- PT bullets — three lines. -->
+  <g id="BULLETS_PT" inkscape:label="BULLETS_PT"
+     font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+     font-size="4" fill="#1a1a2e">
+    <text x="14" y="160">• notícias diárias</text>
+    <text x="14" y="166">• guias semanais</text>
+    <text x="14" y="172">• imigração — pontos de contacto</text>
+  </g>
+
+  <!-- QR placeholder — 35×35 mm bottom-right. -->
+  <g id="QR_PLACEHOLDER" inkscape:label="QR_PLACEHOLDER">
+    <rect x="113" y="170" width="35" height="35"
+          fill="#ffffff" stroke="#1a1a2e" stroke-width="0.3"
+          stroke-dasharray="0.6 0.6"/>
+    <text x="130.5" y="186" font-family="system-ui, sans-serif"
+          font-size="2.4" fill="#1a1a2e" text-anchor="middle"
+          font-weight="700">
+      QR_PLACEHOLDER
+    </text>
+    <text x="130.5" y="189" font-family="system-ui, sans-serif"
+          font-size="1.5" fill="#1a1a2e" text-anchor="middle">
+      {{QR_PATH}}
+    </text>
+  </g>
+
+  <!-- Scan label + URL beside the QR. -->
+  <g id="SCAN_LABEL" inkscape:label="SCAN_LABEL">
+    <text x="14" y="183"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="5" font-weight="700" fill="#d97706">
+      Scan • Escaneia
+    </text>
+    <text x="14" y="192"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="4" fill="#1a1a2e">
+      pastelka.news/welcome/
+    </text>
+  </g>
+</svg>
