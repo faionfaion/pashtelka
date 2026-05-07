@@ -4,6 +4,52 @@ Source files and operator handoff for the Lisbon street-distribution print
 campaign. Sticker (75 mm round) + A5 poster, both with QR code pointing at
 `pastelka.news/welcome/`.
 
+## Final files for the print shop
+
+These are the operator-exported PDFs that go to the Lisbon print shop:
+
+- `assets/print/sticker.pdf` — 81×81 mm CMYK PDF/X-1a:2003, FOGRA39 ICC.
+- `assets/print/poster_a5.pdf` — 154×216 mm CMYK PDF/X-1a:2003, FOGRA39 ICC.
+
+Both are produced by the operator from the matching `*-final.svg` source
+in Affinity Publisher (one-time licence, already owned). Step-by-step
+below.
+
+## Operator workflow — 6 steps
+
+For each of `sticker-final.svg` and `poster-final-a5.svg`:
+
+1. **Install Affinity Publisher** if not already present (one-time
+   licence, already owned).
+2. **Place the SVG.** In Affinity: `File → Place` → select
+   `assets/print/sticker-final.svg` (or `poster-final-a5.svg`). The SVG
+   already has the brand mascot embedded (`<image href="...">` pointing
+   at `gatsby/src/images/brand/pashtelka-mascot.png`) and the
+   matching QR PNG (`qr-sticker.png` / `qr-poster.png`). All headlines /
+   bullets are already typeset — no placeholder swaps needed.
+3. **Export as PDF.** `File → Export → PDF`.
+4. **Set the preset:** PDF/X-1a:2003.
+5. **Set the CMYK profile:** ICC = Coated FOGRA39 (ISO 12647-2:2004 — bundled
+   with Affinity defaults). Resolution = 300 DPI. Fonts = convert to
+   outlines. Bleed = 3 mm (already in the artboard).
+6. **Save** as `assets/print/sticker.pdf` / `assets/print/poster_a5.pdf`.
+
+That's it. The PDFs are then ready for the Lisbon print shop.
+
+### Git LFS for the exported PDFs
+
+`assets/print/*.pdf` is configured as git LFS in `.gitattributes`.
+Before the first commit of an exported PDF, the operator runs once:
+
+```bash
+git lfs install     # one-time per machine
+git add .gitattributes assets/print/sticker.pdf assets/print/poster_a5.pdf
+git commit -m "feat: affinity-exported print PDFs"
+```
+
+If `git-lfs` is not installed: `sudo apt-get install -y git-lfs` (Debian/
+Ubuntu) or `brew install git-lfs` (macOS).
+
 ## Specs
 
 | Item | Sticker | Poster |
@@ -30,10 +76,16 @@ campaign. Sticker (75 mm round) + A5 poster, both with QR code pointing at
 
 | File | Purpose |
 |------|---------|
-| `sticker.svg` | Sticker layout source — 81×81 mm with placeholders |
-| `poster_a5.svg` | A5 poster layout source — 154×216 mm with placeholders |
-| `prompts/mascot-v1.txt` | OpenAI prompt for mascot generation (v1) |
-| `prompts/mascot-v*.txt` | Subsequent iteration prompts (Phase 4b) |
+| `sticker.svg` | Sticker layout TEMPLATE — 81×81 mm with `{{...}}` placeholders |
+| `poster_a5.svg` | A5 poster layout TEMPLATE — 154×216 mm with placeholders |
+| `sticker-final.svg` | Sticker FINAL — placeholders resolved (mascot + QR + headlines baked in). This is what the operator opens in Affinity. |
+| `poster-final-a5.svg` | A5 poster FINAL — placeholders resolved. Operator opens this in Affinity. |
+| `qr-sticker.png` | Sticker QR raster (1024×1024, v8, ECC=H), `utm_source=sticker`. |
+| `qr-sticker.svg` | Sticker QR vector — preferred for Affinity placement. |
+| `qr-poster.png` | Poster QR raster (1024×1024), `utm_source=poster`. |
+| `qr-poster.svg` | Poster QR vector — preferred for Affinity placement. |
+| `prompts/mascot-v1.txt` | OpenAI prompt for mascot generation (v1, misread). |
+| `prompts/mascot-v2.txt` | Mascot v2 prompt — approved canonical brand. |
 
 The SVGs ship with four named layers the operator needs to swap in
 Affinity: `MASCOT_PLACEHOLDER`, `QR_PLACEHOLDER`, plus the headline and

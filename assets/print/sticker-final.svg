@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  pashtelka.news — sticker FINAL layout (75 mm round sticker, 3 mm bleed →
+  81×81 mm artboard).
+
+  This is the placeholder-substituted output of `sticker.svg`. The four
+  template placeholders have been resolved:
+
+    {{MASCOT_PATH}} → ../../gatsby/src/images/brand/pashtelka-mascot.png
+                      (relative to this file: ../gatsby/src/images/brand/...)
+    {{QR_PATH}}     → ./qr-sticker.png   (PNG produced by generate_qr.py;
+                      operator may swap for the .svg vector for Affinity).
+    {{HEADLINE_UA}} → "Новини Португалії — українською"
+    {{HEADLINE_PT}} → "Notícias de Portugal — em português simples"
+
+  Operator workflow (Affinity Publisher) is unchanged — see assets/print/
+  README.md. This *-final.svg is provided for two reasons:
+    1. CLI proofing path (`scripts/print/svg_to_cmyk_pdf.py` consumes it
+       directly without the operator needing Affinity for a sanity check).
+    2. Audit trail — any future iteration knows which exact strings, mascot
+       file and QR PNG were the canonical pre-print baseline.
+
+  CMYK production export:
+    File → Place this SVG in Affinity Publisher → File → Export → PDF/X-1a
+    :2003 with FOGRA39 ICC, 300 DPI, fonts outlined. See README.md.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="81mm" height="81mm" viewBox="0 0 81 81">
+
+  <defs>
+    <!-- Curved path the wordmark sits on (top arc inside the safe circle). -->
+    <path id="topArcPath" d="M 16 26 A 28 28 0 0 1 65 26"/>
+    <!-- Circular clip-path that confines the mascot to a 22 mm circle so
+         the rectangular PNG bleed doesn't escape the brand ring. -->
+    <clipPath id="mascotClip">
+      <circle cx="40.5" cy="33" r="11"/>
+    </clipPath>
+  </defs>
+
+  <!-- BLEED layer: full artboard background, brand cream. -->
+  <g id="BLEED_GUIDE" inkscape:label="BLEED_GUIDE">
+    <rect x="0" y="0" width="81" height="81" fill="#fefcfa"/>
+  </g>
+
+  <!-- Trim circle (Ø75 mm) — visual reference / cut line marker.
+       Operator may toggle visibility before export. -->
+  <g id="TRIM_CIRCLE" inkscape:label="TRIM_CIRCLE">
+    <circle cx="40.5" cy="40.5" r="37.5"
+            fill="none" stroke="#d97706" stroke-width="0.5"
+            stroke-dasharray="0.8 0.8"/>
+  </g>
+
+  <!-- Safe-zone (Ø65 mm) — visual only, toggle off before export. -->
+  <g id="SAFE_ZONE_GUIDE" inkscape:label="SAFE_ZONE_GUIDE">
+    <circle cx="40.5" cy="40.5" r="32.5"
+            fill="none" stroke="#7ba8c7" stroke-width="0.2"
+            stroke-dasharray="0.5 0.5" opacity="0.6"/>
+  </g>
+
+  <!-- Brand ring inside the trim — printed amber stroke. -->
+  <g id="BRAND_RING" inkscape:label="BRAND_RING">
+    <circle cx="40.5" cy="40.5" r="36.5"
+            fill="none" stroke="#d97706" stroke-width="1"/>
+  </g>
+
+  <!-- Wordmark on top arc. -->
+  <g id="WORDMARK_TOP_ARC" inkscape:label="WORDMARK_TOP_ARC">
+    <text font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="5.5" font-weight="700" fill="#1a1a2e"
+          letter-spacing="0.15">
+      <textPath href="#topArcPath" startOffset="50%" text-anchor="middle">
+        pashtelka.news
+      </textPath>
+    </text>
+  </g>
+
+  <!-- Mascot — 22×22 mm circle, clipped from the 1024×1024 brand PNG. -->
+  <g id="MASCOT" inkscape:label="MASCOT" clip-path="url(#mascotClip)">
+    <image x="29.5" y="22" width="22" height="22"
+           href="../../gatsby/src/images/brand/pashtelka-mascot.png"
+           xlink:href="../../gatsby/src/images/brand/pashtelka-mascot.png"
+           preserveAspectRatio="xMidYMid slice"/>
+  </g>
+
+  <!-- QR — 35×35 mm centred. PNG raster; for Affinity prefer the .svg
+       vector counterpart at ./qr-sticker.svg (same payload). -->
+  <g id="QR" inkscape:label="QR">
+    <image x="23" y="36" width="35" height="35"
+           href="./qr-sticker.png"
+           xlink:href="./qr-sticker.png"
+           preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <!-- UA tag line. -->
+  <g id="TAG_UA" inkscape:label="TAG_UA">
+    <text x="40.5" y="60.5"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="3.2" fill="#1a1a2e" text-anchor="middle">
+      Новини Португалії — українською
+    </text>
+  </g>
+
+  <!-- PT tag line (B1). -->
+  <g id="TAG_PT" inkscape:label="TAG_PT">
+    <text x="40.5" y="64.8"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="2.8" fill="#1a1a2e" text-anchor="middle">
+      Notícias de Portugal — em português simples
+    </text>
+  </g>
+
+  <!-- URL line. -->
+  <g id="URL_LINE" inkscape:label="URL_LINE">
+    <text x="40.5" y="70"
+          font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+          font-size="3.0" font-weight="700" fill="#d97706"
+          text-anchor="middle">
+      pastelka.news
+    </text>
+  </g>
+</svg>

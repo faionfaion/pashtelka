@@ -67,6 +67,40 @@ project uses semantic-ish versioning loosely — one logical change per commit
   stay stable — only the bytes change. AVIF 37.8 KB (under the 80 KB
   ceiling from welcome-landing test plan), PNG 162 KB, WebP 143 KB.
   [print-stickers-posters TASK-09]
+
+### Added
+- `assets/print/qr-sticker.{png,svg}` — production QR for the sticker
+  (URL `https://pastelka.news/welcome/?utm_source=sticker&utm_campaign
+  =2026-q2`, version 8, error-correction H, 1024×1024 PNG).
+  Roundtrip-decoded with opencv to confirm payload integrity.
+  [print-stickers-posters TASK-10]
+- `assets/print/qr-poster.{png,svg}` — production QR for the A5
+  poster (URL `…?utm_source=poster&utm_campaign=2026-q2`, same QR
+  parameters). Roundtrip-decoded.
+  [print-stickers-posters TASK-10]
+- `assets/print/sticker-final.svg` — placeholder-substituted sticker
+  layout (mascot embedded via relative href, QR PNG embedded, headlines
+  "Новини Португалії — українською" / "Notícias de Portugal — em
+  português simples" baked in). Operator-ready for Affinity Place.
+  [print-stickers-posters TASK-10]
+- `assets/print/poster-final-a5.svg` — placeholder-substituted A5
+  poster (mascot top hero, QR bottom-right, three UA bullets +
+  three PT B1 bullets: щоденні новини / тижневі гайди / трекер
+  імміграційних правил → notícias todos os dias / guias toda a semana
+  / mudanças nas regras de imigração). [print-stickers-posters TASK-10]
+- `.gitattributes` — declares `assets/print/*.pdf` as git LFS so the
+  operator-exported Affinity PDFs (5-15 MB CMYK PDF/X-1a:2003) don't
+  bloat the main pack. Operator runs `git lfs install` once before
+  the first PDF commit. [print-stickers-posters TASK-10]
+
+### Changed
+- `assets/print/README.md` — adds the canonical 6-step Affinity
+  Publisher export workflow at the top (install → Place
+  `*-final.svg` → Export PDF → preset PDF/X-1a:2003 → ICC FOGRA39 +
+  300 DPI + fonts outlined + 3 mm bleed → save as `sticker.pdf`
+  / `poster_a5.pdf`). Also documents the new `*-final.svg` and QR
+  outputs in the source-files table, and the git-LFS bootstrap.
+  [print-stickers-posters TASK-10]
 - `pipeline/b1_validator.py` — sync B1 readability validator. Three
   metrics (Flesch reading ease via textstat, avg sentence length, B1
   lemma coverage) return `passed` flag + `retry_addendum` for prompt

@@ -1,0 +1,4 @@
+# Print-asset PDFs (Affinity Publisher exports of assets/print/*-final.svg)
+# are tracked via git LFS — files are 5-15 MB CMYK PDF/X-1a:2003 binaries.
+# Operator must run `git lfs install` once before committing the PDFs.
+assets/print/*.pdf filter=lfs diff=lfs merge=lfs -text
