@@ -55,3 +55,24 @@ print('s2 imports ok on new stack')
 `pytest tests/test_stages.py -v` (if it touches s2) must still pass. If it does NOT mock `agent_query`/`dispatch_research`, the migration is import-only and tests should be unaffected.
 
 **Rollback:** Revert this single file. The dispatcher is still present but unused.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Replaced `from pipeline.sdk import agent_query` and `from pipeline.config import MODEL_RESEARCH` with `from pipeline.llm import dispatch_research`.
+- Swapped the `agent_query(...)` call for `dispatch_research(prompt=prompt, system=system, timeout=300)`.
+- Logging line unchanged.
+
+### Files Changed
+| File | Change |
+|------|--------|
+| `pipeline/stages/s2_research.py` | -8 / +5 lines (net -3) |
+
+### Tests
+- `python3 -m py_compile pipeline/stages/s2_research.py` → OK
+- Module imports cleanly on both `LLM_STACK=old` and `LLM_STACK=new`.
+
+### Issues
+- None.

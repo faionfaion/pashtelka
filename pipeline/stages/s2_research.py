@@ -4,10 +4,9 @@ from __future__ import annotations
 
 import logging
 
-from pipeline.config import MODEL_RESEARCH
 from pipeline.context import PipelineContext
+from pipeline.llm import dispatch_research
 from pipeline.prompts.builder import build_research_prompt
-from pipeline.sdk import agent_query
 
 logger = logging.getLogger(__name__)
 
@@ -18,11 +17,9 @@ def run(ctx: PipelineContext) -> None:
 
     system, prompt = build_research_prompt(ctx, headlines_text, focus_text)
 
-    ctx.research_text = agent_query(
+    ctx.research_text = dispatch_research(
         prompt=prompt,
-        system_prompt=system,
-        model=MODEL_RESEARCH,
-        allowed_tools=["WebSearch", "WebFetch", "Read", "Glob"],
+        system=system,
         timeout=300,
     )
 
