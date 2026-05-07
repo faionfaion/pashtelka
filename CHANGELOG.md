@@ -32,6 +32,13 @@ project uses semantic-ish versioning loosely — one logical change per commit
   `test_gemini_search_empty_response_field`; replaces the
   `test_gemini_search_missing_key` case which is no longer relevant.
   21/21 green. [pipeline-gemini-codex follow-up]
+- `.aidocs/done/pipeline-gemini-codex/{spec,design,done}.md` —
+  reflect the CLI swap. Spec AC1/AC7/AC8 updated, design
+  Prerequisites and "Gemini invocation shape" rewritten with the
+  verified flag set + verified stdout shape, done.md gains a
+  2026-05-07 follow-up section documenting the env-var contract
+  delta and CLI gotchas (`--skip-trust`, `-y` vs `--approval-mode`).
+  [pipeline-gemini-codex follow-up]
 
 ### Added
 - `.aidocs/todo/print-stickers-posters/{design,test-plan,implementation-plan}.md`

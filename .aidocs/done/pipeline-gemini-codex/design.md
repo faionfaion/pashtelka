@@ -27,11 +27,18 @@ A new module `pipeline/llm.py` is the single integration point. All migrated sta
 |------|-------------------|--------|
 | `codex` CLI | Installed: `codex-cli 0.128.0` at `/home/nero/.local/bin/codex` | OK — `codex exec` available |
 | `OPENAI_API_KEY` | Present in `~/workspace/.env` | OK — codex authenticates via this |
-| `google-generativeai` SDK | Not installed | Use REST `v1beta/models/gemini-2.5-flash:generateContent` via `requests` (already in `requirements.txt`) |
-| `GEMINI_API_KEY` | NOT set | User must add to `~/workspace/.env` (line: `GEMINI_API_KEY=AIza…`). Pipeline fails fast if absent and `LLM_STACK=new`. |
+| `gemini` CLI | Installed: `@google/gemini-cli 0.41.1` at `/home/nero/.local/bin/gemini` | OK — `gemini -p` available |
+| Gemini auth | Cached Google login under `~/.gemini/` (or CLI-managed `GEMINI_API_KEY`) | Handled by the CLI itself — pipeline does NOT pass any key from Python. |
 | `ANTHROPIC_API_KEY` | Used by Claude Agent SDK | Existing — no change |
 
-`codex` and `GEMINI_API_KEY` MUST be present on **both** runtimes (`nero-prod` for generate, `faion-net` for publish/digest). Pipeline pre-flight check enforces this.
+`codex` and `gemini` CLIs MUST be present on **both** runtimes (`nero-prod` for generate, `faion-net` for publish/digest). Pipeline pre-flight check enforces this.
+
+> **Note (2026-05-07):** the original draft of this section called the
+> Gemini REST endpoint (`v1beta/models/...:generateContent`) directly via
+> `requests` and required `GEMINI_API_KEY` in our env. That path was
+> replaced with the official `gemini` CLI to centralise auth and keep the
+> stack symmetric with Codex (both LLMs now run via subprocess, only
+> Claude review uses an SDK).
 
 ## Module: `pipeline/llm.py`
 
@@ -174,27 +181,79 @@ If `codex exec` exits non-zero: read stderr, classify (auth vs transient), retry
 
 ### Gemini invocation shape
 
-Endpoint: `POST https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}`
+`gemini --help` (verified on `@google/gemini-cli 0.41.1`):
+- Headless mode via `-p, --prompt <prompt>`.
+- Model via `-m, --model <name>`.
+- Structured stdout via `-o, --output-format json`.
+- `--approval-mode plan` keeps the run read-only — no edits, no file
+  writes; we only need a search-grounded response.
+- `--skip-trust` bypasses the trusted-folder prompt that otherwise
+  downgrades the approval mode to `default` in headless contexts.
+- `-y, --yolo` is mutually exclusive with `--approval-mode` in v0.41.1
+  ("Cannot use both --yolo (-y) and --approval-mode together"), so we
+  use `plan` alone.
+- `google_web_search` is the CLI's built-in default tool for
+  `gemini-2.5-flash` — no flag needed for grounding.
 
-Body:
+Concrete invocation (from `gemini_search`):
+
+```python
+cmd = [
+    GEMINI_BIN,                           # "gemini"
+    "-p", full_prompt,                    # system prepended in-prompt
+    "-m", chosen_model,                   # e.g. "gemini-2.5-flash"
+    "-o", "json",
+    "--approval-mode", "plan",
+    "--skip-trust",
+]
+proc = subprocess.run(
+    cmd, capture_output=True, text=True,
+    timeout=timeout, cwd="/tmp", check=False,
+)
+```
+
+The CLI has no separate system field in headless mode, so when `system`
+is non-empty we wrap the call as
+`<system>{system}</system>\n\n<task>{prompt}</task>` inside the `-p`
+argument.
+
+Auth is delegated to the CLI's own chain (cached Google login or its own
+`GEMINI_API_KEY` pickup). The pipeline does NOT export a key into the
+subprocess env — that's the CLI's job.
+
+#### stdout shape (verified 2026-05-07)
+
 ```json
 {
-  "system_instruction": {"parts": [{"text": "<system>"}]},
-  "contents": [{"role": "user", "parts": [{"text": "<prompt>"}]}],
-  "tools": [{"google_search": {}}],
-  "generationConfig": {
-    "temperature": 0.4,
-    "maxOutputTokens": 4096
+  "session_id": "92a37e6f-9fca-486c-b7dd-336408d4a26b",
+  "response": "10",
+  "stats": {
+    "models": {
+      "gemini-2.5-flash": {
+        "api": {"totalRequests": 1, "totalErrors": 0, "totalLatencyMs": 19350},
+        "tokens": {"input": 7355, "prompt": 7355, "candidates": 2,
+                   "total": 7373, "cached": 0, "thoughts": 16, "tool": 0},
+        "roles": {"main": {"...": "..."}}
+      }
+    },
+    "tools":  {"totalCalls": 0, "totalSuccess": 0, "totalFail": 0, "...": "..."},
+    "files":  {"totalLinesAdded": 0, "totalLinesRemoved": 0}
   }
 }
 ```
 
-Response: `candidates[0].content.parts[*].text` concatenated → return as string. `candidates[0].groundingMetadata.groundingChunks` may carry source URLs; we DO NOT parse them separately (the model already inlines URLs in the text per the s2 prompt instructions).
+We extract `response` (string) and log `stats.models[<model>]` best-effort
+for ops visibility. Warnings (TERM/colour hints, ripgrep fallback notice)
+go to stderr and are ignored.
 
 Failure modes:
-- `429 RESOURCE_EXHAUSTED` → retry with backoff.
-- `400 PROMPT_BLOCKED` / safety block → raise non-retryable; log full error.
-- network timeout → retry.
+- rc≠0 with "rate limit" / "429" / "503" / "overloaded" / "timeout" in
+  stderr → retryable via `_is_retryable`.
+- rc≠0 on auth (401/403) → non-retryable.
+- empty stdout, malformed JSON, or empty `response` field → retried up
+  to `RETRY_MAX_ATTEMPTS`; raises after exhaustion.
+- subprocess timeout → retryable.
+- `FileNotFoundError` (CLI missing) → fail fast with actionable hint.
 
 ### Schema validation pipeline
 
@@ -225,8 +284,9 @@ CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-4-7")
 def _env(name: str) -> str:
     return os.environ.get(name, "").strip()
 
-# Codex CLI binary path (allow override; PATH lookup by default)
+# Codex / Gemini CLI binary paths (allow override; PATH lookup by default)
 CODEX_BIN = os.environ.get("CODEX_BIN", "codex")
+GEMINI_BIN = os.environ.get("GEMINI_BIN", "gemini")
 
 # Per-stage timeouts (seconds)
 GEMINI_TIMEOUT = int(os.environ.get("GEMINI_TIMEOUT", "300"))
@@ -253,10 +313,13 @@ Each migrated stage swaps `from pipeline.sdk import …` for `from pipeline.llm 
 
 ```
 [ERR] LLM_STACK=new requires:
-  - codex CLI on PATH (got: not found)
-  - GEMINI_API_KEY env var (got: empty)
-Add to ~/workspace/.env or unset LLM_STACK to fall back to old stack.
+  - codex CLI on PATH (looked for: 'codex')
+  - gemini CLI on PATH (looked for: 'gemini')
+Install the missing CLI(s) or unset LLM_STACK to fall back.
 ```
+
+(Both checks use `shutil.which`. The `GEMINI_API_KEY` env-var check was
+removed on 2026-05-07 — auth is now the CLI's responsibility.)
 
 Exit code 2 (config error).
 

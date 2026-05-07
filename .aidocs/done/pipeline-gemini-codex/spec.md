@@ -22,10 +22,16 @@ Outcome: faster pipeline, lower cost per article, fewer "broken" passages caused
 ## Acceptance Criteria
 
 ### AC1 — Research stage uses Gemini Flash
-- `pipeline/stages/s2_research.py` calls Gemini API directly (`google-generativeai` Python SDK or REST `v1beta/models/gemini-2.5-flash:generateContent`).
-- Tool config: `google_search` grounding enabled.
-- Output schema unchanged from current — research notes consumed by downstream stages must be backward-compatible.
-- Failure mode: Gemini quota / safety-block → logged + retryable; pipeline does not crash silently.
+- `pipeline/stages/s2_research.py` calls Gemini via the official `gemini`
+  CLI in non-interactive headless mode (see design.md "Gemini integration"
+  for the exact invocation). Earlier draft used the v1beta REST endpoint;
+  that path was dropped on 2026-05-07 — see done.md follow-up.
+- Tool config: `google_search` grounding is the CLI default for
+  `gemini-2.5-flash`; no flag needed.
+- Output schema unchanged from current — research notes consumed by
+  downstream stages must be backward-compatible.
+- Failure mode: Gemini quota / safety-block / CLI rc≠0 → logged +
+  retryable on transient classes; pipeline does not crash silently.
 
 ### AC2 — Generation/revision/TG/digest stages use Codex CLI
 - The following stages shell out to `codex` CLI (non-interactive, JSON output mode):
@@ -69,14 +75,26 @@ Outcome: faster pipeline, lower cost per article, fewer "broken" passages caused
 - A small qualitative checklist (factual accuracy, B1-friendliness, cohesion) tracked manually in `state/bench/qual.md` for the first 5 articles.
 
 ### AC7 — Configuration
-- All three LLM endpoints configurable via env vars:
-  - `GEMINI_API_KEY`, `OPENAI_API_KEY` (for codex), `ANTHROPIC_API_KEY`.
-  - Model overrides: `GEMINI_MODEL` (default `gemini-2.5-flash`), `CODEX_MODEL` (default `gpt-5.5`), `CLAUDE_MODEL` (default `claude-opus-4-7`).
-- Existing `.env` schema in `pipeline/config.py` extended; old `CLAUDE_*` keys kept for review path.
+- LLM endpoints configurable via env vars:
+  - `OPENAI_API_KEY` (codex), `ANTHROPIC_API_KEY` (claude SDK).
+  - Gemini auth is delegated to the `gemini` CLI's own auth chain
+    (cached Google login or its own env-var pickup). Our code does NOT
+    require `GEMINI_API_KEY`.
+  - Model overrides: `GEMINI_MODEL` (default `gemini-2.5-flash`),
+    `CODEX_MODEL` (default `gpt-5.5`), `CLAUDE_MODEL` (default
+    `claude-opus-4-7`).
+  - Binary overrides: `CODEX_BIN` (default `codex`), `GEMINI_BIN`
+    (default `gemini`).
+- Existing `.env` schema in `pipeline/config.py` extended; old
+  `CLAUDE_*` keys kept for review path.
 
-### AC8 — Codex CLI availability
-- `codex` binary must be on PATH on `nero-prod` AND `faion-net` (the two runtimes pashtelka uses for generate vs publish).
-- Pipeline pre-flight check at startup verifies `codex --version` works; fails fast with a clear error if not.
+### AC8 — CLI availability (codex + gemini)
+- `codex` AND `gemini` binaries must be on PATH on `nero-prod` AND
+  `faion-net` (the two runtimes pashtelka uses for generate vs publish).
+- Pipeline pre-flight check at startup verifies both binaries resolve
+  via `shutil.which`; fails fast with a clear error listing whichever
+  is missing. The previous `GEMINI_API_KEY` env-var check was removed
+  on 2026-05-07 once the REST path was dropped.
 
 ### AC9 — Backward compatibility
 - Existing articles in `content/` are not regenerated.
