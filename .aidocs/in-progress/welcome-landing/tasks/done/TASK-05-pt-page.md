@@ -41,3 +41,37 @@ twice, no rare vocabulary. Aim for the same registry the
 - All AC1, AC2, AC4, AC5, AC6 grep tests pass for `/pt/welcome/`.
 - `lang="pt"`, OG image points at `/og/welcome-pt.png`.
 - Lang chip links back to `/uk/welcome/`.
+
+## Execution Report
+
+### Status: COMPLETED
+
+### What Was Done
+- Wrote `gatsby/src/pages/pt/welcome.js` mirroring the UA page structure with PT-specific values: `lang="pt"`, `@pastelka_pt` handle, `welcome-pt.png` OG image, lang chip points back to `/uk/welcome/`. Copy is in B1 Portuguese with short sentences and common verbs.
+- Same `<picture>` AVIF/WebP/PNG fallback chain as UA. Same Plausible tagged-events wiring. Same hreflang pair. Same UTM-preserving lang-switch handler.
+
+### Files Changed
+| Repo | File | Change |
+|------|------|--------|
+| pashtelka-faion-net | `gatsby/src/pages/pt/welcome.js` | new |
+
+### Tests
+Build:
+- `npm run build`: PASS (19.3s, both `/uk/welcome/` and `/pt/welcome/` listed under "Pages").
+- `public/pt/welcome/index.html` exists (16.4 KB).
+
+Grep matrix on `/pt/welcome/`:
+- `lang="pt"`: 1 — PASS
+- `t.me/pastelka_pt`: 1 — PASS
+- `Notícias de Portugal em ucraniano`: 1 — PASS
+- `plausible-event-name=welcome_tg_click`: 1 — PASS
+- `plausible-event-name=welcome_site_click`: 1 — PASS
+- `plausible.io/js/script`: 1 — PASS
+- `og:image` pointing at `welcome-pt.png`: 1 — PASS
+- `twitter:card summary_large_image`: 1 — PASS
+- `href="/uk/welcome/"` (lang chip): 1 — PASS
+- `Redação desde 2026`: 1 — PASS
+- No-tracker check (GA / Meta / Hotjar / Segment): PASS — clean.
+
+### Issues
+- None. Page is structurally identical to UA, only locale-specific copy and meta differ.

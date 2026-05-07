@@ -33,6 +33,9 @@ project uses semantic-ish versioning loosely — one logical change per commit
   the `Head` export. Lang chip preserves UTM search params. Above-the-fold
   weight 249 KB uncompressed (≤ 250 KB AC3 budget). [welcome-landing
   TASK-04]
+- PT welcome page `gatsby/src/pages/pt/welcome.js` → `/pt/welcome/`. Same
+  structure as UA, B1-level Portuguese copy, `@pastelka_pt` handle,
+  `welcome-pt.png` OG card. [welcome-landing TASK-05]
 - LLM dispatcher module `pipeline/llm.py` with three backends:
   Gemini 2.5 Flash (web-search grounded research), Codex CLI gpt-5.5
   (generation/revision/TG/digest), Claude Opus (review).
