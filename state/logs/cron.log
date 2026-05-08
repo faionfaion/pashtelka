@@ -2536,3 +2536,23 @@ TimeoutError: agent_query timed out after 300s
 06:25:45 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 06:25:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026/uk.md
 06:25:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026/pt.md (b1_warning=True)
+06:25:45 [pipeline] INFO: Article ready: nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026 (NOS попереджає про «значне зростання витрат» через)
+06:25:45 [pipeline] INFO: Generated 8/10 articles
+06:25:48 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+06:25:48 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+06:26:36 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+06:26:36 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026/ — HTTP Error 404: Not Found
+06:26:36 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-05-08_062636.json
+06:26:36 [pipeline] INFO: Batch complete: 8 articles
+2026-05-08 06:26:36 Pipeline generate exit: 0
+---
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-05-08 20:00:02 Pipeline digest started
+20:00:03 [pipeline] INFO: === Digest mode ===
+20:00:03 [pipeline.stages.s11_digest] INFO: Only 0 news articles today, skipping digest (min=5)
+20:00:03 [pipeline] INFO: Digest skipped (not enough articles)
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.

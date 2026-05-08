@@ -1,0 +1,332 @@
+{
+  "timestamp": "2026-05-08_062636",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "trabalho-xxi-7-measures-no-agreement-parliament-may-2026, greve-geral-june-3-what-stops-working-how-to-prepare-ukrainians, 8-travnia-den-pamiati-ukrainska-hromada-portugal-2026, rent-portugal-2026-rules-prices-rights-fraud-guide, sns-overloaded-inappropriate-hospitalizations-beds-crisis-2026",
+  "author": "Pastelka News",
+  "duration_s": 12393.7,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 260.6,
+      "error": null
+    },
+    {
+      "name": "research:Трудова реформа провалилась: п",
+      "status": "ok",
+      "duration_s": 228.5,
+      "error": null
+    },
+    {
+      "name": "generate:Трудова реформа провалилась: п",
+      "status": "ok",
+      "duration_s": 72.8,
+      "error": null
+    },
+    {
+      "name": "review:Трудова реформа провалилась: п",
+      "status": "ok",
+      "duration_s": 191.3,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Трудова реформа провалилась: п",
+      "status": "ok",
+      "duration_s": 535.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Трудова реформа провалилась: п",
+      "status": "ok",
+      "duration_s": 19.1,
+      "error": null
+    },
+    {
+      "name": "save:Трудова реформа провалилась: п",
+      "status": "ok",
+      "duration_s": 118.7,
+      "error": null
+    },
+    {
+      "name": "research:UGT не виключає загального стр",
+      "status": "ok",
+      "duration_s": 297.8,
+      "error": null
+    },
+    {
+      "name": "generate:UGT не виключає загального стр",
+      "status": "ok",
+      "duration_s": 66.3,
+      "error": null
+    },
+    {
+      "name": "review:UGT не виключає загального стр",
+      "status": "ok",
+      "duration_s": 320.0,
+      "error": null
+    },
+    {
+      "name": "translate_pt:UGT не виключає загального стр",
+      "status": "ok",
+      "duration_s": 504.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:UGT не виключає загального стр",
+      "status": "ok",
+      "duration_s": 28.7,
+      "error": null
+    },
+    {
+      "name": "save:UGT не виключає загального стр",
+      "status": "ok",
+      "duration_s": 130.9,
+      "error": null
+    },
+    {
+      "name": "research:8 травня — День пам'яті та при",
+      "status": "ok",
+      "duration_s": 243.5,
+      "error": null
+    },
+    {
+      "name": "generate:8 травня — День пам'яті та при",
+      "status": "ok",
+      "duration_s": 86.6,
+      "error": null
+    },
+    {
+      "name": "review:8 травня — День пам'яті та при",
+      "status": "ok",
+      "duration_s": 208.4,
+      "error": null
+    },
+    {
+      "name": "translate_pt:8 травня — День пам'яті та при",
+      "status": "ok",
+      "duration_s": 561.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:8 травня — День пам'яті та при",
+      "status": "ok",
+      "duration_s": 14.5,
+      "error": null
+    },
+    {
+      "name": "save:8 травня — День пам'яті та при",
+      "status": "ok",
+      "duration_s": 144.5,
+      "error": null
+    },
+    {
+      "name": "research:Як записати дитину до португал",
+      "status": "failed",
+      "duration_s": 937.6,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:Оренда житла в Португалії у 20",
+      "status": "ok",
+      "duration_s": 234.2,
+      "error": null
+    },
+    {
+      "name": "generate:Оренда житла в Португалії у 20",
+      "status": "ok",
+      "duration_s": 124.7,
+      "error": null
+    },
+    {
+      "name": "review:Оренда житла в Португалії у 20",
+      "status": "ok",
+      "duration_s": 264.8,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Оренда житла в Португалії у 20",
+      "status": "ok",
+      "duration_s": 807.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Оренда житла в Португалії у 20",
+      "status": "ok",
+      "duration_s": 17.3,
+      "error": null
+    },
+    {
+      "name": "save:Оренда житла в Португалії у 20",
+      "status": "ok",
+      "duration_s": 173.3,
+      "error": null
+    },
+    {
+      "name": "research:SNS перевантажений: «неналежні",
+      "status": "ok",
+      "duration_s": 246.3,
+      "error": null
+    },
+    {
+      "name": "generate:SNS перевантажений: «неналежні",
+      "status": "ok",
+      "duration_s": 76.1,
+      "error": null
+    },
+    {
+      "name": "review:SNS перевантажений: «неналежні",
+      "status": "ok",
+      "duration_s": 201.2,
+      "error": null
+    },
+    {
+      "name": "translate_pt:SNS перевантажений: «неналежні",
+      "status": "ok",
+      "duration_s": 441.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:SNS перевантажений: «неналежні",
+      "status": "ok",
+      "duration_s": 25.8,
+      "error": null
+    },
+    {
+      "name": "save:SNS перевантажений: «неналежні",
+      "status": "ok",
+      "duration_s": 134.5,
+      "error": null
+    },
+    {
+      "name": "research:Chega хоче позбавляти громадян",
+      "status": "ok",
+      "duration_s": 250.7,
+      "error": null
+    },
+    {
+      "name": "generate:Chega хоче позбавляти громадян",
+      "status": "ok",
+      "duration_s": 70.8,
+      "error": null
+    },
+    {
+      "name": "review:Chega хоче позбавляти громадян",
+      "status": "ok",
+      "duration_s": 321.9,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Chega хоче позбавляти громадян",
+      "status": "ok",
+      "duration_s": 484.3,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Chega хоче позбавляти громадян",
+      "status": "ok",
+      "duration_s": 19.5,
+      "error": null
+    },
+    {
+      "name": "save:Chega хоче позбавляти громадян",
+      "status": "ok",
+      "duration_s": 212.7,
+      "error": null
+    },
+    {
+      "name": "research:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 247.2,
+      "error": null
+    },
+    {
+      "name": "generate:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 65.4,
+      "error": null
+    },
+    {
+      "name": "review:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 389.0,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 525.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 28.6,
+      "error": null
+    },
+    {
+      "name": "save:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 109.2,
+      "error": null
+    },
+    {
+      "name": "research:Вихідні 9–10 травня: безкоштов",
+      "status": "failed",
+      "duration_s": 935.3,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "research:NOS попереджає про «значне зро",
+      "status": "ok",
+      "duration_s": 199.8,
+      "error": null
+    },
+    {
+      "name": "generate:NOS попереджає про «значне зро",
+      "status": "ok",
+      "duration_s": 74.9,
+      "error": null
+    },
+    {
+      "name": "review:NOS попереджає про «значне зро",
+      "status": "ok",
+      "duration_s": 139.9,
+      "error": null
+    },
+    {
+      "name": "translate_pt:NOS попереджає про «значне зро",
+      "status": "ok",
+      "duration_s": 341.6,
+      "error": null
+    },
+    {
+      "name": "tg_caption:NOS попереджає про «значне зро",
+      "status": "ok",
+      "duration_s": 16.5,
+      "error": null
+    },
+    {
+      "name": "save:NOS попереджає про «значне зро",
+      "status": "ok",
+      "duration_s": 191.0,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 50.4,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

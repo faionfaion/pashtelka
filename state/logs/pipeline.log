@@ -19258,3 +19258,471 @@ TimeoutError: agent_query timed out after 300s
 2026-05-08 06:25:45 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-08 06:25:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026/uk.md
 2026-05-08 06:25:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026/pt.md (b1_warning=True)
+2026-05-08 06:25:45 [pipeline] INFO: Article ready: nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026 (NOS попереджає про «значне зростання витрат» через)
+2026-05-08 06:25:45 [pipeline] INFO: Generated 8/10 articles
+2026-05-08 06:25:48 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-08 06:25:48 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-08 06:26:36 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-08 06:26:36 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026/ — HTTP Error 404: Not Found
+2026-05-08 06:26:36 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-05-08_062636.json
+2026-05-08 06:26:36 [pipeline] INFO: Batch complete: 8 articles
+2026-05-08 19:39:42 [pipeline.llm] INFO: preflight ok (codex=/home/nero/.local/bin/codex, gemini=/home/nero/.local/bin/gemini, codex_model=gpt-5.5, gemini_model=gemini-2.5-flash, claude_model=claude-opus-4-7)
+2026-05-08 19:39:42 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-05-08 19:39:42 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-05-08 19:39:42 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-05-08 19:39:42 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-05-08 19:39:42 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-05-08 19:39:42 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-05-08 19:39:42 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-05-08 19:39:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 19:39:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 19:42:23 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 19:42:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 19:45:19 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 12 -> 11 articles
+2026-05-08 19:45:19 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 11 articles for 2026-05-08
+2026-05-08 19:45:19 [pipeline] INFO: Editorial plan: 11 topics
+2026-05-08 19:45:19 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-05-08 19:45:19 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-05-08 19:45:19 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-05-08 19:45:19 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-05-08 19:45:19 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-05-08 19:45:19 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-05-08 19:45:19 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-05-08 19:45:19 [pipeline.stages.s1_collect] INFO: Context: 63 RSS items, 0 existing articles
+2026-05-08 19:45:19 [pipeline] INFO: === Article 1/11 ===
+2026-05-08 19:45:19 [pipeline] INFO: --- Article: [immigration] Трьохденне перемир'я між Україною та Росією: що це означає д ---
+2026-05-08 19:49:48 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 1654 chars, latency_ms=129720, tokens_in=55626, tokens_out=9216
+2026-05-08 19:49:48 [pipeline.stages.s2_research] INFO: Research complete: 1654 chars
+2026-05-08 19:49:51 [pipeline] ERROR: Failed to generate article: Трьохденне перемир'я між Україною та Росією: що це означає д
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 512, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 381, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0923-9be7-7d20-bbb4-8183e9b18474
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+2026-05-08 19:49:51 [pipeline] INFO: === Article 2/11 ===
+2026-05-08 19:49:51 [pipeline] INFO: --- Article: [news] Конституційний суд вдруге відхилив закон про втрату громадян ---
+2026-05-08 19:51:54 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 2608 chars, latency_ms=49424, tokens_in=60609, tokens_out=4399
+2026-05-08 19:51:54 [pipeline.stages.s2_research] INFO: Research complete: 2608 chars
+2026-05-08 19:51:56 [pipeline] ERROR: Failed to generate article: Конституційний суд вдруге відхилив закон про втрату громадян
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 512, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 381, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0925-8606-7bd3-ad2e-e3b0d1002848
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+2026-05-08 19:51:56 [pipeline] INFO: === Article 3/11 ===
+2026-05-08 19:51:56 [pipeline] INFO: --- Article: [news] Пальне подорожчає з наступного тижня: уряд зменшує знижку на ---
+2026-05-08 19:54:22 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 7212 chars, latency_ms=72605, tokens_in=24138, tokens_out=7087
+2026-05-08 19:54:22 [pipeline.stages.s2_research] INFO: Research complete: 7212 chars
+2026-05-08 19:54:24 [pipeline] ERROR: Failed to generate article: Пальне подорожчає з наступного тижня: уряд зменшує знижку на
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 512, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 381, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0927-ca15-7d12-8264-9b7fea6ce16a
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+2026-05-08 19:54:24 [pipeline] INFO: === Article 4/11 ===
+2026-05-08 19:54:24 [pipeline] INFO: --- Article: [news] Реформа трудового законодавства йде до парламенту: що змінит ---
+2026-05-08 19:56:39 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 2612 chars, latency_ms=38372, tokens_in=31464, tokens_out=419
+2026-05-08 19:56:39 [pipeline.stages.s2_research] INFO: Research complete: 2612 chars
+2026-05-08 19:56:42 [pipeline] ERROR: Failed to generate article: Реформа трудового законодавства йде до парламенту: що змінит
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 512, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 381, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0929-e09f-7630-b8ea-69416ec70a47
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+2026-05-08 19:56:42 [pipeline] INFO: === Article 5/11 ===
+2026-05-08 19:56:42 [pipeline] INFO: --- Article: [news] Новий закон про вищу освіту: що змінюється для іноземних сту ---
+2026-05-08 19:59:23 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 468 chars, latency_ms=44718, tokens_in=56232, tokens_out=5224
+2026-05-08 19:59:23 [pipeline.stages.s2_research] INFO: Research complete: 468 chars
+2026-05-08 19:59:27 [pipeline] ERROR: Failed to generate article: Новий закон про вищу освіту: що змінюється для іноземних сту
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 512, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 381, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e092c-614b-7d11-8de5-b93530342ae9
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+2026-05-08 19:59:27 [pipeline] INFO: === Article 6/11 ===
+2026-05-08 19:59:27 [pipeline] INFO: --- Article: [news] Перекриття доріг і зміни у транспорті на вихідних: паломницт ---
+2026-05-08 20:00:03 [pipeline] INFO: === Digest mode ===
+2026-05-08 20:00:03 [pipeline.stages.s11_digest] INFO: Only 0 news articles today, skipping digest (min=5)
+2026-05-08 20:00:03 [pipeline] INFO: Digest skipped (not enough articles)
+2026-05-08 20:01:47 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 801 chars, latency_ms=73205, tokens_in=40609, tokens_out=3776
+2026-05-08 20:01:47 [pipeline.stages.s2_research] INFO: Research complete: 801 chars
+2026-05-08 20:01:53 [pipeline] ERROR: Failed to generate article: Перекриття доріг і зміни у транспорті на вихідних: паломницт
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 512, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 381, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e092e-94f9-70d1-9fca-c28ed4883ee4
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+2026-05-08 20:01:53 [pipeline] INFO: === Article 7/11 ===
+2026-05-08 20:01:53 [pipeline] INFO: --- Article: [news] Президент підписав надзвичайну підтримку для перевізників ва ---
+2026-05-08 20:05:12 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 6044 chars, latency_ms=50479, tokens_in=29339, tokens_out=131
+2026-05-08 20:05:12 [pipeline.stages.s2_research] INFO: Research complete: 6044 chars
+2026-05-08 20:05:16 [pipeline] ERROR: Failed to generate article: Президент підписав надзвичайну підтримку для перевізників ва
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 512, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 381, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0931-b273-7e70-a5eb-bb5c5aa373c3
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+2026-05-08 20:05:16 [pipeline] INFO: === Article 8/11 ===
+2026-05-08 20:05:16 [pipeline] INFO: --- Article: [material] Медична система Португалії для українців у 2026: SNS, приват ---
+2026-05-08 20:09:12 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 579 chars, latency_ms=67765, tokens_in=98377, tokens_out=8458
+2026-05-08 20:09:12 [pipeline.stages.s2_research] INFO: Research complete: 579 chars
+2026-05-08 20:09:14 [pipeline] ERROR: Failed to generate article: Медична система Португалії для українців у 2026: SNS, приват
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 512, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 381, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0935-5d63-72e3-80c5-0127af9b7992
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+2026-05-08 20:09:14 [pipeline] INFO: === Article 9/11 ===
+2026-05-08 20:09:14 [pipeline] INFO: --- Article: [guide] Як подати на португальське громадянство: покрокова інструкці ---
+2026-05-08 20:14:14 [pipeline.llm] WARNING: gemini_search retry 1/2: gemini_search timed out after 300s — sleeping 5.1s
+2026-05-08 20:19:19 [pipeline.llm] WARNING: gemini_search retry 2/2: gemini_search timed out after 300s — sleeping 12.8s
+2026-05-08 20:24:32 [pipeline] ERROR: Failed to generate article: Як подати на португальське громадянство: покрокова інструкці
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 202, in gemini_search
+    proc = subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['gemini', '-p', '<system>\nYou are a research assistant for Pashtelka, a Ukrainian news outlet covering Portugal.\nYour task is to find current Portuguese news relevant to Ukrainians living in Portugal.\n\nFocus areas:\n- Breaking Portuguese news (politics, economy, society)\n- Immigration/AIMA updates\n- Utility alerts (water, electricity, transport disruptions)\n- Municipal announcements (Lisbon, Porto, Faro)\n- Weather warnings\n- Tax/legal deadlines\n- Employment and housing market\n- Community events\n\nSearch in Portuguese. Return detailed findings with source URLs.\nAlways include the original Portuguese source URL for every fact.\nFind at least 3 different sources for material/guide articles.\n</system>\n\n<task>\n<task>\nResearch Portuguese news for a guide article.\n</task>\n\n\n<assigned_topic>\nTopic: Як подати на португальське громадянство: покрокова інструкція, документи та строки у 2026\nType: guide\nAngle: Актуально після рішення TC про закон про втрату громадянства. Покроково: хто має право (5 років проживання, знання мови), які документи (A2 CIPLE, registo criminal), де подавати (IRN, online), скільки коштує, реальні строки очікування. Окремо — шлях через шлюб та через дітей, народжених у Португалії.\nResearch hints: IRN.pt nationality application portal, Portuguese Nationality Law (Lei 37/81 updated), CIPLE exam info from CAPLE, justica.gov.pt requirements list, expat forums (e.g. portugalist.com citizenship guide), ACM nationality FAQ\n</assigned_topic>\n\n\n<rss_headlines>\n- [rtp_culture] "Águas Passadas". Nova série da RTP baseada em livro de João Tordo\n  &quot;Águas Passadas&quot; é a nova série da RTP baseada numa obra do escritor João Tordo. No elenco estão Enrique Arce e Helena Caldeira, dois dos protagonistas das séries &quot;Casa de Papel&quot; e\n  URL: https://www.rtp.pt/noticias/cultura/aguas-passadas-nova-serie-da-rtp-baseada-em-livro-de-joao-tordo_v1739768\n- [rtp_culture] Parlamento francês aprova restituição de obras saqueadas na colonização\n  O parlamento francês aprovou hoje uma lei destinada a facilitar a restituição de obras saqueadas durante a colonização francesa, reclamadas há vários anos por países africanos.\n  URL: https://www.rtp.pt/noticias/cultura/parlamento-frances-aprova-restituicao-de-obras-saqueadas-na-colonizacao_n1739683\n- [rtp_culture] Existência de equipamentos culturais não basta para garantir acesso à Cultura\n  Lisboa, 07 mai 2026 (Lusa) -- A existência de equipamentos culturais num determinado território não é garantia de acesso da sua população à Cultura em Portugal, de acordo com um estudo hoje divulgado.\n  URL: https://www.rtp.pt/noticias/cultura/existencia-de-equipamentos-culturais-nao-basta-para-garantir-acesso-a-cultura_n1739630\n- [rtp_culture] Atores portugueses participam em massa em estudo que revela sistema de remuneração no `streaming`\n  Um estudo feito em 11 países sobre o impacto da diretiva do Mercado Único Digital teve os atores portugueses como maiores participantes, com mais de 80% dos inquiridos totais a considerar injusta a re\n  URL: https://www.rtp.pt/noticias/cultura/atores-portugueses-participam-em-massa-em-estudo-que-revela-sistema-de-remuneracao-no-streaming_n1739631\n- [rtp_culture] Sketch Fest no Douro\n  Decorre no Douro, o Festival de Desenho de Paisagem, o Sketch Fest. A região está a inspirar obras de arte. Esta edição é dedicada a alunos internacionais que visitam o Norte de Portugal pela primeira\n  URL: https://www.rtp.pt/noticias/cultura/sketch-fest-no-douro_v1739625\n- [rtp_latest] Companhias aéreas vão poder cancelar voos se não houver jetfuel\n  Em caso de cancelamento do voo por falta de combustível os passageiros não vão ter direito a indemnização. As companhias aéreas não podem cobrar taxas de combustíveis após venderam os bilhetes.\n  URL: https://www.rtp.pt/noticias/economia/companhias-aereas-vao-poder-cancelar-voos-se-nao-houver-jetfuel_v1740038\n- [rtp_latest] Combustíveis vão baixar a partir de segunda-feira\n  Tendo em conta os dados do setor, é provável que o gasóleo desça cerca de 7 cêntimos e meio por litro. No caso da gasolina, a descida deverá rondar 1,8 cêntimos por litro.\n  URL: https://www.rtp.pt/noticias/economia/combustiveis-vao-baixar-a-partir-de-segunda-feira_v1740036\n- [rtp_latest] Zelensky confirma cessar-fogo de três dias anunciado por Trump\n  O presidente da Ucrânia anunciou esta sexta-feira que deu ordens às Forças Armadas para não atacarem a Praça Vermelha em Moscovo, local onde vão decorrer as cerimónias do dia da Vitória sobre a Aleman\n  URL: https://www.rtp.pt/noticias/mundo/zelensky-confirma-cessar-fogo-de-tres-dias-anunciado-por-trump_v1740035\n- [rtp_latest] Hantavírus. Cruzeiro chega a Tenerife no domingo\n  Tenerife espera a chegada do cruzeiro que está em quarentena. A Proteção Civil espanhola desenhou um plano para minimizar contactos e qualquer risco de contágio.\n  URL: https://www.rtp.pt/noticias/mundo/hantavirus-cruzeiro-chega-a-tenerife-no-domingo_v1740034\n- [rtp_latest] Entre Kiev e Moscovo. Trump anuncia cessar-fogo de três dias a contar a partir de sábado\n  O Presidente norte-americano anunciou hoje um\xa0cessar-fogo de três dias entre Kiev e Moscovo\xa0a partir de sábado.\n  URL: https://www.rtp.pt/noticias/mundo/entre-kiev-e-moscovo-trump-anuncia-cessar-fogo-de-tres-dias-a-contar-a-partir-de-sabado_n1740027\n- [rtp_latest] Polícias detidos. Ministério Público vai propor medidas este sábado\n  Terminaram os interrogatórios aos 14 detidos da PSP suspeitos de agressões e tortura a detidos.\n  URL: https://www.rtp.pt/noticias/pais/policias-detidos-ministerio-publico-vai-propor-medidas-este-sabado_v1740031\n- [rtp_latest] 20h Trump anuncia e Zelensky confirma: cessar fogo 3 dias entre Rússia e Ucrânia\n  URL: https://www.rtp.pt/noticias/noticiario-antena1/20h-trump-anuncia-e-zelensky-confirma-cessar-fogo-3-dias-entre-russia-e-ucrania_a1_1740028\n- [rtp_latest] Bruno Fernandes eleito melhor jogador do ano da Premier League\n  O internacional português Bruno Fernandes foi distinguido esta sexta-feira com o prémio de melhor jogador do ano da Premier League, coroando uma temporada de enorme nível ao serviço do Manchester Unit\n  URL: https://www.rtp.pt/noticias/futebol-internacional/bruno-fernandes-eleito-melhor-jogador-do-ano-da-premier-league_d1740026\n- [rtp_latest] Primeiro-ministro do Catar em Washington para reunião com JD Vance\n  O primeiro-ministro do Catar está em Washington esta sexta-feira para se reunir com o vice-presidente norte-americano, JD Vance. O secretário de Estado norte-americano, Marco Rubio, disse que os EUA e\n  URL: https://www.rtp.pt/noticias/mundo/primeiro-ministro-do-catar-em-washington-para-reuniao-com-jd-vance_e1739807\n- [cmjornal] <![CDATA[ Presidente da República promulga apoio extraordinário aos operadores de transporte de mercadorias ]]>\n  Apoio foi criado com o intuito de mitigar os efeitos da subida dos preços dos combustíveis na sequência do conflito no Médio Oriente.\n  URL: https://www.cmjornal.pt/sociedade/detalhe/presidente-da-republica-promulga-apoio-extraordinario-aos-operadores-de-transporte-de-mercadorias\n- [cmjornal] <![CDATA[ Em Trancoso há um solar abandonado onde habita o perigo ]]>\n  Solar abandonado em Trancoso gera preocupação entre os moradores. Há jovens que frequentam o local de forma ilegal para consumir substâncias ilícitas.\n  URL: https://www.cmjornal.pt/cmtv/videos/abandonados--ha-solucao-para-a-habitacao-/detalhe/em-trancoso-ha-um-solar-abandonado-onde-habita-o-perigo\n- [rtp_latest] Rali de Portugal. Rúben Rodrigues vence entre os pilotos nacionais\n  O piloto Rúben Rodrigues (Toyota Yaris) venceu hoje a etapa nacional do Rali de Portugal, segunda ronda do Campeonato de Portugal de Ralis (CPR) e dilatou o comando do campeonato.\n  URL: https://www.rtp.pt/noticias/motores/rali-de-portugal-ruben-rodrigues-vence-entre-os-pilotos-nacionais_d1740017\n- [cmjornal] <![CDATA[ Acionistas da Media Capital vão votar a reeleição de Mário Ferreira como presidente ]]>\n  Assembleia-geral está marcada para 20 de maio.\n  URL: https://www.cmjornal.pt/tv-media/detalhe/acionistas-da-media-capital-vao-votar-a-reeleicao-de-mario-ferreira-como-presidente\n- [cmjornal] <![CDATA[ Tribunal Constitucional apenas admite eventual perda da nacionalidade por crimes contra a segurança do Estado ]]>\n  Segundo o TC, "a inconstitucionalidade da norma sancionatória repercute-se, pois, no regime que disciplina os seus efeitos temporais, em violação do princípio da proporcionalidade".\n  URL: https://www.cmjornal.pt/politica/detalhe/tribunal-constitucional-apenas-admite-eventual-perda-da-nacionalidade-por-crimes-contra-a-seguranca-do-estado\n- [cmjornal] <![CDATA[ Ministro da Defesa acusa PS e Chega de destruir consenso de 50 anos em matérias de soberania ]]>\n  PS e Chega aprovaram na generalidade projetos que visam reforçar competências do parlamento na área da Defesa e criar uma reserva voluntária de militares, com a oposição de PSD e CDS-PP.\n  URL: https://www.cmjornal.pt/politica/detalhe/ministro-da-defesa-acusa-ps-e-chega-de-destruir-consenso-de-50-anos-em-materias-de-soberania\n</rss_headlines>\n\n<instructions>\n1. Focus on the assigned topic above.\n2. Search the web for detailed information. Use Portuguese search queries.\n3. For guide type, focus on: step-by-step practical information, official requirements, costs, deadlines\n4. Find 3-5 relevant sources with full details\n5. For each source: title, key facts (3-5 sentences), source URL\n6. If there are utility alerts (water/electricity outages, transport disruptions), note them\n7. For material/guide articles: find at least 3 different sources to compile from\n\nReturn your findings as a structured research brief.\n</instructions>\n\n<existing_articles>\nDo NOT cover topics already published: \n</existing_articles>\n\n<previous_coverage>\nIf this topic is a FOLLOW-UP or related to a previous article, you MUST read the full text of relevant previous articles to reference them properly.\n\nHow to find previous articles:\n1. Use Glob to search: content/*.md\n2. Use Read to read the full markdown file, e.g.: content/some-slug.md\n3. Articles are markdown with YAML frontmatter (title, date, slug, tags, source_urls)\n4. The body text starts after the second "---" line\n\nInclude in your research brief:\n- Which previous articles are related (slug + title)\n- Key facts from those articles that should be referenced\n- What\'s NEW in today\'s story vs. what we already covered\n- Suggested cross-reference: "Link to our previous article: https://pastelka.news/{slug}/"\n</previous_coverage>\n</task>', '-m', 'gemini-2.5-flash', '-o', 'json', '--approval-mode', 'plan', '--skip-trust']' timed out after 300 seconds
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 147, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 20, in run
+    ctx.research_text = dispatch_research(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 479, in dispatch_research
+    return gemini_search(prompt, system=system, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 216, in gemini_search
+    raise exc
+TimeoutError: gemini_search timed out after 300s
+2026-05-08 20:24:32 [pipeline] INFO: === Article 10/11 ===
+2026-05-08 20:24:32 [pipeline] INFO: --- Article: [news] Вихідні в Португалії: 10 подій у Лісабоні, Порту, Фару та Ал ---
+2026-05-08 20:29:32 [pipeline.llm] WARNING: gemini_search retry 1/2: gemini_search timed out after 300s — sleeping 7.1s
+2026-05-08 20:32:56 [pipeline] ERROR: Failed to generate article: Вихідні в Португалії: 10 подій у Лісабоні, Порту, Фару та Ал
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 147, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 20, in run
+    ctx.research_text = dispatch_research(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 479, in dispatch_research
+    return gemini_search(prompt, system=system, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 232, in gemini_search
+    raise exc
+RuntimeError: gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to ~/.tmux.conf:
+      set -g default-terminal "tmux-256color"
+      set -ga terminal-overrides ",*256col*:Tc"
+Warning: True color (24-bit) support not detected. Using a terminal with true color enabled will result in a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Attempt 1 failed: You have exhausted your capacity on this mod
+2026-05-08 20:32:56 [pipeline] INFO: === Article 11/11 ===
+2026-05-08 20:32:56 [pipeline] INFO: --- Article: [utility] Погода на вихідні 9-11 травня: прогноз для Лісабона, Порту,  ---
+2026-05-08 20:32:59 [pipeline] ERROR: Failed to generate article: Погода на вихідні 9-11 травня: прогноз для Лісабона, Порту, 
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 147, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 20, in run
+    ctx.research_text = dispatch_research(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 479, in dispatch_research
+    return gemini_search(prompt, system=system, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 232, in gemini_search
+    raise exc
+RuntimeError: gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to ~/.tmux.conf:
+      set -g default-terminal "tmux-256color"
+      set -ga terminal-overrides ",*256col*:Tc"
+Warning: True color (24-bit) support not detected. Using a terminal with true color enabled will result in a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Error when talking to Gemini API Full report available at: /tm
+2026-05-08 20:32:59 [pipeline] INFO: Generated 0/11 articles
+2026-05-08 20:32:59 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-05-08_203259.json
+2026-05-08 20:32:59 [pipeline] INFO: Batch complete: 0 articles
+2026-05-08 22:01:53 [pipeline.llm] INFO: preflight ok (codex=/home/nero/.local/bin/codex, gemini=/home/nero/.local/bin/gemini, codex_model=gpt-5.5, gemini_model=gemini-2.5-flash, claude_model=claude-opus-4-7)
+2026-05-08 22:01:53 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-05-08 22:01:53 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-05-08 22:01:53 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-05-08 22:01:53 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-05-08 22:01:53 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-05-08 22:01:54 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-05-08 22:01:54 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-05-08 22:01:54 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:01:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:04:01 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:04:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:06:26 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 12 -> 11 articles
+2026-05-08 22:06:26 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 11 articles for 2026-05-08
+2026-05-08 22:06:26 [pipeline] INFO: Editorial plan: 11 topics
+2026-05-08 22:06:26 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+2026-05-08 22:06:26 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+2026-05-08 22:06:26 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+2026-05-08 22:06:26 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+2026-05-08 22:06:26 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+2026-05-08 22:06:26 [pipeline.feeds] INFO: Feed publico: 10 items
+2026-05-08 22:06:27 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+2026-05-08 22:06:27 [pipeline.stages.s1_collect] INFO: Context: 62 RSS items, 0 existing articles
+2026-05-08 22:06:27 [pipeline] INFO: === Article 1/11 ===
+2026-05-08 22:06:27 [pipeline] INFO: --- Article: [immigration] Триденне перемир'я між Росією та Україною — що це означає дл ---
+2026-05-08 22:06:32 [pipeline.llm] WARNING: gemini_search failed (gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to) — falling back to codex_generate
+2026-05-08 22:07:41 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 11193 chars in, 10276 chars out
+2026-05-08 22:07:41 [pipeline.stages.s2_research] INFO: Research complete: 10180 chars
+2026-05-08 22:08:21 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 14431 chars in, 6020 chars out
+2026-05-08 22:08:21 [pipeline.stages.s3_generate] INFO: Generated: 'Триденне перемир’я між Росією та Україною: що це означає для українців із тимчасовим захистом у Португалії' (slug=trydenne-peremyria-ukraina-rosia-tymchasovyi-zakhyst-portugalia, 477 words, 5 sources)
+2026-05-08 22:08:21 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:08:21 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:09:05 [pipeline.stages.s4_review] INFO: Review: score=6, approved=False
+2026-05-08 22:09:05 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом добре структурована, тон теплий і практичний, джерела релевантні. Але є кілька проблем, одна з яких критична:
+
+1. **КРИТИЧНА НЕТОЧНІСТЬ (дата тимчасового захисту):** Стаття стверджує, щ
+2026-05-08 22:09:42 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 6037 chars in, 4832 chars out
+2026-05-08 22:09:42 [pipeline.stages.s5_revise] INFO: Revised article: 567 words
+2026-05-08 22:09:42 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-08 22:09:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:09:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:10:30 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-08 22:10:30 [pipeline.stages.s4_review] INFO: Feedback: Якісна, відповідальна стаття з чітким розмежуванням політичної події та юридичного статусу. Кілька зауважень для доопрацювання:
+
+1. RTP не пояснено для новоприбулих — додайте коротко: «RTP (Rádio e Te
+2026-05-08 22:10:30 [pipeline] INFO: Article approved after 1 revision(s)
+2026-05-08 22:10:30 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (4476 chars in)
+2026-05-08 22:11:01 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 9038 chars in, 5001 chars out
+2026-05-08 22:11:01 [pipeline.llm] DEBUG: translation cost ${0.0151} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-08 22:11:02 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=1.9 avg_sent=13.1 coverage=60.8% (467 words counted)
+2026-05-08 22:11:02 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=1.9, avg_sent=13.1, coverage=60.8%); retrying with addendum
+2026-05-08 22:11:38 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 9350 chars in, 4510 chars out
+2026-05-08 22:11:38 [pipeline.llm] DEBUG: translation cost ${0.0140} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-08 22:11:38 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=14.4 avg_sent=12.1 coverage=68.2% (437 words counted)
+2026-05-08 22:11:38 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=14.4, avg_sent=12.1, coverage=68.2%)
+2026-05-08 22:11:52 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 3891 chars in, 948 chars out
+2026-05-08 22:11:52 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1230 chars, vocab: 5 words, pt: 195 chars
+2026-05-08 22:11:53 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=trydenne-peremyria-ukraina-rosia-tymchasovyi-zakhyst-portugalia
+2026-05-08 22:11:53 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:11:53 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:12:13 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Restructured to subject-first order with explicit anatomy counts (fingers, limbs, heads) to prevent 
+2026-05-08 22:12:13 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-08 22:12:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-08 22:13:05 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-08 22:13:06 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-08 22:13:06 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26415
+2026-05-08 22:13:06 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26415 (unknown)
+2026-05-08 22:13:06 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26468 2686531
+2026-05-08 22:13:06 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/trydenne-peremyria-ukraina-rosia-tymchasovyi-zakhyst-portugalia.jpg (209 KB, quality=auto)
+2026-05-08 22:13:06 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:13:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:13:47 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-08 22:13:47 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-08 22:13:47 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trydenne-peremyria-ukraina-rosia-tymchasovyi-zakhyst-portugalia/uk.md
+2026-05-08 22:13:47 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trydenne-peremyria-ukraina-rosia-tymchasovyi-zakhyst-portugalia/pt.md (b1_warning=True)

@@ -1,76 +1,83 @@
 {
   "articles": [
     {
-      "topic": "Трудова реформа провалилась: пакет із 7 спірних заходів іде до парламенту без згоди профспілок",
+      "topic": "Триденне перемир'я між Росією та Україною — що це означає для діаспори та тимчасового захисту в Португалії",
+      "type": "immigration",
+      "angle": "Реакція української громади в Португалії на підтверджене перемир'я. Чи можна зателефонувати рідним безпечніше? Коментарі від українських організацій у Лісабоні та Порту. Окремий блок: актуальний статус директиви ЄС про тимчасовий захист — чи змінює перемир'я щось для продовження ТЗ після березня 2026. Що робити тим, у кого документи закінчуються: перехід на інший тип дозволу чи очікування. Офіційна позиція AIMA.",
+      "sources_hint": "RTP latest (ceasefire headline), AIMA.gov.pt temporary protection page, EU Council decisions on temporary protection extension, SEF/AIMA social media updates, Ukrainian Association in Portugal social media, Euromaidan Press, JN/Público immigration coverage May 2026",
+      "priority": 1
+    },
+    {
+      "topic": "Пальне подешевшає з понеділка — скільки зекономлять водії",
       "type": "news",
-      "angle": "Які саме 7 заходів заблокували угоду, що з них стосується іноземних працівників (строкові контракти, звільнення, банк годин), прогноз голосування в парламенті",
-      "sources_hint": "Público, RTP Economia, Expresso, Jornal de Negócios; search 'reforma laboral sete medidas pacote parlamento'",
+      "angle": "Конкретні цифри зниження цін на бензин та дизель, порівняння з цінами місяць тому. Скільки зекономить середній водій-комʼютер Лісабон–Сінтра чи Порту–Гая за тиждень.",
+      "sources_hint": "RTP economy (combustíveis vão baixar), DGEG fuel price portal dgeg.gov.pt, cmjornal Brent price article, maisgasolina.com historical prices",
       "priority": 1
     },
     {
-      "topic": "UGT не виключає загального страйку 3 червня: що це означає для повсякденного життя",
+      "topic": "Негода повертається на вихідних — шість округів під жовтим попередженням",
       "type": "news",
-      "angle": "Що паралізується під час greve geral в Португалії — транспорт, школи, лікарні; які serviços mínimos гарантовані; як підготуватись українцям-працівникам (права, участь, наслідки)",
-      "sources_hint": "RTP Economia, TSF, CGTP/UGT press releases; search 'UGT greve geral 3 junho 2026 serviços mínimos'",
+      "angle": "Які саме округи під попередженням, прогноз на суботу-неділю для Лісабона, Порту та Фару. Чи варто змінювати плани на вікенд, поради щодо пляжних зон Алгарві.",
+      "sources_hint": "RTP country (mau tempo regressa), IPMA.pt warnings page, Windguru for coastal Algarve, weather.com Lisbon/Porto/Faro forecast",
       "priority": 1
     },
     {
-      "topic": "8 травня — День пам'яті та примирення: як українська громада Португалії вшановує",
+      "topic": "Вікенд у Португалії: найцікавіші події 9-10 травня в Лісабоні, Порту та Алгарві",
+      "type": "utility",
+      "angle": "П'ятнична добірка: безкоштовні фестивалі, ярмарки, концерти на цей вікенд. Акцент на сімейні та бюджетні варіанти. Окремо — що подивитися в Алгарві для тих, хто живе на півдні. Врахувати прогноз негоди — позначити indoor-варіанти.",
+      "sources_hint": "Timeout Lisboa, Timeout Porto, visitportugal.com events, cm-faro.pt agenda cultural, eventbrite.pt Lisbon/Porto May 9-10, Facebook Ukrainian community groups in PT",
+      "priority": 2
+    },
+    {
+      "topic": "Авіакомпанії зможуть скасовувати рейси через нестачу палива — що це означає для літніх подорожей",
       "type": "news",
-      "angle": "Заходи у Лісабоні, Порту та інших містах; чому Україна святкує 8 травня, а не 9-го; португальсько-українська солідарність; коментарі організаторів з громади",
-      "sources_hint": "Ukrainian community Facebook groups Portugal, Associação dos Ucranianos em Portugal, Câmara de Lisboa events; search 'dia memória 8 maio comunidade ucraniana Portugal 2026'",
-      "priority": 1
+      "angle": "Нове правило дозволяє скасування рейсів при дефіциті джетпалива. Як це може вплинути на літні рейси Ryanair і Wizz Air з Лісабона та Порту, зокрема на маршрути до Польщі та Румунії (пересадки до України). Як захистити свої права пасажира за EU261.",
+      "sources_hint": "RTP economy (companhias aéreas cancelar voos jetfuel), ANAC.pt regulations, EU261 passenger rights, Ryanair/Wizz Air Lisbon route pages",
+      "priority": 2
     },
     {
-      "topic": "Як записати дитину до португальської школи у 2026: покроковий гід з урахуванням нових візових вимог",
-      "type": "guide",
-      "angle": "Повний алгоритм: (1) НОВА ВИМОГА — уряд схвалив законопроєкт про візу для навчання іноземних дітей: хто підпадає, чи стосується дітей з тимчасовим захистом, які документи, (2) вибір escola pública vs privada, (3) документи (título de residência, NIF, NISS, vacinação, equivalência), (4) терміни матрікули (inscrição 1.º ciclo, transferências), (5) мовна підтримка PLNM для україномовних дітей, (6) контакти шкільних agrupamentos у Лісабоні, Порту, Алгарве",
-      "sources_hint": "RTP Política, Diário de Notícias, AIMA portal, Governo.pt press releases, DGE (Direção-Geral da Educação), Portal das Matrículas, school agrupamento websites Lisboa/Porto/Faro; search 'visto residência estudo estrangeiros escolas 2026', 'matrícula escola pública estrangeiros 2026 documentos equivalência PLNM'",
-      "priority": 1
+      "topic": "Парламент схвалив еквівалентність шкільної освіти між Португалією та Бразилією — чи працює це для українців?",
+      "type": "news",
+      "angle": "Нова угода спрощує визнання шкільних атестатів для бразильців. Порівняння: який процес визнання освіти зараз проходять українці (DGES, nostrificação). Чи може це стати прецедентом для двосторонньої угоди з Україною.",
+      "sources_hint": "RTP country (equivalência escolar PT-Brasil), DGES.gov.pt equivalence procedures, Diário da República for the new law text, Ukrainian MES bilateral agreements",
+      "priority": 2
     },
     {
-      "topic": "Оренда житла в Португалії у 2026: нові правила, ціни по регіонах та права орендарів-іноземців",
+      "topic": "Нова комісія з прав дітей та молоді — що це змінює для українських родин",
+      "type": "news",
+      "angle": "Президент підписав закон про створення комісії. Які повноваження вона матиме. Як українські родини з дітьми можуть звернутися за допомогою. Поточні проблеми: доступ до шкіл, мовний бар'єр, психологічна підтримка.",
+      "sources_hint": "RTP country (PR promulga comissão direitos crianças), Diário da República for full text, CNPDPCJ current functions, UNICEF Portugal reports on refugee children",
+      "priority": 2
+    },
+    {
+      "topic": "Португалія готується до пожежного сезону: два вертольоти Black Hawk посилять авіаційну групу",
+      "type": "news",
+      "angle": "Що означає посилення протипожежної системи для жителів — особливо тих, хто живе в районах ризику (Алгарві, центр країни). Нагадування про правила пожежної безпеки для мешканців приватних будинків та що робити при евакуації.",
+      "sources_hint": "CM Jornal (Black Hawk dispositivo incêndios), ANEPC.pt fire season calendar, ICNF.pt fire risk maps, protecaocivil.pt safety guidelines",
+      "priority": 2
+    },
+    {
+      "topic": "Літній ринок оренди 2026: як знайти житло і не переплатити — огляд по регіонах",
       "type": "material",
-      "angle": "Компіляція: (1) зміни в Novo Regime do Arrendamento Urbano 2025-2026, (2) середні ціни оренди по районах Лісабона, Порту, Фару, Сетубал — Idealista/INE дані, (3) права орендаря-іноземця: контракт, NIF, depósito, оскарження підвищення ренди, (4) типові шахрайства при оренді та як їх уникнути",
-      "sources_hint": "Idealista.pt rental index May 2026, INE housing stats, Deco Proteste tenants rights, NRAU legal text, Portal da Habitação; search 'preços arrendamento maio 2026 Portugal novos regras inquilinos estrangeiros fraudes'",
-      "priority": 1
-    },
-    {
-      "topic": "SNS перевантажений: «неналежні госпіталізації» скорочують доступ до допомоги",
-      "type": "news",
-      "angle": "Що відбувається з чергами та прийомами в центрах здоров'я та urgências; як це впливає на іноземців без médico de família; поради — коли йти до urgência, а коли до SNS24",
-      "sources_hint": "RTP Portugal, Jornal Médico, SNS.gov.pt statistics; search 'SNS internamentos inapropriados resposta diminuída maio 2026'",
+      "angle": "Комплексний огляд: ціни оренди у Лісабоні, Порту, Фару та Алгарві станом на травень 2026. Сезонний стрибок цін влітку. Права орендаря за португальським законом. Типові шахрайські схеми на Idealista та OLX. Корисні фрази португальською для спілкування з орендодавцем. Відмінності між contrato de arrendamento типів.",
+      "sources_hint": "Idealista.pt price index May 2026, INE.pt housing statistics, Confidencial Imobiliário rental index, NRAU tenant rights law, Idealista/OLX fraud reports on DECO proteste, Numbeo Lisbon/Porto/Faro comparison, Portuguese rental contract templates",
       "priority": 2
     },
     {
-      "topic": "Chega хоче позбавляти громадянства: що передбачає проєкт конституційної ревізії",
-      "type": "news",
-      "angle": "Конкретно: хто може втратити громадянство за пропозицією Chega, чи стосується це натуралізованих іноземців, які шанси проходження в парламенті, юридична оцінка",
-      "sources_hint": "RTP Portugal, Observador, Parlamento.pt constitutional revision proposals; search 'Chega revisão constitucional perda nacionalidade prisão perpétua 2026'",
+      "topic": "Як записати дитину до літнього табору (campo de férias) в Португалії — покроковий гід",
+      "type": "guide",
+      "angle": "Практичний гід для українських батьків: типи таборів (спортивні, мовні, денні, з ночівлею), як знайти через Junta de Freguesia, IPSS та приватні організації. Документи для запису, вартість та субсидії (apoio social). Окремо — безкоштовні програми від муніципалітетів Лісабона та Порту. Корисна лексика португальською.",
+      "sources_hint": "CM Lisboa summer camp programs (férias desportivas), CM Porto campos de férias, Segurança Social subsidies for camps, IPSS directories, Junta de Freguesia local programs, DECO recommendations for choosing camps, ATL summer schedules",
       "priority": 2
     },
     {
-      "topic": "Тимчасовий захист для українців у Португалії: чи буде продовження у 2026 і що впливає на рішення",
+      "topic": "Євробарометр: 93% португальців за ЄС — як це впливає на ставлення до іммігрантів",
       "type": "news",
-      "angle": "Практичний фокус: поточний статус рішення Ради ЄС про Proteção Temporária, терміни чинного рішення, які сценарії продовження/припинення, що робити для підготовки (документи, альтернативні статуси); коментар юриста з міграційного права",
-      "sources_hint": "EU Council decisions on temporary protection, AIMA, SEF archives, Jornal de Notícias; search 'proteção temporária ucranianos Portugal 2026 renovação conselho UE decisão'",
-      "priority": 2
-    },
-    {
-      "topic": "Вихідні 9–10 травня: безкоштовні події у Лісабоні, Порту, Фару та Алгарве",
-      "type": "news",
-      "angle": "П'ятнична добірка: фестивалі, ярмарки, відкриті музеї, сімейні активності; погода на вихідні; сезонні ринки; що відвідати з дітьми — окремо по регіонах",
-      "sources_hint": "TimeOut Lisboa, TimeOut Porto, Câmara de Faro eventos, VisitAlgarve, IPMA weekend forecast; search 'eventos fim de semana 9 10 maio 2026 Lisboa Porto Algarve grátis'",
-      "priority": 2
-    },
-    {
-      "topic": "NOS попереджає про «значне зростання витрат» через заборону постачальників: чи подорожчає мобільний зв'язок",
-      "type": "news",
-      "angle": "Контекст заборони китайських постачальників у телекомі ЄС; які оператори в Португалії можуть підняти ціни; порівняння тарифів NOS/MEO/Vodafone для іммігрантів; альтернативи",
-      "sources_hint": "RTP Economia, ANACOM reports, Deco Proteste comparisons; search 'NOS proibição fornecedores custos 2026 tarifas móvel'",
+      "angle": "Нове опитування показує рекордну підтримку ЄС в Португалії. Що це означає в контексті інтеграції: толерантність до іммігрантів, підтримка програм допомоги біженцям. Порівняння з іншими країнами, де живе українська діаспора.",
+      "sources_hint": "RTP country (Eurobarómetro 93%), Eurobarometer Spring 2026 full report, European Commission PT page, Observatório das Migrações integration reports",
       "priority": 3
     }
   ],
   "date": "2026-05-08",
-  "created_at": "2026-05-08T03:00:02.502146+00:00"
+  "created_at": "2026-05-08T22:01:53.450731+00:00"
 }

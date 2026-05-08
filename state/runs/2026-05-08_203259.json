@@ -1,0 +1,134 @@
+{
+  "timestamp": "2026-05-08_203259",
+  "status": "empty",
+  "dry_run": false,
+  "slug": "",
+  "author": "Pastelka News",
+  "duration_s": 3197.9,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 337.1,
+      "error": null
+    },
+    {
+      "name": "research:Трьохденне перемир'я між Украї",
+      "status": "ok",
+      "duration_s": 268.8,
+      "error": null
+    },
+    {
+      "name": "generate:Трьохденне перемир'я між Украї",
+      "status": "failed",
+      "duration_s": 2.9,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Конституційний суд вдруге відх",
+      "status": "ok",
+      "duration_s": 122.8,
+      "error": null
+    },
+    {
+      "name": "generate:Конституційний суд вдруге відх",
+      "status": "failed",
+      "duration_s": 2.4,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Пальне подорожчає з наступного",
+      "status": "ok",
+      "duration_s": 146.0,
+      "error": null
+    },
+    {
+      "name": "generate:Пальне подорожчає з наступного",
+      "status": "failed",
+      "duration_s": 2.2,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Реформа трудового законодавств",
+      "status": "ok",
+      "duration_s": 134.8,
+      "error": null
+    },
+    {
+      "name": "generate:Реформа трудового законодавств",
+      "status": "failed",
+      "duration_s": 2.4,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Новий закон про вищу освіту: щ",
+      "status": "ok",
+      "duration_s": 161.6,
+      "error": null
+    },
+    {
+      "name": "generate:Новий закон про вищу освіту: щ",
+      "status": "failed",
+      "duration_s": 4.3,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Перекриття доріг і зміни у тра",
+      "status": "ok",
+      "duration_s": 139.9,
+      "error": null
+    },
+    {
+      "name": "generate:Перекриття доріг і зміни у тра",
+      "status": "failed",
+      "duration_s": 6.2,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Президент підписав надзвичайну",
+      "status": "ok",
+      "duration_s": 198.1,
+      "error": null
+    },
+    {
+      "name": "generate:Президент підписав надзвичайну",
+      "status": "failed",
+      "duration_s": 4.5,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Медична система Португалії для",
+      "status": "ok",
+      "duration_s": 235.9,
+      "error": null
+    },
+    {
+      "name": "generate:Медична система Португалії для",
+      "status": "failed",
+      "duration_s": 2.1,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Як подати на португальське гро",
+      "status": "failed",
+      "duration_s": 918.1,
+      "error": "gemini_search timed out after 300s"
+    },
+    {
+      "name": "research:Вихідні в Португалії: 10 подій",
+      "status": "failed",
+      "duration_s": 503.9,
+      "error": "gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to ~/.tmux.conf:\n      set -g default-term"
+    },
+    {
+      "name": "research:Погода на вихідні 9-11 травня:",
+      "status": "failed",
+      "duration_s": 3.3,
+      "error": "gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to ~/.tmux.conf:\n      set -g default-term"
+    }
+  ]
+}
