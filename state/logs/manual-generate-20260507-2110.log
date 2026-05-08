@@ -1,0 +1,365 @@
+21:10:31 [pipeline.llm] INFO: preflight ok (codex=/home/nero/.local/bin/codex, gemini=/home/nero/.local/bin/gemini, codex_model=gpt-5.5, gemini_model=gemini-2.5-flash, claude_model=claude-opus-4-7)
+21:10:31 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan already exists for 2026-05-07 (10 articles)
+21:10:31 [pipeline] INFO: Editorial plan: 10 topics
+21:10:31 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+21:10:31 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+21:10:31 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+21:10:31 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+21:10:31 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+21:10:32 [pipeline.feeds] INFO: Feed publico: 10 items
+21:10:32 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+21:10:32 [pipeline.stages.s1_collect] INFO: Context: 63 RSS items, 0 existing articles
+21:10:32 [pipeline] INFO: === Article 1/10 ===
+21:10:32 [pipeline] INFO: --- Article: [news] IMI у травні: змінені формати повідомлень і терміни сплати п ---
+21:13:03 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 164 chars, latency_ms=92431, tokens_in=60286, tokens_out=5156
+21:13:03 [pipeline.stages.s2_research] INFO: Research complete: 164 chars
+21:13:08 [pipeline] ERROR: Failed to generate article: IMI у травні: змінені формати повідомлень і терміни сплати п
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 491, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 360, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0449-7aab-7953-89d5-fa67b7781473
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+21:13:08 [pipeline] INFO: === Article 2/10 ===
+21:13:08 [pipeline] INFO: --- Article: [immigration] AIMA: весняне оновлення статусу обробки справ та автоматични ---
+21:14:38 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 4528 chars, latency_ms=53141, tokens_in=34140, tokens_out=3372
+21:14:38 [pipeline.stages.s2_research] INFO: Research complete: 4528 chars
+21:14:40 [pipeline] ERROR: Failed to generate article: AIMA: весняне оновлення статусу обробки справ та автоматични
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 491, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 360, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e044a-e748-7150-a69b-2a2fff225825
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+21:14:40 [pipeline] INFO: === Article 3/10 ===
+21:14:40 [pipeline] INFO: --- Article: [material] Трудові права іноземців у Португалії: що змінює реформа CIP/ ---
+21:19:40 [pipeline.llm] WARNING: gemini_search retry 1/2: gemini_search timed out after 300s — sleeping 5.4s
+21:24:45 [pipeline.llm] WARNING: gemini_search retry 2/2: gemini_search timed out after 300s — sleeping 10.7s
+21:29:56 [pipeline] ERROR: Failed to generate article: Трудові права іноземців у Португалії: що змінює реформа CIP/
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 202, in gemini_search
+    proc = subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['gemini', '-p', '<system>\nYou are a research assistant for Pashtelka, a Ukrainian news outlet covering Portugal.\nYour task is to find current Portuguese news relevant to Ukrainians living in Portugal.\n\nFocus areas:\n- Breaking Portuguese news (politics, economy, society)\n- Immigration/AIMA updates\n- Utility alerts (water, electricity, transport disruptions)\n- Municipal announcements (Lisbon, Porto, Faro)\n- Weather warnings\n- Tax/legal deadlines\n- Employment and housing market\n- Community events\n\nSearch in Portuguese. Return detailed findings with source URLs.\nAlways include the original Portuguese source URL for every fact.\nFind at least 3 different sources for material/guide articles.\n</system>\n\n<task>\n<task>\nResearch Portuguese news for a material article.\n</task>\n\n\n<assigned_topic>\nTopic: Трудові права іноземців у Португалії: що змінює реформа CIP/UGT 2026 року\nType: material\nAngle: Об\'єднаний матеріал: CIP погодилася на 4 ключові вимоги UGT — які саме зміни та як вони вплинуть на працівників-іноземців (контракти, звільнення, понаднормові, лікарняні, відпустка). Повний гід: що гарантує Código do Trabalho іноземцям, різниця між contrato sem termo і a termo, як подати скаргу до ACT, права при звільненні. Порівняння з українським законодавством. Фокус на будівництво, HoReCa, кліннінг.\nResearch hints: RTP Economia (Lei laboral CIP UGT), Jornal de Negócios, ECO, Público economia, Código do Trabalho (DRE.pt), ACT.gov.pt worker rights guides, IEFP.pt foreigner employment info, CIP/UGT negotiation documents, EU Posted Workers Directive as applied in PT\n</assigned_topic>\n\n\n<rss_headlines>\n- [rtp_culture] Estúdios Ghibli vencem Prémio Princesa das Astúrias de Comunicação e Humanidades 2026\n  O Prémio Princesa das Astúrias de Comunicação e Humanidades 2026, de Espanha, foi hoje atribuído aos estúdios de animação japonesa Ghibli &quot;por terem transformado, de forma extraordinária, a criat\n  URL: https://www.rtp.pt/noticias/cultura/estudios-ghibli-vencem-premio-princesa-das-asturias-de-comunicacao-e-humanidades-2026_n1739384\n- [rtp_culture] "Concertamos Juntos". Concerto para ajudar vítimas da tempestade Kristin\n  Grandes nomes da música portuguesa juntaram-se para um concerto de apoio às vítimas da tempestade Kristin.\n  URL: https://www.rtp.pt/noticias/cultura/concertamos-juntos-concerto-para-ajudar-vitimas-da-tempestade-kristin_v1739331\n- [rtp_latest] Hat-trick de João Félix reforçam liderança do Al Nassr na luta pelo título\n  O Al Nassr regressou hoje às vitórias na Liga saudita de futebol, ao bater o Al Shabab por 4-2, somando três pontos decisivos na luta pelo título, num jogo marcado pelo hat-trick de João Félix.\n  URL: https://www.rtp.pt/noticias/futebol-internacional/hat8209trick-de-joao-felix-reforca-lideranca-do-al-nassr-na-luta-pelo-titulo_d1739757\n- [rtp_latest] Aston Villa na final ao golear Nottingham de Vítor Pereira\n  Os ingleses do Aston Villa qualificaram-se hoje para a final da Liga Europa em futebol, marcando encontro com os alemães do Friburgo, ao golearem em casa os compatriotas do Nottingham Forest, de Vítor\n  URL: https://www.rtp.pt/noticias/liga-europa/aston-villa-na-final-ao-golear-nottingham-de-vitor-pereira_d1739753\n- [rtp_latest] Reunião "amigável". Secretário de Estado dos EUA visitou Leão XIV\n  Foi uma reunião amigável e construtiva. É assim que está a ser descrito o encontro entre o papa e o secretário de Estado norte-americano. Os dois homens falaram sobre a situação no Médio Oriente, com \n  URL: https://www.rtp.pt/noticias/mundo/reuniao-amigavel-secretario-de-estado-dos-eua-visitou-leao-xiv_v1739754\n- [rtp_latest] Departamento do Tesouro dos EUA anuncia novas sanções ao Irão\n  O presidente dos Estados Unidos, Donald Trump, considerou &quot;muito possível&quot; um acordo de paz com o Irão, o que provocou uma queda do preço do petróleo e uma subida acentuada das bolsas. Teerã\n  URL: https://www.rtp.pt/noticias/mundo/departamento-do-tesouro-dos-eua-anuncia-novas-sancoes-ao-irao_e1739502\n- [rtp_latest] Negociador ucraniano reuniu-se na Florida com representantes dos EUA\n  O negociador ucraniano Rustem Umerov chegou hoje ao estado norte-americano da Florida para reuniões com representantes de Washington, anunciou o Presidente da Ucrânia, numa fase em que as negociações \n  URL: https://www.rtp.pt/noticias/guerra-na-ucrania/negociador-ucraniano-reuniu-se-na-florida-com-representantes-dos-eua_n1739661\n- [rtp_latest] Proibição de fornecedores vai implicar custos muito significativos diz NOS\n  O presidente executivo (CEO) da NOS considerou hoje que a proibição de alguns fornecedores vai implicar custos muito significativos para as telecomunicações, salientando que se a Europa quer que os op\n  URL: https://www.rtp.pt/noticias/economia/proibicao-de-fornecedores-vai-implicar-custos-muito-significativos-diz-nos_n1739716\n- [rtp_latest] Infeciologista explica que "potencial pandémico" do hantavírus "é francamente menor"\n  O infeciologista António Silva Graça explicou, no Telejornal desta quarta-feira, que &quot;o potencial pandémico é francamente menor&quot; com o hantavírus do que com a covid-19.\n  URL: https://www.rtp.pt/noticias/mundo/infeciologista-explica-que-potencial-pandemico-do-hantavirus-e-francamente-menor_v1739747\n- [rtp_latest] Hantavírus. Espanha e Países Baixos organizam repatriamentos de 140 pessoas\n  Os Estados Unidos da América foram, até agora, o único país a comunicar o envio de um avião às Canárias, para repatriar os 17 norte-americanos ainda a bordo do MV Hondius, o navio cruzeiro onde ocorre\n  URL: https://www.rtp.pt/noticias/mundo/hantavirus-espanha-e-paises-baixos-organizam-repatriamentos-de-140-pessoas_n1739744\n- [rtp_latest] Otamendi castigado com um jogo, Rui Costa suspenso 25 dias\n  O futebolista Nicolas Otamendi, capitão do Benfica, foi hoje suspenso por um jogo pelo Conselho de Disciplina (CD) da Federação Portuguesa de Futebol (FPF), que ainda castigou Rui Costa com uma suspen\n  URL: https://www.rtp.pt/noticias/benfica/otamendi-castigado-com-um-jogo-rui-costa-suspenso-25-dias_d1739739\n- [rtp_latest] Esquadra do Rato. Libertados polícia e segurança que pediu habeas corpus\n  Catorze polícias suspeitos no caso das agressões na esquadra do Rato foram ouvidos no Tribunal Central de Instrução Criminal de Lisboa. Dos 15 elementos da PSP detidos terça-feira, um foi libertado no\n  URL: https://www.rtp.pt/noticias/pais/esquadra-do-rato-libertados-policia-e-seguranca-que-pediu-habeas-corpus_v1739742\n- [cmjornal] <![CDATA[ Portugal vai exigir visto de residência para estudo aos estrangeiros que entram nas escolas portugueses ]]>\n  Diploma foi esta quinta-feira anunciado no comunicado divulgado após o Conselho de Ministros.\n  URL: https://www.cmjornal.pt/cm-ao-minuto/detalhe/portugal-vai-exigir-visto-de-residencia-para-estudo-aos-estrangeiros-que-entram-nas-escolas-portugueses\n- [cmjornal] <![CDATA[ UGT acusa Governo de ter minado confiança com "constante avanço e recuo" ]]>\n  "O constante avanço e recuo de propostas" do Governo de Luís Montenegro tornou "incerto o resultado e minou a confiança para o momento seguinte", escreve a UGT.\n  URL: https://www.cmjornal.pt/sociedade/detalhe/ugt-acusa-governo-de-ter-minado-confianca-com-constante-avanco-e-recuo\n- [cmjornal] <![CDATA[ Lisboa recebe o maior veleiro do mundo ]]>\n  Orient Express Corinthian fez escala inaugural na capital portuguesa.\n  URL: https://www.cmjornal.pt/vidas/detalhe/lisboa-recebe-o-maior-veleiro-do-mundo\n- [cmjornal] <![CDATA[ Jovens católicos raptados pelo Daesh em Moçambique  ]]>\n  Igreja de São Luis foi queimada e reduzida a escombros. Cabo Delgado está a ferro e fogo.\n  URL: https://www.cmjornal.pt/mais-cm/especiais/coronavirus/mundo/detalhe/jovens-catolicos-raptados-pelo-daesh-em-mocambique\n- [cmjornal] <![CDATA[ Morreu Carlos Brito, histórico dirigente do PCP ]]>\n  Tinha 93 anos.\n  URL: https://www.cmjornal.pt/politica/detalhe/morreu-carlos-brito-historico-dirigente-do-pcp\n- [cmjornal] <![CDATA[ Ryanair volta a insistir: companhia aérea quer que novo sistema de controlo fronteiriço seja suspenso em Lisboa ]]>\n  Em abril, a empresa já tinha pedido através de um comunicado que a medida fosse suspensa.\n  URL: https://www.cmjornal.pt/sociedade/detalhe/ryanair-volta-a-insistir-companhia-aerea-quer-que-novo-sistema-de-controlo-fronteirico-seja-suspenso-em-lisboa\n- [cmjornal] <![CDATA[ Investigação judicial visa Elon Musk por possíveis desvios da rede social X ]]>\n  Empresário norte-americano não respondeu à convocatória da justiça francesa para o interrogatório livre no dia 20 de abril.\n  URL: https://www.cmjornal.pt/mundo/detalhe/investigacao-judicial-visa-elon-musk-por-possiveis-desvios-da-rede-social-x\n- [cmjornal] <![CDATA[ "Achei mesmo que me ia bater": presidente da OpenAI revela reunião tensa com Elon Musk em tribunal ]]>\n  Testemunho surge no âmbito do processo judicial movido por Elon Musk contra a empresa de inteligência artificial.\n  URL: https://www.cmjornal.pt/mundo/detalhe/achei-mesmo-que-me-ia-bater-presidente-da-openai-revela-reuniao-tensa-com-elon-musk-em-tribunal\n</rss_headlines>\n\n<instructions>\n1. Focus on the assigned topic above.\n2. Search the web for detailed information. Use Portuguese search queries.\n3. For material type, focus on: in-depth topic requiring compilation from multiple sources (3+ sources minimum)\n4. Find 3-5 relevant sources with full details\n5. For each source: title, key facts (3-5 sentences), source URL\n6. If there are utility alerts (water/electricity outages, transport disruptions), note them\n7. For material/guide articles: find at least 3 different sources to compile from\n\nReturn your findings as a structured research brief.\n</instructions>\n\n<existing_articles>\nDo NOT cover topics already published: \n</existing_articles>\n\n<previous_coverage>\nIf this topic is a FOLLOW-UP or related to a previous article, you MUST read the full text of relevant previous articles to reference them properly.\n\nHow to find previous articles:\n1. Use Glob to search: content/*.md\n2. Use Read to read the full markdown file, e.g.: content/some-slug.md\n3. Articles are markdown with YAML frontmatter (title, date, slug, tags, source_urls)\n4. The body text starts after the second "---" line\n\nInclude in your research brief:\n- Which previous articles are related (slug + title)\n- Key facts from those articles that should be referenced\n- What\'s NEW in today\'s story vs. what we already covered\n- Suggested cross-reference: "Link to our previous article: https://pastelka.news/{slug}/"\n</previous_coverage>\n</task>', '-m', 'gemini-2.5-flash', '-o', 'json', '--approval-mode', 'plan', '--skip-trust']' timed out after 300 seconds
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 147, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 20, in run
+    ctx.research_text = dispatch_research(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 458, in dispatch_research
+    return gemini_search(prompt, system=system, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 216, in gemini_search
+    raise exc
+TimeoutError: gemini_search timed out after 300s
+21:29:56 [pipeline] INFO: === Article 4/10 ===
+21:29:56 [pipeline] INFO: --- Article: [news] Українська художниця обрала Лісабон: історія інтеграції чере ---
+21:34:56 [pipeline.llm] WARNING: gemini_search retry 1/2: gemini_search timed out after 300s — sleeping 5.5s
+21:40:02 [pipeline.llm] WARNING: gemini_search retry 2/2: gemini_search timed out after 300s — sleeping 10.4s
+21:45:12 [pipeline] ERROR: Failed to generate article: Українська художниця обрала Лісабон: історія інтеграції чере
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 202, in gemini_search
+    proc = subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['gemini', '-p', '<system>\nYou are a research assistant for Pashtelka, a Ukrainian news outlet covering Portugal.\nYour task is to find current Portuguese news relevant to Ukrainians living in Portugal.\n\nFocus areas:\n- Breaking Portuguese news (politics, economy, society)\n- Immigration/AIMA updates\n- Utility alerts (water, electricity, transport disruptions)\n- Municipal announcements (Lisbon, Porto, Faro)\n- Weather warnings\n- Tax/legal deadlines\n- Employment and housing market\n- Community events\n\nSearch in Portuguese. Return detailed findings with source URLs.\nAlways include the original Portuguese source URL for every fact.\nFind at least 3 different sources for material/guide articles.\n</system>\n\n<task>\n<task>\nResearch Portuguese news for a news article.\n</task>\n\n\n<assigned_topic>\nTopic: Українська художниця обрала Лісабон: історія інтеграції через мистецтво\nType: news\nAngle: RTP розповів про українську художницю, яка живе в Лісабоні — як вона знайшла своє місце, де виставляється, як мистецтво допомогло з адаптацією. Конкретна історія для натхнення діаспори.\nResearch hints: RTP Cultura (\'Outras Histórias\' — Pintora ucraniana escolheu Lisboa), social media of the artist, Ukrainian cultural associations in Lisbon\n</assigned_topic>\n\n\n<rss_headlines>\n- [rtp_culture] Estúdios Ghibli vencem Prémio Princesa das Astúrias de Comunicação e Humanidades 2026\n  O Prémio Princesa das Astúrias de Comunicação e Humanidades 2026, de Espanha, foi hoje atribuído aos estúdios de animação japonesa Ghibli &quot;por terem transformado, de forma extraordinária, a criat\n  URL: https://www.rtp.pt/noticias/cultura/estudios-ghibli-vencem-premio-princesa-das-asturias-de-comunicacao-e-humanidades-2026_n1739384\n- [rtp_culture] "Concertamos Juntos". Concerto para ajudar vítimas da tempestade Kristin\n  Grandes nomes da música portuguesa juntaram-se para um concerto de apoio às vítimas da tempestade Kristin.\n  URL: https://www.rtp.pt/noticias/cultura/concertamos-juntos-concerto-para-ajudar-vitimas-da-tempestade-kristin_v1739331\n- [rtp_latest] Hat-trick de João Félix reforçam liderança do Al Nassr na luta pelo título\n  O Al Nassr regressou hoje às vitórias na Liga saudita de futebol, ao bater o Al Shabab por 4-2, somando três pontos decisivos na luta pelo título, num jogo marcado pelo hat-trick de João Félix.\n  URL: https://www.rtp.pt/noticias/futebol-internacional/hat8209trick-de-joao-felix-reforca-lideranca-do-al-nassr-na-luta-pelo-titulo_d1739757\n- [rtp_latest] Aston Villa na final ao golear Nottingham de Vítor Pereira\n  Os ingleses do Aston Villa qualificaram-se hoje para a final da Liga Europa em futebol, marcando encontro com os alemães do Friburgo, ao golearem em casa os compatriotas do Nottingham Forest, de Vítor\n  URL: https://www.rtp.pt/noticias/liga-europa/aston-villa-na-final-ao-golear-nottingham-de-vitor-pereira_d1739753\n- [rtp_latest] Reunião "amigável". Secretário de Estado dos EUA visitou Leão XIV\n  Foi uma reunião amigável e construtiva. É assim que está a ser descrito o encontro entre o papa e o secretário de Estado norte-americano. Os dois homens falaram sobre a situação no Médio Oriente, com \n  URL: https://www.rtp.pt/noticias/mundo/reuniao-amigavel-secretario-de-estado-dos-eua-visitou-leao-xiv_v1739754\n- [rtp_latest] Departamento do Tesouro dos EUA anuncia novas sanções ao Irão\n  O presidente dos Estados Unidos, Donald Trump, considerou &quot;muito possível&quot; um acordo de paz com o Irão, o que provocou uma queda do preço do petróleo e uma subida acentuada das bolsas. Teerã\n  URL: https://www.rtp.pt/noticias/mundo/departamento-do-tesouro-dos-eua-anuncia-novas-sancoes-ao-irao_e1739502\n- [rtp_latest] Negociador ucraniano reuniu-se na Florida com representantes dos EUA\n  O negociador ucraniano Rustem Umerov chegou hoje ao estado norte-americano da Florida para reuniões com representantes de Washington, anunciou o Presidente da Ucrânia, numa fase em que as negociações \n  URL: https://www.rtp.pt/noticias/guerra-na-ucrania/negociador-ucraniano-reuniu-se-na-florida-com-representantes-dos-eua_n1739661\n- [rtp_latest] Proibição de fornecedores vai implicar custos muito significativos diz NOS\n  O presidente executivo (CEO) da NOS considerou hoje que a proibição de alguns fornecedores vai implicar custos muito significativos para as telecomunicações, salientando que se a Europa quer que os op\n  URL: https://www.rtp.pt/noticias/economia/proibicao-de-fornecedores-vai-implicar-custos-muito-significativos-diz-nos_n1739716\n- [rtp_latest] Infeciologista explica que "potencial pandémico" do hantavírus "é francamente menor"\n  O infeciologista António Silva Graça explicou, no Telejornal desta quarta-feira, que &quot;o potencial pandémico é francamente menor&quot; com o hantavírus do que com a covid-19.\n  URL: https://www.rtp.pt/noticias/mundo/infeciologista-explica-que-potencial-pandemico-do-hantavirus-e-francamente-menor_v1739747\n- [rtp_latest] Hantavírus. Espanha e Países Baixos organizam repatriamentos de 140 pessoas\n  Os Estados Unidos da América foram, até agora, o único país a comunicar o envio de um avião às Canárias, para repatriar os 17 norte-americanos ainda a bordo do MV Hondius, o navio cruzeiro onde ocorre\n  URL: https://www.rtp.pt/noticias/mundo/hantavirus-espanha-e-paises-baixos-organizam-repatriamentos-de-140-pessoas_n1739744\n- [rtp_latest] Otamendi castigado com um jogo, Rui Costa suspenso 25 dias\n  O futebolista Nicolas Otamendi, capitão do Benfica, foi hoje suspenso por um jogo pelo Conselho de Disciplina (CD) da Federação Portuguesa de Futebol (FPF), que ainda castigou Rui Costa com uma suspen\n  URL: https://www.rtp.pt/noticias/benfica/otamendi-castigado-com-um-jogo-rui-costa-suspenso-25-dias_d1739739\n- [rtp_latest] Esquadra do Rato. Libertados polícia e segurança que pediu habeas corpus\n  Catorze polícias suspeitos no caso das agressões na esquadra do Rato foram ouvidos no Tribunal Central de Instrução Criminal de Lisboa. Dos 15 elementos da PSP detidos terça-feira, um foi libertado no\n  URL: https://www.rtp.pt/noticias/pais/esquadra-do-rato-libertados-policia-e-seguranca-que-pediu-habeas-corpus_v1739742\n- [cmjornal] <![CDATA[ Portugal vai exigir visto de residência para estudo aos estrangeiros que entram nas escolas portugueses ]]>\n  Diploma foi esta quinta-feira anunciado no comunicado divulgado após o Conselho de Ministros.\n  URL: https://www.cmjornal.pt/cm-ao-minuto/detalhe/portugal-vai-exigir-visto-de-residencia-para-estudo-aos-estrangeiros-que-entram-nas-escolas-portugueses\n- [cmjornal] <![CDATA[ UGT acusa Governo de ter minado confiança com "constante avanço e recuo" ]]>\n  "O constante avanço e recuo de propostas" do Governo de Luís Montenegro tornou "incerto o resultado e minou a confiança para o momento seguinte", escreve a UGT.\n  URL: https://www.cmjornal.pt/sociedade/detalhe/ugt-acusa-governo-de-ter-minado-confianca-com-constante-avanco-e-recuo\n- [cmjornal] <![CDATA[ Lisboa recebe o maior veleiro do mundo ]]>\n  Orient Express Corinthian fez escala inaugural na capital portuguesa.\n  URL: https://www.cmjornal.pt/vidas/detalhe/lisboa-recebe-o-maior-veleiro-do-mundo\n- [cmjornal] <![CDATA[ Jovens católicos raptados pelo Daesh em Moçambique  ]]>\n  Igreja de São Luis foi queimada e reduzida a escombros. Cabo Delgado está a ferro e fogo.\n  URL: https://www.cmjornal.pt/mais-cm/especiais/coronavirus/mundo/detalhe/jovens-catolicos-raptados-pelo-daesh-em-mocambique\n- [cmjornal] <![CDATA[ Morreu Carlos Brito, histórico dirigente do PCP ]]>\n  Tinha 93 anos.\n  URL: https://www.cmjornal.pt/politica/detalhe/morreu-carlos-brito-historico-dirigente-do-pcp\n- [cmjornal] <![CDATA[ Ryanair volta a insistir: companhia aérea quer que novo sistema de controlo fronteiriço seja suspenso em Lisboa ]]>\n  Em abril, a empresa já tinha pedido através de um comunicado que a medida fosse suspensa.\n  URL: https://www.cmjornal.pt/sociedade/detalhe/ryanair-volta-a-insistir-companhia-aerea-quer-que-novo-sistema-de-controlo-fronteirico-seja-suspenso-em-lisboa\n- [cmjornal] <![CDATA[ Investigação judicial visa Elon Musk por possíveis desvios da rede social X ]]>\n  Empresário norte-americano não respondeu à convocatória da justiça francesa para o interrogatório livre no dia 20 de abril.\n  URL: https://www.cmjornal.pt/mundo/detalhe/investigacao-judicial-visa-elon-musk-por-possiveis-desvios-da-rede-social-x\n- [cmjornal] <![CDATA[ "Achei mesmo que me ia bater": presidente da OpenAI revela reunião tensa com Elon Musk em tribunal ]]>\n  Testemunho surge no âmbito do processo judicial movido por Elon Musk contra a empresa de inteligência artificial.\n  URL: https://www.cmjornal.pt/mundo/detalhe/achei-mesmo-que-me-ia-bater-presidente-da-openai-revela-reuniao-tensa-com-elon-musk-em-tribunal\n</rss_headlines>\n\n<instructions>\n1. Focus on the assigned topic above.\n2. Search the web for detailed information. Use Portuguese search queries.\n3. For news type, focus on: general Portuguese news most relevant to Ukrainian community\n4. Find 3-5 relevant sources with full details\n5. For each source: title, key facts (3-5 sentences), source URL\n6. If there are utility alerts (water/electricity outages, transport disruptions), note them\n7. For material/guide articles: find at least 3 different sources to compile from\n\nReturn your findings as a structured research brief.\n</instructions>\n\n<existing_articles>\nDo NOT cover topics already published: \n</existing_articles>\n\n<previous_coverage>\nIf this topic is a FOLLOW-UP or related to a previous article, you MUST read the full text of relevant previous articles to reference them properly.\n\nHow to find previous articles:\n1. Use Glob to search: content/*.md\n2. Use Read to read the full markdown file, e.g.: content/some-slug.md\n3. Articles are markdown with YAML frontmatter (title, date, slug, tags, source_urls)\n4. The body text starts after the second "---" line\n\nInclude in your research brief:\n- Which previous articles are related (slug + title)\n- Key facts from those articles that should be referenced\n- What\'s NEW in today\'s story vs. what we already covered\n- Suggested cross-reference: "Link to our previous article: https://pastelka.news/{slug}/"\n</previous_coverage>\n</task>', '-m', 'gemini-2.5-flash', '-o', 'json', '--approval-mode', 'plan', '--skip-trust']' timed out after 300 seconds
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 147, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 20, in run
+    ctx.research_text = dispatch_research(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 458, in dispatch_research
+    return gemini_search(prompt, system=system, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 216, in gemini_search
+    raise exc
+TimeoutError: gemini_search timed out after 300s
+21:45:12 [pipeline] INFO: === Article 5/10 ===
+21:45:12 [pipeline] INFO: --- Article: [guide] Як отримати NISS та зареєструватися в Segurança Social: покр ---
+21:47:39 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 468 chars, latency_ms=90880, tokens_in=101972, tokens_out=5679
+21:47:39 [pipeline.stages.s2_research] INFO: Research complete: 468 chars
+21:47:42 [pipeline] ERROR: Failed to generate article: Як отримати NISS та зареєструватися в Segurança Social: покр
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 491, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 360, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0469-245c-7e82-8b0d-276dd4a3495f
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+21:47:42 [pipeline] INFO: === Article 6/10 ===
+21:47:42 [pipeline] INFO: --- Article: [news] Ринок автомобілів: різке зростання продажів і що це означає  ---
+21:49:23 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 834 chars, latency_ms=67341, tokens_in=38259, tokens_out=3120
+21:49:23 [pipeline.stages.s2_research] INFO: Research complete: 834 chars
+21:49:28 [pipeline] ERROR: Failed to generate article: Ринок автомобілів: різке зростання продажів і що це означає 
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 491, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 360, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e046a-b886-78a0-b5b5-836633196dfb
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+21:49:28 [pipeline] INFO: === Article 7/10 ===
+21:49:28 [pipeline] INFO: --- Article: [news] IC31: уряд підтверджує пріоритетність нової автостради ---
+21:51:00 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 474 chars, latency_ms=59454, tokens_in=48271, tokens_out=4323
+21:51:00 [pipeline.stages.s2_research] INFO: Research complete: 474 chars
+21:51:03 [pipeline] ERROR: Failed to generate article: IC31: уряд підтверджує пріоритетність нової автостради
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 491, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 360, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e046c-33e4-7492-b536-44140bfc4655
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+21:51:03 [pipeline] INFO: === Article 8/10 ===
+21:51:03 [pipeline] INFO: --- Article: [news] Суперечки навколо концерту Каньє Веста в Алгарве: публічне ф ---
+21:53:25 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 4532 chars, latency_ms=70184, tokens_in=24281, tokens_out=3818
+21:53:25 [pipeline.stages.s2_research] INFO: Research complete: 4532 chars
+21:53:30 [pipeline] ERROR: Failed to generate article: Суперечки навколо концерту Каньє Веста в Алгарве: публічне ф
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 491, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 360, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e046e-6ca5-70d0-a0aa-d2f729b9b8ea
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+21:53:30 [pipeline] INFO: === Article 9/10 ===
+21:53:30 [pipeline] INFO: --- Article: [utility] ISCTE створив платформу порівняння Португалії з ЄС: зарплати ---
+21:58:30 [pipeline.llm] WARNING: gemini_search retry 1/2: gemini_search timed out after 300s — sleeping 6.1s
+22:01:11 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 3887 chars, latency_ms=44818, tokens_in=19964, tokens_out=3031
+22:01:11 [pipeline.stages.s2_research] INFO: Research complete: 3887 chars
+22:01:14 [pipeline] ERROR: Failed to generate article: ISCTE створив платформу порівняння Португалії з ЄС: зарплати
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 491, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 360, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0475-8a47-7e83-b069-028b78bf98ba
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+22:01:14 [pipeline] INFO: === Article 10/10 ===
+22:01:14 [pipeline] INFO: --- Article: [news] Сегуру: Португалія має боротися за лідерство ЄС в інноваціях ---
+22:03:34 [pipeline.llm] INFO: gemini_search: model=gemini-2.5-flash, 686 chars, latency_ms=82419, tokens_in=33618, tokens_out=3178
+22:03:34 [pipeline.stages.s2_research] INFO: Research complete: 686 chars
+22:03:38 [pipeline] ERROR: Failed to generate article: Сегуру: Португалія має боротися за лідерство ЄС в інноваціях
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 150, in _generate_one_article
+    s3_generate.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s3_generate.py", line 28, in run
+    result = dispatch_structured(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 491, in dispatch_structured
+    return codex_generate(prompt, system=system, schema=schema, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 360, in codex_generate
+    raise exc
+RuntimeError: codex exec rc=1: OpenAI Codex v0.128.0 (research preview)
+--------
+workdir: /tmp
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019e0477-b796-75a0-83b4-e4abd09149fe
+--------
+user
+<system>
+You write for Pashtelka News — a Ukrainian news outlet about Portugal.
+
+Voice characteristics:
+- Warm, friendly, approachable — like a knowledgeable friend
+- Light humor where appropriate (never forced)
+- Mix Portuguese terms with Ukrainian explana
+22:03:38 [pipeline] INFO: Generated 0/10 articles
+22:03:38 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-05-07_220338.json
+22:03:38 [pipeline] INFO: Batch complete: 0 articles

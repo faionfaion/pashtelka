@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "Трудова реформа провалилась: пакет із 7 спірних заходів іде до парламенту без згоди профспілок",
+      "type": "news",
+      "angle": "Які саме 7 заходів заблокували угоду, що з них стосується іноземних працівників (строкові контракти, звільнення, банк годин), прогноз голосування в парламенті",
+      "sources_hint": "Público, RTP Economia, Expresso, Jornal de Negócios; search 'reforma laboral sete medidas pacote parlamento'",
+      "priority": 1
+    },
+    {
+      "topic": "UGT не виключає загального страйку 3 червня: що це означає для повсякденного життя",
+      "type": "news",
+      "angle": "Що паралізується під час greve geral в Португалії — транспорт, школи, лікарні; які serviços mínimos гарантовані; як підготуватись українцям-працівникам (права, участь, наслідки)",
+      "sources_hint": "RTP Economia, TSF, CGTP/UGT press releases; search 'UGT greve geral 3 junho 2026 serviços mínimos'",
+      "priority": 1
+    },
+    {
+      "topic": "8 травня — День пам'яті та примирення: як українська громада Португалії вшановує",
+      "type": "news",
+      "angle": "Заходи у Лісабоні, Порту та інших містах; чому Україна святкує 8 травня, а не 9-го; португальсько-українська солідарність; коментарі організаторів з громади",
+      "sources_hint": "Ukrainian community Facebook groups Portugal, Associação dos Ucranianos em Portugal, Câmara de Lisboa events; search 'dia memória 8 maio comunidade ucraniana Portugal 2026'",
+      "priority": 1
+    },
+    {
+      "topic": "Як записати дитину до португальської школи у 2026: покроковий гід з урахуванням нових візових вимог",
+      "type": "guide",
+      "angle": "Повний алгоритм: (1) НОВА ВИМОГА — уряд схвалив законопроєкт про візу для навчання іноземних дітей: хто підпадає, чи стосується дітей з тимчасовим захистом, які документи, (2) вибір escola pública vs privada, (3) документи (título de residência, NIF, NISS, vacinação, equivalência), (4) терміни матрікули (inscrição 1.º ciclo, transferências), (5) мовна підтримка PLNM для україномовних дітей, (6) контакти шкільних agrupamentos у Лісабоні, Порту, Алгарве",
+      "sources_hint": "RTP Política, Diário de Notícias, AIMA portal, Governo.pt press releases, DGE (Direção-Geral da Educação), Portal das Matrículas, school agrupamento websites Lisboa/Porto/Faro; search 'visto residência estudo estrangeiros escolas 2026', 'matrícula escola pública estrangeiros 2026 documentos equivalência PLNM'",
+      "priority": 1
+    },
+    {
+      "topic": "Оренда житла в Португалії у 2026: нові правила, ціни по регіонах та права орендарів-іноземців",
+      "type": "material",
+      "angle": "Компіляція: (1) зміни в Novo Regime do Arrendamento Urbano 2025-2026, (2) середні ціни оренди по районах Лісабона, Порту, Фару, Сетубал — Idealista/INE дані, (3) права орендаря-іноземця: контракт, NIF, depósito, оскарження підвищення ренди, (4) типові шахрайства при оренді та як їх уникнути",
+      "sources_hint": "Idealista.pt rental index May 2026, INE housing stats, Deco Proteste tenants rights, NRAU legal text, Portal da Habitação; search 'preços arrendamento maio 2026 Portugal novos regras inquilinos estrangeiros fraudes'",
+      "priority": 1
+    },
+    {
+      "topic": "SNS перевантажений: «неналежні госпіталізації» скорочують доступ до допомоги",
+      "type": "news",
+      "angle": "Що відбувається з чергами та прийомами в центрах здоров'я та urgências; як це впливає на іноземців без médico de família; поради — коли йти до urgência, а коли до SNS24",
+      "sources_hint": "RTP Portugal, Jornal Médico, SNS.gov.pt statistics; search 'SNS internamentos inapropriados resposta diminuída maio 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Chega хоче позбавляти громадянства: що передбачає проєкт конституційної ревізії",
+      "type": "news",
+      "angle": "Конкретно: хто може втратити громадянство за пропозицією Chega, чи стосується це натуралізованих іноземців, які шанси проходження в парламенті, юридична оцінка",
+      "sources_hint": "RTP Portugal, Observador, Parlamento.pt constitutional revision proposals; search 'Chega revisão constitucional perda nacionalidade prisão perpétua 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Тимчасовий захист для українців у Португалії: чи буде продовження у 2026 і що впливає на рішення",
+      "type": "news",
+      "angle": "Практичний фокус: поточний статус рішення Ради ЄС про Proteção Temporária, терміни чинного рішення, які сценарії продовження/припинення, що робити для підготовки (документи, альтернативні статуси); коментар юриста з міграційного права",
+      "sources_hint": "EU Council decisions on temporary protection, AIMA, SEF archives, Jornal de Notícias; search 'proteção temporária ucranianos Portugal 2026 renovação conselho UE decisão'",
+      "priority": 2
+    },
+    {
+      "topic": "Вихідні 9–10 травня: безкоштовні події у Лісабоні, Порту, Фару та Алгарве",
+      "type": "news",
+      "angle": "П'ятнична добірка: фестивалі, ярмарки, відкриті музеї, сімейні активності; погода на вихідні; сезонні ринки; що відвідати з дітьми — окремо по регіонах",
+      "sources_hint": "TimeOut Lisboa, TimeOut Porto, Câmara de Faro eventos, VisitAlgarve, IPMA weekend forecast; search 'eventos fim de semana 9 10 maio 2026 Lisboa Porto Algarve grátis'",
+      "priority": 2
+    },
+    {
+      "topic": "NOS попереджає про «значне зростання витрат» через заборону постачальників: чи подорожчає мобільний зв'язок",
+      "type": "news",
+      "angle": "Контекст заборони китайських постачальників у телекомі ЄС; які оператори в Португалії можуть підняти ціни; порівняння тарифів NOS/MEO/Vodafone для іммігрантів; альтернативи",
+      "sources_hint": "RTP Economia, ANACOM reports, Deco Proteste comparisons; search 'NOS proibição fornecedores custos 2026 tarifas móvel'",
+      "priority": 3
+    }
+  ],
+  "date": "2026-05-08",
+  "created_at": "2026-05-08T03:00:02.502146+00:00"
+}

@@ -1,0 +1,128 @@
+{
+  "timestamp": "2026-05-07_220338",
+  "status": "empty",
+  "dry_run": false,
+  "slug": "",
+  "author": "Pastelka News",
+  "duration_s": 3186.6,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "research:IMI у травні: змінені формати ",
+      "status": "ok",
+      "duration_s": 151.1,
+      "error": null
+    },
+    {
+      "name": "generate:IMI у травні: змінені формати ",
+      "status": "failed",
+      "duration_s": 4.7,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:AIMA: весняне оновлення статус",
+      "status": "ok",
+      "duration_s": 89.9,
+      "error": null
+    },
+    {
+      "name": "generate:AIMA: весняне оновлення статус",
+      "status": "failed",
+      "duration_s": 2.0,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Трудові права іноземців у Порт",
+      "status": "failed",
+      "duration_s": 916.2,
+      "error": "gemini_search timed out after 300s"
+    },
+    {
+      "name": "research:Українська художниця обрала Лі",
+      "status": "failed",
+      "duration_s": 916.2,
+      "error": "gemini_search timed out after 300s"
+    },
+    {
+      "name": "research:Як отримати NISS та зареєструв",
+      "status": "ok",
+      "duration_s": 146.5,
+      "error": null
+    },
+    {
+      "name": "generate:Як отримати NISS та зареєструв",
+      "status": "failed",
+      "duration_s": 3.7,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Ринок автомобілів: різке зрост",
+      "status": "ok",
+      "duration_s": 100.5,
+      "error": null
+    },
+    {
+      "name": "generate:Ринок автомобілів: різке зрост",
+      "status": "failed",
+      "duration_s": 4.9,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:IC31: уряд підтверджує пріорит",
+      "status": "ok",
+      "duration_s": 92.2,
+      "error": null
+    },
+    {
+      "name": "generate:IC31: уряд підтверджує пріорит",
+      "status": "failed",
+      "duration_s": 2.9,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Суперечки навколо концерту Кан",
+      "status": "ok",
+      "duration_s": 142.7,
+      "error": null
+    },
+    {
+      "name": "generate:Суперечки навколо концерту Кан",
+      "status": "failed",
+      "duration_s": 4.2,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:ISCTE створив платформу порівн",
+      "status": "ok",
+      "duration_s": 461.7,
+      "error": null
+    },
+    {
+      "name": "generate:ISCTE створив платформу порівн",
+      "status": "failed",
+      "duration_s": 2.6,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    },
+    {
+      "name": "research:Сегуру: Португалія має боротис",
+      "status": "ok",
+      "duration_s": 140.6,
+      "error": null
+    },
+    {
+      "name": "generate:Сегуру: Португалія має боротис",
+      "status": "failed",
+      "duration_s": 3.2,
+      "error": "codex exec rc=1: OpenAI Codex v0.128.0 (research preview)\n--------\nworkdir: /tmp\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nses"
+    }
+  ]
+}

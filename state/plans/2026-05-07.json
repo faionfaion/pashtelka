@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "topic": "IMI у травні: змінені формати повідомлень і терміни сплати податку на нерухомість",
+      "type": "news",
+      "angle": "Portal das Finanças надіслав нові формати квитанцій IMI — що змінилося, до якого числа платити, як не пропустити дедлайн. Пояснення для власників і орендарів, які платять за угодою.",
+      "sources_hint": "RTP Economia (IMI a pagamento no mês de maio), Portal das Finanças, Autoridade Tributária announcements, Idealista PT, Dinheiro Vivo",
+      "priority": 1
+    },
+    {
+      "topic": "AIMA: весняне оновлення статусу обробки справ та автоматичних продовжень",
+      "type": "immigration",
+      "angle": "Що відомо про темпи розгляду справ AIMA станом на травень 2026 — скільки справ у черзі, як працює автоматичне продовження дозволів, нові функції порталу. Конкретні поради: як перевірити статус онлайн.",
+      "sources_hint": "AIMA.gov.pt, SEF/AIMA portal status updates, Lusa agency 'AIMA' keyword, Público imigração, Portuguese Ombudsman reports, Facebook groups 'Ukrainians in Portugal'",
+      "priority": 1
+    },
+    {
+      "topic": "Трудові права іноземців у Португалії: що змінює реформа CIP/UGT 2026 року",
+      "type": "material",
+      "angle": "Об'єднаний матеріал: CIP погодилася на 4 ключові вимоги UGT — які саме зміни та як вони вплинуть на працівників-іноземців (контракти, звільнення, понаднормові, лікарняні, відпустка). Повний гід: що гарантує Código do Trabalho іноземцям, різниця між contrato sem termo і a termo, як подати скаргу до ACT, права при звільненні. Порівняння з українським законодавством. Фокус на будівництво, HoReCa, кліннінг.",
+      "sources_hint": "RTP Economia (Lei laboral CIP UGT), Jornal de Negócios, ECO, Público economia, Código do Trabalho (DRE.pt), ACT.gov.pt worker rights guides, IEFP.pt foreigner employment info, CIP/UGT negotiation documents, EU Posted Workers Directive as applied in PT",
+      "priority": 1
+    },
+    {
+      "topic": "Українська художниця обрала Лісабон: історія інтеграції через мистецтво",
+      "type": "news",
+      "angle": "RTP розповів про українську художницю, яка живе в Лісабоні — як вона знайшла своє місце, де виставляється, як мистецтво допомогло з адаптацією. Конкретна історія для натхнення діаспори.",
+      "sources_hint": "RTP Cultura ('Outras Histórias' — Pintora ucraniana escolheu Lisboa), social media of the artist, Ukrainian cultural associations in Lisbon",
+      "priority": 1
+    },
+    {
+      "topic": "Як отримати NISS та зареєструватися в Segurança Social: покрокова інструкція",
+      "type": "guide",
+      "angle": "Практичний гід: що таке NISS, хто його потребує, які документи зібрати, куди звертатися (онлайн через Segurança Social Direta та офлайн), скільки чекати, типові помилки. Окремо — що робити з тимчасовим захистом. Адреси офісів у Лісабоні, Порту, Фару.",
+      "sources_hint": "Segurança Social website (seg-social.pt), Segurança Social Direta portal, NISS application forms, ISS guides for foreign citizens, AIMA cross-references for temporary protection holders",
+      "priority": 1
+    },
+    {
+      "topic": "Ринок автомобілів: різке зростання продажів і що це означає для покупців",
+      "type": "news",
+      "angle": "Продажі нових авто зросли — але чи стали машини доступнішими? Огляд цін на вживані та нові, які марки лідирують, на що звертати увагу українцям при купівлі (IUC, inspeção, seguro). Фокус на бюджетний сегмент.",
+      "sources_hint": "RTP Economia (Mercado automóvel vendas), ACAP statistics, Standvirtual.com price trends, Auto Sapo",
+      "priority": 2
+    },
+    {
+      "topic": "IC31: уряд підтверджує пріоритетність нової автостради",
+      "type": "news",
+      "angle": "Проєкт IC31 — нова дорога, яка з'єднає регіони. Де саме пройде, як вплине на транспортну доступність, коли очікується будівництво. Для українців, які живуть поза Лісабоном і залежать від автомобіля — Лейрія, центральний регіон.",
+      "sources_hint": "RTP (Projeto IC31 prioritário Governo), Infraestruturas de Portugal, local newspapers (Região de Leiria, Diário de Leiria)",
+      "priority": 2
+    },
+    {
+      "topic": "Суперечки навколо концерту Каньє Веста в Алгарве: публічне фінансування під питанням",
+      "type": "news",
+      "angle": "Єврейська громада виступила проти публічного фінансування концерту в Алгарве — чому це важливо, яка позиція муніципалітету, чи відбудеться захід. Контекст для мешканців Алгарве та Фару: як витрачаються публічні кошти громади.",
+      "sources_hint": "RTP Cultura (Comunidade Israelita Kanye West Algarve), CM Jornal, Sul Informação, Barlavento online",
+      "priority": 2
+    },
+    {
+      "topic": "ISCTE створив платформу порівняння Португалії з ЄС: зарплати, освіта, здоров'я",
+      "type": "utility",
+      "angle": "Нова аналітична платформа дозволяє порівняти Португалію з іншими країнами ЄС за десятками показників — зарплати, вартість життя, освіта, охорона здоров'я. Як нею користуватися та що цікавого можна дізнатися. Корисно для тих, хто обирає між країнами ЄС.",
+      "sources_hint": "RTP (ISCTE plataforma analítica Portugal UE), ISCTE-IUL website, Eurostat comparison tools",
+      "priority": 3
+    },
+    {
+      "topic": "Сегуру: Португалія має боротися за лідерство ЄС в інноваціях",
+      "type": "news",
+      "angle": "Колишній лідер PS закликає до реформи ЄС — що конкретно пропонує, як це вписується в поточну політичну дискусію Португалії. Коротко й чітко: чому діаспорі варто стежити за євроінтеграційним курсом.",
+      "sources_hint": "RTP (Seguro Europa unida democracia, Seguro UE reformar inovação), Público política, Observador",
+      "priority": 3
+    }
+  ],
+  "date": "2026-05-07",
+  "created_at": "2026-05-07T12:18:44.829931+00:00"
+}
