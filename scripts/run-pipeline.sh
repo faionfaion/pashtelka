@@ -48,4 +48,24 @@ python3 -m pipeline "$MODE" -v >> "$LOG_DIR/cron.log" 2>&1
 EXIT_CODE=$?
 
 echo "$(date '+%Y-%m-%d %H:%M:%S') Pipeline $MODE exit: $EXIT_CODE" >> "$LOG_DIR/cron.log"
+
+# After a successful generate, drain today's queue to TG immediately.
+# Each `publish` call posts ONE article; loop until there is nothing
+# left so the channel is current as soon as generate finishes.
+if [ "$MODE" = "generate" ] && [ "$EXIT_CODE" -eq 0 ]; then
+    echo "$(date '+%Y-%m-%d %H:%M:%S') Draining publish queue" >> "$LOG_DIR/cron.log"
+    for _ in $(seq 1 20); do
+        python3 -m pipeline publish -v >> "$LOG_DIR/cron.log" 2>&1
+        PUB_RC=$?
+        if [ "$PUB_RC" -ne 0 ]; then
+            echo "$(date '+%Y-%m-%d %H:%M:%S') Publish exit: $PUB_RC (stopping)" >> "$LOG_DIR/cron.log"
+            break
+        fi
+        if tail -5 "$LOG_DIR/cron.log" | grep -q "Nothing to publish"; then
+            break
+        fi
+        sleep 60
+    done
+fi
+
 echo "---" >> "$LOG_DIR/cron.log"
