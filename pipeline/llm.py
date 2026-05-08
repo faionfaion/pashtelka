@@ -283,6 +283,25 @@ def gemini_search(
     raise last_error or RuntimeError("gemini_search: retry exhausted")
 
 
+def _to_strict_schema(node):
+    """Adapt a JSON Schema for OpenAI Codex strict mode.
+
+    OpenAI's structured-output strict validator rejects any object schema
+    that does not declare ``additionalProperties: false``. We don't want
+    to clutter every checked-in schema with that flag, so we add it
+    just-in-time on every nested object level before sending the schema
+    to Codex.
+    """
+    if isinstance(node, dict):
+        out = {k: _to_strict_schema(v) for k, v in node.items()}
+        if out.get("type") == "object" and "additionalProperties" not in out:
+            out["additionalProperties"] = False
+        return out
+    if isinstance(node, list):
+        return [_to_strict_schema(item) for item in node]
+    return node
+
+
 def codex_generate(
     prompt: str,
     *,
@@ -313,7 +332,9 @@ def codex_generate(
         with tempfile.TemporaryDirectory(prefix="codex_") as tmpdir:
             schema_path = Path(tmpdir) / "schema.json"
             out_path = Path(tmpdir) / "last.txt"
-            schema_path.write_text(json.dumps(schema), encoding="utf-8")
+            schema_path.write_text(
+                json.dumps(_to_strict_schema(schema)), encoding="utf-8"
+            )
 
             cmd = [
                 CODEX_BIN, "exec",

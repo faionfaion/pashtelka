@@ -180,7 +180,7 @@ CODEX_BIN = os.environ.get("CODEX_BIN", "codex")
 GEMINI_BIN = os.environ.get("GEMINI_BIN", "gemini")
 
 # Per-vendor timeouts (seconds).
-GEMINI_TIMEOUT = int(os.environ.get("GEMINI_TIMEOUT", "300"))
+GEMINI_TIMEOUT = int(os.environ.get("GEMINI_TIMEOUT", "600"))
 CODEX_TIMEOUT = int(os.environ.get("CODEX_TIMEOUT", "600"))
 
 # ---- pt-translation-b1 ----
