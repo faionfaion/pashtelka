@@ -18742,3 +18742,74 @@ Voice characteristics:
 2026-05-08 03:23:49 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-08 03:23:49 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-7-measures-no-agreement-parliament-may-2026/uk.md
 2026-05-08 03:23:49 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-7-measures-no-agreement-parliament-may-2026/pt.md (b1_warning=True)
+2026-05-08 03:23:50 [pipeline] INFO: Article ready: trabalho-xxi-7-measures-no-agreement-parliament-may-2026 (Трудова реформа провалилась: 7 спірних заходів іду)
+2026-05-08 03:23:50 [pipeline] INFO: === Article 2/10 ===
+2026-05-08 03:23:50 [pipeline] INFO: --- Article: [news] UGT не виключає загального страйку 3 червня: що це означає д ---
+2026-05-08 03:23:50 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:23:50 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:28:47 [pipeline.stages.s2_research] INFO: Research complete: 14005 chars
+2026-05-08 03:28:47 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:28:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:29:54 [pipeline.stages.s3_generate] INFO: Generated: 'Загальний страйк 3 червня: що паралізується в Португалії і як підготуватись' (slug=greve-geral-june-3-what-stops-working-how-to-prepare-ukrainians, 407 words, 9 sources)
+2026-05-08 03:29:54 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:29:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:31:04 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-08 03:31:04 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, практична й релевантна для аудиторії. Джерела солідні, розділ про права — відмінний. Але є кілька моментів для доопрацювання:
+
+**Мова:**
+1. «іммігрант» → «імігрант» (одне «
+2026-05-08 03:31:04 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:31:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:32:09 [pipeline.stages.s5_revise] INFO: Revised article: 480 words
+2026-05-08 03:32:09 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-08 03:32:09 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:32:09 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:33:13 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-08 03:33:13 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна структурно і дуже корисна для цільової аудиторії, але є кілька проблем, які треба виправити перед публікацією:
+
+1. **ФАКТИЧНА ПОМИЛКА — Fertagus ≠ пороми.** Fertagus — це приміська заліз
+2026-05-08 03:33:13 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:33:13 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:34:17 [pipeline.stages.s5_revise] INFO: Revised article: 546 words
+2026-05-08 03:34:17 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-05-08 03:34:17 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:34:17 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:35:14 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-08 03:35:14 [pipeline.stages.s4_review] INFO: Feedback: Якісна, практична стаття з добрим балансом новини та сервісу. Кілька зауважень перед публікацією:
+
+1. **Дублювання заголовка:** Заголовок і тип статті повторюються двічі на початку — видаліть дубль.
+
+
+2026-05-08 03:35:14 [pipeline] INFO: Article approved after 2 revision(s)
+2026-05-08 03:35:14 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (4968 chars in)
+2026-05-08 03:35:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:35:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:38:48 [pipeline.llm] WARNING: translation cost ${0.1383} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2328, out_tokens=1378). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-08 03:38:48 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=20.6 avg_sent=14.0 coverage=63.4% (391 words counted)
+2026-05-08 03:38:48 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=20.6, avg_sent=14.0, coverage=63.4%); retrying with addendum
+2026-05-08 03:38:48 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:38:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:43:38 [pipeline.llm] WARNING: translation cost ${0.1301} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2403, out_tokens=1254). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-08 03:43:38 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=44.2 avg_sent=14.2 coverage=72.9% (387 words counted)
+2026-05-08 03:43:38 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=44.2, avg_sent=14.2, coverage=72.9%)
+2026-05-08 03:43:38 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:43:38 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:44:07 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1273 chars, vocab: 5 words, pt: 241 chars
+2026-05-08 03:44:07 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=greve-geral-june-3-what-stops-working-how-to-prepare-ukrainians
+2026-05-08 03:44:07 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:44:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:44:26 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Restructured into clear foreground-midground-background layers for a single focal composition; added
+2026-05-08 03:44:26 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-08 03:44:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-08 03:45:21 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-08 03:45:22 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-08 03:45:22 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23622
+2026-05-08 03:45:22 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23622 (unknown)
+2026-05-08 03:45:22 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23675 2796001
+2026-05-08 03:45:22 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/greve-geral-june-3-what-stops-working-how-to-prepare-ukrainians.jpg (230 KB, quality=auto)
+2026-05-08 03:45:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 03:45:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 03:46:17 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-08 03:46:17 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-08 03:46:17 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/greve-geral-june-3-what-stops-working-how-to-prepare-ukrainians/uk.md
+2026-05-08 03:46:17 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/greve-geral-june-3-what-stops-working-how-to-prepare-ukrainians/pt.md (b1_warning=True)
