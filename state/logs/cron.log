@@ -2449,3 +2449,90 @@ TimeoutError: agent_query timed out after 300s
 05:54:06 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 05:54:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/temporary-protection-ukraine-portugal-2026-extension-scenarios/uk.md
 05:54:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/temporary-protection-ukraine-portugal-2026-extension-scenarios/pt.md (b1_warning=True)
+05:54:06 [pipeline] INFO: Article ready: temporary-protection-ukraine-portugal-2026-extension-scenarios (Тимчасовий захист для українців у Португалії: три )
+05:54:06 [pipeline] INFO: === Article 9/10 ===
+05:54:06 [pipeline] INFO: --- Article: [news] Вихідні 9–10 травня: безкоштовні події у Лісабоні, Порту, Фа ---
+05:54:06 [asyncio] DEBUG: Using selector: EpollSelector
+05:54:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+05:59:06 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+05:59:12 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 6.7s
+05:59:18 [asyncio] DEBUG: Using selector: EpollSelector
+05:59:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:04:18 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+06:04:23 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 12.8s
+06:04:36 [asyncio] DEBUG: Using selector: EpollSelector
+06:04:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:09:36 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+06:09:42 [pipeline.sdk] ERROR: agent_query failed after 3 attempts: agent_query timed out after 300s
+06:09:42 [pipeline] ERROR: Failed to generate article: Вихідні 9–10 травня: безкоштовні події у Лісабоні, Порту, Фа
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 147, in _generate_one_article
+    s2_research.run(ctx)
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s2_research.py", line 20, in run
+    ctx.research_text = dispatch_research(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 459, in dispatch_research
+    return _claude_research(prompt, system, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/llm.py", line 437, in _claude_research
+    return agent_query(
+           ^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 222, in agent_query
+    raise last_error  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^
+TimeoutError: agent_query timed out after 300s
+06:09:42 [pipeline] INFO: === Article 10/10 ===
+06:09:42 [pipeline] INFO: --- Article: [news] NOS попереджає про «значне зростання витрат» через заборону  ---
+06:09:42 [asyncio] DEBUG: Using selector: EpollSelector
+06:09:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:13:01 [pipeline.stages.s2_research] INFO: Research complete: 12417 chars
+06:13:01 [asyncio] DEBUG: Using selector: EpollSelector
+06:13:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:14:16 [pipeline.stages.s3_generate] INFO: Generated: 'NOS попереджає про «значне зростання витрат» через заборону Huawei: чи подорожчає мобільний зв'язок у Португалії' (slug=nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026, 482 words, 9 sources)
+06:14:16 [asyncio] DEBUG: Using selector: EpollSelector
+06:14:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:15:12 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+06:15:12 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: актуальна тема, відмінна структура за перевернутою пірамідою, багате джерельне покриття (9 джерел, кожне твердження підкріплене), і — що найцінніше — практичний блок для імігрантів із т
+06:15:12 [asyncio] DEBUG: Using selector: EpollSelector
+06:15:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:15:39 [pipeline.stages.s5_revise] INFO: Revised article: 539 words
+06:15:39 [pipeline] INFO: === Review cycle 1/3 complete ===
+06:15:39 [asyncio] DEBUG: Using selector: EpollSelector
+06:15:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:16:36 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+06:16:36 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована та дуже релевантна для цільової аудиторії. Декілька зауважень для фінального полірування:
+
+1. **Дублікат заголовка у метаданих:** Title/Type блок повторюється двічі 
+06:16:36 [pipeline] INFO: Article approved after 1 revision(s)
+06:16:36 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (4916 chars in)
+06:16:36 [asyncio] DEBUG: Using selector: EpollSelector
+06:16:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:21:06 [pipeline.llm] WARNING: translation cost ${0.1289} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2327, out_tokens=1253). Tune TRANSLATION_COST_WARN_USD if this is expected.
+06:21:06 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=37.3 avg_sent=12.0 coverage=62.7% (300 words counted)
+06:21:06 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=37.3, avg_sent=12.0, coverage=62.7%); retrying with addendum
+06:21:06 [asyncio] DEBUG: Using selector: EpollSelector
+06:21:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:22:18 [pipeline.llm] WARNING: translation cost ${0.1311} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2403, out_tokens=1268). Tune TRANSLATION_COST_WARN_USD if this is expected.
+06:22:18 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=49.5 avg_sent=11.9 coverage=75.7% (342 words counted)
+06:22:18 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=49.5, avg_sent=11.9, coverage=75.7%)
+06:22:18 [asyncio] DEBUG: Using selector: EpollSelector
+06:22:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:22:34 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1261 chars, vocab: 5 words, pt: 220 chars
+06:22:34 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026
+06:22:34 [asyncio] DEBUG: Using selector: EpollSelector
+06:22:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:22:50 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to lead with style and focal subject (tower), added explicit anatomy for cartoon character
+06:22:50 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+06:22:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+06:23:46 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+06:23:47 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+06:23:47 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23626
+06:23:47 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23626 (unknown)
+06:23:47 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23679 3472840
+06:23:47 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026.jpg (356 KB, quality=auto)
+06:23:47 [asyncio] DEBUG: Using selector: EpollSelector
+06:23:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+06:25:45 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+06:25:45 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+06:25:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026/uk.md
+06:25:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/nos-telecom-costs-huawei-ban-mobile-prices-portugal-2026/pt.md (b1_warning=True)
