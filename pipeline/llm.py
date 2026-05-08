@@ -286,16 +286,25 @@ def gemini_search(
 def _to_strict_schema(node):
     """Adapt a JSON Schema for OpenAI Codex strict mode.
 
-    OpenAI's structured-output strict validator rejects any object schema
-    that does not declare ``additionalProperties: false``. We don't want
-    to clutter every checked-in schema with that flag, so we add it
-    just-in-time on every nested object level before sending the schema
-    to Codex.
+    OpenAI's structured-output strict validator imposes two extra rules
+    over plain JSON Schema:
+      1. every object must declare ``additionalProperties: false``;
+      2. ``required`` on an object must list every key in ``properties``
+         (optionality is expressed by widening the type to include
+         ``"null"``, not by omitting from required).
+
+    We don't want to clutter every checked-in schema with those flags,
+    so we add them just-in-time on every nested object before sending
+    the schema to Codex.
     """
     if isinstance(node, dict):
         out = {k: _to_strict_schema(v) for k, v in node.items()}
-        if out.get("type") == "object" and "additionalProperties" not in out:
-            out["additionalProperties"] = False
+        if out.get("type") == "object":
+            if "additionalProperties" not in out:
+                out["additionalProperties"] = False
+            props = out.get("properties")
+            if isinstance(props, dict):
+                out["required"] = list(props.keys())
         return out
     if isinstance(node, list):
         return [_to_strict_schema(item) for item in node]
