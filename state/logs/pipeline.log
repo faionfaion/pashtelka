@@ -19726,3 +19726,72 @@ Error when talking to Gemini API Full report available at: /tm
 2026-05-08 22:13:47 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-08 22:13:47 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trydenne-peremyria-ukraina-rosia-tymchasovyi-zakhyst-portugalia/uk.md
 2026-05-08 22:13:47 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trydenne-peremyria-ukraina-rosia-tymchasovyi-zakhyst-portugalia/pt.md (b1_warning=True)
+2026-05-08 22:13:47 [pipeline] INFO: Article ready: trydenne-peremyria-ukraina-rosia-tymchasovyi-zakhyst-portugalia (Триденне перемир’я між Росією та Україною: що це о)
+2026-05-08 22:13:47 [pipeline] INFO: === Article 2/11 ===
+2026-05-08 22:13:47 [pipeline] INFO: --- Article: [news] Пальне подешевшає з понеділка — скільки зекономлять водії ---
+2026-05-08 22:13:52 [pipeline.llm] WARNING: gemini_search failed (gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to) — falling back to codex_generate
+2026-05-08 22:14:37 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 10820 chars in, 6057 chars out
+2026-05-08 22:14:37 [pipeline.stages.s2_research] INFO: Research complete: 5980 chars
+2026-05-08 22:15:11 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 9974 chars in, 4297 chars out
+2026-05-08 22:15:11 [pipeline.stages.s3_generate] INFO: Generated: 'Пальне з понеділка може подешевшати: як порахувати економію для щоденних поїздок' (slug=palne-podeshevshae-z-ponedilka-ekonomiia-vodiiv-portugalia, 375 words, 4 sources)
+2026-05-08 22:15:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:15:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:16:00 [pipeline.stages.s4_review] INFO: Review: score=6, approved=False
+2026-05-08 22:16:00 [pipeline.stages.s4_review] INFO: Feedback: Стаття практична й корисна, математика перевірена — все сходиться. Тон приємний, структура логічна. Але є кілька проблем, які треба виправити перед публікацією:
+
+**МОВА (критично):**
+1. «Для комʼютера
+2026-05-08 22:16:26 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 4542 chars in, 3104 chars out
+2026-05-08 22:16:26 [pipeline.stages.s5_revise] INFO: Revised article: 442 words
+2026-05-08 22:16:26 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-08 22:16:26 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:16:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:17:17 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-08 22:17:17 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре написана, практична й корисна для аудиторії, але потребує доопрацювання перед публікацією:
+
+1. **Слабке новинне ядро.** «Може подешевшати» без конкретних цифр чи дати — це не новина, а пр
+2026-05-08 22:17:52 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 5166 chars in, 3531 chars out
+2026-05-08 22:17:52 [pipeline.stages.s5_revise] INFO: Revised article: 489 words
+2026-05-08 22:17:52 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-05-08 22:17:52 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:17:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:18:49 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-08 22:18:49 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом якісна, практична і добре адаптована для аудиторії. Кілька зауважень для покращення:
+
+1. ЗАГОЛОВОК: Формулювання «може подешевшати» чесне, але в поєднанні з «як порахувати економію» ств
+2026-05-08 22:18:49 [pipeline] INFO: Article approved after 2 revision(s)
+2026-05-08 22:18:49 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (3174 chars in)
+2026-05-08 22:19:10 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 7735 chars in, 3638 chars out
+2026-05-08 22:19:10 [pipeline.llm] DEBUG: translation cost ${0.0113} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-08 22:19:10 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=38.3 avg_sent=10.2 coverage=67.4% (344 words counted)
+2026-05-08 22:19:10 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=38.3, avg_sent=10.2, coverage=67.4%); retrying with addendum
+2026-05-08 22:19:33 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 8044 chars in, 3567 chars out
+2026-05-08 22:19:33 [pipeline.llm] DEBUG: translation cost ${0.0112} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-08 22:19:33 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=44.7 avg_sent=9.6 coverage=72.2% (345 words counted)
+2026-05-08 22:19:33 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=44.7, avg_sent=9.6, coverage=72.2%)
+2026-05-08 22:19:47 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 3870 chars in, 895 chars out
+2026-05-08 22:19:47 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1158 chars, vocab: 5 words, pt: 176 chars
+2026-05-08 22:19:47 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=palne-podeshevshae-z-ponedilka-ekonomiia-vodiiv-portugalia
+2026-05-08 22:19:47 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:19:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:19:51 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-05-08 22:19:51 [pipeline.stages.s_image_orchestrator] WARNING: [image-orchestrator] Editor optimize failed (Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details) — using raw prompt
+2026-05-08 22:19:51 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-08 22:19:51 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-08 22:20:39 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-08 22:20:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-08 22:20:40 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23622
+2026-05-08 22:20:40 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23622 (unknown)
+2026-05-08 22:20:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23675 3385433
+2026-05-08 22:20:40 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/palne-podeshevshae-z-ponedilka-ekonomiia-vodiiv-portugalia.jpg (237 KB, quality=auto)
+2026-05-08 22:20:40 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-08 22:20:40 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-08 22:20:43 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-05-08 22:20:43 [pipeline.stages.s_image_qa] ERROR: QA agent_query failed: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+2026-05-08 22:20:43 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-08 22:20:43 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/palne-podeshevshae-z-ponedilka-ekonomiia-vodiiv-portugalia/uk.md
+2026-05-08 22:20:43 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/palne-podeshevshae-z-ponedilka-ekonomiia-vodiiv-portugalia/pt.md (b1_warning=True)
