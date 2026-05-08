@@ -482,11 +482,45 @@ def dispatch_research(
     """Stack-aware research call.
 
     old → Claude agent_query with WebSearch / WebFetch / Read / Glob.
-    new → Gemini 2.5 Flash with google_search grounding.
+    new → Gemini 2.5 Flash with google_search grounding,
+          falls back to Codex when Gemini fails (quota, timeout, etc).
+
+    The fallback is text-only (no grounding) — Codex returns whatever
+    its model knows. This keeps the pipeline running through Gemini
+    free-tier quota exhaustion and short outages, at the cost of fact
+    freshness for that one article. The downstream review stage will
+    catch stale or hallucinated facts.
     """
-    if _stack() == "new":
+    if _stack() != "new":
+        return _claude_research(prompt, system, timeout)
+
+    try:
         return gemini_search(prompt, system=system, timeout=timeout)
-    return _claude_research(prompt, system, timeout)
+    except Exception as e:
+        logger.warning(
+            "gemini_search failed (%s) — falling back to codex_generate",
+            str(e)[:160],
+        )
+        fallback_schema = {
+            "type": "object",
+            "properties": {"research": {"type": "string"}},
+            "required": ["research"],
+        }
+        fallback_prompt = (
+            f"{prompt}\n\n"
+            "Return a research brief as plain text describing what you "
+            "know about this topic. Cite specific dates, organisations, "
+            "numbers, and sources where possible. If you are unsure, say "
+            "so explicitly. Wrap the entire brief in JSON: "
+            '{"research": "<your text here>"}'
+        )
+        result = codex_generate(
+            fallback_prompt,
+            system=system,
+            schema=fallback_schema,
+            timeout=CODEX_TIMEOUT,
+        )
+        return result["research"]
 
 
 # Stages that always stay on Claude regardless of LLM_STACK.
