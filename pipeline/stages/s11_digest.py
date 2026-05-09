@@ -72,7 +72,7 @@ def run() -> dict | None:
     image_path = generate_image(
         prompt=image_prompt,
         slug=digest_slug,
-        comic_mode=True,
+        comic_mode=False,
         quality=DIGEST_IMAGE_QUALITY,
     )
 

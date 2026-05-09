@@ -37,7 +37,7 @@
     },
     "image_prompt": {
       "type": "string",
-      "description": "English prompt for gpt-image-1. Describe a single photorealistic Lisbon or Porto cityscape scene with people, where elements from all 10 news stories are visually woven into the environment (billboards, newspapers people read, background activities, shop windows, street scenes). One coherent image — not a collage. 2-4 dominant stories visible, others as subtle background hints."
+      "description": "English prompt (140-220 words) for gpt-image-1. Hand-drawn comic-book digest cover in Pashtelka house style: pastel-de-nata mascot (smiling custard tart) as the central hero, Lisbon/Porto street vignette setting, and 4-6 in-world signage cues (kiosk newspapers, shop windows, tram boards, posters, café chalkboards) that hint at today's news as icon-plus-1-3-word labels. Single coherent illustration, not a collage. NO photorealism, NO real branded logos, NO long text blocks."
     }
   },
   "required": ["intro", "items", "glossary", "image_prompt"]
