@@ -20395,3 +20395,54 @@ Error output: Check stderr output for details
 2026-05-09 12:07:34 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-09 12:07:34 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hantavirus-kruiznyi-lainer-portuhaliia-ryzyk-ukraintsi/uk.md
 2026-05-09 12:07:34 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hantavirus-kruiznyi-lainer-portuhaliia-ryzyk-ukraintsi/pt.md (b1_warning=True)
+2026-05-09 12:07:34 [pipeline] INFO: Article ready: hantavirus-kruiznyi-lainer-portuhaliia-ryzyk-ukraintsi (Хантавірус на круїзному лайнері біля Канар: що це )
+2026-05-09 12:07:34 [pipeline] INFO: === Article 3/12 ===
+2026-05-09 12:07:34 [pipeline] INFO: --- Article: [news] День Європи: президент Португалії закликає до «амбітних біль ---
+2026-05-09 12:07:39 [pipeline.llm] WARNING: gemini_search failed (gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to) — falling back to codex_generate
+2026-05-09 12:08:28 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 10105 chars in, 11544 chars out
+2026-05-09 12:08:28 [pipeline.stages.s2_research] INFO: Research complete: 11408 chars
+2026-05-09 12:09:11 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 15552 chars in, 5627 chars out
+2026-05-09 12:09:11 [pipeline.stages.s3_generate] INFO: Generated: 'День Європи в Португалії: що означають «амбітні більшості» для українців із тимчасовим захистом' (slug=den-yevropy-portuhaliia-ambitni-bilshosti-tymchasovyi-zakhyst, 414 words, 5 sources)
+2026-05-09 12:09:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:09:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:10:04 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-09 12:10:04 [pipeline.stages.s4_review] INFO: Feedback: Стаття написана якісно, структуровано й чесно — автор не роздуває значення політичних заяв, а чітко пояснює, що конкретно змінюється (нічого наразі) і що може змінитися (у перспективі). Це цінно для а
+2026-05-09 12:10:31 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 5466 chars in, 3883 chars out
+2026-05-09 12:10:31 [pipeline.stages.s5_revise] INFO: Revised article: 443 words
+2026-05-09 12:10:31 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-09 12:10:31 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:10:31 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:11:31 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-09 12:11:31 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована й практично корисна для цільової аудиторії. Кілька зауважень:
+
+1. ТРАНСЛІТЕРАЦІЯ: «пастел-де-ната» — видання називається «Паштелька» (від європейсько-португальської 
+2026-05-09 12:11:31 [pipeline] INFO: Article approved after 1 revision(s)
+2026-05-09 12:11:31 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (3565 chars in)
+2026-05-09 12:11:52 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 8093 chars in, 4216 chars out
+2026-05-09 12:11:52 [pipeline.llm] DEBUG: translation cost ${0.0128} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 12:11:52 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=4.5 avg_sent=11.9 coverage=64.5% (392 words counted)
+2026-05-09 12:11:52 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=4.5, avg_sent=11.9, coverage=64.5%); retrying with addendum
+2026-05-09 12:12:16 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 8399 chars in, 4030 chars out
+2026-05-09 12:12:16 [pipeline.llm] DEBUG: translation cost ${0.0125} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 12:12:16 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=17.0 avg_sent=10.1 coverage=72.7% (396 words counted)
+2026-05-09 12:12:16 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=17.0, avg_sent=10.1, coverage=72.7%)
+2026-05-09 12:12:28 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 3852 chars in, 807 chars out
+2026-05-09 12:12:28 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1087 chars, vocab: 5 words, pt: 151 chars
+2026-05-09 12:12:28 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=den-yevropy-portuhaliia-ambitni-bilshosti-tymchasovyi-zakhyst
+2026-05-09 12:12:28 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:12:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:12:47 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Restructured to subject-first order with explicit anatomy counts (head, eyes, arms, fingers) to prev
+2026-05-09 12:12:47 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-09 12:12:47 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-09 12:13:41 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-09 12:13:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-09 12:13:42 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23626
+2026-05-09 12:13:42 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23626 (unknown)
+2026-05-09 12:13:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23679 2861257
+2026-05-09 12:13:42 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/den-yevropy-portuhaliia-ambitni-bilshosti-tymchasovyi-zakhyst.jpg (263 KB, quality=auto)
+2026-05-09 12:13:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:13:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:14:17 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-09 12:14:17 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-09 12:14:17 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/den-yevropy-portuhaliia-ambitni-bilshosti-tymchasovyi-zakhyst/uk.md
+2026-05-09 12:14:17 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/den-yevropy-portuhaliia-ambitni-bilshosti-tymchasovyi-zakhyst/pt.md (b1_warning=True)
