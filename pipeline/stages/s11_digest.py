@@ -14,12 +14,13 @@ Used in 'digest' mode (21:00 Lisbon = 20:00 UTC, April/WEST).
 
 from __future__ import annotations
 
+import json
 import logging
 from datetime import datetime, timezone
 
 from pipeline.config import (
     CONTENT_DIR, DIGEST_IMAGE_QUALITY, SITE_BASE_URL,
-    SOUND_ON_END, SOUND_ON_START, SPONSOR_LINE,
+    SOUND_ON_END, SOUND_ON_START, SPONSOR_LINE, STATE_DIR,
     TG_BOT_TOKEN, TG_CHANNEL_ID, TG_CHANNEL_PT_ID,
     TG_CHANNEL_PT_USERNAME, TG_CHANNEL_USERNAME,
 )
@@ -47,6 +48,11 @@ def run() -> dict | None:
     now = datetime.now(timezone.utc)
     today_str = now.strftime("%Y-%m-%d")
     weekday_uk = WEEKDAYS_UK[now.weekday()]
+
+    marker = STATE_DIR / "tg_published" / f"digest-{today_str}.json"
+    if marker.exists():
+        logger.info("Digest for %s already published (%s); skipping", today_str, marker.name)
+        return None
 
     articles = _collect_today_news(today_str)
     if len(articles) < MIN_NEWS_FOR_DIGEST:
@@ -119,7 +125,7 @@ def run() -> dict | None:
             TG_CHANNEL_PT_USERNAME,
         )
 
-    return {
+    info = {
         "type": "digest",
         "msg_id": msg_id_ua,
         "msg_id_pt": msg_id_pt,
@@ -127,6 +133,12 @@ def run() -> dict | None:
         "glossary": glossary,
         "image_path": str(image_path),
     }
+    marker.parent.mkdir(parents=True, exist_ok=True)
+    marker.write_text(
+        json.dumps({**info, "published_at": now.isoformat()}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    return info
 
 
 def _collect_today_news(today_str: str) -> list[dict]:
