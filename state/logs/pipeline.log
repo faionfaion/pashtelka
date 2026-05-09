@@ -20498,3 +20498,52 @@ Error output: Check stderr output for details
 2026-05-09 12:24:15 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-09 12:24:15 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tymchasovyi-zakhyst-ukraintsiv-portuhaliia-2026-prava-prodovzhennia/uk.md
 2026-05-09 12:24:15 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tymchasovyi-zakhyst-ukraintsiv-portuhaliia-2026-prava-prodovzhennia/pt.md (b1_warning=True)
+2026-05-09 12:24:15 [pipeline] INFO: Article ready: tymchasovyi-zakhyst-ukraintsiv-portuhaliia-2026-prava-prodovzhennia (Тимчасовий захист у Португалії 2026: що знати укра)
+2026-05-09 12:24:15 [pipeline] INFO: === Article 5/12 ===
+2026-05-09 12:24:15 [pipeline] INFO: --- Article: [guide] Як подати податкову декларацію IRS у Португалії: покрокова і ---
+2026-05-09 12:24:20 [pipeline.llm] WARNING: gemini_search failed (gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to) — falling back to codex_generate
+2026-05-09 12:25:40 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 10396 chars in, 12960 chars out
+2026-05-09 12:25:40 [pipeline.stages.s2_research] INFO: Research complete: 12819 chars
+2026-05-09 12:26:57 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 17202 chars in, 13248 chars out
+2026-05-09 12:26:57 [pipeline.stages.s3_generate] INFO: Generated: 'Як подати IRS у Португалії у 2026 році: покрокова інструкція для українців' (slug=yak-podaty-irs-u-portuhalii-2026-instruktsiia-dlia-ukraintsiv, 1190 words, 11 sources)
+2026-05-09 12:26:57 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:26:57 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:27:58 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-09 12:27:58 [pipeline.stages.s4_review] INFO: Feedback: Якісний, ретельно підготовлений гайд. Сильні сторони: 1) Усі португальські терміни пояснені українською при першому вживанні — зразкова робота (IRS, NIF, recibos verdes, contabilista certificado, Chav
+2026-05-09 12:29:11 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 12919 chars in, 10939 chars out
+2026-05-09 12:29:11 [pipeline.stages.s5_revise] INFO: Revised article: 1290 words
+2026-05-09 12:29:11 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-09 12:29:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:29:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:30:04 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-09 12:30:04 [pipeline.stages.s4_review] INFO: Feedback: Якісний, ґрунтовний гайд. Джерела — офіційні сайти AT, Código do IRS, ePortugal. Португальські терміни переважно пояснені при першому вживанні. Тон теплий, з дотепним гумором, без зайвої офіційності. 
+2026-05-09 12:30:04 [pipeline] INFO: Article approved after 1 revision(s)
+2026-05-09 12:30:04 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (10566 chars in)
+2026-05-09 12:30:56 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 15083 chars in, 10697 chars out
+2026-05-09 12:30:56 [pipeline.llm] DEBUG: translation cost ${0.0311} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 12:30:56 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=-0.6 avg_sent=11.7 coverage=54.9% (1012 words counted)
+2026-05-09 12:30:56 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=-0.6, avg_sent=11.7, coverage=54.9%); retrying with addendum
+2026-05-09 12:31:51 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 15398 chars in, 10511 chars out
+2026-05-09 12:31:51 [pipeline.llm] DEBUG: translation cost ${0.0307} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 12:31:51 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=4.1 avg_sent=11.2 coverage=59.9% (1015 words counted)
+2026-05-09 12:31:51 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=4.1, avg_sent=11.2, coverage=59.9%)
+2026-05-09 12:32:10 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 3853 chars in, 1022 chars out
+2026-05-09 12:32:10 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1268 chars, vocab: 6 words, pt: 225 chars
+2026-05-09 12:32:10 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=yak-podaty-irs-u-portuhalii-2026-instruktsiia-dlia-ukraintsiv
+2026-05-09 12:32:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:32:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:32:29 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Restructured to subject-first order with explicit anatomy (finger count, limb count, head/eyes). Rep
+2026-05-09 12:32:29 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-09 12:32:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-09 12:33:25 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-09 12:33:26 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-09 12:33:26 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26415
+2026-05-09 12:33:26 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26415 (unknown)
+2026-05-09 12:33:26 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26468 3147511
+2026-05-09 12:33:26 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/yak-podaty-irs-u-portuhalii-2026-instruktsiia-dlia-ukraintsiv.jpg (258 KB, quality=auto)
+2026-05-09 12:33:26 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:33:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:34:07 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-09 12:34:07 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-09 12:34:07 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/yak-podaty-irs-u-portuhalii-2026-instruktsiia-dlia-ukraintsiv/uk.md
+2026-05-09 12:34:07 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/yak-podaty-irs-u-portuhalii-2026-instruktsiia-dlia-ukraintsiv/pt.md (b1_warning=True)
