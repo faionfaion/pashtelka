@@ -130,9 +130,13 @@ def run() -> dict | None:
 
 
 def _collect_today_news(today_str: str) -> list[dict]:
-    """Return list of {slug, title, body} for today's type=news articles only."""
+    """Return list of {slug, title, body} for today's type=news articles only.
+
+    Articles live as `content/<slug>/uk.md` (per-locale layout introduced by
+    pt-translation-b1). Slug is the parent directory name.
+    """
     news = []
-    for md in sorted(CONTENT_DIR.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True):
+    for md in sorted(CONTENT_DIR.glob("*/uk.md"), key=lambda p: p.stat().st_mtime, reverse=True):
         text = md.read_text(encoding="utf-8")
         if f'date: "{today_str}"' not in text:
             continue
@@ -142,7 +146,7 @@ def _collect_today_news(today_str: str) -> list[dict]:
             continue
 
         title = _fm_value(text, "title")
-        slug = md.stem
+        slug = md.parent.name
         body = _strip_frontmatter(text)[:400]
         news.append({"slug": slug, "title": title, "body": body})
     return news
