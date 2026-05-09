@@ -20871,3 +20871,68 @@ Error output: Check stderr output for details
 2026-05-09 13:25:56 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-09 13:25:56 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/orenda-portuhaliia-2026-dostupne-zhytlo-dopomoha-immigrantam/uk.md
 2026-05-09 13:25:56 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/orenda-portuhaliia-2026-dostupne-zhytlo-dopomoha-immigrantam/pt.md (b1_warning=True)
+2026-05-09 13:25:57 [pipeline] INFO: Article ready: orenda-portuhaliia-2026-dostupne-zhytlo-dopomoha-immigrantam (Оренда в Португалії: де шукати доступне житло і як)
+2026-05-09 13:25:57 [pipeline] INFO: === Article 12/12 ===
+2026-05-09 13:25:57 [pipeline] INFO: --- Article: [news] Кінець епохи: Любомир Станісіч продає всі ресторани 100 Mane ---
+2026-05-09 13:26:01 [pipeline.llm] WARNING: gemini_search failed (gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to) — falling back to codex_generate
+2026-05-09 13:26:41 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 10594 chars in, 8788 chars out
+2026-05-09 13:26:41 [pipeline.stages.s2_research] INFO: Research complete: 8671 chars
+2026-05-09 13:27:24 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 13324 chars in, 4722 chars out
+2026-05-09 13:27:24 [pipeline.stages.s3_generate] INFO: Generated: 'Кінець епохи в Лісабоні: Любомир Станісіч продає ресторани 100 Maneiras' (slug=liubomyr-stanisich-prodaie-restorany-100-maneiras-lisabon, 353 words, 5 sources)
+2026-05-09 13:27:24 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 13:27:24 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 13:28:14 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-09 13:28:14 [pipeline.stages.s4_review] INFO: Feedback: Стаття загалом добре структурована, актуальна для аудиторії й обережна у формулюваннях. Але є кілька речей для доопрацювання перед публікацією:
+
+1. ДЖЕРЕЛА: Усі посилання ведуть на головні сторінки ви
+2026-05-09 13:28:47 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 5155 chars in, 3386 chars out
+2026-05-09 13:28:47 [pipeline.stages.s5_revise] INFO: Revised article: 407 words
+2026-05-09 13:28:47 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-09 13:28:47 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 13:28:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 13:29:42 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-09 13:29:42 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре написана, має теплий тон, чудову роботу з поясненням португальських термінів та практичну цінність для читача. Проте є кілька зауважень:
+
+1. **ДЖЕРЕЛА (критично):** Усі посилання ведуть н
+2026-05-09 13:30:10 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 5374 chars in, 3174 chars out
+2026-05-09 13:30:10 [pipeline.stages.s5_revise] INFO: Revised article: 378 words
+2026-05-09 13:30:10 [pipeline] INFO: === Review cycle 2/3 complete ===
+2026-05-09 13:30:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 13:30:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 13:30:58 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-09 13:30:58 [pipeline.stages.s4_review] INFO: Feedback: Стаття написана добре: обережне формулювання, практична цінність для українців у Португалії, пояснення португальських термінів. Але є кілька речей перед публікацією:
+
+1. **Джерела — посилання на голов
+2026-05-09 13:31:25 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 4896 chars in, 3307 chars out
+2026-05-09 13:31:25 [pipeline.stages.s5_revise] INFO: Revised article: 394 words
+2026-05-09 13:31:25 [pipeline] INFO: === Review cycle 3/3 complete ===
+2026-05-09 13:31:25 [pipeline] WARNING: Max review cycles (3) reached, proceeding
+2026-05-09 13:31:25 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (3005 chars in)
+2026-05-09 13:31:45 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 7521 chars in, 3670 chars out
+2026-05-09 13:31:45 [pipeline.llm] DEBUG: translation cost ${0.0113} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 13:31:45 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=27.7 avg_sent=9.4 coverage=69.2% (347 words counted)
+2026-05-09 13:31:45 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=27.7, avg_sent=9.4, coverage=69.2%); retrying with addendum
+2026-05-09 13:32:05 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 7819 chars in, 3630 chars out
+2026-05-09 13:32:05 [pipeline.llm] DEBUG: translation cost ${0.0113} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 13:32:05 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=30.6 avg_sent=8.5 coverage=73.3% (341 words counted)
+2026-05-09 13:32:05 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=30.6, avg_sent=8.5, coverage=73.3%)
+2026-05-09 13:32:13 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 3877 chars in, 861 chars out
+2026-05-09 13:32:13 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1137 chars, vocab: 5 words, pt: 176 chars
+2026-05-09 13:32:13 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=liubomyr-stanisich-prodaie-restorany-100-maneiras-lisabon
+2026-05-09 13:32:13 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 13:32:13 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 13:32:32 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to lead with style then subject; replaced all negative instructions ('no text', 'no real p
+2026-05-09 13:32:32 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-09 13:32:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-09 13:33:27 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-09 13:33:28 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-09 13:33:28 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26415
+2026-05-09 13:33:28 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26415 (unknown)
+2026-05-09 13:33:28 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26468 3074874
+2026-05-09 13:33:28 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/liubomyr-stanisich-prodaie-restorany-100-maneiras-lisabon.jpg (270 KB, quality=auto)
+2026-05-09 13:33:28 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 13:33:28 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 13:34:04 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-09 13:34:04 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-09 13:34:04 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/liubomyr-stanisich-prodaie-restorany-100-maneiras-lisabon/uk.md
+2026-05-09 13:34:04 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/liubomyr-stanisich-prodaie-restorany-100-maneiras-lisabon/pt.md (b1_warning=True)
