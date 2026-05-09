@@ -22,6 +22,12 @@ Author: {{ author_name }}
 
 <checklist>
 1. SOURCES: Every factual claim has a cited source? Source URLs are real?
+   LINK FORMAT (auto-fail): Every URL in the body MUST be a Markdown anchor
+   `[descriptive UA text](url)`, never a bare `https://...` left in prose.
+   If you spot ANY bare URL in the body, set approved=false and instruct the
+   reviser to wrap each one (anchor text = source name or short factual phrase,
+   e.g. `[Portal das Finanças](https://...)`, `[повідомляє DECO Proteste](https://...)`).
+   Bare URLs in `source_urls` frontmatter are fine — the rule is body prose only.
 2. ACCURACY: No fabricated facts or misleading claims?
 3. VOICE: Matches Oksana's warm, friendly tone? No banned phrases?
 4. LANGUAGE: Clean Ukrainian, no Russian words, no Surzhyk?

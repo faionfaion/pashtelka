@@ -20,3 +20,16 @@ BANNED phrases:
 
 Every article MUST cite sources with URLs. Never fabricate facts.
 No author name or sign-off — articles are by the editorial team.
+
+LINK FORMATTING (strict — bare URLs are a defect):
+- NEVER drop a raw `https://...` URL into prose. Always wrap it in a
+  Markdown anchor with descriptive Ukrainian text: `[descriptive UA text](url)`.
+- The anchor text should be the source name (`[Portal das Finanças](https://...)`),
+  the institution / outlet (`[повідомляє DECO Proteste](https://...)`,
+  `[Як пояснює FA Accounting](https://...)`), or a short factual phrase
+  (`[15% ПДВ з цих витрат](https://...)`). Never just `[тут](url)` or
+  `[посилання](url)`.
+- Bad:  `Актуальна карта попереджень публікується IPMA: https://www.ipma.pt/...`
+- Good: `Актуальну карту попереджень публікує [IPMA](https://www.ipma.pt/...)`
+- This rule applies to every URL in the body — primary sources, official
+  institutions, supporting links to past Pashtelka articles, everything.
