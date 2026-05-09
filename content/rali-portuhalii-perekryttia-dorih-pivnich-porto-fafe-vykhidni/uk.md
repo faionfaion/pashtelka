@@ -64,11 +64,11 @@ tg_post: |
 Ми оновимо цей матеріал, щойно з’явиться офіційна інформація про підтверджені години та конкретні дороги перекриттів.
 
 Джерела для перевірки:
-Vodafone Rally de Portugal: https://www.rallydeportugal.pt/
-Automóvel Club de Portugal: https://www.acp.pt/
-Câmara Municipal do Porto: https://www.cm-porto.pt/
-Câmara Municipal de Fafe: https://www.cm-fafe.pt/
-STCP: https://www.stcp.pt/
-Metro do Porto: https://www.metrodoporto.pt/
+[Vodafone Rally de Portugal](https://www.rallydeportugal.pt/)
+[Automóvel Club de Portugal](https://www.acp.pt/)
+[Câmara Municipal do Porto](https://www.cm-porto.pt/)
+[Câmara Municipal de Fafe](https://www.cm-fafe.pt/)
+[STCP](https://www.stcp.pt/)
+[Metro do Porto](https://www.metrodoporto.pt/)
 
 Теги: #Порту #Фафе #Матозіньюш #Мая #транспорт #ралі #РаліПортугалії #дороги #громадськийтранспорт #українцівПортугалії

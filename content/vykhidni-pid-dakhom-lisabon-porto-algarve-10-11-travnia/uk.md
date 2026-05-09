@@ -57,15 +57,15 @@ tg_post: |
 
 Дощ на вихідних — не причина сидіти вдома з чайником і сумно дивитися на azulejos (традиційну португальську кахельну плитку). Але конкретні події на 10-11 травня варто перевіряти в день виходу: години, реєстрація й ціни в португальських афішах часто змінюються навіть напередодні.
 
-Для Лісабона почніть з Agenda Cultural Lisboa — офіційної міської афіші Câmara Municipal de Lisboa (міська рада): https://www.agendalx.pt/. У фільтрах шукайте museus, exposições, crianças, entrada livre — це «музеї», «виставки», «діти», «вхід вільний».
+Для Лісабона почніть з [Agenda Cultural Lisboa](https://www.agendalx.pt/) — офіційної міської афіші Câmara Municipal de Lisboa (міська рада). У фільтрах шукайте museus, exposições, crianças, entrada livre — це «музеї», «виставки», «діти», «вхід вільний».
 
-Ще один корисний варіант у столиці — Time Out Lisboa з добірками подій і сімейних активностей: https://www.timeout.pt/lisboa. Для бюджетного плану дивіться події в бібліотеках BLX (Bibliotecas de Lisboa — міські бібліотеки): https://blx.cm-lisboa.pt/.
+Ще один корисний варіант у столиці — [Time Out Lisboa](https://www.timeout.pt/lisboa) з добірками подій і сімейних активностей. Для бюджетного плану дивіться події в бібліотеках [BLX](https://blx.cm-lisboa.pt/) (Bibliotecas de Lisboa — міські бібліотеки).
 
-У Порту відкривайте Agenda Porto від Câmara Municipal do Porto (міська рада Порту): https://www.agenda-porto.pt/. Там зручно шукати події в приміщенні для дітей, виставки й концерти; позначка gratuito означає безкоштовно.
+У Порту відкривайте [Agenda Porto](https://www.agenda-porto.pt/) від Câmara Municipal do Porto (міська рада Порту). Там зручно шукати події в приміщенні для дітей, виставки й концерти; позначка gratuito означає безкоштовно.
 
-Для Алгарве найкраща стартова точка — Visit Algarve, офіційний туристичний портал регіону: https://www.visitalgarve.pt/. Обирайте municípios (муніципалітети) поруч із вами — Faro, Loulé, Portimão або Lagos, тобто міста в регіоні Алгарве на півдні Португалії, — і перевіряйте, чи подія проходить у приміщенні.
+Для Алгарве найкраща стартова точка — [Visit Algarve](https://www.visitalgarve.pt/), офіційний туристичний портал регіону. Обирайте municípios (муніципалітети) поруч із вами — Faro, Loulé, Portimão або Lagos, тобто міста в регіоні Алгарве на півдні Португалії, — і перевіряйте, чи подія проходить у приміщенні.
 
-Перед виїздом гляньте прогноз IPMA (Instituto Português do Mar e da Atmosfera — португальська метеослужба): https://www.ipma.pt/. Якщо їдете громадським транспортом, перевірте CP (Comboios de Portugal — португальська залізниця) для поїздів https://www.cp.pt/, Metro Lisboa https://www.metrolisboa.pt/ або Metro do Porto https://www.metrodoporto.pt/.
+Перед виїздом гляньте прогноз [IPMA](https://www.ipma.pt/) (Instituto Português do Mar e da Atmosfera — португальська метеослужба). Якщо їдете громадським транспортом, перевірте [CP](https://www.cp.pt/) (Comboios de Portugal — португальська залізниця) для поїздів, [Metro Lisboa](https://www.metrolisboa.pt/) або [Metro do Porto](https://www.metrodoporto.pt/).
 
 Маленький лайфхак для сімей: шукайте palavras-chave (ключові слова) «oficina» (майстер-клас), «famílias» (для родин), «crianças» (діти) і «entrada livre». Так вихідні залишаються культурними, а бюджет — не сумує більше, ніж небо над Атлантикою.
 

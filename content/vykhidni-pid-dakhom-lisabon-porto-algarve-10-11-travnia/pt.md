@@ -1,9 +1,12 @@
 ---
-title: "Fim de semana à chuva: planos grátis em Lisboa, Porto e Algarve"
+title: "Fim de semana coberto: atividades grátis em Lisboa, Porto e Algarve"
+description: "Guia simples para ver atividades grátis em espaços fechados em Lisboa, Porto e Algarve no fim de semana chuvoso de 10-11 de maio."
+lang: "pt"
+author: "Pastelka News"
+b1_warning: true
 slug: "vykhidni-pid-dakhom-lisabon-porto-algarve-10-11-travnia"
 date: "2026-05-09"
 type: "utility"
-lang: "pt"
 tags:
   - "події в Португалії"
   - "Лісабон"
@@ -12,8 +15,6 @@ tags:
   - "діти"
   - "безкоштовні події"
   - "дозвілля"
-description: "Guia simples para achar planos grátis em espaços fechados em Lisboa, Porto e Algarve nos dias 10 e 11 de maio."
-author: "Pastelka News"
 source_urls:
   - "https://www.agendalx.pt/"
   - "https://www.timeout.pt/lisboa"
@@ -35,22 +36,20 @@ source_names:
   - "Metro Lisboa"
   - "Metro do Porto"
 image: "/images/vykhidni-pid-dakhom-lisabon-porto-algarve-10-11-travnia.jpg"
-tg_post: ""
-b1_warning: true
 ---
 
-Chuva ao fim de semana não obriga ninguém a ficar em casa. Também não obriga a olhar triste para azulejos. Mas veja os planos de 10 e 11 de maio no próprio dia. Horas, inscrição e preços mudam muitas vezes em Portugal.
+A chuva ao fim de semana não obriga a ficar em casa. Não precisa de ficar com a chaleira. Também não precisa de olhar triste para os azulejos. Mas veja os dados sobre 10-11 de maio no próprio dia. Os horários, o registo e os preços mudam muitas vezes. Isto acontece até no dia anterior.
 
-Para Lisboa, comece pela Agenda Cultural Lisboa. É a lista oficial da Câmara Municipal de Lisboa: [site da Agenda Cultural Lisboa](https://www.agendalx.pt/). Nos filtros, procure museus, exposições, crianças e entrada livre. Isto quer dizer museus, mostras, crianças e entrada grátis.
+Para Lisboa, comece pelo [programa cultural de Lisboa](https://www.agendalx.pt/). É o site oficial da Câmara Municipal de Lisboa. Nos filtros, escreva museus, mostras, crianças, entrada livre. Estas palavras querem dizer “museus”, “mostras”, “crianças” e “entrada grátis”.
 
-Outra opção útil na capital é a Time Out Lisboa. O site junta escolhas de planos e coisas para fazer em família: [site da Time Out Lisboa](https://www.timeout.pt/lisboa). Para gastar pouco, veja as bibliotecas BLX. São as Bibliotecas de Lisboa: [site das BLX](https://blx.cm-lisboa.pt/).
+Outra opção útil na capital é a [Time Out Lisboa](https://www.timeout.pt/lisboa). O site junta ideias para sair e atividades para famílias. Para um plano barato, veja as bibliotecas [BLX](https://blx.cm-lisboa.pt/). BLX quer dizer Bibliotecas de Lisboa.
 
-No Porto, abra a Agenda Porto da Câmara Municipal do Porto: [site da Agenda Porto](https://www.agenda-porto.pt/). É fácil procurar planos em espaços fechados para crianças. Também há mostras e concertos. A palavra gratuito quer dizer grátis.
+No Porto, abra o [programa do Porto](https://www.agenda-porto.pt/), da Câmara Municipal do Porto. Ali é fácil ver atividades em espaços fechados para crianças. Também há mostras e concertos. A palavra gratuito quer dizer grátis.
 
-Para o Algarve, comece pelo Visit Algarve. É o site oficial de turismo da região: [site do Visit Algarve](https://www.visitalgarve.pt/). Escolha municípios perto de si. Pode ser Faro, Loulé, Portimão ou Lagos. São cidades do Algarve, no sul de Portugal. Depois veja se o plano é dentro de um edifício.
+Para o Algarve, o melhor ponto de início é [Visit Algarve](https://www.visitalgarve.pt/). É o site oficial de turismo da região. Escolha municípios perto de si. Pode ser Faro, Loulé, Portimão ou Lagos. São cidades do Algarve, no sul de Portugal. Depois veja se a atividade é num espaço fechado.
 
-Antes de sair, veja a previsão do IPMA. É o Instituto Português do Mar e da Atmosfera: [site do IPMA](https://www.ipma.pt/). Se vai de transporte público, veja a CP para comboios: [site da CP](https://www.cp.pt/). Também pode ver o Metro Lisboa: [site do Metro Lisboa](https://www.metrolisboa.pt/). No Porto, veja o Metro do Porto: [site do Metro do Porto](https://www.metrodoporto.pt/).
+Antes de sair, veja a previsão do [IPMA](https://www.ipma.pt/). IPMA é o Instituto Português do Mar e da Atmosfera. É o serviço de meteorologia português. Se vai de transporte público, veja a [CP](https://www.cp.pt/) para comboios. Veja também [Metro Lisboa](https://www.metrolisboa.pt/) ou [Metro do Porto](https://www.metrodoporto.pt/).
 
-Pequena dica para famílias: procure palavras-chave como oficina, famílias, crianças e entrada livre. Assim, o fim de semana fica cultural. E o dinheiro não sofre tanto como o céu sobre o Atlântico.
+Pequena dica para famílias: use palavras-chave. Escreva “oficina”, “famílias”, “crianças” e “entrada livre”. Assim, o fim de semana fica cultural. E o orçamento fica menos triste do que o céu sobre o Atlântico.
 
 #Lisboa #Porto #Algarve #fimdesemana #grátis #crianças #chuva
