@@ -20764,3 +20764,57 @@ Error output: Check stderr output for details
 2026-05-09 13:05:49 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-09 13:05:49 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/inem-stymuly-uriadu-shvydka-dopomoha-portuhaliia-2026/uk.md
 2026-05-09 13:05:49 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/inem-stymuly-uriadu-shvydka-dopomoha-portuhaliia-2026/pt.md (b1_warning=True)
+2026-05-09 13:05:49 [pipeline] INFO: Article ready: inem-stymuly-uriadu-shvydka-dopomoha-portuhaliia-2026 (Працівники INEM залишились поза урядовими стимулам)
+2026-05-09 13:05:49 [pipeline] INFO: === Article 10/12 ===
+2026-05-09 13:05:49 [pipeline] INFO: --- Article: [news] Туристичний сезон 2026 стартує: літні вакансії для українців ---
+2026-05-09 13:05:55 [pipeline.llm] WARNING: gemini_search failed (gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to) — falling back to codex_generate
+2026-05-09 13:07:58 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 10510 chars in, 13493 chars out
+2026-05-09 13:07:58 [pipeline.stages.s2_research] INFO: Research complete: 13406 chars
+2026-05-09 13:08:49 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 17942 chars in, 7699 chars out
+2026-05-09 13:08:49 [pipeline.stages.s3_generate] INFO: Generated: 'Туристичний сезон 2026 стартує: де українцям шукати літню роботу в Алгарве, Лісабоні та Порту' (slug=litni-vakansii-2026-algarve-lisabon-porto-ukraintsi, 510 words, 15 sources)
+2026-05-09 13:08:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 13:08:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 13:09:59 [pipeline.stages.s4_review] INFO: Review: score=6, approved=False
+2026-05-09 13:09:59 [pipeline.stages.s4_review] INFO: Feedback: Стаття дуже корисна й добре підкріплена джерелами, але потребує доопрацювання перед публікацією.
+
+**1. Нерозшифровані абревіатури (критично для пункту 11 чекліста — контекст для іммігрантів):**
+- GEE 
+2026-05-09 13:10:43 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 7470 chars in, 6121 chars out
+2026-05-09 13:10:43 [pipeline.stages.s5_revise] INFO: Revised article: 676 words
+2026-05-09 13:10:43 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-09 13:10:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 13:10:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 13:11:52 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-09 13:11:52 [pipeline.stages.s4_review] INFO: Feedback: Сильний, добре структурований гайд із якісними джерелами та ретельним поясненням португальських термінів. Кілька зауважень перед публікацією:
+
+1. **Розбіжність у URL джерела ECO**: У тілі статті посил
+2026-05-09 13:11:52 [pipeline] INFO: Article approved after 1 revision(s)
+2026-05-09 13:11:52 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (5815 chars in)
+2026-05-09 13:12:31 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 10317 chars in, 5918 chars out
+2026-05-09 13:12:31 [pipeline.llm] DEBUG: translation cost ${0.0177} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 13:12:31 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=-10.0 avg_sent=12.6 coverage=47.8% (502 words counted)
+2026-05-09 13:12:31 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=-10.0, avg_sent=12.6, coverage=47.8%); retrying with addendum
+2026-05-09 13:13:09 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 10619 chars in, 5851 chars out
+2026-05-09 13:13:09 [pipeline.llm] DEBUG: translation cost ${0.0177} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 13:13:09 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=-8.4 avg_sent=13.5 coverage=50.6% (514 words counted)
+2026-05-09 13:13:09 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=-8.4, avg_sent=13.5, coverage=50.6%)
+2026-05-09 13:13:19 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 3849 chars in, 971 chars out
+2026-05-09 13:13:19 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1220 chars, vocab: 5 words, pt: 175 chars
+2026-05-09 13:13:19 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=litni-vakansii-2026-algarve-lisabon-porto-ukraintsi
+2026-05-09 13:13:19 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 13:13:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 13:13:44 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first with explicit anatomy counts (head, eyes, arms, fingers) to prevent extra
+2026-05-09 13:13:44 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-09 13:13:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-09 13:14:36 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-09 13:14:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-09 13:14:37 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23626
+2026-05-09 13:14:37 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23626 (unknown)
+2026-05-09 13:14:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23679 2994154
+2026-05-09 13:14:37 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/litni-vakansii-2026-algarve-lisabon-porto-ukraintsi.jpg (213 KB, quality=auto)
+2026-05-09 13:14:37 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 13:14:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 13:15:39 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-09 13:15:39 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-09 13:15:39 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/litni-vakansii-2026-algarve-lisabon-porto-ukraintsi/uk.md
+2026-05-09 13:15:39 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/litni-vakansii-2026-algarve-lisabon-porto-ukraintsi/pt.md (b1_warning=True)
