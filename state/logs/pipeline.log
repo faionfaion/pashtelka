@@ -20936,3 +20936,67 @@ Error output: Check stderr output for details
 2026-05-09 13:34:04 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-09 13:34:04 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/liubomyr-stanisich-prodaie-restorany-100-maneiras-lisabon/uk.md
 2026-05-09 13:34:04 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/liubomyr-stanisich-prodaie-restorany-100-maneiras-lisabon/pt.md (b1_warning=True)
+2026-05-09 13:34:05 [pipeline] INFO: Article ready: liubomyr-stanisich-prodaie-restorany-100-maneiras-lisabon (100 Maneiras може перейти в новий етап: що відомо )
+2026-05-09 13:34:05 [pipeline] INFO: Generated 12/12 articles
+2026-05-09 13:34:08 [pipeline.stages.s7_deploy] INFO: Git pushed to origin/master
+2026-05-09 13:34:08 [pipeline.stages.s7_deploy] INFO: Deploying to faion-net server...
+2026-05-09 13:34:50 [pipeline.stages.s7_deploy] INFO: Site deployed to faion-net
+2026-05-09 13:34:51 [pipeline.stages.s8_verify] ERROR: Site verification failed: https://pastelka.news/liubomyr-stanisich-prodaie-restorany-100-maneiras-lisabon/ — HTTP Error 404: Not Found
+2026-05-09 13:34:51 [pipeline] INFO: Run report saved: /home/nero/workspace/projects/pashtelka-faion-net/state/runs/2026-05-09_133451.json
+2026-05-09 13:34:51 [pipeline] INFO: Batch complete: 12 articles
+2026-05-09 13:45:50 [pipeline.llm] INFO: preflight ok (codex=/home/nero/.local/bin/codex, gemini=/home/nero/.local/bin/gemini, codex_model=gpt-5.5, gemini_model=gemini-2.5-flash, claude_model=claude-opus-4-7)
+2026-05-09 13:45:50 [pipeline] INFO: === Digest mode ===
+2026-05-09 13:45:50 [pipeline.stages.s11_digest] INFO: Only 0 news articles today, skipping digest (min=5)
+2026-05-09 13:45:50 [pipeline] INFO: Digest skipped (not enough articles)
+2026-05-09 13:46:16 [pipeline.llm] INFO: preflight ok (codex=/home/nero/.local/bin/codex, gemini=/home/nero/.local/bin/gemini, codex_model=gpt-5.5, gemini_model=gemini-2.5-flash, claude_model=claude-opus-4-7)
+2026-05-09 13:46:16 [pipeline] INFO: === Digest mode ===
+2026-05-09 13:46:16 [pipeline.stages.s11_digest] INFO: Building digest for 8 news articles
+2026-05-09 13:46:39 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 5586 chars in, 2907 chars out
+2026-05-09 13:46:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-09 13:47:41 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-09 13:47:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-09 13:47:41 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23626
+2026-05-09 13:47:41 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23626 (unknown)
+2026-05-09 13:47:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23679 3088004
+2026-05-09 13:47:41 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/digest-2026-05-09.jpg (228 KB, quality=high)
+2026-05-09 13:47:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-09 13:47:42 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAGs9x-KiwMpAq2ZrB04OtFlUD6IwX5gons/sendPhoto HTTP/1.1" 200 7629
+2026-05-09 13:47:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-09 13:47:42 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAGs9x-KiwMpAq2ZrB04OtFlUD6IwX5gons/setMessageReaction HTTP/1.1" 200 25
+2026-05-09 13:47:42 [pipeline.stages.s11_digest] INFO: UA digest published: msg 245 (10 news, glossary: NIF->податковий номер, urgências->невідкладна допомога)
+2026-05-09 13:47:58 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 3319 chars in, 1846 chars out
+2026-05-09 13:47:58 [pipeline.llm] DEBUG: translation cost ${0.0014} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 13:47:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-09 13:47:58 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAGs9x-KiwMpAq2ZrB04OtFlUD6IwX5gons/sendPhoto HTTP/1.1" 200 4158
+2026-05-09 13:47:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-09 13:47:58 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAGs9x-KiwMpAq2ZrB04OtFlUD6IwX5gons/setMessageReaction HTTP/1.1" 200 25
+2026-05-09 13:47:58 [pipeline.stages.s11_digest] INFO: PT digest published: msg 5 (10 news)
+2026-05-09 13:47:58 [pipeline] INFO: Digest published (msg 245, 10 articles)
+2026-05-09 13:48:54 [pipeline.llm] INFO: preflight ok (codex=/home/nero/.local/bin/codex, gemini=/home/nero/.local/bin/gemini, codex_model=gpt-5.5, gemini_model=gemini-2.5-flash, claude_model=claude-opus-4-7)
+2026-05-09 13:48:54 [pipeline] INFO: === Digest mode ===
+2026-05-09 13:48:54 [pipeline.stages.s11_digest] INFO: Digest for 2026-05-09 already published (digest-2026-05-09.json); skipping
+2026-05-09 13:48:54 [pipeline] INFO: Digest skipped (not enough articles)
+2026-05-09 14:11:27 [pipeline.llm] INFO: preflight ok (codex=/home/nero/.local/bin/codex, gemini=/home/nero/.local/bin/gemini, codex_model=gpt-5.5, gemini_model=gemini-2.5-flash, claude_model=claude-opus-4-7)
+2026-05-09 14:11:27 [pipeline] INFO: === Digest mode ===
+2026-05-09 14:11:27 [pipeline.stages.s11_digest] INFO: Building digest for 8 news articles
+2026-05-09 14:11:52 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 6759 chars in, 3058 chars out
+2026-05-09 14:11:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-09 14:12:48 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-09 14:12:49 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-09 14:12:49 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26415
+2026-05-09 14:12:49 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26415 (unknown)
+2026-05-09 14:12:49 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26468 2997509
+2026-05-09 14:12:49 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/digest-2026-05-09.jpg (240 KB, quality=high)
+2026-05-09 14:12:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-09 14:12:49 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAGs9x-KiwMpAq2ZrB04OtFlUD6IwX5gons/sendPhoto HTTP/1.1" 200 7781
+2026-05-09 14:12:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-09 14:12:50 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAGs9x-KiwMpAq2ZrB04OtFlUD6IwX5gons/setMessageReaction HTTP/1.1" 200 25
+2026-05-09 14:12:50 [pipeline.stages.s11_digest] INFO: UA digest published: msg 246 (10 news, glossary: NIF->податковий номер, urgências->невідкладна допомога)
+2026-05-09 14:13:04 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 3341 chars in, 1890 chars out
+2026-05-09 14:13:04 [pipeline.llm] DEBUG: translation cost ${0.0014} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 14:13:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-09 14:13:04 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAGs9x-KiwMpAq2ZrB04OtFlUD6IwX5gons/sendPhoto HTTP/1.1" 200 4162
+2026-05-09 14:13:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-09 14:13:05 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot8578996384:AAGs9x-KiwMpAq2ZrB04OtFlUD6IwX5gons/setMessageReaction HTTP/1.1" 200 25
+2026-05-09 14:13:05 [pipeline.stages.s11_digest] INFO: PT digest published: msg 6 (10 news)
+2026-05-09 14:13:05 [pipeline] INFO: Digest published (msg 246, 10 articles)

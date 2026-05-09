@@ -1,0 +1,18 @@
+{
+  "type": "digest",
+  "msg_id": 246,
+  "msg_id_pt": 6,
+  "article_count": 10,
+  "glossary": [
+    {
+      "pt": "NIF",
+      "ua": "податковий номер"
+    },
+    {
+      "pt": "urgências",
+      "ua": "невідкладна допомога"
+    }
+  ],
+  "image_path": "/home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/digest-2026-05-09.jpg",
+  "published_at": "2026-05-09T14:11:27.853693+00:00"
+}

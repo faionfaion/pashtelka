@@ -1,0 +1,464 @@
+{
+  "timestamp": "2026-05-09_133451",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "zhovtyi-riven-nebezpeky-doshch-viter-14-okruhiv-portuhalii-vykhidni, hantavirus-kruiznyi-lainer-portuhaliia-ryzyk-ukraintsi, den-yevropy-portuhaliia-ambitni-bilshosti-tymchasovyi-zakhyst, tymchasovyi-zakhyst-ukraintsiv-portuhaliia-2026-prava-prodovzhennia, yak-podaty-irs-u-portuhalii-2026-instruktsiia-dlia-ukraintsiv",
+  "author": "Pastelka News",
+  "duration_s": 6052.5,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "name": "research:Жовтий рівень погодної небезпе",
+      "status": "ok",
+      "duration_s": 55.7,
+      "error": null
+    },
+    {
+      "name": "generate:Жовтий рівень погодної небезпе",
+      "status": "ok",
+      "duration_s": 37.2,
+      "error": null
+    },
+    {
+      "name": "review:Жовтий рівень погодної небезпе",
+      "status": "ok",
+      "duration_s": 114.1,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Жовтий рівень погодної небезпе",
+      "status": "ok",
+      "duration_s": 51.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Жовтий рівень погодної небезпе",
+      "status": "ok",
+      "duration_s": 10.5,
+      "error": null
+    },
+    {
+      "name": "save:Жовтий рівень погодної небезпе",
+      "status": "ok",
+      "duration_s": 103.7,
+      "error": null
+    },
+    {
+      "name": "research:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 67.4,
+      "error": null
+    },
+    {
+      "name": "generate:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 35.1,
+      "error": null
+    },
+    {
+      "name": "review:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 146.2,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 57.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 9.6,
+      "error": null
+    },
+    {
+      "name": "save:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 127.2,
+      "error": null
+    },
+    {
+      "name": "research:День Європи: президент Португа",
+      "status": "ok",
+      "duration_s": 54.0,
+      "error": null
+    },
+    {
+      "name": "generate:День Європи: президент Португа",
+      "status": "ok",
+      "duration_s": 42.5,
+      "error": null
+    },
+    {
+      "name": "review:День Європи: президент Португа",
+      "status": "ok",
+      "duration_s": 140.4,
+      "error": null
+    },
+    {
+      "name": "translate_pt:День Європи: президент Португа",
+      "status": "ok",
+      "duration_s": 44.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:День Європи: президент Португа",
+      "status": "ok",
+      "duration_s": 11.9,
+      "error": null
+    },
+    {
+      "name": "save:День Європи: президент Португа",
+      "status": "ok",
+      "duration_s": 109.8,
+      "error": null
+    },
+    {
+      "name": "research:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 92.4,
+      "error": null
+    },
+    {
+      "name": "generate:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 73.1,
+      "error": null
+    },
+    {
+      "name": "review:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 186.7,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 116.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 19.1,
+      "error": null
+    },
+    {
+      "name": "save:Тимчасовий захист для українці",
+      "status": "ok",
+      "duration_s": 110.5,
+      "error": null
+    },
+    {
+      "name": "research:Як подати податкову декларацію",
+      "status": "ok",
+      "duration_s": 84.6,
+      "error": null
+    },
+    {
+      "name": "generate:Як подати податкову декларацію",
+      "status": "ok",
+      "duration_s": 77.2,
+      "error": null
+    },
+    {
+      "name": "review:Як подати податкову декларацію",
+      "status": "ok",
+      "duration_s": 186.6,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Як подати податкову декларацію",
+      "status": "ok",
+      "duration_s": 107.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Як подати податкову декларацію",
+      "status": "ok",
+      "duration_s": 18.4,
+      "error": null
+    },
+    {
+      "name": "save:Як подати податкову декларацію",
+      "status": "ok",
+      "duration_s": 117.4,
+      "error": null
+    },
+    {
+      "name": "research:Ралі Португалії: які дороги пе",
+      "status": "ok",
+      "duration_s": 19.8,
+      "error": null
+    },
+    {
+      "name": "generate:Ралі Португалії: які дороги пе",
+      "status": "ok",
+      "duration_s": 39.0,
+      "error": null
+    },
+    {
+      "name": "review:Ралі Португалії: які дороги пе",
+      "status": "ok",
+      "duration_s": 245.5,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Ралі Португалії: які дороги пе",
+      "status": "ok",
+      "duration_s": 32.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Ралі Португалії: які дороги пе",
+      "status": "ok",
+      "duration_s": 18.9,
+      "error": null
+    },
+    {
+      "name": "save:Ралі Португалії: які дороги пе",
+      "status": "ok",
+      "duration_s": 112.2,
+      "error": null
+    },
+    {
+      "name": "research:Вихідні попри дощ: безкоштовні",
+      "status": "ok",
+      "duration_s": 26.7,
+      "error": null
+    },
+    {
+      "name": "generate:Вихідні попри дощ: безкоштовні",
+      "status": "ok",
+      "duration_s": 33.6,
+      "error": null
+    },
+    {
+      "name": "review:Вихідні попри дощ: безкоштовні",
+      "status": "ok",
+      "duration_s": 108.4,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Вихідні попри дощ: безкоштовні",
+      "status": "ok",
+      "duration_s": 36.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Вихідні попри дощ: безкоштовні",
+      "status": "ok",
+      "duration_s": 14.1,
+      "error": null
+    },
+    {
+      "name": "save:Вихідні попри дощ: безкоштовні",
+      "status": "ok",
+      "duration_s": 119.7,
+      "error": null
+    },
+    {
+      "name": "research:AIMA у травні: онлайн-сервіси,",
+      "status": "ok",
+      "duration_s": 97.6,
+      "error": null
+    },
+    {
+      "name": "generate:AIMA у травні: онлайн-сервіси,",
+      "status": "ok",
+      "duration_s": 55.6,
+      "error": null
+    },
+    {
+      "name": "review:AIMA у травні: онлайн-сервіси,",
+      "status": "ok",
+      "duration_s": 178.6,
+      "error": null
+    },
+    {
+      "name": "translate_pt:AIMA у травні: онлайн-сервіси,",
+      "status": "ok",
+      "duration_s": 75.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:AIMA у травні: онлайн-сервіси,",
+      "status": "ok",
+      "duration_s": 12.6,
+      "error": null
+    },
+    {
+      "name": "save:AIMA у травні: онлайн-сервіси,",
+      "status": "ok",
+      "duration_s": 98.2,
+      "error": null
+    },
+    {
+      "name": "research:Працівники INEM стурбовані: їх",
+      "status": "ok",
+      "duration_s": 158.5,
+      "error": null
+    },
+    {
+      "name": "generate:Працівники INEM стурбовані: їх",
+      "status": "ok",
+      "duration_s": 48.2,
+      "error": null
+    },
+    {
+      "name": "review:Працівники INEM стурбовані: їх",
+      "status": "ok",
+      "duration_s": 153.6,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Працівники INEM стурбовані: їх",
+      "status": "ok",
+      "duration_s": 60.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Працівники INEM стурбовані: їх",
+      "status": "ok",
+      "duration_s": 20.4,
+      "error": null
+    },
+    {
+      "name": "save:Працівники INEM стурбовані: їх",
+      "status": "ok",
+      "duration_s": 136.2,
+      "error": null
+    },
+    {
+      "name": "research:Туристичний сезон 2026 стартує",
+      "status": "ok",
+      "duration_s": 128.9,
+      "error": null
+    },
+    {
+      "name": "generate:Туристичний сезон 2026 стартує",
+      "status": "ok",
+      "duration_s": 50.4,
+      "error": null
+    },
+    {
+      "name": "review:Туристичний сезон 2026 стартує",
+      "status": "ok",
+      "duration_s": 183.0,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Туристичний сезон 2026 стартує",
+      "status": "ok",
+      "duration_s": 77.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Туристичний сезон 2026 стартує",
+      "status": "ok",
+      "duration_s": 9.8,
+      "error": null
+    },
+    {
+      "name": "save:Туристичний сезон 2026 стартує",
+      "status": "ok",
+      "duration_s": 141.1,
+      "error": null
+    },
+    {
+      "name": "research:Оренда в Португалії дорожчає: ",
+      "status": "ok",
+      "duration_s": 139.7,
+      "error": null
+    },
+    {
+      "name": "generate:Оренда в Португалії дорожчає: ",
+      "status": "ok",
+      "duration_s": 58.3,
+      "error": null
+    },
+    {
+      "name": "review:Оренда в Португалії дорожчає: ",
+      "status": "ok",
+      "duration_s": 178.4,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Оренда в Португалії дорожчає: ",
+      "status": "ok",
+      "duration_s": 84.7,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Оренда в Португалії дорожчає: ",
+      "status": "ok",
+      "duration_s": 11.6,
+      "error": null
+    },
+    {
+      "name": "save:Оренда в Португалії дорожчає: ",
+      "status": "ok",
+      "duration_s": 144.1,
+      "error": null
+    },
+    {
+      "name": "research:Кінець епохи: Любомир Станісіч",
+      "status": "ok",
+      "duration_s": 44.2,
+      "error": null
+    },
+    {
+      "name": "generate:Кінець епохи: Любомир Станісіч",
+      "status": "ok",
+      "duration_s": 42.8,
+      "error": null
+    },
+    {
+      "name": "review:Кінець епохи: Любомир Станісіч",
+      "status": "ok",
+      "duration_s": 241.0,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Кінець епохи: Любомир Станісіч",
+      "status": "ok",
+      "duration_s": 40.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Кінець епохи: Любомир Станісіч",
+      "status": "ok",
+      "duration_s": 8.2,
+      "error": null
+    },
+    {
+      "name": "save:Кінець епохи: Любомир Станісіч",
+      "status": "ok",
+      "duration_s": 111.9,
+      "error": null
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 45.5,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.7,
+      "error": null
+    }
+  ]
+}
