@@ -2556,3 +2556,54 @@ Already up to date.
 From https://github.com/faionfaion/pashtelka
  * branch              master     -> FETCH_HEAD
 Already up to date.
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-05-09 03:00:01 Pipeline generate started
+03:00:02 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+03:00:02 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+03:00:02 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+03:00:02 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+03:00:02 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+03:00:03 [pipeline.feeds] INFO: Feed publico: 10 items
+03:00:03 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+03:00:03 [asyncio] DEBUG: Using selector: EpollSelector
+03:00:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+03:00:08 [claude_agent_sdk._internal.query] ERROR: Fatal error in message reader: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details
+03:00:08 [pipeline] ERROR: Pipeline failed
+Traceback (most recent call last):
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/cli.py", line 66, in cli
+    completed = run_generate(
+                ^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/modes/generate.py", line 53, in run
+    plan = s0_editorial_plan.run()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/stages/s0_editorial_plan.py", line 53, in run
+    plan = structured_query(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 121, in structured_query
+    text = asyncio.run(
+           ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/nero/workspace/projects/pashtelka-faion-net/pipeline/sdk.py", line 92, in _async_structured
+    async for msg in sdk_query(prompt=prompt, options=options):
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/query.py", line 123, in query
+    async for message in client.process_query(
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/client.py", line 157, in process_query
+    async for data in query.receive_messages():
+  File "/home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_internal/query.py", line 732, in receive_messages
+    raise Exception(message.get("error", "Unknown error"))
+Exception: Command failed with exit code 1 (exit code: 1)
+Error output: Check stderr output for details

@@ -1,0 +1,266 @@
+{
+  "timestamp": "2026-05-08_224340",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "trydenne-peremyria-ukraina-rosia-tymchasovyi-zakhyst-portugalia, palne-podeshevshae-z-ponedilka-ekonomiia-vodiiv-portugalia",
+  "author": "Pastelka News",
+  "duration_s": 2507.1,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 272.8,
+      "error": null
+    },
+    {
+      "name": "research:Триденне перемир'я між Росією ",
+      "status": "ok",
+      "duration_s": 74.0,
+      "error": null
+    },
+    {
+      "name": "generate:Триденне перемир'я між Росією ",
+      "status": "ok",
+      "duration_s": 40.5,
+      "error": null
+    },
+    {
+      "name": "review:Триденне перемир'я між Росією ",
+      "status": "ok",
+      "duration_s": 129.1,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Триденне перемир'я між Росією ",
+      "status": "ok",
+      "duration_s": 67.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Триденне перемир'я між Росією ",
+      "status": "ok",
+      "duration_s": 14.5,
+      "error": null
+    },
+    {
+      "name": "save:Триденне перемир'я між Росією ",
+      "status": "ok",
+      "duration_s": 115.0,
+      "error": null
+    },
+    {
+      "name": "research:Пальне подешевшає з понеділка ",
+      "status": "ok",
+      "duration_s": 49.6,
+      "error": null
+    },
+    {
+      "name": "generate:Пальне подешевшає з понеділка ",
+      "status": "ok",
+      "duration_s": 33.7,
+      "error": null
+    },
+    {
+      "name": "review:Пальне подешевшає з понеділка ",
+      "status": "ok",
+      "duration_s": 218.2,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Пальне подешевшає з понеділка ",
+      "status": "ok",
+      "duration_s": 44.4,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Пальне подешевшає з понеділка ",
+      "status": "ok",
+      "duration_s": 14.0,
+      "error": null
+    },
+    {
+      "name": "save:Пальне подешевшає з понеділка ",
+      "status": "ok",
+      "duration_s": 56.6,
+      "error": null
+    },
+    {
+      "name": "research:Негода повертається на вихідни",
+      "status": "ok",
+      "duration_s": 96.7,
+      "error": null
+    },
+    {
+      "name": "generate:Негода повертається на вихідни",
+      "status": "ok",
+      "duration_s": 42.5,
+      "error": null
+    },
+    {
+      "name": "review:Негода повертається на вихідни",
+      "status": "failed",
+      "duration_s": 4.2,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Вікенд у Португалії: найцікаві",
+      "status": "ok",
+      "duration_s": 130.9,
+      "error": null
+    },
+    {
+      "name": "generate:Вікенд у Португалії: найцікаві",
+      "status": "ok",
+      "duration_s": 42.7,
+      "error": null
+    },
+    {
+      "name": "review:Вікенд у Португалії: найцікаві",
+      "status": "failed",
+      "duration_s": 4.3,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Авіакомпанії зможуть скасовува",
+      "status": "ok",
+      "duration_s": 110.3,
+      "error": null
+    },
+    {
+      "name": "generate:Авіакомпанії зможуть скасовува",
+      "status": "ok",
+      "duration_s": 59.1,
+      "error": null
+    },
+    {
+      "name": "review:Авіакомпанії зможуть скасовува",
+      "status": "failed",
+      "duration_s": 3.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Парламент схвалив еквівалентні",
+      "status": "ok",
+      "duration_s": 113.8,
+      "error": null
+    },
+    {
+      "name": "generate:Парламент схвалив еквівалентні",
+      "status": "ok",
+      "duration_s": 47.8,
+      "error": null
+    },
+    {
+      "name": "review:Парламент схвалив еквівалентні",
+      "status": "failed",
+      "duration_s": 4.3,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Нова комісія з прав дітей та м",
+      "status": "ok",
+      "duration_s": 120.5,
+      "error": null
+    },
+    {
+      "name": "generate:Нова комісія з прав дітей та м",
+      "status": "ok",
+      "duration_s": 42.4,
+      "error": null
+    },
+    {
+      "name": "review:Нова комісія з прав дітей та м",
+      "status": "failed",
+      "duration_s": 4.4,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Португалія готується до пожежн",
+      "status": "ok",
+      "duration_s": 45.8,
+      "error": null
+    },
+    {
+      "name": "generate:Португалія готується до пожежн",
+      "status": "ok",
+      "duration_s": 36.6,
+      "error": null
+    },
+    {
+      "name": "review:Португалія готується до пожежн",
+      "status": "failed",
+      "duration_s": 3.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Літній ринок оренди 2026: як з",
+      "status": "ok",
+      "duration_s": 57.0,
+      "error": null
+    },
+    {
+      "name": "generate:Літній ринок оренди 2026: як з",
+      "status": "ok",
+      "duration_s": 52.8,
+      "error": null
+    },
+    {
+      "name": "review:Літній ринок оренди 2026: як з",
+      "status": "failed",
+      "duration_s": 4.3,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Як записати дитину до літнього",
+      "status": "ok",
+      "duration_s": 126.4,
+      "error": null
+    },
+    {
+      "name": "generate:Як записати дитину до літнього",
+      "status": "ok",
+      "duration_s": 94.5,
+      "error": null
+    },
+    {
+      "name": "review:Як записати дитину до літнього",
+      "status": "failed",
+      "duration_s": 3.6,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Євробарометр: 93% португальців",
+      "status": "ok",
+      "duration_s": 39.2,
+      "error": null
+    },
+    {
+      "name": "generate:Євробарометр: 93% португальців",
+      "status": "ok",
+      "duration_s": 32.7,
+      "error": null
+    },
+    {
+      "name": "review:Євробарометр: 93% португальців",
+      "status": "failed",
+      "duration_s": 3.7,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 47.7,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

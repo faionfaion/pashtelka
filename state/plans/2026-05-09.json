@@ -1,0 +1,90 @@
+{
+  "articles": [
+    {
+      "topic": "Жовтий рівень погодної небезпеки: дощ і сильний вітер у 14 округах Португалії на вихідних",
+      "type": "news",
+      "angle": "Практичний вплив негоди на плани вихідного дня: які округи під попередженням, коли пік, що варто перенести. Поради для тих, хто працює на вулиці (будівництво, доставка, сільське господарство).",
+      "sources_hint": "IPMA.pt warnings page, RTP Meteorologia, Proteção Civil alerts, windguru.cz for coastal areas",
+      "priority": 1
+    },
+    {
+      "topic": "Хантавірус на круїзному лайнері: ВООЗ контролює висадку пасажирів у Португалії",
+      "type": "news",
+      "angle": "Що таке хантавірус, чи є загроза для мешканців портових міст (Лісабон, Порту, Фару). Які запобіжні заходи вживає DGS. Чи потрібно хвилюватися українцям — пояснення від епідеміологів.",
+      "sources_hint": "RTP latest (hantavirus headline), DGS.pt official statements, WHO situation reports, SNS24 guidelines",
+      "priority": 1
+    },
+    {
+      "topic": "День Європи: президент Португалії закликає до «амбітних більшостей» — що це означає для іноземців із тимчасовим захистом",
+      "type": "news",
+      "angle": "Виступи Маршелу та прем'єра у контексті ЄС — як курс на сильніший Євросоюз впливає на політику тимчасового захисту, соціальні права мігрантів і фінансування інтеграційних програм у Португалії.",
+      "sources_hint": "RTP headlines on Aguiar-Branco, PM EU competitiveness, European Commission PT page, ACM.gov.pt Europe Day events",
+      "priority": 1
+    },
+    {
+      "topic": "Тимчасовий захист для українців у Португалії у 2026 році: повний огляд — що змінилось, які права, що далі",
+      "type": "material",
+      "angle": "Компіляція з 4+ джерел: поточний статус Директиви ЄС про тимчасовий захист, як Португалія її імплементує, які права дає (робота, освіта, медицина, соцдопомога), процедура подовження, відмінності від дозволу на проживання, шлях до постійного статусу. Включити FAQ від юристів і досвід громади.",
+      "sources_hint": "1) EU Council temporary protection decisions 2024-2026; 2) AIMA.gov.pt temporary protection page; 3) ACM.gov.pt integration resources; 4) Provedor de Justiça annual report on migrants; 5) JRS Portugal / CPR legal advice materials; 6) Ukrainian community Facebook groups in PT",
+      "priority": 1
+    },
+    {
+      "topic": "Як подати податкову декларацію IRS у Португалії: покрокова інструкція для українців (дедлайн — 30 червня 2026)",
+      "type": "guide",
+      "angle": "Практичний гід: хто зобов'язаний подавати, як увійти на Portal das Finanças, що таке IRS Automático і коли він підходить, як заповнити Modelo 3, які витрати можна відняти (освіта, здоров'я, житло), як перевірити e-Fatura. Окремий блок: особливості для тих, хто приїхав у 2024-2025 і працював неповний рік.",
+      "sources_hint": "Portal das Finanças IRS guide, Autoridade Tributária FAQ 2026, Deco Proteste IRS tutorial, Doutor Finanças IRS simulator, NHR regime changes 2025-2026",
+      "priority": 1
+    },
+    {
+      "topic": "Ралі Португалії: які дороги перекриті на півночі країни цих вихідних",
+      "type": "news",
+      "angle": "Конкретні маршрути та години перекриттів у районах Порту, Мафалди, Фафе. Альтернативні шляхи для тих, хто їде на роботу або подорожує. Як це впливає на громадський транспорт у регіоні.",
+      "sources_hint": "Rally de Portugal official site, ACP route closures, Infraestruturas de Portugal, Câmara Municipal de Porto transport alerts",
+      "priority": 2
+    },
+    {
+      "topic": "Вихідні попри дощ: безкоштовні та бюджетні події у Лісабоні, Порту й Алгарве 10-11 травня",
+      "type": "utility",
+      "angle": "Конкретна добірка подій у приміщеннях: музеї з безкоштовним входом, фестивалі, ярмарки, дитячі програми. Акцент на доступності для сімей з дітьми та бюджетні варіанти.",
+      "sources_hint": "Time Out Lisboa, Agenda Cultural Porto, VisitAlgarve.pt, CM Lisboa agenda cultural, Gerador.eu events calendar",
+      "priority": 2
+    },
+    {
+      "topic": "AIMA у травні: онлайн-сервіси, черги на прийом та що змінилося у процедурі оновлення документів",
+      "type": "immigration",
+      "angle": "Актуальний стан черг AIMA станом на травень 2026, які послуги доступні онлайн, нові зміни у порядку подання заявок. Поради, як перевірити статус справи та що робити при затримці.",
+      "sources_hint": "AIMA.gov.pt portal, AIMA Facebook page for updates, SEF/AIMA user forums, Jornal de Notícias immigration section, Provedor de Justiça complaints data",
+      "priority": 2
+    },
+    {
+      "topic": "Працівники INEM стурбовані: їх виключили зі стимулів уряду — чи погіршиться швидка допомога",
+      "type": "news",
+      "angle": "Що за урядові стимули, чому INEM залишився осторонь, як це може вплинути на час приїзду швидкої. Практична порада: як викликати швидку в Португалії (112, SNS24) і що робити, якщо не розумієш португальську.",
+      "sources_hint": "RTP headlines on INEM CT, Jornal de Notícias INEM coverage, SNS24 official info, INEM.pt annual reports",
+      "priority": 2
+    },
+    {
+      "topic": "Туристичний сезон 2026 стартує: літні вакансії для українців в Алгарве, Лісабоні та Порту",
+      "type": "news",
+      "angle": "Які позиції наймасовіші (готелі, ресторани, пляжні сервіси), середні зарплати, як шукати роботу через IEFP та Net-Empregos. Чи потрібна знання португальської. Особливості контрактів на сезон.",
+      "sources_hint": "IEFP.pt job portal Algarve filter, Net-Empregos.com, INE tourism employment Q1 2026, Turismo de Portugal seasonal hiring data",
+      "priority": 2
+    },
+    {
+      "topic": "Оренда в Португалії дорожчає: де шукати доступне житло та які програми допомоги існують для іммігрантів",
+      "type": "news",
+      "angle": "Аналіз поточних цін на оренду у Лісабоні, Порту та Алгарве. Огляд державних програм підтримки: Porta 65 Jovem, habitação acessível, IHRU. Практичні поради: де шукати, на що звертати увагу у контракті, як уникнути шахрайства при оренді. Досвід українських родин.",
+      "sources_hint": "IHRU.pt, Portal da Habitação, Deco Proteste housing rights, INE housing rent index Q1 2026, Idealista.pt price tracker, Porta 65 Jovem program page",
+      "priority": 2
+    },
+    {
+      "topic": "Кінець епохи: Любомир Станісіч продає всі ресторани 100 Maneiras",
+      "type": "news",
+      "angle": "Історія іммігранта з Боснії, який побудував ресторанну імперію в Лісабоні — і продає її. Що це говорить про ресторанний бізнес у Португалії: орендні ставки, брак кадрів, можливості для українських підприємців у HoReCa.",
+      "sources_hint": "CM Jornal headline, Observador business section, NIT gastronomy, LinkedIn 100 Maneiras Group",
+      "priority": 2
+    }
+  ],
+  "date": "2026-05-09",
+  "created_at": "2026-05-09T11:47:47.799340+00:00"
+}
