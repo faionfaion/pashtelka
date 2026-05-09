@@ -20446,3 +20446,55 @@ Error output: Check stderr output for details
 2026-05-09 12:14:17 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-09 12:14:17 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/den-yevropy-portuhaliia-ambitni-bilshosti-tymchasovyi-zakhyst/uk.md
 2026-05-09 12:14:17 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/den-yevropy-portuhaliia-ambitni-bilshosti-tymchasovyi-zakhyst/pt.md (b1_warning=True)
+2026-05-09 12:14:18 [pipeline] INFO: Article ready: den-yevropy-portuhaliia-ambitni-bilshosti-tymchasovyi-zakhyst (День Європи: що говорили лідери Португалії і чому )
+2026-05-09 12:14:18 [pipeline] INFO: === Article 4/12 ===
+2026-05-09 12:14:18 [pipeline] INFO: --- Article: [material] Тимчасовий захист для українців у Португалії у 2026 році: по ---
+2026-05-09 12:14:22 [pipeline.llm] WARNING: gemini_search failed (gemini exec rc=1: Warning: Limited color support detected (TERM=screen). Some visual elements may not render correctly. For better color support in tmux, add to) — falling back to codex_generate
+2026-05-09 12:15:50 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 10447 chars in, 13904 chars out
+2026-05-09 12:15:50 [pipeline.stages.s2_research] INFO: Research complete: 13764 chars
+2026-05-09 12:17:03 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 18069 chars in, 12211 chars out
+2026-05-09 12:17:03 [pipeline.stages.s3_generate] INFO: Generated: 'Тимчасовий захист для українців у Португалії у 2026 році: права, продовження і що робити далі' (slug=tymchasovyi-zakhyst-ukraintsiv-portuhaliia-2026-prava-prodovzhennia, 1092 words, 13 sources)
+2026-05-09 12:17:03 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:17:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:18:08 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-09 12:18:08 [pipeline.stages.s4_review] INFO: Feedback: Стаття якісна, добре структурована, з коректними джерелами та теплим тоном. Але є кілька речей до виправлення перед публікацією:
+
+1. **Непояснені португальські терміни (критично для нових читачів):**
+
+2026-05-09 12:19:15 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 11816 chars in, 10319 chars out
+2026-05-09 12:19:15 [pipeline.stages.s5_revise] INFO: Revised article: 1174 words
+2026-05-09 12:19:15 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-09 12:19:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:19:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:20:10 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-09 12:20:10 [pipeline.stages.s4_review] INFO: Feedback: Якісний, ґрунтовний матеріал. Джерела перевірені, структура логічна, португальські терміни пояснені коректно при першому вживанні. Тон теплий, з доречним гумором (bica, pastelaria). Кілька дрібних зау
+2026-05-09 12:20:10 [pipeline] INFO: Article approved after 1 revision(s)
+2026-05-09 12:20:10 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (9989 chars in)
+2026-05-09 12:21:08 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 14483 chars in, 10122 chars out
+2026-05-09 12:21:08 [pipeline.llm] DEBUG: translation cost ${0.0295} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 12:21:08 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=-6.3 avg_sent=13.4 coverage=52.4% (1012 words counted)
+2026-05-09 12:21:08 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=-6.3, avg_sent=13.4, coverage=52.4%); retrying with addendum
+2026-05-09 12:22:06 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 14787 chars in, 9727 chars out
+2026-05-09 12:22:06 [pipeline.llm] DEBUG: translation cost ${0.0286} within threshold ${0.1000} (model=gpt-5.5)
+2026-05-09 12:22:06 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=27.7 avg_sent=10.1 coverage=70.8% (720 words counted)
+2026-05-09 12:22:06 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=27.7, avg_sent=10.1, coverage=70.8%)
+2026-05-09 12:22:25 [pipeline.llm] INFO: codex_generate: model=gpt-5.5, 3837 chars in, 854 chars out
+2026-05-09 12:22:25 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1147 chars, vocab: 5 words, pt: 170 chars
+2026-05-09 12:22:25 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=tymchasovyi-zakhyst-ukraintsiv-portuhaliia-2026-prava-prodovzhennia
+2026-05-09 12:22:25 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:22:25 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:22:49 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy counts for every person to prevent extr
+2026-05-09 12:22:49 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-09 12:22:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-09 12:23:43 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-09 12:23:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-09 12:23:44 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23622
+2026-05-09 12:23:44 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23622 (unknown)
+2026-05-09 12:23:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23675 2857738
+2026-05-09 12:23:44 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/tymchasovyi-zakhyst-ukraintsiv-portuhaliia-2026-prava-prodovzhennia.jpg (223 KB, quality=auto)
+2026-05-09 12:23:44 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-09 12:23:44 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-09 12:24:15 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-09 12:24:15 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-09 12:24:15 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tymchasovyi-zakhyst-ukraintsiv-portuhaliia-2026-prava-prodovzhennia/uk.md
+2026-05-09 12:24:15 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tymchasovyi-zakhyst-ukraintsiv-portuhaliia-2026-prava-prodovzhennia/pt.md (b1_warning=True)
