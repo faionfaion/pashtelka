@@ -21379,3 +21379,96 @@ Error output: Check stderr output for details
 2026-05-10 19:01:18 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-10 19:01:18 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hantavirus-mv-hondius-evakuatsiia-kanarski-ostrovy-ryzyky-portugal/uk.md
 2026-05-10 19:01:18 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hantavirus-mv-hondius-evakuatsiia-kanarski-ostrovy-ryzyky-portugal/pt.md (b1_warning=True)
+2026-05-10 19:01:18 [pipeline] INFO: Article ready: hantavirus-mv-hondius-evakuatsiia-kanarski-ostrovy-ryzyky-portugal (Хантавірус на лайнері: евакуація на Тенерифе — DGS)
+2026-05-10 19:01:18 [pipeline] INFO: === Article 7/11 ===
+2026-05-10 19:01:18 [pipeline] INFO: --- Article: [immigration] Іміграційна карта Португалії 2026: непальці, індійці та де с ---
+2026-05-10 19:01:18 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:01:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:06:18 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-05-10 19:06:23 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.9s
+2026-05-10 19:06:29 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:06:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:11:29 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-05-10 19:11:34 [pipeline.sdk] WARNING: agent_query retry 2/2: agent_query timed out after 300s — 10.5s
+2026-05-10 19:11:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:11:45 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:15:52 [pipeline.stages.s2_research] INFO: Research complete: 9423 chars
+2026-05-10 19:15:52 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:15:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:17:15 [pipeline.stages.s3_generate] INFO: Generated: 'Іміграційна карта Португалії 2026: непальці, індійці та де серед них українці' (slug=immihratsijna-karta-portugalii-2026-nepaltsi-indijtsi-ukraintsi, 580 words, 11 sources)
+2026-05-10 19:17:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:17:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:18:51 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-10 19:18:51 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре структурована, якісно зсорсена і дуже релевантна для цільової аудиторії. Тон теплий і спільнотний ("живе поруч із нами", "для нас"). Проте є кілька конкретних зауважень перед публікацією:
+2026-05-10 19:18:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:18:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:19:48 [pipeline.stages.s5_revise] INFO: Revised article: 650 words
+2026-05-10 19:19:48 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-10 19:19:48 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:19:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:21:10 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-10 19:21:10 [pipeline.stages.s4_review] INFO: Feedback: Сильна, добре структурована стаття з якісним sourcing'ом (10 джерел, усі оформлені як Markdown-посилання). Ключові плюси: прозора примітка під таблицею про розбіжності у відсотках, пояснення всіх порт
+2026-05-10 19:21:10 [pipeline] INFO: Article approved after 1 revision(s)
+2026-05-10 19:21:10 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (5856 chars in)
+2026-05-10 19:21:10 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:21:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:25:54 [pipeline.llm] WARNING: translation cost ${0.1545} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2556, out_tokens=1549). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-10 19:25:54 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=29.8 avg_sent=9.4 coverage=63.5% (392 words counted)
+2026-05-10 19:25:54 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=29.8, avg_sent=9.4, coverage=63.5%); retrying with addendum
+2026-05-10 19:25:54 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:25:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:27:26 [pipeline.llm] WARNING: translation cost ${0.1499} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2636, out_tokens=1471). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-10 19:27:26 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=44.1 avg_sent=9.1 coverage=75.1% (381 words counted)
+2026-05-10 19:27:26 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=44.1, avg_sent=9.1, coverage=75.1%)
+2026-05-10 19:27:26 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:27:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:27:40 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1206 chars, vocab: 5 words, pt: 210 chars
+2026-05-10 19:27:40 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=immihratsijna-karta-portugalii-2026-nepaltsi-indijtsi-ukraintsi
+2026-05-10 19:27:40 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:27:40 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:27:55 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to lead with the main subject (azulejo map), added explicit anatomy constraints for every 
+2026-05-10 19:27:55 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-10 19:27:55 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-10 19:28:50 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-10 19:28:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-10 19:28:51 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23626
+2026-05-10 19:28:51 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23626 (unknown)
+2026-05-10 19:28:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23679 3443509
+2026-05-10 19:28:51 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/immihratsijna-karta-portugalii-2026-nepaltsi-indijtsi-ukraintsi.jpg (271 KB, quality=auto)
+2026-05-10 19:28:51 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:28:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:29:43 [pipeline.stages.s_image_qa] INFO: Image QA: ok=False, severity=low, retry=True, issues=1 — Sardine can label text is garbled — reads as nonsensical letters (e.g. 'CABONHA') instead of a real word; scene description specified 'no text in the image' but the generator added illegible text anyw
+2026-05-10 19:29:43 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1 failed QA (severity=low, issues=1)
+2026-05-10 19:29:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:29:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:29:55 [pipeline.stages.s_image_prompt_editor] INFO: Prompt revised: The sardine can labels generated garbled pseudo-text because the prompt mentioned 'colorful packagin
+2026-05-10 19:29:55 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+2026-05-10 19:29:55 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-10 19:30:52 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-10 19:30:53 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-10 19:30:53 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23378
+2026-05-10 19:30:53 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23378 (unknown)
+2026-05-10 19:30:53 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23431 3385730
+2026-05-10 19:30:53 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/immihratsijna-karta-portugalii-2026-nepaltsi-indijtsi-ukraintsi_try2.jpg (272 KB, quality=high)
+2026-05-10 19:30:53 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:30:53 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:31:41 [pipeline.stages.s_image_qa] INFO: Image QA: ok=False, severity=high, retry=True, issues=1 — City label 'Porto' on map is garbled — renders as 'Ooto' or 'Doto' (missing/malformed 'P', missing 'r')
+2026-05-10 19:31:41 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2 failed QA (severity=high, issues=1)
+2026-05-10 19:31:41 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:31:41 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:31:52 [pipeline.stages.s_image_prompt_editor] INFO: Prompt simplified: Stripped secondary props (sardine cans, tram, rooftops), color micro-directions, and background clut
+2026-05-10 19:31:52 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 3/3 (quality=high)
+2026-05-10 19:31:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-10 19:32:42 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-10 19:32:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-10 19:32:43 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23626
+2026-05-10 19:32:43 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23626 (unknown)
+2026-05-10 19:32:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23679 3101549
+2026-05-10 19:32:43 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/immihratsijna-karta-portugalii-2026-nepaltsi-indijtsi-ukraintsi_try3.jpg (245 KB, quality=high)
+2026-05-10 19:32:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:32:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:33:33 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-10 19:33:33 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 3
+2026-05-10 19:33:33 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Finalized: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/immihratsijna-karta-portugalii-2026-nepaltsi-indijtsi-ukraintsi.jpg
+2026-05-10 19:33:33 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/immihratsijna-karta-portugalii-2026-nepaltsi-indijtsi-ukraintsi/uk.md
+2026-05-10 19:33:33 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/immihratsijna-karta-portugalii-2026-nepaltsi-indijtsi-ukraintsi/pt.md (b1_warning=True)
