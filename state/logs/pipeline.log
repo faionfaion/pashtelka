@@ -21323,3 +21323,59 @@ Error output: Check stderr output for details
 2026-05-10 18:45:39 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-10 18:45:39 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/inem-demontazh-komisiya-pracivnykiv-reforma-shvydka-dopomoha-2026/uk.md
 2026-05-10 18:45:39 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/inem-demontazh-komisiya-pracivnykiv-reforma-shvydka-dopomoha-2026/pt.md (b1_warning=True)
+2026-05-10 18:45:39 [pipeline] INFO: Article ready: inem-demontazh-komisiya-pracivnykiv-reforma-shvydka-dopomoha-2026 (INEM під загрозою демонтажу: комісія працівників з)
+2026-05-10 18:45:39 [pipeline] INFO: === Article 6/11 ===
+2026-05-10 18:45:39 [pipeline] INFO: --- Article: [news] Хантавірус на круїзному лайнері: Іспанія евакуює пасажирів — ---
+2026-05-10 18:45:39 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:45:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:49:52 [pipeline.stages.s2_research] INFO: Research complete: 11262 chars
+2026-05-10 18:49:52 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:49:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:51:04 [pipeline.stages.s3_generate] INFO: Generated: 'Хантавірус на круїзному лайнері: Іспанія евакуює пасажирів — що каже DGS і чи є ризик для Португалії' (slug=hantavirus-mv-hondius-evakuatsiia-kanarski-ostrovy-ryzyky-portugal, 492 words, 10 sources)
+2026-05-10 18:51:04 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:51:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:52:15 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-10 18:52:15 [pipeline.stages.s4_review] INFO: Feedback: Якісна, добре структурована стаття з правильною перевернутою пірамідою та достатньою кількістю верифікованих джерел. Кілька зауважень для доопрацювання:
+
+1. **Контекст для іммігрантів — Інститут Рікар
+2026-05-10 18:52:15 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:52:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:52:49 [pipeline.stages.s5_revise] INFO: Revised article: 563 words
+2026-05-10 18:52:49 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-10 18:52:49 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:52:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:53:37 [pipeline.stages.s4_review] INFO: Review: score=9, approved=True
+2026-05-10 18:53:37 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований матеріал. Джерела різноманітні та авторитетні (ВООЗ, RTP, Público, Renascença, Euronews), усі посилання оформлені як Markdown-якорі. Португальські терміни та інституції п
+2026-05-10 18:53:37 [pipeline] INFO: Article approved after 1 revision(s)
+2026-05-10 18:53:37 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (5153 chars in)
+2026-05-10 18:53:37 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:53:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:55:23 [pipeline.llm] WARNING: translation cost ${0.1313} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2382, out_tokens=1274). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-10 18:55:23 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=30.1 avg_sent=10.9 coverage=67.6% (336 words counted)
+2026-05-10 18:55:23 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=30.1, avg_sent=10.9, coverage=67.6%); retrying with addendum
+2026-05-10 18:55:23 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:55:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:58:46 [pipeline.llm] WARNING: translation cost ${0.1268} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2461, out_tokens=1199). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-10 18:58:46 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=51.6 avg_sent=10.0 coverage=86.9% (328 words counted)
+2026-05-10 18:58:46 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=51.6, avg_sent=10.0, coverage=86.9%)
+2026-05-10 18:58:46 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:58:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:59:01 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1052 chars, vocab: 5 words, pt: 204 chars
+2026-05-10 18:59:01 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=hantavirus-mv-hondius-evakuatsiia-kanarski-ostrovy-ryzyky-portugal
+2026-05-10 18:59:01 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:59:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:59:19 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Restructured to place focal action (health workers guiding passengers) first, added explicit anatomy
+2026-05-10 18:59:19 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-10 18:59:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-10 19:00:12 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-10 19:00:13 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-10 19:00:13 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26415
+2026-05-10 19:00:13 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26415 (unknown)
+2026-05-10 19:00:13 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26468 3096470
+2026-05-10 19:00:14 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/hantavirus-mv-hondius-evakuatsiia-kanarski-ostrovy-ryzyky-portugal.jpg (278 KB, quality=auto)
+2026-05-10 19:00:14 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 19:00:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 19:01:18 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-10 19:01:18 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-10 19:01:18 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hantavirus-mv-hondius-evakuatsiia-kanarski-ostrovy-ryzyky-portugal/uk.md
+2026-05-10 19:01:18 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/hantavirus-mv-hondius-evakuatsiia-kanarski-ostrovy-ryzyky-portugal/pt.md (b1_warning=True)
