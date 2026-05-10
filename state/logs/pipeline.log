@@ -21150,3 +21150,63 @@ Error output: Check stderr output for details
 2026-05-10 17:34:11 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 2026-05-10 17:34:11 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/rally-portugal-2026-perekryttia-dorig-ic2-fatima/uk.md
 2026-05-10 17:34:11 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/rally-portugal-2026-perekryttia-dorig-ic2-fatima/pt.md (b1_warning=True)
+2026-05-10 17:34:12 [pipeline] INFO: Article ready: rally-portugal-2026-perekryttia-dorig-ic2-fatima (Ралі Португалії та паломники до Фатіми: які дороги)
+2026-05-10 17:34:12 [pipeline] INFO: === Article 3/11 ===
+2026-05-10 17:34:12 [pipeline] INFO: --- Article: [material] Трудова реформа 2026 та права іммігрантів: що змінюється і щ ---
+2026-05-10 17:34:12 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 17:34:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 17:39:12 [claude_agent_sdk._internal.query] DEBUG: Read task cancelled
+2026-05-10 17:39:17 [pipeline.sdk] WARNING: agent_query retry 1/2: agent_query timed out after 300s — 5.6s
+2026-05-10 17:39:22 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 17:39:22 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 17:44:00 [pipeline.stages.s2_research] INFO: Research complete: 9331 chars
+2026-05-10 17:44:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 17:44:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 17:46:12 [pipeline.stages.s3_generate] INFO: Generated: 'Трудова реформа 2026 та права іммігрантів: що змінюється і що треба знати' (slug=trudova-reforma-2026-prava-immihrantiv-portugal, 1118 words, 16 sources)
+2026-05-10 17:46:12 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 17:46:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 17:47:43 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-10 17:47:43 [pipeline.stages.s4_review] INFO: Feedback: Сильний, добре структурований матеріал з відмінним покриттям джерел та релевантністю для цільової аудиторії. Усі посилання оформлені як Markdown-якорі. Кілька зауважень для фінальної полірування:
+
+1. 
+2026-05-10 17:47:43 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 17:47:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 17:49:32 [pipeline.stages.s5_revise] INFO: Revised article: 1201 words
+2026-05-10 17:49:32 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-10 17:49:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 17:49:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 17:51:08 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-10 17:51:08 [pipeline.stages.s4_review] INFO: Feedback: Сильний, добре структурований матеріал з ретельним підбором джерел та відмінним контекстом для іммігрантів. Порівняння з українськими реаліями (ЄСВ, Держпраці, 24 календарні дні відпустки) — саме те, 
+2026-05-10 17:51:08 [pipeline] INFO: Article approved after 1 revision(s)
+2026-05-10 17:51:08 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (9964 chars in)
+2026-05-10 17:51:08 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 17:51:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 17:57:00 [pipeline.llm] WARNING: translation cost ${0.2395} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=3599, out_tokens=2474). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-10 17:57:00 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=31.7 avg_sent=11.2 coverage=67.6% (796 words counted)
+2026-05-10 17:57:00 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=31.7, avg_sent=11.2, coverage=67.6%); retrying with addendum
+2026-05-10 17:57:00 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 17:57:00 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:01:29 [pipeline.llm] WARNING: translation cost ${0.2348} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=3678, out_tokens=2395). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-10 18:01:29 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=52.0 avg_sent=9.5 coverage=83.2% (852 words counted)
+2026-05-10 18:01:29 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=52.0, avg_sent=9.5, coverage=83.2%)
+2026-05-10 18:01:29 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:01:29 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:01:47 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1184 chars, vocab: 5 words, pt: 207 chars
+2026-05-10 18:01:47 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=trudova-reforma-2026-prava-immihrantiv-portugal
+2026-05-10 18:01:47 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:01:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:02:09 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy counts (five fingers, two arms, one hea
+2026-05-10 18:02:09 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-10 18:02:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-10 18:03:03 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-10 18:03:04 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-10 18:03:04 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26415
+2026-05-10 18:03:04 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26415 (unknown)
+2026-05-10 18:03:04 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26468 2900461
+2026-05-10 18:03:04 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/trudova-reforma-2026-prava-immihrantiv-portugal.jpg (226 KB, quality=auto)
+2026-05-10 18:03:04 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-10 18:03:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-10 18:03:57 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-10 18:03:57 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-10 18:03:57 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trudova-reforma-2026-prava-immihrantiv-portugal/uk.md
+2026-05-10 18:03:57 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trudova-reforma-2026-prava-immihrantiv-portugal/pt.md (b1_warning=True)
