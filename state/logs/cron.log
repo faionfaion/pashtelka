@@ -2825,3 +2825,60 @@ Already up to date.
 18:03:57 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 18:03:57 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trudova-reforma-2026-prava-immihrantiv-portugal/uk.md
 18:03:57 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trudova-reforma-2026-prava-immihrantiv-portugal/pt.md (b1_warning=True)
+18:03:58 [pipeline] INFO: Article ready: trudova-reforma-2026-prava-immihrantiv-portugal (Трудова реформа 2026 та права іммігрантів: що змін)
+18:03:58 [pipeline] INFO: === Article 4/11 ===
+18:03:58 [pipeline] INFO: --- Article: [guide] Як отримати сімейного лікаря (médico de família) в Португалі ---
+18:03:58 [asyncio] DEBUG: Using selector: EpollSelector
+18:03:58 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:07:50 [pipeline.stages.s2_research] INFO: Research complete: 11810 chars
+18:07:50 [asyncio] DEBUG: Using selector: EpollSelector
+18:07:50 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:09:57 [pipeline.stages.s3_generate] INFO: Generated: 'Як отримати сімейного лікаря (médico de família) в Португалії: покрокова інструкція' (slug=yak-otrymaty-simejnoho-likaria-medico-de-familia-portugal, 1325 words, 10 sources)
+18:09:57 [asyncio] DEBUG: Using selector: EpollSelector
+18:09:57 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:11:04 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+18:11:04 [pipeline.stages.s4_review] INFO: Feedback: Добротний, структурований гайд із чудовим контекстом для новоприбулих. Але є кілька речей, що блокують публікацію:
+
+**Непідкріплені факти (потрібні джерела або видалити):**
+1. «Близько 1,5 мільйона лю
+18:11:04 [asyncio] DEBUG: Using selector: EpollSelector
+18:11:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:13:05 [pipeline.stages.s5_revise] INFO: Revised article: 1416 words
+18:13:05 [pipeline] INFO: === Review cycle 1/3 complete ===
+18:13:05 [asyncio] DEBUG: Using selector: EpollSelector
+18:13:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:14:12 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+18:14:12 [pipeline.stages.s4_review] INFO: Feedback: Відмінний гайд — структурований, добре джерелований, практичний для цільової аудиторії. Португальські терміни пояснені при першому вживанні, порівняння з українськими аналогами (Junta de Freguesia ~ с
+18:14:12 [pipeline] INFO: Article approved after 1 revision(s)
+18:14:12 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (10597 chars in)
+18:14:12 [asyncio] DEBUG: Using selector: EpollSelector
+18:14:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:19:47 [pipeline.llm] WARNING: translation cost ${0.2430} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=3748, out_tokens=2491). Tune TRANSLATION_COST_WARN_USD if this is expected.
+18:19:47 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=24.1 avg_sent=14.6 coverage=64.3% (722 words counted)
+18:19:47 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=24.1, avg_sent=14.6, coverage=64.3%); retrying with addendum
+18:19:47 [asyncio] DEBUG: Using selector: EpollSelector
+18:19:47 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:25:01 [pipeline.llm] WARNING: translation cost ${0.2291} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=3824, out_tokens=2290). Tune TRANSLATION_COST_WARN_USD if this is expected.
+18:25:01 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=42.7 avg_sent=12.8 coverage=73.6% (724 words counted)
+18:25:01 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=42.7, avg_sent=12.8, coverage=73.6%)
+18:25:01 [asyncio] DEBUG: Using selector: EpollSelector
+18:25:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:25:19 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1197 chars, vocab: 5 words, pt: 176 chars
+18:25:19 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=yak-otrymaty-simejnoho-likaria-medico-de-familia-portugal
+18:25:19 [asyncio] DEBUG: Using selector: EpollSelector
+18:25:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:25:34 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy counts (fingers, arms, eyes, heads) for
+18:25:34 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+18:25:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+18:26:31 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+18:26:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+18:26:32 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23622
+18:26:32 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23622 (unknown)
+18:26:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23675 2923089
+18:26:32 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/yak-otrymaty-simejnoho-likaria-medico-de-familia-portugal.jpg (234 KB, quality=auto)
+18:26:32 [asyncio] DEBUG: Using selector: EpollSelector
+18:26:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:27:23 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+18:27:23 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+18:27:23 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/yak-otrymaty-simejnoho-likaria-medico-de-familia-portugal/uk.md
+18:27:23 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/yak-otrymaty-simejnoho-likaria-medico-de-familia-portugal/pt.md (b1_warning=True)
