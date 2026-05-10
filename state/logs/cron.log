@@ -3164,3 +3164,75 @@ From https://github.com/faionfaion/pashtelka
  * branch              master     -> FETCH_HEAD
 Already up to date.
 2026-05-10 20:00:02 Pipeline digest started
+20:00:03 [pipeline] INFO: Article ready: vykhidni-10-11-travnia-bezkoshtovni-podii-lisbon-porto-algarve (Вихідні 9-10 травня: безкоштовні події в Лісабоні,)
+20:00:03 [pipeline] INFO: === Article 9/11 ===
+20:00:03 [pipeline] INFO: --- Article: [news] Operação Influencer: Chega ініціює парламентське розслідуван ---
+20:00:03 [asyncio] DEBUG: Using selector: EpollSelector
+20:00:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:00:03 [pipeline] INFO: === Digest mode ===
+20:00:03 [pipeline.stages.s11_digest] INFO: Building digest for 5 news articles
+20:00:03 [asyncio] DEBUG: Using selector: EpollSelector
+20:00:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:00:53 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+20:01:49 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+20:01:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+20:01:50 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23378
+20:01:50 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23378 (unknown)
+20:01:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23431 3455571
+20:01:50 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/digest-2026-05-10.jpg (242 KB, quality=high)
+20:01:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.telegram.org:443
+20:01:50 [urllib3.connectionpool] DEBUG: https://api.telegram.org:443 "POST /bot/sendPhoto HTTP/1.1" 404 55
+20:01:50 [pipeline.telegram] ERROR: TG photo error: Not Found
+20:01:50 [pipeline.stages.s11_digest] ERROR: Failed to publish UA digest
+20:01:50 [pipeline] INFO: Digest skipped (not enough articles)
+20:03:27 [pipeline.stages.s2_research] INFO: Research complete: 12520 chars
+20:03:27 [asyncio] DEBUG: Using selector: EpollSelector
+20:03:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:04:48 [pipeline.stages.s3_generate] INFO: Generated: 'Operação Influencer: Chega хоче парламентського розслідування — що це за справа і чому PSD блокує' (slug=operacao-influencer-chega-parlamentske-rozsliduvannia-cpi-2026, 521 words, 11 sources)
+20:04:48 [asyncio] DEBUG: Using selector: EpollSelector
+20:04:48 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:05:51 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+20:05:51 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований матеріал-пояснювач. Джерела перевірені, посилання оформлені як Markdown-якорі, португальські терміни пояснені українською, всі персоналії представлені з ролями та оригіна
+20:05:51 [asyncio] DEBUG: Using selector: EpollSelector
+20:05:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:07:02 [pipeline.stages.s5_revise] INFO: Revised article: 562 words
+20:07:02 [pipeline] INFO: === Review cycle 1/3 complete ===
+20:07:02 [asyncio] DEBUG: Using selector: EpollSelector
+20:07:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:08:23 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+20:08:23 [pipeline.stages.s4_review] INFO: Feedback: Сильний пояснювальний матеріал із чіткою структурою, гарним контекстом для новоприбулих та якісним поясненням португальських термінів. Кілька зауважень для доопрацювання:
+
+1. **Непідкріплене джерелом 
+20:08:23 [pipeline] INFO: Article approved after 1 revision(s)
+20:08:23 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (5209 chars in)
+20:08:23 [asyncio] DEBUG: Using selector: EpollSelector
+20:08:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:11:54 [pipeline.llm] WARNING: translation cost ${0.1423} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2415, out_tokens=1414). Tune TRANSLATION_COST_WARN_USD if this is expected.
+20:11:54 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=27.6 avg_sent=10.4 coverage=69.8% (381 words counted)
+20:11:54 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=27.6, avg_sent=10.4, coverage=69.8%); retrying with addendum
+20:11:54 [asyncio] DEBUG: Using selector: EpollSelector
+20:11:54 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:14:49 [pipeline.llm] WARNING: translation cost ${0.1366} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2491, out_tokens=1323). Tune TRANSLATION_COST_WARN_USD if this is expected.
+20:14:49 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=40.8 avg_sent=8.7 coverage=79.2% (361 words counted)
+20:14:49 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=40.8, avg_sent=8.7, coverage=79.2%)
+20:14:49 [asyncio] DEBUG: Using selector: EpollSelector
+20:14:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:15:15 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1293 chars, vocab: 5 words, pt: 228 chars
+20:15:15 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=operacao-influencer-chega-parlamentske-rozsliduvannia-cpi-2026
+20:15:15 [asyncio] DEBUG: Using selector: EpollSelector
+20:15:15 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:15:33 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Restructured to lead with focal point (magnifying glass + documents), then environment (parliament),
+20:15:33 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+20:15:33 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+20:16:31 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+20:16:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+20:16:32 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23378
+20:16:32 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23378 (unknown)
+20:16:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23431 2971112
+20:16:33 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/operacao-influencer-chega-parlamentske-rozsliduvannia-cpi-2026.jpg (267 KB, quality=auto)
+20:16:33 [asyncio] DEBUG: Using selector: EpollSelector
+20:16:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:16:59 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+20:16:59 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+20:16:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/operacao-influencer-chega-parlamentske-rozsliduvannia-cpi-2026/uk.md
+20:16:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/operacao-influencer-chega-parlamentske-rozsliduvannia-cpi-2026/pt.md (b1_warning=True)
