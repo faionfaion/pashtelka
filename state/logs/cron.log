@@ -2882,3 +2882,59 @@ Already up to date.
 18:27:23 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 18:27:23 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/yak-otrymaty-simejnoho-likaria-medico-de-familia-portugal/uk.md
 18:27:23 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/yak-otrymaty-simejnoho-likaria-medico-de-familia-portugal/pt.md (b1_warning=True)
+18:27:23 [pipeline] INFO: Article ready: yak-otrymaty-simejnoho-likaria-medico-de-familia-portugal (Як отримати сімейного лікаря (médico de família) в)
+18:27:23 [pipeline] INFO: === Article 5/11 ===
+18:27:23 [pipeline] INFO: --- Article: [news] INEM під загрозою демонтажу: комісія працівників б'є тривогу ---
+18:27:23 [asyncio] DEBUG: Using selector: EpollSelector
+18:27:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:31:12 [pipeline.stages.s2_research] INFO: Research complete: 12711 chars
+18:31:12 [asyncio] DEBUG: Using selector: EpollSelector
+18:31:12 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:32:52 [pipeline.stages.s3_generate] INFO: Generated: 'INEM під загрозою демонтажу: комісія працівників звинувачує уряд у знищенні швидкої допомоги' (slug=inem-demontazh-komisiya-pracivnykiv-reforma-shvydka-dopomoha-2026, 445 words, 8 sources)
+18:32:52 [asyncio] DEBUG: Using selector: EpollSelector
+18:32:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:33:57 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+18:33:57 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з сильним контекстом для іммігрантів та гарною структурою джерел. Потрібні лише дрібні правки:
+
+1. **Граматика:** «від передачі каретів» → «від передачі карет» (правильний родовий відмін
+18:33:57 [asyncio] DEBUG: Using selector: EpollSelector
+18:33:57 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:34:46 [pipeline.stages.s5_revise] INFO: Revised article: 450 words
+18:34:46 [pipeline] INFO: === Review cycle 1/3 complete ===
+18:34:46 [asyncio] DEBUG: Using selector: EpollSelector
+18:34:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:35:46 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+18:35:46 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: актуальна тема, чудове джерелування (8 джерел, усі оформлені як Markdown-посилання), відмінний контекст для іммігрантів — пояснення INEM через аналогію з 103, поради щодо мовного бар'єр
+18:35:46 [pipeline] INFO: Article approved after 1 revision(s)
+18:35:46 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (4348 chars in)
+18:35:46 [asyncio] DEBUG: Using selector: EpollSelector
+18:35:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:39:43 [pipeline.llm] WARNING: translation cost ${0.1177} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2186, out_tokens=1132). Tune TRANSLATION_COST_WARN_USD if this is expected.
+18:39:43 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=27.8 avg_sent=10.9 coverage=67.8% (267 words counted)
+18:39:43 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=27.8, avg_sent=10.9, coverage=67.8%); retrying with addendum
+18:39:43 [asyncio] DEBUG: Using selector: EpollSelector
+18:39:43 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:43:14 [pipeline.llm] WARNING: translation cost ${0.1145} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2264, out_tokens=1074). Tune TRANSLATION_COST_WARN_USD if this is expected.
+18:43:14 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=51.0 avg_sent=8.7 coverage=79.7% (310 words counted)
+18:43:14 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=51.0, avg_sent=8.7, coverage=79.7%)
+18:43:14 [asyncio] DEBUG: Using selector: EpollSelector
+18:43:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:43:39 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1211 chars, vocab: 5 words, pt: 204 chars
+18:43:39 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=inem-demontazh-komisiya-pracivnykiv-reforma-shvydka-dopomoha-2026
+18:43:39 [asyncio] DEBUG: Using selector: EpollSelector
+18:43:39 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:43:54 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to place the main subject (medical workers) first with explicit anatomy counts, converted 
+18:43:54 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+18:43:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+18:44:51 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+18:44:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+18:44:52 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26415
+18:44:52 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26415 (unknown)
+18:44:52 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26468 2878940
+18:44:52 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/inem-demontazh-komisiya-pracivnykiv-reforma-shvydka-dopomoha-2026.jpg (247 KB, quality=auto)
+18:44:52 [asyncio] DEBUG: Using selector: EpollSelector
+18:44:52 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+18:45:39 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+18:45:39 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+18:45:39 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/inem-demontazh-komisiya-pracivnykiv-reforma-shvydka-dopomoha-2026/uk.md
+18:45:39 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/inem-demontazh-komisiya-pracivnykiv-reforma-shvydka-dopomoha-2026/pt.md (b1_warning=True)
