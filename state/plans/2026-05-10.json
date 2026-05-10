@@ -1,0 +1,83 @@
+{
+  "articles": [
+    {
+      "topic": "Землетрус 4.6 на Азорських островах: що відомо та чи є загроза для материка",
+      "type": "news",
+      "angle": "Сейсмічна подія відчута на всіх островах центральної групи. Пояснити, чи є ризик для материкової Португалії, нагадати правила поведінки під час землетрусу — корисно для українців, які не звикли до сейсмічної активності",
+      "sources_hint": "RTP Açores, IPMA seismic data (ipma.pt/pt/geofisica/sismologia), Proteção Civil Açores, search 'sismo Açores maio 2026'",
+      "priority": 1
+    },
+    {
+      "topic": "Ралі Португалії: перекриття доріг у неділю — де та як об'їхати",
+      "type": "news",
+      "angle": "Фінальний день ралі. Конкретні дороги перекриті в районах Leiria, Fátima, Coimbra. Альтернативні маршрути для тих, хто їде на роботу в понеділок або повертається з вихідних. Розклад відновлення руху",
+      "sources_hint": "ACP, Infraestruturas de Portugal, Rally de Portugal official site, GNR comunicados, search 'rali portugal 2026 estradas cortadas horários'",
+      "priority": 1
+    },
+    {
+      "topic": "Трудова реформа 2026 та права іммігрантів: що змінюється і що маєте знати",
+      "type": "material",
+      "angle": "Об'єднаний матеріал: 1) Суть реформи — конкретні пункти: зміни контрактів, випробувальний термін, понаднормова робота, позиції Монтенеґру і PS (без партійних оцінок). 2) Повний гід з трудових прав: типи контрактів (termo certo/incerto/sem termo), оплачувана відпустка (22 дні + feriados), лікарняний (baixa médica), звільнення та компенсація, куди скаржитися (ACT). 3) Окремий блок: що саме змінює реформа для іммігрантів. Фокус на практичних правах, а не теорії",
+      "sources_hint": "RTP Economia, Público economia, DN, ACT.gov.pt guias, Código do Trabalho atualizado 2026, CITE.gov.pt, imigrante.pt direitos laborais, Parlamento.pt agenda, search 'reforma laboral 2026 Portugal propostas', search 'direitos trabalhadores imigrantes Portugal 2026 contrato férias despedimento'",
+      "priority": 1
+    },
+    {
+      "topic": "Як отримати сімейного лікаря (médico de família) в Португалії: покрокова інструкція",
+      "type": "guide",
+      "angle": "Повний алгоритм: 1) отримати número de utente SNS, 2) знайти свій Centro de Saúde за адресою, 3) зареєструватися (які документи), 4) що робити якщо немає вільних лікарів (lista de espera), 5) альтернативи: USF vs UCSP, 6) як записатися на прийом (SNS 24, app, телефон). Додати лайфхаки: як прискорити процес, що робити з мовним бар'єром",
+      "sources_hint": "SNS.gov.pt portal utente, SNS 24 info, search 'como inscrever centro de saúde Portugal utente estrangeiro', ACSS médico de família inscrição, imigrante.pt saúde, Portal do SNS app tutorial",
+      "priority": 1
+    },
+    {
+      "topic": "INEM під загрозою демонтажу: комісія працівників б'є тривогу через реформу",
+      "type": "news",
+      "angle": "Працівники кажуть, що реформа знищить INEM як структуру. Пояснити, що таке INEM для іммігранта (112, CODU, ambulância). Що зміниться на практиці: час приїзду, мовний бар'єр, доступ у менших містах",
+      "sources_hint": "RTP Saúde, Público, Jornal de Notícias, comissão de trabalhadores INEM comunicados, search 'INEM reforma 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Хантавірус на круїзному лайнері: Іспанія евакуює пасажирів — чи є ризик для Португалії",
+      "type": "news",
+      "angle": "DGS моніторить ситуацію, можлива перевірка в аеропортах Лісабона та Фару (маршрути з Канарських островів). Коротко: що таке хантавірус, як передається, чому паніка не потрібна. Чи є португальські/українські пасажири на борту",
+      "sources_hint": "DGS.pt comunicados, RTP Saúde, CM Jornal, search 'hantavírus navio cruzeiro Portugal DGS medidas', WHO hantavirus fact sheet",
+      "priority": 2
+    },
+    {
+      "topic": "Іміграційна карта Португалії 2026: непальці, індійці та де серед них українці",
+      "type": "immigration",
+      "angle": "За мотивами матеріалу Público про непальську громаду. Скільки зараз українців, як змінилася кількість за 4 роки. Чи з'являються нові конкуренти на ринку праці (будівництво, сільське господарство). Статистика SEF/AIMA за перший квартал 2026",
+      "sources_hint": "Público 'geração nepalesa', AIMA relatórios estatísticos, SEF/SEFSTAT data, Pordata imigração, search 'comunidade ucraniana Portugal 2026 números'",
+      "priority": 2
+    },
+    {
+      "topic": "Неділя в Лісабоні, Порту та Алгарве: безкоштовні події, ярмарки, ринки 10-11 травня",
+      "type": "news",
+      "angle": "Конкретна добірка: Feira da Ladra (Лісабон), ринки в Порту, Loulé market (Алгарве), безкоштовні музеї в першу неділю (перевірити дати). Фестивалі, концерти. Формат: місто → подія → час → як дістатися",
+      "sources_hint": "Câmara de Lisboa agenda cultural, Porto.pt eventos, Visit Algarve, timeout.pt, search 'eventos gratuitos Lisboa Porto Faro maio 2026 fim de semana'",
+      "priority": 2
+    },
+    {
+      "topic": "Operação Influencer: Chega ініціює парламентське розслідування — що це за справа",
+      "type": "news",
+      "angle": "Пояснити простими словами: хто, що, коли. Чому це важливо для розуміння португальської політики. Без оціночних суджень — тільки факти та контекст для тих, хто не стежить за внутрішньою політикою",
+      "sources_hint": "RTP Política, Público, Observador, search 'operação influencer comissão inquérito Chega António Costa 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Ціни на пальне: прогноз на наступний тиждень та де заправити авто дешевше",
+      "type": "news",
+      "angle": "Понеділкове оновлення цін — попередній прогноз на підставі біржових цін. Порівняння мереж (Prio, Intermarché, Jumbo vs Galp/Repsol/BP). Порада: додатки для пошуку дешевого пального (Maisgasolina.com)",
+      "sources_hint": "DGEG preços combustíveis, maisgasolina.com, Jornal de Negócios petróleo, search 'preço combustível próxima semana Portugal maio 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Погода на тиждень 11-17 травня: Лісабон, Порту, Алгарве — що одягати та планувати",
+      "type": "utility",
+      "angle": "Один стислий матеріал: температура по регіонах, чи буде дощ, UV-індекс (захист шкіри), коли починати використовувати крем від сонця. Порівняти з типовою травневою погодою в Україні для контексту",
+      "sources_hint": "IPMA.pt previsão 10 dias, Windguru, AccuWeather Lisbon/Porto/Faro, search 'previsão meteo Portugal semana 12-17 maio 2026'",
+      "priority": 3
+    }
+  ],
+  "date": "2026-05-10",
+  "created_at": "2026-05-10T17:00:02.924634+00:00"
+}

@@ -2607,3 +2607,93 @@ Traceback (most recent call last):
     raise Exception(message.get("error", "Unknown error"))
 Exception: Command failed with exit code 1 (exit code: 1)
 Error output: Check stderr output for details
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-05-09 20:00:01 Pipeline digest started
+20:00:02 [pipeline] INFO: === Digest mode ===
+20:00:02 [pipeline.stages.s11_digest] INFO: Digest for 2026-05-09 already published (digest-2026-05-09.json); skipping
+20:00:02 [pipeline] INFO: Digest skipped (not enough articles)
+From https://github.com/faionfaion/pashtelka
+ * branch              master     -> FETCH_HEAD
+Already up to date.
+2026-05-10 17:00:02 Pipeline generate started
+17:00:03 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+17:00:03 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+17:00:03 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+17:00:03 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+17:00:03 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+17:00:03 [pipeline.feeds] INFO: Feed publico: 10 items
+17:00:03 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+17:00:03 [asyncio] DEBUG: Using selector: EpollSelector
+17:00:03 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:02:35 [asyncio] DEBUG: Using selector: EpollSelector
+17:02:35 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:04:41 [pipeline.stages.s0_editorial_plan] INFO: Plan reviewed: 12 -> 11 articles
+17:04:41 [pipeline.stages.s0_editorial_plan] INFO: Editorial plan created: 11 articles for 2026-05-10
+17:04:41 [pipeline] INFO: Editorial plan: 11 topics
+17:04:41 [pipeline.feeds] INFO: Feed rtp_latest: 10 items
+17:04:41 [pipeline.feeds] INFO: Feed rtp_country: 10 items
+17:04:41 [pipeline.feeds] INFO: Feed rtp_economy: 10 items
+17:04:41 [pipeline.feeds] INFO: Feed rtp_world: 10 items
+17:04:42 [pipeline.feeds] INFO: Feed rtp_culture: 10 items
+17:04:42 [pipeline.feeds] INFO: Feed publico: 10 items
+17:04:42 [pipeline.feeds] INFO: Feed cmjornal: 10 items
+17:04:42 [pipeline.stages.s1_collect] INFO: Context: 66 RSS items, 0 existing articles
+17:04:42 [pipeline] INFO: === Article 1/11 ===
+17:04:42 [pipeline] INFO: --- Article: [news] Землетрус 4.6 на Азорських островах: що відомо та чи є загро ---
+17:04:42 [asyncio] DEBUG: Using selector: EpollSelector
+17:04:42 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:07:23 [pipeline.stages.s2_research] INFO: Research complete: 9089 chars
+17:07:23 [asyncio] DEBUG: Using selector: EpollSelector
+17:07:23 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:08:27 [pipeline.stages.s3_generate] INFO: Generated: 'Землетрус 4.6 на Азорських островах: що сталося і чи є загроза для материка' (slug=zemletrus-4-6-azorski-ostrovy-zagroza-materyk, 405 words, 8 sources)
+17:08:27 [asyncio] DEBUG: Using selector: EpollSelector
+17:08:27 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:09:37 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+17:09:37 [pipeline.stages.s4_review] INFO: Feedback: Якісна, добре структурована стаття з сильним практичним блоком для читачів. Кілька дрібних зауважень:
+
+1. **Невикористане джерело:** Diário de Notícias є у списку джерел, але жодного разу не цитується
+17:09:37 [asyncio] DEBUG: Using selector: EpollSelector
+17:09:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:12:18 [pipeline.stages.s5_revise] INFO: Revised article: 438 words
+17:12:18 [pipeline] INFO: === Review cycle 1/3 complete ===
+17:12:18 [asyncio] DEBUG: Using selector: EpollSelector
+17:12:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:13:02 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+17:13:02 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: актуальна, добре структурована, з правильним інвертованим пірамідальним підходом і практичними порадами для іммігрантів. Кілька дрібних зауважень:
+
+1. **Відсутнє посилання на Diário de 
+17:13:02 [pipeline] INFO: Article approved after 1 revision(s)
+17:13:02 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (3945 chars in)
+17:13:02 [asyncio] DEBUG: Using selector: EpollSelector
+17:13:02 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:15:07 [pipeline.llm] WARNING: translation cost ${0.1096} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2069, out_tokens=1048). Tune TRANSLATION_COST_WARN_USD if this is expected.
+17:15:08 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=37.7 avg_sent=9.1 coverage=61.2% (289 words counted)
+17:15:08 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=37.7, avg_sent=9.1, coverage=61.2%); retrying with addendum
+17:15:08 [asyncio] DEBUG: Using selector: EpollSelector
+17:15:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:16:17 [pipeline.llm] WARNING: translation cost ${0.1066} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2145, out_tokens=992). Tune TRANSLATION_COST_WARN_USD if this is expected.
+17:16:17 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=53.0 avg_sent=9.7 coverage=69.2% (292 words counted)
+17:16:17 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=53.0, avg_sent=9.7, coverage=69.2%)
+17:16:17 [asyncio] DEBUG: Using selector: EpollSelector
+17:16:17 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:16:34 [pipeline.stages.s6_generate_tg] INFO: TG caption: 997 chars, vocab: 5 words, pt: 154 chars
+17:16:34 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=zemletrus-4-6-azorski-ostrovy-zagroza-materyk
+17:16:34 [asyncio] DEBUG: Using selector: EpollSelector
+17:16:34 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:16:54 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to put style declaration first then subject/pose/environment; added explicit anatomy count
+17:16:54 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+17:16:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+17:17:50 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+17:17:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+17:17:51 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 26415
+17:17:51 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 26415 (unknown)
+17:17:51 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 26468 3186199
+17:17:51 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/zemletrus-4-6-azorski-ostrovy-zagroza-materyk.jpg (250 KB, quality=auto)
+17:17:51 [asyncio] DEBUG: Using selector: EpollSelector
+17:17:51 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:18:43 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+17:18:43 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+17:18:43 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/zemletrus-4-6-azorski-ostrovy-zagroza-materyk/uk.md
+17:18:43 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/zemletrus-4-6-azorski-ostrovy-zagroza-materyk/pt.md (b1_warning=True)
