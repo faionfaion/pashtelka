@@ -3236,3 +3236,61 @@ Already up to date.
 20:16:59 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 20:16:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/operacao-influencer-chega-parlamentske-rozsliduvannia-cpi-2026/uk.md
 20:16:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/operacao-influencer-chega-parlamentske-rozsliduvannia-cpi-2026/pt.md (b1_warning=True)
+20:16:59 [pipeline] INFO: Article ready: operacao-influencer-chega-parlamentske-rozsliduvannia-cpi-2026 (Operação Influencer: Chega хоче парламентського ро)
+20:16:59 [pipeline] INFO: === Article 10/11 ===
+20:16:59 [pipeline] INFO: --- Article: [news] Ціни на пальне: прогноз на наступний тиждень та де заправити ---
+20:16:59 [asyncio] DEBUG: Using selector: EpollSelector
+20:16:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:20:26 [pipeline.stages.s2_research] INFO: Research complete: 5961 chars
+20:20:26 [asyncio] DEBUG: Using selector: EpollSelector
+20:20:26 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:21:36 [pipeline.stages.s3_generate] INFO: Generated: 'Пальне дешевшає: прогноз цін на 12–18 травня та де заправитися вигідніше' (slug=tsiny-palne-prognoz-12-18-travnia-2026-de-zapravytysia-deshevse, 448 words, 7 sources)
+20:21:36 [asyncio] DEBUG: Using selector: EpollSelector
+20:21:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:22:36 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+20:22:36 [pipeline.stages.s4_review] INFO: Feedback: Стаття сильна за змістом, структурою та джерелами — дуже практична для аудиторії. Потрібні невеликі правки перед публікацією:
+
+1. **МОВА / ЗМІШАНИЙ СКРИПТ:** «Ormuzькій протоці» — латиниця + кирилиця 
+20:22:36 [asyncio] DEBUG: Using selector: EpollSelector
+20:22:36 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:24:05 [pipeline.stages.s5_revise] INFO: Revised article: 487 words
+20:24:05 [pipeline] INFO: === Review cycle 1/3 complete ===
+20:24:05 [asyncio] DEBUG: Using selector: EpollSelector
+20:24:05 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:25:14 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+20:25:14 [pipeline.stages.s4_review] INFO: Feedback: Якісна, практична стаття з чіткою структурою та відмінним поясненням португальських термінів для новоприбулих. Кілька зауважень для фінальної полірівки:
+
+1. **URL-невідповідність Correio da Manhã:** У
+20:25:14 [pipeline] INFO: Article approved after 1 revision(s)
+20:25:14 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (3824 chars in)
+20:25:14 [asyncio] DEBUG: Using selector: EpollSelector
+20:25:14 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:27:49 [pipeline.llm] WARNING: translation cost ${0.1109} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2051, out_tokens=1069). Tune TRANSLATION_COST_WARN_USD if this is expected.
+20:27:49 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=36.2 avg_sent=13.4 coverage=59.9% (317 words counted)
+20:27:49 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=36.2, avg_sent=13.4, coverage=59.9%); retrying with addendum
+20:27:49 [asyncio] DEBUG: Using selector: EpollSelector
+20:27:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:29:59 [pipeline.llm] WARNING: translation cost ${0.1095} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2128, out_tokens=1034). Tune TRANSLATION_COST_WARN_USD if this is expected.
+20:29:59 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=46.6 avg_sent=12.5 coverage=68.3% (325 words counted)
+20:29:59 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=46.6, avg_sent=12.5, coverage=68.3%)
+20:29:59 [asyncio] DEBUG: Using selector: EpollSelector
+20:29:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:30:16 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1123 chars, vocab: 5 words, pt: 204 chars
+20:30:16 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=tsiny-palne-prognoz-12-18-travnia-2026-de-zapravytysia-deshevse
+20:30:16 [asyncio] DEBUG: Using selector: EpollSelector
+20:30:16 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:30:37 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to subject-first structure, added explicit anatomy (finger count, single pair of arms, hea
+20:30:37 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+20:30:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+20:31:32 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+20:31:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+20:31:33 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 23626
+20:31:33 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 23626 (unknown)
+20:31:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 23679 3390953
+20:31:33 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/tsiny-palne-prognoz-12-18-travnia-2026-de-zapravytysia-deshevse.jpg (235 KB, quality=auto)
+20:31:33 [asyncio] DEBUG: Using selector: EpollSelector
+20:31:33 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+20:32:16 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+20:32:16 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+20:32:16 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tsiny-palne-prognoz-12-18-travnia-2026-de-zapravytysia-deshevse/uk.md
+20:32:16 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tsiny-palne-prognoz-12-18-travnia-2026-de-zapravytysia-deshevse/pt.md (b1_warning=True)
