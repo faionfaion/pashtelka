@@ -4119,3 +4119,73 @@ Already up to date.
 17:24:45 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
 17:24:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-approved-council-ministers-what-changes-for-ukrainians-may-2026/uk.md
 17:24:45 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/trabalho-xxi-approved-council-ministers-what-changes-for-ukrainians-may-2026/pt.md (b1_warning=True)
+17:24:46 [pipeline] INFO: Article ready: trabalho-xxi-approved-council-ministers-what-changes-for-ukrainians-may-2026 (Уряд затвердив трудову реформу з 50+ змінами: що з)
+17:24:46 [pipeline] INFO: === Article 2/11 ===
+17:24:46 [pipeline] INFO: --- Article: [immigration] Tribunal de Contas назвав реформу попередньої візи «неконсти ---
+17:24:46 [asyncio] DEBUG: Using selector: EpollSelector
+17:24:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:27:49 [pipeline.stages.s2_research] INFO: Research complete: 11639 chars
+17:27:49 [asyncio] DEBUG: Using selector: EpollSelector
+17:27:49 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:28:56 [pipeline.stages.s3_generate] INFO: Generated: 'Tribunal de Contas назвав реформу фінконтролю «неконституційною» — чому це стосується іммігрантів' (slug=tribunal-contas-visto-previo-reform-unconstitutional-immigrants-impact, 542 words, 9 sources)
+17:28:56 [asyncio] DEBUG: Using selector: EpollSelector
+17:28:56 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:30:08 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+17:30:08 [pipeline.stages.s4_review] INFO: Feedback: Якісна стаття з сильним зв'язком між інституційною темою та інтересами імігрантів. Добре пояснені португальські терміни, коректна структура перевернутої піраміди, надійні джерела. Кілька зауважень для
+17:30:08 [asyncio] DEBUG: Using selector: EpollSelector
+17:30:08 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:31:10 [pipeline.stages.s5_revise] INFO: Revised article: 608 words
+17:31:10 [pipeline] INFO: === Review cycle 1/3 complete ===
+17:31:10 [asyncio] DEBUG: Using selector: EpollSelector
+17:31:10 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:31:59 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+17:31:59 [pipeline.stages.s4_review] INFO: Feedback: Сильна стаття: якісне джерелювання (9 джерел, усі оформлені як Markdown-якорі), чиста українська мова, зрозумілі пояснення португальських термінів та інституцій, логічна структура з інвертованою пірам
+17:31:59 [pipeline] INFO: Article approved after 1 revision(s)
+17:31:59 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (5607 chars in)
+17:31:59 [asyncio] DEBUG: Using selector: EpollSelector
+17:31:59 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:34:19 [pipeline.llm] WARNING: translation cost ${0.1463} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2507, out_tokens=1449). Tune TRANSLATION_COST_WARN_USD if this is expected.
+17:34:19 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=28.2 avg_sent=10.6 coverage=67.9% (414 words counted)
+17:34:19 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=28.2, avg_sent=10.6, coverage=67.9%); retrying with addendum
+17:34:19 [asyncio] DEBUG: Using selector: EpollSelector
+17:34:19 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:37:30 [pipeline.llm] WARNING: translation cost ${0.1365} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2584, out_tokens=1303). Tune TRANSLATION_COST_WARN_USD if this is expected.
+17:37:30 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=52.0 avg_sent=10.0 coverage=81.6% (391 words counted)
+17:37:30 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=52.0, avg_sent=10.0, coverage=81.6%)
+17:37:30 [asyncio] DEBUG: Using selector: EpollSelector
+17:37:30 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:37:46 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1241 chars, vocab: 5 words, pt: 242 chars
+17:37:46 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=tribunal-contas-visto-previo-reform-unconstitutional-immigrants-impact
+17:37:46 [asyncio] DEBUG: Using selector: EpollSelector
+17:37:46 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:38:03 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to put the focal subject (courthouse) first, replaced all negative instructions ('no text'
+17:38:03 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+17:38:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+17:38:59 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+17:39:01 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+17:39:01 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 24865
+17:39:01 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 24865 (unknown)
+17:39:01 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 24918 2871746
+17:39:01 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/tribunal-contas-visto-previo-reform-unconstitutional-immigrants-impact.jpg (247 KB, quality=auto)
+17:39:01 [asyncio] DEBUG: Using selector: EpollSelector
+17:39:01 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:39:31 [pipeline.stages.s_image_qa] INFO: Image QA: ok=False, severity=low, retry=True, issues=1 — Duplicated magnifying glass: a large one over the document stacks and a second smaller one on the ground near the coins — the scene description calls for a single magnifying glass
+17:39:31 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1 failed QA (severity=low, issues=1)
+17:39:31 [asyncio] DEBUG: Using selector: EpollSelector
+17:39:31 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:39:45 [pipeline.stages.s_image_prompt_editor] INFO: Prompt revised: Explicitly stated 'exactly one magnifying glass' with precise placement (hovering above the document
+17:39:45 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 2/3 (quality=high)
+17:39:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+17:40:36 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+17:40:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+17:40:37 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 24865
+17:40:37 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 24865 (unknown)
+17:40:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 24918 3003765
+17:40:37 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/tribunal-contas-visto-previo-reform-unconstitutional-immigrants-impact_try2.jpg (237 KB, quality=high)
+17:40:37 [asyncio] DEBUG: Using selector: EpollSelector
+17:40:37 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+17:40:59 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+17:40:59 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 2
+17:40:59 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Finalized: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/tribunal-contas-visto-previo-reform-unconstitutional-immigrants-impact.jpg
+17:40:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tribunal-contas-visto-previo-reform-unconstitutional-immigrants-impact/uk.md
+17:40:59 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/tribunal-contas-visto-previo-reform-unconstitutional-immigrants-impact/pt.md (b1_warning=True)
