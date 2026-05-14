@@ -22623,3 +22623,62 @@ Error output: Check stderr output for details
 2026-05-14 18:04:06 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Finalized: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/fatima-2026-patriarch-lisbon-nobody-is-foreigner-pilgrimage-may.jpg
 2026-05-14 18:04:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/fatima-2026-patriarch-lisbon-nobody-is-foreigner-pilgrimage-may/uk.md
 2026-05-14 18:04:06 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/fatima-2026-patriarch-lisbon-nobody-is-foreigner-pilgrimage-may/pt.md (b1_warning=True)
+2026-05-14 18:04:07 [pipeline] INFO: Article ready: fatima-2026-patriarch-lisbon-nobody-is-foreigner-pilgrimage-may («Тут ніхто не є іноземцем»: Патріарх Лісабона звер)
+2026-05-14 18:04:07 [pipeline] INFO: === Article 4/11 ===
+2026-05-14 18:04:07 [pipeline] INFO: --- Article: [news] Голова агенції з пожежної безпеки Тіаго Олівейра подав у від ---
+2026-05-14 18:04:07 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:04:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:07:11 [pipeline.stages.s2_research] INFO: Research complete: 10714 chars
+2026-05-14 18:07:11 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:07:11 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:08:07 [pipeline.stages.s3_generate] INFO: Generated: 'Голова агенції з пожежної безпеки Португалії пішов у відставку — за два дні до початку літнього посилення' (slug=agif-tiago-oliveira-resignation-fire-season-2026, 415 words, 9 sources)
+2026-05-14 18:08:07 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:08:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:09:06 [pipeline.stages.s4_review] INFO: Review: score=7, approved=False
+2026-05-14 18:09:06 [pipeline.stages.s4_review] INFO: Feedback: Стаття добре написана, структурована і має чудовий практичний блок. Потрібні виправлення перед публікацією:
+
+**Нерозшифровані абревіатури (пункт 10, 11 чеклісту):**
+1. **DECIR** — при першому згадуван
+2026-05-14 18:09:06 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:09:06 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:11:07 [pipeline.stages.s5_revise] INFO: Revised article: 486 words
+2026-05-14 18:11:07 [pipeline] INFO: === Review cycle 1/3 complete ===
+2026-05-14 18:11:07 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:11:07 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:12:21 [pipeline.stages.s4_review] INFO: Review: score=8, approved=True
+2026-05-14 18:12:21 [pipeline.stages.s4_review] INFO: Feedback: Якісний, добре структурований матеріал із відмінним контекстом для іммігрантів (аналогії з ДСНС, сільрадою) та корисним практичним блоком. Але є кілька правок перед публікацією:
+
+1. **Заголовок неточн
+2026-05-14 18:12:21 [pipeline] INFO: Article approved after 1 revision(s)
+2026-05-14 18:12:21 [pipeline.stages.s_translate_pt] INFO: translate_pt: starting (4510 chars in)
+2026-05-14 18:12:21 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:12:21 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:14:18 [pipeline.llm] WARNING: translation cost ${0.1174} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2231, out_tokens=1119). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-14 18:14:18 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=36.1 avg_sent=11.8 coverage=66.7% (252 words counted)
+2026-05-14 18:14:18 [pipeline.stages.s_translate_pt] WARNING: translate_pt: first attempt failed B1 (flesch=36.1, avg_sent=11.8, coverage=66.7%); retrying with addendum
+2026-05-14 18:14:18 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:14:18 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:17:04 [pipeline.llm] WARNING: translation cost ${0.1140} exceeds threshold ${0.1000} (model=claude-opus-4-7, in_tokens=2307, out_tokens=1059). Tune TRANSLATION_COST_WARN_USD if this is expected.
+2026-05-14 18:17:04 [pipeline.b1_validator] INFO: b1_validate: passed=False flesch=51.2 avg_sent=9.8 coverage=80.9% (262 words counted)
+2026-05-14 18:17:04 [pipeline.stages.s_translate_pt] WARNING: translate_pt: shipped with b1_warning=True after 2 attempts (flesch=51.2, avg_sent=9.8, coverage=80.9%)
+2026-05-14 18:17:04 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:17:04 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:17:21 [pipeline.stages.s6_generate_tg] INFO: TG caption: 1158 chars, vocab: 5 words, pt: 212 chars
+2026-05-14 18:17:21 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Starting for slug=agif-tiago-oliveira-resignation-fire-season-2026
+2026-05-14 18:17:21 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:17:21 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:17:38 [pipeline.stages.s_image_prompt_editor] INFO: Prompt optimized: Reordered to place the focal subject (helmet and desk) first, added concrete lighting direction and 
+2026-05-14 18:17:38 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] Attempt 1/3 (quality=auto)
+2026-05-14 18:17:38 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): api.openai.com:443
+2026-05-14 18:18:31 [urllib3.connectionpool] DEBUG: https://api.openai.com:443 "POST /v1/images/generations HTTP/1.1" 200 None
+2026-05-14 18:18:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2026-05-14 18:18:32 [PIL.PngImagePlugin] DEBUG: STREAM b'caBX' 41 29030
+2026-05-14 18:18:32 [PIL.PngImagePlugin] DEBUG: b'caBX' 41 29030 (unknown)
+2026-05-14 18:18:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 29083 3361025
+2026-05-14 18:18:32 [pipeline.image_gen] INFO: Image saved: /home/nero/workspace/projects/pashtelka-faion-net/gatsby/static/images/agif-tiago-oliveira-resignation-fire-season-2026.jpg (283 KB, quality=auto)
+2026-05-14 18:18:32 [asyncio] DEBUG: Using selector: EpollSelector
+2026-05-14 18:18:32 [claude_agent_sdk._internal.transport.subprocess_cli] INFO: Using bundled Claude Code CLI: /home/nero/.local/lib/python3.12/site-packages/claude_agent_sdk/_bundled/claude
+2026-05-14 18:19:00 [pipeline.stages.s_image_qa] INFO: Image QA: ok=True, severity=none, retry=False, issues=0 — clean
+2026-05-14 18:19:00 [pipeline.stages.s_image_orchestrator] INFO: [image-orchestrator] QA passed on attempt 1
+2026-05-14 18:19:00 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/agif-tiago-oliveira-resignation-fire-season-2026/uk.md
+2026-05-14 18:19:00 [pipeline.stages.s7_save] INFO: Article saved: /home/nero/workspace/projects/pashtelka-faion-net/content/agif-tiago-oliveira-resignation-fire-season-2026/pt.md (b1_warning=True)
