@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-05-11_171639",
+  "status": "empty",
+  "dry_run": false,
+  "slug": "",
+  "author": "Pastelka News",
+  "duration_s": 996.0,
+  "image_generated": false,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 355.5,
+      "error": null
+    },
+    {
+      "name": "research:SNS у кризі: операцій стає мен",
+      "status": "ok",
+      "duration_s": 167.0,
+      "error": null
+    },
+    {
+      "name": "generate:SNS у кризі: операцій стає мен",
+      "status": "ok",
+      "duration_s": 54.9,
+      "error": null
+    },
+    {
+      "name": "review:SNS у кризі: операцій стає мен",
+      "status": "ok",
+      "duration_s": 248.6,
+      "error": null
+    },
+    {
+      "name": "translate_pt:SNS у кризі: операцій стає мен",
+      "status": "failed",
+      "duration_s": 148.7,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Новий пілотний проєкт домашньо",
+      "status": "failed",
+      "duration_s": 2.0,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:AIMA: що очікувати цього тижня",
+      "status": "failed",
+      "duration_s": 1.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Тиждень в Португалії 12–17 тра",
+      "status": "failed",
+      "duration_s": 1.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Оренда житла в Португалії у 20",
+      "status": "failed",
+      "duration_s": 1.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Як записатися до сімейного лік",
+      "status": "failed",
+      "duration_s": 2.0,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Хантавірус у Європі: чи є загр",
+      "status": "failed",
+      "duration_s": 2.0,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:NOS збільшила прибуток на 4,7%",
+      "status": "failed",
+      "duration_s": 1.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:IRS 2026: нагадування — до кін",
+      "status": "failed",
+      "duration_s": 2.1,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Навчальний рік наближається до",
+      "status": "failed",
+      "duration_s": 1.9,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    },
+    {
+      "name": "research:Скасування свята Queima das Fi",
+      "status": "failed",
+      "duration_s": 2.4,
+      "error": "Command failed with exit code 1 (exit code: 1)\nError output: Check stderr output for details"
+    }
+  ]
+}

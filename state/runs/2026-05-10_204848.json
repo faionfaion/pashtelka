@@ -1,0 +1,398 @@
+{
+  "timestamp": "2026-05-10_204848",
+  "status": "ok",
+  "dry_run": false,
+  "slug": "zemletrus-4-6-azorski-ostrovy-zagroza-materyk, rally-portugal-2026-perekryttia-dorig-ic2-fatima, trudova-reforma-2026-prava-immihrantiv-portugal, yak-otrymaty-simejnoho-likaria-medico-de-familia-portugal, inem-demontazh-komisiya-pracivnykiv-reforma-shvydka-dopomoha-2026",
+  "author": "Pastelka News",
+  "duration_s": 13725.6,
+  "image_generated": true,
+  "msg_id": null,
+  "failed_stage": null,
+  "error": null,
+  "stages": [
+    {
+      "name": "editorial_plan",
+      "status": "ok",
+      "duration_s": 278.5,
+      "error": null
+    },
+    {
+      "name": "research:Землетрус 4.6 на Азорських ост",
+      "status": "ok",
+      "duration_s": 161.2,
+      "error": null
+    },
+    {
+      "name": "generate:Землетрус 4.6 на Азорських ост",
+      "status": "ok",
+      "duration_s": 63.4,
+      "error": null
+    },
+    {
+      "name": "review:Землетрус 4.6 на Азорських ост",
+      "status": "ok",
+      "duration_s": 275.1,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Землетрус 4.6 на Азорських ост",
+      "status": "ok",
+      "duration_s": 195.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Землетрус 4.6 на Азорських ост",
+      "status": "ok",
+      "duration_s": 16.5,
+      "error": null
+    },
+    {
+      "name": "save:Землетрус 4.6 на Азорських ост",
+      "status": "ok",
+      "duration_s": 129.2,
+      "error": null
+    },
+    {
+      "name": "research:Ралі Португалії: перекриття до",
+      "status": "ok",
+      "duration_s": 277.7,
+      "error": null
+    },
+    {
+      "name": "generate:Ралі Португалії: перекриття до",
+      "status": "ok",
+      "duration_s": 52.5,
+      "error": null
+    },
+    {
+      "name": "review:Ралі Португалії: перекриття до",
+      "status": "ok",
+      "duration_s": 284.2,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Ралі Португалії: перекриття до",
+      "status": "ok",
+      "duration_s": 171.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Ралі Португалії: перекриття до",
+      "status": "ok",
+      "duration_s": 17.4,
+      "error": null
+    },
+    {
+      "name": "save:Ралі Португалії: перекриття до",
+      "status": "ok",
+      "duration_s": 125.4,
+      "error": null
+    },
+    {
+      "name": "research:Трудова реформа 2026 та права ",
+      "status": "ok",
+      "duration_s": 588.4,
+      "error": null
+    },
+    {
+      "name": "generate:Трудова реформа 2026 та права ",
+      "status": "ok",
+      "duration_s": 132.1,
+      "error": null
+    },
+    {
+      "name": "review:Трудова реформа 2026 та права ",
+      "status": "ok",
+      "duration_s": 295.6,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Трудова реформа 2026 та права ",
+      "status": "ok",
+      "duration_s": 621.2,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Трудова реформа 2026 та права ",
+      "status": "ok",
+      "duration_s": 18.5,
+      "error": null
+    },
+    {
+      "name": "save:Трудова реформа 2026 та права ",
+      "status": "ok",
+      "duration_s": 130.3,
+      "error": null
+    },
+    {
+      "name": "research:Як отримати сімейного лікаря (",
+      "status": "ok",
+      "duration_s": 232.7,
+      "error": null
+    },
+    {
+      "name": "generate:Як отримати сімейного лікаря (",
+      "status": "ok",
+      "duration_s": 126.7,
+      "error": null
+    },
+    {
+      "name": "review:Як отримати сімейного лікаря (",
+      "status": "ok",
+      "duration_s": 254.7,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Як отримати сімейного лікаря (",
+      "status": "ok",
+      "duration_s": 648.9,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Як отримати сімейного лікаря (",
+      "status": "ok",
+      "duration_s": 18.4,
+      "error": null
+    },
+    {
+      "name": "save:Як отримати сімейного лікаря (",
+      "status": "ok",
+      "duration_s": 124.2,
+      "error": null
+    },
+    {
+      "name": "research:INEM під загрозою демонтажу: к",
+      "status": "ok",
+      "duration_s": 228.7,
+      "error": null
+    },
+    {
+      "name": "generate:INEM під загрозою демонтажу: к",
+      "status": "ok",
+      "duration_s": 100.7,
+      "error": null
+    },
+    {
+      "name": "review:INEM під загрозою демонтажу: к",
+      "status": "ok",
+      "duration_s": 173.3,
+      "error": null
+    },
+    {
+      "name": "translate_pt:INEM під загрозою демонтажу: к",
+      "status": "ok",
+      "duration_s": 448.1,
+      "error": null
+    },
+    {
+      "name": "tg_caption:INEM під загрозою демонтажу: к",
+      "status": "ok",
+      "duration_s": 25.0,
+      "error": null
+    },
+    {
+      "name": "save:INEM під загрозою демонтажу: к",
+      "status": "ok",
+      "duration_s": 120.4,
+      "error": null
+    },
+    {
+      "name": "research:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 252.3,
+      "error": null
+    },
+    {
+      "name": "generate:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 72.5,
+      "error": null
+    },
+    {
+      "name": "review:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 153.0,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 309.0,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 14.9,
+      "error": null
+    },
+    {
+      "name": "save:Хантавірус на круїзному лайнер",
+      "status": "ok",
+      "duration_s": 136.9,
+      "error": null
+    },
+    {
+      "name": "research:Іміграційна карта Португалії 2",
+      "status": "ok",
+      "duration_s": 874.2,
+      "error": null
+    },
+    {
+      "name": "generate:Іміграційна карта Португалії 2",
+      "status": "ok",
+      "duration_s": 82.8,
+      "error": null
+    },
+    {
+      "name": "review:Іміграційна карта Португалії 2",
+      "status": "ok",
+      "duration_s": 234.8,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Іміграційна карта Португалії 2",
+      "status": "ok",
+      "duration_s": 376.3,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Іміграційна карта Португалії 2",
+      "status": "ok",
+      "duration_s": 14.3,
+      "error": null
+    },
+    {
+      "name": "save:Іміграційна карта Португалії 2",
+      "status": "ok",
+      "duration_s": 353.4,
+      "error": null
+    },
+    {
+      "name": "research:Неділя в Лісабоні, Порту та Ал",
+      "status": "ok",
+      "duration_s": 571.3,
+      "error": null
+    },
+    {
+      "name": "generate:Неділя в Лісабоні, Порту та Ал",
+      "status": "ok",
+      "duration_s": 87.4,
+      "error": null
+    },
+    {
+      "name": "review:Неділя в Лісабоні, Порту та Ал",
+      "status": "ok",
+      "duration_s": 547.1,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Неділя в Лісабоні, Порту та Ал",
+      "status": "ok",
+      "duration_s": 252.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Неділя в Лісабоні, Порту та Ал",
+      "status": "ok",
+      "duration_s": 21.0,
+      "error": null
+    },
+    {
+      "name": "save:Неділя в Лісабоні, Порту та Ал",
+      "status": "ok",
+      "duration_s": 109.1,
+      "error": null
+    },
+    {
+      "name": "research:Operação Influencer: Chega іні",
+      "status": "ok",
+      "duration_s": 204.2,
+      "error": null
+    },
+    {
+      "name": "generate:Operação Influencer: Chega іні",
+      "status": "ok",
+      "duration_s": 81.6,
+      "error": null
+    },
+    {
+      "name": "review:Operação Influencer: Chega іні",
+      "status": "ok",
+      "duration_s": 214.5,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Operação Influencer: Chega іні",
+      "status": "ok",
+      "duration_s": 386.5,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Operação Influencer: Chega іні",
+      "status": "ok",
+      "duration_s": 26.0,
+      "error": null
+    },
+    {
+      "name": "save:Operação Influencer: Chega іні",
+      "status": "ok",
+      "duration_s": 103.6,
+      "error": null
+    },
+    {
+      "name": "research:Ціни на пальне: прогноз на нас",
+      "status": "ok",
+      "duration_s": 206.8,
+      "error": null
+    },
+    {
+      "name": "generate:Ціни на пальне: прогноз на нас",
+      "status": "ok",
+      "duration_s": 69.9,
+      "error": null
+    },
+    {
+      "name": "review:Ціни на пальне: прогноз на нас",
+      "status": "ok",
+      "duration_s": 218.4,
+      "error": null
+    },
+    {
+      "name": "translate_pt:Ціни на пальне: прогноз на нас",
+      "status": "ok",
+      "duration_s": 284.8,
+      "error": null
+    },
+    {
+      "name": "tg_caption:Ціни на пальне: прогноз на нас",
+      "status": "ok",
+      "duration_s": 17.2,
+      "error": null
+    },
+    {
+      "name": "save:Ціни на пальне: прогноз на нас",
+      "status": "ok",
+      "duration_s": 120.1,
+      "error": null
+    },
+    {
+      "name": "research:Погода на тиждень 11-17 травня",
+      "status": "failed",
+      "duration_s": 935.7,
+      "error": "agent_query timed out after 300s"
+    },
+    {
+      "name": "deploy_site",
+      "status": "ok",
+      "duration_s": 56.1,
+      "error": null
+    },
+    {
+      "name": "verify",
+      "status": "ok",
+      "duration_s": 0.1,
+      "error": null
+    }
+  ]
+}

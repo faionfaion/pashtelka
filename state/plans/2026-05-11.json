@@ -1,0 +1,83 @@
+{
+  "articles": [
+    {
+      "topic": "SNS у кризі: операцій стає менше, черги в онкології зростають — але міністерка обіцяє нову систему",
+      "type": "news",
+      "angle": "Об'єднати два сигнали: кількість операцій у протокольних лікарнях падає + черги в онкології погіршуються. Водночас міністерка охорони здоров'я анонсує нову систему для розвантаження листів очікування. Що це означає для українців, які чекають на планові операції через SNS",
+      "sources_hint": "RTP headline '17h Saúde: novo sistema vai aliviar listas de espera'; RTP 'Cirurgias caem em hospitais protocolados com o SNS'; CM Jornal 'Liga contra o cancro alerta para agravamento das listas de espera em oncologia'; sns.gov.pt press releases",
+      "priority": 1
+    },
+    {
+      "topic": "Новий пілотний проєкт домашнього догляду для людей із залежністю стартує сьогодні",
+      "type": "news",
+      "angle": "Португалія запускає проєкт домашнього догляду для людей, які потребують допомоги. Хто може скористатися, як подати заяву, в яких регіонах діє. Актуально для українців, які доглядають за літніми родичами або самі працюють у сфері догляду (cuidadores). Проєкт стартує саме сьогодні — тому це терміновий матеріал",
+      "sources_hint": "RTP 'Arranca hoje projeto-piloto de apoio domiciliário para pessoas em situação de dependência'; Segurança Social portal; Ministério do Trabalho press release; ISS.pt",
+      "priority": 1
+    },
+    {
+      "topic": "AIMA: що очікувати цього тижня — стан черг, нові рішення та графік роботи",
+      "type": "immigration",
+      "angle": "Понеділковий огляд ситуації з AIMA: поточний стан обробки заяв на легалізацію, середній час очікування, чи є нові рішення уряду щодо прискорення процесів. Конкретні поради: як перевірити статус через портал, куди дзвонити",
+      "sources_hint": "AIMA.gov.pt portal; SEF/AIMA news section; Portugal Resident AIMA coverage; search 'AIMA regularização maio 2026'; Ukrainian community Telegram groups for real-time queue reports",
+      "priority": 1
+    },
+    {
+      "topic": "Тиждень в Португалії 12–17 травня: погода, події, що варто знати",
+      "type": "news",
+      "angle": "Понеділковий дайджест на тиждень: прогноз погоди (після дощового вікенду — що далі), ключові події у Лісабоні/Порту/Фару, можливі транспортні обмеження, дедлайни. Формат: коротко і по суті, щоб спланувати тиждень",
+      "sources_hint": "IPMA.pt weekly forecast; CML/CMP/CMF event calendars; Meteo Portugal; Transportes de Lisboa / Metro do Porto announcements; visitportugal.com events May 2026",
+      "priority": 1
+    },
+    {
+      "topic": "Оренда житла в Португалії у 2026: ціни, тренди, поради для українців",
+      "type": "material",
+      "angle": "Комплексний аналіз ринку оренди станом на травень 2026. Порівняння цін у Лісабоні, Порту, Фару та Алгарве. Нові законодавчі зміни (Mais Habitação наслідки), середні ціни за T1/T2, де шукати, типові підводні камені для іноземців, права орендарів. Зібрати дані мінімум з 5 джерел",
+      "sources_hint": "Idealista.pt market reports May 2026; INE housing statistics; Imovirtual price index; Confidencial Imobiliário data; IHRU.pt Mais Habitação updates; Deco Proteste tenant rights; Reuters/Lusa housing coverage Portugal; compare Lisbon vs Porto vs Faro vs Algarve",
+      "priority": 1
+    },
+    {
+      "topic": "Як записатися до сімейного лікаря в Centro de Saúde: покроковий гайд для українців",
+      "type": "guide",
+      "angle": "Повний покроковий гайд: від отримання номера utente до запису в Centro de Saúde та призначення médico de família. Що робити, якщо лікаря не призначають (lista de espera). Як викликати лікаря без médico de família (SNS 24, urgências). Документи, терміни, телефони. Окремо — ситуація для тих, хто має proteção temporária vs título de residência",
+      "sources_hint": "SNS.gov.pt registration guide; SNS 24 portal; MySNS app instructions; AIMA healthcare access rules for temporary protection holders; DGS.pt; community experience from Facebook groups 'Українці в Португалії'",
+      "priority": 1
+    },
+    {
+      "topic": "Хантавірус у Європі: чи є загроза для Португалії і як захиститися",
+      "type": "news",
+      "angle": "Європейський центр попереджає про нові випадки хантавірусу. Фокус матеріалу — виключно на Португалії: чи є підтверджені випадки, які регіони під ризиком, рекомендації DGS. Практичні поради для українців, які працюють у сільському господарстві, на складах чи будівництві — де контакт з гризунами найімовірніший",
+      "sources_hint": "ECDC official alert; DGS.pt statements; RTP 'Hantavírus. Navio obrigado a atracar'; CM Jornal 'Centro europeu admite mais casos de infeção por hantavírus'; SNS 24 health advice",
+      "priority": 2
+    },
+    {
+      "topic": "NOS збільшила прибуток на 4,7% — що це означає для цін на мобільний зв'язок і інтернет",
+      "type": "news",
+      "angle": "Оператор NOS звітує про зростання прибутку. Розібрати: чи підвищувалися тарифи, порівняти з MEO та Vodafone, які найвигідніші плани для українців (міжнародні дзвінки в Україну), чи варто очікувати нових підвищень цін",
+      "sources_hint": "RTP 'Lucro da NOS sobe 4,7%'; NOS investor relations Q1 2026; Comparaja.pt mobile plans; Deco Proteste telecom comparison; Anacom market reports",
+      "priority": 2
+    },
+    {
+      "topic": "IRS 2026: нагадування — до кінця червня треба подати декларацію. Що зробити цього тижня",
+      "type": "utility",
+      "angle": "Середина періоду подання IRS. Конкретний чеклист: перевірити e-fatura, завантажити rascunho, типові помилки українців (неправильний статус резидента, забуті доходи з України). Дедлайн 30 червня — але краще не відкладати",
+      "sources_hint": "Portal das Finanças IRS 2026 guidelines; AT.gov.pt FAQ; Deco Proteste IRS guide; search 'IRS 2026 prazos entrega'; community accountant recommendations",
+      "priority": 2
+    },
+    {
+      "topic": "Навчальний рік наближається до завершення: іспити, оцінки та літні канікули для дітей",
+      "type": "news",
+      "angle": "Травень-червень — фінішна пряма навчального року. Графік іспитів (provas de aferição, exames nacionais), коли починаються канікули, як записати дитину в літній табір (ATL/colónias de férias). Практично для батьків-українців. Інформація по різних регіонах — Лісабон, Порту, Алгарве",
+      "sources_hint": "DGE.pt exam calendar 2025/2026; school year calendar Ministério da Educação; search 'calendário escolar 2025-2026 exames'; CML/CMP/CMF summer camp programs (ATL)",
+      "priority": 2
+    },
+    {
+      "topic": "Скасування свята Queima das Fitas у Лісабоні: Câmara відмовляється від відповідальності",
+      "type": "news",
+      "angle": "Камара де Лісабон відхиляє відповідальність за скасування традиційного студентського свята. Що сталося, хто винен, чи вплинуло це на транспорт і життя міста. Контекст: що таке Queima das Fitas для тих, хто не знає португальських традицій — корисно для інтеграції",
+      "sources_hint": "CM Jornal 'Câmara de Lisboa recusa responsabilidade pelo cancelamento da festa da Queima das Fitas'; RTP coverage; CML.pt official statements; university student unions",
+      "priority": 2
+    }
+  ],
+  "date": "2026-05-11",
+  "created_at": "2026-05-11T17:00:03.415676+00:00"
+}

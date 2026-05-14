@@ -1,0 +1,83 @@
+{
+  "articles": [
+    {
+      "topic": "Уряд затвердив нову редакцію трудового законодавства з 50+ змінами",
+      "type": "news",
+      "angle": "Які саме зміни стосуються іноземних працівників: відновлення строкових контрактів, скасування обмежень на аутсорсинг, 12 пропозицій профспілки UGT. Пояснити простою мовою, що зміниться для українців, які працюють за контрактом",
+      "sources_hint": "RTP Economia, Governo.pt press release, Público labor section, UGT official statements. Search: 'revisão código trabalho 2026 conselho ministros'",
+      "priority": 1
+    },
+    {
+      "topic": "Tribunal de Contas назвав реформу попередньої візи «неконституційною»",
+      "type": "immigration",
+      "angle": "Уряд хоче змінити порядок попереднього контролю (visto prévio) — Tribunal de Contas каже, що це порушує Конституцію. Пояснити, що таке visto prévio, як це стосується бюрократії AIMA та документів іммігрантів",
+      "sources_hint": "RTP Política, Tribunal de Contas official opinion, Observador, Eco.pt. Search: 'tribunal contas visto prévio inconstitucional proposta governo 2026'",
+      "priority": 1
+    },
+    {
+      "topic": "Фатіма 2026: Патріарх Лісабона каже «тут ніхто не є іноземцем»",
+      "type": "news",
+      "angle": "Паломництво 13 травня зібрало тисячі вірян. Цитата Патріарха як символ інклюзії — як українська громада бере участь у Фатімі, скільки українців щороку їдуть. Практика: як дістатися, чи є україномовні служби",
+      "sources_hint": "RTP Sociedade, Santuário de Fátima official site, Ecclesia.pt, Lusa. Search: 'fátima 13 maio 2026 patriarca estrangeiro'",
+      "priority": 2
+    },
+    {
+      "topic": "Голова агенції з пожежної безпеки Тіаго Олівейра подав у відставку перед літнім сезоном",
+      "type": "news",
+      "angle": "Глава ANEPC/AGIF йде напередодні найнебезпечнішого сезону пожеж. Що це означає для готовності країни. Практичний блок: як підготуватися до пожежного сезону мешканцям Алгарве та центральної Португалії — номери, додатки, евакуаційні плани",
+      "sources_hint": "RTP, Público, Observador, ANEPC.pt, Proteção Civil. Search: 'Tiago Oliveira demissão agência fogos AGIF 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Португалія не пройшла до фіналу Євробачення-2026",
+      "type": "news",
+      "angle": "Що пішло не так із португальським виступом, реакція в соцмережах. Контекст для українців: де Україна у цьогорічному конкурсі, порівняння результатів. Ностальгічний кут — як Євробачення обʼєднує діаспору",
+      "sources_hint": "RTP Cultura, ESCPortugal.pt, Eurovision.tv, social media reactions. Search: 'Portugal eurovisão semifinal 2026 eliminado'",
+      "priority": 2
+    },
+    {
+      "topic": "Новий президент Конфедерації торгівлі CCP: «діалог, але бойовий коли треба»",
+      "type": "news",
+      "angle": "Зміна керівництва найбільшого бізнес-обʼєднання Португалії. Що це означає для малого бізнесу та підприємців-іммігрантів: плани щодо бюрократії, підтримки МСП, взаємодії з урядом",
+      "sources_hint": "RTP Economia, CCP.pt, Jornal de Negócios, Dinheiro Vivo. Search: 'novo presidente CCP confederação comércio 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Ціни на пальне в Португалії у травні: тренд та прогноз",
+      "type": "news",
+      "angle": "Поточні ціни на бензин та дизель на середину травня, динаміка за місяць, де найдешевше заправлятися (Prio, Intermarché, Costco). Порівняння між Лісабоном, Порту та Алгарве. Додатки для пошуку дешевого пального",
+      "sources_hint": "DGEG.gov.pt fuel prices, maisgasolina.com, Lusa, Eco.pt. Search: 'preço combustível Portugal maio 2026 gasolina gasóleo'",
+      "priority": 2
+    },
+    {
+      "topic": "Вихідні 16-18 травня: події в Лісабоні, Порту, Фару та Алгарве",
+      "type": "utility",
+      "angle": "Підбірка подій на вихідні з фокусом на безкоштовні та бюджетні активності: ярмарки, фестивалі, концерти, дитячі програми. Capitães da Areia у Квартейрі як приклад Алгарвського культурного життя. Транспортні поради: як дістатися",
+      "sources_hint": "Timeout Lisboa, Timeout Porto, visitAlgarve.pt, CM municipal event pages, Eventbrite PT. Search: 'eventos fim de semana Lisboa Porto Algarve 16 17 18 maio 2026'",
+      "priority": 2
+    },
+    {
+      "topic": "Оренда житла в Португалії середина 2026: ціни, платформи, права орендарів",
+      "type": "material",
+      "angle": "Комплексний огляд ринку оренди: середні ціни по районах Лісабона, Порту, Фару; порівняння платформ (Idealista, Imovirtual, OLX, Facebook-групи); нове законодавство про оренду 2026; права та обовʼязки орендаря; типові пастки для іноземців без кредитної історії; поради від українців з досвідом",
+      "sources_hint": "Idealista.pt market reports, INE housing statistics, Confidencial Imobiliário price index, DECO Proteste tenant rights guide, Portal da Habitação, Ukrainian community Facebook groups. Search: 'preços arrendamento Portugal 2026 T1 T2 Lisboa Porto Faro', 'direitos inquilinos novo regime arrendamento', 'arrendar casa estrangeiro Portugal sem fiador'",
+      "priority": 1
+    },
+    {
+      "topic": "Як записати дитину до португальської школи на вересень 2026",
+      "type": "guide",
+      "angle": "Покрокова інструкція: терміни подачі заявок (matrícula/renovação), онлайн-портал Portal das Matrículas, необхідні документи (NIF дитини, atestado de morada, boletim de vacinas, equivalência), різниця між 1º ciclo та pré-escolar, регіональні особливості (Лісабон vs Порту vs Алгарве), що робити якщо немає ще всіх документів, контакти шкільних agrupamentos",
+      "sources_hint": "Portal das Matrículas (portaldasmatriculas.edu.gov.pt), DGEstE.pt, school enrollment calendar 2026/2027, DECO education guide, SEF/AIMA family reunification docs. Search: 'matrículas escolares 2026 2027 Portugal portal documentos', 'inscrição escola filhos estrangeiros Portugal equivalência habilitações'",
+      "priority": 1
+    },
+    {
+      "topic": "Шведський журналіст написав книгу про «saudade» — найпортугальніше слово",
+      "type": "news",
+      "angle": "Історія інтеграції через мову: як іноземець зрозумів Португалію через одне слово. Паралелі з українською «тугою». Поради для українців — як розуміння saudade допомагає інтегруватися та будувати стосунки з португальцями",
+      "sources_hint": "RTP Cultura, publisher website, Lusa, Público Cultura. Search: 'jornalista sueco saudade livro 2026'",
+      "priority": 3
+    }
+  ],
+  "date": "2026-05-14",
+  "created_at": "2026-05-14T17:00:03.509351+00:00"
+}
