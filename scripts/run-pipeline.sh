@@ -39,6 +39,13 @@ export PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:$PATH"
 export HOME="${HOME:-/home/nero}"
 [ -f "$HOME/workspace/.env" ] && source "$HOME/workspace/.env"
 
+# Activate shared media venv if present (faion-net runtime). On hosts without
+# this venv (e.g. nero-prod), fall through to system python3.
+if [ -f "$HOME/.venv-media/bin/activate" ] && [ -z "${VIRTUAL_ENV:-}" ]; then
+    # shellcheck disable=SC1091
+    source "$HOME/.venv-media/bin/activate"
+fi
+
 # Pull latest changes (admin edits, prompt updates)
 git pull --ff-only origin master >> "$LOG_DIR/cron.log" 2>&1 || true
 
